@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:schedule timestamp="2001-12-31T12:00:00" xmlns:p="http://video-metadata.tv.se/schedule/v1" xmlns:p1="http://video-metadata.tv.se/content/v1"
+	xmlns:p2="http://video-metadata.tv.se/common/v1" xmlns:p3="http://video-metadata.tv.se/material/v1" xmlns:p4="http://video-metadata.tv.se/event/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://video-metadata.tv.se/schedule/v1 ../xsd/schedule.xsd "
+>
+	<p:providerId>p:providerId</p:providerId>
+	<p:channelId>p:channelId</p:channelId>
+	<p:from>2001-12-31T12:00:00</p:from>
+	<p:to>2001-12-31T12:00:00</p:to>
+	<p:contentList>
+		<content>
+			<id>id</id>
+			<studio>studio</studio>
+			<productionYear>productionYear</productionYear>
+			<countryOfOriginList>
+				<country>country</country>
+			</countryOfOriginList>
+			<titleList>
+				<title language="EN" original="true">title</title>
+				<titleId>titleId</titleId>
+			</titleList>
+			<genericTitleList>
+				<title language="EN">title</title>
+			</genericTitleList>
+			<descriptionList>
+				<description language="EN" length="tiny">description</description>
+			</descriptionList>
+			<sport>
+				<sportsCategory language="EN">sportsCategory</sportsCategory>
+				<leagueOrCompetitionList>
+					<leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
+				</leagueOrCompetitionList>
+				<roundOrEpisodeList>
+					<roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
+				</roundOrEpisodeList>
+				<homeTeamList>
+					<team language="EN">team</team>
+				</homeTeamList>
+				<awayTeamList>
+					<team language="EN">team</team>
+				</awayTeamList>
+			</sport>
+			<genreList>
+				<genre language="EN" priority="0">genre</genre>
+			</genreList>
+			<dvbGenre>
+				<nibble1>0</nibble1>
+				<nibble2>0</nibble2>
+			</dvbGenre>
+			<keywordList>
+				<keyword language="EN" priority="0">keyword</keyword>
+			</keywordList>
+			<creditList>
+				<credit>
+					<name>name</name>
+					<rolename>rolename</rolename>
+					<function>function</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>provider</provider>
+							<id>id</id>
+							<uri>uri</uri>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+			</creditList>
+			<imageList>
+				<image>
+					<imageRef height="0" orientation="landscape" priority="0" purpose="poster" unit="px" width="0">imageRef</imageRef>
+					<captionList>
+						<caption language="EN">caption</caption>
+					</captionList>
+					<copyRightList>
+						<copyRight language="EN">copyRight</copyRight>
+					</copyRightList>
+				</image>
+			</imageList>
+			<categoryList>
+				<category>category</category>
+			</categoryList>
+			<adCategoryList>
+				<category>category</category>
+			</adCategoryList>
+			<parentalRating>0</parentalRating>
+			<externalReferenceList>
+				<externalReference>
+					<provider>provider</provider>
+					<id>id</id>
+					<uri>uri</uri>
+				</externalReference>
+			</externalReferenceList>
+			<brandId>brandId</brandId>
+			<seasonId>seasonId</seasonId>
+			<episodeNumber>0</episodeNumber>
+		</content>
+	</p:contentList>
+	<p:materialList>
+		<material timestamp="2001-12-31T12:00:00">
+			<providerId>providerId</providerId>
+			<id>id</id>
+			<distributor>distributor</distributor>
+			<priceGroup>priceGroup</priceGroup>
+			<contentIdRef>contentIdRef</contentIdRef>
+			<materialType>program</materialType>
+			<videoFormat threeD="true">576i</videoFormat>
+			<audioList>
+				<format language="EN">mono</format>
+			</audioList>
+			<aspectRatio>4:3</aspectRatio>
+			<subtitleList>
+				<subtitle format="invision" language="EN">subtitle</subtitle>
+			</subtitleList>
+			<accessibilityList>
+				<accessibilityList format="hearingImpairedSubtitle" language="EN">accessibilityList</accessibilityList>
+			</accessibilityList>
+			<materialReferenceList>
+				<reference bitrate="" duration="" type="video">reference</reference>
+			</materialReferenceList>
+			<rightsList>
+				<rights>
+					<rightsName>rightsName</rightsName>
+					<validFrom>2001-12-31T12:00:00</validFrom>
+					<validTo>2001-12-31T12:00:00</validTo>
+					<unlimitedPeriod>true</unlimitedPeriod>
+					<rightsCategoryList>
+						<rightsCategory>
+							<vod xsi:type="p3:deviceTypeRights">
+								<deviceType>web</deviceType>
+							</vod>
+							<ppv xsi:type="p3:deviceTypeRights">
+								<deviceType>web</deviceType>
+							</ppv>
+							<timeshift>
+								<catchUpRights>
+									<fastForward>true</fastForward>
+									<rewind>true</rewind>
+									<pause>true</pause>
+								</catchUpRights>
+								<startOverRights>
+									<fastForward>true</fastForward>
+									<rewind>true</rewind>
+									<pause>true</pause>
+								</startOverRights>
+							</timeshift>
+							<noTransmission>
+								<deviceType>web</deviceType>
+							</noTransmission>
+							<addProviderLogo>true</addProviderLogo>
+							<allowAds>true</allowAds>
+							<drmRestrictions />
+							<geoRestrictions />
+							<shareToList>
+								<shareTo>shareTo</shareTo>
+							</shareToList>
+						</rightsCategory>
+					</rightsCategoryList>
+				</rights>
+			</rightsList>
+		</material>
+	</p:materialList>
+	<p:eventList>
+		<p4:event timestamp="2001-12-31T12:00:00">
+			<p4:id>p4:id</p4:id>
+			<p4:channelId>p4:channelId</p4:channelId>
+			<p4:descriptionList>
+				<p4:description language="EN">p4:description</p4:description>
+			</p4:descriptionList>
+			<p4:rerun>true</p4:rerun>
+			<p4:live>true</p4:live>
+			<p4:hidden>true</p4:hidden>
+			<p4:groupId sequenceNumber="0">p4:groupId</p4:groupId>
+			<p4:timeList>
+				<p4:time type="public">
+					<p4:startTime>2001-12-31T12:00:00</p4:startTime>
+					<p4:endTime>2001-12-31T12:00:00</p4:endTime>
+					<p4:duration>p4:duration</p4:duration>
+				</p4:time>
+			</p4:timeList>
+			<p4:contentIdRef>p4:contentIdRef</p4:contentIdRef>
+			<p4:materialIdRef>p4:materialIdRef</p4:materialIdRef>
+			<p4:previousEventList>
+				<p4:event xsi:type="p4:basicEventType">
+					<p4:id>p4:id</p4:id>
+					<p4:channelId>p4:channelId</p4:channelId>
+					<p4:descriptionList>
+						<p4:description language="EN">p4:description</p4:description>
+					</p4:descriptionList>
+					<p4:rerun>true</p4:rerun>
+					<p4:live>true</p4:live>
+					<p4:hidden>true</p4:hidden>
+					<p4:groupId sequenceNumber="0">p4:groupId</p4:groupId>
+					<p4:timeList>
+						<p4:time type="public">
+							<p4:startTime>2001-12-31T12:00:00</p4:startTime>
+							<p4:endTime>2001-12-31T12:00:00</p4:endTime>
+							<p4:duration>p4:duration</p4:duration>
+						</p4:time>
+					</p4:timeList>
+				</p4:event>
+			</p4:previousEventList>
+			<p4:comingEventList>
+				<p4:event xsi:type="p4:basicEventType">
+					<p4:id>p4:id</p4:id>
+					<p4:channelId>p4:channelId</p4:channelId>
+					<p4:descriptionList>
+						<p4:description language="EN">p4:description</p4:description>
+					</p4:descriptionList>
+					<p4:rerun>true</p4:rerun>
+					<p4:live>true</p4:live>
+					<p4:hidden>true</p4:hidden>
+					<p4:groupId sequenceNumber="0">p4:groupId</p4:groupId>
+					<p4:timeList>
+						<p4:time type="public">
+							<p4:startTime>2001-12-31T12:00:00</p4:startTime>
+							<p4:endTime>2001-12-31T12:00:00</p4:endTime>
+							<p4:duration>p4:duration</p4:duration>
+						</p4:time>
+					</p4:timeList>
+				</p4:event>
+			</p4:comingEventList>
+			<p4:embeddedEventList>
+				<p4:event xsi:type="p4:embeddedEventType">
+					<p4:id>p4:id</p4:id>
+					<p4:channelId>p4:channelId</p4:channelId>
+					<p4:descriptionList>
+						<p4:description language="EN">p4:description</p4:description>
+					</p4:descriptionList>
+					<p4:rerun>true</p4:rerun>
+					<p4:live>true</p4:live>
+					<p4:hidden>true</p4:hidden>
+					<p4:groupId sequenceNumber="0">p4:groupId</p4:groupId>
+					<p4:timeList>
+						<p4:time type="public">
+							<p4:startTime>2001-12-31T12:00:00</p4:startTime>
+							<p4:endTime>2001-12-31T12:00:00</p4:endTime>
+							<p4:duration>p4:duration</p4:duration>
+						</p4:time>
+					</p4:timeList>
+					<p4:contentIdRef>p4:contentIdRef</p4:contentIdRef>
+					<p4:materialIdRef>p4:materialIdRef</p4:materialIdRef>
+					<p4:previousEventList>
+						<p4:event xsi:type="p4:basicEventType">
+							<p4:id>p4:id</p4:id>
+							<p4:channelId>p4:channelId</p4:channelId>
+							<p4:descriptionList>
+								<p4:description language="EN">p4:description</p4:description>
+							</p4:descriptionList>
+							<p4:rerun>true</p4:rerun>
+							<p4:live>true</p4:live>
+							<p4:hidden>true</p4:hidden>
+							<p4:groupId sequenceNumber="0">p4:groupId</p4:groupId>
+							<p4:timeList>
+								<p4:time type="public">
+									<p4:startTime>2001-12-31T12:00:00</p4:startTime>
+									<p4:endTime>2001-12-31T12:00:00</p4:endTime>
+									<p4:duration>p4:duration</p4:duration>
+								</p4:time>
+							</p4:timeList>
+						</p4:event>
+					</p4:previousEventList>
+					<p4:comingEventList>
+						<p4:event xsi:type="p4:basicEventType">
+							<p4:id>p4:id</p4:id>
+							<p4:channelId>p4:channelId</p4:channelId>
+							<p4:descriptionList>
+								<p4:description language="EN">p4:description</p4:description>
+							</p4:descriptionList>
+							<p4:rerun>true</p4:rerun>
+							<p4:live>true</p4:live>
+							<p4:hidden>true</p4:hidden>
+							<p4:groupId sequenceNumber="0">p4:groupId</p4:groupId>
+							<p4:timeList>
+								<p4:time type="public">
+									<p4:startTime>2001-12-31T12:00:00</p4:startTime>
+									<p4:endTime>2001-12-31T12:00:00</p4:endTime>
+									<p4:duration>p4:duration</p4:duration>
+								</p4:time>
+							</p4:timeList>
+						</p4:event>
+					</p4:comingEventList>
+				</p4:event>
+			</p4:embeddedEventList>
+		</p4:event>
+	</p:eventList>
+</p:schedule>
