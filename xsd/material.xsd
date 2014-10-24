@@ -28,6 +28,12 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="priceGroup" type="priceGroupType">
+				<xs:annotation>
+					<xs:documentation>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="contentIdRef" type="xs:string"> <!-- todo - same as in content!!! -->
 				<xs:annotation>
 					<xs:documentation>reference to content</xs:documentation>
@@ -87,6 +93,15 @@
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
+		<xs:simpleType name="priceGroupType">
+		<xs:annotation>
+			<xs:documentation>Tag identifying the priceGroup of the material
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\w+"></xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="videoFormatType">
 		<xs:simpleContent>
 			<xs:extension base="videoFormatTypeType">
@@ -455,7 +470,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="(\*)|([a-zA-Z0-9]+)"></xs:pattern>
+			<xs:pattern value="(\*)|(\w+)"></xs:pattern>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="materialListType">
