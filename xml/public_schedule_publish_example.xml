@@ -4,6 +4,12 @@
 	xmlns:material="http://common.tv.se/material/v4_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://common.tv.se/publish/v4_0 publish.xsd ">
 	<providerId>providerId</providerId>
+	<!-- 
+	
+	OBS - needs an update. reflects the old version of teh XML!!!!
+	
+	 -->
+	
 	<contentList>
 		<content:content timestamp="2001-12-31T12:00:00">
 			<content:contentId>4893033</content:contentId>

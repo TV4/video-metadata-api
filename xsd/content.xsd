@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Document developed by SVT and TV4 2009, 2010, 2011 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://common.tv.se/content/v4_0_1" targetNamespace="http://common.tv.se/content/v4_0_1"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:content="http://video-metadata.tv.se/content/v1" xmlns:event="http://video-metadata.tv.se/event/v1"
+	xmlns:material="http://video-metadata.tv.se/material/v1" xmlns="http://video-metadata.tv.se/schedule/v1" targetNamespace="http://video-metadata.tv.se/schedule/v1"
 	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
-	<xs:element name="metadata">
+	<xs:import namespace="http://video-metadata.tv.se/material/v1" schemaLocation="material.xsd" />
+	<xs:element name="content">
 		<xs:annotation>
-			<xs:documentation>Root element for meta-data</xs:documentation>
+			<xs:documentation>Root element for content meta-data</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="provider" type="xs:string">
+				<xs:element name="providerId" type="xs:string">
 					<xs:annotation>
-						<xs:documentation>Id for the provider, could be for example 'se.svt' or 'se.tv4', 'cmore', 'nyhetsbolaget', ...
+						<xs:documentation>Id for the provider, could be for example 'se.tv4', 'cmore', 'nyhetsbolaget', ...
 						</xs:documentation>
 					</xs:annotation>
 				</xs:element>
@@ -28,6 +30,12 @@
 				<xs:element name="contents" type="contentListType">
 					<xs:annotation>
 						<xs:documentation>List of content entities. content : { program, clip, (ads) }</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="materialList" type="material:materialListType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>material list for the document, could be 0 entries which would indicate no events for this period
+						</xs:documentation>
 					</xs:annotation>
 				</xs:element>
 			</xs:sequence>

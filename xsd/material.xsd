@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Document developed by SVT and TV4 2009, 2010, 2011 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://common.tv.se/material/v4_0_1" targetNamespace="http://common.tv.se/material/v4_0_1"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/material/v1" targetNamespace="http://video-metadata.tv.se/material/v1"
 	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
 	<xs:element name="material" type="materialType">
@@ -10,6 +10,12 @@
 	</xs:element>
 	<xs:complexType name="materialType">
 		<xs:sequence>
+			<xs:element name="providerId" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>id for the provider, could be for example 'se.svt' or 'se.tv4'
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="id" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>unique id for content, should include provider name
@@ -304,6 +310,8 @@
 			<xs:element name="noTransmission" type="transmissionDeviceTypeRights" minOccurs="0"></xs:element>
 			<xs:element name="addProviderLogo" type="xs:boolean" default="true"></xs:element>
 			<xs:element name="allowAds" type="xs:boolean" default="true"></xs:element>
+			<xs:element name="drmRestrictions" type="drmRestrictionsType" minOccurs="0"></xs:element><!-- TODO -->
+			<xs:element name="geoRestrictions" type="geoRestrictionsType" minOccurs="0"></xs:element><!-- TODO -->
 			<xs:element name="shareToList">
 				<xs:complexType>
 					<xs:sequence>
@@ -316,6 +324,12 @@
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="drmRestrictionsType">
+		<xs:sequence></xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="geoRestrictionsType">
+		<xs:sequence></xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="timeShiftDeviceTypeRights">
 		<xs:complexContent>

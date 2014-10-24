@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Document developed by SVT and TV4 2009, 2010, 2011 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:content="http://common.tv.se/content/v4_0_1" xmlns:event="http://common.tv.se/event/v4_0"
-	xmlns:material="http://common.tv.se/material/v4_0_1" xmlns="http://common.tv.se/schedule/v4_0_1" targetNamespace="http://common.tv.se/schedule/v4_0_1"
-	elementFormDefault="qualified" attributeFormDefault="unqualified" version="4.0"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:content="http://video-metadata.tv.se/content/v1" xmlns:event="http://video-metadata.tv.se/event/v1"
+	xmlns:material="http://video-metadata.tv.se/material/v1" xmlns="http://video-metadata.tv.se/schedule/v1" targetNamespace="http://video-metadata.tv.se/schedule/v1"
+	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
-	<xs:import namespace="http://common.tv.se/content/v4_0_1" schemaLocation="content.xsd" />
-	<xs:import namespace="http://common.tv.se/event/v4_0" schemaLocation="event.xsd" />
-	<xs:import namespace="http://common.tv.se/material/v4_0_1" schemaLocation="material.xsd" />
+	<xs:import namespace="http://video-metadata.tv.se/content/v1" schemaLocation="content.xsd" />
+	<xs:import namespace="http://video-metadata.tv.se/event/v1" schemaLocation="event.xsd" />
+	<xs:import namespace="http://video-metadata.tv.se/material/v1" schemaLocation="material.xsd" />
 	<xs:element name="schedule">
 		<xs:annotation>
 			<xs:documentation>root node of schedule, always complete
@@ -14,9 +14,15 @@
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="provider" type="xs:string">
+				<xs:element name="providerId" type="xs:string">
 					<xs:annotation>
 						<xs:documentation>id for the provider, could be for example 'se.svt' or 'se.tv4'
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="channelId" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>id for the current service or channel, could be for example 'se.svt.svt2', 'se.svt.play' or 'se.tv4.tv4plus'
 						</xs:documentation>
 					</xs:annotation>
 				</xs:element>
