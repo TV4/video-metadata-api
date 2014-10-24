@@ -304,8 +304,8 @@
 	</xs:complexType>
 	<xs:complexType name="rightsCategoryType">
 		<xs:sequence>
-			<xs:element name="vod" type="priceDeviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="ppv" type="priceDeviceTypeRights" minOccurs="0"></xs:element>
+			<xs:element name="vod" type="deviceTypeRights" minOccurs="0"></xs:element>
+			<xs:element name="ppv" type="deviceTypeRights" minOccurs="0"></xs:element>
 			<xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
 			<xs:element name="noTransmission" type="transmissionDeviceTypeRights" minOccurs="0"></xs:element>
 			<xs:element name="addProviderLogo" type="xs:boolean" default="true"></xs:element>
@@ -332,16 +332,12 @@
 		<xs:sequence></xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="timeShiftDeviceTypeRights">
-		<xs:complexContent>
-			<xs:extension base="priceDeviceTypeRights">
-				<xs:sequence>
-					<xs:element name="catchUpRights" type="catchUpRightsType" minOccurs="0" maxOccurs="1">
-					</xs:element>
-					<xs:element name="startOverRights" type="startOverRightsType" minOccurs="0" maxOccurs="1">
-					</xs:element>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
+		<xs:sequence>
+			<xs:element name="catchUpRights" type="catchUpRightsType" minOccurs="0" maxOccurs="1">
+			</xs:element>
+			<xs:element name="startOverRights" type="startOverRightsType" minOccurs="0" maxOccurs="1">
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="transmissionDeviceTypeRights">
 		<xs:complexContent>
@@ -367,16 +363,6 @@
 					<xs:element name="analogOutputRights" type="analogOutputRightsType" minOccurs="0">
 					</xs:element>
 					<xs:element name="inHomeNetworkOutputRights" type="inHomeNetworkOutputRightsType" minOccurs="0">
-					</xs:element>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-	<xs:complexType name="priceDeviceTypeRights">
-		<xs:complexContent>
-			<xs:extension base="deviceTypeOutPutRights">
-				<xs:sequence>
-					<xs:element name="price" type="priceType" minOccurs="0">
 					</xs:element>
 				</xs:sequence>
 			</xs:extension>
@@ -463,27 +449,6 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="priceType">
-		<xs:simpleContent>
-			<xs:extension base="xs:float">
-				<xs:annotation>
-					<xs:documentation>If omitted the the price is set to 0
-					</xs:documentation>
-				</xs:annotation>
-				<xs:attribute name="currency" type="currencyType" />
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:simpleType name="currencyType">
-		<xs:annotation>
-			<xs:documentation>Currency Codes according to ISO 4217
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:length value="3"></xs:length>
-			<xs:pattern value="[A-Z]+"></xs:pattern>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:simpleType name="shareToType">
 		<xs:annotation>
 			<xs:documentation>Tag identifying the channel that is allowed for sharing. '*' to indicate all and anyware.
