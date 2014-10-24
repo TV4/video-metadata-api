@@ -2,14 +2,15 @@
 <!--Document developed by SVT and TV4 2009, 2010, 2011 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:content="http://video-metadata.tv.se/content/v1" xmlns:event="http://video-metadata.tv.se/event/v1"
 	xmlns:material="http://video-metadata.tv.se/material/v1" xmlns="http://video-metadata.tv.se/schedule/v1" targetNamespace="http://video-metadata.tv.se/schedule/v1"
-	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
+	version="1.0"
 >
 	<xs:import namespace="http://video-metadata.tv.se/material/v1" schemaLocation="material.xsd" />
-	<xs:element name="content">
+	<xs:element name="content" type="contentType">
 		<xs:annotation>
 			<xs:documentation>Root element for content meta-data</xs:documentation>
 		</xs:annotation>
-		<xs:complexType>
+	</xs:element>
+	<xs:complexType name="contentElementType">
 			<xs:sequence>
 				<xs:element name="providerId" type="xs:string">
 					<xs:annotation>
@@ -39,8 +40,7 @@
 					</xs:annotation>
 				</xs:element>
 			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+	</xs:complexType>
 	<xs:complexType name="abstractContentType" abstract="true">
 		<xs:annotation>
 			<xs:documentation>Abstract type that holds attributes common to brand, season and content</xs:documentation>

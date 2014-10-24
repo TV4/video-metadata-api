@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:api-messages="http://video-metadata.tv.se/api-messages/v1" xmlns:content="http://video-metadata.tv.se/content/v1"
+	xmlns:schedule="http://video-metadata.tv.se/schedule/v1" xmlns:event="http://video-metadata.tv.se/event/v1" xmlns:material="http://video-metadata.tv.se/material/v1"
+	xmlns="http://video-metadata.tv.se/api-messages/v1" targetNamespace="http://video-metadata.tv.se/api-messages/v1" elementFormDefault="qualified"
+	attributeFormDefault="unqualified" version="1.0"
+>
+	<xs:import namespace="http://video-metadata.tv.se/content/v1" schemaLocation="content.xsd" />
+	<xs:import namespace="http://video-metadata.tv.se/schedule/v1" schemaLocation="schedule.xsd" />
+	
+	<!--
+	Message definitions
+	 -->
+	<xs:element name="metadata">
+		<xs:annotation>
+			<xs:documentation>Root element for content meta-data message</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="header" type="messageHeaderType" />
+				<xs:element name="data" type="messageDataType" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="query">
+		<xs:annotation>
+			<xs:documentation>Root element for content meta-data query message</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="header" type="messageHeaderType" />
+				<xs:element name="query" type="queryType" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="response">
+		<xs:annotation>
+			<xs:documentation>Root element for content meta-data response message</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="status" type="statusType" />
+				<xs:element name="message" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- 
+	Type definitions
+	 -->
+	<xs:complexType name="messageHeaderType">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="providerId" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Id for the provider, could be for example 'se.tv4', 'cmore', 'nyhetsbolaget', ...
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="seqnr" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Sequence number that is the unique id for asset, unique for each provider
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="content" type="messageType" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="messageDataType">
+		<xs:choice>
+			<xs:element name="content" type="content:contentType" />
+			<xs:element name="schedule" type="schedule:scheduleType" />
+		</xs:choice>
+	</xs:complexType>
+		<xs:complexType name="queryType">
+		<xs:choice>
+			<xs:element name="seqnr" type="xs:string" />
+			<xs:element name="brandId" type="xs:string"  minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="seasonId" type="xs:string"  minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="contentId" type="xs:string"  minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="materialId" type="xs:string"  minOccurs="0" maxOccurs="unbounded" />
+		</xs:choice>
+	</xs:complexType>
+	<xs:simpleType name="messageType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="content" />
+			<xs:enumeration value="schedule" />
+			<xs:enumeration value="query" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="statusType">
+		<xs:restriction base="xs:short">
+			<xs:minInclusive value="0" />
+			<xs:maxInclusive value="999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

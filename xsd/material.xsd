@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Document developed by SVT and TV4 2009, 2010, 2011 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/material/v1" targetNamespace="http://video-metadata.tv.se/material/v1"
-	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:material="http://video-metadata.tv.se/material/v1" xmlns="http://video-metadata.tv.se/material/v1"
+	targetNamespace="http://video-metadata.tv.se/material/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
 	<xs:element name="material" type="materialType">
 		<xs:annotation>
@@ -93,7 +93,7 @@
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
-		<xs:simpleType name="priceGroupType">
+	<xs:simpleType name="priceGroupType">
 		<xs:annotation>
 			<xs:documentation>Tag identifying the priceGroup of the material
 			</xs:documentation>
