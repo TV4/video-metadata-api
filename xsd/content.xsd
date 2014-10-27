@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Document developed by SVT and TV4 2009, 2010, 2011 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:common="http://video-metadata.tv.se/common/v1" xmlns:material="http://video-metadata.tv.se/material/v1"
-	xmlns="http://video-metadata.tv.se/content/v1" targetNamespace="http://video-metadata.tv.se/content/v1" version="1.0"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/content/v1" xmlns:common="http://video-metadata.tv.se/common/v1"
+	xmlns:material="http://video-metadata.tv.se/material/v1" targetNamespace="http://video-metadata.tv.se/content/v1" version="1.0"
 >
 	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/material/v1" schemaLocation="material.xsd" />

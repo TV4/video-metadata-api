@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Document developed by SVT and TV4 2009, 2010, 2011 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/material/v1" targetNamespace="http://video-metadata.tv.se/material/v1"
-	version="1.0"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/material/v1" xmlns:common="http://video-metadata.tv.se/common/v1"
+	targetNamespace="http://video-metadata.tv.se/material/v1" version="1.0"
 >
+	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
 	<xs:element name="material" type="materialType">
 		<xs:annotation>
 			<xs:documentation>Root element for material object</xs:documentation>
@@ -10,7 +11,7 @@
 	</xs:element>
 	<xs:complexType name="materialType">
 		<xs:sequence>
-			<xs:element name="providerId" type="xs:string">
+			<xs:element name="providerId" type="common:idType">
 				<xs:annotation>
 					<xs:documentation>id for the provider, could be for example 'se.svt' or 'se.tv4'
 					</xs:documentation>
