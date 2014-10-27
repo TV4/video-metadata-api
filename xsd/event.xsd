@@ -55,19 +55,8 @@
 	</xs:complexType>
 	<xs:complexType name="descriptionListType">
 		<xs:sequence>
-			<xs:element name="description" type="langType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="description" type="common:langType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="langType">
-		<xs:simpleContent>
-			<xs:extension base="xs:string">
-				<xs:attribute name="language" type="xs:language">
-					<xs:annotation>
-						<xs:documentation>code in ISO 639-2</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="embeddedEventType">
 		<xs:annotation>
