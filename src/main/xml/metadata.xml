@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:metadata xmlns:p="http://video-metadata.tv.se/api-messages/v1" xmlns:p1="http://video-metadata.tv.se/content/v1" xmlns:p2="http://video-metadata.tv.se/common/v1"
+	xmlns:p3="http://video-metadata.tv.se/material/v1" xmlns:p4="http://video-metadata.tv.se/schedule/v1" xmlns:p5="http://video-metadata.tv.se/event/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://video-metadata.tv.se/api-messages/v1 ../xsd/api-messages.xsd "
+>
+	<p:header>
+		<p:providerId>p:providerId</p:providerId>
+		<p:seqnr>p:seqnr</p:seqnr>
+		<p:content>content</p:content>
+	</p:header>
+	<p:data>
+		<p:content>
+			<id>id</id>
+			<studio>studio</studio>
+			<productionYear>productionYear</productionYear>
+			<countryOfOriginList>
+				<country>country</country>
+			</countryOfOriginList>
+			<titleList>
+				<title language="EN" original="true">title</title>
+				<titleId>titleId</titleId>
+			</titleList>
+			<genericTitleList>
+				<title language="EN">title</title>
+			</genericTitleList>
+			<descriptionList>
+				<description language="EN" length="tiny">description</description>
+			</descriptionList>
+			<sport>
+				<sportsCategory language="EN">sportsCategory</sportsCategory>
+				<leagueOrCompetitionList>
+					<leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
+				</leagueOrCompetitionList>
+				<roundOrEpisodeList>
+					<roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
+				</roundOrEpisodeList>
+				<homeTeamList>
+					<team language="EN">team</team>
+				</homeTeamList>
+				<awayTeamList>
+					<team language="EN">team</team>
+				</awayTeamList>
+			</sport>
+			<genreList>
+				<genre language="EN" priority="0">genre</genre>
+			</genreList>
+			<dvbGenre>
+				<nibble1>0</nibble1>
+				<nibble2>0</nibble2>
+			</dvbGenre>
+			<keywordList>
+				<keyword language="EN" priority="0">keyword</keyword>
+			</keywordList>
+			<creditList>
+				<credit>
+					<name>name</name>
+					<rolename>rolename</rolename>
+					<function>function</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>provider</provider>
+							<id>id</id>
+							<uri>uri</uri>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+			</creditList>
+			<imageList>
+				<image>
+					<imageRef height="0" orientation="landscape" priority="0" purpose="poster" unit="px" width="0">imageRef</imageRef>
+					<captionList>
+						<caption language="EN">caption</caption>
+					</captionList>
+					<copyRightList>
+						<copyRight language="EN">copyRight</copyRight>
+					</copyRightList>
+				</image>
+			</imageList>
+			<categoryList>
+				<category>category</category>
+			</categoryList>
+			<adCategoryList>
+				<category>category</category>
+			</adCategoryList>
+			<parentalRating>0</parentalRating>
+			<externalReferenceList>
+				<externalReference>
+					<provider>provider</provider>
+					<id>id</id>
+					<uri>uri</uri>
+				</externalReference>
+			</externalReferenceList>
+			<brandId>brandId</brandId>
+			<seasonId>seasonId</seasonId>
+			<episodeNumber>0</episodeNumber>
+		</p:content>
+	</p:data>
+</p:metadata>

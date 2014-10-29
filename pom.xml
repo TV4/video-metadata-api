@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<parent>
+		<groupId>se.tv4.teknik.integration</groupId>
+		<artifactId>tv4-maven-root</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>se.tv4.teknik.integration</groupId>
+	<artifactId>video-metadata-api</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>emp-metadata-api</name>
+
+	<properties>
+		<jaxb2MavenPluginVersion>1.6</jaxb2MavenPluginVersion>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<!-- The plugin will generate Java sources from all XML schema files available 
+					in the default schema directory ${project.basedir}/src/main/xsd) -->
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jaxb2-maven-plugin</artifactId>
+				<version>${jaxb2MavenPluginVersion}</version>
+				<executions>
+					<execution>
+						<id>xjc</id>
+						<goals>
+							<goal>xjc</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<packageName>se.tv4.teknik.vmd.generated.jaxb</packageName>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

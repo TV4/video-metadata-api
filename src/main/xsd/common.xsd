@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Document developed by SVT and TV4 2009, 2010, 2011 -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/common/v1" targetNamespace="http://video-metadata.tv.se/common/v1"
+	version="1.0">
+
+	<!-- 
+	Common types used in all XSDs 
+	  -->
+	<xs:simpleType name="idType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-0a-zA-Z\.\-]+" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+	 -->
+	<xs:complexType name="langType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="language" type="xs:language">
+					<xs:annotation>
+						<xs:documentation>code in ISO 639-2</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+</xs:schema>
