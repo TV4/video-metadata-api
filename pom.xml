@@ -19,6 +19,14 @@
 	</properties>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>${basedir}/src/main/xsd</directory>
+				<includes>
+					<include>*.*</include>
+				</includes>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<!-- The plugin will generate Java sources from all XML schema files available 
