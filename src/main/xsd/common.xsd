@@ -8,7 +8,7 @@
 	  -->
 	<xs:simpleType name="idType">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-0a-zA-Z\.\-]+" />
+			<xs:pattern value="[0-0a-zA-Z:_\-\.]+" />
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- 

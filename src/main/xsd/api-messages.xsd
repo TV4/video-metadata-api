@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:api-messages="http://video-metadata.tv.se/api-messages/v1" xmlns:content="http://video-metadata.tv.se/content/v1"
-	xmlns:schedule="http://video-metadata.tv.se/schedule/v1" xmlns:event="http://video-metadata.tv.se/event/v1" xmlns:material="http://video-metadata.tv.se/material/v1"
-	xmlns="http://video-metadata.tv.se/api-messages/v1" targetNamespace="http://video-metadata.tv.se/api-messages/v1" elementFormDefault="qualified"
-	attributeFormDefault="unqualified" version="1.0"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:api-messages="http://video-metadata.tv.se/api-messages/v1" xmlns:common="http://video-metadata.tv.se/common/v1"
+	xmlns:content="http://video-metadata.tv.se/content/v1" xmlns:schedule="http://video-metadata.tv.se/schedule/v1" xmlns:event="http://video-metadata.tv.se/event/v1"
+	xmlns:material="http://video-metadata.tv.se/material/v1" xmlns="http://video-metadata.tv.se/api-messages/v1" targetNamespace="http://video-metadata.tv.se/api-messages/v1"
+	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
+	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/content/v1" schemaLocation="content.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/schedule/v1" schemaLocation="schedule.xsd" />
 	
@@ -63,17 +64,25 @@
 			<xs:documentation></xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="providerId" type="xs:string">
+			<xs:element name="providerId" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>Id for the provider, could be for example 'se.tv4', 'com.cmore', 'se.nyhetsbolaget', ... ID defined by receiver and agreed with
-						sender.
+					<xs:documentation>Unique id for the provider, could be for example 'se.tv4', 'com.cmore', 'se.nyhetsbolaget', ... ID defined by receiver and
+						agreed with sender.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="seqnr" type="xs:string">
+			<xs:element name="msgId" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>Sequence number that is the unique id for asset, unique for each provider. If receiver detects a gap in the sequence number it
-						can issue a query to the source service in order to asynchronously resend the message with the missing seqnnr.
+					<xs:documentation>Id that is the unique id for asset, unique for each provider. If receiver detects a gap in the sequence number it can issue a
+						query to the source service in order to asynchronously resend the message with the missing seqnnr.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="auth" type="xs:anyType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Any text. JSON data, embedded XML or simple character string that hold an authenthcation data. In it simplst form a API key, or
+						more complex XML structure. Note about security: Messages must be protected by encryption (HTTPS) to keep the authentication data secure. This
+						element is optional as the authentication can be passed to the server in an
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -88,12 +97,7 @@
 	</xs:complexType>
 	<xs:complexType name="queryType">
 		<xs:choice>
-			<xs:element name="seqnr" type="xs:string">
-				<xs:annotation>
-					<xs:documentation>
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+			<xs:element name="msgId" type="common:idType" minOccurs="0" maxOccurs="unbounded" />
 			<xs:element name="brandId" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 			<xs:element name="seasonId" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 			<xs:element name="contentId" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
