@@ -90,10 +90,10 @@
 	<xs:complexType name="queryType">
 		<xs:choice>
 			<xs:element name="msgId" type="common:idType" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="brandId" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="seasonId" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="contentId" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="materialId" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="brandId" type="common:idType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="seasonId" type="common:idType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="contentId" type="common:idType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="materialId" type="common:idType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:choice>
 	</xs:complexType>
 	<xs:simpleType name="messageType">
