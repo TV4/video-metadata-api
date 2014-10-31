@@ -118,6 +118,12 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="tagList" type="tagListType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>list of tags (defined ids) for the content
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="creditList" type="creditListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of actors, producers etc. should be consistent within each provider
@@ -242,7 +248,7 @@
 	</xs:complexType>
 	<xs:complexType name="keywordListType">
 		<xs:sequence>
-			<xs:element name="keyword" type="keywordType" minOccurs="0" maxOccurs="50" />
+			<xs:element name="keyword" type="keywordType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="keywordType">
@@ -257,6 +263,16 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<xs:complexType name="tagListType">
+		<xs:sequence>
+			<xs:element name="tag" type="tagType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="tagType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-0a-zA-Z:_\-\.#]+" />
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="genreListType">
 		<xs:sequence>
 			<xs:element name="genre" type="genreType" minOccurs="0" maxOccurs="50" />
