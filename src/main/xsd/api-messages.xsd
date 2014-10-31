@@ -80,9 +80,12 @@
 			</xs:element>
 			<xs:element name="auth" type="xs:anyType" minOccurs="0" maxOccurs="1">
 				<xs:annotation>
-					<xs:documentation>Any text. JSON data, embedded XML or simple character string that hold an authenthcation data. In it simplst form a API key, or
-						more complex XML structure. Note about security: Messages must be protected by encryption (HTTPS) to keep the authentication data secure. This
-						element is optional as the authentication can be passed to the server in an
+					<xs:documentation>
+This element is optional, prefered method is to pass authentication token in HTTP request, 
+and have messages that are free from authentication data.
+Messages must be protected by encryption (HTTPS) to keep the authentication data secured.
+Content can be any text: username/password XML tags, JSON data structure or embedded XML that hold an authenthcation data. 
+In it simplest form it is a API key, but can be a more complex XML structure carrying SAML tookens.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
