@@ -23,17 +23,17 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="brands" type="brandListType">
+			<xs:element name="brandList" type="brandListType">
 				<xs:annotation>
 					<xs:documentation>List of brand entities</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="seasons" type="seasonListType">
+			<xs:element name="seasonList" type="seasonListType">
 				<xs:annotation>
 					<xs:documentation>List of season entities</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="contents" type="contentListType">
+			<xs:element name="contentList" type="contentListType">
 				<xs:annotation>
 					<xs:documentation>List of content entities. content : { program, clip, (ads) }</xs:documentation>
 				</xs:annotation>

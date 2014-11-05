@@ -45,6 +45,16 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="brandList" type="brandListType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>List of brand entities</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="seasonList" type="seasonListType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>List of season entities</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="contentList" type="content:contentListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>content list for the document, could be 0 entries which would indicate no events for this period
