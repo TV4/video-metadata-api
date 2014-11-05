@@ -18,7 +18,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="channelId" type="xs:string">
+			<xs:element name="channelId" type="common:idType">
 				<xs:annotation>
 					<xs:documentation>id for the current service or channel, could be for example 'se.svt.svt2', 'se.svt.play' or 'se.tv4.tv4plus'
 					</xs:documentation>

@@ -24,13 +24,13 @@
 			<xs:documentation>root node of publish</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="providerId" type="xs:string">
+			<xs:element name="providerId" type="common:idType">
 				<xs:annotation>
 					<xs:documentation>id for the provider, could be for example 'se.svt' or 'se.tv4'
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="channelId" type="xs:string" minOccurs="0">
+			<xs:element name="channelId" type="common:idType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>id for the current service or channel, could be for example 'se.svt.svt2', 'se.svt.play' or 'se.tv4.tv4plus'
 					</xs:documentation>
