@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Document developed by SVT and TV4 2009, 2010, 2011 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/event/v1" xmlns:common="http://video-metadata.tv.se/common/v1"
 	targetNamespace="http://video-metadata.tv.se/event/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
@@ -14,13 +13,13 @@
 		<xs:sequence>
 			<xs:element name="id" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>unique id for the event, should start with provider name, for example: 'se.svt.123456'
+					<xs:documentation>unique id for the event, should start with provider name, for example 'se.tv4.123456'
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="channelId" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>id for the current service or channel, could be for example 'se.svt.svt2', 'se.svt.play' or 'se.tv4.tv4plus'
+					<xs:documentation>id for the current service or channel, could be for example 'se.tv4.tv4play'
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -33,7 +32,7 @@
 			</xs:element>
 			<xs:element name="live" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>indicates if this event is live. 
+					<xs:documentation>indicates if this event is live.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -79,13 +78,13 @@
 					</xs:element>
 					<xs:element name="previousEventList" type="basicEventListType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>list if events that occured in time before current event, i.e. same contentId. 
+							<xs:documentation>list if events that occured in time before current event, i.e. same contentId.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="comingEventList" type="basicEventListType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>list of events that occurred in time after current event, i.e. same contentId. 
+							<xs:documentation>list of events that occurred in time after current event, i.e. same contentId.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
