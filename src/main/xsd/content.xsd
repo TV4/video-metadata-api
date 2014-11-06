@@ -321,7 +321,7 @@
 			<xs:extension base="descriptionTextType">
 				<xs:attribute name="length" type="descriptionLengthType" use="optional">
 					<xs:annotation>
-						<xs:documentation>TeliaSonera want's only one description per context. If more is sent we look for "medium"
+						<xs:documentation>
 						</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
@@ -484,13 +484,13 @@
 			<!-- TODO: knasigt namn, borde heta countryList!!! -->
 			<xs:element name="captionList" type="captionListType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
-					<xs:documentation>TeliaSonera hasn't got any implementation for this at moment
+					<xs:documentation>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="copyRightList" type="copyRightsListType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
-					<xs:documentation>TeliaSonera hasn't got any implementation for this at moment
+					<xs:documentation>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>

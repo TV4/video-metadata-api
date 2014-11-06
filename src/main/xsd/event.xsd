@@ -33,14 +33,13 @@
 			</xs:element>
 			<xs:element name="live" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>indicates if this event is live. TeliaSonera hasn't got any implementation for this at moment
+					<xs:documentation>indicates if this event is live. 
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="hidden" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>indicates if this event is hidden, i.e. if it should not be public. TeliaSonera hasn't got any implementation for this at
-						moment
+					<xs:documentation>indicates if this event is hidden, i.e. if it should not be public.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -60,7 +59,7 @@
 	</xs:complexType>
 	<xs:complexType name="embeddedEventType">
 		<xs:annotation>
-			<xs:documentation>TeliaSonera handles embeddedEvents the same way as ordinary events.
+			<xs:documentation>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -80,15 +79,13 @@
 					</xs:element>
 					<xs:element name="previousEventList" type="basicEventListType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>list if events that occured in time before current event, i.e. same contentId. TeliaSonera hasn't got any implementation for
-								this at moment
+							<xs:documentation>list if events that occured in time before current event, i.e. same contentId. 
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="comingEventList" type="basicEventListType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>list of events that occurred in time after current event, i.e. same contentId. TeliaSonera hasn't got any implementation for
-								this at moment
+							<xs:documentation>list of events that occurred in time after current event, i.e. same contentId. 
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>

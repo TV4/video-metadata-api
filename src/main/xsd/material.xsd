@@ -247,7 +247,7 @@
 			<xs:extension base="xs:string">
 				<xs:attribute name="type" type="materialReferenceTypeType">
 					<xs:annotation>
-						<xs:documentation>type of reference, for example video or audio. TeliaSonera isn't intressed in this for the moment
+						<xs:documentation>type of reference, for example video or audio.
 						</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
