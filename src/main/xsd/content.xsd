@@ -94,6 +94,12 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="commentList" type="commentListType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>List of descriptions
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="sport" type="sportType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>For content describing sport material
@@ -218,6 +224,8 @@
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
+					
+					
 					<!-- Moved to abstract super type.
 					 <xs:element name="sport" type="sportType" minOccurs="0">
 						<xs:annotation>
@@ -242,8 +250,21 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="descriptionListType">
+		<xs:annotation>
+			<xs:documentation>Editorial text that describes the content, can be publically published.</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="description" type="descriptionType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="commentListType">
+		<xs:annotation>
+			<xs:documentation>Editorial description that shall not be published, but it can be indexed in a search.
+			Thought usage is to write down descriptiv intro, manuscript or voiceover that applies to the content, 
+			Text is not required to be written to be ready for public view, but the content will be indexed and possible to use in a search.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="comment" type="descriptionType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="keywordListType">
