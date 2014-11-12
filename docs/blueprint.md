@@ -7,7 +7,7 @@ Key concept is the separation between content and the publish/schedule.
 Content is detached and independent from the publication and scheduling of the content.
 
 Request **MUST** be over **HTTPS** (strict HTTPS).
-Authentication/authorisation is communicated via the `X-Api-Key` header.
+Authentication/authorisation is communicated via the `x-api-key` header. (Format of x-api-key to be defined. Alternativees are: basic auth, simple random nonce, or JWT token)
 
 The api will support versioning and multiple versions can co-exsist on the same host. THus the version is in the URL path.
 E.g., test URL: https://emp-test.tv4.se/video-metadta-api/v1/contents
