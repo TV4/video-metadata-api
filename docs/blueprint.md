@@ -33,6 +33,9 @@ The request body **MUST** be a valid [XML] according to the schemas defined: con
     <msg>OK</msg>
 </metadata-response>
 
+### DELETE
+Not supported, no requirement
+
 ## Publish [/publish]
 
 ### POST
@@ -50,6 +53,10 @@ The request body **MUST** be a valid [XML] according to the schemas defined: con
 		<msg>OK</msg>
 	</metadata-response>
 
+### DELETE
+Not supported, in first version.
+Current version of Louise can not make a differense between a delete and change of publication from/to date/time.
+
 ## Publish [/schedule]
 
 ### POST
@@ -66,6 +73,9 @@ The request body **MUST** be a valid [XML] according to the schemas defined: con
 		<status>200</status>
 		<msg>OK</msg>
 	</metadata-response>
+
+### DELETE
+Not supported, no requirement
 	
 # Sender API Endpoints (optional)
 
@@ -89,9 +99,9 @@ The request body **MUST** be a valid [XML] according to the schemas defined: con
 
 # General internal endpoints
 
-## Content [/__status?anyQuery] 
+## Content [/__status] 
 
-General method that will report that the service is alive and kicking and the status of dependencies (other services, databases, etc.)
+General method that will report that the service is alive and kicking and the status of dependencies. E.g., other services, database, ...
 
 ### GET
 

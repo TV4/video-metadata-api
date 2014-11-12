@@ -1,8 +1,12 @@
 video-metadata-api
 ================
 
+<!--
+// Documentation
 // Regular markdown specification: http://daringfireball.net/projects/markdown/
-// REST API markdown: http://apiary.io/blueprint
+// Blueprint dialect used to create REST API markdown: http://apiary.io/blueprint
+// Eclipse plugin for syntax hilight and HTML preview: https://github.com/winterstein/Eclipse-Markdown-Editor-Plugin
+-->
 
 Ibbe 29/10-2014:
 Moved folders xsd and xml from root into src/main
