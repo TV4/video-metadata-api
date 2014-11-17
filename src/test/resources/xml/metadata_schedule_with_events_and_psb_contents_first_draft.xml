@@ -1,0 +1,3488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
+	xmlns:ns3="http://video-metadata.tv.se/schedule/v1" xmlns:ns4="http://video-metadata.tv.se/event/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/content/v1"
+	xmlns:ns7="http://video-metadata.tv.se/material/v1">
+	<ns2:data>
+		<ns2:schedule timestamp="2014-11-13T15:45:22.980+01:00">
+			<ns3:providerId>se.tv4</ns3:providerId>
+			<ns3:channelId>TV4</ns3:channelId>
+			<ns3:from>2014-11-28T05:50:00.000+01:00</ns3:from>
+			<ns3:to>2014-11-29T05:50:00.000+01:00</ns3:to>
+			<ns3:contentList>
+				<content>
+					<id>4811875</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Nyhetsmorgon</title>
+					</titleList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="10" unit="px"
+								height="2454" width="1600" orientation="portrait" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Nyheter</category>
+					</categoryList>
+					<brandId>35006258</brandId>
+				</content>
+				<content>
+					<id>4835078</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Malou efter tio</title>
+						<title original="true" language="SV">Malou Efter tio hösten 2014
+						</title>
+					</titleList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>dd613cd082007c18bc23bdb304db0d21</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Dokumentär</category>
+						<category>Konst</category>
+					</categoryList>
+					<brandId>39369356</brandId>
+					<seasonId>4835033</seasonId>
+					<episodeNumber>45</episodeNumber>
+				</content>
+				<content>
+					<id>4893111</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>GB</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Hem till gården</title>
+						<title original="true" language="SV">Emmerdale XXVII</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Nicola kommer med
+							ett erkännande.</description>
+						<description length="medium" language="SV">Nicola kommer
+							med ett erkännande till Jimmy. Dan ställs inför det faktum att
+							Bob kanske kommer flytta.</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>Charley Webb</name>
+							<rolename>Debbie Dingle</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>114723</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Nicola Wheeler</name>
+							<rolename>Nicola King</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>71198</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Nick Miles</name>
+							<rolename>Jimmy King</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>26479</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Liam Fox</name>
+							<rolename>Dan Spencer</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>673530</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Tony Audenshaw</name>
+							<rolename>Bob Hope</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>504237</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Linton Chiswick</name>
+							<function>Manus</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>642319</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Kate Oates</name>
+							<function>Producent</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>50586456</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Neil Alderton</name>
+							<function>Regissör</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>588658</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>John Whiston</name>
+							<function>Exekutiv producent</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>687870</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>74613571872810eaf56ff880dfa1e485</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Såpopera</category>
+					</categoryList>
+					<brandId>6362133</brandId>
+					<seasonId>4892719</seasonId>
+					<episodeNumber>299</episodeNumber>
+				</content>
+				<content>
+					<id>4893113</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>GB</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Hem till gården</title>
+						<title original="true" language="SV">Emmerdale XXVII</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Cain tar hjälp av
+							Charity.</description>
+						<description length="medium" language="SV">Debbie berättar
+							för Chas om Cameron. Cain tar hjälp av Charity.</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>Lucy Pargeter</name>
+							<rolename>Chas Dingle</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>104796</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Charley Webb</name>
+							<rolename>Debbie Dingle</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>114723</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Dominic Power</name>
+							<rolename>Cameron Murray</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>51987</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Nicola Wheeler</name>
+							<rolename>Nicola King</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>71198</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Tom Mannion</name>
+							<rolename>Steve Harland</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>28745</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Jeff Hordley</name>
+							<rolename>Cain Dingle</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>62891</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Emma Atkins</name>
+							<rolename>Charity Sharma</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>62838</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Paul Roundell</name>
+							<function>Manus</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>587014</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Kate Oates</name>
+							<function>Producent</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>50586456</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Dominic Leclerc</name>
+							<function>Regissör</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>587001</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>John Whiston</name>
+							<function>Exekutiv producent</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>687870</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>74613571872810eaf56ff880dfa1e485</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Såpopera</category>
+					</categoryList>
+					<brandId>6362133</brandId>
+					<seasonId>4892719</seasonId>
+					<episodeNumber>300</episodeNumber>
+				</content>
+				<content>
+					<id>5136554</id>
+					<studio>N/A</studio>
+					<productionYear>2011</productionYear>
+					<countryOfOriginList>
+						<country>GB</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Coronation street</title>
+						<title original="true" language="SV">Coronation Street LII
+						</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Leannes hopp om
+							en baby grusas.</description>
+						<description length="medium" language="SV">Leannes hopp om
+							en baby grusas. Carla öppnar upp sig och berättar om sina
+							problem.</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>74613571872810eaf56ff880dfa1e485</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Såpopera</category>
+					</categoryList>
+					<brandId>126374204</brandId>
+					<seasonId>5136410</seasonId>
+					<episodeNumber>99</episodeNumber>
+				</content>
+				<content>
+					<id>5136555</id>
+					<studio>N/A</studio>
+					<productionYear>2011</productionYear>
+					<countryOfOriginList>
+						<country>GB</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Coronation street</title>
+						<title original="true" language="SV">Coronation Street LII
+						</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Invånarna samlas
+							för en minnestund.</description>
+						<description length="medium" language="SV">Invånarna samlas
+							för en minnestund. Peter håller på att gå under av stress. Kirsty
+							försöker ge Tyrone stöd.</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>74613571872810eaf56ff880dfa1e485</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Såpopera</category>
+					</categoryList>
+					<brandId>126374204</brandId>
+					<seasonId>5136410</seasonId>
+					<episodeNumber>100</episodeNumber>
+				</content>
+				<content>
+					<id>4674139</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>US</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Dr Phil</title>
+						<title original="true" language="SV">Dr Phil 2013</title>
+						<title original="false" language="SV">Trapped by my cop abuser:
+							why won't anyone believe me?</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Dr Phil hjälper
+							en kvinna som har en mörk hemlighet.</description>
+						<description length="medium" language="SV">Doktor Phil får
+							besök av 27-åriga Jennifer som säger att utifrån verkar det som
+							att hon lever i en lycklig relation med George, en före detta
+							polis som är 17 år äldre än Jennifer. Men Jennifer bär på en mörk
+							hemlighet då hon hävdar att George utnyttjade henne sexuellt som
+							liten.</description>
+						<description length="long" language="SV">Doktor Phil får
+							besök av 27-åriga Jennifer som säger att utifrån verkar det som
+							att hon lever i en lycklig relation med George, en före detta
+							polis som är 17 år äldre än Jennifer och även far till hennes tre
+							barn.
+
+							Men Jennifer bär på en mörk hemlighet då hon hävdar att George
+							utnyttjade henne sexuellt medan hon var barn och George dejtade
+							hennes mamma. Nu måste doktor Phil ta reda på sanningen bakom
+							Jennifers skrämmande berättelser.
+						</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>065a09dd51162c14d7d101c4ea654fd7</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Talkshow</category>
+					</categoryList>
+					<brandId>38129896</brandId>
+					<seasonId>4673973</seasonId>
+					<episodeNumber>149</episodeNumber>
+				</content>
+				<content>
+					<id>3302583</id>
+					<studio>N/A</studio>
+					<productionYear>2011</productionYear>
+					<countryOfOriginList>
+						<country>US</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">House</title>
+						<title original="true" language="SV">House VII</title>
+						<title original="false" language="SV">After hours</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Taub får
+							överraskande nyheter.</description>
+						<description length="medium" language="SV">Thirteen får
+							besök av en kvinna hon lärde känna i fängelset. Kvinnan har
+							blivit knivstucken och behöver vård. House tar till drastiska
+							metoder för att avlägsna tumören som växer i hans ben. Taub får
+							överraskande nyheter som han måste förlika sig med.</description>
+						<description length="long" language="SV">Thirteen får besök
+							av en person hon lärde känna i fängelset som blivit knivskuren
+							och behöver vård. När Thirteen får veta att vännen fått återfall
+							och tagit droger lovar hon att inte ta henne till sjuhuset där
+							polisen kan hitta henne. I stället vänder hon sig till Chase för
+							hjälp.
+
+							House tar till drastiska metoder för att avlägsna tumören som växer i
+							hans ben. Taub får överraskande nyheter som han måste förlika sig
+							med.
+						</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>Hugh Laurie</name>
+							<rolename>Gregory House</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>5664</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Lisa Edelstein</name>
+							<rolename>Lisa Cuddy</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>45203</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Omar Epps</name>
+							<rolename>Eric Foreman</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>36099</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Robert Sean Leonard</name>
+							<rolename>James Wilson</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>546376</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Jesse Spencer</name>
+							<rolename>Robert Chase</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>38499</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Peter Jacobson</name>
+							<rolename>Chris Taub</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>81269</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Olivia Wilde</name>
+							<rolename>Remy 'Thirteen' Hadley</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>596567</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Amy Landecker</name>
+							<rolename>Darrien McCurdy</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>86503702</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Kendra Andrews</name>
+							<rolename>Dina</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>96809664</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Brian Huskey</name>
+							<rolename>Riggin</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>671511</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Zena Grey</name>
+							<rolename>Ruby</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>505902</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Miguel Sapochnik</name>
+							<function>Regissör</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>45142</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>bbdc518511949c2d5a4eb7ca81b3b492</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="2" unit="px" height="2000"
+								width="3000" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Drama</category>
+						<category>Hälsa</category>
+					</categoryList>
+					<brandId>14667569</brandId>
+					<seasonId>3302561</seasonId>
+					<episodeNumber>22</episodeNumber>
+				</content>
+				<content>
+					<id>4678777</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Sveriges mästerkock</title>
+						<title original="true" language="SV">Sveriges mästerkock IV
+						</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Kockarna får en
+							chock över råvaran de ska använda.</description>
+						<description length="medium" language="SV">I den första
+							tävlingen får amatörkockarna en chock när de upptäcker vad för
+							råvara de ska tillaga en valfri rätt på. När chocken lagt sig får
+							de ett lugnande besked från juryn och sätter i gång och lagar sin
+							rätt. De som lyckas sämst ställs sedan mot varandra i
+							elimineringen.</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>8cf84fb812c1ecef19f088454529b393</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="4" unit="px" height="2200"
+								width="3300" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Matlagning</category>
+					</categoryList>
+					<brandId>39468037</brandId>
+					<seasonId>4678614</seasonId>
+					<episodeNumber>8</episodeNumber>
+				</content>
+				<content>
+					<id>3944675</id>
+					<studio>N/A</studio>
+					<productionYear>2012</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Äntligen hemma</title>
+						<title original="true" language="SV">Äntligen hemma XVII</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Martin och Björn
+							byter ut fönstren i huset.</description>
+						<description length="medium" language="SV">Martin Timell
+							och Björn Christiernsson byter ut fönstren i huset. Elsa Billgren
+							inreder ett vardagsrum. Bland annat kaklar hon fönsterbrädan och
+							visar ett enkelt sätt att hänga tavlor utan ram. Karin Mannerstål
+							gör en smyckesförvaring.</description>
+						<description length="long" language="SV">Martin Timell och
+							Björn Christiernsson byter ut några fönster, som inte passar
+							husets byggår, till nya med rätt utseende och bättre energivärde.
+							Martin tar sedan tag i de slitna verandafönstren som han skrapar,
+							oljar, kittar och målar om.
+
+							Elsa Billgren fortsätter inreda lägenheten hon började med förra
+							veckan. Nu är det dags för vardagsrummet. Bland annat kaklar hon
+							fönsterbrädan, patinerar en gammal soffa och visar hur man kan
+							hänga tavlor utan ram.
+
+							Karin Mannerstål gör en smyckesförvaring för barn.
+						</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>8cf84fb812c1ecef19f088454529b393</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Livsstil</category>
+						<category>Fritid och hobby</category>
+					</categoryList>
+					<brandId>39375055</brandId>
+					<seasonId>3944667</seasonId>
+					<episodeNumber>5</episodeNumber>
+				</content>
+				<content>
+					<id>4898082</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">V75 klubben</title>
+						<title original="true" language="SV">Trav: V75 klubben (2014)
+						</title>
+					</titleList>
+					<categoryList>
+						<category>Sport</category>
+						<category>Trav/galopp</category>
+					</categoryList>
+					<brandId>44655862</brandId>
+					<seasonId>4898064</seasonId>
+					<episodeNumber>18</episodeNumber>
+				</content>
+				<content>
+					<id>4768849</id>
+					<studio>N/A</studio>
+					<productionYear>2012</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">112 - på liv och död
+						</title>
+						<title original="true" language="SV">112 - på liv och död IX
+						</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">En trafikolycka
+							inträffar i centrala Stockholm.</description>
+						<description length="medium" language="SV">En allvarlig
+							trafikolycka inträffar i centrala Stockholm och brandmannen
+							Marcus rycker ut. Det yttre befälet Magnus tvingas hantera ett
+							våldsamt trafikstopp. Polisen Mats i Haninge larmas ut till några
+							ungdomar som misstänks röka cannabis.</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>39904056b2bc5c69b1710a9d960bdd84</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Dokumentär</category>
+						<category>Reality-TV</category>
+					</categoryList>
+					<brandId>39377118</brandId>
+					<seasonId>4391926</seasonId>
+					<episodeNumber>34</episodeNumber>
+				</content>
+				<content>
+					<id>4572562</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Keno</title>
+						<title original="true" language="SV">Keno</title>
+					</titleList>
+					<categoryList>
+						<category>Gameshow</category>
+					</categoryList>
+					<brandId>50861573</brandId>
+				</content>
+				<content>
+					<id>5078626</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">TV4Nyheterna</title>
+						<title original="true" language="SV">TV4Nyheterna 2014 vard.
+							19.00 från v.26</title>
+					</titleList>
+					<categoryList>
+						<category>Nyheter</category>
+					</categoryList>
+					<brandId>35015204</brandId>
+					<seasonId>5078396</seasonId>
+					<episodeNumber>230</episodeNumber>
+				</content>
+				<content>
+					<id>4810278</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">TV4Vädret</title>
+						<title original="true" language="SV">TV4Vädret 19.25 2014</title>
+					</titleList>
+					<categoryList>
+						<category>Nyheter</category>
+					</categoryList>
+					<brandId>39377896</brandId>
+					<seasonId>4810047</seasonId>
+					<episodeNumber>230</episodeNumber>
+				</content>
+				<content>
+					<id>5044446</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Postkodmiljonären</title>
+						<title original="true" language="SV">X-Postkodmiljonären XVIII
+						</title>
+					</titleList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>79f010b6e4cf7f5340714f54da783b05</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Underhållning</category>
+					</categoryList>
+					<brandId>39471819</brandId>
+					<seasonId>5044360</seasonId>
+					<episodeNumber>29</episodeNumber>
+				</content>
+				<content>
+					<id>4940629</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Idol 2014</title>
+						<title original="true" language="SV">Idol 2014 X</title>
+					</titleList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>16681eb40e82405805e4321e6dbb794a</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Underhållning</category>
+					</categoryList>
+					<brandId>34541772</brandId>
+					<seasonId>4940553</seasonId>
+					<episodeNumber>27</episodeNumber>
+				</content>
+				<content>
+					<id>5031133</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Hellenius hörna</title>
+						<title original="true" language="SV">Hellenius hörna V</title>
+					</titleList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>848a7b20f98165bf72ff19ed91ff6afd</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="4" unit="px" height="2200"
+								width="3300" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Underhållning</category>
+					</categoryList>
+					<brandId>45854795</brandId>
+					<seasonId>5031108</seasonId>
+					<episodeNumber>7</episodeNumber>
+				</content>
+				<content>
+					<id>4828997</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">TV4Nyheterna och sport
+						</title>
+						<title original="true" language="SV">TV4Nyheterna och sport 2014
+							Fre 22.00</title>
+					</titleList>
+					<categoryList>
+						<category>Nyheter</category>
+					</categoryList>
+					<brandId>50390112</brandId>
+					<seasonId>4828974</seasonId>
+					<episodeNumber>23</episodeNumber>
+				</content>
+				<content>
+					<id>4810832</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">TV4Vädret</title>
+						<title original="true" language="SV">TV4Vädret 2014 Fre 22.00
+						</title>
+					</titleList>
+					<categoryList>
+						<category>Nyheter</category>
+					</categoryList>
+					<brandId>44646642</brandId>
+					<seasonId>4810790</seasonId>
+					<episodeNumber>42</episodeNumber>
+				</content>
+				<content>
+					<id>4940652</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Idol 2014</title>
+						<title original="true" language="SV">Idol 2014 - röstningsprogram
+						</title>
+					</titleList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>16681eb40e82405805e4321e6dbb794a</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Underhållning</category>
+					</categoryList>
+					<brandId>34541772</brandId>
+					<seasonId>4940637</seasonId>
+					<episodeNumber>14</episodeNumber>
+				</content>
+				<content>
+					<id>5050990</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Idol extra</title>
+						<title original="true" language="SV">Idol extra III</title>
+					</titleList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>16681eb40e82405805e4321e6dbb794a</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Underhållning</category>
+					</categoryList>
+					<brandId>34541772</brandId>
+					<seasonId>5050980</seasonId>
+					<episodeNumber>10</episodeNumber>
+				</content>
+				<content>
+					<id>4798872</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>US</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Modern family</title>
+						<title original="true" language="SV">Modern Family V</title>
+						<title original="false" language="SV">Sleeper</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Phil trasslar in
+							sig i lögner.</description>
+						<description length="medium" language="SV">Phil misslyckas
+							med den enda uppgift han fått, att stanna hemma och ta emot en
+							hantverkare, vilket tvingar honom att ljuga för Claire. Gloria
+							oroar sig för årets familjeporträtt som hon fått ansvar för att
+							arrangera. Jay låter Stella delta i en hundshow i hemlighet.
+						</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>Ed O'Neill</name>
+							<rolename>Jay Pritchett</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>3506</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Sofia Vergara</name>
+							<rolename>Gloria Delgado-Pritchett</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>529960</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Julie Bowen</name>
+							<rolename>Claire Dunphy</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>39002</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Ty Burrell</name>
+							<rolename>Phil Dunphy</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>516906</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Jesse Ferguson</name>
+							<rolename>Mitchell Pritchett</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>589875</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Eric Stonestreet</name>
+							<rolename>Cameron</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>638423</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>cc2a8fcba9bc335f565749dbae46e1c0</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="6" unit="px" height="2200"
+								width="3300" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Sitcom</category>
+					</categoryList>
+					<brandId>18760248</brandId>
+					<seasonId>4798841</seasonId>
+					<episodeNumber>21</episodeNumber>
+				</content>
+				<content>
+					<id>4798873</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>US</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Modern family</title>
+						<title original="true" language="SV">Modern Family V</title>
+						<title original="false" language="SV">Message received</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Bröllopsbudgeten
+							spricker.</description>
+						<description length="medium" language="SV">Jay, Gloria och
+							Manny utmanar varandra att prova på något nytt. Mitchells och
+							Camerons bröllop överstiger den planerade budgeten och de måste
+							sälja några kära ägodelar. Barnen utsätter Phil och Claire för
+							ett spratt.</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>Ed O'Neill</name>
+							<rolename>Jay Pritchett</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>3506</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Sofia Vergara</name>
+							<rolename>Gloria Delgado-Pritchett</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>529960</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Julie Bowen</name>
+							<rolename>Claire Dunphy</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>39002</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Ty Burrell</name>
+							<rolename>Phil Dunphy</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>516906</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Jesse Ferguson</name>
+							<rolename>Mitchell Pritchett</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>589875</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Eric Stonestreet</name>
+							<rolename>Cameron</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>638423</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>cc2a8fcba9bc335f565749dbae46e1c0</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="4" unit="px" height="2200"
+								width="3300" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Sitcom</category>
+					</categoryList>
+					<brandId>18760248</brandId>
+					<seasonId>4798841</seasonId>
+					<episodeNumber>22</episodeNumber>
+				</content>
+				<content>
+					<id>2027619</id>
+					<studio>N/A</studio>
+					<productionYear>2006</productionYear>
+					<countryOfOriginList>
+						<country>US</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Rika vänner</title>
+						<title original="true" language="SV">Friends with Money</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Romantisk komedi om fyra vänner
+							som finns där för varandra genom vått och torrt. Med bland andra
+							Jennifer Aniston och Joan Cusack.</description>
+						<description length="short" language="SV">Amerikansk
+							romantisk komedi från 2006.</description>
+						<description length="medium" language="SV">Olivia, Franny,
+							Christine och Jane har varit vänner länge och alla utom Olivia är
+							gifta. Medan de andra ägnar sig åt välgörenhet och shopping
+							slavar Olivia som städerska. Trots att de finns där för varandra
+							när det krisar hindrar det inte dem från att tala bakom varandras
+							ryggar.</description>
+						<description length="long" language="SV">Amerikansk
+							romantisk komedi från 2006.
+
+							Olivia (Jennifer Aniston), Franny (Joan Cusack), Christine (Catherine
+							Keener) och Jane (Frances McDormand) har varit vänner länge och
+							alla utom Olivia är gifta. Medan de andra väninnorna ägnar sig åt
+							välgörenhet och shopping slavar Olivia med skurhinken i okända
+							människors hem.
+
+							Trots de fyra väninnornas olika livssituation finns de där för
+							varandra när det krisar, men det hindrar dem inte att diskutera
+							varandras tillkortakommanden bakom varandras ryggar.
+
+							Regissör: Nicole Holofcener.
+						</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>Nicole Holofcener</name>
+							<function>Regissör</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>55127</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Jennifer Aniston</name>
+							<rolename>Olivia</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>29838</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Jason Isaacs</name>
+							<rolename>David</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>15836</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Catherine Keener</name>
+							<rolename>Christine</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>43587</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Frances McDormand</name>
+							<rolename>Jane</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>2765</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Bobby Coleman</name>
+							<rolename>Marcus</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>595676</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Scott Caan</name>
+							<rolename>Mike</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>55415</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Joan Cusack</name>
+							<rolename>Franny</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>2533</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Timm Sharp</name>
+							<rolename>Richard</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>116385</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Greg Germann</name>
+							<rolename>Matt</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>54048</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Simon McBurney</name>
+							<rolename>Aaron</rolename>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>49968</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>94a990462684a2fbb5dfc7fab1c8975d</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="4" unit="px" height="1575"
+								width="2362" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Film</category>
+						<category>Komedi</category>
+					</categoryList>
+				</content>
+				<content>
+					<id>1439390</id>
+					<studio>N/A</studio>
+					<productionYear>1999</productionYear>
+					<countryOfOriginList>
+						<country>DE</country>
+						<country>US</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Sleepy Hollow</title>
+						<title original="true" language="SV">Sleepy Hollow</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Rysare med Johnny Deep och
+							Christina Ricci. En huvudlös ryttare spökar i en liten stad och
+							är ute efter hämnd.</description>
+						<description length="short" language="SV">Amerikansk rysare
+							från 1999.</description>
+						<description length="medium" language="SV">Året är 1799 och
+							polisen Ichabod Crane anländer till staden Sleepy Hollow för att
+							undersöka några mystiska mord. I staden talar alla om den
+							huvudlöse ryttare som spökar i skogen och som är ute för att
+							hämnas för att han blivit mördad.</description>
+						<description length="extended" language="SV">Sleepy Hollow
+							är en amerikansk rysare från 1999.
+
+							Året är 1799 och i den lilla staden Sleepy Hollow har ett antal mord
+							ägt rum.Alla offren har blivit halshuggna och byborna är
+							övertygade om att det är en mystisk, huvudlös ryttare som utfört
+							dåden. Till staden kommer polisen Ichabod Crane som är utrustad
+							med det senaste inom kriminalteknik.
+
+							Han vägrar att tro på alla rykten och ger sig i kast med att
+							undersöka mysteriet med rent vetenskapliga metoder. Till sin
+							hjälp har han Katrina Van Tassle och tillsammans letar de bevis.
+							I deras jakt på ledtrådar får de själva närkontakt med den
+							spöklike ryttaren.
+						</description>
+						<description length="long" language="SV">Amerikansk rysare
+							från 1999.
+
+							Året är 1799 och professor Ichabod Crane från New York-polisen
+							anländer till den lilla staden Sleepy Hollow för att undersöka
+							några mystiska mord. I staden talar alla om den huvudlöse ryttare
+							som spökar i skogen och som är ute för att hämnas för att han
+							blivit mördad. Crane vägrar tro på ortsbefolkningens teorier och
+							anser att det är nonsens.
+
+							Men när Crane undersöker morden krossas hans illusioner när han
+							själv möter den huvudlöse ryttaren.
+						</description>
+					</descriptionList>
+					<creditList>
+						<credit>
+							<name>Tim Burton</name>
+							<function>Regissör</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>5104</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Johnny Depp</name>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>2079</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Christina Ricci</name>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>22988</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Michael Gambon</name>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>5233</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Miranda Richardson</name>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>4638</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Jeffrey Jones</name>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>737</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Casper Van Dien</name>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>49483</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Richard Griffiths</name>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>5209</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Michael Gough</name>
+							<function>Skådespelare</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>5103</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Scott Rudin</name>
+							<function>Producent</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>537375</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Adam Schroeder</name>
+							<function>Producent</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>562443</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>Francis Ford Coppola</name>
+							<function>Exekutiv producent</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>1615</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>ea301f47d65f4dcee950bb2e7816e974</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="5" unit="px" height="1879"
+								width="1601" orientation="portrait" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Film</category>
+						<category>Skräck</category>
+					</categoryList>
+				</content>
+				<content>
+					<id>4807708</id>
+					<studio>N/A</studio>
+					<productionYear>2012</productionYear>
+					<countryOfOriginList>
+						<country>US</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Bloopers</title>
+						<title original="true" language="SV">Bloopers</title>
+					</titleList>
+					<creditList>
+						<credit>
+							<name>N/A</name>
+							<function>V20</function>
+							<externalReferenceList>
+								<externalReference>
+									<provider>se.tv4</provider>
+									<id>78e0fce0d74a1a38d9ff31d3db1a3903</id>
+								</externalReference>
+							</externalReferenceList>
+						</credit>
+					</creditList>
+					<categoryList>
+						<category>Underhållning</category>
+					</categoryList>
+					<brandId>101749784</brandId>
+					<seasonId>4807687</seasonId>
+					<episodeNumber>12</episodeNumber>
+				</content>
+				<content>
+					<id>400000937</id>
+					<studio>N/A</studio>
+					<productionYear>2008</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Sändningsuppehåll</title>
+						<title original="true" language="SV">Sändningsuppehåll</title>
+					</titleList>
+					<categoryList>
+						<category>Övrigt</category>
+					</categoryList>
+				</content>
+				<content>
+					<id>4835033</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Höst 2014</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Svenskt
+							samhällsmagasin från 2014.</description>
+						<description length="medium" language="SV">Samhällsprogram
+							med Malou von Sivers. Aktuella teman och intervjuer med artister,
+							författare och politiker.</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="other" priority="4" unit="px" height="260"
+								width="1000" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Dokumentär</category>
+						<category>Konst</category>
+					</categoryList>
+					<brandId>39369356</brandId>
+				</content>
+				<content>
+					<id>4892719</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Hem till gården</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Brittisk
+							dramaserie. Om det dagliga livet i en liten by i norra England.
+						</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="16" unit="px"
+								height="3300" width="2245" orientation="portrait" />
+						</image>
+					</imageList>
+					<brandId>6362133</brandId>
+				</content>
+				<content>
+					<id>5136410</id>
+					<studio>N/A</studio>
+					<productionYear>2011</productionYear>
+					<countryOfOriginList>
+						<country>GB</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Säsong 52</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Brittisk
+							dramaserie från 2011.</description>
+						<description length="medium" language="SV">Om invånarna på
+							Coronation street i en förort till Manchester.</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="8" unit="px" height="2196"
+								width="3300" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Såpopera</category>
+					</categoryList>
+					<brandId>126374204</brandId>
+				</content>
+				<content>
+					<id>4673973</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>US</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">2013</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Amerikansk talkshow med dr
+							Philip C McGraw som är expert på mänskligt beteende.
+						</description>
+						<description length="short" language="SV">Amerikansk
+							talkshow från 2013.</description>
+						<description length="medium" language="SV">Doktor Philip C
+							McGraw är expert på mänskligt beteende och hans program tar på
+							ett underhållande och upplysande sätt upp allt från människors
+							vanor till frågor om moral.</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="7" unit="px" height="3000"
+								width="1898" orientation="portrait" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Talkshow</category>
+					</categoryList>
+					<brandId>38129896</brandId>
+				</content>
+				<content>
+					<id>3302561</id>
+					<studio>N/A</studio>
+					<productionYear>2011</productionYear>
+					<countryOfOriginList>
+						<country>US</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Säsong 7</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Amerikansk dramaserie. Om den
+							cyniske läkaren House och hans kollegor. Serien har belönats med
+							flera Golden globe och Emmys.</description>
+						<description length="short" language="SV">Amerikansk
+							dramaserie från 2010.</description>
+						<description length="medium" language="SV">Doktor Greg
+							House är ett medicinskt geni som totalt saknar empati. Han säger
+							alltid vad han tycker och att möta patienter är det värsta han
+							vet. Men trots att ledningen på sjukhuset inte uppskattar hans
+							arroganta sätt värdesätter de hans förmåga att lösa till synes
+							oförklarliga sjukdomstillstånd.</description>
+						<description length="long" language="SV">House är en
+							amerikansk dramaserie. Den sjunde säsongen är från 2010 och
+							består av 23 episoder.
+
+							Den cyniske doktor Greg House (Hugh Laurie) är ett medicinskt geni
+							som totalt saknar empati. Men trots att ledningen på
+							Princeton-Plainsboro Teaching Hospital inte uppskattar hans
+							arroganta sätt värdesätter de hans förmåga att lösa till synes
+							oförklarliga sjukdomstillstånd.
+
+							I Houses läkarteam ingår plastikkirurgen Chris Taub (Peter
+							Jacobson), den gåtfulle nummer tretton, doktor Remy Hadley
+							(Olivia Wilde) och neurologen Eric Foreman (Omar Epps).
+						</description>
+						<description length="extended" language="SV">House är en
+							amerikansk dramaserie. Den sjunde säsongen är från 2010 och
+							består av 23 episoder.
+
+							Tv-världens mest cyniske läkare är tillbaka med en sjunde säsong av den
+							Golden globe- och Emmy belönade serien. Ingen kan beskylla doktor
+							Gregory House (Hugh Laurie) för att sakna kreativitet och
+							intelligens, men det där med empati är kanske inte hans starkaste
+							sida. Trots att ledningen på sjukhuset för en ständig kamp mot
+							Houses nyckfulla sätt, är hans genialitet ovärderlig för dem och
+							de krångliga fall som House och hans team ständigt står inför.
+
+							I Houses läkarteam ingår plastikkirurgen Chris Taub (Peter
+							Jacobson) och den gåtfulle nummer tretton, doktor Remy Hadley
+							(Olivia Wilde). Där finns också neurologen Eric Foreman (Omar
+							Epps) som håller koll på House åt klinikchefen Lisa Cuddy (Lisa
+							Edelstein).
+						</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="3" unit="px" height="3000"
+								width="2855" orientation="portrait" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Drama</category>
+						<category>Hälsa</category>
+					</categoryList>
+					<brandId>14667569</brandId>
+				</content>
+				<content>
+					<id>4678614</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Säsong 4</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Svenska amatörkockar visar sin
+							kulinariska konst inför juryn där stjärnkockarna Markus Aujalay,
+							Leif Mannerström och Anders Dahlbom ingår.</description>
+						<description length="short" language="SV">Svensk
+							matlagningsserie från 2014.</description>
+						<description length="medium" language="SV">Här tävlar
+							svenska amatörkockar när de tar steget ut från sitt eget kök till
+							att laga mat på toppnivå. Inför juryn, bestående av
+							stjärnkockarna Markus Aujalay, Leif Mannerström och Anders
+							Dahlbom, ska de visa upp sina kulinariska kunskaper.
+						</description>
+						<description length="long" language="SV">Sveriges
+							mästerkock är en svensk matlagningsserie från 2014 som sänds i 15
+							avsnitt.
+
+							Här ska svenska amatörkockar ta steget ut från sina egna kök till
+							att laga mat på toppnivå. Inför juryn ska de visa upp sina
+							kulinariska kunskaper och leverera i varje moment. Ingen sitter
+							säkert, det gäller att hela tiden prestera på topp för att få
+							vara kvar i tävlingen.
+
+							Vinnaren i Sveriges mästerkock får en kvarts miljon kronor och ett
+							kokbokskontrakt med Bonnier Fakta.
+
+							Juryn består av Markus Aujalay, Leif Mannerström och Anders Dahlbom.
+						</description>
+						<description length="extended" language="SV">Sveriges
+							mästerkock är en svensk matlagningstävling från 2014 som sänds i
+							15 avsnitt. Det här är den fjärde säsongen.
+
+							Förra våren tog Jennie Walldén från Skåne hem titeln Sveriges
+							mästerkock, ett kokbokskontrakt och 250 000 kronor. Det blev
+							startskottet för en helt ny karriär och en dröm gick i
+							uppfyllelse. Nu är Sveriges mästerkock tillbaka med ett nytt gäng
+							aspirerande kockar och landets tuffaste jury, som har fått ett
+							nytillskott i form av den prisbelönte kocken Anders Dahlbom.
+
+							Juryn där kockarna Anders Dahlbom, Markus Aujalay och Leif
+							Mannerström ingår ska bedöma matlagningsglada amatörer med
+							kockdrömmar. Precis som tidigare handlar tävlingen lika mycket om
+							förstklassig matlagning som att klara av att hålla
+							tävlingsnerverna i schack om man vill ha chans att ta hem den
+							prestigefyllda titeln.
+
+							De tre första säsongerna av Sveriges mästerkock blev stora
+							tittarframgångar. Programmet har tre år i rad belönats med
+							tv-priset Kristallen i kategorin Årets dokusåpa.
+
+							Deltagarna i Sveriges mästerkock 2014:
+							Ala Abasi, skattejurist, 30 år, Uppsala.
+							Lovisa Berg, matbloggare, 22 år, Falkenberg.
+							Anders Gustafsson, elektriker, 32 år, Göteborg.
+							Monika Hallberg, egenföretagare, 53 år, Linköping.
+							Lennie Hansson, lastbilschaufför, 30 år, Sundsvall.
+							Amir Kheirmand, egenföretagare, 34 år, Västerås.
+							Laurent Krummenacher, ingenjör, 46 år, Huddinge.
+							Linnéa Lindgren, cirkelledare, 23 år, Lund.
+							Oskar Montano, egenföretagare, 24 år, Stockholm.
+							Markiz Talhaoui, digital marknadsförare, 27 år, Stockholm.
+							Jane Veiga Da Rosa, försäljare, 47 år, Göteborg.
+							Anders Östblom, art director, 45 år, Stockholm.
+						</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="17" unit="px"
+								height="3300" width="2200" orientation="portrait" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Matlagning</category>
+					</categoryList>
+					<brandId>39468037</brandId>
+				</content>
+				<content>
+					<id>3944667</id>
+					<studio>N/A</studio>
+					<productionYear>2012</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Säsong 17</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">I den här säsongen tar Martin
+							Timell och hans kolleger sig an ett hus från 1928 som är i stort
+							behov av renovering.</description>
+						<description length="short" language="SV">Svenskt
+							inredningsprogram från 2012.</description>
+						<description length="medium" language="SV">Martin Timell
+							och hans kolleger tar sig an ett hus från 1928 som är i stort
+							behov av renovering. Temat är att bevara tradition, kultur och
+							hantverk och att använda gedigna material med lång livslängd,
+							utan att göra avkall på modernt tänkande.</description>
+						<description length="long" language="SV">Äntligen hemma är
+							en svensk inredningsserie från 2012. De här är den sjuttonde
+							säsongen som sänds i tio avsnitt.
+
+							Martin Timell och hans kollegor tar sig an ett hus från 1928 som
+							verkligen behöver renoveras. Temat är att bevara tradition,
+							kultur och hantverk och att använda gedigna material med lång
+							livslängd, utan att göra avkall på modernt tänkande.
+
+							Som vanligt har Martin hjälp av kollegorna Elsa Billgren, Lulu
+							Carter, Björn Christiernsson, Karin Mannerstål och Bosse Rappne.
+						</description>
+						<description length="extended" language="SV">Äntligen hemma
+							är en svensk inredningsserie från 2012. De här är den sjuttonde
+							säsongen som sänds i tio avsnitt.
+
+							Martin Timell och hans kollegor tar sig an ett hus från 1928 som
+							verkligen behöver renoveras. Temat är att bevara tradition,
+							kultur och hantverk och att använda gedigna material med lång
+							livslängd, utan att göra avkall på modernt tänkande. Teamet
+							bygger bland annat ett stort skafferi och byter fönster mot nya i
+							gammal stil med riktigt kulturglas. Tittarna får självklart
+							massor av tips, som hur man kan genomföra energibesparingar i
+							sitt gamla hus.
+
+							Som vanligt har Martin hjälp av kollegorna Elsa Billgren, Lulu
+							Carter, Björn Christiernsson, Karin Mannerstål och Bosse Rappne.
+						</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="8" unit="px" height="3543"
+								width="2362" orientation="portrait" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Livsstil</category>
+					</categoryList>
+					<brandId>39375055</brandId>
+				</content>
+				<content>
+					<id>4898064</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">V75-klubben</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Travmagasin.
+						</description>
+					</descriptionList>
+					<brandId>44655862</brandId>
+				</content>
+				<content>
+					<id>4391926</id>
+					<studio>N/A</studio>
+					<productionYear>2012</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Säsong 9</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Dokumentärserien skildrar
+							brandmäns, polisers och ambulanssjuksköterskors svåra arbetsliv
+							samt människorna bakom yrkesrollerna.</description>
+						<description length="short" language="SV">Svensk
+							dokumentärserie från 2014.</description>
+						<description length="medium" language="SV">Serien skildrar
+							brandmäns, polisers och ambulanssjuksköterskors svåra arbetsliv
+							samt människorna bakom yrkesrollerna. Starka känslor, spänning
+							och snabba beslut blandas med humor, värme och hopp om att hinna
+							fram i tid för att kunna rädda liv och förhindra brott.
+						</description>
+						<description length="long" language="SV">112 - på liv och
+							död är en svensk dokumentärserie från 2014. Den nionde säsongen
+							sänds i 36 delar.
+
+							Serien följer brandmän, poliser och ambulanssjuksköterskor i deras
+							arbete. Programmen skildrar deras vardag men även personerna
+							bakom yrkesrollerna. Starka känslor och snabba beslut blandas med
+							värme och hopp om att rädda liv och förhindra brott och olyckor.
+
+							I den här säsongen medverkar brandmän på Brännkyrkas, Johannes
+							och Farstas brandstationer, poliser i Åmål, Huddinge och Handen
+							samt ambulanssjuksköterskor i Karlskrona och Karlshamn.
+						</description>
+						<description length="extended" language="SV">112 - på liv
+							och död är en svensk dokumentärserie från 2014. Den nionde
+							säsongen sänds i 36 delar.
+
+							Serien följer brandmän, poliser och ambulanssjuksköterskor i deras
+							arbete. Programmen skildrar de medverkandes svåra vardag men även
+							personerna bakom yrkesrollerna. Starka känslor, turbulens,
+							spänning och snabba beslut blandas med humor, värme och hopp om
+							att hinna fram i tid, rädda liv och förhindra brott och olyckor.
+
+							I den nionde säsongen medverkar återigen brandmännen Jörgen,
+							Rickard och Thomas på Brännkyrka brandstation i Stockholm. Den
+							här säsongen följer även det yttre befälet Barry, brandförmannen
+							Roger samt brandmännen Olof och Markus på Johannes brandstation.
+							Medverkar gör också brandmännen Tony och nykomlingen Sebastian på
+							Farsta brandstation i Stockholm.
+
+							Den nionde säsongen av 112 - på liv och död fortsätter att följa det
+							yttre befälet Anders, polisassistenten Hanna samt nykomlingarna
+							Annsi och Gunilla på polisen i Åmål. I den här säsongen medverkar
+							också det yttre befälet Reine och polisassistenterna Andreas,
+							Daniel, Camilla och Gustav i Huddinge samt det yttre befälet
+							Magnus, polisassistenterna Kristoffer och Mats samt gruppchefen
+							Daniel i Handen.
+
+							Serien fortsätter att följa ambulanssjuksköterskorna Jan-Erik och
+							Angelika samt nykomlingarna Per, Annmarie, Peter och Nicklas i
+							Karlskrona. Den här säsongen följer även ambulanssjuksköterskan
+							Anneli i Karlshamn.
+						</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="20" unit="px"
+								height="2200" width="3300" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Dokumentär</category>
+						<category>Reality-TV</category>
+					</categoryList>
+					<brandId>39377118</brandId>
+				</content>
+				<content>
+					<id>5078396</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">2014</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Svenskt
+							nyhetsprogram från 2014.</description>
+					</descriptionList>
+					<categoryList>
+						<category>Nyheter</category>
+					</categoryList>
+					<brandId>35015204</brandId>
+				</content>
+				<content>
+					<id>4810047</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">2014</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Väderprognos
+							från TV4.</description>
+					</descriptionList>
+					<categoryList>
+						<category>Nyheter</category>
+					</categoryList>
+					<brandId>39377896</brandId>
+				</content>
+				<content>
+					<id>5044360</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Säsong 18</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">En person har chans att vinna en
+							miljon kronor genom att svara rätt på femton frågor.
+						</description>
+						<description length="short" language="SV">Svenskt
+							frågesportsprogram från 2014.</description>
+						<description length="medium" language="SV">En person har
+							chans att vinna en miljon kronor genom att svara rätt på femton
+							frågor. Förutom detta har även tittarna möjlighet att vinna stora
+							pengar på sin bostadsadress genom att vara med i Svenska
+							Postkodlotteriet. Programledare: Rickard Sjöberg.</description>
+					</descriptionList>
+					<categoryList>
+						<category>Underhållning</category>
+					</categoryList>
+					<brandId>39471819</brandId>
+				</content>
+				<content>
+					<id>4940553</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Säsong 10</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Svenskt underhållningsprogram.
+							Okända talanger får chansen att visa vad de kan inför en jury.
+							Programledare: Pär Lernström.</description>
+						<description length="short" language="SV">Svenskt
+							underhållningsprogram från 2014.</description>
+						<description length="medium" language="SV">Okända talanger
+							får chansen att visa vad de kan inför en jury som består av
+							Anders Bagge, Laila Bagge Wahlgren och Alexander Bard. Av
+							tiotusentals manade kommer till sist bara en att stå som vinnare,
+							framröstad av tittarna. Programledare: Pär Lernström.
+						</description>
+						<description length="long" language="SV">Idol 2014 är ett
+							svenskt underhållningsprogram från 2014. Det här är den tionde
+							säsongen som sänds i 28 delar.
+
+							Loreen, Darin och Robin Stjernberg startade alla sina artistkarriärer
+							efter att ha medverkat i programmet och i höst ska nästa stjärna
+							på artisthimlen koras.
+
+							Juryn, som består av Anders Bagge, Laila Bagge Wahlgren och Alexander
+							Bard, sovrar bland de tiotusentals hoppfulla som sökt till
+							programmet men tittarna bestämmer, bara en kan vinna. Pär
+							Lernström leder programmet.
+						</description>
+						<description length="extended" language="SV">Idol 2014 är
+							ett svenskt underhållningsprogram från 2014. Det här är den
+							tionde säsongen som sänds i 28 delar.
+
+							Loreen, Darin och Robin Stjernberg startade alla sina artistkarriärer
+							efter att ha medverkat i programmet och i höst ska nästa stjärna
+							på artisthimlen koras. Juryn som består av Anders Bagge, Laila
+							Bagge Wahlgren och Alexander Bard, sovrar bland de tiotusentals
+							hoppfulla som sökt till programmet men tittarna bestämmer, bara
+							en kan vinna. Pär Lernström leder programmet.
+
+							Laila Bagge är manager och talangscout. Hon har arbetat för Sony BMG i
+							New York med skivbolagsmogulen Tommy Motola som chef. Laila sägs
+							ha en god förmåga att hitta talanger. Som manager satte hon ihop
+							tjejbandet Play, som fick skivkontrakt med Sony BMG NY. Play blev
+							senare förband till Destiny's Child på deras världsturné och
+							sålde runt en miljon skivor i USA.
+
+							Anders Bagge är producent och låtskrivare. Han är ett känt namn i såväl
+							svenska som internationella musikkretsar. Han har bland annat
+							skrivit och producerat låtar åt Madonna, Janet Jackson, Santana,
+							Jennifer Lopez, Nick Lachey, Jessica Simpson, Celine Dion och
+							Enrique Iglesias.
+
+							Alexander Bard har länge arbetat som låtskrivare, musiker och producent.
+							Han är mest känd som artist i band som Army of Lovers, BWO och
+							senast i Gravitonas, men har även grundat och drivit skivbolag
+							med bland andra Ola Håkansson och Peter Swartling.
+
+							Pär Lernström har förutom Idol också lett humorprogrammet
+							Parlamentet, Veckans svensk, Fantasterna och Kockarnas kamp i
+							TV4. Pär har även jobbat på Sveriges Radio och Utbildningsradion.
+						</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="30" unit="px"
+								height="2475" width="3300" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Underhållning</category>
+					</categoryList>
+					<brandId>34541772</brandId>
+				</content>
+				<content>
+					<id>5031108</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Säsong 5</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Talkshow med David Hellenius som
+							möter kända och aktuella gäster.</description>
+						<description length="short" language="SV">Svensk talkshow
+							från 2014.</description>
+						<description length="medium" language="SV">David Hellenius
+							möter kända och aktuella gäster. Det blir sketcher knutna till
+							gästerna men också till de senaste samtalsämnena.</description>
+						<description length="long" language="SV">Hellenius hörna är
+							en svensk talkshow från 2014. Det här är den femte säsongen som
+							sänds i tio avsnitt.
+
+							David Hellenius tar vid där han lämnade hörnan förra säsongen och
+							bjuder in till den femte omgången med fler välkända och
+							intressanta gäster. Det blir sketcher knutna till gästerna men
+							också till de senaste samtalsämnena.
+
+							Tidigare säsonger har David bland andra gästats av Victoria Silvstedt,
+							Tomas Ledin, Fredrik Reinfeldt, Carola Häggkvist, Malin Åkerman
+							och Lena Olin.
+						</description>
+						<description length="extended" language="SV">Hellenius
+							hörna är en svensk talkshow från 2014. Det här är den femte
+							säsongen som sänds i tio avsnitt.
+
+							David Hellenius tar vid där han lämnade hörnan förra säsongen och
+							bjuder in till den femte omgången med fler välkända och
+							intressanta gäster. Självklart blir det även ett knippe humor á
+							la Hellenius.
+
+							I tidigare säsonger har gäster som Victoria Silvstedt, Tomas
+							Ledin, Fredrik Reinfeldt, Carola Häggkvist, Malin Åkerman och
+							Lena Olin in och David den här säsogen gästas han av bland andra
+							prins Carl Philip som för första gången ställer upp i en längre
+							tv-intervju.
+
+							David Hellenius är en av TV4:s mest anlitade programledare och han har
+							bland annat varit programledare för Kändisdjungeln, Idol, Let's
+							dance, X-factor Sweden, Helt sjukt och Humorgalan.
+							Han har medverkat i flera humorprogram som Hey baberiba och Fredag
+							hela veckan samt i flera filmer. För tredje gången blev David
+							tilldelad en Kristall för Årets manliga programledare vid årets
+							gala.
+						</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="3" unit="px" height="3300"
+								width="2475" orientation="portrait" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Talkshow</category>
+					</categoryList>
+					<brandId>45854795</brandId>
+				</content>
+				<content>
+					<id>4828974</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">2014</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Nyheter och
+							sport.</description>
+					</descriptionList>
+					<categoryList>
+						<category>Nyheter</category>
+					</categoryList>
+					<brandId>50390112</brandId>
+				</content>
+				<content>
+					<id>4810790</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">2014</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Väderprogram från
+							2014.</description>
+						<description length="medium" language="SV">Väderprognos
+							från TV4.</description>
+					</descriptionList>
+					<categoryList>
+						<category>Nyheter</category>
+					</categoryList>
+					<brandId>45294163</brandId>
+				</content>
+				<content>
+					<id>4940637</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Säsong 10</title>
+					</titleList>
+					<descriptionList>
+						<description length="short" language="SV">Svenskt
+							underhållningsprogram från 2014.</description>
+						<description length="medium" language="SV">Resultatet av
+							kvällens röstningar i Idol redovisas.</description>
+					</descriptionList>
+					<categoryList>
+						<category>Underhållning</category>
+					</categoryList>
+					<brandId>34541772</brandId>
+				</content>
+				<content>
+					<id>5050980</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Säsong 3</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Malin Stenbäck och Andreas Weise
+							bjuder på intervjuer och eftersnack.</description>
+						<description length="short" language="SV">Svenskt
+							underhållningsprogram från 2014.</description>
+						<description length="medium" language="SV">Malin Stenbäck
+							och Andreas Weise bjuder på intervjuer, eftersnack och analyser
+							tillsammans med journalister, bloggare, jurymedlemmar och
+							tävlande.</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="1" unit="px" height="2191"
+								width="3300" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Underhållning</category>
+					</categoryList>
+					<brandId>34541772</brandId>
+				</content>
+				<content>
+					<id>4798841</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>US</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Säsong 5</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Modern family handlar om det
+							komplicerade, struliga, underbara och kärleksfulla livet i tre
+							nutida amerikanska familjer.</description>
+						<description length="short" language="SV">Amerikansk
+							komediserie från 2013/2014.</description>
+						<description length="medium" language="SV">Om det
+							komplicerade livet hos en amerikansk familj. I centrum står Jay
+							Pritchett, han har vuxna barn, barnbarn, en vacker ung fru och en
+							nyfödd bebis. Det är ingen lätt uppgift att försöka hålla ihop
+							familjen när alla har starka viljor, men när det gäller ställer
+							de alltid upp för varandra.</description>
+						<description length="long" language="SV">Modern family är
+							en amerikansk komediserie från 2013/2014 som sänds i 24 delar.
+
+							Serien handlar om det komplicerade, struliga, underbara och
+							kärleksfulla livet i tre nutida amerikanska familjer, alla med
+							sina egenheter. Serien har belönats med bland annat tre Emmys för
+							bästa komediserie.
+
+							I centrum står Jay Pritchett, han har vuxna barn, barnbarn och en
+							vacker ung fru med en son. Det är ingen lätt uppgift att försöka
+							hålla ihop familjen när alla har starka viljor. Men när det
+							gäller ställer de alltid upp för varandra.
+						</description>
+						<description length="extended" language="SV">Modern family
+							är en amerikansk komediserie från 2013/2014. Det här är den femte
+							säsongen som sänds i 24 delar.
+
+							Serien handlar om det komplicerade, struliga, underbara och
+							kärleksfulla livet i tre nutida amerikanska familjer, alla med
+							sina egenheter. Serien har belönats med bland annat tre Emmys för
+							bästa komediserie.
+
+							I den femte säsongen försöker Jay Pritchett (Ed O'Neill) och hans
+							fru Gloria (Sofia Vergara) anpassa sig till sitt nya liv som
+							småbarnsföräldrar samtidigt som Glorias son Manny (Rico
+							Rodriguez) står inför ett nytt kapitel i sitt liv.
+
+							Jays dotter, Claire Dunphy (Julie Bowen) och hennes man Phil (Ty
+							Burrell) inser att deras barn Haley (Sarah Hyland), Luke (Nolan
+							Gould) och Alex (Ariel Winter) snart är vuxna och det är dags för
+							Claire att ge sig ut i arbetslivet igen.
+
+							Hos Jays son Mitchell (Jesse Tyler Ferguson), hans sambo Cameron
+							(Eric Stonestreet) och deras dotter Lily (Aubrey Anderson-Emmons)
+							blåser också förändringens vindar och de har mycket att se fram
+							emot.
+						</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="13" unit="px"
+								height="3300" width="2472" orientation="portrait" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Sitcom</category>
+					</categoryList>
+					<brandId>18760248</brandId>
+				</content>
+				<content>
+					<id>4807687</id>
+					<studio>N/A</studio>
+					<productionYear>2012</productionYear>
+					<countryOfOriginList>
+						<country>US</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Bloopers</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Amerikansk underhållningsserie.
+							Dean Cain presenterar underhållande och galna videoklipp.
+						</description>
+						<description length="short" language="SV">Amerikansk
+							underhållningsserie från 2012.</description>
+						<description length="medium" language="SV">Dean Cain
+							presenterar underhållande och galna videoklipp. Det blir allt
+							från smärtsamma misstag till häpnadsväckande djur och förtjusande
+							småbarn. Dessutom blir det dolda kameran-inslag där allt kan
+							hända.</description>
+					</descriptionList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="6" unit="px" height="1080"
+								width="1920" orientation="landscape" />
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Underhållning</category>
+					</categoryList>
+					<brandId>101749784</brandId>
+				</content>
+				<content>
+					<id>35006258</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Nyhetsmorgon</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Direktsänt morgonprogram som
+							leds av Tilde de Paula och Peter Jihde eller Jenny Strömstedt och
+							Steffo Törnquist.</description>
+						<description length="short" language="SV">Direktsänt
+							morgonprogram.</description>
+						<description length="medium" language="SV">Direktsänt
+							morgonprogram som leds av Tilde de Paula och Peter Jihde eller
+							Jenny Strömstedt och Steffo Törnquist. Nyheter varvas med
+							fördjupande diskussioner, bevakning av de senaste trenderna,
+							personliga intervjuer, kultur och sport.</description>
+						<description length="long" language="SV">Nyhetsmorgon
+							levererar de senaste nyheterna i TV4.
+
+							Sveriges största morgonprogram sänder direkt varje morgon, året runt.
+							Nyheter varvas med fördjupande diskussioner, bevakning av de
+							senaste trenderna, personliga intervjuer, kultur och sport.
+
+							Tilde de Paula och Peter Jihde basar för måndagar, tisdagar och
+							onsdagar. Radarparet Jenny Strömstedt och Steffo Törnquist rattar
+							torsdagar och fredagar medan Jesper Börjesson styr lördagarna. På
+							söndagarna roterar Agneta Sjödin och Jessica Almenäs på
+							programledarposten.
+						</description>
+					</descriptionList>
+					<categoryList>
+						<category>Nyheter</category>
+					</categoryList>
+				</content>
+				<content>
+					<id>50861573</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Keno</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Redovisning av
+							dagens Kenodragning.</description>
+					</descriptionList>
+					<categoryList>
+						<category>Gameshow</category>
+					</categoryList>
+				</content>
+				<content>
+					<id>39369356</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Malou efter tio</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Svenskt
+							samhällsprogram med Malou von Sivers. Aktuella teman och
+							intervjuer med artister, författare och politiker.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>6362133</id>
+					<studio>N/A</studio>
+					<productionYear>2013</productionYear>
+					<countryOfOriginList>
+						<country>GB</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">Hem till gården</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Brittisk
+							dramaserie. Om det dagliga livet i en liten by i norra England.
+						</description>
+					</descriptionList>
+					<categoryList>
+						<category>Såpopera</category>
+					</categoryList>
+				</content>
+				<content>
+					<id>126374204</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Coronation street</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Brittisk
+							dramaserie. Om invånarna på Coronation street i en förort till
+							Manchester.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>38129896</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Dr Phil</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Amerikansk
+							talkshow. Doktor Philip C McGraw är expert på mänskligt beteende
+							och hans program tar på ett underhållande och upplysande sätt upp
+							allt från människors vanor till frågor om rätt och moral.
+						</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>14667569</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">House</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Amerikansk
+							dramaserie. Den cyniske doktor Greg House är ett medicinskt geni
+							som totalt saknar empati. Han säger alltid vad han tycker och att
+							möta patienter är det värsta han vet.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>39468037</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Sveriges mästerkock</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Svensk
+							underhållningsserie. Här följer man svenska amatörkockar som
+							inför en jury ska visa upp sina kulinariska kunskaper. Men ingen
+							sitter säkert, det gäller att hela tiden prestera på topp för att
+							få vara kvar i tävlingen.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>39375055</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Äntligen hemma</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Svenskt
+							inredningsprogram. Programmet ger råd och tips om inredning,
+							trädgårdsskötsel, renovering och design.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>44655862</id>
+					<studio>N/A</studio>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="SV">V75-klubben</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Travmagasin.
+						</description>
+					</descriptionList>
+					<categoryList>
+						<category>Sport</category>
+						<category>Trav/galopp</category>
+					</categoryList>
+				</content>
+				<content>
+					<id>39377118</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">112 - på liv och död
+						</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Svensk
+							dokumentärserie som följer brandmän, ambulanspersonal och poliser
+							i deras dagliga arbete som är fyllt av dramatik i stort och
+							smått. Serien skildrar de medverkandes tuffa jobbvardag men även
+							personerna bakom yrkesrollerna.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>35015204</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">TV4Nyheterna</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Nyheter från
+							TV4.</description>
+						<description length="extended" language="SV">Skandinaviens
+							största nyhetsförmedlare uppdaterar tittarna med den senaste
+							nyhetsutvecklingen i tv, på webben och i mobiltelefonen 24 timmar
+							om dygnet, året om.
+
+							Varje nyhetssändning profileras av ett huvudankare. Anna Lindmarker,
+							Anders Kraft eller Ulrika Nilsson leder TV4Nyheterna klockan
+							19.00 under vardagar och helger. Bengt Magnusson är huvudankaret
+							för Nyhetstimmen klockan 22.00 varje måndag till torsdag. Maud
+							Bernhagen presenterar Sporten och Rafaela Lindeberg leder
+							Ekonominyheterna.
+
+							Dessutom sänds nyheter varje halvtimme i Nyhetsmorgon på vardagarna och
+							varje heltimme på helgerna.
+
+							Tittarna kan även följa den lokala och globala nyhetsutvecklingen dygnet
+							runt via ständigt uppdaterade artiklar och webb-tv på
+							TV4.se/nyheter. Nyheter kan dessutom läsas på text-tv och ses på
+							TV4Play.
+						</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>39377896</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Väder</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Väderrapport
+							från TV4.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>39471819</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Postkodmiljonären</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Svenskt lotteri-
+							och frågesportsprogram. En tävlande har chans att vinna en miljon
+							kronor om personen klarar av femton frågor. Tittarna har även
+							möjlighet att vinna pengar på sin bostadsadress genom att vara
+							med i Svenska Postkodlotteriet.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>34541772</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Idol</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Svensk
+							underhållning. Okända talanger får chansen att visa vad de kan
+							inför en kritisk jury. Uttagningarna sker runt om i landet, där
+							juryn söker efter talanger. Till slut ska tittarna rösta fram en
+							enda vinnare, Sveriges nya popidol, med ett skivkontrakt som
+							första pris.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>45854795</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Hellenius hörna</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Svensk talkshow.
+							David Hellenius möter kända och aktuella gäster.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>50390112</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">TV4Nyheterna och sport
+						</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Nyheter med
+							sport från TV4.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>45294163</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">TV4Vädret</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Väderprognos
+							från TV4.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>18760248</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Modern family</title>
+					</titleList>
+					<descriptionList>
+						<description length="medium" language="SV">Amerikansk
+							komediserie om det komplicerade, struliga, underbara och
+							kärleksfulla livet i tre nutida amerikanska familjer, alla med
+							sina egenheter.</description>
+					</descriptionList>
+				</content>
+				<content>
+					<id>101749784</id>
+					<studio>N/A</studio>
+					<titleList>
+						<title original="false" language="SV">Bloopers</title>
+					</titleList>
+					<descriptionList>
+						<description language="SV">Amerikansk underhållningsserie.
+							Dean Cain presenterar underhållande och galna videoklipp.
+						</description>
+						<description length="short" language="SV">Amerikansk
+							underhållningsserie från 2012.</description>
+						<description length="medium" language="SV">Dean Cain
+							presenterar underhållande och galna videoklipp. Det blir allt
+							från smärtsamma misstag till häpnadsväckande djur och förtjusande
+							småbarn. Dessutom blir det dolda kameran-inslag där allt kan
+							hända.</description>
+					</descriptionList>
+				</content>
+			</ns3:contentList>
+			<ns3:eventList>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26550209</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>true</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26550209
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T05:50:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T10:00:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2014-12-01T05:50:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-12-01T10:00:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4811875</ns4:contentIdRef>
+					<ns4:materialIdRef>4811875</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26547611</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26547611
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T10:00:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T11:35:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4835078</ns4:contentIdRef>
+					<ns4:materialIdRef>4835078</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26764665</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26764665
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T11:35:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T12:10:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2014-12-01T03:35:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-12-01T04:10:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4893111</ns4:contentIdRef>
+					<ns4:materialIdRef>4893111</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26764667</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26764667
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T12:10:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T12:45:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2014-12-01T04:10:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-12-01T04:45:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4893113</ns4:contentIdRef>
+					<ns4:materialIdRef>4893113</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26478315</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26478315
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T12:45:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T13:20:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>5136554</ns4:contentIdRef>
+					<ns4:materialIdRef>5136554</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26478317</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26478317
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T13:20:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T13:55:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>5136555</ns4:contentIdRef>
+					<ns4:materialIdRef>5136555</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26490845</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26490845
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T13:55:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T14:55:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4674139</ns4:contentIdRef>
+					<ns4:materialIdRef>4674139</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26479361</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26479361
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T14:55:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T15:55:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2012-03-06T21:00:00.000+01:00</ns4:startTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>3302583</ns4:contentIdRef>
+					<ns4:materialIdRef>3302583</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26490094</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26490094
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T15:55:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T16:55:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2014-02-12T20:00:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-02-12T21:00:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4678777</ns4:contentIdRef>
+					<ns4:materialIdRef>4678777</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26490600</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26490600
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T16:55:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T17:50:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2012-11-06T20:00:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2012-11-06T21:00:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>3944675</ns4:contentIdRef>
+					<ns4:materialIdRef>3944675</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>27178905</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>true</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_27178905
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T17:50:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T18:00:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4898082</ns4:contentIdRef>
+					<ns4:materialIdRef>4898082</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26928637</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26928637
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T18:00:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T18:50:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4768849</ns4:contentIdRef>
+					<ns4:materialIdRef>4768849</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>24277833</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>true</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_24277833
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T18:50:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T19:00:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2014-11-29T17:55:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-29T18:00:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4572562</ns4:contentIdRef>
+					<ns4:materialIdRef>4572562</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26750322</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>true</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26750322
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T19:00:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T19:20:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>5078626</ns4:contentIdRef>
+					<ns4:materialIdRef>5078626</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26750326</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>true</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26750326
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T19:20:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T19:30:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4810278</ns4:contentIdRef>
+					<ns4:materialIdRef>4810278</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26507706</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26507706
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T19:30:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T20:00:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>5044446</ns4:contentIdRef>
+					<ns4:materialIdRef>5044446</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26510743</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>true</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26510743
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T20:00:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T21:30:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2014-11-29T11:30:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-29T13:00:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4940629</ns4:contentIdRef>
+					<ns4:materialIdRef>4940629</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26395232</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26395232
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T21:30:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T22:00:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>5031133</ns4:contentIdRef>
+					<ns4:materialIdRef>5031133</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26680985</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>true</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26680985
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T22:00:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T22:15:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4828997</ns4:contentIdRef>
+					<ns4:materialIdRef>4828997</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26681047</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>true</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26681047
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T22:15:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T22:25:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4810832</ns4:contentIdRef>
+					<ns4:materialIdRef>4810832</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26510826</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>true</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26510826
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T22:25:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T22:40:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2014-11-29T13:00:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-29T13:20:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4940652</ns4:contentIdRef>
+					<ns4:materialIdRef>4940652</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26510884</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>true</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26510884
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T22:40:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T23:10:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>5050990</ns4:contentIdRef>
+					<ns4:materialIdRef>5050990</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26891544</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26891544
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T23:10:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-28T23:40:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4798872</ns4:contentIdRef>
+					<ns4:materialIdRef>4798872</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26966505</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26966505
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-28T23:40:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-29T00:15:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4798873</ns4:contentIdRef>
+					<ns4:materialIdRef>4798873</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26966545</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26966545
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-29T00:15:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-29T02:05:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2012-05-16T16:55:00.000+02:00</ns4:startTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>2027619</ns4:contentIdRef>
+					<ns4:materialIdRef>2027619</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26966587</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>false</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26966587
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-29T02:05:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-29T04:10:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2004-11-14T21:00:00.000+01:00</ns4:startTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>1439390</ns4:contentIdRef>
+					<ns4:materialIdRef>1439390</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>26966605</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>true</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_26966605
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-29T04:10:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-29T04:45:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2014-02-08T20:00:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-02-08T20:30:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>4807708</ns4:contentIdRef>
+					<ns4:materialIdRef>4807708</ns4:materialIdRef>
+				</ns4:event>
+				<ns4:event timestamp="2014-11-13T15:45:22.980+01:00">
+					<ns4:id>9999215699070</ns4:id>
+					<ns4:channelId>TV4</ns4:channelId>
+					<ns4:descriptionList>
+						<ns4:description language="swe" />
+					</ns4:descriptionList>
+					<ns4:rerun>true</ns4:rerun>
+					<ns4:live>false</ns4:live>
+					<ns4:hidden>false</ns4:hidden>
+					<ns4:groupId sequenceNumber="1">GroupId_9999215699070
+					</ns4:groupId>
+					<ns4:timeList>
+						<ns4:time>
+							<ns4:startTime>2014-11-29T04:45:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-29T05:50:00.000+01:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2012-07-20T05:30:00.000+02:00</ns4:startTime>
+							<ns4:endTime>2012-07-20T06:00:00.000+02:00</ns4:endTime>
+						</ns4:time>
+						<ns4:time>
+							<ns4:startTime>2014-11-30T04:45:00.000+01:00</ns4:startTime>
+							<ns4:endTime>2014-11-30T05:45:00.000+01:00</ns4:endTime>
+						</ns4:time>
+					</ns4:timeList>
+					<ns4:contentIdRef>400000937</ns4:contentIdRef>
+					<ns4:materialIdRef>400000937</ns4:materialIdRef>
+				</ns4:event>
+			</ns3:eventList>
+		</ns2:schedule>
+	</ns2:data>
+</ns2:metadata>
+

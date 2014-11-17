@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:content xmlns:p="http://video-metadata.tv.se/content/v1" xmlns:p1="http://video-metadata.tv.se/common/v1" xmlns:p2="http://video-metadata.tv.se/material/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://video-metadata.tv.se/content/v1 ../xsd/content.xsd ">
+  <providerId>providerId</providerId>
+  <brands>
+    <content>
+      <id>id</id>
+      <studio>studio</studio>
+      <titleList>
+        <title language="EN" original="true">title</title>
+      </titleList>
+    </content>
+  </brands>
+  <seasons>
+    <content>
+      <id>id</id>
+      <studio>studio</studio>
+      <titleList>
+        <title language="EN" original="true">title</title>
+      </titleList>
+    </content>
+  </seasons>
+  <contents>
+    <content>
+      <id>id</id>
+      <studio>studio</studio>
+      <titleList>
+        <title language="EN" original="true">title</title>
+      </titleList>
+    </content>
+  </contents>
+  <materialList>
+    <material timestamp="2001-12-31T12:00:00">
+      <providerId>providerId</providerId>
+      <id>id</id>
+      <distributor>distributor</distributor>
+      <priceGroup>priceGroup</priceGroup>
+      <contentIdRef>contentIdRef</contentIdRef>
+    </material>
+  </materialList>
+</p:content>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
+	xmlns:ns3="http://video-metadata.tv.se/schedule/v1" xmlns:ns4="http://video-metadata.tv.se/event/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/content/v1"
+	xmlns:ns7="http://video-metadata.tv.se/material/v1">
+	<ns2:header>
+		<ns2:providerId>se.tv4</ns2:providerId>
+		<ns2:msgId>N/A</ns2:msgId>
+		<ns2:content>content</ns2:content>
+	</ns2:header>
+	<ns2:data>
+		<ns2:content>
+			<id>5129750</id>
+			<studio>N/A</studio>
+			<productionYear>2014</productionYear>
+			<countryOfOriginList>
+				<country>US</country>
+			</countryOfOriginList>
+			<titleList>
+				<title original="false" language="SV">Operation repo</title>
+				<title original="true" language="SV">Operation Repo VII</title>
+			</titleList>
+			<creditList>
+				<credit>
+					<name>N/A</name>
+					<function>V20</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>c06b52ea0287bd131afc66c78eddb8bf</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+			</creditList>
+			<categoryList>
+				<category>Dokumentär</category>
+			</categoryList>
+			<brandId>22085508</brandId>
+			<seasonId>5129738</seasonId>
+			<episodeNumber>12</episodeNumber>
+		</ns2:content>
+	</ns2:data>
+</ns2:metadata>
