@@ -13,12 +13,20 @@
 	</xs:simpleType>
 	<!-- 
 	 -->
-	<xs:complexType name="langType">
+	<xs:complexType name="description">
+	<xs:annotation>
+		<xs:documentation>
+			A general type for describing something
+		</xs:documentation>
+	</xs:annotation>
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
 				<xs:attribute name="language" type="xs:language">
 					<xs:annotation>
-						<xs:documentation>code in ISO 639-2</xs:documentation>
+						<xs:documentation>
+							code in ISO 639-1
+							Note that the language here refers to the language on which the description is made.
+						</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
 			</xs:extension>

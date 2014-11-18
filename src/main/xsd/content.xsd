@@ -57,7 +57,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="studio" type="xs:string">
+			<xs:element name="studio" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Name of production studio.
 					</xs:documentation>
@@ -362,7 +362,7 @@
 			<xs:extension base="xs:string">
 				<xs:attribute name="language" type="xs:language">
 					<xs:annotation>
-						<xs:documentation>code in ISO 639-2</xs:documentation>
+						<xs:documentation>code in ISO 639-1</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
                 <!-- Removed since implicit given by parent node. <xs:attribute name="type" type="contextType" /> -->
@@ -489,8 +489,11 @@
 							</xs:documentation>
 						</xs:annotation>
 						<xs:restriction base="xs:string">
+							<xs:enumeration value="production"></xs:enumeration>
+							<xs:enumeration value="profile"></xs:enumeration>
+							<xs:enumeration value="banner"></xs:enumeration>
 							<xs:enumeration value="poster"></xs:enumeration>
-							<xs:enumeration value="promotion"></xs:enumeration>
+							<xs:enumeration value="promo"></xs:enumeration>
 							<xs:enumeration value="press"></xs:enumeration>
 							<xs:enumeration value="logo"></xs:enumeration>
 							<xs:enumeration value="other"></xs:enumeration>
@@ -526,12 +529,12 @@
 	</xs:complexType>
 	<xs:complexType name="captionListType">
 		<xs:sequence>
-			<xs:element name="caption" type="common:langType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="caption" type="common:description" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="copyRightsListType">
 		<xs:sequence>
-			<xs:element name="copyRight" type="common:langType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="copyRight" type="common:description" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="mediaReferenceListType">
@@ -637,7 +640,7 @@
 			<xs:extension base="xs:string">
 				<xs:attribute name="language" type="xs:language">
 					<xs:annotation>
-						<xs:documentation>code in ISO 639-2</xs:documentation>
+						<xs:documentation>code in ISO 639-1</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
 			</xs:extension>
