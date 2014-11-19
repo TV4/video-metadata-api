@@ -11,7 +11,29 @@
 	<!--
 	 Message definitions
 	 -->
-	<xs:element name="metadata">
+	<xs:element name="content-metadata">
+		<xs:annotation>
+			<xs:documentation>Root element for content meta-data message. Message is sent on create or update of a new entity.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="header" type="messageHeaderType" />
+				<xs:element name="data" type="content:contentBrandSeasonType" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="schedule-metadata">
+		<xs:annotation>
+			<xs:documentation>Root element for content meta-data message. Message is sent on create or update of a new entity.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="header" type="messageHeaderType" />
+				<xs:element name="data" type="content:contentBrandSeasonMaterialListType" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="publish-metadata">
 		<xs:annotation>
 			<xs:documentation>Root element for content meta-data message. Message is sent on create or update of a new entity.</xs:documentation>
 		</xs:annotation>
@@ -56,14 +78,14 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="ping-response">
+	<xs:element name="status-response">
 		<xs:annotation>
-			<xs:documentation>Root element for content meta-data response message</xs:documentation>
+			<xs:documentation>Root element for content status response message</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="status" type="statusType" />
-				<xs:element name="message" type="xs:string" />
+				<xs:element name="data" type="xs:anyType" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -89,15 +111,10 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="content" type="messageType" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="messageDataType">
-		<xs:choice>
-			<xs:element name="content" type="content:contentType" />
-			<xs:element name="schedule" type="schedule:scheduleType" />
-		</xs:choice>
-	</xs:complexType>
+    <!-- 
+    -->
 	<xs:complexType name="idListType">
 		<xs:choice>
 			<xs:element name="msgId" type="common:idType" minOccurs="0" maxOccurs="unbounded" />
@@ -114,8 +131,8 @@
 			<xs:element name="seasonId" type="common:idType" minOccurs="0" maxOccurs="unbounded" />
 			<xs:element name="contentId" type="common:idType" minOccurs="0" maxOccurs="unbounded" />
 			<xs:element name="materialId" type="common:idType" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="schedule" type="dateQueryType" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element name="publish" type="dateQueryType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="schedule" type="dateQueryType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="publish" type="dateQueryType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:choice>
 	</xs:complexType>
 	<xs:complexType name="dateQueryType">
@@ -126,21 +143,21 @@
 			<xs:element name="to" type="xs:dateTime" />
 		</xs:sequence>
 	</xs:complexType>
-		<xs:simpleType name="messageType">
-			<xs:restriction base="xs:string">
-				<xs:enumeration value="content" />
-				<xs:enumeration value="schedule" />
-				<xs:enumeration value="query" />
-			</xs:restriction>
-		</xs:simpleType>
-		<xs:simpleType name="statusType">
-			<xs:annotation>
-				<xs:documentation>A HTTP status code. ***SHOLD*** be same status code as the HTTP repsonse.
-				</xs:documentation>
-			</xs:annotation>
-			<xs:restriction base="xs:short">
-				<xs:minInclusive value="0" />
-				<xs:maxInclusive value="999" />
-			</xs:restriction>
-		</xs:simpleType>
+	<xs:simpleType name="messageType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="content" />
+			<xs:enumeration value="schedule" />
+			<xs:enumeration value="query" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="statusType">
+		<xs:annotation>
+			<xs:documentation>A HTTP status code. ***SHOLD*** be same status code as the HTTP repsonse.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:short">
+			<xs:minInclusive value="0" />
+			<xs:maxInclusive value="999" />
+		</xs:restriction>
+	</xs:simpleType>
 </xs:schema>
