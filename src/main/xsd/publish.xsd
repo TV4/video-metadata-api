@@ -10,26 +10,13 @@
 	<xs:import namespace="http://video-metadata.tv.se/event/v1" schemaLocation="event.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/material/v1" schemaLocation="material.xsd" />
 
-    <!-- 
-      -->
-	<xs:element name="publish" type="publishType">
-		<xs:annotation>
-			<xs:documentation>Root element for schedule meta-data</xs:documentation>
-		</xs:annotation>
-	</xs:element>
 	<!-- 
 	 -->
-	<xs:complexType name="publishType">
+	<xs:complexType name="publishListType">
 		<xs:annotation>
 			<xs:documentation>root node of publish</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="providerId" type="common:idType">
-				<xs:annotation>
-					<xs:documentation>id for the provider, could be for example 'se.tv4'
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="channelId" type="common:idType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>id for the current service or channel, could be for example 'se.tv4.tv4play'

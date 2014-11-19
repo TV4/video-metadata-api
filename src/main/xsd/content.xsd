@@ -5,24 +5,18 @@
 >
 	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/material/v1" schemaLocation="material.xsd" />
-	
+
 	<!-- 
 	 -->
-	<xs:element name="content" type="contentElementType">
-		<xs:annotation>
-			<xs:documentation>Root element for content meta-data</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<!-- 
-	 -->
-	<xs:complexType name="contentElementType">
+	<xs:complexType name="contentSeasonBrandType">
 		<xs:sequence>
-			<xs:element name="providerId" type="common:idType">
-				<xs:annotation>
-					<xs:documentation>Id for the provider, could be for example 'se.tv4', 'com.cmore', 'se.nyhetsbolaget', ...
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+			<xs:element name="brand" type="brandType" minOccurs="0" />
+			<xs:element name="season" type="seasonType" minOccurs="0" />
+			<xs:element name="content" type="contentType" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="contentSeasonBrandMaterialListType">
+		<xs:sequence>
 			<xs:element name="brandList" type="brandListType">
 				<xs:annotation>
 					<xs:documentation>List of brand entities</xs:documentation>
@@ -648,7 +642,7 @@
 	</xs:complexType>
 	<xs:complexType name="brandListType">
 		<xs:sequence>
-			<xs:element name="content" type="brandType" minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="brand" type="brandType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>content for this event, optional. if not set contentIdRef must be set
 					</xs:documentation>
@@ -658,7 +652,7 @@
 	</xs:complexType>
 	<xs:complexType name="seasonListType">
 		<xs:sequence>
-			<xs:element name="content" type="seasonType" minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="season" type="seasonType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>content for this event, optional. if not set contentIdRef must be set
 					</xs:documentation>

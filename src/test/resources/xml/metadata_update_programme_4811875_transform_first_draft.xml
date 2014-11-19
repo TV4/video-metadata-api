@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/schedule/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/content/v1"
+	xmlns:ns7="http://video-metadata.tv.se/material/v1">
+	<ns3:header>
+		<ns3:providerId>se.tv4</ns3:providerId>
+		<ns3:msgId>1e801cd8-02df-41d2-952a-346f1b58ef5e</ns3:msgId>
+		<ns3:content>content</ns3:content>
+	</ns3:header>
+	<ns3:data>
+		<ns3:content>
+			<brandList />
+			<seasonList />
+			<contentList>
+				<content>
+					<id>4811875</id>
+					<productionYear>2014</productionYear>
+					<countryOfOriginList>
+						<country>SE</country>
+					</countryOfOriginList>
+					<titleList>
+						<title original="false" language="sv">Nyhetsmorgon</title>
+					</titleList>
+					<imageList>
+						<image>
+							<imageRef purpose="press" priority="10" unit="px"
+								height="2454" width="1600" orientation="portrait">http://image.tv4.se/b0/03/b5/FILE_9A27BBE5-A0B9-4073-BD09-66451EAA1A26.jpg
+							</imageRef>
+						</image>
+					</imageList>
+					<categoryList>
+						<category>Nyheter</category>
+					</categoryList>
+					<brandId>35006258</brandId>
+				</content>
+			</contentList>
+		</ns3:content>
+	</ns3:data>
+</ns3:metadata>

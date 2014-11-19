@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:api-messages="http://video-metadata.tv.se/api-messages/v1" xmlns:common="http://video-metadata.tv.se/common/v1"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:api-messages="http://video-metadata.tv.se/api-messages/v1" xmlns:common="http://video-metadata.tv.se/common/v1" xmlns:publish="http://video-metadata.tv.se/publish/v1"
 	xmlns:content="http://video-metadata.tv.se/content/v1" xmlns:schedule="http://video-metadata.tv.se/schedule/v1" xmlns:event="http://video-metadata.tv.se/event/v1"
 	xmlns:material="http://video-metadata.tv.se/material/v1" xmlns="http://video-metadata.tv.se/api-messages/v1" targetNamespace="http://video-metadata.tv.se/api-messages/v1"
 	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
@@ -7,6 +7,7 @@
 	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/content/v1" schemaLocation="content.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/schedule/v1" schemaLocation="schedule.xsd" />
+	<xs:import namespace="http://video-metadata.tv.se/publish/v1" schemaLocation="publish.xsd" />
 
 	<!--
 	 Message definitions
@@ -18,7 +19,7 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="header" type="messageHeaderType" />
-				<xs:element name="data" type="content:contentBrandSeasonType" />
+				<xs:element name="data" type="content:contentSeasonBrandType" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -29,7 +30,7 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="header" type="messageHeaderType" />
-				<xs:element name="data" type="content:contentBrandSeasonMaterialListType" />
+				<xs:element name="data" type="content:contentSeasonBrandMaterialListType" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -40,7 +41,7 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="header" type="messageHeaderType" />
-				<xs:element name="data" type="messageDataType" />
+				<xs:element name="data" type="publish:publishListType" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -78,14 +79,14 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="status-response">
+	<xs:element name="ping-response">
 		<xs:annotation>
-			<xs:documentation>Root element for content status response message</xs:documentation>
+			<xs:documentation>Root element for content meta-data response message</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="status" type="statusType" />
-				<xs:element name="data" type="xs:anyType" />
+				<xs:element name="message" type="xs:string" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
