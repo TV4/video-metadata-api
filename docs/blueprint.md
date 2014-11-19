@@ -18,44 +18,20 @@ E.g., test URL: https://emp-test.tv4.se/video-metadta-api/v1/contents
 
 ### POST
 
-The request body **MUST** be a valid [XML] according to the schemas defined: content.xsd, schedule.xsd, publish.xsd.
+The request body **MUST** be a valid [XML] according to the schemas defined: api-message.xsd(which contains the data: content.xsd, schedule.xsd, publish.xsd).
 
 + Request (application/xml)
   + Headers
     X-Api-Key: topsecret123
   + Body
-    <?xml ....><content>....</content>
+    <code>&lt;content-metadata&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
 
+	
 + Response 200 (application/xml)
-<metadata-response>
-    <msg-id />
-    <status>200</status>
-    <msg>OK</msg>
-</metadata-response>
-
+	<code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
+	
 ### DELETE
-Not supported, no requirement
-
-## Publish [/publish]
-
-### POST
-
-+ Request (application/xml)
-  + Headers
-    X-Api-Key: topsecret123
-  + Body
-    <?xml ....><publish>....</publish>
-
-+ Response 200 (application/xml)
-	<metadata-response>
-		<msg-id />
-		<status>200</status>
-		<msg>OK</msg>
-	</metadata-response>
-
-### DELETE
-Not supported, in first version.
-Current version of Louise can not make a differense between a delete and change of publication from/to date/time.
+Not supported in first version, no requirement
 
 ## Publish [/schedule]
 
@@ -65,21 +41,16 @@ Current version of Louise can not make a differense between a delete and change 
   + Headers
     X-Api-Key: topsecret123
   + Body
-    <?xml ....><schedule>....</schedule>
+  <code>&lt;schedule-metadata&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
 
 + Response 200 (application/xml)
-	<metadata-response>
-		<msg-id />
-		<status>200</status>
-		<msg>OK</msg>
-	</metadata-response>
+	<code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
 
+	
 ### DELETE
 Not supported, no requirement
 	
-# Sender API Endpoints (optional)
-
-## Query [/schedule]
+## Publish [/publish]
 
 ### POST
 
@@ -87,16 +58,33 @@ Not supported, no requirement
   + Headers
     X-Api-Key: topsecret123
   + Body
-    <?xml ....><schedule>....</schedule>
-
+  <code>&lt;publish-metadata&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
+    
 + Response 200 (application/xml)
-	<metadata-response>
-		<msg-id />
-		<status>200</status>
-		<msg>OK</msg>
-	</metadata-response>
+	<code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
 	
+### DELETE
+Not supported, in first version.
+Current version of Louise can not make a differense between a delete and change of publication from/to date/time.
 
+# Sender API Endpoints (optional)
+
+## Query [/query]
+
+### POST
+
++ Request (application/xml)
+  + Headers
+    X-Api-Key: topsecret123
+  + Body
+      <code>&lt;querya&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
+
+	
++ Response 200 (application/xml)
+ 	<code>
+	&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
+	</code>
+	
 # General internal endpoints
 
 ## Content [/__status] 
@@ -112,9 +100,7 @@ General method that will report that the service is alive and kicking and the st
 	To be defined... *<xsd:anyType>* _or_ any JSON 
 	
 + Response 200 (application/xml)
-<metadata-response>
-    <msg-id />
-    <status>200</status>
-    <msg>OK</msg>
-</metadata-response>
-
+	<code>
+	&lt;status-response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
+	</code>
+	
