@@ -25,11 +25,13 @@ The request body **MUST** be a valid [XML] according to the schemas defined: api
     X-Api-Key: topsecret123
   + Body
     <code>&lt;content-metadata&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
+	
++ Responses (All responses are returned with Content-Type application/xml and a <code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd))
+  + 202 If everything went well
+  + 400 If the XML in the request body is malformed
+  + 401 If the user making the request is unathorized
+  + 403 If the user making the request lacks sufficient rights to perform the action
 
-	
-+ Response 200 (application/xml)
-	<code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
-	
 ### DELETE
 Not supported in first version, no requirement
 
@@ -43,9 +45,11 @@ Not supported in first version, no requirement
   + Body
   <code>&lt;schedule-metadata&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
 
-+ Response 200 (application/xml)
-	<code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
-
++ Responses (All responses are returned with Content-Type application/xml and a <code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd))
+  + 202 If everything went well
+  + 400 If the XML in the request body is malformed
+  + 401 If the user making the request is unathorized
+  + 403 If the user making the request lacks sufficient rights to perform the action
 	
 ### DELETE
 Not supported, no requirement
@@ -59,9 +63,12 @@ Not supported, no requirement
     X-Api-Key: topsecret123
   + Body
   <code>&lt;publish-metadata&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
-    
-+ Response 200 (application/xml)
-	<code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
+
++ Responses (All responses are returned with Content-Type application/xml and a <code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd))
+  + 202 If everything went well
+  + 400 If the XML in the request body is malformed
+  + 401 If the user making the request is unathorized
+  + 403 If the user making the request lacks sufficient rights to perform the action
 	
 ### DELETE
 Not supported, in first version.
