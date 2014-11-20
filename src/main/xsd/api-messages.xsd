@@ -30,7 +30,7 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="header" type="messageHeaderType" />
-				<xs:element name="data" type="content:contentSeasonBrandMaterialListType" />
+				<xs:element name="data" type="schedule:scheduleType" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
