@@ -15,31 +15,6 @@
 			<xs:element name="content" type="contentType" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="contentSeasonBrandMaterialListType">
-		<xs:sequence>
-			<xs:element name="brandList" type="brandListType">
-				<xs:annotation>
-					<xs:documentation>List of brand entities</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="seasonList" type="seasonListType">
-				<xs:annotation>
-					<xs:documentation>List of season entities</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="contentList" type="contentListType">
-				<xs:annotation>
-					<xs:documentation>List of content entities. content : { program, clip, (ads) }</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="materialList" type="material:materialListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Material list for the document, could be 0 entries which would indicate no events for this period
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="abstractContentType" abstract="true">
 		<xs:annotation>
 			<xs:documentation>Abstract type that holds attributes common to brand, season and content</xs:documentation>
