@@ -21,12 +21,6 @@
 	  -->
 	<xs:complexType name="scheduleType">
 		<xs:sequence>
-			<xs:element name="providerId" type="common:idType">
-				<xs:annotation>
-					<xs:documentation>id for the provider, could be for example 'se.tv4'
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="channelId" type="common:idType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>id for the current service or channel, could be for example 'se.tv4.tv4play'
