@@ -65,7 +65,7 @@
 			</xs:element>
 			<xs:element name="commentList" type="commentListType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>List of descriptions
+					<xs:documentation>List of comments, that is internal descriptions not to show externally.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
