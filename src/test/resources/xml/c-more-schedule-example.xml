@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:schedule-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/publish/v1"
+	xmlns:ns5="http://video-metadata.tv.se/schedule/v1" xmlns:ns6="http://video-metadata.tv.se/material/v1">
+	<ns3:header>
+		<ns3:providerId>se.cmore</ns3:providerId>
+		<ns3:msgId>0d944b6b-51d5-48ed-9ddd-68d8c56b1962</ns3:msgId>
+	</ns3:header>
+	
+	<ns3:data timestamp="2014-11-20T15:28:37.803+01:00">
+		<!-- <Channel ChannelId="8" Name="CanalFilm1" Title="C More First" LogoId="aa68665f-f759-46e7-91d9-4ab75889cfcf" IsHd="false"> -->
+		<ns5:channelId>CanalFilm1</ns5:channelId>
+	<!-- 
+	<Schedule ScheduleId="763215" NextStart="2014-10-22T08:30:00" CalendarDate="2014-10-22T06:50:00" IsPremiere="false" IsDubbed="false" Type="Tape"
+				AlsoAvailableInHD="false" AlsoAvailableIn3D="false" Is3D="false" IsPPV="false"
+			>
+	-->
+		<ns5:from>2014-11-28T05:50:00.000+01:00</ns5:from>
+		<ns5:to>2014-11-29T05:50:00.000+01:00</ns5:to>
+		<ns5:brandList>
+			<brand>
+				<id>14667569</id>
+				<titleList>
+					<title original="false" language="sv">House</title>
+				</titleList>
+				<descriptionList>
+					<description length="medium" language="sv">Amerikansk
+						dramaserie. Den cyniske doktor Greg House är ett medicinskt geni
+						som totalt saknar empati. Han säger alltid vad han tycker och att
+						möta patienter är det värsta han vet.</description>
+				</descriptionList>
+			</brand>
+
+
+		</ns5:brandList>
+		<ns5:seasonList>
+			<season>
+				<id>3302561</id>
+				<productionYear>2011</productionYear>
+				<countryOfOriginList>
+					<country>US</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">Säsong 7</title>
+				</titleList>
+				<descriptionList>
+					<description language="sv">Amerikansk dramaserie. Om den
+						cyniske läkaren House och hans kollegor. Serien har belönats med
+						flera Golden globe och Emmys.</description>
+					<description length="short" language="sv">Amerikansk
+						dramaserie från 2010.</description>
+					<description length="medium" language="sv">Doktor Greg House
+						är ett medicinskt geni som totalt saknar empati. Han säger alltid
+						vad han tycker och att möta patienter är det värsta han vet. Men
+						trots att ledningen på sjukhuset inte uppskattar hans arroganta
+						sätt värdesätter de hans förmåga att lösa till synes oförklarliga
+						sjukdomstillstånd.</description>
+					<description length="long" language="sv">House är en
+						amerikansk dramaserie. Den sjunde säsongen är från 2010 och består
+						av 23 episoder.
+
+						Den cyniske doktor Greg House (Hugh Laurie) är ett medicinskt geni
+						som totalt saknar empati. Men trots att ledningen på
+						Princeton-Plainsboro Teaching Hospital inte uppskattar hans
+						arroganta sätt värdesätter de hans förmåga att lösa till synes
+						oförklarliga sjukdomstillstånd.
+
+						I Houses läkarteam ingår plastikkirurgen Chris Taub (Peter
+						Jacobson), den gåtfulle nummer tretton, doktor Remy Hadley (Olivia
+						Wilde) och neurologen Eric Foreman (Omar Epps).
+					</description>
+					<description length="extended" language="sv">House är en
+						amerikansk dramaserie. Den sjunde säsongen är från 2010 och består
+						av 23 episoder.
+
+						Tv-världens mest cyniske läkare är tillbaka med en sjunde säsong av den
+						Golden globe- och Emmy belönade serien. Ingen kan beskylla doktor
+						Gregory House (Hugh Laurie) för att sakna kreativitet och
+						intelligens, men det där med empati är kanske inte hans starkaste
+						sida. Trots att ledningen på sjukhuset för en ständig kamp mot
+						Houses nyckfulla sätt, är hans genialitet ovärderlig för dem och
+						de krångliga fall som House och hans team ständigt står inför.
+
+						I Houses läkarteam ingår plastikkirurgen Chris Taub (Peter
+						Jacobson) och den gåtfulle nummer tretton, doktor Remy Hadley
+						(Olivia Wilde). Där finns också neurologen Eric Foreman (Omar
+						Epps) som håller koll på House åt klinikchefen Lisa Cuddy (Lisa
+						Edelstein).
+					</description>
+				</descriptionList>
+				<imageList>
+					<image>
+						<imageRef purpose="press" priority="3" unit="px" height="3000"
+							width="2855" orientation="portrait">http://image.tv4.se/fa/e4/78/FILE_E585DE01-A700-4E09-AD11-00FC956B0466.jpg
+						</imageRef>
+					</image>
+				</imageList>
+				<categoryList>
+					<category>Drama</category>
+					<category>Hälsa</category>
+				</categoryList>
+				<brandId>14667569</brandId>
+				<seasonNumber>7</seasonNumber>
+				<numberOfEpisodes>23</numberOfEpisodes>
+			</season>
+
+		</ns5:seasonList>
+		<ns5:contentList>
+			<content>
+				<!-- 
+				<Program ProgramId="45122" Title="För kärleks skull" OriginalTitle="Kaikella rakkaudella" Genre="Drama" GenreKey="Drama"
+					FirstCalendarDate="2013-12-02T22:45:00" LastCalendarDate="2014-12-01T03:45:00" VodStart="2013-12-01T00:00:00" VodEnd="2014-11-30T00:00:00"
+					Duration="95" ProductionCountry="Finland" ProductionYear="2013" Rating="BLUE" Actors="Krista Kosonen, Tommi Korpela, Sampo Sarkola" Directors="Matti Ijäs"
+					Class="Regular" Type="SingleProgram" Category="Film" IsDubbedVersionAvailable="false" Vod="true" OTTBlackout="false" IsDubbed="false"
+				>
+				:
+				</Program>
+	 			
+	 			Dessa ligger i <event>
+	 			FirstCalendarDate="2013-12-02T22:45:00" LastCalendarDate="2014-12-01T03:45:00" VodStart="2013-12-01T00:00:00" VodEnd="2014-11-30T00:00:00"
+	 			
+	 			-->
+				<id>3302583</id> <!-- ProgramId="45122" -->
+				<productionYear>2011</productionYear>
+				<countryOfOriginList>
+					<country>US</country>
+				</countryOfOriginList>
+				<titleList>
+				<!-- Title="För kärleks skull" OriginalTitle="Kaikella rakkaudella"  -->
+					<title original="false" language="sv">House</title>
+					<title original="true" language="sv">House VII</title>
+					<title original="false" language="sv">After hours</title>
+				</titleList>
+				<descriptionList>
+		<!-- 
+					<Synopsis>
+						<ExtraShort>Finskt drama från 2013 med Krista Kosonen.</ExtraShort>
+						<Short> Finskt drama om en fotograf som reser i Lappland och träffar sitt livs kärlek, en kvinna som flera män svärmar kring. 
+						</Short>
+						<Medium> Den blyge fotografen Toivo är på resande fot i undersköna Lappland, då han träffar Ansa, som han blir blixtförälskad i. Passionen
+							uppslukar honom, men det är fler än Toivo som svärmar kring den vackra Ansa. Hon har både en före detta make och en svåger som tappar allt
+							förnuft och sans i hennes närhet. Men vad vill hon själv? 
+						</Medium>
+						<Long> Den blyge fotografen Toivo är på resande fot i undersköna Lappland, då han träffar Ansa, som han blir blixtförälskad i. Passionen
+							uppslukar honom, men det är fler än Toivo som svärmar kring den vackra Ansa. Hon har både en före detta make och en svåger som tappar allt
+							förnuft och sans i hennes närhet. Men vad vill hon själv? 
+						</Long>
+						<Facts>Drama, 2013.</Facts> 
+						2013 -> content/productionYear
+						Drama -> content/categoryList/category
+					</Synopsis>
+		 -->
+					<description length="short" language="sv">Taub får
+						överraskande nyheter.</description>
+					<description length="medium" language="sv">Thirteen får
+						besök av en kvinna hon lärde känna i fängelset. Kvinnan har blivit
+						knivstucken och behöver vård. House tar till drastiska metoder för
+						att avlägsna tumören som växer i hans ben. Taub får överraskande
+						nyheter som han måste förlika sig med.</description>
+					<description length="long" language="sv">Thirteen får besök
+						av en person hon lärde känna i fängelset som blivit knivskuren och
+						behöver vård. När Thirteen får veta att vännen fått återfall och
+						tagit droger lovar hon att inte ta henne till sjuhuset där polisen
+						kan hitta henne. I stället vänder hon sig till Chase för hjälp.
+
+						House tar till drastiska metoder för att avlägsna tumören som
+						växer i hans ben. Taub får överraskande nyheter som han måste
+						förlika sig med.
+					</description>
+				</descriptionList>
+				<creditList>
+					<credit>
+						<name>Hugh Laurie</name>
+						<rolename>Gregory House</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>5664</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Lisa Edelstein</name>
+						<rolename>Lisa Cuddy</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>45203</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Omar Epps</name>
+						<rolename>Eric Foreman</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>36099</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Robert Sean Leonard</name>
+						<rolename>James Wilson</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>546376</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Jesse Spencer</name>
+						<rolename>Robert Chase</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>38499</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Peter Jacobson</name>
+						<rolename>Chris Taub</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>81269</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Olivia Wilde</name>
+						<rolename>Remy 'Thirteen' Hadley</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>596567</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Amy Landecker</name>
+						<rolename>Darrien McCurdy</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>86503702</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Kendra Andrews</name>
+						<rolename>Dina</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>96809664</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Brian Huskey</name>
+						<rolename>Riggin</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>671511</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Zena Grey</name>
+						<rolename>Ruby</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>505902</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Miguel Sapochnik</name>
+						<function>Regissör</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>45142</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+				</creditList>
+				<imageList>
+					<!-- 
+					<Resources>
+						<Image Id="28214d4d-b812-49fd-8124-fd6197ac3551" Category="Primary" />
+						<Image Id="41a2cb56-b36c-417e-b2ac-079f9cfa3485" Category="Cover" />
+					</Resources>
+					 -->
+					<image>
+						<imageRef purpose="press" priority="2" unit="px" height="2000"
+							width="3000" orientation="landscape">http://image.tv4.se/9d/7d/6f/FILE_77D2D515-9390-48C4-B399-09C190C11FD8.JPG
+						</imageRef>
+					</image>
+				</imageList>
+				<categoryList>
+					<category>Drama</category>
+					<category>Hälsa</category>
+				</categoryList>
+				<brandId>14667569</brandId>
+				<seasonId>3302561</seasonId>
+				<episodeNumber>22</episodeNumber>
+			</content>
+		
+		</ns5:contentList>
+		
+		<ns5:materialList>
+			<material timestamp="2014-11-20T15:28:37.803+01:00">
+				<providerId>se.tv4</providerId>
+				<id>26479361</id>
+				<contentIdRef>3302583</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">1080i</videoFormat>
+				<aspectRatio>16:9</aspectRatio>
+			</material>
+			
+		</ns5:materialList>
+		<ns5:eventList>
+			<ns2:event timestamp="2014-11-20T15:28:37.803+01:00">
+				<ns2:id>26479361</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+				<!-- FirstCalendarDate="2013-12-02T22:45:00" LastCalendarDate="2014-12-01T03:45:00" VodStart="2013-12-01T00:00:00" VodEnd="2014-11-30T00:00:00"  -->
+					<ns2:time>
+						<ns2:startTime>2014-11-28T14:55:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-11-28T15:55:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2012-03-06T21:00:00.000+01:00</ns2:startTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>3302583</ns2:contentIdRef>
+				<ns2:materialIdRef>3302583</ns2:materialIdRef>
+			</ns2:event>
+			
+		</ns5:eventList>
+	</ns3:data>
+</ns3:schedule-metadata>
+
