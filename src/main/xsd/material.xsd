@@ -156,6 +156,8 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="program" />
 			<xs:enumeration value="trailer" />
+			<xs:enumeration value="clip" />
+			<xs:enumeration value="ad" />
 			<xs:enumeration value="other" />
 		</xs:restriction>
 	</xs:simpleType>
