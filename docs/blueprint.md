@@ -26,9 +26,9 @@ The request body **MUST** be a valid [XML] according to the schemas defined: api
   + Body
     <code>&lt;content-metadata&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
 	
-+ Responses (All responses are returned with Content-Type application/xml and a <code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd))
++ Responses
   + 202 If everything went well
-  + 400 If the XML in the request body is malformed
+  + 400 If the XML in the request body is malformed. In this case a <code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)) is returned as well
   + 401 If the user making the request is unathorized
   + 403 If the user making the request lacks sufficient rights to perform the action
 
@@ -45,9 +45,9 @@ Not supported in first version, no requirement
   + Body
   <code>&lt;schedule-metadata&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
 
-+ Responses (All responses are returned with Content-Type application/xml and a <code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd))
++ Responses 
   + 202 If everything went well
-  + 400 If the XML in the request body is malformed
+  + 400 If the XML in the request body is malformed. In this case a <code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)) is returned as well
   + 401 If the user making the request is unathorized
   + 403 If the user making the request lacks sufficient rights to perform the action
 	
@@ -64,9 +64,9 @@ Not supported, no requirement
   + Body
   <code>&lt;publish-metadata&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)
 
-+ Responses (All responses are returned with Content-Type application/xml and a <code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd))
++ Responses
   + 202 If everything went well
-  + 400 If the XML in the request body is malformed
+  + 400 If the XML in the request body is malformed. In this case a <code>&lt;response&gt;</code> message as defined in [api-messages.xsd](../src/main/xsd/api-messages.xsd)) is returned as well
   + 401 If the user making the request is unathorized
   + 403 If the user making the request lacks sufficient rights to perform the action
 	
