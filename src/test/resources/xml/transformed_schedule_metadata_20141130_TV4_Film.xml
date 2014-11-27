@@ -1,0 +1,2195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:schedule-metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
+	xmlns:ns3="http://video-metadata.tv.se/schedule/v1" xmlns:ns4="http://video-metadata.tv.se/event/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/material/v1">
+	<ns2:header>
+		<ns2:providerId>se.tv4</ns2:providerId>
+		<ns2:msgId>dc0c3a1d-580f-480e-96e1-87a8baf09d18</ns2:msgId>
+	</ns2:header>
+	<ns2:data timestamp="2014-11-27T15:45:09.269+01:00">
+		<ns3:channelId>TV4 Film</ns3:channelId>
+		<ns3:from>2014-11-30T05:05:00.000+01:00</ns3:from>
+		<ns3:to>2014-12-01T05:20:00.000+01:00</ns3:to>
+		<ns3:contentList>
+			<content>
+				<id>300420655</id>
+				<productionYear>2012</productionYear>
+				<countryOfOriginList>
+					<country>CN</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">Tusen skäl att gifta sig med
+						Luo Hu</title>
+					<title original="true" language="sv">Jia ji Luo Hu diyi qian geli
+						you</title>
+				</titleList>
+				<descriptionList>
+					<description language="sv">Kinesisk kortfilm om kärlek och
+						krocken mellan tradition och det moderna samhället.</description>
+					<description length="short" language="sv">Kinesisk kortfilm
+						från 2012.</description>
+					<description length="medium" language="sv">Den unge mannen
+						Luo Hu ska gifta sig med Rong Yue i staden som bär samma namn som
+						han själv. Paret lär sig att kärlek kan innebära en krock mellan
+						traditioner och det moderna samhället.</description>
+					<description length="long" language="sv">Tusen skäl att
+						gifta sig med Luo Hu är en kinesisk kortfilm från 2012 som handlar
+						om kärlek och krocken mellan tradition och det moderna samhället.
+						Den unge mannen Luo Hu (Chen Weidong) ska gifta sig med Chen
+						Yuolen (Rong Yue), i staden som bär samma namn som han själv.
+
+						Filmen är producerad av den berömda kinesiska tv-personligheten
+						och filmproducenten Yani.
+
+						Regissör: Yani.
+					</description>
+				</descriptionList>
+				<creditList>
+					<credit>
+						<name>Chen Weidong</name>
+						<rolename>Luo Hu</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>48131055</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Rong Yue</name>
+						<rolename>Chen Yuolen</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>48131080</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Yani</name>
+						<function>Regissör</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>48131083</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+				</creditList>
+				<categoryList>
+					<category>Drama</category>
+					<category>Kortfilm</category>
+				</categoryList>
+			</content>
+			<content>
+				<id>1324366</id>
+				<productionYear>1992</productionYear>
+				<countryOfOriginList>
+					<country>SE</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">Jönssonligan och den svarta
+						diamanten</title>
+					<title original="true" language="sv">Jönssonligan och den svarta
+						diamanten</title>
+				</titleList>
+				<descriptionList>
+					<description language="sv">Komedi. Vanheden och
+						Dynamit-Harry måste klara sig utan Sickan. Tack och lov har
+						Wall-Enberg en idé, att stjäla greve Romanoffs diamant.
+					</description>
+					<description length="short" language="sv">Svensk komedi från
+						1992 av Hans Åke Gabrielsson.</description>
+					<description length="medium" language="sv">Jönssonligans
+						ledare Sickan är inlagd på mentalsjukhus och Vanheden och
+						Dynamit-Harry är rätt inkompetenta på tu man hand. Men Sickans
+						psykiater har anteckningar som utgör en handbok i brott och
+						Wall-Enberg har en idé som går ut på att stjäla greve Romanoffs
+						svarta diamant från Nationalmuseum.</description>
+					<description length="long" language="sv">Jönssonligan och
+						den svarta diamanten är en svensk komedi från 1992.
+
+						Jönssonligans ledare Charles-Ingvar 'Sickan' Jönsson kan inte längre delta i
+						några kupper. Efter att ha suttit i fängelse blev han inlagd på
+						mentalsjukhus. Vanheden och Dynamit-Harry visar sig vara rätt
+						inkompetenta på tu man hand. Men Sickans psykiater Max Adrian Busé
+						har anteckningar som utgör en handbok i brott och Wall-Enberg har
+						en idé som går ut på att stjäla greve Romanoffs svarta diamant
+						från Nationalmuseum.
+
+						Regissör: Hans Åke Gabrielsson.
+					</description>
+				</descriptionList>
+				<creditList>
+					<credit>
+						<name>Hans Gabrielsson</name>
+						<function>Regissör</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>66717</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Ulf Brunnberg</name>
+						<rolename>Vanheden</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>42466</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Björn Gustafson</name>
+						<rolename>Dynamit-Harry</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>77490</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Peter Haber</name>
+						<rolename>doktor M.A. Busé</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>79572</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Birgitta Andersson</name>
+						<rolename>Doris</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>65261</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Per Grundén</name>
+						<rolename>Wall-Enberg</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>60960</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Elias Ringqvist</name>
+						<rolename>Lillis</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>124666219</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Weiron Holmberg</name>
+						<rolename>Biffen</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>523427</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Björn Granath</name>
+						<rolename>kommissarie Lohman</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>75472</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Pontus Gustafsson</name>
+						<rolename>kriminalassistent Andersson</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>112636</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Bernt Lindkvist</name>
+						<rolename>polischef</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>124666304</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Lena Hansson</name>
+						<rolename>Busés sekreterare</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>101734</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Rikard Wolff</name>
+						<rolename>greve Romanoff</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>99722</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+				</creditList>
+				<imageList>
+					<image>
+						<imageRef purpose="press" priority="3" unit="px" height="1807"
+							width="2603" orientation="landscape">http://image.tv4.se/5c/09/f1/FILE_FBACDF5D-A5A0-4D23-A4D0-83A2488B6E10.jpg
+						</imageRef>
+					</image>
+				</imageList>
+				<categoryList>
+					<category>Film</category>
+					<category>Komedi</category>
+				</categoryList>
+			</content>
+			<content>
+				<id>100000053</id>
+				<productionYear>2004</productionYear>
+				<countryOfOriginList>
+					<country>SE</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">Sändningsuppehåll</title>
+					<title original="true" language="sv">Sändningsuppehåll</title>
+				</titleList>
+				<creditList />
+				<categoryList>
+					<category>Övrigt</category>
+				</categoryList>
+			</content>
+			<content>
+				<id>500236283</id>
+				<productionYear>2004</productionYear>
+				<countryOfOriginList>
+					<country>SE</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">Hip Hip hora!</title>
+				</titleList>
+				<descriptionList>
+					<description language="sv">Drama med Amanda Renberg. Sofie
+						har börjat på högstadiet och några killar tar förnedrande foton av
+						henne när hon är redlöst berusad.</description>
+					<description length="short" language="sv">Svenskt drama från
+						2003 av Teresa Fabik.</description>
+					<description length="medium" language="sv">Tre tjejkompisar
+						ska börja på högstadiet. De ser fram emot vilda fester och att få
+						ihop det med skolans coolaste killar. Men för Sofie går det inte
+						riktigt som planerat, hon blir redlöst berusad på en fest och
+						några av killarna tar förnedrande foton av henne. Snart har hela
+						skolan sett bilderna.</description>
+					<description length="long" language="sv">Hip Hip hora! är
+						ett svenskt drama från 2003.
+
+						Sommarlovet är slut och tre tjejkompisar ska börja på högstadiet. De ser fram
+						emot vilda fester och vill gärna få ihop det med skolans coolaste
+						killar. Men för Sofie går det inte riktigt som planerat, hon blir
+						redlöst berusad på en fest och några av killarna tar förnedrande
+						foton av henne. Snart har hela skolan sett bilderna och hon
+						stämplas som &quot;hora&quot;. När även hennes närmaste kompisar
+						överger Sofie inser hon att hon måste slå tillbaka mot sina
+						plågoandar.
+
+						Regissör: Teresa Fabik.
+					</description>
+				</descriptionList>
+				<creditList>
+					<credit>
+						<name>Teresa Fabik</name>
+						<function>Regissör</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>533685</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Amanda Renberg</name>
+						<rolename>Sofie</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>533684</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Björn Kjellman</name>
+						<rolename>Krister</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>86800</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Ellen Fjæstad</name>
+						<rolename>Amanda</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>97687</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Linn Persson</name>
+						<rolename>Emma</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>533682</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Filip Berg</name>
+						<rolename>Sebbe</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>540796</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Marcus Hasselborg</name>
+						<rolename>Mouse</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>519488</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Carla Abrahamsen</name>
+						<rolename>Beatrice</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>656617</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Robin Lindbom</name>
+						<rolename>Loka</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>102586783</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Manuel Bjelke</name>
+						<rolename>Manuel</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>102586936</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Björn Davidsson</name>
+						<rolename>Jens</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>125941159</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Josephine Bauer</name>
+						<rolename>Åsa</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>691023</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Margareta Pettersson</name>
+						<rolename>rektor</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>96595331</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Cecilia Ljung</name>
+						<rolename>Amandas mamma</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>84974</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Cattis Olsén</name>
+						<rolename>kurator</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>125941234</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Ulrika Dahllöf</name>
+						<rolename>lärare</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>125941410</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+				</creditList>
+				<imageList>
+					<image>
+						<imageRef purpose="production" priority="8" unit="px"
+							height="1984" width="2976" orientation="landscape">http://image.tv4.se/62/87/0d/FILE_B6D9DC35-42E7-490F-9D14-F5F07595268F.jpg
+						</imageRef>
+					</image>
+				</imageList>
+				<categoryList>
+					<category>Film</category>
+					<category>Drama</category>
+				</categoryList>
+			</content>
+			<content>
+				<id>100001477</id>
+				<productionYear>1985</productionYear>
+				<countryOfOriginList>
+					<country>US</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">Upptäckarna</title>
+					<title original="true" language="sv">Explorers</title>
+				</titleList>
+				<descriptionList>
+					<description language="sv">Science fiction-film med Ethan
+						Hawke och River Phoenix. Tre unga killar bygger ett rymdskepp och
+						beger sig på en upptäcktsfärd i rymden.</description>
+					<description length="short" language="sv">Amerikansk science
+						fiction-film från 1985.</description>
+					<description length="medium" language="sv">Tre unga killar
+						kombinerar sina talanger för att bygga ett rymdskepp. De döper
+						farkosten till Thunder road och beger sig ut i rymden på en
+						spännande upptäcksfärd. Snart råkar de på två utomjordingar vars
+						kunskap om den mänskliga rasen härleder sig från amerikanska
+						tv-program.</description>
+					<description length="long" language="sv">Upptäckarna är en
+						amerikansk science fiction-film från 1985.
+
+						Ben är en science fiction-nörd som bokstavligen drömmer om att kunna
+						resa i rymden. Vetenskapsgeniet Wolfgang tolkar Bens drömmar och
+						på basen av det börjar de unga killarna bygga ett rymdskepp
+						tillsammans med sin nya kompis Darren. De döper farkosten till
+						Thunder road och beger sig ut i rymden på en spännande
+						upptäcksfärd. Snart råkar de på två utomjordingar vars kunskap om
+						den mänskliga rasen härleder sig från amerikanska tv-program.
+
+						Regissör: Joe Dante.
+					</description>
+				</descriptionList>
+				<creditList>
+					<credit>
+						<name>Ethan Hawke</name>
+						<rolename>Ben Crandall</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>2757</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Joe Dante</name>
+						<function>Regissör</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>5529</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>River Phoenix</name>
+						<rolename>Wolfgang Müller</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>1755</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Jason Presson</name>
+						<rolename>Darren Woods</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>10727</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Amanda Peterson</name>
+						<rolename>Lori Swenson</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>14354</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Dick Miller</name>
+						<rolename>Charlie Drake</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>4837</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Robert Picardo</name>
+						<rolename>Starkiller/Wak/Wak and Neek's fathe</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>1761</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Bobby Fite</name>
+						<rolename>Steve Jackson</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>99805291</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Bradley Gregg</name>
+						<rolename>Gang member</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>7531</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Georg Olden</name>
+						<rolename>Gang member</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>101711484</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Danny Nucci</name>
+						<rolename>Gang member</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>55267</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Chance Schwass</name>
+						<rolename>Gang member</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>126776349</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Dana Ivey</name>
+						<rolename>Mrs Müller</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>12958</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Taliesin Jaffe</name>
+						<rolename>Ludwig Müller</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>33769</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>James Cromwell</name>
+						<rolename>Mr Müller</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>6277</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Meshach Taylor</name>
+						<rolename>Gordon Miller</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>18174</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+				</creditList>
+				<imageList>
+					<image>
+						<imageRef purpose="press" priority="1" unit="px" height="1607"
+							width="2423" orientation="landscape">http://image.tv4.se/04/ca/d9/FILE_6664B1EE-A0E6-485B-91A7-38D8A55C0E80.jpg
+						</imageRef>
+					</image>
+				</imageList>
+				<categoryList>
+					<category>Film</category>
+					<category>Science Fiction</category>
+				</categoryList>
+			</content>
+			<content>
+				<id>500236641</id>
+				<productionYear>2007</productionYear>
+				<countryOfOriginList>
+					<country>DE</country>
+					<country>US</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">I'm not there</title>
+					<title original="true" language="sv">I'm Not There</title>
+				</titleList>
+				<descriptionList>
+					<description language="sv">Prisbelönt biografiskt drama med
+						Cate Blanchett. Musikern Bob Dylans liv och musik skildras genom
+						en rad växlande karaktärer.</description>
+					<description length="short" language="sv">Tyskt/amerikanskt
+						biografiskat drama från 2007.</description>
+					<description length="medium" language="sv">Musikern Bob
+						Dylans liv och musik skildras genom en rad växlande
+						personligheter. Cate Blanchett, Heath Ledger, Richard Gere,
+						Christian Bale, Ben Whishaw och Marcus Carl Franklin spelar olika
+						karaktärer som är baserade på Bob Dylan under olika perioder i
+						hans liv.</description>
+					<description length="long" language="sv">I'm not there är
+						ett tyskt/amerikanskt biografiskat drama från 2007.
+
+						Musikern Bob Dylans liv och musik skildras genom en rad växlande
+						personligheter som inte är Dylan. Cate Blanchett, Heath Ledger,
+						Richard Gere, Christian Bale, Ben Whishaw och Marcus Carl Franklin
+						spelar olika karaktärer som är baserade på Bob Dylan under olika
+						perioder i hans liv. Filmtiteln härleds från en av Dylans
+						inspelningar från 1967 som inte blivit lanserad innan filmen.
+
+						Cate Blanchett tlldelades en Golden Globe och nominerades till en
+						Oscar för sin insats.
+					</description>
+				</descriptionList>
+				<creditList>
+					<credit>
+						<name>Todd Haynes</name>
+						<function>Regissör</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>46798929</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Cate Blanchett</name>
+						<rolename>Jude</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>55606</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Christian Bale</name>
+						<rolename>Jack/Pastor John</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>4637</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Richard Gere</name>
+						<rolename>Billy</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>4916</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Heath Ledger</name>
+						<rolename>Robbie</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>47451</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Ben Whishaw</name>
+						<rolename>Arthur</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>87481</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Marcus Carl Franklin</name>
+						<rolename>Woody / Chaplin Boy</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>558720</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Charlotte Gainsbourg</name>
+						<rolename>Claire</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>17182</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>David Cross</name>
+						<rolename>Allen Ginsberg</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>43175</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Bruce Greenwood</name>
+						<rolename>Keenan Jones/Garrett</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>6737</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Julianne Moore</name>
+						<rolename>Alice Fabian</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>3255</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Michelle Williams</name>
+						<rolename>Coco Rivington</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>53562</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Kim Gordon</name>
+						<rolename>Carla Hendricks</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>617212</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Alison Folland</name>
+						<rolename>Grace</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>47546</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Richie Havens</name>
+						<rolename>Old Man Arvin</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>5342</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Paul Spence</name>
+						<rolename>Homer</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>521361</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Don Francks</name>
+						<rolename>Hobo Joe</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>3955</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Kristen Hager</name>
+						<rolename>Mona/Polly</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>629787</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Mark Camacho</name>
+						<rolename>Norman</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>47796</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Kris Kristofferson</name>
+						<rolename>Narrator (voice)</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>1711</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+				</creditList>
+				<imageList>
+					<image>
+						<imageRef purpose="production" priority="5" unit="px"
+							height="2192" width="3300" orientation="landscape">http://image.tv4.se/43/2b/ff/FILE_D69E72F1-F19E-4A29-8956-99171F1D1E19.jpg
+						</imageRef>
+					</image>
+				</imageList>
+				<categoryList>
+					<category>Film</category>
+					<category>Biografiskt drama</category>
+				</categoryList>
+			</content>
+			<content>
+				<id>4865078</id>
+				<productionYear>2005</productionYear>
+				<countryOfOriginList>
+					<country>GB</country>
+					<country>US</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">Batman begins</title>
+					<title original="true" language="sv">Batman Begins</title>
+				</titleList>
+				<descriptionList>
+					<description language="sv">Amerikansk actionfilm om Batman,
+						brottets fiende nummer ett. Med Christian Bale, Michael Caine och
+						Morgan Freeman.</description>
+					<description length="short" language="sv">Brittisk-amerikansk
+						actionfilm från 2005.</description>
+					<description length="medium" language="sv">När
+						miljonärssonen Bruce Wayne ser sina föräldrar mördas som barn
+						bestämmer han sig för att hämnas. I vuxen ålder går han igenom en
+						hård utbildning för att nå sitt mål men inser att hämnd inte löser
+						något. I stället blir han Batman, brottets fiende nummer ett.
+					</description>
+					<description length="long" language="sv">Brittisk-amerikansk
+						actionfilm från 2005.
+
+						När miljonärssonen Bruce Wayne ser sina föräldrar mördas bestämmer
+						han sig för att hämnas. Han genomgår en tuff utbildning för att nå
+						sitt mål.
+
+						När han återvänder till Gotham City upptäcker han att staden är full
+						av korruption och organiserad brottslighet. Han inser att hämnd
+						inte är lösningen och tillsammans med sin butler Alfred och
+						forskaren Lucious Fox skapar han alter egot Batman, brottets
+						fiende nummer ett.
+
+						Regissör: Christopher Nolan.
+					</description>
+				</descriptionList>
+				<creditList>
+					<credit>
+						<name>Christopher Nolan</name>
+						<function>Regissör</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>67736</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Christian Bale</name>
+						<rolename>Bruce Wayne / Batman</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>4637</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Michael Caine</name>
+						<rolename>Alfred</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>1668</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Liam Neeson</name>
+						<rolename>Ducard</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>803</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Katie Holmes</name>
+						<rolename>Rachel Dawes</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>53561</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Gary Oldman</name>
+						<rolename>Jim Gordon</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>839</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Cillian Murphy</name>
+						<rolename>Jonathan Crane / Scarecrow</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>91873</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Tom Wilkinson</name>
+						<rolename>Carmine Falcone</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>21664</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Morgan Freeman</name>
+						<rolename>Lucius Fox</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>12109</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Rutger Hauer</name>
+						<rolename>Earle</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>6123</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Ken Watanabe</name>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>44474</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Mark Boone Junior</name>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>522137</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Linus Roache</name>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>34808</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+				</creditList>
+				<imageList>
+					<image>
+						<imageRef purpose="production" priority="7" unit="px"
+							height="3300" width="2196" orientation="portrait">http://image.tv4.se/d4/f1/5d/FILE_5F95D5C8-CE8F-47E7-9123-84BEA03E057E.jpg
+						</imageRef>
+					</image>
+				</imageList>
+				<categoryList>
+					<category>Film</category>
+					<category>Action</category>
+				</categoryList>
+			</content>
+			<content>
+				<id>100019014</id>
+				<productionYear>2003</productionYear>
+				<countryOfOriginList>
+					<country>US</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">Bad santa</title>
+					<title original="true" language="sv">Bad Santa</title>
+				</titleList>
+				<descriptionList>
+					<description language="sv">Komedi med Billy Bob Thornton. En
+						alkoholiserad tomte som rånar affärer får sig en tankeställare när
+						han får nya bekantskaper.</description>
+					<description length="short" language="sv">Amerikansk komedi
+						från 2003 av Terry Zwigoff.</description>
+					<description length="medium" language="sv">Willie och hans
+						småväxte kompanjon Marcus jobbar varje år som tomte och nisse i
+						olika köpcentrum och passar samtidigt på att råna dem. Men Willie
+						är både sexberoende och alkoholiserad och när han träffar den
+						överviktige pojken Thurman som tror på tomten får det hela
+						oväntade följder.</description>
+					<description length="long" language="sv">Bad santa är en
+						amerikansk komedi från 2003.
+
+						Willie och hans småväxte kompanjon Marcus jobbar varje år som tomte och
+						nisse i olika köpcentrum. När butikerna stänger för julen bryter
+						de sig in och rånar dem. Men Willie är både sexberoende och
+						alkoholiserad vilket gör det svårt att upprätthålla tomtefasaden.
+						Efter flera år med samma rutin anländer de till Phoenix och Bob
+						Chipeskas varuhus. När Willie träffar den överviktige pojken
+						Thurman som tror på tomten får det hela oväntade följder.
+					</description>
+				</descriptionList>
+				<creditList>
+					<credit>
+						<name>Terry Zwigoff</name>
+						<function>Regissör</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>51557131</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Billy Bob Thornton</name>
+						<rolename>Willie</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>32842</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Tony Cox</name>
+						<rolename>Marcus</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>549743</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Lauren Graham</name>
+						<rolename>Sue</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>538376</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Brett Kelly</name>
+						<rolename>The Kid</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>580149</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>John Ritter</name>
+						<rolename>Bob Chipeska</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>1040</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Lauren Tom</name>
+						<rolename>Lois</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>15449</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Bernie Mac</name>
+						<rolename>Gin</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>69890</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Ajay Naidu</name>
+						<rolename>Hindustani Troublemaker</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>52850</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Lorna Scott</name>
+						<rolename>Milwaukee Mother</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>25463</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Harrison Bieker</name>
+						<rolename>Milwaukee Boy</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>138360016</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+				</creditList>
+				<imageList>
+					<image>
+						<imageRef purpose="press" priority="3" unit="px" height="1809"
+							width="2480" orientation="landscape">http://image.tv4.se/b0/db/66/FILE_A917A0A3-4D24-4ADD-8410-1A864968390E.jpg
+						</imageRef>
+					</image>
+				</imageList>
+				<categoryList>
+					<category>Film</category>
+					<category>Komedi</category>
+				</categoryList>
+			</content>
+			<content>
+				<id>100108502</id>
+				<productionYear>1983</productionYear>
+				<countryOfOriginList>
+					<country>US</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">Blue thunder</title>
+					<title original="true" language="sv">Blue Thunder</title>
+				</titleList>
+				<descriptionList>
+					<description language="sv">Actionfilm med Roy Schneider om
+						en polispilot som upptäcker en konspiration när han testflyger en
+						ny superhelikopter kallad Blue thunder.</description>
+					<description length="short" language="sv">Amerikansk
+						actionfilm från 1983 med Roy Schneider.</description>
+					<description length="medium" language="sv">Helikopterpolisen
+						Frank Murphy får i uppdrag att testflyga en ny superhelikopter
+						kallad Blue thunder. Den är tungt beväpnad och näst intill osynlig
+						med sofistikerad övervakningsteknologi. Men snart upptäcker Frank
+						en konspiration där militären vill använda helikoptern för oetiska
+						mål.</description>
+					<description length="long" language="sv">Blue thunder är en
+						amerikansk actionfilm från 1983.
+
+						Helikopterpolisen Frank Murphy patrullerar Los Angeles gator från skyarna ovan
+						staden och får i uppdrag att testflyga en ny superhelikopter
+						kallad Blue thunder. Den är tungt beväpnad och näst intill osynlig
+						med sofistikerad övervakningsteknologi för att kunna förebygga
+						terroristattacker. Men snart upptäcker Frank en konspiration där
+						några individer inom militären vill använda helikoptern för att
+						stoppa protester och tygla oliktänkande.
+
+						Regissör: John Badham.
+					</description>
+				</descriptionList>
+				<creditList>
+					<credit>
+						<name>John Badham</name>
+						<function>Regissör</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>8632</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Roy Scheider</name>
+						<rolename>Officer Frank Murphy</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>276</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Warren Oates</name>
+						<rolename>Capt. Jack Braddock</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>1985</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Malcolm McDowell</name>
+						<rolename>Col. F.E. Cochrane</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>998</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Daniel Stern</name>
+						<rolename>Officer Richard Lymangood</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>2406</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Candy Clark</name>
+						<rolename>Kate</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>1302</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Joe Santos</name>
+						<rolename>Montoya</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>4143</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>David Sheiner</name>
+						<rolename>Fletcher</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>2579</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>James Murtaugh</name>
+						<rolename>Alf Hewitt</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>4349</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Ed Bernard</name>
+						<rolename>Sgt. Short</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>28927</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Paul Roebling</name>
+						<rolename>Icelan</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>587097</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+				</creditList>
+				<imageList>
+					<image>
+						<imageRef purpose="production" priority="5" unit="px"
+							height="2216" width="3300" orientation="landscape">http://image.tv4.se/4f/43/ef/FILE_130A55A2-A320-410B-A648-F4EE51B50DEA.jpg
+						</imageRef>
+					</image>
+				</imageList>
+				<categoryList>
+					<category>Film</category>
+					<category>Action</category>
+				</categoryList>
+			</content>
+			<content>
+				<id>1439631</id>
+				<productionYear>2002</productionYear>
+				<countryOfOriginList>
+					<country>US</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">The sum of all fears</title>
+					<title original="true" language="sv">Sum of all fears</title>
+				</titleList>
+				<descriptionList>
+					<description language="sv">The sum of all fears är en
+						amerikansk actionfilm. Baserad på en roman av Tom Clancy med
+						Morgan Freeman och Ben Affleck.</description>
+					<description length="short" language="sv">Amerikansk
+						actionfilm från 2002.</description>
+					<description length="medium" language="sv">När en
+						sydafrikansk vapenhandlare lyckas komma över kärnvapen och säljer
+						dem till en grupp fascister blir den amerikanske presidenten
+						Fowler misstänksam. Han anlitar CIA:s chef William Cabot och
+						specialagent Jack Ryan för att titta närmare på saken.
+					</description>
+					<description length="extended" language="sv">The sum of all
+						fears är en amerikansk actionfilm från 2002. Baserad på en roman
+						av Tom Clancy.
+
+						En sydafrikansk vapenhandlare lyckas komma över kärnvapen och säljer
+						dem till en grupp fascister ledda av Dessler som planerar att få
+						USA och Ryssland i krig. Strax därefter dör den ryske presidenten
+						plötsligt och blir ersatt av Nemerov, en man som väldigt få känner
+						till. Det leder till att spänningen mellan USA och Ryssland ökar.
+
+						USA:s president Fowler blir misstänksam och anlitar CIA:s chef
+						William Cabot som i sin tur rekryterar den Rysslandskunnige
+						analytikern Jack Ryan. Hans uppgift blir att undersöka vad som är
+						i görningen. När en kärnvapenbomb jämnar Tjetjeniens huvudstad med
+						marken skyller amerikanerna genast på ryssarna, trots att Jack
+						Ryan är säker på att det är andra som ligger bakom bombdådet.
+
+						När ytterligare en bomb detonerar utanför Baltimore mitt under Super
+						Bowl måste Ryan försöka få fram bevis på att det inte är ryssarna
+						för att kunna förhindra ett krig mellan USA och Ryssland.
+
+						Regissör: Phil Alden Robinson.
+					</description>
+					<description length="long" language="sv">The sum of all
+						fears är en amerikansk actionfilm från 2002. Baserad på en roman
+						av Tom Clancy.
+
+						En sydafrikansk vapenhandlare lyckas komma över kärnvapen och säljer
+						dem till en grupp fascister ledda av Dessler som planerar att lura
+						in USA och Ryssland i krig.
+
+						Men den amerikanske presidenten Fowler blir misstänksam och anlitar
+						CIA:s chef William Cabot och specialagent Jack Ryan för att titta
+						närmare på saken.
+
+						Regissör: Phil Alden Robinson.
+					</description>
+				</descriptionList>
+				<creditList>
+					<credit>
+						<name>Phil Alden Robinson</name>
+						<function>Regissör</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>2507</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Ben Affleck</name>
+						<rolename>Jack Ryan</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>610</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Morgan Freeman</name>
+						<rolename>William Cabot</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>12109</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>James Cromwell</name>
+						<rolename>President Fowler</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>6277</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Liev Schreiber</name>
+						<rolename>John Clark</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>48688</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Bridget Moynahan</name>
+						<rolename>Cathy Muller</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>525310</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Alan Bates</name>
+						<rolename>Dressler</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>1027</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Ken Jenkins</name>
+						<rolename>Admiral Pollack</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>12460</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Bruce McGill</name>
+						<rolename>National Security Advisor Revell</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>4956</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Philip Baker Hall</name>
+						<rolename>Defense Secretary Becker</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>16783</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+				</creditList>
+				<imageList>
+					<image>
+						<imageRef purpose="press" priority="5" unit="px" height="1611"
+							width="2400" orientation="landscape">http://image.tv4.se/56/db/b5/FILE_47BBCF5B-67B7-4209-9931-6A66AEB7AA6A.jpg
+						</imageRef>
+					</image>
+				</imageList>
+				<categoryList>
+					<category>Film</category>
+					<category>Thriller</category>
+				</categoryList>
+			</content>
+			<content>
+				<id>100167808</id>
+				<productionYear>2005</productionYear>
+				<countryOfOriginList>
+					<country>SE</country>
+				</countryOfOriginList>
+				<titleList>
+					<title original="false" language="sv">Blodsbröder</title>
+					<title original="true" language="sv">Blodsbröder</title>
+				</titleList>
+				<descriptionList>
+					<description language="sv">Drama om 30-årige Jon som efter
+						avtjänat fängelsestraff vill förändra sitt liv. Men alla omkring
+						honom verkar ha en annan uppfattning.</description>
+					<description length="short" language="sv">Svenskt drama från
+						2005 av Daniel Fridell.</description>
+					<description length="medium" language="sv">Efter att ha
+						avtjänat ett fängelsestraff är Jon nu 30 år gammal och redo att
+						förändra sitt liv. Men det verkar som om alla omkring honom
+						förväntar sig att han ska fortsätta med kriminella aktiviteter.
+						Jons bror Matte har planerat ett stort rån och insisterar att Jon
+						är skyldig honom att delta.</description>
+					<description length="long" language="sv">Blodsbröder är ett
+						svenskt drama från 2005.
+
+						Jon är frisläppt efter att ha avtjänat ett fängelsestraff på sju år.
+						Han är nu 30 år gammal och redo att förändra sitt liv för det
+						bättre. Men det verkar som om alla omkring honom förväntar sig att
+						han ska fortsätta med kriminella aktiviteter. Jons bror Matte har
+						till och med planerat ett stort rån och insisterar att Jon är
+						skyldig honom att delta. Frågan är det ens är möjligt att börja om
+						eller om man för alltid är stämplad.
+
+						Regissör: Daniel Fridell.
+					</description>
+				</descriptionList>
+				<creditList>
+					<credit>
+						<name>Daniel Fridell</name>
+						<function>Regissör</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>61330</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Liam Norberg</name>
+						<rolename>Jon</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>90381</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Mats Helin</name>
+						<rolename>Matte</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>518748</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Thorsten Flinck</name>
+						<rolename>Zoran</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>90382</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Noomi Rapace</name>
+						<rolename>Veronica</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>108622</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Sofia Helin</name>
+						<rolename>Malena</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>548177</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Reine Brynolfsson</name>
+						<rolename>Olle</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>82669</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Stina Ekblad</name>
+						<rolename>Angela</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>58789</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Ken Ring</name>
+						<rolename>Sami</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>105770965</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+					<credit>
+						<name>Pia Green</name>
+						<rolename>Malena's mother</rolename>
+						<function>Skådespelare</function>
+						<externalReferenceList>
+							<externalReference>
+								<provider>se.tv4</provider>
+								<id>42439</id>
+							</externalReference>
+						</externalReferenceList>
+					</credit>
+				</creditList>
+				<imageList>
+					<image>
+						<imageRef purpose="production" priority="5" unit="px"
+							height="1624" width="2480" orientation="landscape">http://image.tv4.se/65/22/4d/FILE_BC9F6B1C-3A5B-46B7-9E67-B9E4F93DB0D4.jpg
+						</imageRef>
+					</image>
+				</imageList>
+				<categoryList>
+					<category>Film</category>
+					<category>Drama</category>
+				</categoryList>
+			</content>
+		</ns3:contentList>
+		<ns3:materialList>
+			<material timestamp="2014-11-27T15:45:09.278+01:00">
+				<providerId>se.tv4</providerId>
+				<id>101734105</id>
+				<contentIdRef>300420655</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+				<aspectRatio>16:9</aspectRatio>
+			</material>
+			<material timestamp="2014-11-27T15:45:09.278+01:00">
+				<providerId>se.tv4</providerId>
+				<id>101734106</id>
+				<contentIdRef>1324366</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+				<aspectRatio>4:3</aspectRatio>
+				<subtitleList>
+					<subtitle format="closed" language="sv" />
+				</subtitleList>
+			</material>
+			<material timestamp="2014-11-27T15:45:09.279+01:00">
+				<providerId>se.tv4</providerId>
+				<id>101734110</id>
+				<contentIdRef>100000053</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+				<aspectRatio>4:3</aspectRatio>
+			</material>
+			<material timestamp="2014-11-27T15:45:09.279+01:00">
+				<providerId>se.tv4</providerId>
+				<id>101717450</id>
+				<contentIdRef>500236283</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+				<aspectRatio>16:9</aspectRatio>
+			</material>
+			<material timestamp="2014-11-27T15:45:09.279+01:00">
+				<providerId>se.tv4</providerId>
+				<id>101717442</id>
+				<contentIdRef>100001477</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+				<aspectRatio>16:9</aspectRatio>
+			</material>
+			<material timestamp="2014-11-27T15:45:09.279+01:00">
+				<providerId>se.tv4</providerId>
+				<id>101706401</id>
+				<contentIdRef>500236641</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+				<aspectRatio>16:9</aspectRatio>
+			</material>
+			<material timestamp="2014-11-27T15:45:09.279+01:00">
+				<providerId>se.tv4</providerId>
+				<id>101706387</id>
+				<contentIdRef>4865078</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+				<aspectRatio>16:9</aspectRatio>
+			</material>
+			<material timestamp="2014-11-27T15:45:09.279+01:00">
+				<providerId>se.tv4</providerId>
+				<id>101706627</id>
+				<contentIdRef>100019014</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+				<aspectRatio>16:9</aspectRatio>
+			</material>
+			<material timestamp="2014-11-27T15:45:09.279+01:00">
+				<providerId>se.tv4</providerId>
+				<id>101717606</id>
+				<contentIdRef>100108502</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+				<aspectRatio>16:9</aspectRatio>
+			</material>
+			<material timestamp="2014-11-27T15:45:09.279+01:00">
+				<providerId>se.tv4</providerId>
+				<id>101732271</id>
+				<contentIdRef>1439631</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+				<aspectRatio>16:9</aspectRatio>
+			</material>
+			<material timestamp="2014-11-27T15:45:09.279+01:00">
+				<providerId>se.tv4</providerId>
+				<id>101732277</id>
+				<contentIdRef>100167808</contentIdRef>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+				<aspectRatio>16:9</aspectRatio>
+				<subtitleList>
+					<subtitle format="closed" language="sv" />
+				</subtitleList>
+			</material>
+		</ns3:materialList>
+		<ns3:eventList>
+			<ns4:event timestamp="2014-11-27T15:45:09.269+01:00">
+				<ns4:id>101734105</ns4:id>
+				<ns4:rerun>true</ns4:rerun>
+				<ns4:live>false</ns4:live>
+				<ns4:hidden>false</ns4:hidden>
+				<ns4:timeList>
+					<ns4:time>
+						<ns4:startTime>2014-11-30T05:05:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-11-30T05:30:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2012-12-07T14:10:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2012-12-07T14:40:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-12-09T04:50:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-12-09T05:15:00.000+01:00</ns4:endTime>
+					</ns4:time>
+				</ns4:timeList>
+				<ns4:contentIdRef>300420655</ns4:contentIdRef>
+				<ns4:materialIdRef>300420655</ns4:materialIdRef>
+			</ns4:event>
+			<ns4:event timestamp="2014-11-27T15:45:09.271+01:00">
+				<ns4:id>101734106</ns4:id>
+				<ns4:rerun>true</ns4:rerun>
+				<ns4:live>false</ns4:live>
+				<ns4:hidden>false</ns4:hidden>
+				<ns4:timeList>
+					<ns4:time>
+						<ns4:startTime>2014-11-30T05:30:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-11-30T07:25:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-08-10T21:00:00.000+02:00</ns4:startTime>
+						<ns4:endTime>2014-08-10T23:10:00.000+02:00</ns4:endTime>
+					</ns4:time>
+				</ns4:timeList>
+				<ns4:contentIdRef>1324366</ns4:contentIdRef>
+				<ns4:materialIdRef>1324366</ns4:materialIdRef>
+			</ns4:event>
+			<ns4:event timestamp="2014-11-27T15:45:09.271+01:00">
+				<ns4:id>101734110</ns4:id>
+				<ns4:rerun>false</ns4:rerun>
+				<ns4:live>true</ns4:live>
+				<ns4:hidden>false</ns4:hidden>
+				<ns4:timeList>
+					<ns4:time>
+						<ns4:startTime>2014-11-30T07:25:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-11-30T11:30:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-12-01T07:00:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-12-01T10:35:00.000+01:00</ns4:endTime>
+					</ns4:time>
+				</ns4:timeList>
+				<ns4:contentIdRef>100000053</ns4:contentIdRef>
+				<ns4:materialIdRef>100000053</ns4:materialIdRef>
+			</ns4:event>
+			<ns4:event timestamp="2014-11-27T15:45:09.272+01:00">
+				<ns4:id>101717450</ns4:id>
+				<ns4:rerun>true</ns4:rerun>
+				<ns4:live>false</ns4:live>
+				<ns4:hidden>false</ns4:hidden>
+				<ns4:timeList>
+					<ns4:time>
+						<ns4:startTime>2014-11-30T11:30:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-11-30T13:25:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-08-24T21:00:00.000+02:00</ns4:startTime>
+						<ns4:endTime>2014-08-24T22:50:00.000+02:00</ns4:endTime>
+					</ns4:time>
+				</ns4:timeList>
+				<ns4:contentIdRef>500236283</ns4:contentIdRef>
+				<ns4:materialIdRef>500236283</ns4:materialIdRef>
+			</ns4:event>
+			<ns4:event timestamp="2014-11-27T15:45:09.273+01:00">
+				<ns4:id>101717442</ns4:id>
+				<ns4:rerun>true</ns4:rerun>
+				<ns4:live>false</ns4:live>
+				<ns4:hidden>false</ns4:hidden>
+				<ns4:timeList>
+					<ns4:time>
+						<ns4:startTime>2014-11-30T13:25:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-11-30T15:35:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-09-01T17:00:00.000+02:00</ns4:startTime>
+						<ns4:endTime>2014-09-01T19:10:00.000+02:00</ns4:endTime>
+					</ns4:time>
+				</ns4:timeList>
+				<ns4:contentIdRef>100001477</ns4:contentIdRef>
+				<ns4:materialIdRef>100001477</ns4:materialIdRef>
+			</ns4:event>
+			<ns4:event timestamp="2014-11-27T15:45:09.273+01:00">
+				<ns4:id>101706401</ns4:id>
+				<ns4:rerun>true</ns4:rerun>
+				<ns4:live>false</ns4:live>
+				<ns4:hidden>false</ns4:hidden>
+				<ns4:timeList>
+					<ns4:time>
+						<ns4:startTime>2014-11-30T15:35:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-11-30T18:20:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-11-10T21:00:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-11-10T23:50:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-12-01T11:50:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-12-01T14:25:00.000+01:00</ns4:endTime>
+					</ns4:time>
+				</ns4:timeList>
+				<ns4:contentIdRef>500236641</ns4:contentIdRef>
+				<ns4:materialIdRef>500236641</ns4:materialIdRef>
+			</ns4:event>
+			<ns4:event timestamp="2014-11-27T15:45:09.274+01:00">
+				<ns4:id>101706387</ns4:id>
+				<ns4:rerun>true</ns4:rerun>
+				<ns4:live>false</ns4:live>
+				<ns4:hidden>false</ns4:hidden>
+				<ns4:timeList>
+					<ns4:time>
+						<ns4:startTime>2014-11-30T18:20:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-11-30T21:00:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-09-05T21:00:00.000+02:00</ns4:startTime>
+						<ns4:endTime>2014-09-05T23:50:00.000+02:00</ns4:endTime>
+					</ns4:time>
+				</ns4:timeList>
+				<ns4:contentIdRef>4865078</ns4:contentIdRef>
+				<ns4:materialIdRef>4865078</ns4:materialIdRef>
+			</ns4:event>
+			<ns4:event timestamp="2014-11-27T15:45:09.275+01:00">
+				<ns4:id>101706627</ns4:id>
+				<ns4:rerun>false</ns4:rerun>
+				<ns4:live>false</ns4:live>
+				<ns4:hidden>false</ns4:hidden>
+				<ns4:timeList>
+					<ns4:time>
+						<ns4:startTime>2014-11-30T21:00:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-11-30T22:50:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-12-01T14:25:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-12-01T16:20:00.000+01:00</ns4:endTime>
+					</ns4:time>
+				</ns4:timeList>
+				<ns4:contentIdRef>100019014</ns4:contentIdRef>
+				<ns4:materialIdRef>100019014</ns4:materialIdRef>
+			</ns4:event>
+			<ns4:event timestamp="2014-11-27T15:45:09.276+01:00">
+				<ns4:id>101717606</ns4:id>
+				<ns4:rerun>true</ns4:rerun>
+				<ns4:live>false</ns4:live>
+				<ns4:hidden>false</ns4:hidden>
+				<ns4:timeList>
+					<ns4:time>
+						<ns4:startTime>2014-11-30T22:50:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-12-01T01:00:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-09-19T23:20:00.000+02:00</ns4:startTime>
+						<ns4:endTime>2014-09-20T01:35:00.000+02:00</ns4:endTime>
+					</ns4:time>
+				</ns4:timeList>
+				<ns4:contentIdRef>100108502</ns4:contentIdRef>
+				<ns4:materialIdRef>100108502</ns4:materialIdRef>
+			</ns4:event>
+			<ns4:event timestamp="2014-11-27T15:45:09.276+01:00">
+				<ns4:id>101732271</ns4:id>
+				<ns4:rerun>true</ns4:rerun>
+				<ns4:live>false</ns4:live>
+				<ns4:hidden>false</ns4:hidden>
+				<ns4:timeList>
+					<ns4:time>
+						<ns4:startTime>2014-12-01T01:00:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-12-01T03:35:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-09-06T21:00:00.000+02:00</ns4:startTime>
+						<ns4:endTime>2014-09-06T23:35:00.000+02:00</ns4:endTime>
+					</ns4:time>
+				</ns4:timeList>
+				<ns4:contentIdRef>1439631</ns4:contentIdRef>
+				<ns4:materialIdRef>1439631</ns4:materialIdRef>
+			</ns4:event>
+			<ns4:event timestamp="2014-11-27T15:45:09.277+01:00">
+				<ns4:id>101732277</ns4:id>
+				<ns4:rerun>true</ns4:rerun>
+				<ns4:live>false</ns4:live>
+				<ns4:hidden>false</ns4:hidden>
+				<ns4:timeList>
+					<ns4:time>
+						<ns4:startTime>2014-12-01T03:35:00.000+01:00</ns4:startTime>
+						<ns4:endTime>2014-12-01T05:20:00.000+01:00</ns4:endTime>
+					</ns4:time>
+					<ns4:time>
+						<ns4:startTime>2014-08-17T23:25:00.000+02:00</ns4:startTime>
+						<ns4:endTime>2014-08-18T01:20:00.000+02:00</ns4:endTime>
+					</ns4:time>
+				</ns4:timeList>
+				<ns4:contentIdRef>100167808</ns4:contentIdRef>
+				<ns4:materialIdRef>100167808</ns4:materialIdRef>
+			</ns4:event>
+		</ns3:eventList>
+	</ns2:data>
+</ns2:schedule-metadata>
+

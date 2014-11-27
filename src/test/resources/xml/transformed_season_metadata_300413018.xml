@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:content-metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
+	xmlns:ns3="http://video-metadata.tv.se/schedule/v1" xmlns:ns4="http://video-metadata.tv.se/event/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/material/v1">
+	<ns2:header>
+		<ns2:providerId>se.tv4</ns2:providerId>
+		<ns2:msgId>e104b49f-227b-46f5-a7ca-e4890f72069d</ns2:msgId>
+	</ns2:header>
+	<ns2:data>
+		<brand>
+			<id>50788422</id>
+			<titleList>
+				<title original="false" language="sv">Den förtrollade sagan</title>
+			</titleList>
+			<descriptionList>
+				<description length="short" language="sv">Brasiliansk
+					dramaserie från 2011.</description>
+				<description length="medium" language="sv">Serien skildrar
+					kärlekshistorien mellan den vackra Azucena och hennes älskade
+					Jesuino, två godhjärtade ungdomar som är omedvetna om sitt verkliga
+					ursprung. Omgivna av vackra slott och kungligheter stöter de på
+					flera äventyr längs sin väg, fast beslutna att hålla ihop vad som
+					än händer.</description>
+				<description length="long" language="sv">Den förtrollade
+					sagan är en brasiliansk dramaserie från 2011.
+
+					Serien skildrar kärlekshistorien mellan den vackra Azucena och hennes
+					älskade Jesuino, två godhjärtade ungdomar som är omedvetna om sitt
+					verkliga ursprung. Omgivna av vackra slott och kungligheter stöter
+					de på flera äventyr längs sin väg, fast beslutna att hålla ihop vad
+					som än händer.
+				</description>
+			</descriptionList>
+		</brand>
+		<season>
+			<id>300413018</id>
+			<productionYear>2011</productionYear>
+			<countryOfOriginList>
+				<country>BR</country>
+			</countryOfOriginList>
+			<titleList>
+				<title original="false" language="sv">Den förtrollade sagan</title>
+			</titleList>
+			<descriptionList>
+				<description length="short" language="sv">Brasiliansk
+					dramaserie från 2011.</description>
+				<description length="medium" language="sv">Serien skildrar
+					kärlekshistorien mellan den vackra Azucena och hennes älskade
+					Jesuino, två godhjärtade ungdomar som är omedvetna om sitt verkliga
+					ursprung. Omgivna av vackra slott och kungligheter stöter de på
+					flera äventyr längs sin väg, fast beslutna att hålla ihop vad som
+					än händer.</description>
+				<description length="long" language="sv">Den förtrollade
+					sagan är en brasiliansk dramaserie från 2011.
+
+					Serien skildrar kärlekshistorien mellan den vackra Azucena och hennes
+					älskade Jesuino, två godhjärtade ungdomar som är omedvetna om sitt
+					verkliga ursprung. Omgivna av vackra slott och kungligheter stöter
+					de på flera äventyr längs sin väg, fast beslutna att hålla ihop vad
+					som än händer.
+				</description>
+			</descriptionList>
+			<categoryList>
+				<category>Drama</category>
+			</categoryList>
+			<brandId>50788422</brandId>
+			<numberOfEpisodes>110</numberOfEpisodes>
+		</season>
+	</ns2:data>
+</ns2:content-metadata>
+

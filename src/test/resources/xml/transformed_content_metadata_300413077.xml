@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:content-metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
+	xmlns:ns3="http://video-metadata.tv.se/schedule/v1" xmlns:ns4="http://video-metadata.tv.se/event/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/material/v1">
+	<ns2:header>
+		<ns2:providerId>se.tv4</ns2:providerId>
+		<ns2:msgId>0328e59f-1f8f-408a-aa81-a9a622766704</ns2:msgId>
+	</ns2:header>
+	<ns2:data>
+		<brand>
+			<id>50788422</id>
+			<titleList>
+				<title original="false" language="sv">Den förtrollade sagan</title>
+			</titleList>
+			<descriptionList>
+				<description length="short" language="sv">Brasiliansk
+					dramaserie från 2011.</description>
+				<description length="medium" language="sv">Serien skildrar
+					kärlekshistorien mellan den vackra Azucena och hennes älskade
+					Jesuino, två godhjärtade ungdomar som är omedvetna om sitt verkliga
+					ursprung. Omgivna av vackra slott och kungligheter stöter de på
+					flera äventyr längs sin väg, fast beslutna att hålla ihop vad som
+					än händer.</description>
+				<description length="long" language="sv">Den förtrollade
+					sagan är en brasiliansk dramaserie från 2011.
+
+					Serien skildrar kärlekshistorien mellan den vackra Azucena och hennes
+					älskade Jesuino, två godhjärtade ungdomar som är omedvetna om sitt
+					verkliga ursprung. Omgivna av vackra slott och kungligheter stöter
+					de på flera äventyr längs sin väg, fast beslutna att hålla ihop vad
+					som än händer.
+				</description>
+			</descriptionList>
+		</brand>
+		<season>
+			<id>300413018</id>
+			<productionYear>2011</productionYear>
+			<countryOfOriginList>
+				<country>BR</country>
+			</countryOfOriginList>
+			<titleList>
+				<title original="false" language="sv">Den förtrollade sagan</title>
+			</titleList>
+			<descriptionList>
+				<description length="short" language="sv">Brasiliansk
+					dramaserie från 2011.</description>
+				<description length="medium" language="sv">Serien skildrar
+					kärlekshistorien mellan den vackra Azucena och hennes älskade
+					Jesuino, två godhjärtade ungdomar som är omedvetna om sitt verkliga
+					ursprung. Omgivna av vackra slott och kungligheter stöter de på
+					flera äventyr längs sin väg, fast beslutna att hålla ihop vad som
+					än händer.</description>
+				<description length="long" language="sv">Den förtrollade
+					sagan är en brasiliansk dramaserie från 2011.
+
+					Serien skildrar kärlekshistorien mellan den vackra Azucena och hennes
+					älskade Jesuino, två godhjärtade ungdomar som är omedvetna om sitt
+					verkliga ursprung. Omgivna av vackra slott och kungligheter stöter
+					de på flera äventyr längs sin väg, fast beslutna att hålla ihop vad
+					som än händer.
+				</description>
+			</descriptionList>
+			<categoryList>
+				<category>Drama</category>
+			</categoryList>
+			<brandId>50788422</brandId>
+			<numberOfEpisodes>110</numberOfEpisodes>
+		</season>
+		<content>
+			<id>300413077</id>
+			<productionYear>2011</productionYear>
+			<countryOfOriginList>
+				<country>BR</country>
+			</countryOfOriginList>
+			<titleList>
+				<title original="false" language="sv">Den förtrollade sagan</title>
+				<title original="true" language="sv">Cordel Encantado</title>
+			</titleList>
+			<creditList>
+				<credit>
+					<name>Caua Reymond</name>
+					<rolename>Jesuino Araujo</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>581225</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+				<credit>
+					<name>Bianca Bin</name>
+					<rolename>Azucena Bezerra</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>50788413</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+				<credit>
+					<name>Carmo Dalla Vecchia</name>
+					<rolename>Rei Augusto</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>649823</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+				<credit>
+					<name>Jayme Matarazzo</name>
+					<rolename>Principe Felipe</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>664206</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+				<credit>
+					<name>Ana Cecilia Costa</name>
+					<rolename>Virtuosa Bezerra</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>685752</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+			</creditList>
+			<categoryList>
+				<category>Drama</category>
+			</categoryList>
+			<brandId>50788422</brandId>
+			<seasonId>300413018</seasonId>
+			<episodeNumber>59</episodeNumber>
+		</content>
+	</ns2:data>
+</ns2:content-metadata>
+

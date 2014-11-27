@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:content-metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
+	xmlns:ns3="http://video-metadata.tv.se/schedule/v1" xmlns:ns4="http://video-metadata.tv.se/event/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/material/v1">
+	<ns2:header>
+		<ns2:providerId>se.tv4</ns2:providerId>
+		<ns2:msgId>d78b8696-9786-4c52-8b39-026323e749b9</ns2:msgId>
+	</ns2:header>
+	<ns2:data>
+		<brand>
+			<id>102886607</id>
+			<titleList>
+				<title original="false" language="sv">Handboll: Elitserien</title>
+			</titleList>
+		</brand>
+	</ns2:data>
+</ns2:content-metadata>
