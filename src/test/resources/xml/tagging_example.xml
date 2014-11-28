@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tags xmlns:common="http://video-metadata.tv.se/common/v1" xmlns:tag="http://video-metadata.tv.se/tagging/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://video-metadata.tv.se/tagging/v1 ../../../main/xsd/tagging.xsd "
+>
+	<tag created="2001-12-31T12:00:00">
+		<id>1</id>
+		<providerId>se.tv4</providerId>
+		<type>program</type>
+		<description language="sv">Programbeskrivning</description>
+		<tagValues>
+			<tagText default="true" language="sv">taggen</tagText>
+			<tagText language="en">thetag</tagText>
+		</tagValues>
+	</tag>
+	<tag created="2014-11-25T12:00:00" deprecated="2014-11-26T09:00:00">
+		<id>2</id>
+		<providerId>se.tv4</providerId>
+		<type>program</type>
+		<description language="sv">Programbeskrivning</description>
+		<tagValues>
+			<tagText default="true" language="sv">gammal_tag</tagText>
+			<tagText language="en">old_tag</tagText>
+		</tagValues>
+	</tag>
+</tags>

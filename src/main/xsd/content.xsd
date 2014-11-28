@@ -7,6 +7,13 @@
 	<xs:import namespace="http://video-metadata.tv.se/material/v1" schemaLocation="material.xsd" />
 
 	<!-- 
+ 	-->
+	<xs:element name="content" type="contentSeasonBrandType">
+		<xs:annotation>
+			<xs:documentation>Root element for content object</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
 	 -->
 	<xs:complexType name="contentSeasonBrandType">
 		<xs:sequence>
@@ -51,12 +58,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="genericTitleList" type="genericTitleListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Generic title list for content.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="descriptionList" type="descriptionListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>List of descriptions
@@ -75,27 +76,15 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="genreList" type="genreListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Genre, the content belongs to. Check with the partners about valid genres.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="dvbGenre" type="dvbGenreType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>dvb genres, two numbers between 0-15
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="keywordList" type="keywordListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>list of keywords for the content, should be single words, and consistent within each provider
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="tagList" type="tagListType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>list of tags (defined ids) for the content
+					<xs:documentation>list of tags for the content.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="adTagList" type="tagListType" minOccurs="0">
+				<xs:annotation><!-- TODO: fix tags!!! -->
+					<xs:documentation>Ad tags used to mark content for certain advertisement tags.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -177,6 +166,7 @@
 				<xs:sequence>
 					<!-- <brandOrSeasonId> <type>season</type> <id>12354</id> </brandOrSeasonId> <xs:element name="brandOrSeasonId" type="xs:string" minOccurs="0"> <xs:annotation> 
 						<xs:documentation>id for season, not unique</xs:documentation> </xs:annotation> </xs:element> Alternativt -->
+					<xs:element name="contentType" type="contentTypeType" />
 					<xs:element name="brandId" type="common:idType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>id for season, not unique</xs:documentation>
@@ -189,8 +179,8 @@
 					</xs:element>
 					<xs:element name="contentIdRef" type="common:idType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Reference to other content entity that is related. 
-							Thought use is for a clip or trailer to reference the original content.</xs:documentation>
+							<xs:documentation>Reference to other content entity that is related. Thought use is for a clip or trailer to reference the original content.
+							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="episodeNumber" type="xs:long" minOccurs="0">
@@ -203,15 +193,20 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:simpleType name="contentTypeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="program" />
+			<xs:enumeration value="film" />
+			<xs:enumeration value="trailer" />
+			<xs:enumeration value="clip" />
+			<xs:enumeration value="ad" />
+			<xs:enumeration value="other" />
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="titleListType">
 		<xs:sequence>
 			<xs:element name="title" type="originalTitleType" maxOccurs="unbounded" />
 			<xs:element name="titleId" type="xs:string" minOccurs="0" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="genericTitleListType">
-		<xs:sequence>
-			<xs:element name="title" type="simpleTitleType" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="descriptionListType">
@@ -233,23 +228,6 @@
 			<xs:element name="comment" type="descriptionType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="keywordListType">
-		<xs:sequence>
-			<xs:element name="keyword" type="keywordType" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="keywordType">
-		<xs:simpleContent>
-			<xs:extension base="textType">
-				<xs:attribute name="priority" type="xs:long">
-					<xs:annotation>
-						<xs:documentation>lower priority number means higher importance
-						</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
 	<xs:complexType name="tagListType">
 		<xs:sequence>
 			<xs:element name="tag" type="tagType" minOccurs="0" maxOccurs="unbounded" />
@@ -260,23 +238,6 @@
 			<xs:pattern value="[0-0a-zA-Z:_\-\.#]+" />
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:complexType name="genreListType">
-		<xs:sequence>
-			<xs:element name="genre" type="genreType" minOccurs="0" maxOccurs="50" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="genreType">
-		<xs:simpleContent>
-			<xs:extension base="textType">
-				<xs:attribute name="priority" type="xs:long">
-					<xs:annotation>
-						<xs:documentation>lower priority number means higher importance
-						</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
 	<xs:complexType name="simpleTitleType">
 		<xs:simpleContent>
 			<xs:restriction base="simpleTextType">
@@ -330,7 +291,6 @@
 						<xs:documentation>code in ISO 639-1</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
-                <!-- Removed since implicit given by parent node. <xs:attribute name="type" type="contextType" /> -->
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
@@ -348,24 +308,6 @@
 			<xs:enumeration value="extended" />
 		</xs:restriction>
 	</xs:simpleType>
-
-	<!-- Removed since implicit given by parent node. 
-	<xs:simpleType name="contextType">
-		<xs:annotation>
-			<xs:documentation>type of entity the metadata is refered to, content
-				if
-				it is the content entity itself, series or season if the metadata
-				refers to
-				series or season
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="content" />
-			<xs:enumeration value="series" />
-			<xs:enumeration value="season" />
-		</xs:restriction>
-	</xs:simpleType>
-	-->
 	<xs:complexType name="countryListType">
 		<xs:sequence>
 			<xs:element name="country" type="xs:string" minOccurs="0" maxOccurs="unbounded">
@@ -671,6 +613,5 @@
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
-<!-- 		<xs:attribute name="type" type="contextType" /> -->
 	</xs:complexType>
 </xs:schema>

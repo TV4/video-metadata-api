@@ -3,11 +3,15 @@
 	targetNamespace="http://video-metadata.tv.se/material/v1" version="1.0"
 >
 	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
+	<!-- 
+	 -->
 	<xs:element name="material" type="materialType">
 		<xs:annotation>
 			<xs:documentation>Root element for material object</xs:documentation>
 		</xs:annotation>
 	</xs:element>
+	<!-- 
+	 -->
 	<xs:complexType name="materialType">
 		<xs:sequence>
 			<xs:element name="providerId" type="common:idType">
@@ -37,12 +41,6 @@
 			<xs:element name="contentIdRef" type="common:idType"> <!-- todo - same as in content!!! -->
 				<xs:annotation>
 					<xs:documentation>reference to content</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="materialType" type="materialTypeType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>type of material
-					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="videoFormat" type="videoFormatType" minOccurs="0">
@@ -127,6 +125,7 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="4:3" />
 			<xs:enumeration value="16:9" />
+			<xs:enumeration value="2.35:1" /><!-- CinemaScope -->
 			<xs:enumeration value="21:9" />
 			<xs:enumeration value="other" />
 		</xs:restriction>
@@ -152,6 +151,7 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<!-- 
 	<xs:simpleType name="materialTypeType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="program" />
@@ -161,6 +161,7 @@
 			<xs:enumeration value="other" />
 		</xs:restriction>
 	</xs:simpleType>
+	-->
 	<xs:simpleType name="audioFormatType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="mono" />
@@ -194,7 +195,7 @@
 	</xs:complexType>
 	<xs:simpleType name="subtitleFormatType">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="closed" />
+			<xs:enumeration value="closed" /><!-- text-tv text -->
 			<xs:enumeration value="open" />
 			<xs:enumeration value="other" />
 		</xs:restriction>
@@ -223,10 +224,10 @@
 	</xs:complexType>
 	<xs:simpleType name="accessibilityFormatType">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="hearingImpairedSubtitle" />
+			<xs:enumeration value="hearingImpairedSubtitle" /><!-- not used by TV4 -->
 			<xs:enumeration value="signLanguageInterpretation" />
 			<xs:enumeration value="audioDescription" />
-			<xs:enumeration value="spokenSubtitle" />
+			<xs:enumeration value="spokenSubtitle" /><!-- not used by TV4 -->
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="materialReferenceListType">
@@ -243,6 +244,11 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="materialReferenceType">
+		<!-- Om flera segment finns, då behövs ordning anges. Hämtas idag från Media i Louise. -->
+		<xs:annotation>
+			<xs:documentation>element string value is a id, path or any other reference to the media file.
+			</xs:documentation>
+		</xs:annotation>
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
 				<xs:attribute name="type" type="materialReferenceTypeType">
@@ -290,22 +296,24 @@
 			</xs:element>
 			<xs:element name="validFrom" type="xs:dateTime" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>start of period where right is valid
+					<xs:documentation>Start of period where right is valid
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="validTo" type="xs:dateTime" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>end of period where right is valid
+					<xs:documentation>End of period where right is valid
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- 
 			<xs:element name="unlimitedPeriod" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>indicates if there is a period or not. If true, the rightsCategory is valid until otherwise said
+					<xs:documentation>Indicates if there is a period or not. If true, the rightsCategory is valid until otherwise said
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			-->
 			<xs:element name="rightsCategoryList" type="rightsCategoryListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of right categories</xs:documentation>
@@ -320,20 +328,26 @@
 	</xs:complexType>
 	<xs:complexType name="rightsCategoryType">
 		<xs:sequence>
-			<xs:element name="vod" type="deviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="ppv" type="deviceTypeRights" minOccurs="0"></xs:element>
+			<xs:element name="vod" type="deviceTypeRights" minOccurs="0"></xs:element><!-- not needed, implicit from a publish! 
+			Ersätt med list på devicer som för sända denna material -->
+			<xs:element name="ppv" type="deviceTypeRights" minOccurs="0"></xs:element><!-- ppv = TVOD. Vad är skillnad mot PricceGroup  ??? -->
 			<xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="noTransmission" type="transmissionDeviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="addProviderLogo" type="xs:boolean" default="true"></xs:element>
-			<xs:element name="allowAds" type="xs:boolean" default="true"></xs:element>
-			<xs:element name="drmRestrictions" type="drmRestrictionsType" minOccurs="0"></xs:element><!-- TODO -->
-			<xs:element name="geoRestrictions" type="geoRestrictionsType" minOccurs="0"></xs:element><!-- TODO -->
+			<xs:element name="noTransmission" type="transmissionDeviceTypeRights" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation> Linear transmision may not be sent to these devices
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="addProviderLogo" type="xs:boolean" default="true" />
+			<xs:element name="allowAds" type="xs:boolean" default="true" />
+			<xs:element name="drmRestrictions" type="drmRestrictionsType" minOccurs="0" />
+			<xs:element name="geoRestrictions" type="geoRestrictionsType" minOccurs="0"/>
 			<xs:element name="shareToList">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="shareTo" type="shareToType">
+						<xs:element name="shareTo" type="shareToType" minOccurs="0" maxOccurs="unbounded">
 							<xs:annotation>
-								<xs:documentation></xs:documentation>
+								<xs:documentation>youtube, facebook, twitter, ...</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 					</xs:sequence>
@@ -466,6 +480,7 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:simpleType name="shareToType">
+		<!-- TODO : borde ange om det är en exclusive or excluding right -->
 		<xs:annotation>
 			<xs:documentation>Tag identifying the channel that is allowed for sharing. '*' to indicate all and anyware.
 			</xs:documentation>

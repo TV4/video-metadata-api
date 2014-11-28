@@ -51,11 +51,6 @@
 			<xs:element name="timeList" type="timeListType" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="descriptionListLangType">
-		<xs:sequence>
-			<xs:element name="description" type="common:description" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="embeddedEventType">
 		<xs:annotation>
 			<xs:documentation>
@@ -66,25 +61,14 @@
 				<xs:sequence>
 					<xs:element name="contentIdRef" type="xs:string">
 						<xs:annotation>
-							<xs:documentation>reference to contentId for this event for convenience as this could be obtained via materialIdRef
+							<xs:documentation>Reference to contentId for this event for convenience as this could be obtained via materialIdRef.
+							Warning. This id is redundant as the material also points out the content! They should be verified to be the same.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="materialIdRef" type="xs:string">
 						<xs:annotation>
 							<xs:documentation>reference to contentId for this event
-							</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="previousEventList" type="basicEventListType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>list if events that occured in time before current event, i.e. same contentId.
-							</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="comingEventList" type="basicEventListType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>list of events that occurred in time after current event, i.e. same contentId.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -127,34 +111,61 @@
 			<xs:element name="event" type="eventType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="descriptionListLangType">
+		<xs:sequence>
+			<xs:element name="description" type="common:description" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="eventGroupType">
+		<xs:annotation>
+			<xs:documentation> The element value is the name of the group. The sequenceNumber attribute gives the order in which the events should been viewed,
+				if not given implicitly by the time.
+			</xs:documentation>
+		</xs:annotation>
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
 				<xs:attribute name="sequenceNumber" type="xs:short">
-					<xs:annotation>
-						<xs:documentation>The order the events with in a group should been viewed</xs:documentation>
-					</xs:annotation>
 				</xs:attribute>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:simpleType name="timecode">
+		<xs:annotation>
+			<xs:documentation>
+			</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string" />
 	</xs:simpleType>
-	<xs:complexType name="timeListType">
+	<xs:complexType name="eventTimeType">
 		<xs:sequence>
-			<xs:element name="time" type="timeType" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="timeType">
-		<xs:sequence>
-			<xs:element name="startTime" type="xs:dateTime" />
-			<xs:element name="endTime" type="xs:dateTime" />
+			<xs:element name="startTime" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>time when program starts or vod is possible to start play.  
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="endTime" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>time when program ends or vod is no longer possible to play.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="publishTime" type="xs:dateTime" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>time when the program/vod information can be exposed to the customer. It can not be played. 
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="duration" type="timecode" minOccurs="0" />
 		</xs:sequence>
 		<xs:attribute name="type" type="timeSchedulingType" default="public" />
 	</xs:complexType>
 	<xs:simpleType name="timeSchedulingType">
+		<xs:annotation>
+			<xs:documentation> Planned = the exact planned time E.g. 19:57.45. N.b., exact time is unknown as long as the time is in the future. Public = The
+				time to use in an EPG. Usually rounded to the nearest previous "5 minut period", e.g. 19:55.00
+			</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="public" />
 			<xs:enumeration value="planned" />
