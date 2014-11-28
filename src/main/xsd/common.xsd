@@ -7,6 +7,10 @@
 	Common types used in all XSDs 
 	  -->
 	<xs:simpleType name="idType">
+		<xs:annotation>
+			<xs:documentation> A general ID type for entities
+			</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-0a-zA-Z:_\-\.]+" />
 		</xs:restriction>
@@ -14,18 +18,15 @@
 	<!-- 
 	 -->
 	<xs:complexType name="description">
-	<xs:annotation>
-		<xs:documentation>
-			A general type for describing something
-		</xs:documentation>
-	</xs:annotation>
+		<xs:annotation>
+			<xs:documentation> A general type for describing something, attribute indicating the language.
+			</xs:documentation>
+		</xs:annotation>
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
 				<xs:attribute name="language" type="xs:language">
 					<xs:annotation>
-						<xs:documentation>
-							code in ISO 639-1
-							Note that the language here refers to the language on which the description is made.
+						<xs:documentation> code in ISO 639-1 Note that the language here refers to the language on which the description is made.
 						</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>

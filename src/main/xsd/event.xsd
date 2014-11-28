@@ -61,8 +61,8 @@
 				<xs:sequence>
 					<xs:element name="contentIdRef" type="xs:string">
 						<xs:annotation>
-							<xs:documentation>Reference to contentId for this event for convenience as this could be obtained via materialIdRef.
-							Warning. This id is redundant as the material also points out the content! They should be verified to be the same.
+							<xs:documentation>Reference to contentId for this event for convenience as this could be obtained via materialIdRef. Warning. This id is
+								redundant as the material also points out the content! They should be verified to be the same.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -136,23 +136,29 @@
 		</xs:annotation>
 		<xs:restriction base="xs:string" />
 	</xs:simpleType>
-	<xs:complexType name="eventTimeType">
+	<xs:complexType name="timeListType">
+		<xs:sequence>
+			<xs:element name="time" type="timeType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="timeType">
 		<xs:sequence>
 			<xs:element name="startTime" type="xs:dateTime">
 				<xs:annotation>
-					<xs:documentation>time when program starts or vod is possible to start play.  
+					<xs:documentation>Time when program starts or vod is possible to start play.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="endTime" type="xs:dateTime">
 				<xs:annotation>
-					<xs:documentation>time when program ends or vod is no longer possible to play.
+					<xs:documentation>Time when program ends or vod is no longer possible to play.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="publishTime" type="xs:dateTime" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>time when the program/vod information can be exposed to the customer. It can not be played. 
+					<xs:documentation>Time when the program/vod information can be exposed to the customer. Vod can not be played until startTime. If publish is
+						after start or empty (nil), then publishTime = startTime.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>

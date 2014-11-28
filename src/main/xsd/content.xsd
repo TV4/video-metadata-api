@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Document developed by SVT and TV4 2009, 2010, 2011 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/content/v1" xmlns:common="http://video-metadata.tv.se/common/v1"
-	xmlns:material="http://video-metadata.tv.se/material/v1" targetNamespace="http://video-metadata.tv.se/content/v1" version="1.0"
+	xmlns:material="http://video-metadata.tv.se/material/v1" xmlns:tagging="http://video-metadata.tv.se/tagging/v1" targetNamespace="http://video-metadata.tv.se/content/v1"
+	version="1.0"
 >
 	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/material/v1" schemaLocation="material.xsd" />
+	<xs:import namespace="http://video-metadata.tv.se/tagging/v1" schemaLocation="tagging.xsd" />
 
 	<!-- 
  	-->
@@ -82,8 +84,8 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="adTagList" type="tagListType" minOccurs="0">
-				<xs:annotation><!-- TODO: fix tags!!! -->
+			<xs:element name="adTagList" type="adTagListType" minOccurs="0">
+				<xs:annotation>
 					<xs:documentation>Ad tags used to mark content for certain advertisement tags.
 					</xs:documentation>
 				</xs:annotation>
@@ -230,14 +232,16 @@
 	</xs:complexType>
 	<xs:complexType name="tagListType">
 		<xs:sequence>
-			<xs:element name="tag" type="tagType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="subjectTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="storyTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="freeTextTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:simpleType name="tagType">
-		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-0a-zA-Z:_\-\.#]+" />
-		</xs:restriction>
-	</xs:simpleType>
+	<xs:complexType name="adTagListType">
+		<xs:sequence>
+			<xs:element name="adTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="simpleTitleType">
 		<xs:simpleContent>
 			<xs:restriction base="simpleTextType">
@@ -467,11 +471,23 @@
 			<xs:element name="category" type="categoryType" minOccurs="0" maxOccurs="unbounded"></xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:simpleType name="categoryType">
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1" />
-		</xs:restriction>
-	</xs:simpleType>
+	<xs:complexType name="categoryType">
+		<xs:annotation>
+			<xs:documentation>Category is synonym with Genre. Two leveles of categorisations are supported: main and sub-category THe primary category is the
+				cateegry with lowest priority value in the list.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="mainCategory" type="xs:string" />
+			<xs:element name="subCategory" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+		<xs:attribute name="priority" type="xs:int">
+			<xs:annotation>
+				<xs:documentation>lower priority number means higher importance
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
 	<xs:complexType name="sportType">
 		<xs:annotation>
 			<xs:documentation> Sports tag that describes the sport event: serie, league, tournament or any other sport event.

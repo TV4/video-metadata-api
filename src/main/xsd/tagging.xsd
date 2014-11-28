@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/tagging/v1" xmlns:common="http://video-metadata.tv.se/common/v1"
-	targetNamespace="http://video-metadata.tv.se/tagging/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/tagging/v1" targetNamespace="http://video-metadata.tv.se/tagging/v1"
+	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
-	<!-- imports -->
-	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
 	
 	<!-- elements -->
-	<xs:element name="tags" type="tagDefinitionListType" />
+	<xs:element name="tagDefs" type="tagDefinitionListType" />
 	<!-- types -->
+	<xs:complexType name="tagReferenceType">
+		<xs:annotation>
+			<xs:documentation>Use to refer to a tag, i.e. in content. Lower priority number means higher importance.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="tagNameType">
+				<xs:attribute name="priority" type="xs:long">
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
 	<xs:complexType name="tagDefinitionListType">
 		<xs:annotation>
 			<xs:documentation>unique id for the tag
@@ -20,42 +30,35 @@
 	<!--  -->
 	<xs:complexType name="tagDefinitionType">
 		<xs:sequence>
-			<xs:element name="id" type="common:idType">
+			<xs:element name="name" type="tagNameType">
 				<xs:annotation>
-					<xs:documentation>unique id for the tag
+					<xs:documentation>Unique name id for the tag. The tag definition itself does not carry any type definition. The surrounding element will give the
+						tag context.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="providerId" type="common:idType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Id of the source of the tag. ??? question how to solve the poblem of differentiating between different source tags.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="type" type="tagTypeType">
-				<xs:annotation>
-					<xs:documentation>
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="description" type="common:description">
+			<!-- 
+			Context? is it required? per channel, ...
+			 -->
+			<xs:element name="description" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>Internal description of the tag, in the company language (english?)
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="tagValues">
+			<xs:element name="alternativeTagNames">
 				<xs:annotation>
-					<xs:documentation>
+					<xs:documentation>Support for different tag text in different languages, still pointing to same tag.
 					</xs:documentation>
 				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="tagText" type="tagValueType" minOccurs="1" maxOccurs="unbounded" />
+						<xs:element name="alternativeTagName" type="tagNameType" minOccurs="0" maxOccurs="unbounded" />
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
+		<!-- attributes -->
 		<xs:attribute name="created" type="xs:dateTime" use="required">
 			<xs:annotation>
 				<xs:documentation>Timestamp when document is created
@@ -64,33 +67,14 @@
 		</xs:attribute>
 		<xs:attribute name="deprecated" type="xs:dateTime">
 			<xs:annotation>
-				<xs:documentation>Timestamp when document is deprecated. Deprecation has the meaning that the tag should no longer be used to tag new content. It
-					is not deleted as the tags may exist and be in use on already tagged content.
+				<xs:documentation>Timestamp when tag is deprecated. Deprecation has the meaning that the tag should no longer be used to tag new content. It is
+					not deleted as the tags may exist and be in use on already tagged content.
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
 	<!--  -->
-	<xs:simpleType name="tagTypeType">
-		<xs:annotation>
-			<xs:documentation>
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-<!-- 			<xs:enumeration value="program" /> ersätts av en program nid -->
-<!-- 			<xs:enumeration value="person" /> ersätts av en participant -->
-			<xs:enumeration value="subject" />
-			<xs:enumeration value="other" />
-		</xs:restriction>
-	</xs:simpleType>
-	<!--  -->
-	<xs:simpleType name="tagTextType">
-		<xs:restriction base="xs:string">
-			<xs:pattern value="(\s*[^\s]\s*)+" />
-		</xs:restriction>
-	</xs:simpleType>
-	<!--  -->
-	<xs:complexType name="tagValueType">
+	<xs:complexType name="tagNameType">
 		<xs:annotation>
 			<xs:documentation>A general type for the tag, i.e. the textual representation. Language attribute can be used to specify a localized name for the
 				tag. If more than one tag value is given without language attribute, or the same language attribute is repeated, then the selection order is
@@ -98,18 +82,31 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:simpleContent>
-			<xs:extension base="tagTextType">
+			<xs:extension base="noSpaceAsciiTextType">
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="tagNameDefType">
+		<xs:simpleContent>
+			<xs:extension base="tagNameType">
 				<xs:attribute name="language" type="xs:language">
 					<xs:annotation>
 						<xs:documentation>2 char ISO 639-1 language code</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
-				<xs:attribute name="default" type="xs:boolean">
-					<xs:annotation>
-						<xs:documentation>Set to true for the standard tag.</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<!--  -->
+	<xs:simpleType name="noSpaceAsciiTextType">
+		<xs:annotation>
+			<xs:documentation>A general normalized text token where non standard characters are converted to standard characters. That is, any diacritcs is
+				translated to the base character in the ascii character set (ISO-8859-1). Spaces, tab () not allowed, have to be removed or replaced.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+ 		<!-- <xs:pattern value="(\s*[^\s]\s*)+" /> -->
+			<xs:pattern value="[\p{IsBasicLatin}-[\s]]" />
+		</xs:restriction>
+	</xs:simpleType>
 </xs:schema>
