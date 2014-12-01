@@ -123,7 +123,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="externalReferenceList" type="externalReferenceListType" minOccurs="0">
+			<xs:element name="externalReferenceList" type="common:externalReferenceListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>List of externalReference (of what?)
 					</xs:documentation>
@@ -343,7 +343,7 @@
 			<xs:element name="name" type="xs:string" />
 			<xs:element name="rolename" type="xs:string" minOccurs="0" />
 			<xs:element name="function" type="xs:string" />
-			<xs:element name="externalReferenceList" type="externalReferenceListType" minOccurs="0">
+			<xs:element name="externalReferenceList" type="common:externalReferenceListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>List of externalReference
 					</xs:documentation>
@@ -593,38 +593,6 @@
 			<xs:element name="content" type="contentType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>Content for this event, optional. if not set contentIdRef must be set
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="externalReferenceListType">
-		<xs:sequence>
-			<xs:element name="externalReference" type="externalReferenceType" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>List of external resources that can used to connect/boost the content data with.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="externalReferenceType">
-		<xs:sequence>
-			<xs:element name="provider" type="xs:string" minOccurs="1" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation>Who is the provides for the extend data that can be used for this content. It can for example be score24.com or IMDB.com
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="id" type="xs:string" minOccurs="0" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation>Data identifier to map this content to in the external provider/partners data
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="uri" type="xs:string" minOccurs="0" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation>Resource to use for reach the data at the provider
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>

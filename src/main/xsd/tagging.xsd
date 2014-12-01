@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/tagging/v1" targetNamespace="http://video-metadata.tv.se/tagging/v1"
-	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/tagging/v1" xmlns:common="http://video-metadata.tv.se/common/v1"
+	targetNamespace="http://video-metadata.tv.se/tagging/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
-	
+	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
 	<!-- elements -->
+	<xs:element name="tagRefs" type="tagReferenceType" />
 	<xs:element name="tagDefs" type="tagDefinitionListType" />
 	<!-- types -->
 	<xs:complexType name="tagReferenceType">
@@ -11,12 +12,12 @@
 			<xs:documentation>Use to refer to a tag, i.e. in content. Lower priority number means higher importance.
 			</xs:documentation>
 		</xs:annotation>
-		<xs:simpleContent>
-			<xs:extension base="tagNameType">
-				<xs:attribute name="priority" type="xs:long">
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
+		<xs:choice>
+			<xs:element name="tagId" type="common:idType" />
+			<xs:element name="tagName" type="tagNameType" />
+		</xs:choice>
+		<xs:attribute name="priority" type="xs:long">
+		</xs:attribute>
 	</xs:complexType>
 	<xs:complexType name="tagDefinitionListType">
 		<xs:annotation>
@@ -30,10 +31,16 @@
 	<!--  -->
 	<xs:complexType name="tagDefinitionType">
 		<xs:sequence>
+			<xs:element name="id" type="common:idType">
+				<xs:annotation>
+					<xs:documentation>Unique id for tag, should include provider name.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="name" type="tagNameType">
 				<xs:annotation>
-					<xs:documentation>Unique name id for the tag. The tag definition itself does not carry any type definition. The surrounding element will give the
-						tag context.
+					<xs:documentation>Unique name id for the tag. Name nust be unique, and can be used when referencing the tag. The tag definition itself does not
+						carry any type definition. The surrounding element will give the tag context.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -76,14 +83,12 @@
 	<!--  -->
 	<xs:complexType name="tagNameType">
 		<xs:annotation>
-			<xs:documentation>A general type for the tag, i.e. the textual representation. Language attribute can be used to specify a localized name for the
-				tag. If more than one tag value is given without language attribute, or the same language attribute is repeated, then the selection order is
-				undefined.
+			<xs:documentation>Unique name for the tag, i.e. the textual representation. Language attribute can be used to specify a localized name for the tag.
+				If more than one tag value is given without language attribute, or the same language attribute is repeated, then the selection order is undefined.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:simpleContent>
-			<xs:extension base="noSpaceAsciiTextType">
-			</xs:extension>
+			<xs:extension base="common:noSpaceAsciiTextType" />
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="tagNameDefType">
@@ -97,16 +102,4 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	<!--  -->
-	<xs:simpleType name="noSpaceAsciiTextType">
-		<xs:annotation>
-			<xs:documentation>A general normalized text token where non standard characters are converted to standard characters. That is, any diacritcs is
-				translated to the base character in the ascii character set (ISO-8859-1). Spaces, tab () not allowed, have to be removed or replaced.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
- 		<!-- <xs:pattern value="(\s*[^\s]\s*)+" /> -->
-			<xs:pattern value="[\p{IsBasicLatin}-[\s]]" />
-		</xs:restriction>
-	</xs:simpleType>
 </xs:schema>
