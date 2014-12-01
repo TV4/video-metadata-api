@@ -234,7 +234,7 @@
 		<xs:sequence>
 			<xs:element name="subjectTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
 			<xs:element name="storyTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="freeTextTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="otherTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="adTagListType">

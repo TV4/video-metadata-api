@@ -37,9 +37,15 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="type" type="tagTypeType">
+				<xs:annotation>
+					<xs:documentation>Unique id for tag, should include provider name.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="name" type="tagNameType">
 				<xs:annotation>
-					<xs:documentation>Unique name id for the tag. Name nust be unique, and can be used when referencing the tag. The tag definition itself does not
+					<xs:documentation>Unique name id for the tag. Name must be unique, and can be used when referencing the tag. The tag definition itself does not
 						carry any type definition. The surrounding element will give the tag context.
 					</xs:documentation>
 				</xs:annotation>
@@ -81,6 +87,24 @@
 		</xs:attribute>
 	</xs:complexType>
 	<!--  -->
+	<xs:simpleType name="tagTypeType">
+		<xs:annotation>
+			<xs:documentation>The defined tag types.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="person" /><!--  implicitly defined by participant, each participant shall define a tag as well  -->
+			<xs:enumeration value="program" /><!--  implicitly defined by program, each program shall define a tag as well  -->
+			<xs:enumeration value="subject" />
+			<xs:enumeration value="story" />
+			<xs:enumeration value="other">
+				<xs:annotation>
+					<xs:documentation>A free text tag
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="tagNameType">
 		<xs:annotation>
 			<xs:documentation>Unique name for the tag, i.e. the textual representation. Language attribute can be used to specify a localized name for the tag.
