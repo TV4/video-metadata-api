@@ -332,13 +332,22 @@
 	</xs:complexType>
 	<xs:complexType name="rightsCategoryType">
 		<xs:sequence>
-			<xs:element name="vod" type="deviceTypeRights" minOccurs="0"></xs:element><!-- not needed, implicit from a publish! 
-			Ersätt med list på devicer som för sända denna material -->
-			<xs:element name="ppv" type="deviceTypeRights" minOccurs="0"></xs:element><!-- ppv = TVOD. Vad är skillnad mot PricceGroup  ??? -->
-			<xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="noTransmission" type="transmissionDeviceTypeRights" minOccurs="0">
+			<!-- not needed, implicit from a publish! 
+			Ersätt med list på devicer som för sända denna material 
+			<xs:element name="vod" type="deviceTypeRights" minOccurs="0"></xs:element>
+			-->
+			<!-- ppv = TVOD. Vad är skillnad mot PricceGroup  ??? 
+			<xs:element name="ppv" type="deviceTypeRights" minOccurs="0"></xs:element>
+			-->
+			<xs:element name="devices" type="deviceTypeRights" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation> Linear transmision may not be sent to these devices
+					<xs:documentation>list of devices affected by the right</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
+			<xs:element name="noLinearTransmission" type="transmissionDeviceTypeRights" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Linear transmision may not be sent to these devices.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -351,7 +360,7 @@
 					<xs:sequence>
 						<xs:element name="shareTo" type="shareToType" minOccurs="0" maxOccurs="unbounded">
 							<xs:annotation>
-								<xs:documentation>youtube, facebook, twitter, ...</xs:documentation>
+								<xs:documentation>youtube, facebook, twitter, ... (should/could be tags?)</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 					</xs:sequence>
@@ -385,7 +394,7 @@
 	</xs:complexType>
 	<xs:complexType name="deviceTypeRights">
 		<xs:sequence>
-			<xs:element name="deviceType" type="deviceTypeType" maxOccurs="6"></xs:element>
+			<xs:element name="deviceType" type="deviceTypeType" maxOccurs="unbounded"></xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="deviceTypeOutPutRights">
