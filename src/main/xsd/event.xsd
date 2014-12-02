@@ -3,6 +3,7 @@
 	targetNamespace="http://video-metadata.tv.se/event/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
 	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
+	<!--  -->
 	<xs:element name="event" type="eventType">
 		<xs:annotation>
 			<xs:documentation>root node of event</xs:documentation>
@@ -10,6 +11,10 @@
 	</xs:element>
 	<!-- types -->
 	<xs:complexType name="basicEventType">
+		<xs:annotation>
+			<xs:documentation>
+			</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="id" type="common:idType">
 				<xs:annotation>
@@ -23,7 +28,31 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="descriptionList" type="descriptionListLangType" minOccurs="0" />
+			<xs:element name="deviceType" type="common:deviceTypeType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>if null, then generic and valid for all
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="priceGroup" type="priceGroupType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>if null, then generic and valid for all
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="timeshiftRights" type="common:timeShiftDeviceTypeRights" minOccurs="0">
+			<xs:annotation>
+					<xs:documentation>Rights associated with this publication event.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="descriptionList" type="descriptionListLangType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>List of descriptions for the event...
+					<!-- TODO John : what is the use / requirement for this? -->
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="rerun" type="xs:boolean">
 				<xs:annotation>
 					<xs:documentation>indicates if this is a rerun, the rules for decision could is set by the provider and could be different between providers
@@ -96,6 +125,15 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:simpleType name="priceGroupType">
+		<xs:annotation>
+			<xs:documentation>Tag identifying the priceGroup of the material. id = ppv1 -> 45 SEK, 40 NOK, 4 EU, id = ppv2 -> ...
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\w+"></xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="embeddedEventListType">
 		<xs:sequence>
 			<xs:element name="event" type="embeddedEventType" minOccurs="0" maxOccurs="unbounded" />
