@@ -45,7 +45,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="broadcastEventList" type="event:eventListType" minOccurs="0">
+			<xs:element name="eventList" type="event:eventListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Event list for the document, could be 0 entries
 					</xs:documentation>
