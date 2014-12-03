@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<p:tagDefs xmlns:p="http://video-metadata.tv.se/tagging/v1" xmlns:p1="http://video-metadata.tv.se/common/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://video-metadata.tv.se/tagging/v1 tagging.xsd ">
-  <p:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
-    <p:id>p:id</p:id>
-    <p:name xsi:type="p:tagNameType">p:name</p:name>
-    <p:description>p:description</p:description>
-    <p:alternativeTagNames>
-      <p:alternativeTagName language="EN">p:alternativeTagName</p:alternativeTagName>
-    </p:alternativeTagNames>
-  </p:tag>
-</p:tagDefs>
+<t:tagDefs xmlns:c="http://video-metadata.tv.se/common/v1" xmlns:t="http://video-metadata.tv.se/tagging/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://video-metadata.tv.se/tagging/v1 tagging.xsd "
+>
+	<t:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
+		<t:type>program</t:type>
+		<t:nid>samycketbattre</t:nid>
+		<t:description>Programmet "Så Mycket Bättre" i TV4</t:description>
+		<t:alternativeTagNames>
+			<t:alternativeTagName language="sv">Så Mycket Bättre</t:alternativeTagName>
+		</t:alternativeTagNames>
+		<t:externalReferenceList>
+			<externalReference>
+				<provider>imdb</provider>
+				<id>tt1786209</id>
+				<uri>http://www.imdb.com/title/tt1786209/</uri>
+			</externalReference>
+		</t:externalReferenceList>
+	</t:tag>
+</t:tagDefs>

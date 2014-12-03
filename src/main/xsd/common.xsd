@@ -12,19 +12,18 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-0a-zA-Z:_\-\.]+" />
+			<xs:pattern value="[0-9a-zA-Z:_\-\.#]+" />
 		</xs:restriction>
 	</xs:simpleType>
 	<!--  -->
-	<xs:simpleType name="noSpaceAsciiTextType">
+	<xs:simpleType name="nidType">
 		<xs:annotation>
-			<xs:documentation>A general normalized text token where non standard characters are converted to standard characters. That is, any diacritcs is
-				translated to the base character in the ascii character set (ISO-8859-1). Spaces, tab () not allowed, have to be removed or replaced.
+			<xs:documentation>Unique name id, i.e. the normalized textual representation. Language attribute can be used to specify a localized name
+				for the tag.
 			</xs:documentation>
 		</xs:annotation>
-		<xs:restriction base="xs:string">
- 		<!-- <xs:pattern value="(\s*[^\s]\s*)+" /> -->
-			<xs:pattern value="[\p{IsBasicLatin}-[\s]]" />
+	<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9a-z:_\-\.#]+" />
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- 
