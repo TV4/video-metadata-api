@@ -113,7 +113,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[\i\c-\s]+" />
+			<xs:pattern value="[\w^\p{Z}^\p{C}]+" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="tagNameDefType">

@@ -4,10 +4,10 @@
 >
 	<t:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
 		<t:type>program</t:type>
-		<t:nid>samycketbattre</t:nid>
+		<t:nid>#samycketbattre</t:nid>
 		<t:description>Programmet "Så Mycket Bättre" i TV4</t:description>
 		<t:alternativeTagNames>
-			<t:alternativeTagName language="sv">Så Mycket Bättre</t:alternativeTagName>
+			<t:alternativeTagName language="sv">#SåMycketBättre!</t:alternativeTagName>
 		</t:alternativeTagNames>
 		<t:externalReferenceList>
 			<externalReference>
