@@ -77,4 +77,44 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:simpleType name="deviceTypeType">
+		<xs:annotation>
+			<xs:documentation>Controls the device type
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="web" />
+			<xs:enumeration value="mob" />
+			<xs:enumeration value="tab" />
+			<xs:enumeration value="stb" />
+			<xs:enumeration value="ott" />
+			<xs:enumeration value="console" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="timeShiftDeviceTypeRights">
+		<xs:sequence>
+			<xs:element name="catchUpRights" type="catchUpRightsType" minOccurs="0" maxOccurs="1">
+			</xs:element>
+			<xs:element name="startOverRights" type="startOverRightsType" minOccurs="0" maxOccurs="1">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="catchUpRightsType">
+		<xs:sequence>
+			<xs:element name="fastForward" type="xs:boolean" minOccurs="0"></xs:element>
+			<xs:element name="rewind" type="xs:boolean" minOccurs="0">
+			</xs:element>
+			<xs:element name="pause" type="xs:boolean" minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="startOverRightsType">
+		<xs:sequence>
+			<xs:element name="fastForward" type="xs:boolean" minOccurs="0"></xs:element>
+			<xs:element name="rewind" type="xs:boolean" minOccurs="0">
+			</xs:element>
+			<xs:element name="pause" type="xs:boolean" minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 </xs:schema>
