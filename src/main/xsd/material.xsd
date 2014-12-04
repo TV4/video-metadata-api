@@ -71,9 +71,9 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="materialReferenceList" type="materialReferenceListType" minOccurs="0">
+			<xs:element name="mediaList" type="mediaListType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>list of reference to physical material, could be filenames or an url
+					<xs:documentation>list of reference to physical media, could be filenames or an url
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -219,9 +219,9 @@
 			<xs:enumeration value="spokenSubtitle" /><!-- not used by TV4 -->
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:complexType name="materialReferenceListType">
+	<xs:complexType name="mediaListType">
 		<xs:sequence>
-			<xs:element name="reference" type="materialReferenceType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="reference" type="mediaType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:simpleType name="materialReferenceTypeType">
@@ -232,24 +232,24 @@
 			<xs:enumeration value="graphics" />
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:complexType name="materialReferenceType">
+	<xs:complexType name="mediaType">
 		<!-- Om flera segment finns, då behövs ordning anges. Hämtas idag från Media i Louise. -->
 		<xs:annotation>
 			<xs:documentation>url string value is an id, uri, url file path or any other reference to the media file. Depends on th context.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="ref" type="xs:string"></xs:element>
-			<xs:element name="type" type="materialReferenceTypeType">
+			<xs:element name="media" type="xs:string"></xs:element>
+			<xs:element name="type" type="materialTypeType">
 				<xs:annotation>
-					<xs:documentation>type of reference, for example video or audio.
+					<xs:documentation>Type of material, for example video or audio.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="duration" type="timecodeType" minOccurs="0" />
 			<xs:element name="bitrate" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>if applicable, bitrate for the material in bps
+					<xs:documentation>If applicable, bitrate for the material in bps
 					</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
