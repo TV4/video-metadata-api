@@ -127,6 +127,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="additionalProperties" type="common:propertyListType"></xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="brandType">

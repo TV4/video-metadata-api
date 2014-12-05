@@ -223,4 +223,34 @@
 			<xs:pattern value="(\*)|(\w+)"></xs:pattern>
 		</xs:restriction>
 	</xs:simpleType>
+	<!-- 
+	 -->
+	<xs:complexType name="propertyListType">
+		<xs:sequence>
+			<xs:element name="property" type="propertyType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="propertyType">
+		<xs:annotation>
+			<xs:documentation>A multi value property
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="name" type="xs:Name" />
+			<xs:element name="type" type="propertyTypeType" />
+			<xs:element name="value" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="propertyTypeType">
+		<xs:annotation>
+			<xs:documentation>Definition of the typ of the property value content
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="string" />
+			<xs:enumeration value="integer" />
+			<xs:enumeration value="decimal" />
+			<xs:enumeration value="url" />
+		</xs:restriction>
+	</xs:simpleType>
 </xs:schema>
