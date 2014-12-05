@@ -291,10 +291,10 @@
 	</xs:simpleType>
 	<xs:complexType name="rightsListType">
 		<xs:sequence>
-			<xs:element name="rights" type="rightsType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="rights" type="materialRightsType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="rightsType">
+	<xs:complexType name="materialRightsType">
 		<xs:annotation>
 			<xs:documentation>DateTime in UTC</xs:documentation>
 		</xs:annotation>
@@ -330,50 +330,23 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="rightsCategoryType">
-		<xs:sequence>
-			<!-- not needed, implicit from a publish! 
-			Ersätt med list på devicer som för sända denna material 
-			<xs:element name="vod" type="deviceTypeRights" minOccurs="0"></xs:element>
-			-->
-			<!-- ppv = TVOD. Vad är skillnad mot PricceGroup  ??? 
-			<xs:element name="ppv" type="deviceTypeRights" minOccurs="0"></xs:element>
-			-->
-			<xs:element name="deviceRights" type="deviceTypeRightsType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>list of devices affected by the right</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="timeshift" type="common:timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="noLinearTransmission" type="transmissionDeviceTypeRights" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Linear transmision may not be sent to these devices.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="addProviderLogo" type="xs:boolean" default="true" />
-			<xs:element name="allowAds" type="xs:boolean" default="true" />
-			<xs:element name="drmRestrictions" type="drmRestrictionsType" minOccurs="0" />
-			<xs:element name="geoRestrictions" type="geoRestrictionsType" minOccurs="0" />
-			<xs:element name="shareToList">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="shareTo" type="shareToType" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:documentation>youtube, facebook, twitter, ... (should/could be tags?)</xs:documentation>
-							</xs:annotation>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="drmRestrictionsType">
-		<xs:sequence><!-- TODO : John / Purre -->
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="geoRestrictionsType">
-		<xs:sequence><!-- TODO : John / Purre -->
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="common:rightsType">
+				<xs:sequence>
+					<xs:element name="deviceRights" type="deviceTypeOutPutRights" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>list of devices affected by the right</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="noLinearTransmission" type="transmissionDeviceTypeRights" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Linear transmision may not be sent to these devices.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="transmissionDeviceTypeRights">
 		<xs:complexContent>
@@ -446,16 +419,6 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="unrestricted" />
 			<xs:enumeration value="disallow" />
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="shareToType">
-		<!-- TODO : borde ange om det är en exclusive or excluding right -->
-		<xs:annotation>
-			<xs:documentation>Tag identifying the channel that is allowed for sharing. '*' to indicate all and anyware.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:pattern value="(\*)|(\w+)"></xs:pattern>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="materialListType">

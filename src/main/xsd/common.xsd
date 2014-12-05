@@ -8,21 +8,21 @@
 	  -->
 	<xs:simpleType name="idType">
 		<xs:annotation>
-			<xs:documentation> A general ID type for entities
+			<xs:documentation>A general ID type for entities
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-Z:_\-\.#]+" />
+			<xs:pattern value="[0-9a-zA-Z:_\-\.#@]+" />
 		</xs:restriction>
 	</xs:simpleType>
 	<!--  -->
 	<xs:simpleType name="nidType">
 		<xs:annotation>
-			<xs:documentation>Unique name id, i.e. the normalized textual representation. Language attribute can be used to specify a localized name
-				for the tag.
+			<xs:documentation>Unique name id, i.e. the normalized textual representation. Language attribute can be used to specify a localized name for the
+				tag.
 			</xs:documentation>
 		</xs:annotation>
-	<xs:restriction base="xs:string">
+		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9a-z:_\-\.#]+" />
 		</xs:restriction>
 	</xs:simpleType>
@@ -91,6 +91,102 @@
 			<xs:enumeration value="console" />
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:complexType name="rightsType">
+		<xs:sequence>
+			<xs:element name="addProviderLogo" type="xs:boolean" default="true" />
+			<xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
+			<xs:element name="allowAds" type="xs:boolean" default="true" />
+			<xs:element name="drmRestrictions" type="drmRestrictionsType" minOccurs="0" />
+			<xs:element name="locationRestrictions" type="locationRestrictionsType" minOccurs="0" />
+			<xs:element name="userOrGroupRestrictions" type="userOrGroupRestrictionsType" minOccurs="0" />
+			<xs:element name="shareToList">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="shareTo" type="shareToType" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>youtube, facebook, twitter, ... (should/could be tags?)</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="drmRestrictionsType">
+		<xs:restriction base="xs:boolean"></xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="locationRestrictionsType">
+		<xs:annotation>
+			<xs:documentation>First add the includes, then remove the excludes. No includes specified is treated as allow all and no excludes specified is
+				treated as no restriction.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="includeIpOrNetworks" type="ipAddressTypeListType" />
+			<xs:element name="includeIpOrNetworks" type="ipAddressTypeListType" />
+			<xs:element name="includeCountries" type="countryListType" />
+			<xs:element name="exludeCountries" type="countryListType" />
+			<xs:element name="includeLocals" type="nameListType" />
+			<xs:element name="exludeLocals" type="nameListType" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="userOrGroupRestrictionsType">
+		<xs:annotation>
+			<xs:documentation>First add the includes, then remove the excludes. No includes specified is treated as allow all and no excludes specified is
+				treated as no restriction.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="includeUsers" type="nameListType" />
+			<xs:element name="exludeUsers" type="nameListType" />
+			<xs:element name="includeGroups" type="nameListType" />
+			<xs:element name="exludeGroups" type="nameListType" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ipAddressTypeListType">
+		<xs:sequence>
+			<xs:element name="ipAddress" type="ipAddressType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="ipAddressType">
+		<xs:annotation>
+			<xs:documentation>Single Ipv4 (23.37.56.55) or IPv6 address, or a IPv4 subnet (2001:db8:0000::1) or a IPv6 subnet (2001:db8:0000::/36)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="localSpecificationListType">
+		<xs:sequence>
+			<xs:element name="local" type="localSpecificationType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="localSpecificationType">
+		<xs:annotation>
+			<xs:documentation>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="countryListType">
+		<xs:sequence>
+			<xs:element name="country" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>code in ISO 3166-1-alpha-2</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="nameListType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="timeShiftDeviceTypeRights">
 		<xs:sequence>
 			<xs:element name="catchUpRights" type="catchUpRightsType" minOccurs="0" maxOccurs="1">
@@ -117,4 +213,14 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:simpleType name="shareToType">
+		<!-- TODO : borde ange om det är en exclusive or excluding right -->
+		<xs:annotation>
+			<xs:documentation>Tag identifying the channel that is allowed for sharing. '*' to indicate all and anyware.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(\*)|(\w+)"></xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
 </xs:schema>

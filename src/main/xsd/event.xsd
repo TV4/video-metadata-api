@@ -3,6 +3,7 @@
 	targetNamespace="http://video-metadata.tv.se/event/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
 	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
+	
 	<!--  -->
 	<xs:element name="event" type="eventType">
 		<xs:annotation>
@@ -40,15 +41,12 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="timeshiftRights" type="common:timeShiftDeviceTypeRights" minOccurs="0">
-			<xs:annotation>
-					<xs:documentation>Rights associated with this publication event.
-					</xs:documentation>
-				</xs:annotation>
+			<xs:element name="publicationRights" type="publicationRightsType">
 			</xs:element>
 			<xs:element name="descriptionList" type="descriptionListLangType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>List of descriptions for the event...
+					<xs:documentation>
+						List of descriptions for the event...
 					<!-- TODO John : what is the use / requirement for this? -->
 					</xs:documentation>
 				</xs:annotation>
@@ -122,6 +120,12 @@
 						</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="publicationRightsType">
+		<xs:complexContent>
+			<xs:extension base="common:rightsType">
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>

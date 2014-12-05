@@ -46,7 +46,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="countryOfOriginList" type="countryListType" minOccurs="0">
+			<xs:element name="countryOfOriginList" type="common:countryListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of production countries. Use language codes in IS0 3166-1-alpha-2
 					</xs:documentation>
@@ -310,15 +310,6 @@
 			<xs:enumeration value="extended" />
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:complexType name="countryListType">
-		<xs:sequence>
-			<xs:element name="country" type="xs:string" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>code in ISO 3166-1-alpha-2</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="dvbGenreType">
 		<xs:sequence>
 			<xs:element name="nibble1" type="dvbGenreNibbleType" />
