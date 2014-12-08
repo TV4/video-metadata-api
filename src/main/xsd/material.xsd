@@ -3,11 +3,15 @@
 	targetNamespace="http://video-metadata.tv.se/material/v1" version="1.0"
 >
 	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
+	<!-- 
+	 -->
 	<xs:element name="material" type="materialType">
 		<xs:annotation>
 			<xs:documentation>Root element for material object</xs:documentation>
 		</xs:annotation>
 	</xs:element>
+	<!-- 
+	 -->
 	<xs:complexType name="materialType">
 		<xs:sequence>
 			<xs:element name="providerId" type="common:idType">
@@ -22,27 +26,21 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="materialType" type="materialTypeType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>type of material
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="distributor" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Name of the distributor of the material, legal entity.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="priceGroup" type="priceGroupType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="contentIdRef" type="common:idType"> <!-- todo - same as in content!!! -->
 				<xs:annotation>
 					<xs:documentation>reference to content</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="materialType" type="materialTypeType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>type of material
-					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="videoFormat" type="videoFormatType" minOccurs="0">
@@ -73,9 +71,9 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="materialReferenceList" type="materialReferenceListType" minOccurs="0">
+			<xs:element name="mediaList" type="mediaListType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>list of reference to physical material, could be filenames or an url
+					<xs:documentation>list of reference to physical media, could be filenames or an url
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -93,15 +91,6 @@
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
-	<xs:simpleType name="priceGroupType">
-		<xs:annotation>
-			<xs:documentation>Tag identifying the priceGroup of the material
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:pattern value="\w+"></xs:pattern>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:complexType name="videoFormatType">
 		<xs:simpleContent>
 			<xs:extension base="videoFormatTypeType">
@@ -127,6 +116,7 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="4:3" />
 			<xs:enumeration value="16:9" />
+			<xs:enumeration value="2.35:1" /><!-- CinemaScope -->
 			<xs:enumeration value="21:9" />
 			<xs:enumeration value="other" />
 		</xs:restriction>
@@ -194,7 +184,7 @@
 	</xs:complexType>
 	<xs:simpleType name="subtitleFormatType">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="closed" />
+			<xs:enumeration value="closed" /><!-- text-tv text -->
 			<xs:enumeration value="open" />
 			<xs:enumeration value="other" />
 		</xs:restriction>
@@ -223,15 +213,15 @@
 	</xs:complexType>
 	<xs:simpleType name="accessibilityFormatType">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="hearingImpairedSubtitle" />
+			<xs:enumeration value="hearingImpairedSubtitle" /><!-- not used by TV4 -->
 			<xs:enumeration value="signLanguageInterpretation" />
 			<xs:enumeration value="audioDescription" />
-			<xs:enumeration value="spokenSubtitle" />
+			<xs:enumeration value="spokenSubtitle" /><!-- not used by TV4 -->
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:complexType name="materialReferenceListType">
+	<xs:complexType name="mediaListType">
 		<xs:sequence>
-			<xs:element name="reference" type="materialReferenceType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="reference" type="mediaType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:simpleType name="materialReferenceTypeType">
@@ -242,42 +232,69 @@
 			<xs:enumeration value="graphics" />
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:complexType name="materialReferenceType">
-		<xs:simpleContent>
-			<xs:extension base="xs:string">
-				<xs:attribute name="type" type="materialReferenceTypeType">
-					<xs:annotation>
-						<xs:documentation>type of reference, for example video or audio.
-						</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-				<xs:attribute name="duration" use="optional">
-					<xs:annotation>
-						<xs:documentation>duration in timecode for referenced material, example 00:00:00:00
-						</xs:documentation>
-					</xs:annotation>
-					<xs:simpleType>
-						<xs:restriction base="xs:string" />
-					</xs:simpleType>
-				</xs:attribute>
-				<xs:attribute name="bitrate" use="optional">
-					<xs:annotation>
-						<xs:documentation>if applicable, bitrate for the material in bps
-						</xs:documentation>
-					</xs:annotation>
-					<xs:simpleType>
-						<xs:restriction base="xs:string" />
-					</xs:simpleType>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:complexType name="rightsListType">
+	<xs:complexType name="mediaType">
+		<!-- Om flera segment finns, då behövs ordning anges. Hämtas idag från Media i Louise. -->
+		<xs:annotation>
+			<xs:documentation>url string value is an id, uri, url file path or any other reference to the media file. Depends on th context.
+			</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="rights" type="rightsType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="media" type="xs:string"></xs:element>
+			<xs:element name="type" type="materialTypeType">
+				<xs:annotation>
+					<xs:documentation>Type of material, for example video or audio.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="duration" type="timecodeType" minOccurs="0" />
+			<xs:element name="bitrate" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>If applicable, bitrate for the material in bps
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string" />
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="segmentList" type="segmentListType" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="rightsType">
+	<xs:complexType name="segmentListType">
+		<xs:sequence>
+			<xs:element name="segment" type="segmentType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="segmentType">
+		<xs:sequence>
+			<xs:element name="in" type="timecodeType" />
+			<xs:element name="out" type="timecodeType" />
+			<xs:element name="breakType" type="segmentTypeType" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="segmentTypeType">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="mandatory" />
+			<xs:enumeration value="planned" />
+			<xs:enumeration value="bad" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="timecodeType">
+		<xs:annotation>
+			<xs:documentation>hh:mm:ss:SS</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{2}:\d{2}:\d{2}:\d{3}" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="rightsListType">
+		<xs:sequence>
+			<xs:element name="rights" type="materialRightsType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="materialRightsType">
 		<xs:annotation>
 			<xs:documentation>DateTime in UTC</xs:documentation>
 		</xs:annotation>
@@ -290,19 +307,13 @@
 			</xs:element>
 			<xs:element name="validFrom" type="xs:dateTime" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>start of period where right is valid
+					<xs:documentation>Start of period where right is valid
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="validTo" type="xs:dateTime" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>end of period where right is valid
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="unlimitedPeriod" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>indicates if there is a period or not. If true, the rightsCategory is valid until otherwise said
+					<xs:documentation>End of period where right is valid
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -319,45 +330,27 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="rightsCategoryType">
-		<xs:sequence>
-			<xs:element name="vod" type="deviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="ppv" type="deviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="noTransmission" type="transmissionDeviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="addProviderLogo" type="xs:boolean" default="true"></xs:element>
-			<xs:element name="allowAds" type="xs:boolean" default="true"></xs:element>
-			<xs:element name="drmRestrictions" type="drmRestrictionsType" minOccurs="0"></xs:element><!-- TODO -->
-			<xs:element name="geoRestrictions" type="geoRestrictionsType" minOccurs="0"></xs:element><!-- TODO -->
-			<xs:element name="shareToList">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="shareTo" type="shareToType">
-							<xs:annotation>
-								<xs:documentation></xs:documentation>
-							</xs:annotation>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="drmRestrictionsType">
-		<xs:sequence></xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="geoRestrictionsType">
-		<xs:sequence></xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="timeShiftDeviceTypeRights">
-		<xs:sequence>
-			<xs:element name="catchUpRights" type="catchUpRightsType" minOccurs="0" maxOccurs="1">
-			</xs:element>
-			<xs:element name="startOverRights" type="startOverRightsType" minOccurs="0" maxOccurs="1">
-			</xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="common:rightsType">
+				<xs:sequence>
+					<xs:element name="deviceRights" type="deviceTypeOutPutRights" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>list of devices affected by the right</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="noLinearTransmission" type="transmissionDeviceTypeRights" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Linear transmision may not be sent to these devices.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="transmissionDeviceTypeRights">
 		<xs:complexContent>
-			<xs:extension base="deviceTypeRights">
+			<xs:extension base="deviceTypeRightsType">
 				<xs:annotation>
 					<xs:documentation>Can be used in example for marking a tv-show in the schedule that aren't allowed to be transmitted to mobile clients
 					</xs:documentation>
@@ -365,14 +358,9 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:complexType name="deviceTypeRights">
-		<xs:sequence>
-			<xs:element name="deviceType" type="deviceTypeType" maxOccurs="6"></xs:element>
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="deviceTypeOutPutRights">
 		<xs:complexContent>
-			<xs:extension base="deviceTypeRights">
+			<xs:extension base="deviceTypeRightsType">
 				<xs:sequence>
 					<xs:element name="digitalOutputRights" type="digitalOutputRightsType" minOccurs="0">
 					</xs:element>
@@ -384,20 +372,11 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:simpleType name="deviceTypeType">
-		<xs:annotation>
-			<xs:documentation>Controls the device type
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="web" />
-			<xs:enumeration value="mob" />
-			<xs:enumeration value="tab" />
-			<xs:enumeration value="stb" />
-			<xs:enumeration value="ott" />
-			<xs:enumeration value="console" />
-		</xs:restriction>
-	</xs:simpleType>
+	<xs:complexType name="deviceTypeRightsType">
+		<xs:sequence>
+			<xs:element name="deviceType" type="common:deviceTypeType" maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:simpleType name="digitalOutputRightsType">
 		<xs:annotation>
 			<xs:documentation>Controls the output source for digital sources
@@ -440,38 +419,6 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="unrestricted" />
 			<xs:enumeration value="disallow" />
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:complexType name="deviceTypeListType">
-		<xs:sequence>
-			<xs:element name="deviceTypeList" type="deviceTypeRights" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="catchUpRightsType">
-		<xs:sequence>
-			<xs:element name="fastForward" type="xs:boolean" minOccurs="0"></xs:element>
-			<xs:element name="rewind" type="xs:boolean" minOccurs="0">
-			</xs:element>
-			<xs:element name="pause" type="xs:boolean" minOccurs="0">
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="startOverRightsType">
-		<xs:sequence>
-			<xs:element name="fastForward" type="xs:boolean" minOccurs="0"></xs:element>
-			<xs:element name="rewind" type="xs:boolean" minOccurs="0">
-			</xs:element>
-			<xs:element name="pause" type="xs:boolean" minOccurs="0">
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:simpleType name="shareToType">
-		<xs:annotation>
-			<xs:documentation>Tag identifying the channel that is allowed for sharing. '*' to indicate all and anyware.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:pattern value="(\*)|(\w+)"></xs:pattern>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="materialListType">

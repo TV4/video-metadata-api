@@ -10,42 +10,28 @@
 	<xs:import namespace="http://video-metadata.tv.se/event/v1" schemaLocation="event.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/material/v1" schemaLocation="material.xsd" />
 
-	<!-- 
-	 -->
-	<xs:complexType name="publishListType">
+	<!--  -->
+	<xs:element name="publish" type="publishType">
+		<xs:annotation>
+			<xs:documentation>Root element for publication element</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--  -->
+	<xs:complexType name="publishType">
 		<xs:annotation>
 			<xs:documentation>root node of publish</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="channelId" type="common:idType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>id for the current service or channel, could be for example 'se.tv4.tv4play'
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="brandList" type="content:brandListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>List of brand entities</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="seasonList" type="content:seasonListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>List of season entities</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="contentList" type="content:contentListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>content list for the document, could be 0 entries which would indicate no events for this period
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+			<xs:element name="brand" type="content:brandType" minOccurs="0" />
+			<xs:element name="season" type="content:seasonType" minOccurs="0" />
+			<xs:element name="content" type="content:contentType" minOccurs="1" />
 			<xs:element name="materialList" type="material:materialListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>material list for the document, could be 0 entries which would indicate no events for this period
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="broadcastEventList" type="event:eventListType" minOccurs="0">
+			<xs:element name="eventList" type="event:eventListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Event list for the document, could be 0 entries
 					</xs:documentation>

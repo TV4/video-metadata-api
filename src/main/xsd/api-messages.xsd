@@ -41,7 +41,7 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="header" type="messageHeaderType" />
-				<xs:element name="data" type="publish:publishListType" />
+				<xs:element name="data" type="publish:publishType" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
