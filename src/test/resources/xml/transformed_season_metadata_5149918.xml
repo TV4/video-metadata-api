@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:content-metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
-	xmlns:ns3="http://video-metadata.tv.se/schedule/v1" xmlns:ns4="http://video-metadata.tv.se/event/v1"
-	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/material/v1">
-	<ns2:header>
-		<ns2:providerId>se.tv4</ns2:providerId>
-		<ns2:msgId>dc6ddd60-b5d5-49a0-9780-1a700728775d</ns2:msgId>
-	</ns2:header>
-	<ns2:data>
+<ns3:content-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/tagging/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/schedule/v1"
+	xmlns:ns7="http://video-metadata.tv.se/material/v1" xmlns:ns8="http://video-metadata.tv.se/content/v1">
+	<ns3:header>
+		<ns3:providerId>se.tv4</ns3:providerId>
+		<ns3:msgId>5e441a89-816b-4163-be50-8cfd682a7617</ns3:msgId>
+	</ns3:header>
+	<ns3:data>
 		<brand>
 			<id>83401814</id>
 			<titleList>
@@ -44,11 +45,13 @@
 				</description>
 			</descriptionList>
 			<categoryList>
-				<category>Dokumentär</category>
+				<category priority="1">
+					<mainCategory>Dokumentär</mainCategory>
+				</category>
 			</categoryList>
 			<brandId>83401814</brandId>
 			<seasonNumber>4</seasonNumber>
 			<numberOfEpisodes>22</numberOfEpisodes>
 		</season>
-	</ns2:data>
-</ns2:content-metadata>
+	</ns3:data>
+</ns3:content-metadata>

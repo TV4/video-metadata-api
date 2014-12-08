@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:schedule-metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
-	xmlns:ns3="http://video-metadata.tv.se/event/v1" xmlns:ns4="http://video-metadata.tv.se/publish/v1"
-	xmlns:ns5="http://video-metadata.tv.se/schedule/v1" xmlns:ns6="http://video-metadata.tv.se/material/v1">
-	<ns2:header>
-		<ns2:providerId>se.tv4</ns2:providerId>
-		<ns2:msgId>eb01ed5a-fa27-4485-a3d1-3e918d71c6c6</ns2:msgId>
-	</ns2:header>
-	<ns2:data timestamp="2014-12-01T15:29:00.521+01:00">
-		<ns5:channelId>TV4</ns5:channelId>
-		<ns5:from>2014-12-01T05:50:00.000+01:00</ns5:from>
-		<ns5:to>2014-12-02T05:50:00.000+01:00</ns5:to>
-		<ns5:brandList>
+<ns3:schedule-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/tagging/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/schedule/v1"
+	xmlns:ns7="http://video-metadata.tv.se/material/v1" xmlns:ns8="http://video-metadata.tv.se/content/v1">
+	<ns3:header>
+		<ns3:providerId>se.tv4</ns3:providerId>
+		<ns3:msgId>50b1b9c4-3c79-4c46-ba6f-7edd5dcc4a2b</ns3:msgId>
+	</ns3:header>
+	<ns3:data timestamp="2014-12-08T12:35:53.447+01:00">
+		<ns6:channelId>TV4</ns6:channelId>
+		<ns6:from>2014-12-01T05:50:00.000+01:00</ns6:from>
+		<ns6:to>2014-12-02T05:50:00.000+01:00</ns6:to>
+		<ns6:brandList>
 			<brand>
 				<id>35006258</id>
-				<productionYear>2014</productionYear>
+				<productionYear>2015</productionYear>
 				<countryOfOriginList>
 					<country>SE</country>
 				</countryOfOriginList>
@@ -46,7 +47,9 @@
 					</description>
 				</descriptionList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 			</brand>
 			<brand>
@@ -63,7 +66,9 @@
 						dagens Kenodragning.</description>
 				</descriptionList>
 				<categoryList>
-					<category>Gameshow</category>
+					<category priority="1">
+						<mainCategory>Gameshow</mainCategory>
+					</category>
 				</categoryList>
 			</brand>
 			<brand>
@@ -92,7 +97,9 @@
 					</description>
 				</descriptionList>
 				<categoryList>
-					<category>Såpopera</category>
+					<category priority="1">
+						<mainCategory>Såpopera</mainCategory>
+					</category>
 				</categoryList>
 			</brand>
 			<brand>
@@ -201,7 +208,7 @@
 			<brand>
 				<id>39377896</id>
 				<titleList>
-					<title original="false" language="sv">Väder</title>
+					<title original="false" language="sv">TV4Vädret</title>
 				</titleList>
 				<descriptionList>
 					<description length="medium" language="sv">Väderrapport från
@@ -323,8 +330,8 @@
 					</description>
 				</descriptionList>
 			</brand>
-		</ns5:brandList>
-		<ns5:seasonList>
+		</ns6:brandList>
+		<ns6:seasonList>
 			<season>
 				<id>4835033</id>
 				<productionYear>2014</productionYear>
@@ -343,14 +350,16 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="banner" priority="4" unit="px" height="260"
-							width="1000" orientation="landscape">http://image.tv4.se/8a/7d/a6/FILE_F9CCC31B-D4E3-4FEC-88DB-16B31D95629E.jpg
+						<imageRef purpose="banner" unit="px" height="260" width="1000"
+							orientation="landscape">http://image.tv4.se/8a/7d/a6/FILE_F9CCC31B-D4E3-4FEC-88DB-16B31D95629E.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Dokumentär</category>
-					<category>Konst</category>
+					<category priority="1">
+						<mainCategory>Dokumentär</mainCategory>
+						<subCategory>Konst</subCategory>
+					</category>
 				</categoryList>
 				<brandId>39369356</brandId>
 				<numberOfEpisodes>50</numberOfEpisodes>
@@ -385,13 +394,15 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="production" priority="8" unit="px"
-							height="2196" width="3300" orientation="landscape">http://image.tv4.se/65/6c/c4/FILE_893C88A6-8C53-45E0-B0E0-DDDD0504801A.jpg
+						<imageRef purpose="production" unit="px" height="2196"
+							width="3300" orientation="landscape">http://image.tv4.se/65/6c/c4/FILE_893C88A6-8C53-45E0-B0E0-DDDD0504801A.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Såpopera</category>
+					<category priority="1">
+						<mainCategory>Såpopera</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>126374204</brandId>
 				<seasonNumber>52</seasonNumber>
@@ -418,13 +429,15 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="7" unit="px" height="3000"
-							width="1898" orientation="portrait">http://image.tv4.se/09/2e/f1/FILE_119226CA-4252-41B5-AA29-77C4EE88A701.jpg
+						<imageRef purpose="press" unit="px" height="3000" width="1898"
+							orientation="portrait">http://image.tv4.se/09/2e/f1/FILE_119226CA-4252-41B5-AA29-77C4EE88A701.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Talkshow</category>
+					<category priority="1">
+						<mainCategory>Talkshow</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>38129896</brandId>
 				<numberOfEpisodes>176</numberOfEpisodes>
@@ -485,14 +498,16 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="3" unit="px" height="3000"
-							width="2855" orientation="portrait">http://image.tv4.se/fa/e4/78/FILE_E585DE01-A700-4E09-AD11-00FC956B0466.jpg
+						<imageRef purpose="press" unit="px" height="3000" width="2855"
+							orientation="portrait">http://image.tv4.se/fa/e4/78/FILE_E585DE01-A700-4E09-AD11-00FC956B0466.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Drama</category>
-					<category>Hälsa</category>
+					<category priority="1">
+						<mainCategory>Drama</mainCategory>
+						<subCategory>Hälsa</subCategory>
+					</category>
 				</categoryList>
 				<brandId>14667569</brandId>
 				<seasonNumber>7</seasonNumber>
@@ -570,13 +585,15 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="17" unit="px" height="3300"
-							width="2200" orientation="portrait">http://image.tv4.se/9b/a0/85/FILE_0BB74C30-1E7B-47A4-836D-3BD82070375A.jpg
+						<imageRef purpose="press" unit="px" height="3300" width="2200"
+							orientation="portrait">http://image.tv4.se/9b/a0/85/FILE_0BB74C30-1E7B-47A4-836D-3BD82070375A.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Matlagning</category>
+					<category priority="1">
+						<mainCategory>Matlagning</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>39468037</brandId>
 				<seasonNumber>4</seasonNumber>
@@ -632,14 +649,15 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="8" unit="px" height="3543"
-							width="2362" orientation="portrait">http://image.tv4.se/f2/05/38/FILE_A3322800-079D-41E2-87FA-2C6AC7F8C0F2.jpg
+						<imageRef purpose="press" unit="px" height="3543" width="2362"
+							orientation="portrait">http://image.tv4.se/f2/05/38/FILE_A3322800-079D-41E2-87FA-2C6AC7F8C0F2.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Livsstil</category>
-					<category>Fritid och hobby</category>
+					<category priority="1">
+						<mainCategory>Livsstil</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>39375055</brandId>
 				<seasonNumber>17</seasonNumber>
@@ -711,14 +729,16 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="20" unit="px" height="2200"
-							width="3300" orientation="landscape">http://image.tv4.se/18/20/34/FILE_B51DAF21-07A3-4CFA-B988-3D2157BA202F.jpg
+						<imageRef purpose="press" unit="px" height="2200" width="3300"
+							orientation="landscape">http://image.tv4.se/18/20/34/FILE_B51DAF21-07A3-4CFA-B988-3D2157BA202F.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Dokumentär</category>
-					<category>Reality-TV</category>
+					<category priority="1">
+						<mainCategory>Dokumentär</mainCategory>
+						<subCategory>Reality-TV</subCategory>
+					</category>
 				</categoryList>
 				<brandId>39377118</brandId>
 				<seasonNumber>9</seasonNumber>
@@ -738,7 +758,9 @@
 						nyhetsprogram från 2014.</description>
 				</descriptionList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>35015204</brandId>
 				<numberOfEpisodes>250</numberOfEpisodes>
@@ -757,7 +779,9 @@
 						TV4.</description>
 				</descriptionList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>39377896</brandId>
 				<numberOfEpisodes>250</numberOfEpisodes>
@@ -822,14 +846,16 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="production" priority="2" unit="px"
-							height="2200" width="3300" orientation="landscape">http://image.tv4.se/37/34/8a/FILE_8488D824-418C-4D7C-A239-2DD98FFC764F.jpg
+						<imageRef purpose="production" unit="px" height="2200"
+							width="3300" orientation="landscape">http://image.tv4.se/37/34/8a/FILE_8488D824-418C-4D7C-A239-2DD98FFC764F.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Dokumentär</category>
-					<category>Djur/natur</category>
+					<category priority="1">
+						<mainCategory>Dokumentär</mainCategory>
+						<subCategory>Djur/natur</subCategory>
+					</category>
 				</categoryList>
 				<brandId>80770238</brandId>
 				<seasonNumber>4</seasonNumber>
@@ -890,13 +916,15 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="production" priority="1" unit="px"
-							height="3840" width="5760" orientation="landscape">http://image.tv4.se/fb/77/84/FILE_E39AD778-31FD-4926-8F7A-CA69E2487875.jpg
+						<imageRef purpose="production" unit="px" height="3840"
+							width="5760" orientation="landscape">http://image.tv4.se/fb/77/84/FILE_E39AD778-31FD-4926-8F7A-CA69E2487875.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Matlagning</category>
+					<category priority="1">
+						<mainCategory>Matlagning</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>131347918</brandId>
 				<seasonNumber>1</seasonNumber>
@@ -951,14 +979,16 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="banner" priority="3" unit="px" height="260"
-							width="1000" orientation="landscape">http://image.tv4.se/38/8c/17/FILE_BBEE2036-C0A7-42CA-838D-A6812D36455E.jpg
+						<imageRef purpose="banner" unit="px" height="260" width="1000"
+							orientation="landscape">http://image.tv4.se/38/8c/17/FILE_BBEE2036-C0A7-42CA-838D-A6812D36455E.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Drama</category>
-					<category>Krim</category>
+					<category priority="1">
+						<mainCategory>Drama</mainCategory>
+						<subCategory>Krim</subCategory>
+					</category>
 				</categoryList>
 				<brandId>128586569</brandId>
 				<seasonNumber>2</seasonNumber>
@@ -1014,7 +1044,9 @@
 					</description>
 				</descriptionList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>35016564</brandId>
 				<numberOfEpisodes>54</numberOfEpisodes>
@@ -1069,7 +1101,9 @@
 					</description>
 				</descriptionList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>35016564</brandId>
 				<numberOfEpisodes>54</numberOfEpisodes>
@@ -1088,7 +1122,9 @@
 						från TV4.</description>
 				</descriptionList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>128776525</brandId>
 				<seasonNumber>1</seasonNumber>
@@ -1108,7 +1144,9 @@
 						sportnyheterna från TV4.</description>
 				</descriptionList>
 				<categoryList>
-					<category>Sport</category>
+					<category priority="1">
+						<mainCategory>Sport</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>39430375</brandId>
 				<numberOfEpisodes>54</numberOfEpisodes>
@@ -1127,7 +1165,9 @@
 						nyhetsuppdatering från TV4.</description>
 				</descriptionList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>45375565</brandId>
 				<numberOfEpisodes>54</numberOfEpisodes>
@@ -1155,13 +1195,15 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="6" unit="px" height="1080"
-							width="1920" orientation="landscape">http://image.tv4.se/82/1c/b5/FILE_5E1A2100-75DF-4EA1-B280-1B03B792CB2E.JPG
+						<imageRef purpose="press" unit="px" height="1080" width="1920"
+							orientation="landscape">http://image.tv4.se/82/1c/b5/FILE_5E1A2100-75DF-4EA1-B280-1B03B792CB2E.JPG
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Underhållning</category>
+					<category priority="1">
+						<mainCategory>Underhållning</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>101749784</brandId>
 				<numberOfEpisodes>40</numberOfEpisodes>
@@ -1234,14 +1276,16 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="4" unit="px" height="1642"
-							width="2000" orientation="landscape">http://image.tv4.se/33/10/44/FILE_0416CD0C-A261-4964-961A-FC389C19CE04.jpg
+						<imageRef purpose="press" unit="px" height="1642" width="2000"
+							orientation="landscape">http://image.tv4.se/33/10/44/FILE_0416CD0C-A261-4964-961A-FC389C19CE04.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Drama</category>
-					<category>Krim</category>
+					<category priority="1">
+						<mainCategory>Drama</mainCategory>
+						<subCategory>Krim</subCategory>
+					</category>
 				</categoryList>
 				<brandId>27046113</brandId>
 				<seasonNumber>3</seasonNumber>
@@ -1280,20 +1324,22 @@
 				</descriptionList>
 				<imageList>
 					<image>
-						<imageRef purpose="banner" priority="15" unit="px"
-							height="260" width="1000" orientation="landscape">http://image.tv4.se/24/a1/18/FILE_566694D6-3537-4E12-A213-9389BDA9C673.jpg
+						<imageRef purpose="banner" unit="px" height="260" width="1000"
+							orientation="landscape">http://image.tv4.se/24/a1/18/FILE_566694D6-3537-4E12-A213-9389BDA9C673.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Såpopera</category>
+					<category priority="1">
+						<mainCategory>Såpopera</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>29557964</brandId>
 				<seasonNumber>15</seasonNumber>
 				<numberOfEpisodes>500</numberOfEpisodes>
 			</season>
-		</ns5:seasonList>
-		<ns5:contentList>
+		</ns6:seasonList>
+		<ns6:contentList>
 			<content>
 				<id>4811875</id>
 				<productionYear>2014</productionYear>
@@ -1305,13 +1351,15 @@
 				</titleList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="10" unit="px" height="2454"
-							width="1600" orientation="portrait">http://image.tv4.se/b0/03/b5/FILE_9A27BBE5-A0B9-4073-BD09-66451EAA1A26.jpg
+						<imageRef purpose="press" unit="px" height="2454" width="1600"
+							orientation="portrait">http://image.tv4.se/b0/03/b5/FILE_9A27BBE5-A0B9-4073-BD09-66451EAA1A26.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>35006258</brandId>
 			</content>
@@ -1338,8 +1386,10 @@
 				</descriptionList>
 				<creditList />
 				<categoryList>
-					<category>Dokumentär</category>
-					<category>Konst</category>
+					<category priority="1">
+						<mainCategory>Dokumentär</mainCategory>
+						<subCategory>Konst</subCategory>
+					</category>
 				</categoryList>
 				<brandId>39369356</brandId>
 				<seasonId>4835033</seasonId>
@@ -1483,7 +1533,9 @@
 					</credit>
 				</creditList>
 				<categoryList>
-					<category>Såpopera</category>
+					<category priority="1">
+						<mainCategory>Såpopera</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>6362133</brandId>
 				<seasonId>200000067</seasonId>
@@ -1593,7 +1645,9 @@
 					</credit>
 				</creditList>
 				<categoryList>
-					<category>Såpopera</category>
+					<category priority="1">
+						<mainCategory>Såpopera</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>6362133</brandId>
 				<seasonId>200000067</seasonId>
@@ -1619,7 +1673,9 @@
 				</descriptionList>
 				<creditList />
 				<categoryList>
-					<category>Såpopera</category>
+					<category priority="1">
+						<mainCategory>Såpopera</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>126374204</brandId>
 				<seasonId>5136410</seasonId>
@@ -1644,7 +1700,9 @@
 				</descriptionList>
 				<creditList />
 				<categoryList>
-					<category>Såpopera</category>
+					<category priority="1">
+						<mainCategory>Såpopera</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>126374204</brandId>
 				<seasonId>5136410</seasonId>
@@ -1684,7 +1742,9 @@
 				</descriptionList>
 				<creditList />
 				<categoryList>
-					<category>Talkshow</category>
+					<category priority="1">
+						<mainCategory>Talkshow</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>38129896</brandId>
 				<seasonId>4673973</seasonId>
@@ -1845,14 +1905,16 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="2" unit="px" height="2000"
-							width="3000" orientation="landscape">http://image.tv4.se/9a/24/34/FILE_7B265098-CCEE-4EBA-A81A-560308E6E92B.JPG
+						<imageRef purpose="press" unit="px" height="2000" width="3000"
+							orientation="landscape">http://image.tv4.se/9a/24/34/FILE_7B265098-CCEE-4EBA-A81A-560308E6E92B.JPG
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Drama</category>
-					<category>Hälsa</category>
+					<category priority="1">
+						<mainCategory>Drama</mainCategory>
+						<subCategory>Hälsa</subCategory>
+					</category>
 				</categoryList>
 				<brandId>14667569</brandId>
 				<seasonId>3302561</seasonId>
@@ -1880,13 +1942,15 @@
 				<creditList />
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="5" unit="px" height="2200"
-							width="3300" orientation="landscape">http://image.tv4.se/66/00/d8/FILE_C8CE3D49-A7D8-40B8-9938-19CE2D7EF550.jpg
+						<imageRef purpose="press" unit="px" height="2200" width="3300"
+							orientation="landscape">http://image.tv4.se/66/00/d8/FILE_C8CE3D49-A7D8-40B8-9938-19CE2D7EF550.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Matlagning</category>
+					<category priority="1">
+						<mainCategory>Matlagning</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>39468037</brandId>
 				<seasonId>4678614</seasonId>
@@ -1926,8 +1990,10 @@
 				</descriptionList>
 				<creditList />
 				<categoryList>
-					<category>Livsstil</category>
-					<category>Fritid och hobby</category>
+					<category priority="1">
+						<mainCategory>Livsstil</mainCategory>
+						<subCategory>Fritid och hobby</subCategory>
+					</category>
 				</categoryList>
 				<brandId>39375055</brandId>
 				<seasonId>3944667</seasonId>
@@ -1954,8 +2020,10 @@
 				</descriptionList>
 				<creditList />
 				<categoryList>
-					<category>Dokumentär</category>
-					<category>Reality-TV</category>
+					<category priority="1">
+						<mainCategory>Dokumentär</mainCategory>
+						<subCategory>Reality-TV</subCategory>
+					</category>
 				</categoryList>
 				<brandId>39377118</brandId>
 				<seasonId>4391926</seasonId>
@@ -1972,7 +2040,9 @@
 					<title original="true" language="sv">Keno</title>
 				</titleList>
 				<categoryList>
-					<category>Gameshow</category>
+					<category priority="1">
+						<mainCategory>Gameshow</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>50861573</brandId>
 			</content>
@@ -1988,7 +2058,9 @@
 						från v.26</title>
 				</titleList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>35015204</brandId>
 				<seasonId>5078396</seasonId>
@@ -2005,7 +2077,9 @@
 					<title original="true" language="sv">TV4Vädret 19.25 2014</title>
 				</titleList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>39377896</brandId>
 				<seasonId>4810047</seasonId>
@@ -2042,9 +2116,18 @@
 					</description>
 				</descriptionList>
 				<creditList />
+				<imageList>
+					<image>
+						<imageRef purpose="production" unit="px" height="2200"
+							width="3300" orientation="landscape">http://image.tv4.se/50/b3/53/FILE_9A595E14-2245-463A-87A0-E7EEF227BF3C.jpg
+						</imageRef>
+					</image>
+				</imageList>
 				<categoryList>
-					<category>Dokumentär</category>
-					<category>Djur/natur</category>
+					<category priority="1">
+						<mainCategory>Dokumentär</mainCategory>
+						<subCategory>Djur/natur</subCategory>
+					</category>
 				</categoryList>
 				<brandId>80770238</brandId>
 				<seasonId>5087122</seasonId>
@@ -2081,16 +2164,17 @@
 						fikonkompott med portvin och kardemumma.
 					</description>
 				</descriptionList>
-				<creditList />
 				<imageList>
 					<image>
-						<imageRef purpose="production" priority="5" unit="px"
-							height="2200" width="3300" orientation="landscape">http://image.tv4.se//25/c0/1f/FILE_21687F0F-5A07-41DF-9B74-D4AD03EA22E8.jpg
+						<imageRef purpose="production" unit="px" height="2200"
+							width="3300" orientation="landscape">http://image.tv4.se//25/c0/1f/FILE_21687F0F-5A07-41DF-9B74-D4AD03EA22E8.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Matlagning</category>
+					<category priority="1">
+						<mainCategory>Matlagning</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>131347918</brandId>
 				<seasonId>4939185</seasonId>
@@ -2240,14 +2324,16 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="production" priority="6" unit="px"
-							height="2126" width="3189" orientation="landscape">http://image.tv4.se/bd/44/f1/FILE_32DAE172-42C5-486D-8386-E417D21DD3B6.jpg
+						<imageRef purpose="production" unit="px" height="2126"
+							width="3189" orientation="landscape">http://image.tv4.se/bd/44/f1/FILE_32DAE172-42C5-486D-8386-E417D21DD3B6.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Drama</category>
-					<category>Krim</category>
+					<category priority="1">
+						<mainCategory>Drama</mainCategory>
+						<subCategory>Krim</subCategory>
+					</category>
 				</categoryList>
 				<brandId>128586569</brandId>
 				<seasonId>5031164</seasonId>
@@ -2265,7 +2351,9 @@
 						140929</title>
 				</titleList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>35016564</brandId>
 				<seasonId>5187174</seasonId>
@@ -2283,7 +2371,9 @@
 						140929</title>
 				</titleList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>35016564</brandId>
 				<seasonId>5187217</seasonId>
@@ -2301,7 +2391,9 @@
 						140929</title>
 				</titleList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>128776525</brandId>
 				<seasonId>5187269</seasonId>
@@ -2319,7 +2411,9 @@
 					</title>
 				</titleList>
 				<categoryList>
-					<category>Sport</category>
+					<category priority="1">
+						<mainCategory>Sport</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>39430375</brandId>
 				<seasonId>5187312</seasonId>
@@ -2337,7 +2431,9 @@
 						140929</title>
 				</titleList>
 				<categoryList>
-					<category>Nyheter</category>
+					<category priority="1">
+						<mainCategory>Nyheter</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>45375565</brandId>
 				<seasonId>5187357</seasonId>
@@ -2557,14 +2653,16 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="3" unit="px" height="3590"
-							width="2409" orientation="portrait">http://image.tv4.se/82/e9/2d/FILE_68789A92-A939-451C-A169-6F26693C7BED.jpg
+						<imageRef purpose="press" unit="px" height="3590" width="2409"
+							orientation="portrait">http://image.tv4.se/82/e9/2d/FILE_68789A92-A939-451C-A169-6F26693C7BED.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Film</category>
-					<category>Spionfilm</category>
+					<category priority="1">
+						<mainCategory>Film</mainCategory>
+						<subCategory>Spionfilm</subCategory>
+					</category>
 				</categoryList>
 			</content>
 			<content>
@@ -2579,7 +2677,9 @@
 				</titleList>
 				<creditList />
 				<categoryList>
-					<category>Underhållning</category>
+					<category priority="1">
+						<mainCategory>Underhållning</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>101749784</brandId>
 				<seasonId>4807687</seasonId>
@@ -2684,8 +2784,10 @@
 					</credit>
 				</creditList>
 				<categoryList>
-					<category>Drama</category>
-					<category>Krim</category>
+					<category priority="1">
+						<mainCategory>Drama</mainCategory>
+						<subCategory>Krim</subCategory>
+					</category>
 				</categoryList>
 				<brandId>27046113</brandId>
 				<seasonId>4385980</seasonId>
@@ -2824,7 +2926,9 @@
 					</credit>
 				</creditList>
 				<categoryList>
-					<category>Såpopera</category>
+					<category priority="1">
+						<mainCategory>Såpopera</mainCategory>
+					</category>
 				</categoryList>
 				<brandId>29557964</brandId>
 				<seasonId>5032547</seasonId>
@@ -2841,145 +2945,147 @@
 					<title original="true" language="sv">Sändningsuppehåll</title>
 				</titleList>
 				<categoryList>
-					<category>Övrigt</category>
+					<category priority="1">
+						<mainCategory>Övrigt</mainCategory>
+					</category>
 				</categoryList>
 			</content>
-		</ns5:contentList>
-		<ns5:materialList>
-			<material timestamp="2014-12-01T15:29:00.538+01:00">
+		</ns6:contentList>
+		<ns6:materialList>
+			<material timestamp="2014-12-08T12:35:53.463+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26860182</id>
-				<contentIdRef>4811875</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>4811875</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.538+01:00">
+			<material timestamp="2014-12-08T12:35:53.463+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26547623</id>
-				<contentIdRef>5088252</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5088252</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.538+01:00">
+			<material timestamp="2014-12-08T12:35:53.463+01:00">
 				<providerId>se.tv4</providerId>
 				<id>27200797</id>
-				<contentIdRef>200000068</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>200000068</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.538+01:00">
+			<material timestamp="2014-12-08T12:35:53.463+01:00">
 				<providerId>se.tv4</providerId>
 				<id>27200802</id>
-				<contentIdRef>200000069</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>200000069</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.538+01:00">
+			<material timestamp="2014-12-08T12:35:53.463+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26915742</id>
-				<contentIdRef>5136556</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5136556</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.538+01:00">
+			<material timestamp="2014-12-08T12:35:53.463+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26915744</id>
-				<contentIdRef>5136558</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5136558</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.463+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26916754</id>
-				<contentIdRef>4674140</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>4674140</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.463+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26916836</id>
-				<contentIdRef>3302584</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>3302584</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.463+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26916921</id>
-				<contentIdRef>4678778</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>4678778</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 				<subtitleList>
 					<subtitle format="closed" language="sv" />
 				</subtitleList>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.463+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26917448</id>
-				<contentIdRef>3944676</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>3944676</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 				<subtitleList>
 					<subtitle format="closed" language="sv" />
 				</subtitleList>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26951628</id>
-				<contentIdRef>4768850</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>4768850</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>24277836</id>
-				<contentIdRef>4572562</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>4572562</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26956482</id>
-				<contentIdRef>5078627</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5078627</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26956486</id>
-				<contentIdRef>4810280</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>4810280</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26903455</id>
-				<contentIdRef>5087123</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5087123</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 				<subtitleList>
 					<subtitle format="closed" language="sv" />
 				</subtitleList>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26726955</id>
-				<contentIdRef>4939187</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>4939187</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 				<subtitleList>
@@ -2990,587 +3096,586 @@
 						language="sv" />
 				</accessibilityList>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26734514</id>
-				<contentIdRef>5031178</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5031178</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26859764</id>
-				<contentIdRef>5187211</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5187211</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26859768</id>
-				<contentIdRef>5187254</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5187254</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.539+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26859773</id>
-				<contentIdRef>5187306</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5187306</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.540+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26859776</id>
-				<contentIdRef>5187349</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5187349</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.540+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26859783</id>
-				<contentIdRef>5187394</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5187394</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.540+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26781768</id>
-				<contentIdRef>3039413</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>3039413</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.540+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>27051697</id>
-				<contentIdRef>4807709</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>4807709</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.540+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26967371</id>
-				<contentIdRef>4385989</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>4385989</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.540+01:00">
+			<material timestamp="2014-12-08T12:35:53.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26967263</id>
-				<contentIdRef>5032592</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>5032592</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.540+01:00">
+			<material timestamp="2014-12-08T12:35:53.465+01:00">
 				<providerId>se.tv4</providerId>
 				<id>27200870</id>
-				<contentIdRef>200000068</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>200000068</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.540+01:00">
+			<material timestamp="2014-12-08T12:35:53.465+01:00">
 				<providerId>se.tv4</providerId>
 				<id>27200882</id>
-				<contentIdRef>200000069</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>200000069</contentIdRef>
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-01T15:29:00.540+01:00">
+			<material timestamp="2014-12-08T12:35:53.465+01:00">
 				<providerId>se.tv4</providerId>
 				<id>9991056760358</id>
-				<contentIdRef>400000937</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>400000937</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>4:3</aspectRatio>
 			</material>
-		</ns5:materialList>
-		<ns5:eventList>
-			<ns3:event timestamp="2014-12-01T15:29:00.521+01:00">
-				<ns3:id>26860182</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>true</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T05:50:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T10:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-12-02T05:50:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-02T10:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>4811875</ns3:contentIdRef>
-				<ns3:materialIdRef>4811875</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.522+01:00">
-				<ns3:id>26547623</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>true</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T10:00:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T11:35:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5088252</ns3:contentIdRef>
-				<ns3:materialIdRef>5088252</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.522+01:00">
-				<ns3:id>27200797</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T11:35:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T12:10:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-12-02T03:35:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-02T04:10:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>200000068</ns3:contentIdRef>
-				<ns3:materialIdRef>200000068</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.523+01:00">
-				<ns3:id>27200802</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T12:10:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T12:45:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-12-02T04:10:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-02T04:45:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>200000069</ns3:contentIdRef>
-				<ns3:materialIdRef>200000069</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.523+01:00">
-				<ns3:id>26915742</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T12:45:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T13:20:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5136556</ns3:contentIdRef>
-				<ns3:materialIdRef>5136556</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.524+01:00">
-				<ns3:id>26915744</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T13:20:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T13:55:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5136558</ns3:contentIdRef>
-				<ns3:materialIdRef>5136558</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.524+01:00">
-				<ns3:id>26916754</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T13:55:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T14:55:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>4674140</ns3:contentIdRef>
-				<ns3:materialIdRef>4674140</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.524+01:00">
-				<ns3:id>26916836</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T14:55:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T15:55:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2012-03-13T21:00:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2012-03-13T21:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>3302584</ns3:contentIdRef>
-				<ns3:materialIdRef>3302584</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.525+01:00">
-				<ns3:id>26916921</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T15:55:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T16:55:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-02-19T20:00:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-02-19T21:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>4678778</ns3:contentIdRef>
-				<ns3:materialIdRef>4678778</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.526+01:00">
-				<ns3:id>26917448</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T16:55:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T17:55:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2012-11-13T20:00:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2012-11-13T21:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>3944676</ns3:contentIdRef>
-				<ns3:materialIdRef>3944676</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.526+01:00">
-				<ns3:id>26951628</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T17:55:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T18:50:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>4768850</ns3:contentIdRef>
-				<ns3:materialIdRef>4768850</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.527+01:00">
-				<ns3:id>24277836</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>true</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T18:50:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T19:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-12-02T18:50:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-02T19:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>4572562</ns3:contentIdRef>
-				<ns3:materialIdRef>4572562</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.527+01:00">
-				<ns3:id>26956482</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>true</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T19:00:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T19:20:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5078627</ns3:contentIdRef>
-				<ns3:materialIdRef>5078627</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.528+01:00">
-				<ns3:id>26956486</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>true</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T19:20:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T19:30:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>4810280</ns3:contentIdRef>
-				<ns3:materialIdRef>4810280</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.528+01:00">
-				<ns3:id>26903455</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T19:30:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T20:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-12-06T15:15:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-06T15:40:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5087123</ns3:contentIdRef>
-				<ns3:materialIdRef>5087123</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.529+01:00">
-				<ns3:id>26726955</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T20:00:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T21:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-12-06T14:15:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-06T15:15:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>4939187</ns3:contentIdRef>
-				<ns3:materialIdRef>4939187</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.530+01:00">
-				<ns3:id>26734514</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T21:00:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T22:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-12-08T01:50:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-08T02:45:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5031178</ns3:contentIdRef>
-				<ns3:materialIdRef>5031178</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.530+01:00">
-				<ns3:id>26859764</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>true</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T22:00:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T22:10:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5187211</ns3:contentIdRef>
-				<ns3:materialIdRef>5187211</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.531+01:00">
-				<ns3:id>26859768</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>true</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T22:10:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T22:30:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5187254</ns3:contentIdRef>
-				<ns3:materialIdRef>5187254</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.531+01:00">
-				<ns3:id>26859773</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>true</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T22:30:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T22:35:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5187306</ns3:contentIdRef>
-				<ns3:materialIdRef>5187306</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.531+01:00">
-				<ns3:id>26859776</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>true</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T22:35:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T22:50:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5187349</ns3:contentIdRef>
-				<ns3:materialIdRef>5187349</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.532+01:00">
-				<ns3:id>26859783</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>true</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T22:50:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T23:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5187394</ns3:contentIdRef>
-				<ns3:materialIdRef>5187394</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.532+01:00">
-				<ns3:id>26781768</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T23:00:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-02T01:40:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2013-04-14T00:15:00.000+02:00</ns3:startTime>
-						<ns3:endTime>2013-04-14T03:00:00.000+02:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>3039413</ns3:contentIdRef>
-				<ns3:materialIdRef>3039413</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.533+01:00">
-				<ns3:id>27051697</ns3:id>
-				<ns3:rerun>true</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-02T01:40:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-02T02:10:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-02-08T20:30:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-02-08T21:00:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>4807709</ns3:contentIdRef>
-				<ns3:materialIdRef>4807709</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.533+01:00">
-				<ns3:id>26967371</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-02T02:10:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-02T03:05:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2013-07-18T02:10:00.000+02:00</ns3:startTime>
-						<ns3:endTime>2013-07-18T03:05:00.000+02:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>4385989</ns3:contentIdRef>
-				<ns3:materialIdRef>4385989</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.534+01:00">
-				<ns3:id>26967263</ns3:id>
-				<ns3:rerun>false</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-02T03:05:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-02T03:35:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>5032592</ns3:contentIdRef>
-				<ns3:materialIdRef>5032592</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.534+01:00">
-				<ns3:id>27200870</ns3:id>
-				<ns3:rerun>true</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-02T03:35:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-02T04:10:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T11:35:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T12:10:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>200000068</ns3:contentIdRef>
-				<ns3:materialIdRef>200000068</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.535+01:00">
-				<ns3:id>27200882</ns3:id>
-				<ns3:rerun>true</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-02T04:10:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-02T04:45:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-12-01T12:10:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-01T12:45:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>200000069</ns3:contentIdRef>
-				<ns3:materialIdRef>200000069</ns3:materialIdRef>
-			</ns3:event>
-			<ns3:event timestamp="2014-12-01T15:29:00.536+01:00">
-				<ns3:id>9991056760358</ns3:id>
-				<ns3:rerun>true</ns3:rerun>
-				<ns3:live>false</ns3:live>
-				<ns3:hidden>false</ns3:hidden>
-				<ns3:timeList>
-					<ns3:time>
-						<ns3:startTime>2014-12-02T04:45:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-02T05:50:00.000+01:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2012-07-20T05:30:00.000+02:00</ns3:startTime>
-						<ns3:endTime>2012-07-20T06:00:00.000+02:00</ns3:endTime>
-					</ns3:time>
-					<ns3:time>
-						<ns3:startTime>2014-12-03T04:45:00.000+01:00</ns3:startTime>
-						<ns3:endTime>2014-12-03T05:50:00.000+01:00</ns3:endTime>
-					</ns3:time>
-				</ns3:timeList>
-				<ns3:contentIdRef>400000937</ns3:contentIdRef>
-				<ns3:materialIdRef>400000937</ns3:materialIdRef>
-			</ns3:event>
-		</ns5:eventList>
-	</ns2:data>
-</ns2:schedule-metadata>
-
+		</ns6:materialList>
+		<ns6:eventList>
+			<ns2:event timestamp="2014-12-08T12:35:53.447+01:00">
+				<ns2:id>26860182</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>true</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T05:50:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T10:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-02T05:50:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-02T10:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>4811875</ns2:contentIdRef>
+				<ns2:materialIdRef>4811875</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.448+01:00">
+				<ns2:id>26547623</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>true</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T10:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T11:35:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5088252</ns2:contentIdRef>
+				<ns2:materialIdRef>5088252</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.449+01:00">
+				<ns2:id>27200797</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T11:35:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T12:10:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-02T03:35:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-02T04:10:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>200000068</ns2:contentIdRef>
+				<ns2:materialIdRef>200000068</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.450+01:00">
+				<ns2:id>27200802</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T12:10:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T12:45:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-02T04:10:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-02T04:45:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>200000069</ns2:contentIdRef>
+				<ns2:materialIdRef>200000069</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.450+01:00">
+				<ns2:id>26915742</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T12:45:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T13:20:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5136556</ns2:contentIdRef>
+				<ns2:materialIdRef>5136556</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.451+01:00">
+				<ns2:id>26915744</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T13:20:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T13:55:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5136558</ns2:contentIdRef>
+				<ns2:materialIdRef>5136558</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.451+01:00">
+				<ns2:id>26916754</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T13:55:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T14:55:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>4674140</ns2:contentIdRef>
+				<ns2:materialIdRef>4674140</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.452+01:00">
+				<ns2:id>26916836</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T14:55:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T15:55:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2012-03-13T21:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2012-03-13T21:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>3302584</ns2:contentIdRef>
+				<ns2:materialIdRef>3302584</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.452+01:00">
+				<ns2:id>26916921</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T15:55:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T16:55:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-02-19T20:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-02-19T21:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>4678778</ns2:contentIdRef>
+				<ns2:materialIdRef>4678778</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.453+01:00">
+				<ns2:id>26917448</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T16:55:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T17:55:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2012-11-13T20:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2012-11-13T21:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>3944676</ns2:contentIdRef>
+				<ns2:materialIdRef>3944676</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.453+01:00">
+				<ns2:id>26951628</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T17:55:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T18:50:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>4768850</ns2:contentIdRef>
+				<ns2:materialIdRef>4768850</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.454+01:00">
+				<ns2:id>24277836</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>true</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T18:50:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T19:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-02T18:50:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-02T19:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>4572562</ns2:contentIdRef>
+				<ns2:materialIdRef>4572562</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.454+01:00">
+				<ns2:id>26956482</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>true</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T19:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T19:20:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5078627</ns2:contentIdRef>
+				<ns2:materialIdRef>5078627</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.455+01:00">
+				<ns2:id>26956486</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>true</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T19:20:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T19:30:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>4810280</ns2:contentIdRef>
+				<ns2:materialIdRef>4810280</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.455+01:00">
+				<ns2:id>26903455</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T19:30:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T20:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-06T15:15:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-06T15:40:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5087123</ns2:contentIdRef>
+				<ns2:materialIdRef>5087123</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.456+01:00">
+				<ns2:id>26726955</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T20:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T21:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-06T14:15:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-06T15:15:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>4939187</ns2:contentIdRef>
+				<ns2:materialIdRef>4939187</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.456+01:00">
+				<ns2:id>26734514</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T21:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T22:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-08T01:50:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-08T02:45:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5031178</ns2:contentIdRef>
+				<ns2:materialIdRef>5031178</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.457+01:00">
+				<ns2:id>26859764</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>true</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T22:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T22:10:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5187211</ns2:contentIdRef>
+				<ns2:materialIdRef>5187211</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.457+01:00">
+				<ns2:id>26859768</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>true</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T22:10:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T22:30:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5187254</ns2:contentIdRef>
+				<ns2:materialIdRef>5187254</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.457+01:00">
+				<ns2:id>26859773</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>true</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T22:30:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T22:35:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5187306</ns2:contentIdRef>
+				<ns2:materialIdRef>5187306</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.458+01:00">
+				<ns2:id>26859776</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>true</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T22:35:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T22:50:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5187349</ns2:contentIdRef>
+				<ns2:materialIdRef>5187349</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.458+01:00">
+				<ns2:id>26859783</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>true</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T22:50:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T23:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5187394</ns2:contentIdRef>
+				<ns2:materialIdRef>5187394</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.458+01:00">
+				<ns2:id>26781768</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T23:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-02T01:40:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2013-04-14T00:15:00.000+02:00</ns2:startTime>
+						<ns2:endTime>2013-04-14T03:00:00.000+02:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>3039413</ns2:contentIdRef>
+				<ns2:materialIdRef>3039413</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.459+01:00">
+				<ns2:id>27051697</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-02T01:40:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-02T02:10:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-02-08T20:30:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-02-08T21:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>4807709</ns2:contentIdRef>
+				<ns2:materialIdRef>4807709</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.459+01:00">
+				<ns2:id>26967371</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-02T02:10:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-02T03:05:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2013-07-18T02:10:00.000+02:00</ns2:startTime>
+						<ns2:endTime>2013-07-18T03:05:00.000+02:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>4385989</ns2:contentIdRef>
+				<ns2:materialIdRef>4385989</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.460+01:00">
+				<ns2:id>26967263</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-02T03:05:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-02T03:35:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>5032592</ns2:contentIdRef>
+				<ns2:materialIdRef>5032592</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.460+01:00">
+				<ns2:id>27200870</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-02T03:35:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-02T04:10:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T11:35:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T12:10:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>200000068</ns2:contentIdRef>
+				<ns2:materialIdRef>200000068</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.460+01:00">
+				<ns2:id>27200882</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-02T04:10:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-02T04:45:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T12:10:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T12:45:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>200000069</ns2:contentIdRef>
+				<ns2:materialIdRef>200000069</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:35:53.461+01:00">
+				<ns2:id>9991056760358</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-02T04:45:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-02T05:50:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2012-07-20T05:30:00.000+02:00</ns2:startTime>
+						<ns2:endTime>2012-07-20T06:00:00.000+02:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-03T04:45:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-03T05:50:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>400000937</ns2:contentIdRef>
+				<ns2:materialIdRef>400000937</ns2:materialIdRef>
+			</ns2:event>
+		</ns6:eventList>
+	</ns3:data>
+</ns3:schedule-metadata>

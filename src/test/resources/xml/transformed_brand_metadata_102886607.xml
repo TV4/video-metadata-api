@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:content-metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
-	xmlns:ns3="http://video-metadata.tv.se/schedule/v1" xmlns:ns4="http://video-metadata.tv.se/event/v1"
-	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/material/v1">
-	<ns2:header>
-		<ns2:providerId>se.tv4</ns2:providerId>
-		<ns2:msgId>d78b8696-9786-4c52-8b39-026323e749b9</ns2:msgId>
-	</ns2:header>
-	<ns2:data>
+<ns3:content-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/tagging/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/schedule/v1"
+	xmlns:ns7="http://video-metadata.tv.se/material/v1" xmlns:ns8="http://video-metadata.tv.se/content/v1">
+	<ns3:header>
+		<ns3:providerId>se.tv4</ns3:providerId>
+		<ns3:msgId>84986dac-72b0-4bc8-9070-aa4dbdc5793d</ns3:msgId>
+	</ns3:header>
+	<ns3:data>
 		<brand>
 			<id>102886607</id>
 			<titleList>
 				<title original="false" language="sv">Handboll: Elitserien</title>
 			</titleList>
 		</brand>
-	</ns2:data>
-</ns2:content-metadata>
+	</ns3:data>
+</ns3:content-metadata>

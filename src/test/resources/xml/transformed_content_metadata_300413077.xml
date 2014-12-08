@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:content-metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
-	xmlns:ns3="http://video-metadata.tv.se/schedule/v1" xmlns:ns4="http://video-metadata.tv.se/event/v1"
-	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/material/v1">
-	<ns2:header>
-		<ns2:providerId>se.tv4</ns2:providerId>
-		<ns2:msgId>0328e59f-1f8f-408a-aa81-a9a622766704</ns2:msgId>
-	</ns2:header>
-	<ns2:data>
+<ns3:content-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/tagging/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/schedule/v1"
+	xmlns:ns7="http://video-metadata.tv.se/material/v1" xmlns:ns8="http://video-metadata.tv.se/content/v1">
+	<ns3:header>
+		<ns3:providerId>se.tv4</ns3:providerId>
+		<ns3:msgId>be58b8ca-a7af-4a30-aef6-10d1a05e7ab7</ns3:msgId>
+	</ns3:header>
+	<ns3:data>
 		<brand>
 			<id>50788422</id>
 			<titleList>
@@ -61,7 +62,9 @@
 				</description>
 			</descriptionList>
 			<categoryList>
-				<category>Drama</category>
+				<category priority="1">
+					<mainCategory>Drama</mainCategory>
+				</category>
 			</categoryList>
 			<brandId>50788422</brandId>
 			<numberOfEpisodes>110</numberOfEpisodes>
@@ -134,12 +137,13 @@
 				</credit>
 			</creditList>
 			<categoryList>
-				<category>Drama</category>
+				<category priority="1">
+					<mainCategory>Drama</mainCategory>
+				</category>
 			</categoryList>
 			<brandId>50788422</brandId>
 			<seasonId>300413018</seasonId>
 			<episodeNumber>59</episodeNumber>
 		</content>
-	</ns2:data>
-</ns2:content-metadata>
-
+	</ns3:data>
+</ns3:content-metadata>

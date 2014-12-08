@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:schedule-metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
-	xmlns:ns3="http://video-metadata.tv.se/schedule/v1" xmlns:ns4="http://video-metadata.tv.se/event/v1"
-	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/material/v1">
-	<ns2:header>
-		<ns2:providerId>se.tv4</ns2:providerId>
-		<ns2:msgId>dc0c3a1d-580f-480e-96e1-87a8baf09d18</ns2:msgId>
-	</ns2:header>
-	<ns2:data timestamp="2014-11-27T15:45:09.269+01:00">
-		<ns3:channelId>TV4 Film</ns3:channelId>
-		<ns3:from>2014-11-30T05:05:00.000+01:00</ns3:from>
-		<ns3:to>2014-12-01T05:20:00.000+01:00</ns3:to>
-		<ns3:contentList>
+<ns3:schedule-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/tagging/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/schedule/v1"
+	xmlns:ns7="http://video-metadata.tv.se/material/v1" xmlns:ns8="http://video-metadata.tv.se/content/v1">
+	<ns3:header>
+		<ns3:providerId>se.tv4</ns3:providerId>
+		<ns3:msgId>daa585f8-4cdd-4b4c-a19f-50be6a84cbbf</ns3:msgId>
+	</ns3:header>
+	<ns3:data timestamp="2014-12-08T12:39:05.798+01:00">
+		<ns6:channelId>TV4 Film</ns6:channelId>
+		<ns6:from>2014-11-30T05:05:00.000+01:00</ns6:from>
+		<ns6:to>2014-12-01T05:20:00.000+01:00</ns6:to>
+		<ns6:contentList>
 			<content>
 				<id>300420655</id>
 				<productionYear>2012</productionYear>
@@ -79,8 +80,10 @@
 					</credit>
 				</creditList>
 				<categoryList>
-					<category>Drama</category>
-					<category>Kortfilm</category>
+					<category priority="1">
+						<mainCategory>Drama</mainCategory>
+						<subCategory>Kortfilm</subCategory>
+					</category>
 				</categoryList>
 			</content>
 			<content>
@@ -268,14 +271,16 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="3" unit="px" height="1807"
-							width="2603" orientation="landscape">http://image.tv4.se/5c/09/f1/FILE_FBACDF5D-A5A0-4D23-A4D0-83A2488B6E10.jpg
+						<imageRef purpose="press" unit="px" height="1807" width="2603"
+							orientation="landscape">http://image.tv4.se/5c/09/f1/FILE_FBACDF5D-A5A0-4D23-A4D0-83A2488B6E10.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Film</category>
-					<category>Komedi</category>
+					<category priority="1">
+						<mainCategory>Film</mainCategory>
+						<subCategory>Komedi</subCategory>
+					</category>
 				</categoryList>
 			</content>
 			<content>
@@ -286,11 +291,12 @@
 				</countryOfOriginList>
 				<titleList>
 					<title original="false" language="sv">Sändningsuppehåll</title>
-					<title original="true" language="sv">Sändningsuppehåll</title>
 				</titleList>
 				<creditList />
 				<categoryList>
-					<category>Övrigt</category>
+					<category priority="1">
+						<mainCategory>Övrigt</mainCategory>
+					</category>
 				</categoryList>
 			</content>
 			<content>
@@ -508,14 +514,16 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="production" priority="8" unit="px"
-							height="1984" width="2976" orientation="landscape">http://image.tv4.se/62/87/0d/FILE_B6D9DC35-42E7-490F-9D14-F5F07595268F.jpg
+						<imageRef purpose="production" unit="px" height="1984"
+							width="2976" orientation="landscape">http://image.tv4.se/62/87/0d/FILE_B6D9DC35-42E7-490F-9D14-F5F07595268F.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Film</category>
-					<category>Drama</category>
+					<category priority="1">
+						<mainCategory>Film</mainCategory>
+						<subCategory>Drama</subCategory>
+					</category>
 				</categoryList>
 			</content>
 			<content>
@@ -733,14 +741,16 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="1" unit="px" height="1607"
-							width="2423" orientation="landscape">http://image.tv4.se/04/ca/d9/FILE_6664B1EE-A0E6-485B-91A7-38D8A55C0E80.jpg
+						<imageRef purpose="press" unit="px" height="1607" width="2423"
+							orientation="landscape">http://image.tv4.se/04/ca/d9/FILE_6664B1EE-A0E6-485B-91A7-38D8A55C0E80.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Film</category>
-					<category>Science Fiction</category>
+					<category priority="1">
+						<mainCategory>Film</mainCategory>
+						<subCategory>Science Fiction</subCategory>
+					</category>
 				</categoryList>
 			</content>
 			<content>
@@ -1003,14 +1013,16 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="production" priority="5" unit="px"
-							height="2192" width="3300" orientation="landscape">http://image.tv4.se/43/2b/ff/FILE_D69E72F1-F19E-4A29-8956-99171F1D1E19.jpg
+						<imageRef purpose="production" unit="px" height="2192"
+							width="3300" orientation="landscape">http://image.tv4.se/43/2b/ff/FILE_D69E72F1-F19E-4A29-8956-99171F1D1E19.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Film</category>
-					<category>Biografiskt drama</category>
+					<category priority="1">
+						<mainCategory>Film</mainCategory>
+						<subCategory>Biografiskt drama</subCategory>
+					</category>
 				</categoryList>
 			</content>
 			<content>
@@ -1195,14 +1207,16 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="production" priority="7" unit="px"
-							height="3300" width="2196" orientation="portrait">http://image.tv4.se/d4/f1/5d/FILE_5F95D5C8-CE8F-47E7-9123-84BEA03E057E.jpg
+						<imageRef purpose="production" unit="px" height="3300"
+							width="2196" orientation="portrait">http://image.tv4.se/d4/f1/5d/FILE_5F95D5C8-CE8F-47E7-9123-84BEA03E057E.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Film</category>
-					<category>Action</category>
+					<category priority="1">
+						<mainCategory>Film</mainCategory>
+						<subCategory>Action</subCategory>
+					</category>
 				</categoryList>
 			</content>
 			<content>
@@ -1363,14 +1377,16 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="3" unit="px" height="1809"
-							width="2480" orientation="landscape">http://image.tv4.se/b0/db/66/FILE_A917A0A3-4D24-4ADD-8410-1A864968390E.jpg
+						<imageRef purpose="press" unit="px" height="1809" width="2480"
+							orientation="landscape">http://image.tv4.se/b0/db/66/FILE_A917A0A3-4D24-4ADD-8410-1A864968390E.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Film</category>
-					<category>Komedi</category>
+					<category priority="1">
+						<mainCategory>Film</mainCategory>
+						<subCategory>Komedi</subCategory>
+					</category>
 				</categoryList>
 			</content>
 			<content>
@@ -1533,14 +1549,16 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="production" priority="5" unit="px"
-							height="2216" width="3300" orientation="landscape">http://image.tv4.se/4f/43/ef/FILE_130A55A2-A320-410B-A648-F4EE51B50DEA.jpg
+						<imageRef purpose="production" unit="px" height="2216"
+							width="3300" orientation="landscape">http://image.tv4.se/4f/43/ef/FILE_130A55A2-A320-410B-A648-F4EE51B50DEA.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Film</category>
-					<category>Action</category>
+					<category priority="1">
+						<mainCategory>Film</mainCategory>
+						<subCategory>Action</subCategory>
+					</category>
 				</categoryList>
 			</content>
 			<content>
@@ -1716,14 +1734,16 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="press" priority="5" unit="px" height="1611"
-							width="2400" orientation="landscape">http://image.tv4.se/56/db/b5/FILE_47BBCF5B-67B7-4209-9931-6A66AEB7AA6A.jpg
+						<imageRef purpose="press" unit="px" height="1611" width="2400"
+							orientation="landscape">http://image.tv4.se/56/db/b5/FILE_47BBCF5B-67B7-4209-9931-6A66AEB7AA6A.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Film</category>
-					<category>Thriller</category>
+					<category priority="1">
+						<mainCategory>Film</mainCategory>
+						<subCategory>Thriller</subCategory>
+					</category>
 				</categoryList>
 			</content>
 			<content>
@@ -1875,321 +1895,322 @@
 				</creditList>
 				<imageList>
 					<image>
-						<imageRef purpose="production" priority="5" unit="px"
-							height="1624" width="2480" orientation="landscape">http://image.tv4.se/65/22/4d/FILE_BC9F6B1C-3A5B-46B7-9E67-B9E4F93DB0D4.jpg
+						<imageRef purpose="production" unit="px" height="1624"
+							width="2480" orientation="landscape">http://image.tv4.se/65/22/4d/FILE_BC9F6B1C-3A5B-46B7-9E67-B9E4F93DB0D4.jpg
 						</imageRef>
 					</image>
 				</imageList>
 				<categoryList>
-					<category>Film</category>
-					<category>Drama</category>
+					<category priority="1">
+						<mainCategory>Film</mainCategory>
+						<subCategory>Drama</subCategory>
+					</category>
 				</categoryList>
 			</content>
-		</ns3:contentList>
-		<ns3:materialList>
-			<material timestamp="2014-11-27T15:45:09.278+01:00">
+		</ns6:contentList>
+		<ns6:materialList>
+			<material timestamp="2014-12-08T12:39:05.804+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101734105</id>
-				<contentIdRef>300420655</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>300420655</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-11-27T15:45:09.278+01:00">
+			<material timestamp="2014-12-08T12:39:05.804+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101734106</id>
-				<contentIdRef>1324366</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>1324366</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>4:3</aspectRatio>
 				<subtitleList>
 					<subtitle format="closed" language="sv" />
 				</subtitleList>
 			</material>
-			<material timestamp="2014-11-27T15:45:09.279+01:00">
+			<material timestamp="2014-12-08T12:39:05.804+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101734110</id>
-				<contentIdRef>100000053</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>100000053</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>4:3</aspectRatio>
 			</material>
-			<material timestamp="2014-11-27T15:45:09.279+01:00">
+			<material timestamp="2014-12-08T12:39:05.804+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101717450</id>
-				<contentIdRef>500236283</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>500236283</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-11-27T15:45:09.279+01:00">
+			<material timestamp="2014-12-08T12:39:05.804+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101717442</id>
-				<contentIdRef>100001477</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>100001477</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-11-27T15:45:09.279+01:00">
+			<material timestamp="2014-12-08T12:39:05.804+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101706401</id>
-				<contentIdRef>500236641</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>500236641</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-11-27T15:45:09.279+01:00">
+			<material timestamp="2014-12-08T12:39:05.804+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101706387</id>
-				<contentIdRef>4865078</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>4865078</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-11-27T15:45:09.279+01:00">
+			<material timestamp="2014-12-08T12:39:05.804+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101706627</id>
-				<contentIdRef>100019014</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>100019014</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-11-27T15:45:09.279+01:00">
+			<material timestamp="2014-12-08T12:39:05.805+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101717606</id>
-				<contentIdRef>100108502</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>100108502</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-11-27T15:45:09.279+01:00">
+			<material timestamp="2014-12-08T12:39:05.805+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101732271</id>
-				<contentIdRef>1439631</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>1439631</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-11-27T15:45:09.279+01:00">
+			<material timestamp="2014-12-08T12:39:05.805+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101732277</id>
-				<contentIdRef>100167808</contentIdRef>
 				<materialType>program</materialType>
+				<contentIdRef>100167808</contentIdRef>
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 				<subtitleList>
 					<subtitle format="closed" language="sv" />
 				</subtitleList>
 			</material>
-		</ns3:materialList>
-		<ns3:eventList>
-			<ns4:event timestamp="2014-11-27T15:45:09.269+01:00">
-				<ns4:id>101734105</ns4:id>
-				<ns4:rerun>true</ns4:rerun>
-				<ns4:live>false</ns4:live>
-				<ns4:hidden>false</ns4:hidden>
-				<ns4:timeList>
-					<ns4:time>
-						<ns4:startTime>2014-11-30T05:05:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-11-30T05:30:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2012-12-07T14:10:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2012-12-07T14:40:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-12-09T04:50:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-12-09T05:15:00.000+01:00</ns4:endTime>
-					</ns4:time>
-				</ns4:timeList>
-				<ns4:contentIdRef>300420655</ns4:contentIdRef>
-				<ns4:materialIdRef>300420655</ns4:materialIdRef>
-			</ns4:event>
-			<ns4:event timestamp="2014-11-27T15:45:09.271+01:00">
-				<ns4:id>101734106</ns4:id>
-				<ns4:rerun>true</ns4:rerun>
-				<ns4:live>false</ns4:live>
-				<ns4:hidden>false</ns4:hidden>
-				<ns4:timeList>
-					<ns4:time>
-						<ns4:startTime>2014-11-30T05:30:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-11-30T07:25:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-08-10T21:00:00.000+02:00</ns4:startTime>
-						<ns4:endTime>2014-08-10T23:10:00.000+02:00</ns4:endTime>
-					</ns4:time>
-				</ns4:timeList>
-				<ns4:contentIdRef>1324366</ns4:contentIdRef>
-				<ns4:materialIdRef>1324366</ns4:materialIdRef>
-			</ns4:event>
-			<ns4:event timestamp="2014-11-27T15:45:09.271+01:00">
-				<ns4:id>101734110</ns4:id>
-				<ns4:rerun>false</ns4:rerun>
-				<ns4:live>true</ns4:live>
-				<ns4:hidden>false</ns4:hidden>
-				<ns4:timeList>
-					<ns4:time>
-						<ns4:startTime>2014-11-30T07:25:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-11-30T11:30:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-12-01T07:00:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-12-01T10:35:00.000+01:00</ns4:endTime>
-					</ns4:time>
-				</ns4:timeList>
-				<ns4:contentIdRef>100000053</ns4:contentIdRef>
-				<ns4:materialIdRef>100000053</ns4:materialIdRef>
-			</ns4:event>
-			<ns4:event timestamp="2014-11-27T15:45:09.272+01:00">
-				<ns4:id>101717450</ns4:id>
-				<ns4:rerun>true</ns4:rerun>
-				<ns4:live>false</ns4:live>
-				<ns4:hidden>false</ns4:hidden>
-				<ns4:timeList>
-					<ns4:time>
-						<ns4:startTime>2014-11-30T11:30:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-11-30T13:25:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-08-24T21:00:00.000+02:00</ns4:startTime>
-						<ns4:endTime>2014-08-24T22:50:00.000+02:00</ns4:endTime>
-					</ns4:time>
-				</ns4:timeList>
-				<ns4:contentIdRef>500236283</ns4:contentIdRef>
-				<ns4:materialIdRef>500236283</ns4:materialIdRef>
-			</ns4:event>
-			<ns4:event timestamp="2014-11-27T15:45:09.273+01:00">
-				<ns4:id>101717442</ns4:id>
-				<ns4:rerun>true</ns4:rerun>
-				<ns4:live>false</ns4:live>
-				<ns4:hidden>false</ns4:hidden>
-				<ns4:timeList>
-					<ns4:time>
-						<ns4:startTime>2014-11-30T13:25:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-11-30T15:35:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-09-01T17:00:00.000+02:00</ns4:startTime>
-						<ns4:endTime>2014-09-01T19:10:00.000+02:00</ns4:endTime>
-					</ns4:time>
-				</ns4:timeList>
-				<ns4:contentIdRef>100001477</ns4:contentIdRef>
-				<ns4:materialIdRef>100001477</ns4:materialIdRef>
-			</ns4:event>
-			<ns4:event timestamp="2014-11-27T15:45:09.273+01:00">
-				<ns4:id>101706401</ns4:id>
-				<ns4:rerun>true</ns4:rerun>
-				<ns4:live>false</ns4:live>
-				<ns4:hidden>false</ns4:hidden>
-				<ns4:timeList>
-					<ns4:time>
-						<ns4:startTime>2014-11-30T15:35:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-11-30T18:20:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-11-10T21:00:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-11-10T23:50:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-12-01T11:50:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-12-01T14:25:00.000+01:00</ns4:endTime>
-					</ns4:time>
-				</ns4:timeList>
-				<ns4:contentIdRef>500236641</ns4:contentIdRef>
-				<ns4:materialIdRef>500236641</ns4:materialIdRef>
-			</ns4:event>
-			<ns4:event timestamp="2014-11-27T15:45:09.274+01:00">
-				<ns4:id>101706387</ns4:id>
-				<ns4:rerun>true</ns4:rerun>
-				<ns4:live>false</ns4:live>
-				<ns4:hidden>false</ns4:hidden>
-				<ns4:timeList>
-					<ns4:time>
-						<ns4:startTime>2014-11-30T18:20:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-11-30T21:00:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-09-05T21:00:00.000+02:00</ns4:startTime>
-						<ns4:endTime>2014-09-05T23:50:00.000+02:00</ns4:endTime>
-					</ns4:time>
-				</ns4:timeList>
-				<ns4:contentIdRef>4865078</ns4:contentIdRef>
-				<ns4:materialIdRef>4865078</ns4:materialIdRef>
-			</ns4:event>
-			<ns4:event timestamp="2014-11-27T15:45:09.275+01:00">
-				<ns4:id>101706627</ns4:id>
-				<ns4:rerun>false</ns4:rerun>
-				<ns4:live>false</ns4:live>
-				<ns4:hidden>false</ns4:hidden>
-				<ns4:timeList>
-					<ns4:time>
-						<ns4:startTime>2014-11-30T21:00:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-11-30T22:50:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-12-01T14:25:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-12-01T16:20:00.000+01:00</ns4:endTime>
-					</ns4:time>
-				</ns4:timeList>
-				<ns4:contentIdRef>100019014</ns4:contentIdRef>
-				<ns4:materialIdRef>100019014</ns4:materialIdRef>
-			</ns4:event>
-			<ns4:event timestamp="2014-11-27T15:45:09.276+01:00">
-				<ns4:id>101717606</ns4:id>
-				<ns4:rerun>true</ns4:rerun>
-				<ns4:live>false</ns4:live>
-				<ns4:hidden>false</ns4:hidden>
-				<ns4:timeList>
-					<ns4:time>
-						<ns4:startTime>2014-11-30T22:50:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-12-01T01:00:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-09-19T23:20:00.000+02:00</ns4:startTime>
-						<ns4:endTime>2014-09-20T01:35:00.000+02:00</ns4:endTime>
-					</ns4:time>
-				</ns4:timeList>
-				<ns4:contentIdRef>100108502</ns4:contentIdRef>
-				<ns4:materialIdRef>100108502</ns4:materialIdRef>
-			</ns4:event>
-			<ns4:event timestamp="2014-11-27T15:45:09.276+01:00">
-				<ns4:id>101732271</ns4:id>
-				<ns4:rerun>true</ns4:rerun>
-				<ns4:live>false</ns4:live>
-				<ns4:hidden>false</ns4:hidden>
-				<ns4:timeList>
-					<ns4:time>
-						<ns4:startTime>2014-12-01T01:00:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-12-01T03:35:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-09-06T21:00:00.000+02:00</ns4:startTime>
-						<ns4:endTime>2014-09-06T23:35:00.000+02:00</ns4:endTime>
-					</ns4:time>
-				</ns4:timeList>
-				<ns4:contentIdRef>1439631</ns4:contentIdRef>
-				<ns4:materialIdRef>1439631</ns4:materialIdRef>
-			</ns4:event>
-			<ns4:event timestamp="2014-11-27T15:45:09.277+01:00">
-				<ns4:id>101732277</ns4:id>
-				<ns4:rerun>true</ns4:rerun>
-				<ns4:live>false</ns4:live>
-				<ns4:hidden>false</ns4:hidden>
-				<ns4:timeList>
-					<ns4:time>
-						<ns4:startTime>2014-12-01T03:35:00.000+01:00</ns4:startTime>
-						<ns4:endTime>2014-12-01T05:20:00.000+01:00</ns4:endTime>
-					</ns4:time>
-					<ns4:time>
-						<ns4:startTime>2014-08-17T23:25:00.000+02:00</ns4:startTime>
-						<ns4:endTime>2014-08-18T01:20:00.000+02:00</ns4:endTime>
-					</ns4:time>
-				</ns4:timeList>
-				<ns4:contentIdRef>100167808</ns4:contentIdRef>
-				<ns4:materialIdRef>100167808</ns4:materialIdRef>
-			</ns4:event>
-		</ns3:eventList>
-	</ns2:data>
-</ns2:schedule-metadata>
-
+		</ns6:materialList>
+		<ns6:eventList>
+			<ns2:event timestamp="2014-12-08T12:39:05.798+01:00">
+				<ns2:id>101734105</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-11-30T05:05:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-11-30T05:30:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2012-12-07T14:10:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2012-12-07T14:40:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-09T04:50:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-09T05:15:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>300420655</ns2:contentIdRef>
+				<ns2:materialIdRef>300420655</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:39:05.798+01:00">
+				<ns2:id>101734106</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-11-30T05:30:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-11-30T07:25:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-08-10T21:00:00.000+02:00</ns2:startTime>
+						<ns2:endTime>2014-08-10T23:10:00.000+02:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>1324366</ns2:contentIdRef>
+				<ns2:materialIdRef>1324366</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:39:05.799+01:00">
+				<ns2:id>101734110</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>true</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-11-30T07:25:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-11-30T11:30:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T07:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T10:35:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>100000053</ns2:contentIdRef>
+				<ns2:materialIdRef>100000053</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:39:05.799+01:00">
+				<ns2:id>101717450</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-11-30T11:30:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-11-30T13:25:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-08-24T21:00:00.000+02:00</ns2:startTime>
+						<ns2:endTime>2014-08-24T22:50:00.000+02:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>500236283</ns2:contentIdRef>
+				<ns2:materialIdRef>500236283</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:39:05.800+01:00">
+				<ns2:id>101717442</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-11-30T13:25:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-11-30T15:35:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-09-01T17:00:00.000+02:00</ns2:startTime>
+						<ns2:endTime>2014-09-01T19:10:00.000+02:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>100001477</ns2:contentIdRef>
+				<ns2:materialIdRef>100001477</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:39:05.800+01:00">
+				<ns2:id>101706401</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-11-30T15:35:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-11-30T18:20:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-11-10T21:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-11-10T23:50:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T11:50:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T14:25:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>500236641</ns2:contentIdRef>
+				<ns2:materialIdRef>500236641</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:39:05.801+01:00">
+				<ns2:id>101706387</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-11-30T18:20:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-11-30T21:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-09-05T21:00:00.000+02:00</ns2:startTime>
+						<ns2:endTime>2014-09-05T23:50:00.000+02:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>4865078</ns2:contentIdRef>
+				<ns2:materialIdRef>4865078</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:39:05.802+01:00">
+				<ns2:id>101706627</ns2:id>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-11-30T21:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-11-30T22:50:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T14:25:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T16:20:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>100019014</ns2:contentIdRef>
+				<ns2:materialIdRef>100019014</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:39:05.802+01:00">
+				<ns2:id>101717606</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-11-30T22:50:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T01:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-09-19T23:20:00.000+02:00</ns2:startTime>
+						<ns2:endTime>2014-09-20T01:35:00.000+02:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>100108502</ns2:contentIdRef>
+				<ns2:materialIdRef>100108502</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:39:05.803+01:00">
+				<ns2:id>101732271</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T01:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T03:35:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-09-06T21:00:00.000+02:00</ns2:startTime>
+						<ns2:endTime>2014-09-06T23:35:00.000+02:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>1439631</ns2:contentIdRef>
+				<ns2:materialIdRef>1439631</ns2:materialIdRef>
+			</ns2:event>
+			<ns2:event timestamp="2014-12-08T12:39:05.803+01:00">
+				<ns2:id>101732277</ns2:id>
+				<ns2:rerun>true</ns2:rerun>
+				<ns2:live>false</ns2:live>
+				<ns2:hidden>false</ns2:hidden>
+				<ns2:timeList>
+					<ns2:time>
+						<ns2:startTime>2014-12-01T03:35:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2014-12-01T05:20:00.000+01:00</ns2:endTime>
+					</ns2:time>
+					<ns2:time>
+						<ns2:startTime>2014-08-17T23:25:00.000+02:00</ns2:startTime>
+						<ns2:endTime>2014-08-18T01:20:00.000+02:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>100167808</ns2:contentIdRef>
+				<ns2:materialIdRef>100167808</ns2:materialIdRef>
+			</ns2:event>
+		</ns6:eventList>
+	</ns3:data>
+</ns3:schedule-metadata>

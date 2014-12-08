@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:content-metadata xmlns:ns2="http://video-metadata.tv.se/api-messages/v1"
-	xmlns:ns3="http://video-metadata.tv.se/schedule/v1" xmlns:ns4="http://video-metadata.tv.se/event/v1"
-	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/material/v1">
-	<ns2:header>
-		<ns2:providerId>se.tv4</ns2:providerId>
-		<ns2:msgId>76125184-ac3a-4304-bccd-19c0875fdc14</ns2:msgId>
-	</ns2:header>
-	<ns2:data>
+<ns3:content-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/tagging/v1"
+	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/schedule/v1"
+	xmlns:ns7="http://video-metadata.tv.se/material/v1" xmlns:ns8="http://video-metadata.tv.se/content/v1">
+	<ns3:header>
+		<ns3:providerId>se.tv4</ns3:providerId>
+		<ns3:msgId>7b57d585-0aa5-426f-aea2-bc95a0812a6b</ns3:msgId>
+	</ns3:header>
+	<ns3:data>
 		<brand>
 			<id>35006258</id>
-			<productionYear>2014</productionYear>
+			<productionYear>2015</productionYear>
 			<countryOfOriginList>
 				<country>SE</country>
 			</countryOfOriginList>
@@ -42,7 +43,9 @@
 				</description>
 			</descriptionList>
 			<categoryList>
-				<category>Nyheter</category>
+				<category priority="1">
+					<mainCategory>Nyheter</mainCategory>
+				</category>
 			</categoryList>
 		</brand>
 		<content>
@@ -56,15 +59,17 @@
 			</titleList>
 			<imageList>
 				<image>
-					<imageRef purpose="press" priority="10" unit="px" height="2454"
-						width="1600" orientation="portrait">http://image.tv4.se/b0/03/b5/FILE_9A27BBE5-A0B9-4073-BD09-66451EAA1A26.jpg
+					<imageRef purpose="press" unit="px" height="2454" width="1600"
+						orientation="portrait">http://image.tv4.se/b0/03/b5/FILE_9A27BBE5-A0B9-4073-BD09-66451EAA1A26.jpg
 					</imageRef>
 				</image>
 			</imageList>
 			<categoryList>
-				<category>Nyheter</category>
+				<category priority="1">
+					<mainCategory>Nyheter</mainCategory>
+				</category>
 			</categoryList>
 			<brandId>35006258</brandId>
 		</content>
-	</ns2:data>
-</ns2:content-metadata>
+	</ns3:data>
+</ns3:content-metadata>
