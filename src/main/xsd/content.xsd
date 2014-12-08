@@ -474,7 +474,7 @@
 			<xs:element name="mainCategory" type="xs:string" />
 			<xs:element name="subCategory" type="xs:string" minOccurs="0" />
 		</xs:sequence>
-		<xs:attribute name="priority" type="xs:int">
+		<xs:attribute name="priority" type="xs:int" default="1">
 			<xs:annotation>
 				<xs:documentation>lower priority number means higher importance
 				</xs:documentation>
