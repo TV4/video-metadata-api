@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:api-messages="http://video-metadata.tv.se/api-messages/v1" xmlns:common="http://video-metadata.tv.se/common/v1" xmlns:publish="http://video-metadata.tv.se/publish/v1"
 	xmlns:content="http://video-metadata.tv.se/content/v1" xmlns:schedule="http://video-metadata.tv.se/schedule/v1" xmlns:event="http://video-metadata.tv.se/event/v1"
-	xmlns:material="http://video-metadata.tv.se/material/v1" xmlns="http://video-metadata.tv.se/api-messages/v1" targetNamespace="http://video-metadata.tv.se/api-messages/v1"
+	xmlns:material="http://video-metadata.tv.se/material/v1" xmlns:tagging="http://video-metadata.tv.se/tagging/v1" xmlns="http://video-metadata.tv.se/api-messages/v1" targetNamespace="http://video-metadata.tv.se/api-messages/v1"
 	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
 	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/content/v1" schemaLocation="content.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/schedule/v1" schemaLocation="schedule.xsd" />
 	<xs:import namespace="http://video-metadata.tv.se/publish/v1" schemaLocation="publish.xsd" />
+	<xs:import namespace="http://video-metadata.tv.se/tagging/v1" schemaLocation="tagging.xsd" />
 
 	<!--
 	 Message definitions
@@ -42,6 +43,18 @@
 			<xs:sequence>
 				<xs:element name="header" type="messageHeaderType" />
 				<xs:element name="data" type="publish:publishType" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+		<xs:element name="tag-metadata">
+		<xs:annotation>
+			<xs:documentation>Root element for tag definitions meta-data message. Message is sent on create or update of a new entity.
+			NB. Not decided where to send these messages... maybe not part of this Video Metadata API.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="header" type="messageHeaderType" />
+				<xs:element name="data" type="tagging:tagDefinitionListType" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
