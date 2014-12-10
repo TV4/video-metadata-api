@@ -239,7 +239,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="media" type="xs:string"></xs:element>
+			<xs:element name="mediaRef" type="xs:string"></xs:element>
 			<xs:element name="type" type="materialTypeType">
 				<xs:annotation>
 					<xs:documentation>Type of material, for example video or audio.
