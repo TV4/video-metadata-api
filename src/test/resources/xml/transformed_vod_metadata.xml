@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns3:publish-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
-	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/tagging/v1"
-	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/schedule/v1"
-	xmlns:ns7="http://video-metadata.tv.se/material/v1" xmlns:ns8="http://video-metadata.tv.se/content/v1">
-	<ns3:header>
-		<ns3:providerId>se.tv4</ns3:providerId>
-		<ns3:msgId>4e087728-e0ea-464d-819a-471f2961183d</ns3:msgId>
-	</ns3:header>
-	<ns3:data timestamp="2014-12-08T11:39:15.090+01:00">
-		<ns5:brand>
+<ns4:publish-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv.se/tagging/v1" xmlns:ns4="http://video-metadata.tv.se/api-messages/v1"
+	xmlns:ns5="http://video-metadata.tv.se/schedule/v1" xmlns:ns6="http://video-metadata.tv.se/publish/v1"
+	xmlns:ns7="http://video-metadata.tv.se/content/v1" xmlns:ns8="http://video-metadata.tv.se/material/v1">
+	<ns4:header>
+		<ns4:providerId>se.tv4</ns4:providerId>
+		<ns4:msgId>a223677f-63a5-4db5-93b3-c3b4b8c9f5e2</ns4:msgId>
+	</ns4:header>
+	<ns4:data timestamp="2014-12-10T17:10:33.566+01:00">
+		<ns6:brand>
 			<id>131347918</id>
 			<titleList>
 				<title original="false" language="sv">Tina i fjällen</title>
@@ -18,8 +18,8 @@
 					bjuder in personer till sin tillflyktsort, sin stuga i Vemdalen i
 					den jämtländska fjällvärden.</description>
 			</descriptionList>
-		</ns5:brand>
-		<ns5:season>
+		</ns6:brand>
+		<ns6:season>
 			<id>4939185</id>
 			<productionYear>2014</productionYear>
 			<countryOfOriginList>
@@ -85,8 +85,8 @@
 			<brandId>131347918</brandId>
 			<seasonNumber>1</seasonNumber>
 			<numberOfEpisodes>3</numberOfEpisodes>
-		</ns5:season>
-		<ns5:content>
+		</ns6:season>
+		<ns6:content>
 			<id>4939186</id>
 			<productionYear>2014</productionYear>
 			<countryOfOriginList>
@@ -134,9 +134,17 @@
 			<brandId>131347918</brandId>
 			<seasonId>4939185</seasonId>
 			<episodeNumber>1</episodeNumber>
-		</ns5:content>
-		<ns5:eventList>
-			<ns2:event timestamp="2014-12-08T11:39:15.089+01:00">
+		</ns6:content>
+		<ns6:materialList>
+			<material timestamp="2014-12-10T17:10:33.566+01:00">
+				<providerId>se.tv4</providerId>
+				<id>4939186</id>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">576i</videoFormat>
+			</material>
+		</ns6:materialList>
+		<ns6:eventList>
+			<ns2:event timestamp="2014-12-10T17:10:33.565+01:00">
 				<ns2:id>919686</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:timeList>
@@ -148,6 +156,6 @@
 				<ns2:contentIdRef>4939186</ns2:contentIdRef>
 				<ns2:materialIdRef>4856955</ns2:materialIdRef>
 			</ns2:event>
-		</ns5:eventList>
-	</ns3:data>
-</ns3:publish-metadata>
+		</ns6:eventList>
+	</ns4:data>
+</ns4:publish-metadata>
