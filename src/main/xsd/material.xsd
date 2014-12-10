@@ -221,7 +221,7 @@
 	</xs:simpleType>
 	<xs:complexType name="mediaListType">
 		<xs:sequence>
-			<xs:element name="reference" type="mediaType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="media" type="mediaType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:simpleType name="materialReferenceTypeType">

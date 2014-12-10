@@ -207,7 +207,6 @@
 	<xs:complexType name="titleListType">
 		<xs:sequence>
 			<xs:element name="title" type="originalTitleType" maxOccurs="unbounded" />
-			<xs:element name="titleId" type="xs:string" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="descriptionListType">
