@@ -283,7 +283,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="timecodeType">
 		<xs:annotation>
-			<xs:documentation>hh:mm:ss:SS</xs:documentation>
+			<xs:documentation>hh:mm:ss:SSS</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="\d{2}:\d{2}:\d{2}:\d{3}" />
