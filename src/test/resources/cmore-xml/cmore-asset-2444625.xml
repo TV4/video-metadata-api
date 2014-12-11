@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Source: http://prima.tv4play.se/api/web/asset/2444625?expand=metadata -->
+<!-- id -> .../material/id, channelId -> .../event/channelId, uri -> ??? -->
+<asset id="2444625" channelId="0" categoryId="30906" uri="/api/web/asset/2444625">
+	<!-- ??? -->
+	<archive>true</archive>
+	<!-- .../materialList/material/aspectRatio -->
+	<aspect16x9>false</aspect16x9>
+	<!-- .../content/contentIdRef -->
+	<assetRelations/>
+	<!-- .../materialList/material/materialType -->
+	<assetTypeId>0</assetTypeId> 
+	<!-- ??? standard mapping in EMP to ??? -->
+	<autoDistribute>false</autoDistribute> 
+	<!-- ??? standard  mapping in EMP to ??? -->
+	<autoEncode>false</autoEncode>
+	<!-- ??? -->
+	<autoPublish>false</autoPublish>
+	<!-- .../categorylist/category/mainCategory & categorylist/category/subCategory 
+	C More has a categ
+	-->
+	<category uri="/api/web/category/30906">
+		<available>false</available>
+	</category>
+	<!-- ??? -->
+	<copyLiveStream>false</copyLiveStream>
+	<!-- .../event/timeList/time/startTime -->
+	<createTime>2013-09-18T12:08:30+02:00</createTime>
+	<!-- n/a -->
+	<deleted>false</deleted>
+	<!-- ??? -->
+	<distributed>2</distributed>
+	<!-- .../event/publicationRights/drmRestrictions -->
+	<drmProtected>true</drmProtected>
+	<!-- .../material/mediaList/media/duration -->
+	<duration>0</duration>
+	<!-- ??? -->
+	<encoderGroupId>9</encoderGroupId>
+	<!-- .../event/timeList/time/endTime -->
+	<expireDate>2015-09-30T00:00:00+02:00</expireDate>
+	<!-- ? .../externalReferenceList/externalReference  ? -->
+	<externalAssets/>
+	<!-- ??? -->
+	<imageVersions/>
+	<!-- ??? -->
+	<itemsPublished>false</itemsPublished>
+	<!--  -->
+	<items uri="/api/web/asset/2444625/items"/>
+	<live>false</live>
+	<!-- live broadcast = schema event, not a vod publish event -->
+	<liveBroadcastTime>2013-09-18T12:08:00+02:00</liveBroadcastTime>
+	<metadata uri="/api/metadata/asset/2444625">
+		<!-- .../titleList/title[@original="true" -->
+		<original-title xml:lang="*">Sällskapsresan</original-title>
+		<!-- categoryList/category/mainCategory -->
+		<genre xml:lang="*">Komedi</genre>
+		<!-- ../materialList/mediaList/reference/duration-->
+		<asset-length xml:lang="*">107</asset-length>
+		<!-- n/a - needs to be added -->
+		<spoken-languages xml:lang="*">Swedish</spoken-languages>
+		<!-- .../content/countryOfOriginList/country -->
+		<production-country xml:lang="*">Sweden</production-country>
+		<!-- .../content/productionYear -->
+		<production-year xml:lang="*">1980</production-year>
+		<!-- parentalRating, need code mapping -->
+		<parental-guidance xml:lang="*">BLUE</parental-guidance>
+		<!-- .../content/studio, need mappign of code 'Unspecified' to null or empty tag -->
+		<studio xml:lang="*">Unspecified</studio>
+		<!-- .../content/contentType -->
+		<program-type xml:lang="*">Film</program-type>
+		<!-- .../content/creditList/credit [function = 'actor']-->
+		<actors xml:lang="*">Lasse Åberg,Jon Skolmen,Ted Åström</actors>
+		<!-- .../content/creditList/credit [function = 'director']-->
+		<director xml:lang="*">Lasse Åberg</director>
+		<!-- .../content/externalReferenceList/externalReference -->
+		<image-urls xml:lang="*">http://cdnpic01.filmnet.se/image.aspx?id=e4092df7-cf73-4036-9032-1be7925bed2c&amp;formatid=104,http://cdnpic01.filmnet.se/image.aspx?id=e4092df7-cf73-4036-9032-1be7925bed2c&amp;formatid=102,http://cdnpic01.filmnet.se/image.aspx?id=b4139827-c90a-4368-9264-25000c1955c6&amp;formatid=100,http://cdnpic01.filmnet.se/image.aspx?id=b4139827-c90a-4368-9264-25000c1955c6&amp;formatid=103,http://cdnpic01.filmnet.se/image.aspx?id=e4092df7-cf73-4036-9032-1be7925bed2c&amp;formatid=101</image-urls>
+		<!-- .../content/titlelist/title [language=xml:lang] -->
+		<title xml:lang="sv_SE">Sällskapsresan</title>
+		<title xml:lang="nb_NO">Selskapsreisen</title>
+		<title xml:lang="da_DK">Selskabsrejser</title>
+		<title xml:lang="fi_FI">Seuramatka</title>
+		<!-- .../content/descriptionList/description [language=xml:lang] length="short" -->
+		<description-short xml:lang="sv_SE">Lasse Åbergs första film om Sveriges mest älskade sällskapsresenär.</description-short>
+		<description-short xml:lang="nb_NO">Lasse Åberg sin første film om Stig Helmer, der den sjenerte nerden reiser til Kanariøyene.</description-short>
+		<description-short xml:lang="da_DK">Lasse Åbergs første film om Sveriges mest elskede charterturist - Stig Helmer.</description-short>
+		<description-short xml:lang="fi_FI">Lasse Åbergin ensimmäinen elokuva Ruotsin rakastetuimmasta seuramatkailijasta. </description-short>
+		<!-- .../content/descriptionList/description [language=xml:lang] length="long" -->
+		<synopsis xml:lang="sv_SE">Det är grisfest på Kanarieöarna i jultid och där befinner sig Stig Helmer Olsson på sin allra första utlandsresa. Han vet inte att doktor Levander, som hjälpt honom få bukt med sin flygrädsla och som skall köpa hus på Kanarieöarna lurat honom att smuggla ett paket med svarta pengar från Sverige.  </synopsis>
+		<synopsis xml:lang="nb_NO">Det er grisefest på Kanariøyene i julen og der treffer vi Stig Helmer Olsson på sin aller første tur til utlandet. Stig Helmer var hos doktor Levander for å få hjelp til å overvinne sin fryskrekk, der ble han lurt til å smugle en pakke med svarte penger fra Sverige - som Levander skal bruke til å kj</synopsis>
+		<synopsis xml:lang="da_DK">Der er grisefest på de Kanariske øer ved juletid, og her befinder Stig Helmer Olsson sig på sin allerførste udlandsrejse. Han ved ikke, at Doktor Levander, som har hjulpet ham med at overkomme sin flyskræk, og som vil købe hus på Gran Canaria, har narret ham til at smugle en sorte penge med.</synopsis>
+		<synopsis xml:lang="fi_FI">Kanarian saarilla on joulun aikaan sikajuhlat, ja siellä Stig Helmer Olsson on ensimmäisellä ulkomaanmatkallaan. Hän ei tiedä että tohtori Levander, joka on hoitanut hänen lentopelkoaan, on huijannut häntä tuomaan saarille pimeästi rahaa. </synopsis>
+		<content-source xml:lang="*">SF</content-source>
+		<hideAds xml:lang="*">false</hideAds>
+		<allowEmbed xml:lang="*">true</allowEmbed>
+		<showLogo xml:lang="*">true</showLogo>
+	</metadata>
+	<!-- ??? -->
+	<onDemandTimeBegin>0.0</onDemandTimeBegin>
+	<!-- ??? -->
+	<onDemandTimeEnd>0.0</onDemandTimeEnd>
+	<!-- ??? -->
+	<playback uri="/api/web/asset/2444625/play"/>
+	<!-- ??? -->
+	<product uri="/api/web/asset/2444625/productgroups"/>
+	<encoderProfileId>0</encoderProfileId>
+	<!-- explicit publication as a schema event, not a vod publish event -->
+	<showInEpg>false</showInEpg>
+	<!-- .../titleList/title ??? -->
+	<title>Comedy: Sällskapsresan</title>
+	<!-- /publish-metadata/data/@timestamp -->
+	<updateTime>2014-02-19T15:33:22+01:00</updateTime>
+	<views>0</views>
+</asset>
