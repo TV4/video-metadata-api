@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv.se/material/v1" xmlns:common="http://video-metadata.tv.se/common/v1"
-	targetNamespace="http://video-metadata.tv.se/material/v1" version="1.0"
->
+	targetNamespace="http://video-metadata.tv.se/material/v1" version="1.0">
 	<xs:import namespace="http://video-metadata.tv.se/common/v1" schemaLocation="common.xsd" />
-	<!-- 
-	 -->
+	<!-- -->
 	<xs:element name="material" type="materialType">
 		<xs:annotation>
 			<xs:documentation>Root element for material object</xs:documentation>
 		</xs:annotation>
 	</xs:element>
-	<!-- 
-	 -->
+	<!-- -->
 	<xs:complexType name="materialType">
 		<xs:sequence>
 			<xs:element name="providerId" type="common:idType">
@@ -253,7 +250,16 @@
 					</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
-					<xs:restriction base="xs:string" />
+					<xs:restriction base="xs:int" />
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="framerate" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>If applicable, framerate for the material in fps
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int" />
 				</xs:simpleType>
 			</xs:element>
 			<xs:element name="segmentList" type="segmentListType" />
