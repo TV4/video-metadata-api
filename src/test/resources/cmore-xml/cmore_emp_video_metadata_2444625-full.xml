@@ -58,94 +58,20 @@
 			<descriptionList>
 				<!-- /asset/metadata/description-short & /asset/metadata/synopsis -->
 				<description language="sv_SE" length="tiny">
-					Lasse Åbergs första
-					film om Sveriges mest älskade sällskapsresenär.
+					Lasse Åbergs första film om Sveriges mest älskade sällskapsresenär.
 				</description>
-				<description language="nb_NO" length="tiny">
-					Lasse Åberg sin
-					første film om Stig Helmer, der den sjenerte
-					nerden
-					reiser til
-					Kanariøyene.
+				<description language="nb_NO" length="tiny"> Lasse Åberg sin første film om Stig Helmer, der den sjenerte nerden reiser til Kanariøyene. </description>
+				<description language="da_DK" length="tiny"> Lasse Åbergs første film om Sveriges mest elskede charterturist - Stig Helmer. </description>
+				<description language="fi_FI" length="tiny"> Lasse Åbergin ensimmäinen elokuva Ruotsin rakastetuimmasta seuramatkailijasta. </description>
+				<description language="sv_SE" length=""> Det är grisfest på Kanarieöarna i jultid och där befinner sig Stig Helmer Olsson på sin allra första utlandsresa. Han vet inte
+					att doktor Levander, som hjälpt honom få bukt med sin flygrädsla och som skall köpa hus på Kanarieöarna lurat honom att smuggla ett paket med svarta pengar från Sverige.
 				</description>
-				<description language="da_DK" length="tiny">
-					Lasse Åbergs første
-					film om Sveriges mest elskede charterturist -
-					Stig Helmer.
-				</description>
-				<description language="fi_FI" length="tiny">
-					Lasse Åbergin
-					ensimmäinen elokuva Ruotsin rakastetuimmasta
-					seuramatkailijasta.
-				</description>
-				<description language="sv_SE" length="">
-					Det är grisfest
-					på
-					Kanarieöarna i jultid och där befinner sig
-					Stig Helmer Olsson
-					på sin
-					allra första utlandsresa. Han vet
-					inte att
-					doktor
-					Levander,
-					som hjälpt
-					honom få bukt med sin
-					flygrädsla och som
-					skall köpa hus
-					på
-					Kanarieöarna lurat honom
-					att smuggla ett paket
-					med svarta pengar
-					från
-					Sverige.
-				</description>
-				<description language="nb_NO">
-					Det er grisefest på Kanariøyene
-					i
-					julen og der treffer vi Stig
-					Helmer Olsson på sin aller første
-					tur
-					til utlandet. Stig
-					Helmer var hos doktor
-					Levander for å få
-					hjelp til
-					å overvinne
-					sin fryskrekk, der ble han lurt til å
-					smugle
-					en pakke med
-					svarte penger fra Sverige - som Levander skal
-					bruke
-					til å kj
-				</description>
-				<description language="da_DK">
-					Der er grisefest på de
-					Kanariske
-					øer ved juletid, og her
-					befinder Stig Helmer Olsson sig
-					på sin
-					allerførste
-					udlandsrejse. Han ved ikke, at Doktor
-					Levander, som har
-					hjulpet ham med at overkomme sin flyskræk, og
-					som vil købe
-					hus på
-					Gran Canaria, har narret ham til at smugle en
-					sorte
-					penge med.
-				</description>
-				<description language="fi_FI">
-					Kanarian saarilla on joulun
-					aikaan
-					sikajuhlat, ja siellä
-					Stig Helmer Olsson on ensimmäisellä
-					ulkomaanmatkallaan. Hän
-					ei tiedä että tohtori
-					Levander, joka on
-					hoitanut hänen
-					lentopelkoaan, on huijannut häntä tuomaan saarille
-					pimeästi
-					rahaa.
-				</description>
+				<description language="nb_NO"> Det er grisefest på Kanariøyene i julen og der treffer vi Stig Helmer Olsson på sin aller første tur til utlandet. Stig Helmer var hos doktor
+					Levander for å få hjelp til å overvinne sin fryskrekk, der ble han lurt til å smugle en pakke med svarte penger fra Sverige - som Levander skal bruke til å kj </description>
+				<description language="da_DK"> Der er grisefest på de Kanariske øer ved juletid, og her befinder Stig Helmer Olsson sig på sin allerførste udlandsrejse. Han ved ikke, at
+					Doktor Levander, som har hjulpet ham med at overkomme sin flyskræk, og som vil købe hus på Gran Canaria, har narret ham til at smugle en sorte penge med. </description>
+				<description language="fi_FI"> Kanarian saarilla on joulun aikaan sikajuhlat, ja siellä Stig Helmer Olsson on ensimmäisellä ulkomaanmatkallaan. Hän ei tiedä että tohtori
+					Levander, joka on hoitanut hänen lentopelkoaan, on huijannut häntä tuomaan saarille pimeästi rahaa. </description>
 			</descriptionList>
 			<commentList>
 				<!-- n/a -->
@@ -247,26 +173,28 @@
 					<accessibilityList format="hearingImpairedSubtitle" language="EN">accessibilityList</accessibilityList>
 				</accessibilityList>
 				<mediaList>
+					<!-- Where will media be defined in c more data? -->
 					<media>
-						<mediaRef>media</mediaRef>
+						<mediaRef>uri://pointer to media / file or url</mediaRef>
 						<type>program</type>
-						<duration>duration</duration>
-						<bitrate>bitrate</bitrate>
+						<duration>01:30:00:000</duration>
+						<!-- -->
+						<bitrate>25</bitrate>
 						<segmentList>
 							<segment>
-								<in>in</in>
-								<out>out</out>
+								<in>hh:mm:ss:SSS</in>
+								<out>00:29:15:100</out>
 								<breakType>mandatory</breakType>
 							</segment>
 						</segmentList>
 					</media>
 				</mediaList>
-				<!-- n/a with rightsList on the material -->
 				<rightsList>
+					<!-- Probably n/a. NB. this is the rights on the material, not the actual publication found below in the XML! -->
 					<rights>
-						<rightsName>rightsName</rightsName>
-						<validFrom>2001-12-31T12:00:00</validFrom>
-						<validTo>2001-12-31T12:00:00</validTo>
+						<rightsName>Premium</rightsName>
+						<validFrom>2014-12-31T00:00:00</validFrom>
+						<validTo>2015-06-30T00:00:00</validTo>
 						<rightsCategoryList>
 							<rightsCategory>
 								<addProviderLogo>true</addProviderLogo>
@@ -282,57 +210,17 @@
 										<pause>true</pause>
 									</startOverRights>
 								</timeshift>
-								<allowAds>true</allowAds>
+								<allowAds>false</allowAds>
 								<drmRestrictions>true</drmRestrictions>
-								<locationRestrictions>
-									<includeIpOrNetworks>
-										<ipAddress>ipAddress</ipAddress>
-									</includeIpOrNetworks>
-									<includeIpOrNetworks>
-										<ipAddress>ipAddress</ipAddress>
-									</includeIpOrNetworks>
-									<includeCountries>
-										<country>country</country>
-									</includeCountries>
-									<exludeCountries>
-										<country>country</country>
-									</exludeCountries>
-									<includeLocals>
-										<name>name</name>
-									</includeLocals>
-									<exludeLocals>
-										<name>name</name>
-									</exludeLocals>
-								</locationRestrictions>
-								<userOrGroupRestrictions>
-									<includeUsers>
-										<name>name</name>
-									</includeUsers>
-									<exludeUsers>
-										<name>name</name>
-									</exludeUsers>
-									<includeGroups>
-										<name>name</name>
-									</includeGroups>
-									<exludeGroups>
-										<name>name</name>
-									</exludeGroups>
-								</userOrGroupRestrictions>
-								<shareToList>
-									<shareTo>shareTo</shareTo>
-								</shareToList>
-								<deviceRights>
-									<deviceType>web</deviceType>
-									<digitalOutputRights>unrestricted</digitalOutputRights>
-									<analogOutputRights>
-										<unrestricted>true</unrestricted>
-									</analogOutputRights>
-									<inHomeNetworkOutputRights>unrestricted
-									</inHomeNetworkOutputRights>
-								</deviceRights>
-								<noLinearTransmission>
-									<deviceType>web</deviceType>
-								</noLinearTransmission>
+								<!-- <locationRestrictions> <includeIpOrNetworks> <ipAddress>ipAddress</ipAddress> </includeIpOrNetworks> <includeIpOrNetworks> <ipAddress>ipAddress</ipAddress> </includeIpOrNetworks> 
+									<includeCountries> <country>country</country> </includeCountries> <exludeCountries> <country>country</country> </exludeCountries> <includeLocals> <name>name</name> </includeLocals> 
+									<exludeLocals> <name>name</name> </exludeLocals> </locationRestrictions> -->
+								<!-- <userOrGroupRestrictions> <includeUsers> <name>name</name> </includeUsers> <exludeUsers> <name>name</name> </exludeUsers> <includeGroups> <name>name</name> </includeGroups> 
+									<exludeGroups> <name>name</name> </exludeGroups> </userOrGroupRestrictions> -->
+								<!-- <shareToList> <shareTo>shareTo</shareTo> </shareToList> -->
+								<!-- <deviceRights> <deviceType>web</deviceType> <digitalOutputRights>unrestricted</digitalOutputRights> <analogOutputRights> <unrestricted>true</unrestricted> </analogOutputRights> 
+									<inHomeNetworkOutputRights>unrestricted </inHomeNetworkOutputRights> </deviceRights> -->
+								<!-- <noLinearTransmission> <deviceType>web</deviceType> </noLinearTransmission> -->
 							</rightsCategory>
 						</rightsCategoryList>
 					</rights>
@@ -341,163 +229,59 @@
 		</p7:materialList>
 		<p7:eventList>
 			<p6:event timestamp="2001-12-31T12:00:00">
-				<p6:id>p6:id</p6:id>
-				<p6:channelId>p6:channelId</p6:channelId>
+				<p6:id>??? event id ????</p6:id>
+				<p6:channelId>C More Films</p6:channelId>
 				<p6:deviceType>web</p6:deviceType>
-				<p6:priceGroup>p6:priceGroup</p6:priceGroup>
+				<!-- <p6:priceGroup/> -->
 				<p6:publicationRights>
 					<addProviderLogo>true</addProviderLogo>
 					<timeshift>
-						<!-- / -->
-						<catchUpRights>
-							<fastForward>true</fastForward>
-							<rewind>true</rewind>
-							<pause>true</pause>
-						</catchUpRights>
+						<!-- only valid for linear schedule <catchUpRights> <fastForward>true</fastForward> <rewind>true</rewind> <pause>true</pause> </catchUpRights> -->
 						<startOverRights>
 							<fastForward>true</fastForward>
 							<rewind>true</rewind>
 							<pause>true</pause>
 						</startOverRights>
 					</timeshift>
-					<allowAds>true</allowAds>
+					<!-- -->
+					<allowAds>false</allowAds>
 					<drmRestrictions>true</drmRestrictions>
-					<locationRestrictions>
-						<includeIpOrNetworks>
-							<ipAddress>ipAddress</ipAddress>
-						</includeIpOrNetworks>
-						<includeIpOrNetworks>
-							<ipAddress>ipAddress</ipAddress>
-						</includeIpOrNetworks>
-						<includeCountries>
-							<country>country</country>
-						</includeCountries>
-						<exludeCountries>
-							<country>country</country>
-						</exludeCountries>
-						<includeLocals>
-							<name>name</name>
-						</includeLocals>
-						<exludeLocals>
-							<name>name</name>
-						</exludeLocals>
-					</locationRestrictions>
-					<userOrGroupRestrictions>
-						<includeUsers>
-							<name>name</name>
-						</includeUsers>
-						<exludeUsers>
-							<name>name</name>
-						</exludeUsers>
-						<includeGroups>
-							<name>name</name>
-						</includeGroups>
-						<exludeGroups>
-							<name>name</name>
-						</exludeGroups>
-					</userOrGroupRestrictions>
-					<shareToList>
-						<shareTo>shareTo</shareTo>
-					</shareToList>
+					<!-- ? geo / location restrictions unknown for C More. Need more info <locationRestrictions> <includeIpOrNetworks> <ipAddress>ipAddress</ipAddress> </includeIpOrNetworks> <includeIpOrNetworks> 
+						<ipAddress>ipAddress</ipAddress> </includeIpOrNetworks> <includeCountries> <country>country</country> </includeCountries> <exludeCountries> <country>country</country> </exludeCountries> 
+						<includeLocals> <name>name</name> </includeLocals> <exludeLocals> <name>name</name> </exludeLocals> </locationRestrictions> -->
+					<!-- <userOrGroupRestrictions> <includeUsers> <name>name</name> </includeUsers> <exludeUsers> <name>name</name> </exludeUsers> <includeGroups> <name>name</name> </includeGroups> 
+						<exludeGroups> <name>name</name> </exludeGroups> </userOrGroupRestrictions> -->
+					<!-- <shareToList> <shareTo>shareTo</shareTo> </shareToList> -->
 				</p6:publicationRights>
-				<p6:descriptionList>
-					<p6:description language="EN">p6:description
-					</p6:description>
-				</p6:descriptionList>
-				<p6:rerun>true</p6:rerun>
+				<!-- n/a <p6:descriptionList> <p6:description language="EN">p6:description </p6:description> </p6:descriptionList> -->
+				<!-- <p6:rerun>true</p6:rerun> -->
+				<!-- /asset/live -->
 				<p6:live>true</p6:live>
-				<p6:hidden>true</p6:hidden>
-				<p6:groupId sequenceNumber="0">p6:groupId</p6:groupId>
+				<!-- <p6:hidden>true</p6:hidden> -->
+				<!-- <p6:groupId sequenceNumber="0">p6:groupId</p6:groupId> -->
 				<p6:timeList>
 					<p6:time type="public">
 						<p6:startTime>2001-12-31T12:00:00</p6:startTime>
 						<p6:endTime>2001-12-31T12:00:00</p6:endTime>
 						<p6:publishTime>2001-12-31T12:00:00</p6:publishTime>
-						<p6:duration>p6:duration</p6:duration>
+						<!-- <p6:duration>01:30:00:000</p6:duration> -->
 					</p6:time>
 				</p6:timeList>
-				<p6:contentIdRef>p6:contentIdRef</p6:contentIdRef>
-				<p6:materialIdRef>p6:materialIdRef</p6:materialIdRef>
-				<p6:embeddedEventList>
-					<p6:event xsi:type="p6:embeddedEventType">
-						<p6:id>p6:id</p6:id>
-						<p6:channelId>p6:channelId</p6:channelId>
-						<p6:deviceType>web</p6:deviceType>
-						<p6:priceGroup>p6:priceGroup</p6:priceGroup>
-						<p6:publicationRights>
-							<addProviderLogo>true</addProviderLogo>
-							<timeshift>
-								<catchUpRights>
-									<fastForward>true</fastForward>
-									<rewind>true</rewind>
-									<pause>true</pause>
-								</catchUpRights>
-								<startOverRights>
-									<fastForward>true</fastForward>
-									<rewind>true</rewind>
-									<pause>true</pause>
-								</startOverRights>
-							</timeshift>
-							<allowAds>true</allowAds>
-							<drmRestrictions>true</drmRestrictions>
-							<locationRestrictions>
-								<includeIpOrNetworks>
-									<ipAddress>ipAddress</ipAddress>
-								</includeIpOrNetworks>
-								<includeIpOrNetworks>
-									<ipAddress>ipAddress</ipAddress>
-								</includeIpOrNetworks>
-								<includeCountries>
-									<country>country</country>
-								</includeCountries>
-								<exludeCountries>
-									<country>country</country>
-								</exludeCountries>
-								<includeLocals>
-									<name>name</name>
-								</includeLocals>
-								<exludeLocals>
-									<name>name</name>
-								</exludeLocals>
-							</locationRestrictions>
-							<userOrGroupRestrictions>
-								<includeUsers>
-									<name>name</name>
-								</includeUsers>
-								<exludeUsers>
-									<name>name</name>
-								</exludeUsers>
-								<includeGroups>
-									<name>name</name>
-								</includeGroups>
-								<exludeGroups>
-									<name>name</name>
-								</exludeGroups>
-							</userOrGroupRestrictions>
-							<shareToList>
-								<shareTo>shareTo</shareTo>
-							</shareToList>
-						</p6:publicationRights>
-						<p6:descriptionList>
-							<p6:description language="EN">p6:description
-							</p6:description>
-						</p6:descriptionList>
-						<p6:rerun>true</p6:rerun>
-						<p6:live>true</p6:live>
-						<p6:hidden>true</p6:hidden>
-						<p6:groupId sequenceNumber="0">p6:groupId</p6:groupId>
-						<p6:timeList>
-							<p6:time type="public">
-								<p6:startTime>2001-12-31T12:00:00</p6:startTime>
-								<p6:endTime>2001-12-31T12:00:00</p6:endTime>
-								<p6:publishTime>2001-12-31T12:00:00</p6:publishTime>
-								<p6:duration>p6:duration</p6:duration>
-							</p6:time>
-						</p6:timeList>
-						<p6:contentIdRef>p6:contentIdRef</p6:contentIdRef>
-						<p6:materialIdRef>p6:materialIdRef</p6:materialIdRef>
-					</p6:event>
-				</p6:embeddedEventList>
+				<!-- -->
+				<p6:contentIdRef>2444625</p6:contentIdRef>
+				<!-- -->
+				<p6:materialIdRef>2444625</p6:materialIdRef>
+				<!-- n/a. Events in events is not supported in current version <p6:embeddedEventList> <p6:event xsi:type="p6:embeddedEventType"> <p6:id>p6:id</p6:id> <p6:channelId>p6:channelId</p6:channelId> 
+					<p6:deviceType>web</p6:deviceType> <p6:priceGroup>p6:priceGroup</p6:priceGroup> <p6:publicationRights> <addProviderLogo>true</addProviderLogo> <timeshift> <catchUpRights> <fastForward>true</fastForward> 
+					<rewind>true</rewind> <pause>true</pause> </catchUpRights> <startOverRights> <fastForward>true</fastForward> <rewind>true</rewind> <pause>true</pause> </startOverRights> </timeshift> 
+					<allowAds>true</allowAds> <drmRestrictions>true</drmRestrictions> <locationRestrictions> <includeIpOrNetworks> <ipAddress>ipAddress</ipAddress> </includeIpOrNetworks> <includeIpOrNetworks> 
+					<ipAddress>ipAddress</ipAddress> </includeIpOrNetworks> <includeCountries> <country>country</country> </includeCountries> <exludeCountries> <country>country</country> </exludeCountries> 
+					<includeLocals> <name>name</name> </includeLocals> <exludeLocals> <name>name</name> </exludeLocals> </locationRestrictions> <userOrGroupRestrictions> <includeUsers> <name>name</name> 
+					</includeUsers> <exludeUsers> <name>name</name> </exludeUsers> <includeGroups> <name>name</name> </includeGroups> <exludeGroups> <name>name</name> </exludeGroups> </userOrGroupRestrictions> 
+					<shareToList> <shareTo>shareTo</shareTo> </shareToList> </p6:publicationRights> <p6:descriptionList> <p6:description language="EN">p6:description </p6:description> </p6:descriptionList> 
+					<p6:rerun>true</p6:rerun> <p6:live>true</p6:live> <p6:hidden>true</p6:hidden> <p6:groupId sequenceNumber="0">p6:groupId</p6:groupId> <p6:timeList> <p6:time type="public"> <p6:startTime>2001-12-31T12:00:00</p6:startTime> 
+					<p6:endTime>2001-12-31T12:00:00</p6:endTime> <p6:publishTime>2001-12-31T12:00:00</p6:publishTime> <p6:duration>p6:duration</p6:duration> </p6:time> </p6:timeList> <p6:contentIdRef>p6:contentIdRef</p6:contentIdRef> 
+					<p6:materialIdRef>p6:materialIdRef</p6:materialIdRef> </p6:event> </p6:embeddedEventList> -->
 			</p6:event>
 		</p7:eventList>
 	</p:data>
