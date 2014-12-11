@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns3:schedule-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
-	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/tagging/v1"
-	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/schedule/v1"
-	xmlns:ns7="http://video-metadata.tv.se/material/v1" xmlns:ns8="http://video-metadata.tv.se/content/v1">
-	<ns3:header>
-		<ns3:providerId>se.tv4</ns3:providerId>
-		<ns3:msgId>d81aafa1-a50f-4b79-ac6c-b6e1c78fd2dc</ns3:msgId>
-	</ns3:header>
-	<ns3:data timestamp="2014-12-08T12:41:39.221+01:00">
-		<ns6:channelId>TV4</ns6:channelId>
-		<ns6:from>2014-11-28T05:50:00.000+01:00</ns6:from>
-		<ns6:to>2014-11-29T05:50:00.000+01:00</ns6:to>
-		<ns6:brandList>
+<ns4:schedule-metadata xmlns:ns2="http://video-metadata.tv4.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv4.se/tagging/v1" xmlns:ns4="http://video-metadata.tv4.se/api-messages/v1"
+	xmlns:ns5="http://video-metadata.tv4.se/schedule/v1" xmlns:ns6="http://video-metadata.tv4.se/publish/v1"
+	xmlns:ns7="http://video-metadata.tv4.se/content/v1" xmlns:ns8="http://video-metadata.tv4.se/material/v1">
+	<ns4:header>
+		<ns4:providerId>se.tv4</ns4:providerId>
+		<ns4:msgId>f344b0b8-8698-41cd-b13c-dd72ece5deb6</ns4:msgId>
+	</ns4:header>
+	<ns4:data timestamp="2014-12-11T13:50:26.675+01:00">
+		<ns5:channelId>TV4</ns5:channelId>
+		<ns5:from>2014-11-28T05:50:00.000+01:00</ns5:from>
+		<ns5:to>2014-11-29T05:50:00.000+01:00</ns5:to>
+		<ns5:brandList>
 			<brand>
 				<id>35006258</id>
-				<productionYear>2015</productionYear>
+				<productionYear>2014</productionYear>
 				<countryOfOriginList>
 					<country>SE</country>
 				</countryOfOriginList>
@@ -284,7 +284,7 @@
 				</descriptionList>
 			</brand>
 			<brand>
-				<id>44646642</id>
+				<id>45294163</id>
 				<titleList>
 					<title original="false" language="sv">TV4Vädret</title>
 				</titleList>
@@ -323,8 +323,8 @@
 						hända.</description>
 				</descriptionList>
 			</brand>
-		</ns6:brandList>
-		<ns6:seasonList>
+		</ns5:brandList>
+		<ns5:seasonList>
 			<season>
 				<id>4835033</id>
 				<productionYear>2014</productionYear>
@@ -796,7 +796,7 @@
 					</category>
 				</categoryList>
 				<brandId>39377896</brandId>
-				<numberOfEpisodes>250</numberOfEpisodes>
+				<numberOfEpisodes>249</numberOfEpisodes>
 			</season>
 			<season>
 				<id>5044360</id>
@@ -1017,6 +1017,8 @@
 					<title original="false" language="sv">2014</title>
 				</titleList>
 				<descriptionList>
+					<description length="short" language="sv">Väderprogram från
+						2014.</description>
 					<description length="medium" language="sv">Väderprognos från
 						TV4.</description>
 				</descriptionList>
@@ -1025,7 +1027,7 @@
 						<mainCategory>Nyheter</mainCategory>
 					</category>
 				</categoryList>
-				<brandId>44646642</brandId>
+				<brandId>45294163</brandId>
 				<numberOfEpisodes>50</numberOfEpisodes>
 			</season>
 			<season>
@@ -1198,8 +1200,8 @@
 				<brandId>101749784</brandId>
 				<numberOfEpisodes>40</numberOfEpisodes>
 			</season>
-		</ns6:seasonList>
-		<ns6:contentList>
+		</ns5:seasonList>
+		<ns5:contentList>
 			<content>
 				<id>4811875</id>
 				<productionYear>2014</productionYear>
@@ -2102,7 +2104,7 @@
 						<mainCategory>Nyheter</mainCategory>
 					</category>
 				</categoryList>
-				<brandId>44646642</brandId>
+				<brandId>45294163</brandId>
 				<seasonId>4810790</seasonId>
 				<episodeNumber>42</episodeNumber>
 			</content>
@@ -2753,9 +2755,9 @@
 					</category>
 				</categoryList>
 			</content>
-		</ns6:contentList>
-		<ns6:materialList>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+		</ns5:contentList>
+		<ns5:materialList>
+			<material timestamp="2014-12-11T13:50:26.690+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26550209</id>
 				<materialType>program</materialType>
@@ -2763,7 +2765,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.690+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26547611</id>
 				<materialType>program</materialType>
@@ -2771,7 +2773,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.690+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26764665</id>
 				<materialType>program</materialType>
@@ -2779,7 +2781,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.690+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26764667</id>
 				<materialType>program</materialType>
@@ -2787,7 +2789,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.690+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26478315</id>
 				<materialType>program</materialType>
@@ -2795,7 +2797,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.690+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26478317</id>
 				<materialType>program</materialType>
@@ -2803,7 +2805,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.690+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26490845</id>
 				<materialType>program</materialType>
@@ -2811,7 +2813,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26479361</id>
 				<materialType>program</materialType>
@@ -2819,7 +2821,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26490094</id>
 				<materialType>program</materialType>
@@ -2830,7 +2832,7 @@
 					<subtitle format="closed" language="sv" />
 				</subtitleList>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26490600</id>
 				<materialType>program</materialType>
@@ -2841,7 +2843,7 @@
 					<subtitle format="closed" language="sv" />
 				</subtitleList>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>27178905</id>
 				<materialType>program</materialType>
@@ -2849,7 +2851,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26928637</id>
 				<materialType>program</materialType>
@@ -2857,7 +2859,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.234+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>24277833</id>
 				<materialType>program</materialType>
@@ -2865,7 +2867,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26750322</id>
 				<materialType>program</materialType>
@@ -2873,7 +2875,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26750326</id>
 				<materialType>program</materialType>
@@ -2881,7 +2883,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26507706</id>
 				<materialType>program</materialType>
@@ -2892,7 +2894,7 @@
 					<subtitle format="closed" language="sv" />
 				</subtitleList>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26510743</id>
 				<materialType>program</materialType>
@@ -2904,7 +2906,7 @@
 						language="sv" />
 				</accessibilityList>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26395232</id>
 				<materialType>program</materialType>
@@ -2915,7 +2917,7 @@
 					<subtitle format="closed" language="sv" />
 				</subtitleList>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26680985</id>
 				<materialType>program</materialType>
@@ -2923,7 +2925,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26681047</id>
 				<materialType>program</materialType>
@@ -2931,7 +2933,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26510826</id>
 				<materialType>program</materialType>
@@ -2943,7 +2945,7 @@
 						language="sv" />
 				</accessibilityList>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26510884</id>
 				<materialType>program</materialType>
@@ -2955,7 +2957,7 @@
 						language="sv" />
 				</accessibilityList>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26891544</id>
 				<materialType>program</materialType>
@@ -2963,7 +2965,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.691+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26966505</id>
 				<materialType>program</materialType>
@@ -2971,7 +2973,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.692+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26966545</id>
 				<materialType>program</materialType>
@@ -2979,7 +2981,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.692+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26966587</id>
 				<materialType>program</materialType>
@@ -2987,7 +2989,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.692+01:00">
 				<providerId>se.tv4</providerId>
 				<id>26966605</id>
 				<materialType>program</materialType>
@@ -2995,7 +2997,7 @@
 				<videoFormat threeD="false">1080i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:41:39.235+01:00">
+			<material timestamp="2014-12-11T13:50:26.692+01:00">
 				<providerId>se.tv4</providerId>
 				<id>9999215699070</id>
 				<materialType>program</materialType>
@@ -3003,9 +3005,9 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>4:3</aspectRatio>
 			</material>
-		</ns6:materialList>
-		<ns6:eventList>
-			<ns2:event timestamp="2014-12-08T12:41:39.221+01:00">
+		</ns5:materialList>
+		<ns5:eventList>
+			<ns2:event timestamp="2014-12-11T13:50:26.675+01:00">
 				<ns2:id>26550209</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>true</ns2:live>
@@ -3023,7 +3025,7 @@
 				<ns2:contentIdRef>4811875</ns2:contentIdRef>
 				<ns2:materialIdRef>4811875</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.222+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.676+01:00">
 				<ns2:id>26547611</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3037,7 +3039,7 @@
 				<ns2:contentIdRef>4835078</ns2:contentIdRef>
 				<ns2:materialIdRef>4835078</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.222+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.676+01:00">
 				<ns2:id>26764665</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3055,7 +3057,7 @@
 				<ns2:contentIdRef>4893111</ns2:contentIdRef>
 				<ns2:materialIdRef>4893111</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.222+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.677+01:00">
 				<ns2:id>26764667</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3073,7 +3075,7 @@
 				<ns2:contentIdRef>4893113</ns2:contentIdRef>
 				<ns2:materialIdRef>4893113</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.223+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.678+01:00">
 				<ns2:id>26478315</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3087,7 +3089,7 @@
 				<ns2:contentIdRef>5136554</ns2:contentIdRef>
 				<ns2:materialIdRef>5136554</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.223+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.678+01:00">
 				<ns2:id>26478317</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3101,7 +3103,7 @@
 				<ns2:contentIdRef>5136555</ns2:contentIdRef>
 				<ns2:materialIdRef>5136555</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.223+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.678+01:00">
 				<ns2:id>26490845</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3115,7 +3117,7 @@
 				<ns2:contentIdRef>4674139</ns2:contentIdRef>
 				<ns2:materialIdRef>4674139</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.224+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.679+01:00">
 				<ns2:id>26479361</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3133,7 +3135,7 @@
 				<ns2:contentIdRef>3302583</ns2:contentIdRef>
 				<ns2:materialIdRef>3302583</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.224+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.679+01:00">
 				<ns2:id>26490094</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3151,7 +3153,7 @@
 				<ns2:contentIdRef>4678777</ns2:contentIdRef>
 				<ns2:materialIdRef>4678777</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.225+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.680+01:00">
 				<ns2:id>26490600</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3169,7 +3171,7 @@
 				<ns2:contentIdRef>3944675</ns2:contentIdRef>
 				<ns2:materialIdRef>3944675</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.225+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.681+01:00">
 				<ns2:id>27178905</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>true</ns2:live>
@@ -3183,7 +3185,7 @@
 				<ns2:contentIdRef>4898082</ns2:contentIdRef>
 				<ns2:materialIdRef>4898082</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.225+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.681+01:00">
 				<ns2:id>26928637</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3197,7 +3199,7 @@
 				<ns2:contentIdRef>4768849</ns2:contentIdRef>
 				<ns2:materialIdRef>4768849</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.226+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.681+01:00">
 				<ns2:id>24277833</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>true</ns2:live>
@@ -3215,7 +3217,7 @@
 				<ns2:contentIdRef>4572562</ns2:contentIdRef>
 				<ns2:materialIdRef>4572562</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.226+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.682+01:00">
 				<ns2:id>26750322</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>true</ns2:live>
@@ -3229,7 +3231,7 @@
 				<ns2:contentIdRef>5078626</ns2:contentIdRef>
 				<ns2:materialIdRef>5078626</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.226+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.682+01:00">
 				<ns2:id>26750326</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>true</ns2:live>
@@ -3243,7 +3245,7 @@
 				<ns2:contentIdRef>4810278</ns2:contentIdRef>
 				<ns2:materialIdRef>4810278</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.227+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.683+01:00">
 				<ns2:id>26507706</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3257,7 +3259,7 @@
 				<ns2:contentIdRef>5044446</ns2:contentIdRef>
 				<ns2:materialIdRef>5044446</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.227+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.683+01:00">
 				<ns2:id>26510743</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>true</ns2:live>
@@ -3275,7 +3277,7 @@
 				<ns2:contentIdRef>4940629</ns2:contentIdRef>
 				<ns2:materialIdRef>4940629</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.227+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.684+01:00">
 				<ns2:id>26395232</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3289,7 +3291,7 @@
 				<ns2:contentIdRef>5031133</ns2:contentIdRef>
 				<ns2:materialIdRef>5031133</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.228+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.684+01:00">
 				<ns2:id>26680985</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>true</ns2:live>
@@ -3303,7 +3305,7 @@
 				<ns2:contentIdRef>4828997</ns2:contentIdRef>
 				<ns2:materialIdRef>4828997</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.228+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.684+01:00">
 				<ns2:id>26681047</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>true</ns2:live>
@@ -3317,7 +3319,7 @@
 				<ns2:contentIdRef>4810832</ns2:contentIdRef>
 				<ns2:materialIdRef>4810832</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.229+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.685+01:00">
 				<ns2:id>26510826</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>true</ns2:live>
@@ -3335,7 +3337,7 @@
 				<ns2:contentIdRef>4940652</ns2:contentIdRef>
 				<ns2:materialIdRef>4940652</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.229+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.685+01:00">
 				<ns2:id>26510884</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>true</ns2:live>
@@ -3349,7 +3351,7 @@
 				<ns2:contentIdRef>5050990</ns2:contentIdRef>
 				<ns2:materialIdRef>5050990</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.230+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.686+01:00">
 				<ns2:id>26891544</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3363,7 +3365,7 @@
 				<ns2:contentIdRef>4798872</ns2:contentIdRef>
 				<ns2:materialIdRef>4798872</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.230+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.686+01:00">
 				<ns2:id>26966505</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3377,7 +3379,7 @@
 				<ns2:contentIdRef>4798873</ns2:contentIdRef>
 				<ns2:materialIdRef>4798873</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.230+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.686+01:00">
 				<ns2:id>26966545</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3395,7 +3397,7 @@
 				<ns2:contentIdRef>2027619</ns2:contentIdRef>
 				<ns2:materialIdRef>2027619</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.231+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.687+01:00">
 				<ns2:id>26966587</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3413,7 +3415,7 @@
 				<ns2:contentIdRef>1439390</ns2:contentIdRef>
 				<ns2:materialIdRef>1439390</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.231+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.687+01:00">
 				<ns2:id>26966605</ns2:id>
 				<ns2:rerun>true</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3431,7 +3433,7 @@
 				<ns2:contentIdRef>4807708</ns2:contentIdRef>
 				<ns2:materialIdRef>4807708</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:41:39.232+01:00">
+			<ns2:event timestamp="2014-12-11T13:50:26.688+01:00">
 				<ns2:id>9999215699070</ns2:id>
 				<ns2:rerun>true</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -3453,6 +3455,6 @@
 				<ns2:contentIdRef>400000937</ns2:contentIdRef>
 				<ns2:materialIdRef>400000937</ns2:materialIdRef>
 			</ns2:event>
-		</ns6:eventList>
-	</ns3:data>
-</ns3:schedule-metadata>
+		</ns5:eventList>
+	</ns4:data>
+</ns4:schedule-metadata>

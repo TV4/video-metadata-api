@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns3:schedule-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
-	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/tagging/v1"
-	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/schedule/v1"
-	xmlns:ns7="http://video-metadata.tv.se/material/v1" xmlns:ns8="http://video-metadata.tv.se/content/v1">
-	<ns3:header>
-		<ns3:providerId>se.tv4</ns3:providerId>
-		<ns3:msgId>daa585f8-4cdd-4b4c-a19f-50be6a84cbbf</ns3:msgId>
-	</ns3:header>
-	<ns3:data timestamp="2014-12-08T12:39:05.798+01:00">
-		<ns6:channelId>TV4 Film</ns6:channelId>
-		<ns6:from>2014-11-30T05:05:00.000+01:00</ns6:from>
-		<ns6:to>2014-12-01T05:20:00.000+01:00</ns6:to>
-		<ns6:contentList>
+<ns4:schedule-metadata xmlns:ns2="http://video-metadata.tv4.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv4.se/tagging/v1" xmlns:ns4="http://video-metadata.tv4.se/api-messages/v1"
+	xmlns:ns5="http://video-metadata.tv4.se/schedule/v1" xmlns:ns6="http://video-metadata.tv4.se/publish/v1"
+	xmlns:ns7="http://video-metadata.tv4.se/content/v1" xmlns:ns8="http://video-metadata.tv4.se/material/v1">
+	<ns4:header>
+		<ns4:providerId>se.tv4</ns4:providerId>
+		<ns4:msgId>ab593d27-98d7-416f-b604-37aa53f46822</ns4:msgId>
+	</ns4:header>
+	<ns4:data timestamp="2014-12-11T13:48:47.141+01:00">
+		<ns5:channelId>TV4 Film</ns5:channelId>
+		<ns5:from>2014-11-30T05:05:00.000+01:00</ns5:from>
+		<ns5:to>2014-12-01T05:20:00.000+01:00</ns5:to>
+		<ns5:contentList>
 			<content>
 				<id>300420655</id>
 				<productionYear>2012</productionYear>
@@ -1573,7 +1573,7 @@
 				</titleList>
 				<descriptionList>
 					<description language="sv">The sum of all fears är en
-						amerikansk actionfilm. Baserad på en roman av Tom Clancy med
+						amerikansk actionfilm. Baserad på en roman av Tom Clancy. Med
 						Morgan Freeman och Ben Affleck.</description>
 					<description length="short" language="sv">Amerikansk
 						actionfilm från 2002.</description>
@@ -1907,9 +1907,9 @@
 					</category>
 				</categoryList>
 			</content>
-		</ns6:contentList>
-		<ns6:materialList>
-			<material timestamp="2014-12-08T12:39:05.804+01:00">
+		</ns5:contentList>
+		<ns5:materialList>
+			<material timestamp="2014-12-11T13:48:47.149+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101734105</id>
 				<materialType>program</materialType>
@@ -1917,7 +1917,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:39:05.804+01:00">
+			<material timestamp="2014-12-11T13:48:47.149+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101734106</id>
 				<materialType>program</materialType>
@@ -1928,7 +1928,7 @@
 					<subtitle format="closed" language="sv" />
 				</subtitleList>
 			</material>
-			<material timestamp="2014-12-08T12:39:05.804+01:00">
+			<material timestamp="2014-12-11T13:48:47.149+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101734110</id>
 				<materialType>program</materialType>
@@ -1936,7 +1936,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>4:3</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:39:05.804+01:00">
+			<material timestamp="2014-12-11T13:48:47.149+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101717450</id>
 				<materialType>program</materialType>
@@ -1944,7 +1944,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:39:05.804+01:00">
+			<material timestamp="2014-12-11T13:48:47.149+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101717442</id>
 				<materialType>program</materialType>
@@ -1952,7 +1952,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:39:05.804+01:00">
+			<material timestamp="2014-12-11T13:48:47.149+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101706401</id>
 				<materialType>program</materialType>
@@ -1960,7 +1960,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:39:05.804+01:00">
+			<material timestamp="2014-12-11T13:48:47.149+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101706387</id>
 				<materialType>program</materialType>
@@ -1968,7 +1968,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:39:05.804+01:00">
+			<material timestamp="2014-12-11T13:48:47.149+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101706627</id>
 				<materialType>program</materialType>
@@ -1976,7 +1976,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:39:05.805+01:00">
+			<material timestamp="2014-12-11T13:48:47.149+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101717606</id>
 				<materialType>program</materialType>
@@ -1984,7 +1984,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:39:05.805+01:00">
+			<material timestamp="2014-12-11T13:48:47.149+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101732271</id>
 				<materialType>program</materialType>
@@ -1992,7 +1992,7 @@
 				<videoFormat threeD="false">576i</videoFormat>
 				<aspectRatio>16:9</aspectRatio>
 			</material>
-			<material timestamp="2014-12-08T12:39:05.805+01:00">
+			<material timestamp="2014-12-11T13:48:47.150+01:00">
 				<providerId>se.tv4</providerId>
 				<id>101732277</id>
 				<materialType>program</materialType>
@@ -2003,9 +2003,9 @@
 					<subtitle format="closed" language="sv" />
 				</subtitleList>
 			</material>
-		</ns6:materialList>
-		<ns6:eventList>
-			<ns2:event timestamp="2014-12-08T12:39:05.798+01:00">
+		</ns5:materialList>
+		<ns5:eventList>
+			<ns2:event timestamp="2014-12-11T13:48:47.141+01:00">
 				<ns2:id>101734105</ns2:id>
 				<ns2:rerun>true</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -2027,7 +2027,7 @@
 				<ns2:contentIdRef>300420655</ns2:contentIdRef>
 				<ns2:materialIdRef>300420655</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:39:05.798+01:00">
+			<ns2:event timestamp="2014-12-11T13:48:47.142+01:00">
 				<ns2:id>101734106</ns2:id>
 				<ns2:rerun>true</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -2045,7 +2045,7 @@
 				<ns2:contentIdRef>1324366</ns2:contentIdRef>
 				<ns2:materialIdRef>1324366</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:39:05.799+01:00">
+			<ns2:event timestamp="2014-12-11T13:48:47.143+01:00">
 				<ns2:id>101734110</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>true</ns2:live>
@@ -2063,7 +2063,7 @@
 				<ns2:contentIdRef>100000053</ns2:contentIdRef>
 				<ns2:materialIdRef>100000053</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:39:05.799+01:00">
+			<ns2:event timestamp="2014-12-11T13:48:47.143+01:00">
 				<ns2:id>101717450</ns2:id>
 				<ns2:rerun>true</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -2081,7 +2081,7 @@
 				<ns2:contentIdRef>500236283</ns2:contentIdRef>
 				<ns2:materialIdRef>500236283</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:39:05.800+01:00">
+			<ns2:event timestamp="2014-12-11T13:48:47.144+01:00">
 				<ns2:id>101717442</ns2:id>
 				<ns2:rerun>true</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -2099,7 +2099,7 @@
 				<ns2:contentIdRef>100001477</ns2:contentIdRef>
 				<ns2:materialIdRef>100001477</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:39:05.800+01:00">
+			<ns2:event timestamp="2014-12-11T13:48:47.144+01:00">
 				<ns2:id>101706401</ns2:id>
 				<ns2:rerun>true</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -2121,7 +2121,7 @@
 				<ns2:contentIdRef>500236641</ns2:contentIdRef>
 				<ns2:materialIdRef>500236641</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:39:05.801+01:00">
+			<ns2:event timestamp="2014-12-11T13:48:47.145+01:00">
 				<ns2:id>101706387</ns2:id>
 				<ns2:rerun>true</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -2139,7 +2139,7 @@
 				<ns2:contentIdRef>4865078</ns2:contentIdRef>
 				<ns2:materialIdRef>4865078</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:39:05.802+01:00">
+			<ns2:event timestamp="2014-12-11T13:48:47.146+01:00">
 				<ns2:id>101706627</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -2157,7 +2157,7 @@
 				<ns2:contentIdRef>100019014</ns2:contentIdRef>
 				<ns2:materialIdRef>100019014</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:39:05.802+01:00">
+			<ns2:event timestamp="2014-12-11T13:48:47.146+01:00">
 				<ns2:id>101717606</ns2:id>
 				<ns2:rerun>true</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -2175,7 +2175,7 @@
 				<ns2:contentIdRef>100108502</ns2:contentIdRef>
 				<ns2:materialIdRef>100108502</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:39:05.803+01:00">
+			<ns2:event timestamp="2014-12-11T13:48:47.147+01:00">
 				<ns2:id>101732271</ns2:id>
 				<ns2:rerun>true</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -2193,7 +2193,7 @@
 				<ns2:contentIdRef>1439631</ns2:contentIdRef>
 				<ns2:materialIdRef>1439631</ns2:materialIdRef>
 			</ns2:event>
-			<ns2:event timestamp="2014-12-08T12:39:05.803+01:00">
+			<ns2:event timestamp="2014-12-11T13:48:47.148+01:00">
 				<ns2:id>101732277</ns2:id>
 				<ns2:rerun>true</ns2:rerun>
 				<ns2:live>false</ns2:live>
@@ -2211,6 +2211,6 @@
 				<ns2:contentIdRef>100167808</ns2:contentIdRef>
 				<ns2:materialIdRef>100167808</ns2:materialIdRef>
 			</ns2:event>
-		</ns6:eventList>
-	</ns3:data>
-</ns3:schedule-metadata>
+		</ns5:eventList>
+	</ns4:data>
+</ns4:schedule-metadata>

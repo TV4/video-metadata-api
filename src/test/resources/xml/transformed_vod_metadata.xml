@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns4:publish-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
-	xmlns:ns3="http://video-metadata.tv.se/tagging/v1" xmlns:ns4="http://video-metadata.tv.se/api-messages/v1"
-	xmlns:ns5="http://video-metadata.tv.se/schedule/v1" xmlns:ns6="http://video-metadata.tv.se/publish/v1"
-	xmlns:ns7="http://video-metadata.tv.se/content/v1" xmlns:ns8="http://video-metadata.tv.se/material/v1">
+<ns4:publish-metadata xmlns:ns2="http://video-metadata.tv4.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv4.se/tagging/v1" xmlns:ns4="http://video-metadata.tv4.se/api-messages/v1"
+	xmlns:ns5="http://video-metadata.tv4.se/schedule/v1" xmlns:ns6="http://video-metadata.tv4.se/publish/v1"
+	xmlns:ns7="http://video-metadata.tv4.se/content/v1" xmlns:ns8="http://video-metadata.tv4.se/material/v1">
 	<ns4:header>
 		<ns4:providerId>se.tv4</ns4:providerId>
-		<ns4:msgId>a223677f-63a5-4db5-93b3-c3b4b8c9f5e2</ns4:msgId>
+		<ns4:msgId>37de8f95-79dc-457b-98b0-826b0597af0b</ns4:msgId>
 	</ns4:header>
-	<ns4:data timestamp="2014-12-10T17:10:33.566+01:00">
+	<ns4:data timestamp="2014-12-11T13:39:02.465+01:00">
 		<ns6:brand>
 			<id>131347918</id>
 			<titleList>
@@ -136,7 +136,7 @@
 			<episodeNumber>1</episodeNumber>
 		</ns6:content>
 		<ns6:materialList>
-			<material timestamp="2014-12-10T17:10:33.566+01:00">
+			<material timestamp="2014-12-11T13:39:02.464+01:00">
 				<providerId>se.tv4</providerId>
 				<id>4939186</id>
 				<materialType>program</materialType>
@@ -144,7 +144,7 @@
 			</material>
 		</ns6:materialList>
 		<ns6:eventList>
-			<ns2:event timestamp="2014-12-10T17:10:33.565+01:00">
+			<ns2:event timestamp="2014-12-11T13:39:02.463+01:00">
 				<ns2:id>919686</ns2:id>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:timeList>

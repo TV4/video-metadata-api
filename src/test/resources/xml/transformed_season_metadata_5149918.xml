@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns3:content-metadata xmlns:ns2="http://video-metadata.tv.se/event/v1"
-	xmlns:ns3="http://video-metadata.tv.se/api-messages/v1" xmlns:ns4="http://video-metadata.tv.se/tagging/v1"
-	xmlns:ns5="http://video-metadata.tv.se/publish/v1" xmlns:ns6="http://video-metadata.tv.se/schedule/v1"
-	xmlns:ns7="http://video-metadata.tv.se/material/v1" xmlns:ns8="http://video-metadata.tv.se/content/v1">
-	<ns3:header>
-		<ns3:providerId>se.tv4</ns3:providerId>
-		<ns3:msgId>5e441a89-816b-4163-be50-8cfd682a7617</ns3:msgId>
-	</ns3:header>
-	<ns3:data>
+<ns4:content-metadata xmlns:ns2="http://video-metadata.tv4.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv4.se/tagging/v1" xmlns:ns4="http://video-metadata.tv4.se/api-messages/v1"
+	xmlns:ns5="http://video-metadata.tv4.se/schedule/v1" xmlns:ns6="http://video-metadata.tv4.se/publish/v1"
+	xmlns:ns7="http://video-metadata.tv4.se/content/v1" xmlns:ns8="http://video-metadata.tv4.se/material/v1">
+	<ns4:header>
+		<ns4:providerId>se.tv4</ns4:providerId>
+		<ns4:msgId>92009c37-01ce-4128-b568-4cb3011cbb96</ns4:msgId>
+	</ns4:header>
+	<ns4:data>
 		<brand>
 			<id>83401814</id>
 			<titleList>
@@ -53,5 +53,5 @@
 			<seasonNumber>4</seasonNumber>
 			<numberOfEpisodes>22</numberOfEpisodes>
 		</season>
-	</ns3:data>
-</ns3:content-metadata>
+	</ns4:data>
+</ns4:content-metadata>
