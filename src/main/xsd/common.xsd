@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/common/v1" targetNamespace="http://video-metadata.tv4.se/common/v1"
-	version="1.0"
->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/common/v1" targetNamespace="http://video-metadata.tv4.se/common/v1" version="1.0">
 
-	<!-- 
-	Common types used in all XSDs 
-	  -->
+	<!-- Important note about xs:dateTime: Time zone is UTC if not specified. Possible future change may add a separate type for dateTimes that enforce use of time zone. -->
+
+	<!-- Common types used in all XSDs -->
 	<xs:simpleType name="idType">
 		<xs:annotation>
 			<xs:documentation>A general ID type for entities
@@ -15,10 +13,12 @@
 			<xs:pattern value="[0-9a-zA-Z:_\-\.#@]+" />
 		</xs:restriction>
 	</xs:simpleType>
-	<!--  -->
+	<!-- -->
 	<xs:simpleType name="nidType">
 		<xs:annotation>
-			<xs:documentation>Unique name id, i.e. the normalized textual representation, e.g.: no space, lower case, no diacritic characters. Language attribute can be used to specify a localized name for the
+			<xs:documentation>Unique name id, i.e. the normalized textual
+				representation, e.g.: no space, lower case, no diacritic characters.
+				Language attribute can be used to specify a localized name for the
 				tag.
 			</xs:documentation>
 		</xs:annotation>
@@ -26,30 +26,32 @@
 			<xs:pattern value="[0-9a-z:_\-\.#@]+" />
 		</xs:restriction>
 	</xs:simpleType>
-	<!-- 
-	 -->
+	<!-- -->
 	<xs:complexType name="description">
 		<xs:annotation>
-			<xs:documentation> A general type for describing something, attribute indicating the language.
+			<xs:documentation> A general type for describing something, attribute
+				indicating the language.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
 				<xs:attribute name="language" type="xs:language">
 					<xs:annotation>
-						<xs:documentation> code in ISO 639-1 Note that the language here refers to the language on which the description is made.
+						<xs:documentation> code in ISO 639-1 Note that the language here
+							refers to the language on which the description is made.
 						</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	<!--  -->
+	<!-- -->
 	<xs:complexType name="externalReferenceListType">
 		<xs:sequence>
 			<xs:element name="externalReference" type="externalReferenceType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
-					<xs:documentation>List of external resources that can used to connect/boost the content data with.
+					<xs:documentation>List of external resources that can used to
+						connect/boost the content data with.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -59,19 +61,23 @@
 		<xs:sequence>
 			<xs:element name="provider" type="xs:string" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
-					<xs:documentation>Who is the provides for the extend data that can be used for this content. It can for example be score24.com or IMDB.com
+					<xs:documentation>Who is the provides for the extend data that can
+						be used for this content. It can for example be score24.com or
+						IMDB.com
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="id" type="xs:string" minOccurs="0" maxOccurs="1">
 				<xs:annotation>
-					<xs:documentation>Data identifier to map this content to in the external provider/partners data
+					<xs:documentation>Data identifier to map this content to in the
+						external provider/partners data
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="uri" type="xs:string" minOccurs="0" maxOccurs="1">
 				<xs:annotation>
-					<xs:documentation>Resource to use for reach the data at the provider
+					<xs:documentation>Resource to use for reach the data at the
+						provider
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -104,7 +110,9 @@
 					<xs:sequence>
 						<xs:element name="shareTo" type="shareToType" minOccurs="0" maxOccurs="unbounded">
 							<xs:annotation>
-								<xs:documentation>youtube, facebook, twitter, ... (should/could be tags?)</xs:documentation>
+								<xs:documentation>youtube, facebook, twitter, ... (should/could
+									be tags?)
+								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 					</xs:sequence>
@@ -117,7 +125,9 @@
 	</xs:simpleType>
 	<xs:complexType name="locationRestrictionsType">
 		<xs:annotation>
-			<xs:documentation>First add the includes, then remove the excludes. No includes specified is treated as allow all and no excludes specified is
+			<xs:documentation>First add the includes, then remove the excludes.
+				No includes specified is treated as allow all and no excludes
+				specified is
 				treated as no restriction.
 			</xs:documentation>
 		</xs:annotation>
@@ -132,7 +142,9 @@
 	</xs:complexType>
 	<xs:complexType name="userOrGroupRestrictionsType">
 		<xs:annotation>
-			<xs:documentation>First add the includes, then remove the excludes. No includes specified is treated as allow all and no excludes specified is
+			<xs:documentation>First add the includes, then remove the excludes.
+				No includes specified is treated as allow all and no excludes
+				specified is
 				treated as no restriction.
 			</xs:documentation>
 		</xs:annotation>
@@ -150,7 +162,8 @@
 	</xs:complexType>
 	<xs:simpleType name="ipAddressType">
 		<xs:annotation>
-			<xs:documentation>Single Ipv4 (23.37.56.55) or IPv6 address, or a IPv4 subnet (2001:db8:0000::1) or a IPv6 subnet (2001:db8:0000::/36)
+			<xs:documentation>Single Ipv4 (23.37.56.55) or IPv6 address, or a
+				IPv4 subnet (2001:db8:0000::1) or a IPv6 subnet (2001:db8:0000::/36)
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -216,15 +229,15 @@
 	<xs:simpleType name="shareToType">
 		<!-- TODO : borde ange om det är en exclusive or excluding right -->
 		<xs:annotation>
-			<xs:documentation>Tag identifying the channel that is allowed for sharing. '*' to indicate all and anyware.
+			<xs:documentation>Tag identifying the channel that is allowed for
+				sharing. '*' to indicate all and anyware.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="(\*)|(\w+)"></xs:pattern>
 		</xs:restriction>
 	</xs:simpleType>
-	<!-- 
-	 -->
+	<!-- -->
 	<xs:complexType name="propertyListType">
 		<xs:sequence>
 			<xs:element name="property" type="propertyType" minOccurs="0" maxOccurs="unbounded" />
