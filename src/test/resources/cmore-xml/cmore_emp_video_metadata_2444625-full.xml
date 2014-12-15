@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<api-messages:publish-metadata xmlns:api-messages="http://video-metadata.tv.se/api-messages/v1" xmlns:content="http://video-metadata.tv.se/content/v1" xmlns:common="http://video-metadata.tv.se/common/v1"
-	xmlns:tagging="http://video-metadata.tv.se/tagging/v1" xmlns:schedule="http://video-metadata.tv.se/schedule/v1" xmlns:material="http://video-metadata.tv.se/material/v1" xmlns:event="http://video-metadata.tv.se/event/v1"
-	xmlns:publish="http://video-metadata.tv.se/publish/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://video-metadata.tv.se/api-messages/v1 api-messages.xsd ">
+<api-messages:publish-metadata xmlns:api-messages="http://video-metadata.tv4.se/api-messages/v1" xmlns:content="http://video-metadata.tv4.se/content/v1" xmlns:common="http://video-metadata.tv4.se/common/v1"
+	xmlns:tagging="http://video-metadata.tv4.se/tagging/v1" xmlns:schedule="http://video-metadata.tv4.se/schedule/v1" xmlns:material="http://video-metadata.tv4.se/material/v1" xmlns:event="http://video-metadata.tv4.se/event/v1"
+	xmlns:publish="http://video-metadata.tv4.se/publish/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://video-metadata.tv4.se/api-messages/v1 api-messages.xsd ">
 	<api-messages:header>
 		<api-messages:providerId>se.cmore</api-messages:providerId>
 		<api-messages:msgId>4e087728-e0ea-464d-819a-471f2961183d</api-messages:msgId>
