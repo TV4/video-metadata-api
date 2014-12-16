@@ -133,7 +133,6 @@
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="includeIpOrNetworks" type="ipAddressTypeListType" />
-			<xs:element name="includeIpOrNetworks" type="ipAddressTypeListType" />
 			<xs:element name="includeCountries" type="countryListType" />
 			<xs:element name="exludeCountries" type="countryListType" />
 			<xs:element name="includeLocals" type="nameListType" />
