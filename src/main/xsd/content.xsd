@@ -33,12 +33,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="vmanId" type="xs:string" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>vman id for asset.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="studio" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Name of production studio.
@@ -173,6 +167,12 @@
 				<xs:sequence>
 					<!-- <brandOrSeasonId> <type>season</type> <id>12354</id> </brandOrSeasonId> <xs:element name="brandOrSeasonId" type="xs:string" minOccurs="0"> <xs:annotation> 
 						<xs:documentation>id for season, not unique</xs:documentation> </xs:annotation> </xs:element> Alternativt -->
+					<xs:element name="vmanId" type="xs:string" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>vman id for asset.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 					<xs:element name="contentType" type="contentTypeType" />
 					<xs:element name="brandId" type="common:idType" minOccurs="0">
 						<xs:annotation>
