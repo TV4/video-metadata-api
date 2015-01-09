@@ -112,7 +112,7 @@
 			</xs:element>
 			<xs:element name="parentalRating" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Parental rating 0-18y</xs:documentation>
+					<xs:documentation>Parental rating 0-18y. Empty = 0 => No restriction</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:long">
@@ -147,7 +147,7 @@
 					</xs:element>
 					<xs:element name="seasonNumber" type="xs:long" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>season number for the brand
+							<xs:documentation>Season number for the brand.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
