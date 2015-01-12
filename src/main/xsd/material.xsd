@@ -52,7 +52,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="aspectRatio" type="aspectRatioType" minOccurs="0">
+			<xs:element name="aspectRatio" type="common:aspectRatioType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>aspect ratio for the material</xs:documentation>
 				</xs:annotation>
@@ -106,15 +106,6 @@
 			<xs:enumeration value="1080i" />
 			<xs:enumeration value="1080p" />
 			<xs:enumeration value="2160p" />
-			<xs:enumeration value="other" />
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="aspectRatioType">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="4:3" />
-			<xs:enumeration value="16:9" />
-			<xs:enumeration value="2.35:1" /><!-- CinemaScope -->
-			<xs:enumeration value="21:9" />
 			<xs:enumeration value="other" />
 		</xs:restriction>
 	</xs:simpleType>
