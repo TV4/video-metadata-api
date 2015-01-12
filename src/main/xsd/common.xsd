@@ -23,7 +23,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-z:_\-\.#@]+" />
+			<xs:pattern value="[0-9a-zA-Z\-]+" />
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- -->
