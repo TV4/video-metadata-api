@@ -18,7 +18,8 @@
 		<xs:annotation>
 			<xs:documentation>Unique name id, i.e. the normalized textual
 				representation, e.g.: no space, lower case, no diacritic characters.
-				Language attribute can be used to specify a localized name for the
+				Language attribute can be used to specify a
+				localized name for the
 				tag.
 			</xs:documentation>
 		</xs:annotation>
@@ -199,6 +200,17 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+
+	<xs:simpleType name="aspectRatioType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="4:3" />
+			<xs:enumeration value="16:9" />
+			<xs:enumeration value="2.35:1" /><!-- CinemaScope -->
+			<xs:enumeration value="21:9" />
+			<xs:enumeration value="other" />
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="timeShiftDeviceTypeRights">
 		<xs:sequence>
 			<xs:element name="catchUpRights" type="catchUpRightsType" minOccurs="0" maxOccurs="1">
