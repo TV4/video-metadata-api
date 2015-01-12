@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/tagging/v1" xmlns:common="http://video-metadata.tv4.se/common/v1" targetNamespace="http://video-metadata.tv4.se/tagging/v1"
-	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/tagging/v1" xmlns:common="http://video-metadata.tv4.se/common/v1"
+	targetNamespace="http://video-metadata.tv4.se/tagging/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
 	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
 	<!-- elements -->
 	<xs:element name="tagRefs" type="tagReferenceListType" />
@@ -22,9 +22,9 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:simpleContent>
-			<xs:extension base="common:idType">
-				<xs:attribute name="priority" type="xs:long">
-				</xs:attribute>
+			<xs:extension base="common:nidType">
+				<xs:attribute name="type" type="tagTypeType" use="required"/>
+				<xs:attribute name="priority" type="xs:long" />
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
@@ -46,7 +46,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="id" type="common:idType">
+			<xs:element name="nid" type="common:nidType">
 				<xs:annotation>
 					<xs:documentation>Unique id for the tag. The id is a technical id and it must be unique.
 						Id will be used when referencing the tag.
@@ -57,7 +57,7 @@
 			<xs:element name="description" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>Internal description of the tag, in the company
-						language (english)
+						language (english).
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -93,7 +93,8 @@
 				<xs:documentation>Timestamp when tag is deprecated. Deprecation has
 					the meaning that the tag should no longer be used to tag new
 					content. It is
-					not deleted as the tags may exist and be in use on
+					not deleted as the tags may exist
+					and be in use on
 					already tagged content.
 				</xs:documentation>
 			</xs:annotation>
@@ -112,7 +113,7 @@
 			<xs:enumeration value="story" />
 			<xs:enumeration value="other">
 				<xs:annotation>
-					<xs:documentation>A free text tag
+					<xs:documentation>A free text tag.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -120,13 +121,11 @@
 	</xs:simpleType>
 	<xs:simpleType name="tagNameType">
 		<xs:annotation>
-			<xs:documentation>Unique name for the tag, i.e. the textual
-				representation. Language attribute can be used to specify a
-				localized name for the tag.
-				If more than one tag value is given
-				without language
-				attribute, or the same language attribute is
-				repeated, then the selection order is undefined.
+			<xs:documentation>Unique name for the tag, i.e. the textual representation.
+				Language attribute can be used to specify a localized name for the tag.
+				If more than one tag value is given without language
+				attribute, or the same language attribute is repeated, then
+				the selection order is undefined.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
