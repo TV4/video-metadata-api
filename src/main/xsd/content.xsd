@@ -103,11 +103,6 @@
 					<xs:documentation>Category path expression</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="adCategoryList" type="categoryListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Category path expression</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="parentalRating" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Parental rating 0-18y. Empty = 0 => No restriction</xs:documentation>
