@@ -370,13 +370,13 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="captionList" type="captionListType" minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="captionList" type="captionListType" minOccurs="0" >
 				<xs:annotation>
 					<xs:documentation>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="copyRightList" type="copyRightsListType" minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="copyRightList" type="copyRightsListType" minOccurs="0" >
 				<xs:annotation>
 					<xs:documentation>
 					</xs:documentation>
