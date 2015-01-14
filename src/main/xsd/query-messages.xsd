@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/api-messages/v1" xmlns:api-messages="http://video-metadata.tv4.se/api-messages/v1" xmlns:common="http://video-metadata.tv4.se/common/v1"
-	xmlns:publish="http://video-metadata.tv4.se/publish/v1" xmlns:content="http://video-metadata.tv4.se/content/v1" xmlns:schedule="http://video-metadata.tv4.se/schedule/v1"
-	xmlns:event="http://video-metadata.tv4.se/event/v1" xmlns:material="http://video-metadata.tv4.se/material/v1" xmlns:tagging="http://video-metadata.tv4.se/tagging/v1"
-	targetNamespace="http://video-metadata.tv4.se/api-messages/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:api-messages-common="http://video-metadata.tv4.se/api-messages-common/v1"
+           targetNamespace="http://video-metadata.tv4.se/api-messages-common/v1" elementFormDefault="qualified"
+           attributeFormDefault="unqualified" version="1.0">
 
-	<xs:import namespace="http://video-metadata.tv4.se/api-messages/v1" schemaLocation="api-messages-common.xsd" />
+	<xs:import namespace="http://video-metadata.tv4.se/api-messages-common/v1" schemaLocation="api-messages-common.xsd" />
 
 	<!-- Message definitions -->
 	<xs:element name="query">
@@ -15,8 +15,8 @@
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="header" type="api-messages:messageHeaderType" />
-				<xs:element name="query" type="api-messages:idListType" />
+				<xs:element name="header" type="api-messages-common:messageHeaderType" />
+				<xs:element name="query" type="api-messages-common:idListType" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
