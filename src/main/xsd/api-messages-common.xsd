@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/api-messages-common/v1"
            xmlns:common="http://video-metadata.tv4.se/common/v1"
            targetNamespace="http://video-metadata.tv4.se/api-messages-common/v1" elementFormDefault="qualified"
            attributeFormDefault="unqualified"
