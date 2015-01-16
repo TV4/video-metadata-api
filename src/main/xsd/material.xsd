@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/material/v1" xmlns:common="http://video-metadata.tv4.se/common/v1"
-	targetNamespace="http://video-metadata.tv4.se/material/v1" version="1.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/material/v1"
+			  xmlns:common="http://video-metadata.tv4.se/common/v1"
+			  targetNamespace="http://video-metadata.tv4.se/material/v1" version="1.0">
 	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
 	<!-- -->
 	<xs:element name="material" type="materialType">
@@ -68,18 +69,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="mediaList" type="mediaListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>list of reference to physical media, could be filenames or an url
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="rightsList" type="rightsListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>list of rights for this material, each right is for a rights period
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+
 		</xs:sequence>
 		<xs:attribute name="timestamp" type="xs:dateTime" use="required">
 			<xs:annotation>
@@ -172,7 +162,8 @@
 	</xs:complexType>
 	<xs:simpleType name="subtitleFormatType">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="closed" /><!-- text-tv text -->
+			<xs:enumeration value="closed" />
+			<!-- text-tv text -->
 			<xs:enumeration value="open" />
 			<xs:enumeration value="other" />
 		</xs:restriction>
@@ -223,7 +214,8 @@
 	<xs:complexType name="mediaType">
 		<!-- Om flera segment finns, då behövs ordning anges. Hämtas idag från Media i Louise. -->
 		<xs:annotation>
-			<xs:documentation>url string value is an id, uri, url file path or any other reference to the media file. Depends on th context.
+			<xs:documentation>url string value is an id, uri, url file path or any other reference to the media file.
+				Depends on th context.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
@@ -298,7 +290,7 @@
 		<xs:sequence>
 			<xs:element name="rightsName" type="xs:string" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation> Name of right, i e 'Free' or 'Premium'
+					<xs:documentation>Name of right, i e 'Free' or 'Premium'
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -349,7 +341,8 @@
 		<xs:complexContent>
 			<xs:extension base="deviceTypeRightsType">
 				<xs:annotation>
-					<xs:documentation>Can be used in example for marking a tv-show in the schedule that aren't allowed to be transmitted to mobile clients
+					<xs:documentation>Can be used in example for marking a tv-show in the schedule that aren't allowed to be
+						transmitted to mobile clients
 					</xs:documentation>
 				</xs:annotation>
 			</xs:extension>
