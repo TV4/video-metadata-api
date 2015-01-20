@@ -4,8 +4,8 @@
 			  xmlns:common="http://video-metadata.tv4.se/common/v1"
 			  xmlns:tagging="http://video-metadata.tv4.se/tagging/v1"
 			  targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
-	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="../common.xsd" />
-	<xs:import namespace="http://video-metadata.tv4.se/tagging/v1" schemaLocation="../tagging.xsd" />
+	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
+	<xs:import namespace="http://video-metadata.tv4.se/tagging/v1" schemaLocation="tagging.xsd" />
 
 	<!-- -->
 	<xs:element name="content" type="contentSeasonBrandType">

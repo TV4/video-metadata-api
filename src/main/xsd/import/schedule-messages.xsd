@@ -5,7 +5,7 @@
            targetNamespace="http://video-metadata.tv4.se/api-messages/v1" elementFormDefault="qualified"
            attributeFormDefault="unqualified" version="1.0">
 
-	<xs:import namespace="http://video-metadata.tv4.se/api-messages-common/v1" schemaLocation="../api-messages-common.xsd" />
+	<xs:import namespace="http://video-metadata.tv4.se/api-messages-common/v1" schemaLocation="api-messages-common.xsd" />
 	<xs:import namespace="http://video-metadata.tv4.se/schedule/v1" schemaLocation="schedule.xsd" />
 
 	<!-- Message definitions -->
