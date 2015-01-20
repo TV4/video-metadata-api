@@ -12,7 +12,7 @@
 	<properties>
 		<jaxb2MavenPluginVersion>1.6</jaxb2MavenPluginVersion>
 	</properties>
-	
+
 	<distributionManagement>
 		<repository>
 			<id>teknik-util-release</id>
@@ -24,7 +24,7 @@
 			<name>teknik-util.tv4.se-snapshots</name>
 			<url>http://teknik-util.tv4.se/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
-	</distributionManagement>	
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -33,7 +33,7 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
- 		
+
 		<dependency>
 			<groupId>xmlunit</groupId>
 			<artifactId>xmlunit</artifactId>
@@ -46,7 +46,7 @@
 	<build>
 		<resources>
 			<resource>
-				<directory>${basedir}/src/main/xsd</directory>
+				<directory>${basedir}/src/main/xsd/import</directory>
 				<includes>
 					<include>*.*</include>
 				</includes>
@@ -55,7 +55,7 @@
 
 		<plugins>
 			<plugin>
-				<!-- The plugin will generate Java sources from all XML schema files 
+				<!-- The plugin will generate Java sources from all XML schema files
 					available in the default schema directory ${project.basedir}/src/main/xsd) -->
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>jaxb2-maven-plugin</artifactId>
