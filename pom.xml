@@ -70,6 +70,7 @@
 				</executions>
 				<configuration>
 					<packageName>se.tv4.teknik.vmd.generated.jaxb</packageName>
+                    <schemaDirectory>${basedir}/src/main/xsd/import</schemaDirectory>
 				</configuration>
 			</plugin>
 			<plugin>
