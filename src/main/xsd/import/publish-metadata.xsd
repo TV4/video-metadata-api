@@ -6,7 +6,7 @@
            attributeFormDefault="unqualified"
            version="1.0">
 
-	<xs:import namespace="http://video-metadata.tv4.se/api-messages-common/v1" schemaLocation="api-messages-common.xsd" />
+	<xs:import namespace="http://video-metadata.tv4.se/api-messages-common/v1" schemaLocation="../api-messages-common.xsd" />
 	<xs:import namespace="http://video-metadata.tv4.se/publish/v1" schemaLocation="publish.xsd" />
 
 	<!-- Message definitions -->

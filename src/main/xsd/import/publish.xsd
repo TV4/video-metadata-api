@@ -7,7 +7,7 @@
       >
     <!--
       -->
-	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
+	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="../common.xsd" />
 	<xs:import namespace="http://video-metadata.tv4.se/content/v1" schemaLocation="content.xsd" />
 	<xs:import namespace="http://video-metadata.tv4.se/event/v1" schemaLocation="event.xsd" />
 	<xs:import namespace="http://video-metadata.tv4.se/material/v1" schemaLocation="material.xsd" />
