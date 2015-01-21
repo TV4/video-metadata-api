@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 
@@ -46,9 +46,9 @@
 	<build>
 		<resources>
 			<resource>
-				<directory>${basedir}/src/main/xsd/import</directory>
+				<directory>${basedir}/src/main/xsd</directory>
 				<includes>
-					<include>*.*</include>
+					<include>**/*</include>
 				</includes>
 			</resource>
 		</resources>
@@ -66,12 +66,24 @@
 						<goals>
 							<goal>xjc</goal>
 						</goals>
+                        <configuration>
+                            <packageName>se.tv4.teknik.vmd.generated.jaxb</packageName>
+                            <outputDirectory>${basedir}/target/generated-sources/jaxb</outputDirectory>
+                            <schemaDirectory>${basedir}/src/main/xsd/import</schemaDirectory>
+                    	</configuration>
 					</execution>
+                    <execution>
+                        <id>export</id>
+                            <goals>
+                                <goal>xjc</goal>
+                            </goals>
+                            <configuration>
+                                <packageName>se.tv4.teknik.vmd.generated.export.jaxb</packageName>
+                                <outputDirectory>${basedir}/target/generated-sources/export/jaxb</outputDirectory>
+                                <schemaDirectory>${basedir}/src/main/xsd/export</schemaDirectory>
+                             </configuration>
+            		</execution>
 				</executions>
-				<configuration>
-					<packageName>se.tv4.teknik.vmd.generated.jaxb</packageName>
-                    <schemaDirectory>${basedir}/src/main/xsd/import</schemaDirectory>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
