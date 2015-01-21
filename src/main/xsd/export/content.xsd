@@ -179,6 +179,18 @@
 							<xs:documentation>id for season, not unique. Only present if content is connected to a season.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
+                    <xs:element name="live" type="xs:boolean" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>indicates if this event is live.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="addProviderLogo" type="xs:boolean" default="true" />
+                    <xs:element name="allowShare" type="xs:boolean" default="true" />
+        			<xs:element name="allowAds" type="xs:boolean" default="true" />
+        			<xs:element name="drmRestrictions" type="xs:boolean" default="true" />
+                    <xs:element name="publicationRights" type="publicationRightsType">
+                 			</xs:element>
 					<xs:element name="contentIdRef" type="common:idType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Reference to other content entity that is related. Thought use is for a clip or
@@ -196,6 +208,12 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+    <xs:complexType name="publicationRightsType">
+   		<xs:complexContent>
+   			<xs:extension base="common:rightsType">
+   			</xs:extension>
+   		</xs:complexContent>
+   	</xs:complexType>
 	<xs:simpleType name="contentTypeType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="program" />
