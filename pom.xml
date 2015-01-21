@@ -6,7 +6,7 @@
 	<groupId>se.tv4.teknik.integration</groupId>
 	<artifactId>video-metadata-api</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.5-SNAPSHOT</version>
+	<version>1.0.6-SNAPSHOT</version>
 	<name>video-metadata-api</name>
 
 	<properties>
