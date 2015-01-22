@@ -68,7 +68,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="id" type="xs:string" minOccurs="0" maxOccurs="1">
+			<xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>Data identifier to map this content to in the
 						external provider/partners data
@@ -128,7 +128,6 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="includeIpOrNetworks" type="ipAddressTypeListType" />
 			<xs:element name="includeCountries" type="countryListType" />
 		</xs:sequence>
 	</xs:complexType>

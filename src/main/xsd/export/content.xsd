@@ -88,13 +88,11 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-
-			<xs:element name="imageList" type="imageListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>list of content related images.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+            <xs:element name="posterImage" type="imageType" minOccurs="0" />
+            <xs:element name="landscapeImage" type="imageType" minOccurs="0" />
+            <xs:element name="logoImage" type="imageType" minOccurs="0" />
+            <xs:element name="promoImage" type="imageType" minOccurs="0" />
+            <xs:element name="bannerImage" type="imageType" minOccurs="0" />
 			<xs:element name="category" type="categoryType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Category path expression</xs:documentation>
@@ -217,7 +215,7 @@
 	<xs:simpleType name="contentTypeType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="program" />
-			<xs:enumeration value="film" />
+			<xs:enumeration value="movie" />
 			<xs:enumeration value="trailer" />
 			<xs:enumeration value="clip" />
 			<xs:enumeration value="ad" />
@@ -365,33 +363,15 @@
 	<xs:complexType name="imageType">
 		<xs:sequence>
 			<xs:element name="url" type="xs:string" />
-			<xs:element name="width" type="xs:int">
+			<xs:element name="width" type="xs:int" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>In unit px.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="height">
+			<xs:element name="height" type="xs:int" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>In unit px.</xs:documentation>
 				</xs:annotation>
-			</xs:element>
-			<xs:element name="purpose">
-				<xs:simpleType>
-					<xs:annotation>
-						<xs:documentation>Purpose of image, initial intended usage for the image from source system.
-						</xs:documentation>
-					</xs:annotation>
-					<xs:restriction base="xs:string">
-						<xs:enumeration value="production" />
-						<xs:enumeration value="profile" />
-						<xs:enumeration value="banner" />
-						<xs:enumeration value="poster" />
-						<xs:enumeration value="promo" />
-						<xs:enumeration value="press" />
-						<xs:enumeration value="logo" />
-						<xs:enumeration value="other" />
-					</xs:restriction>
-				</xs:simpleType>
 			</xs:element>
 			<xs:element name="captionList" type="captionListType" minOccurs="0">
 				<xs:annotation>
@@ -405,22 +385,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-		</xs:sequence>
-		<xs:attribute name="priority" type="xs:long">
-			<xs:annotation>
-				<xs:documentation>lower priority number means higher importance
-				</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-	</xs:complexType>
-	<xs:complexType name="imageListType">
-		<xs:annotation>
-			<xs:documentation>priority attribute on image element indicate "sort order", lower priority number means higher
-				importance.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="image" type="imageType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="captionListType">
