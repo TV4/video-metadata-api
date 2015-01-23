@@ -363,6 +363,12 @@
 	<xs:complexType name="imageType">
 		<xs:sequence>
 			<xs:element name="url" type="xs:string" />
+            <xs:element name="urlList" type="urlListType" minOccurs="0">
+         				<xs:annotation>
+         					<xs:documentation>
+         					</xs:documentation>
+         				</xs:annotation>
+         			</xs:element>
 			<xs:element name="width" type="xs:int" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>In unit px.</xs:documentation>
@@ -387,6 +393,12 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+    <xs:complexType name="urlListType">
+   		<xs:sequence>
+   			<xs:element name="url" type="common:description" minOccurs="0" maxOccurs="unbounded" />
+   		</xs:sequence>
+   	</xs:complexType>
+
 	<xs:complexType name="captionListType">
 		<xs:sequence>
 			<xs:element name="caption" type="common:description" minOccurs="0" maxOccurs="unbounded" />
