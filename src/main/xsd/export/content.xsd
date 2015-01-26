@@ -121,6 +121,9 @@
 	<xs:complexType name="brandType">
 		<xs:complexContent>
 			<xs:extension base="abstractContentType">
+             <xs:sequence>
+                 <xs:element name="sponsored" type="xs:boolean" default="false" />
+             </xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
