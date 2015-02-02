@@ -5,7 +5,7 @@
         <v11:providerId>se.cmore</v11:providerId>
         <v11:msgId>4365476</v11:msgId>
     </v1:header>
-    <v1:data timestamp="2008-09-29T03:49:45">
+    <v1:data timestamp="2008-09-29T03:49:45Z">
         <v1:brand>
             <id>1234</id>
             <studio>Unspecified</studio>
@@ -198,7 +198,7 @@
             <episodeNumber>1</episodeNumber>
         </v1:content>
         <v1:materialList>
-            <material timestamp="2017-10-20T03:04:37">
+            <material timestamp="2017-10-20T03:04:37Z">
                 <providerId>se.cmore</providerId>
                 <id>85506</id>
                 <materialType>program</materialType>
@@ -212,35 +212,36 @@
         </v1:materialList>
         <v1:eventList>
             <!--Zero or more repetitions:-->
-            <v12:event timestamp="2015-10-10T12:07:56+02:00">
+            <v12:event timestamp="2015-10-10T12:07:56Z">
                 <v12:id>1</v12:id>
                 <v12:channelId>tv4play</v12:channelId>
                 <v12:deviceType>web</v12:deviceType>
                 <v12:productGroup>7</v12:productGroup>
                 <v12:hidden>false</v12:hidden>
                 <v12:groupId sequenceNumber="1">string</v12:groupId>
-                <v12:startTime>2004-01-02T23:23:49</v12:startTime>
-                <v12:endTime>2016-06-03T21:00:00</v12:endTime>
-                <v12:publishTime>2014-01-21T07:38:03+01:00</v12:publishTime>
+                <v12:startTime>2004-01-02T23:23:49Z</v12:startTime>
+		<v12:endTime>2016-06-03T21:00:00Z</v12:endTime>
+                <v12:publishTime>2014-01-21T07:38:03Z</v12:publishTime>
                 <v12:duration>25</v12:duration>
                 <v12:contentIdRef>string</v12:contentIdRef>
                 <v12:materialIdRef>string</v12:materialIdRef>
             </v12:event>
 
-            <v12:event timestamp="2015-10-10T12:07:56+02:00">
+            <v12:event timestamp="2015-10-10T12:07:56Z">
                 <v12:id>2</v12:id>
                 <v12:channelId>tv4play</v12:channelId>
-                <v12:deviceType>web</v12:deviceType>
+                <v12:deviceType>mobile</v12:deviceType>
                 <v12:productGroup>1104</v12:productGroup>
                 <v12:hidden>false</v12:hidden>
                 <v12:groupId sequenceNumber="1">string</v12:groupId>
-                <v12:startTime>2004-01-02T23:23:49</v12:startTime>
-                <v12:endTime>2016-06-03T21:00:00</v12:endTime>
-                <v12:publishTime>2014-01-21T07:38:03+01:00</v12:publishTime>
+                <v12:startTime>2004-01-02T23:23:49Z</v12:startTime>
+                <v12:endTime>2016-06-03T21:00:00Z</v12:endTime>
+                <v12:publishTime>2014-01-21T07:38:03Z</v12:publishTime>
                 <v12:duration>25</v12:duration>
                 <v12:contentIdRef>string</v12:contentIdRef>
                 <v12:materialIdRef>string</v12:materialIdRef>
             </v12:event>
+
         </v1:eventList>
     </v1:data>
 </v1:publish-metadata>
