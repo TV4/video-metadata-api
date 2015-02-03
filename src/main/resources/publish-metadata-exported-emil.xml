@@ -16,6 +16,35 @@
             <titleList>
                 <title language="sv" original="true">Emil</title>
             </titleList>
+            <posterImage>
+                <url>
+                    http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
+                </url>
+                <urlList>
+                    <url language="sv">
+                        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
+                    </url>
+                    <url language="fi">
+                        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
+                    </url>
+                    <url language="db">
+                        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
+                    </url>
+                </urlList>
+                <width>0</width>
+                <height>0</height>
+            </posterImage>
+            <landscapeImage>
+                <url>
+                    http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100
+                </url>
+                <width>0</width>
+                <height>0</height>
+            </landscapeImage>
+            <tagList>
+              <tag type="story">emil</tag>
+              <tag type="other">barn</tag>
+            </tagList>
             <additionalProperties>
             </additionalProperties>
         </v1:brand>
@@ -31,17 +60,17 @@
             </titleList>
             <posterImage>
                 <url>
-                    http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100
+                    http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
                 </url>
                 <urlList>
                     <url language="sv">
-                        http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100
+                        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
                     </url>
                     <url language="fi">
-                        http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100
+                        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
                     </url>
                     <url language="db">
-                        http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100
+                        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
                     </url>
                 </urlList>
                 <width>0</width>
@@ -49,32 +78,15 @@
             </posterImage>
             <landscapeImage>
                 <url>
-                    http://cdn01.diva.canalplus.se/image.aspx?id=109126e7-2a38-4bea-a008-b5e429724c4b&amp;formatid=102
+                    http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100
                 </url>
                 <width>0</width>
                 <height>0</height>
             </landscapeImage>
-            <logoImage>
-                <url>
-                    http://cdn01.diva.canalplus.se/image.aspx?id=109126e7-2a38-4bea-a008-b5e429724c4b&amp;formatid=102
-                </url>
-                <width>0</width>
-                <height>0</height>
-            </logoImage>
-            <promoImage>
-                <url>
-                    http://cdn01.diva.canalplus.se/image.aspx?id=109126e7-2a38-4bea-a008-b5e429724c4b&amp;formatid=102
-                </url>
-                <width>0</width>
-                <height>0</height>
-            </promoImage>
-            <bannerImage>
-                <url>
-                    http://cdn01.diva.canalplus.se/image.aspx?id=109126e7-2a38-4bea-a008-b5e429724c4b&amp;formatid=102
-                </url>
-                <width>0</width>
-                <height>0</height>
-            </bannerImage>
+            <tagList>
+              <tag type="story">emil</tag>
+              <tag type="other">barn</tag>
+            </tagList>
             <additionalProperties>
             </additionalProperties>
             <brandId>1234</brandId>
@@ -131,42 +143,31 @@
             </creditList>
             <posterImage>
                 <url>
-                    http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100
+                    http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
                 </url>
+                <urlList>
+                    <url language="sv">
+                        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
+                    </url>
+                    <url language="fi">
+                        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
+                    </url>
+                    <url language="db">
+                        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
+                    </url>
+                </urlList>
                 <width>0</width>
                 <height>0</height>
             </posterImage>
             <landscapeImage>
                 <url>
-                    http://cdn01.diva.canalplus.se/image.aspx?id=109126e7-2a38-4bea-a008-b5e429724c4b&amp;formatid=102
+                    http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100
                 </url>
                 <width>0</width>
                 <height>0</height>
             </landscapeImage>
-            <logoImage>
-                <url>
-                    http://cdn01.diva.canalplus.se/image.aspx?id=109126e7-2a38-4bea-a008-b5e429724c4b&amp;formatid=102
-                </url>
-                <width>0</width>
-                <height>0</height>
-            </logoImage>
-            <promoImage>
-                <url>
-                    http://cdn01.diva.canalplus.se/image.aspx?id=109126e7-2a38-4bea-a008-b5e429724c4b&amp;formatid=102
-                </url>
-                <width>0</width>
-                <height>0</height>
-            </promoImage>
-            <bannerImage>
-                <url>
-                    http://cdn01.diva.canalplus.se/image.aspx?id=109126e7-2a38-4bea-a008-b5e429724c4b&amp;formatid=102
-                </url>
-                <width>0</width>
-                <height>0</height>
-            </bannerImage>
             <category>
                 <mainCategory>Barn</mainCategory>
-                <subCategory>SAKNAS</subCategory>
             </category>
             <parentalRating>10</parentalRating>
             <externalReferenceList>
@@ -186,6 +187,15 @@
             <allowShare>true</allowShare>
             <allowAds>true</allowAds>
             <drmRestrictions>true</drmRestrictions>
+            <tagList>
+              <tag type="story">emil</tag>
+              <tag type="other">barn</tag>
+              <tag type="other">hyss</tag>
+              <tag type="other">pa-landet</tag>
+              <tag type="subject">byliv</tag>
+              <tag type="subject">familjeliv</tag>
+              <tag type="subject">sverige</tag>
+            </tagList>
             <publicationRights>
                 <loactionRights>
                     <locationRestrictions>
@@ -220,7 +230,7 @@
                 <v12:hidden>false</v12:hidden>
                 <v12:groupId sequenceNumber="1">string</v12:groupId>
                 <v12:startTime>2004-01-02T23:23:49Z</v12:startTime>
-		<v12:endTime>2016-06-03T21:00:00Z</v12:endTime>
+                <v12:endTime>2016-06-03T21:00:00Z</v12:endTime>
                 <v12:publishTime>2014-01-21T07:38:03Z</v12:publishTime>
                 <v12:duration>25</v12:duration>
                 <v12:contentIdRef>string</v12:contentIdRef>
