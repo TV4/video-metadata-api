@@ -6,41 +6,61 @@
 	<!-- -->
 	<xs:element name="material" type="materialType">
 		<xs:annotation>
-			<xs:documentation>Root element for material object</xs:documentation>
+			<xs:documentation>Root element for material object. Material </xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<!-- -->
 	<xs:complexType name="materialType">
 		<xs:sequence>
+			<!-- Redundant as it already exists in api-messages-common:messageHeaderType on every message.
 			<xs:element name="providerId" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>id for the provider, could be for example 'cmore', 'mtv' or 'se.tv4'
+					<xs:documentation>
+						Id for the provider of the material. 
+						Not the 
+						Could be for example 'cmore', 'mtv' or 'se.tv4'
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			-->
 			<xs:element name="id" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>unique id for content, should include provider name
+					<xs:documentation>
+						A unique id for material, should include providerId (located in api-messages-common) e.g. 'se.tv4.UUID' or 'mtv.UUID'
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="materialType" type="materialTypeType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>type of material
+					<xs:documentation>
+						The type of material.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="distributor" type="xs:string" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Name of the distributor of the material, legal entity.
+					<xs:documentation>
+						Name of the distributor of the material, e.g. "Nordic Film Distribution".
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="contentIdRef" type="common:idType"> <!-- todo - same as in content!!! -->
+
+			<xs:element name="contentIdRef" type="common:idType" minOccurs="0"> 
 				<xs:annotation>
-					<xs:documentation>reference to content</xs:documentation>
+					<xs:documentation>
+						No use at the moment but could be used for clips or such at a later date. 
+						If we would start to send clips from louise or metabank that are not scheduled in louise, we would have material for the clip (videoformat, resolution etc) but we would not have an event to connect the material to. 
+						So we need this element to connect the clip (or ad, or something else that does not have a scheduled event) to a content.
+
+						Say we have highlights from a UFC fight or an Idol episode, we have (at least) two usecases:
+						1: It is a clip from a recent episode that we want to use to promote watching of the episode on our VOD platform.
+						In this case we could reference the scheduled event instead of the content, however..
+
+						2: If it is an old clip from a publication event that has expired but we want to use it to promote a new season. Then we need to be able to connect it to a content/season/brand instead as we would not have an event to connect it to.  
+					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+
 			<xs:element name="videoFormat" type="videoFormatType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>format for video, for example HD
@@ -73,11 +93,12 @@
 		</xs:sequence>
 		<xs:attribute name="timestamp" type="xs:dateTime" use="required">
 			<xs:annotation>
-				<xs:documentation>Timestamp when document is created
+				<xs:documentation>Timestamp when the xml message is created. 
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
+
 	<xs:complexType name="videoFormatType">
 		<xs:simpleContent>
 			<xs:extension base="videoFormatTypeType">
@@ -89,6 +110,7 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+
 	<xs:simpleType name="videoFormatTypeType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="576i" />
@@ -99,11 +121,13 @@
 			<xs:enumeration value="other" />
 		</xs:restriction>
 	</xs:simpleType>
+
 	<xs:complexType name="audioListType">
 		<xs:sequence>
 			<xs:element name="format" type="audioType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
-					<xs:documentation>audio format, for example surround
+					<xs:documentation>
+						audio format, for example surround
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -138,11 +162,14 @@
 			<xs:enumeration value="other" />
 		</xs:restriction>
 	</xs:simpleType>
+
+	<!-- Need to add a RFA flag to Subtitles as well? -->
 	<xs:complexType name="subtitleListType">
 		<xs:sequence>
 			<xs:element name="subtitle" type="subtitleType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
-					<xs:documentation>reference to a subtitle item, for example a teletext page or a subtitle file
+					<xs:documentation>
+						reference to a subtitle item, for example a teletext page or a subtitle file
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -172,7 +199,8 @@
 		<xs:sequence>
 			<xs:element name="accessibilityList" type="accessibilityType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
-					<xs:documentation>reference to a accessibility item, for example a hearing impaired subtitle
+					<xs:documentation>
+						reference to a accessibility item, for example a hearing impaired subtitle
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -198,11 +226,13 @@
 			<xs:enumeration value="spokenSubtitle" /><!-- not used by TV4 -->
 		</xs:restriction>
 	</xs:simpleType>
+
 	<xs:complexType name="mediaListType">
 		<xs:sequence>
 			<xs:element name="media" type="mediaType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+
 	<xs:simpleType name="materialReferenceTypeType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="video" />
@@ -211,11 +241,15 @@
 			<xs:enumeration value="graphics" />
 		</xs:restriction>
 	</xs:simpleType>
+
 	<xs:complexType name="mediaType">
 		<!-- Om flera segment finns, då behövs ordning anges. Hämtas idag från Media i Louise. -->
 		<xs:annotation>
-			<xs:documentation>url string value is an id, uri, url file path or any other reference to the media file.
-				Depends on th context.
+			<xs:documentation>
+				url string value is an id, uri, url file path or any other reference to the media file.
+				Depends on th context. 
+
+				E.g. for Tv4 this mostly is a filename name "PGMxxxxx", but for Cmore this could be the path to a specific videofile on a FTP-server. 
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
@@ -246,6 +280,14 @@
 				</xs:simpleType>
 			</xs:element>
 			<xs:element name="segmentList" type="segmentListType" />
+			<xs:element name="rfa" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>
+						"Ready For Airing": This flag will be set to true if the media has been checked by QC (Quality Control).
+						If this flag is not set to true it means that the file is not yet availble.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="segmentListType">
@@ -411,9 +453,17 @@
 			<xs:enumeration value="disallow" />
 		</xs:restriction>
 	</xs:simpleType>
+	
 	<xs:complexType name="materialListType">
+		<xs:annotation>
+			<xs:documentation>
+				This is used for better readability in higher nodes. 
+				I.e instead of having a sequence of materialTypes in the publishType, just add an element with this type.
+			</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="material" type="materialType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+
 </xs:schema>

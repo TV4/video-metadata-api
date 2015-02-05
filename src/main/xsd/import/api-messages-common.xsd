@@ -9,7 +9,8 @@
 	<!-- Message definitions -->
 	<xs:element name="response">
 		<xs:annotation>
-			<xs:documentation>Root element for generic meta-data response messages
+			<xs:documentation>
+				Root element for generic meta-data response messages
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
@@ -28,18 +29,19 @@
 		<xs:sequence>
 			<xs:element name="providerId" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>Unique id for the provider, could be for example
+					<xs:documentation>
+						Unique id for the provider, could be for example
 						'se.tv4', 'com.cmore', 'se.nyhetsbolaget', ... ID defined by
-						receiver and
-						agreed with sender.
+						receiver and agreed with sender.
+						The providerId is used to identify the owner of the rights for the data in the message.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="msgId" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>Id that is the unique id for asset, unique for each provider.
-						If receiver detects a gap in the sequence number it can issue a query to the source service in
-						order to asynchronously resend the message with the missing seqnr.
+					<xs:documentation>
+						Id that is the unique id for asset, unique for each provider.
+						Will use a Java generated UUID. (Could be used when a auditlog is available to identify a sent messsage)
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>

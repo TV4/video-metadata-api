@@ -19,13 +19,17 @@
 		<xs:sequence>
 			<xs:element name="id" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>unique id for the event, should start with provider name, for example 'se.tv4.123456'
+					<xs:documentation>
+						This is the eventId from the scheduled event in louise.
+						Should start with provider name, for example 'se.tv4.123456'
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="channelId" type="common:idType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>id for the current service or channel, could be for example 'se.tv4.tv4play'
+					<xs:documentation>
+						id for the current service or channel, could be for example 'se.tv4.tv4play'.
+						This specefies the 
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -41,8 +45,11 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- Why publications rights? We should only send publication events -->
 			<xs:element name="publicationRights" type="publicationRightsType">
 			</xs:element>
+
+			<!-- Description on events? -->
 			<xs:element name="descriptionList" type="descriptionListLangType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
@@ -103,11 +110,12 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+
 	<xs:complexType name="eventType">
 		<xs:complexContent>
 			<xs:extension base="embeddedEventType">
 				<xs:sequence>
-					<xs:element name="embeddedEventList" type="embeddedEventListType" minOccurs="0">
+					<xs:element name="embeddedEventList" type="embeddedEventType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>list of events that occurs as part of current event.
 							</xs:documentation>
@@ -123,6 +131,7 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	
 	<xs:complexType name="publicationRightsType">
 		<xs:complexContent>
 			<xs:extension base="common:rightsType">
@@ -138,21 +147,31 @@
 			<xs:pattern value="\w+"></xs:pattern>
 		</xs:restriction>
 	</xs:simpleType>
+	<!-- remove? -->
 	<xs:complexType name="embeddedEventListType">
 		<xs:sequence>
 			<xs:element name="event" type="embeddedEventType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	
 	<xs:complexType name="basicEventListType">
 		<xs:sequence>
 			<xs:element name="event" type="basicEventType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- remove? -->
 	<xs:complexType name="eventListType">
+		<xs:annotation>
+			<xs:documentation>
+				This is used for better readability in higher nodes. 
+				I.e instead of having a sequence of eventTypes in the publishType, just add an element with this type.
+			</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="event" type="eventType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="event" type="eventType" minOccurs="1" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	
 	<xs:complexType name="descriptionListLangType">
 		<xs:sequence>
 			<xs:element name="description" type="common:description" minOccurs="0" maxOccurs="unbounded" />
@@ -210,7 +229,8 @@
 	</xs:complexType>
 	<xs:simpleType name="timeSchedulingType">
 		<xs:annotation>
-			<xs:documentation> Planned = the exact planned time E.g. 19:57.45. N.b., exact time is unknown as long as the time is in the future. Public = The
+			<xs:documentation> 
+				Planned = the exact planned time E.g. 19:57.45. N.b., exact time is unknown as long as the time is in the future. Public = The
 				time to use in an EPG. Usually rounded to the nearest previous "5 minut period", e.g. 19:55.00
 			</xs:documentation>
 		</xs:annotation>
