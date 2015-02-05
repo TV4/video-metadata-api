@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Document developed by SVT and TV4 2009, 2010, 2011 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/content/v1" xmlns:common="http://video-metadata.tv4.se/common/v1"
-	xmlns:tagging="http://video-metadata.tv4.se/tagging/v1" targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0"
->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/content/v1"
+			  xmlns:common="http://video-metadata.tv4.se/common/v1"
+			  xmlns:tagging="http://video-metadata.tv4.se/tagging/v1"
+			  targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
 	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
 	<xs:import namespace="http://video-metadata.tv4.se/tagging/v1" schemaLocation="tagging.xsd" />
 
-	<!-- 
- 	-->
+	<!-- -->
 	<xs:element name="content" type="contentSeasonBrandType">
 		<xs:annotation>
 			<xs:documentation>Root element for content object</xs:documentation>
 		</xs:annotation>
 	</xs:element>
-	<!-- 
-	 -->
+	<!-- -->
 	<xs:complexType name="contentSeasonBrandType">
 		<xs:sequence>
 			<xs:element name="brand" type="brandType" minOccurs="0" />
@@ -54,7 +53,8 @@
 			</xs:element>
 			<xs:element name="titleList" type="titleListType">
 				<xs:annotation>
-					<xs:documentation>Title list for content. At least one occurrence with the language used in the market/country displaying the content.
+					<xs:documentation>Title list for content. At least one occurrence with the language used in the
+						market/country displaying the content.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -67,12 +67,6 @@
 			<xs:element name="commentList" type="commentListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>List of comments, that is internal descriptions not to show externally.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="sport" type="sportType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>For content describing sport material
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -94,25 +88,19 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="imageList" type="imageListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>list of content related images.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="categoryList" type="categoryListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Category path expression</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="adCategoryList" type="categoryListType" minOccurs="0">
+            <xs:element name="posterImage" type="imageType" minOccurs="0" />
+            <xs:element name="landscapeImage" type="imageType" minOccurs="0" />
+            <xs:element name="logoImage" type="imageType" minOccurs="0" />
+            <xs:element name="promoImage" type="imageType" minOccurs="0" />
+            <xs:element name="bannerImage" type="imageType" minOccurs="0" />
+			<xs:element name="category" type="categoryType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Category path expression</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="parentalRating" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Parental rating 0-18y</xs:documentation>
+					<xs:documentation>Parental rating 0-18y. Empty = 0 => No restriction</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:long">
@@ -133,6 +121,9 @@
 	<xs:complexType name="brandType">
 		<xs:complexContent>
 			<xs:extension base="abstractContentType">
+             <xs:sequence>
+                 <xs:element name="sponsored" type="xs:boolean" default="false" />
+             </xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -147,13 +138,14 @@
 					</xs:element>
 					<xs:element name="seasonNumber" type="xs:long" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>season number for the brand
+							<xs:documentation>Season number for the brand.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="numberOfEpisodes" type="xs:long" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>If the content belongs to a serie/season, this is the total number of episodes in that serie/season.
+							<xs:documentation>If the content belongs to a serie/season, this is the total number of episodes in
+								that serie/season.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -165,11 +157,15 @@
 		<xs:complexContent>
 			<xs:extension base="abstractContentType">
 				<xs:sequence>
-					<!-- <brandOrSeasonId> <type>season</type> <id>12354</id> </brandOrSeasonId> <xs:element name="brandOrSeasonId" type="xs:string" minOccurs="0"> <xs:annotation> 
-						<xs:documentation>id for season, not unique</xs:documentation> </xs:annotation> </xs:element> Alternativt -->
+					<xs:element name="sport" type="sportType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>For content describing sport material
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 					<xs:element name="vmanId" type="xs:string" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>vman id for asset.
+							<xs:documentation>VMAN id for asset.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -184,9 +180,22 @@
 							<xs:documentation>id for season, not unique. Only present if content is connected to a season.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
+                    <xs:element name="live" type="xs:boolean" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>indicates if this event is live.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="addProviderLogo" type="xs:boolean" default="true" />
+                    <xs:element name="allowShare" type="xs:boolean" default="true" />
+        			<xs:element name="allowAds" type="xs:boolean" default="true" />
+        			<xs:element name="drmRestrictions" type="xs:boolean" default="true" />
+                    <xs:element name="publicationRights" type="publicationRightsType">
+                 			</xs:element>
 					<xs:element name="contentIdRef" type="common:idType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Reference to other content entity that is related. Thought use is for a clip or trailer to reference the original content.
+							<xs:documentation>Reference to other content entity that is related. Thought use is for a clip or
+								trailer to reference the original content.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -200,10 +209,16 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+    <xs:complexType name="publicationRightsType">
+   		<xs:complexContent>
+   			<xs:extension base="common:rightsType">
+   			</xs:extension>
+   		</xs:complexContent>
+   	</xs:complexType>
 	<xs:simpleType name="contentTypeType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="program" />
-			<xs:enumeration value="film" />
+			<xs:enumeration value="movie" />
 			<xs:enumeration value="trailer" />
 			<xs:enumeration value="clip" />
 			<xs:enumeration value="ad" />
@@ -225,9 +240,10 @@
 	</xs:complexType>
 	<xs:complexType name="commentListType">
 		<xs:annotation>
-			<xs:documentation>Editorial description that shall not be published, but it can be indexed in a search. Thought usage is to write down descriptiv
-				intro, manuscript or voiceover that applies to the content, Text is not required to be written to be ready for public view, but the content will
-				be indexed and possible to use in a search.
+			<xs:documentation>Editorial description that shall not be published, but it can be indexed in a search. Thought
+				usage is to write down descriptive intro, manuscript or voice-over that applies to the content, Text is not
+				required to be written to be ready for public view, but the content will be indexed and possible to use in a
+				search.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
@@ -236,9 +252,7 @@
 	</xs:complexType>
 	<xs:complexType name="tagListType">
 		<xs:sequence>
-			<xs:element name="subjectTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="storyTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="otherTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="tag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="adTagListType">
@@ -304,8 +318,8 @@
 	</xs:complexType>
 	<xs:simpleType name="descriptionLengthType">
 		<xs:annotation>
-			<xs:documentation>length (and content) of the description e.g, tiny may be 1-25 characters, short 26-140,medium 141-240, long 241-999, extended >
-				1000
+			<xs:documentation>length (and content) of the description e.g, tiny may be 1-25 characters, short 26-140,medium
+				141-240, long 241-999, extended > 1000
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -346,96 +360,46 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="imageRefType">
-		<xs:simpleContent>
-			<xs:extension base="xs:string">
-				<xs:attribute name="orientation">
-					<xs:simpleType>
-						<xs:restriction base="xs:string">
-							<xs:enumeration value="landscape" />
-							<xs:enumeration value="portrait" />
-							<xs:enumeration value="square" />
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:attribute>
-				<xs:attribute name="width">
-					<xs:simpleType>
-						<xs:restriction base="xs:int">
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:attribute>
-				<xs:attribute name="height">
-					<xs:simpleType>
-						<xs:restriction base="xs:int">
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:attribute>
-				<xs:attribute name="unit">
-					<xs:simpleType>
-						<xs:restriction base="xs:string">
-							<xs:enumeration value="px"></xs:enumeration>
-							<xs:enumeration value="cm"></xs:enumeration>
-							<xs:enumeration value="mm"></xs:enumeration>
-							<xs:enumeration value="in"></xs:enumeration>
-							<xs:enumeration value="pt"></xs:enumeration>
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:attribute>
-				<xs:attribute name="purpose">
-					<xs:simpleType>
-						<xs:annotation>
-							<xs:documentation>Set if the images are created for different purposes. TeliaSonera want's only posters. If the attribute is set all other will
-								be dropped.
-							</xs:documentation>
-						</xs:annotation>
-						<xs:restriction base="xs:string">
-							<xs:enumeration value="production"></xs:enumeration>
-							<xs:enumeration value="profile"></xs:enumeration>
-							<xs:enumeration value="banner"></xs:enumeration>
-							<xs:enumeration value="poster"></xs:enumeration>
-							<xs:enumeration value="promo"></xs:enumeration>
-							<xs:enumeration value="press"></xs:enumeration>
-							<xs:enumeration value="logo"></xs:enumeration>
-							<xs:enumeration value="other"></xs:enumeration>
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
+
 	<xs:complexType name="imageType">
 		<xs:sequence>
-			<xs:element name="imageRef" type="imageRefType" />
-			<xs:element name="captionList" type="captionListType" minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="url" type="xs:string" />
+            <xs:element name="urlList" type="urlListType" minOccurs="0">
+         				<xs:annotation>
+         					<xs:documentation>
+         					</xs:documentation>
+         				</xs:annotation>
+         			</xs:element>
+			<xs:element name="width" type="xs:int" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>In unit px.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="height" type="xs:int" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>In unit px.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="captionList" type="captionListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="copyRightList" type="copyRightsListType" minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="copyRightList" type="copyRightsListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
-		<xs:attribute name="priority" type="xs:long">
-			<xs:annotation>
-				<xs:documentation>lower priority number means higher importance
-				</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-        <!--  Removed since implicit given by parent node. <xs:attribute name="type" type="contextType" default="content" /> -->
 	</xs:complexType>
-	<xs:complexType name="imageListType">
-		<xs:annotation>
-			<xs:documentation>priority attribute on image element indicate "sort order", lower priority number means higher importance.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="image" type="imageType" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="urlListType">
+   		<xs:sequence>
+   			<xs:element name="url" type="common:description" minOccurs="0" maxOccurs="unbounded" />
+   		</xs:sequence>
+   	</xs:complexType>
+
 	<xs:complexType name="captionListType">
 		<xs:sequence>
 			<xs:element name="caption" type="common:description" minOccurs="0" maxOccurs="unbounded" />
@@ -454,7 +418,6 @@
 	<xs:complexType name="mediaReferenceType">
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
-				<!-- Removed since implicit given by parent node. <xs:attribute name="type" type="contextType" /> -->
 				<xs:attribute name="priority" type="xs:int">
 					<xs:annotation>
 						<xs:documentation>lower priority number means higher importance
@@ -464,31 +427,21 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	<xs:complexType name="categoryListType">
-		<xs:sequence>
-			<xs:element name="category" type="categoryType" minOccurs="0" maxOccurs="unbounded"></xs:element>
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="categoryType">
 		<xs:annotation>
-			<xs:documentation>Category is synonym with Genre. Two leveles of categorisations are supported: main and sub-category THe primary category is the
-				cateegry with lowest priority value in the list.
+			<xs:documentation>Category is synonym with Genre. Two leveles of categorisations are supported: main and
+				sub-category THe primary category is the category with lowest priority value in the list.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="mainCategory" type="xs:string" />
-			<xs:element name="subCategory" type="xs:string" minOccurs="0" />
+			<xs:element name="subCategory" type="xs:string" />
 		</xs:sequence>
-		<xs:attribute name="priority" type="xs:int" default="1">
-			<xs:annotation>
-				<xs:documentation>lower priority number means higher importance
-				</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
 	</xs:complexType>
 	<xs:complexType name="sportType">
 		<xs:annotation>
-			<xs:documentation> Sports tag that describes the sport event: serie, league, tournament or any other sport event.
+			<xs:documentation>Sports tag that describes the sport event: serie, league, tournament or any other sport
+				event.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>

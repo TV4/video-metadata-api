@@ -3,21 +3,21 @@
 	xmlns:event="http://video-metadata.tv4.se/event/v1" xmlns:material="http://video-metadata.tv4.se/material/v1" xmlns="http://video-metadata.tv4.se/schedule/v1"
 	targetNamespace="http://video-metadata.tv4.se/schedule/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0"
 >
-    <!-- 
+    <!--
       -->
     <xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
 	<xs:import namespace="http://video-metadata.tv4.se/content/v1" schemaLocation="content.xsd" />
 	<xs:import namespace="http://video-metadata.tv4.se/event/v1" schemaLocation="event.xsd" />
 	<xs:import namespace="http://video-metadata.tv4.se/material/v1" schemaLocation="material.xsd" />
 
-    <!-- 
+    <!--
       -->
 	<xs:element name="schedule" type="scheduleType">
 		<xs:annotation>
 			<xs:documentation>Root element for schedule meta-data</xs:documentation>
 		</xs:annotation>
 	</xs:element>
-	<!-- 
+	<!--
 	  -->
 	<xs:complexType name="scheduleType">
 		<xs:sequence>

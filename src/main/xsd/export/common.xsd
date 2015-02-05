@@ -18,7 +18,8 @@
 		<xs:annotation>
 			<xs:documentation>Unique name id, i.e. the normalized textual
 				representation, e.g.: no space, lower case, no diacritic characters.
-				Language attribute can be used to specify a localized name for the
+				Language attribute can be used to specify a
+				localized name for the
 				tag.
 			</xs:documentation>
 		</xs:annotation>
@@ -67,7 +68,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="id" type="xs:string" minOccurs="0" maxOccurs="1">
+			<xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>Data identifier to map this content to in the
 						external provider/partners data
@@ -97,32 +98,27 @@
 			<xs:enumeration value="console" />
 		</xs:restriction>
 	</xs:simpleType>
+    <xs:simpleType name="productGroupType">
+   		<xs:annotation>
+   			<xs:documentation> Identification of the crm product
+   			</xs:documentation>
+   		</xs:annotation>
+   		<xs:restriction base="xs:string">
+   			<xs:pattern value="\w+"></xs:pattern>
+   		</xs:restriction>
+   	</xs:simpleType>
 	<xs:complexType name="rightsType">
 		<xs:sequence>
-			<xs:element name="addProviderLogo" type="xs:boolean" default="true" />
-			<xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="allowAds" type="xs:boolean" default="true" />
-			<xs:element name="drmRestrictions" type="drmRestrictionsType" minOccurs="0" />
-			<xs:element name="locationRestrictions" type="locationRestrictionsType" minOccurs="0" />
-			<xs:element name="userOrGroupRestrictions" type="userOrGroupRestrictionsType" minOccurs="0" />
-			<xs:element name="shareToList">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="shareTo" type="shareToType" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:documentation>youtube, facebook, twitter, ... (should/could
-									be tags?)
-								</xs:documentation>
-							</xs:annotation>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
+            <xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
+			<xs:element name="loactionRights" type="locationRightsType" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:simpleType name="drmRestrictionsType">
-		<xs:restriction base="xs:boolean"></xs:restriction>
-	</xs:simpleType>
+    <xs:complexType name="locationRightsType">
+        <xs:sequence>
+            <xs:element name="productGroup" minOccurs="0" maxOccurs="1" type="productGroupType" />
+            <xs:element name="locationRestrictions" type="locationRestrictionsType" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
 	<xs:complexType name="locationRestrictionsType">
 		<xs:annotation>
 			<xs:documentation>First add the includes, then remove the excludes.
@@ -132,11 +128,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="includeIpOrNetworks" type="ipAddressTypeListType" />
 			<xs:element name="includeCountries" type="countryListType" />
-			<xs:element name="exludeCountries" type="countryListType" />
-			<xs:element name="includeLocals" type="nameListType" />
-			<xs:element name="exludeLocals" type="nameListType" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="userOrGroupRestrictionsType">
@@ -199,6 +191,17 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+
+	<xs:simpleType name="aspectRatioType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="4:3" />
+			<xs:enumeration value="16:9" />
+			<xs:enumeration value="2.35:1" /><!-- CinemaScope -->
+			<xs:enumeration value="21:9" />
+			<xs:enumeration value="other" />
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="timeShiftDeviceTypeRights">
 		<xs:sequence>
 			<xs:element name="catchUpRights" type="catchUpRightsType" minOccurs="0" maxOccurs="1">
