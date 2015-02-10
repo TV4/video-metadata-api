@@ -67,6 +67,10 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+
+			<xs:element name="mediaList" type="mediaListType" minOccurs="0">
+            </xs:element>
+            
 			<xs:element name="audioList" type="audioListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of available audio for this material
