@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns6:publish-metadata xmlns:ns2="http://video-metadata.tv4.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv4.se/api-messages-common/v1"
+	xmlns:ns4="http://video-metadata.tv4.se/schedule/v1" xmlns:ns5="http://video-metadata.tv4.se/tagging/v1"
+	xmlns:ns6="http://video-metadata.tv4.se/api-messages/v1" xmlns:ns7="http://video-metadata.tv4.se/publish/v1"
+	xmlns:ns8="http://video-metadata.tv4.se/material/v1" xmlns:ns9="http://video-metadata.tv4.se/content/v1">
+	<ns6:header>
+		<ns3:providerId>se.tv4</ns3:providerId>
+		<ns3:msgId>83aa4e39-3cd4-41f4-a68f-5c2ff3a88031</ns3:msgId>
+	</ns6:header>
+	<ns6:data timestamp="2015-02-12T12:11:11.432+01:00">
+		<ns7:brand>
+			<id>43126612</id>
+			<titleList>
+				<title original="false" language="sv">Två panka tjejer</title>
+			</titleList>
+			<descriptionList>
+				<description length="medium" language="sv">Dramaserie om de
+					två tjejerna Max och Caroline som kommer från två helt olika
+					världar men förs samman av ödet.</description>
+			</descriptionList>
+		</ns7:brand>
+		<ns7:season>
+			<id>3777727</id>
+			<productionYear>2011</productionYear>
+			<countryOfOriginList>
+				<country>US</country>
+			</countryOfOriginList>
+			<titleList>
+				<title original="false" language="sv">Säsong 1</title>
+			</titleList>
+			<descriptionList>
+				<description language="sv">Två panka tjejer är en amerikansk
+					komediserie som handlar om Caroline och Max, två tjejer med helt
+					olika bakgrund som ödet för samman.</description>
+				<description length="short" language="sv">Amerikansk
+					komediserie från 2011/2012.</description>
+				<description length="medium" language="sv">När den förmögna
+					Carolines pappa hamnar i fängelse efter att ha svindlat bort både
+					sin egen familjs och andras förmögenheter blir hon tvungen att
+					börja arbeta. Hon vill inte visa sig på Manhattan och söker därför
+					jobb på ett sunkigt hak i Brooklyn. Där möter hon Max som är hennes
+					raka motsats.</description>
+				<description length="long" language="sv">När den förmögna
+					Carolines pappa hamnar i fängelse efter att ha svindlat bort både
+					sin egen familjs och andras förmögenheter blir hon tvungen att
+					börja arbeta. Hon vill inte visa sig på Manhattan och söker därför
+					jobb på ett sunkigt hak i Brooklyn.
+
+					Där möter hon Max som är hennes raka motsats. Max har kämpat sig upp
+					från fattiga förhållanden genom hårt slit. Max låter Caroline
+					flytta in hos henne och trots sina olikheter och skilda syn på
+					livet blir de vänner. De bestämmer sig för att samla ihop pengar
+					och starta ett eget cupcake-bageri.
+				</description>
+				<description length="extended" language="sv">Två panka tjejer
+					är en amerikansk komediserie från 2012 i 24 avsnitt.
+
+					När den förmögna Carolines (Beth Behrs) pappa hamnar i fängelse efter
+					att ha svindlat bort både sin familjs och andras förmögenheter blir
+					hon tvungen att börja arbeta. Hon vill inte visa sig på Manhattan
+					och söker därför jobb på ett sunkigt hak i Brooklyn. Där möter hon
+					Max (Kat Dennings) som är hennes raka motsats. Max har kämpat sig
+					fram från fattiga förhållanden genom hårt slit.
+
+					Max låter Caroline flytta in hos henne och trots sina olikheter och
+					skilda syn på livet blir de vänner. De bestämmer sig för att samla
+					ihop pengar och starta ett eget cupcake-bageri.
+				</description>
+			</descriptionList>
+			<imageList>
+				<image>
+					<url>http://oldpress.tv4.se/file.aspx?imagefileid=412685</url>
+					<width>1000</width>
+					<height xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:int">260</height>
+					<purpose>other</purpose>
+				</image>
+			</imageList>
+			<category>
+				<mainCategory>Aktuellt</mainCategory>
+			</category>
+			<brandId>43126612</brandId>
+			<seasonNumber>1</seasonNumber>
+			<numberOfEpisodes>24</numberOfEpisodes>
+		</ns7:season>
+		<ns7:content>
+			<id>3777731</id>
+			<productionYear>2011</productionYear>
+			<countryOfOriginList>
+				<country>US</country>
+			</countryOfOriginList>
+			<titleList>
+				<title original="false" language="sv">Två panka tjejer</title>
+				<title original="false" language="sv">Pilot</title>
+			</titleList>
+			<descriptionList>
+				<description length="medium" language="sv">Reprisstart. När
+					Carolines pappa döms till fängelse för förskingring förlorar hon
+					hela sin förmögenhet och tvingas lämna livet på Manhattan. I ett
+					desperat försök att försörja sig söker hon jobb på en sylta i
+					Brooklyn. Där arbetar Max, som inte ser med blida ögon på sin nya
+					kollega.</description>
+				<description length="long" language="sv">När Carolines pappa
+					döms till fängelse för förskingring förlorar hon hela sin
+					förmögenhet och tvingas lämna livet på Manhattan. I ett desperat
+					försök att försörja sig söker hon jobb på en sylta i Brooklyn. Där
+					arbetar Max, som inte ser med blida ögon på sin nya kollega. Men
+					efter en stressig arbetskväll tillsammans ändrar Max uppfattning.
+
+					När Max senare hittar Caroline sovande på tunnelbanan inser hon att
+					Caroline inte har någonstans att ta vägen och erbjuder henne en
+					sängplats.
+				</description>
+			</descriptionList>
+			<creditList>
+				<credit>
+					<name>Kat Dennings</name>
+					<rolename>Max Black</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>99300</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+				<credit>
+					<name>Beth Behrs</name>
+					<rolename>Caroline Channing</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>658181</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+				<credit>
+					<name>Brooke Lyons</name>
+					<rolename>Peach Landis</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>635047</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+				<credit>
+					<name>Garret Morris</name>
+					<rolename>Earl</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>23649</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+				<credit>
+					<name>Jonathan Kite</name>
+					<rolename>Oleg</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>46456134</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+				<credit>
+					<name>Matthew Moy</name>
+					<rolename>Han Lee</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>47029468</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+				<credit>
+					<name>Shoshana Bush</name>
+					<rolename>Nikki</rolename>
+					<function>Skådespelare</function>
+					<externalReferenceList>
+						<externalReference>
+							<provider>se.tv4</provider>
+							<id>661383</id>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+			</creditList>
+			<imageList>
+				<image>
+					<url>http://image.tv4.se/cb/21/c1/FILE_13170295-BF37-45D7-91D7-0270CEE4324D.jpg
+					</url>
+					<width>2000</width>
+					<height xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:int">1403</height>
+					<purpose>press</purpose>
+				</image>
+			</imageList>
+			<category>
+				<mainCategory>Sitcom</mainCategory>
+			</category>
+			<brandId>43126612</brandId>
+			<seasonId>3777727</seasonId>
+			<episodeNumber>1</episodeNumber>
+		</ns7:content>
+		<ns7:materialList>
+			<material>
+				<mediaList>
+					<media>
+						<mediaRef>PGM1020038066101</mediaRef>
+						<type>program</type>
+						<duration></duration>
+						<bitrate>0</bitrate>
+						<framerate>0</framerate>
+						<segmentList />
+						<rfa>true</rfa>
+					</media>
+					<media>
+						<mediaRef>PGM1020038066101</mediaRef>
+						<type>program</type>
+						<duration></duration>
+						<bitrate>0</bitrate>
+						<framerate>0</framerate>
+						<segmentList />
+						<rfa>true</rfa>
+					</media>
+					<media>
+						<mediaRef>PGM1020038066101</mediaRef>
+						<type>program</type>
+						<duration></duration>
+						<bitrate>0</bitrate>
+						<framerate>0</framerate>
+						<segmentList />
+						<rfa>true</rfa>
+					</media>
+				</mediaList>
+				<subtitleList>
+					<subtitle rfa="true" format="open" language="sv">SB075099
+					</subtitle>
+				</subtitleList>
+			</material>
+		</ns7:materialList>
+		<ns7:eventList>
+			<ns2:event timestamp="2015-02-12T12:09:45.214+01:00">
+				<ns2:id>200000117</ns2:id>
+				<ns2:channelId>TV4 Play</ns2:channelId>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:timeList>
+					<ns2:time type="public">
+						<ns2:startTime>2015-01-19T00:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2015-02-28T00:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>3777731</ns2:contentIdRef>
+				<ns2:materialIdRef>4119868</ns2:materialIdRef>
+			</ns2:event>
+		</ns7:eventList>
+	</ns6:data>
+</ns6:publish-metadata>
+
