@@ -6,9 +6,9 @@
 	xmlns:ns8="http://video-metadata.tv4.se/material/v1" xmlns:ns9="http://video-metadata.tv4.se/content/v1">
 	<ns6:header>
 		<ns3:providerId>se.tv4</ns3:providerId>
-		<ns3:msgId>83aa4e39-3cd4-41f4-a68f-5c2ff3a88031</ns3:msgId>
+		<ns3:msgId>b778b269-ccf6-4ad0-9ba0-ff4681373648</ns3:msgId>
 	</ns6:header>
-	<ns6:data timestamp="2015-02-12T12:11:11.432+01:00">
+	<ns6:data timestamp="2015-02-12T15:26:32.948+01:00">
 		<ns7:brand>
 			<id>43126612</id>
 			<titleList>
@@ -210,6 +210,11 @@
 			<episodeNumber>1</episodeNumber>
 		</ns7:content>
 		<ns7:materialList>
+			<material timestamp="2015-02-12T15:26:32.947+01:00">
+				<id>3777731</id>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">1080i</videoFormat>
+			</material>
 			<material>
 				<mediaList>
 					<media>
@@ -247,7 +252,7 @@
 			</material>
 		</ns7:materialList>
 		<ns7:eventList>
-			<ns2:event timestamp="2015-02-12T12:09:45.214+01:00">
+			<ns2:event timestamp="2015-02-12T15:26:32.947+01:00">
 				<ns2:id>200000117</ns2:id>
 				<ns2:channelId>TV4 Play</ns2:channelId>
 				<ns2:rerun>false</ns2:rerun>
@@ -263,4 +268,3 @@
 		</ns7:eventList>
 	</ns6:data>
 </ns6:publish-metadata>
-
