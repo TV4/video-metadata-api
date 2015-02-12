@@ -188,6 +188,7 @@
 					</xs:annotation>
 				</xs:attribute>
 				<xs:attribute name="format" type="subtitleFormatType" />
+				<xs:attribute name="rfa" type="xs:boolean"/>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
