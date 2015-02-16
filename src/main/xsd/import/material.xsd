@@ -69,6 +69,10 @@
 			</xs:element>
 
 			<xs:element name="mediaList" type="mediaListType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>list of available media for this material
+					</xs:documentation>
+				</xs:annotation>
             </xs:element>
             
 			<xs:element name="audioList" type="audioListType" minOccurs="0">
@@ -77,16 +81,19 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+
 			<xs:element name="aspectRatio" type="common:aspectRatioType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>aspect ratio for the material</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+
 			<xs:element name="subtitleList" type="subtitleListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of available subtitles</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			
 			<xs:element name="accessibilityList" type="accessibilityListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of available accessibility types
@@ -371,12 +378,15 @@
 				<xs:sequence>
 					<xs:element name="deviceRights" type="deviceTypeOutPutRights" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>list of devices affected by the right</xs:documentation>
+							<xs:documentation>
+								list of devices affected by the right (Not currently used by the import)
+							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="noLinearTransmission" type="transmissionDeviceTypeRights" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Linear transmision may not be sent to these devices.
+							<xs:documentation>
+								Linear transmision may not be sent to these devices. (Not currently used by the import)
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -388,8 +398,9 @@
 		<xs:complexContent>
 			<xs:extension base="deviceTypeRightsType">
 				<xs:annotation>
-					<xs:documentation>Can be used in example for marking a tv-show in the schedule that aren't allowed to be
-						transmitted to mobile clients
+					<xs:documentation>
+						Can be used in example for marking a tv-show in the schedule that isn't allowed to be
+						transmitted to mobile clients (Not currently used by the import)
 					</xs:documentation>
 				</xs:annotation>
 			</xs:extension>

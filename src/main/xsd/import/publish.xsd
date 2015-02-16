@@ -35,7 +35,8 @@
 		</xs:sequence>
 		<xs:attribute name="timestamp" type="xs:dateTime" use="required">
 			<xs:annotation>
-				<xs:documentation>Timestamp when document is created
+				<xs:documentation>
+					Timestamp when document is created
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>

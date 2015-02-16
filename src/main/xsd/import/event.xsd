@@ -225,6 +225,8 @@
 			</xs:element>
 			<xs:element name="duration" type="timecode" minOccurs="0" />
 		</xs:sequence>
+
+		<!-- Should maybe be minOccurs 0 or removed completly -->
 		<xs:attribute name="type" type="timeSchedulingType" default="public" />
 	</xs:complexType>
 	<xs:simpleType name="timeSchedulingType">
