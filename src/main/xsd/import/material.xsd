@@ -261,7 +261,9 @@
 				url string value is an id, uri, url file path or any other reference to the media file.
 				Depends on th context. 
 
-				E.g. for Tv4 this mostly is a filename name "PGMxxxxx", but for Cmore this could be the path to a specific videofile on a FTP-server. 
+				E.g. for Tv4 this mostly is a filename name "PGMxxxxx", but for Cmore this could be the path to a specific videofile on a FTP-server.
+
+				If there are several mediaTypes in a Medialist the order of the mediaTypes is gouverned by the tcin and tcout elements
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
@@ -291,7 +293,27 @@
 					<xs:restriction base="xs:int" />
 				</xs:simpleType>
 			</xs:element>
+			<xs:element name="in" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>
+						Number of frames from where the media starts.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="out" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>
+						Number of frames from where the media ends.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!--
+			<xs:element name="breakType" type="segmentTypeType" minOccurs="0" />
+			-->
+			<!-- segmentList is not neccesary 
 			<xs:element name="segmentList" type="segmentListType" />
+			-->
+
 			<xs:element name="rfa" type="xs:boolean">
 				<xs:annotation>
 					<xs:documentation>
@@ -302,6 +324,8 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	
+	<!-- segmentList is not neccesary
 	<xs:complexType name="segmentListType">
 		<xs:sequence>
 			<xs:element name="segment" type="segmentType" minOccurs="0" maxOccurs="unbounded" />
@@ -324,12 +348,15 @@
 			<xs:enumeration value="bad" />
 		</xs:restriction>
 	</xs:simpleType>
+	-->
+
 	<xs:simpleType name="timecodeType">
 		<xs:annotation>
-			<xs:documentation>hh:mm:ss:SSS</xs:documentation>
+			<xs:documentation>
+				Number of frames from where the media starts or ends. 
+			</xs:documentation>
 		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:pattern value="\d{2}:\d{2}:\d{2}:\d{3}" />
+		<xs:restriction base="xs:int"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="rightsListType">
