@@ -177,7 +177,7 @@
 	<!-- Need to add a RFA flag to Subtitles as well? -->
 	<xs:complexType name="subtitleListType">
 		<xs:sequence>
-			<xs:element name="subtitle" type="subtitleType" minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="subtitle" type="subtitleType" rfa="xs:boolean" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>
 						reference to a subtitle item, for example a teletext page or a subtitle file
@@ -259,26 +259,32 @@
 	</xs:simpleType>
 
 	<xs:complexType name="mediaType">
-		<!-- Om flera segment finns, då behövs ordning anges. Hämtas idag från Media i Louise. -->
-		<xs:annotation>
-			<xs:documentation>
-				url string value is an id, uri, url file path or any other reference to the media file.
-				Depends on th context. 
-
-				E.g. for Tv4 this mostly is a filename name "PGMxxxxx", but for Cmore this could be the path to a specific videofile on a FTP-server.
-
-				If there are several mediaTypes in a Medialist the order of the mediaTypes is gouverned by the tcin and tcout elements
-			</xs:documentation>
-		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="mediaRef" type="xs:string"></xs:element>
-			<xs:element name="type" type="materialTypeType">
+			<xs:element name="mediaRef" type="xs:string">
 				<xs:annotation>
-					<xs:documentation>Type of material, for example video or audio.
+					<xs:documentation>
+						url string value is an id, uri, url file path or any other reference to the media file.
+						Depends on the context. 
+						E.g. for Tv4 this mostly is a filename named "PGMxxxxx", but for Cmore this could be the path to a specific videofile on a FTP-server.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+
+			<xs:element name="type" type="materialTypeType">
+				<xs:annotation>
+					<xs:documentation>
+						Type of material, for example video or audio.
+						This is currently always set to "program" as no other media will be sent from louise
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
 			<xs:element name="duration" type="timecodeType" minOccurs="0" />
+				<xs:annotation>
+					<xs:documentation>
+						The duration of the material in frames.
+					</xs:documentation>
+				</xs:annotation>
 			<xs:element name="bitrate" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>If applicable, bitrate for the material in bps
@@ -288,6 +294,7 @@
 					<xs:restriction base="xs:int" />
 				</xs:simpleType>
 			</xs:element>
+
 			<xs:element name="framerate" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
@@ -298,17 +305,35 @@
 					<xs:restriction base="xs:int" />
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="in" type="xs:int">
+
+			<xs:element name="in" type="timecodeType">
 				<xs:annotation>
 					<xs:documentation>
-						Number of frames from where the media starts.
+						Number of frames from where the mediasegment starts in the referenced file/tape.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="out" type="xs:int">
+
+			<xs:element name="out" type="timecodeType">
 				<xs:annotation>
 					<xs:documentation>
-						Number of frames from where the media ends.
+						Number of frames from where the mediasegment ends in the referenced file/tape.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="use" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						A string, usually an "A" follwed by a number e.g. A1, A2, etc.
+						If there are several mediarefs in a publish with different mediaIds this decides their order according to the number after the letter.
+
+						Example:
+						Say that we have a medialist with three media where two of the three have the same mediaRef but the third differs. 
+						The two with the same mediaRef will then also have the same use element, in this case "A1". 
+						The third media that have a different mediaRef will have a different use element, "A2".
+						This means that the media with use "A1" should be used before the media with "A2" when editing or transcoding the publish.
+						The order of the media with the same mediaRef and use is determined by the "in" and "out" elements.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -368,7 +393,8 @@
 	<xs:simpleType name="timecodeType">
 		<xs:annotation>
 			<xs:documentation>
-				Number of frames from where the media starts or ends. 
+				Timecode is set to number of frames to avoid conversion problems.
+				Conversion to time should be done when a framrate is known at the endpoint.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:int"/>
