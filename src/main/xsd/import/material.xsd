@@ -290,7 +290,8 @@
 			</xs:element>
 			<xs:element name="framerate" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>If applicable, framerate for the material in fps
+					<xs:documentation>
+						If applicable, framerate for the material in fps
 					</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
