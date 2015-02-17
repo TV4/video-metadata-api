@@ -6,9 +6,9 @@
 	xmlns:ns8="http://video-metadata.tv4.se/material/v1" xmlns:ns9="http://video-metadata.tv4.se/content/v1">
 	<ns6:header>
 		<ns3:providerId>se.tv4</ns3:providerId>
-		<ns3:msgId>b778b269-ccf6-4ad0-9ba0-ff4681373648</ns3:msgId>
+		<ns3:msgId>421d231a-5335-4dc7-9a17-9545ca4077a1</ns3:msgId>
 	</ns6:header>
-	<ns6:data timestamp="2015-02-12T15:26:32.948+01:00">
+	<ns6:data timestamp="2015-02-16T17:10:04.492+01:00">
 		<ns7:brand>
 			<id>43126612</id>
 			<titleList>
@@ -70,11 +70,12 @@
 			</descriptionList>
 			<imageList>
 				<image>
-					<url>http://oldpress.tv4.se/file.aspx?imagefileid=412685</url>
+					<url>http://image.tv4.se/87/f3/41/FILE_3E478327-E46E-4CB9-B4F9-DB107FDA9529.jpg
+					</url>
 					<width>1000</width>
 					<height xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:int">260</height>
-					<purpose>other</purpose>
+					<purpose>banner</purpose>
 				</image>
 			</imageList>
 			<category>
@@ -210,7 +211,7 @@
 			<episodeNumber>1</episodeNumber>
 		</ns7:content>
 		<ns7:materialList>
-			<material timestamp="2015-02-12T15:26:32.947+01:00">
+			<material timestamp="2015-02-16T17:10:04.492+01:00">
 				<id>3777731</id>
 				<materialType>program</materialType>
 				<videoFormat threeD="false">1080i</videoFormat>
@@ -220,28 +221,28 @@
 					<media>
 						<mediaRef>PGM1020038066101</mediaRef>
 						<type>program</type>
-						<duration></duration>
-						<bitrate>0</bitrate>
-						<framerate>0</framerate>
-						<segmentList />
+						<duration>16863</duration>
+						<in>90000</in>
+						<out>106863</out>
+						<use>A1</use>
 						<rfa>true</rfa>
 					</media>
 					<media>
 						<mediaRef>PGM1020038066101</mediaRef>
 						<type>program</type>
-						<duration></duration>
-						<bitrate>0</bitrate>
-						<framerate>0</framerate>
-						<segmentList />
+						<duration>8535</duration>
+						<in>106863</in>
+						<out>115398</out>
+						<use>A1</use>
 						<rfa>true</rfa>
 					</media>
 					<media>
 						<mediaRef>PGM1020038066101</mediaRef>
 						<type>program</type>
-						<duration></duration>
-						<bitrate>0</bitrate>
-						<framerate>0</framerate>
-						<segmentList />
+						<duration>6127</duration>
+						<in>115398</in>
+						<out>121525</out>
+						<use>A1</use>
 						<rfa>true</rfa>
 					</media>
 				</mediaList>
@@ -252,7 +253,7 @@
 			</material>
 		</ns7:materialList>
 		<ns7:eventList>
-			<ns2:event timestamp="2015-02-12T15:26:32.947+01:00">
+			<ns2:event timestamp="2015-02-16T17:10:04.492+01:00">
 				<ns2:id>200000117</ns2:id>
 				<ns2:channelId>TV4 Play</ns2:channelId>
 				<ns2:rerun>false</ns2:rerun>
