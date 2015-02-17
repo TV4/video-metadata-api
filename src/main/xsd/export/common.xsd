@@ -110,7 +110,7 @@
 	<xs:complexType name="rightsType">
 		<xs:sequence>
             <xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="loactionRights" type="locationRightsType" minOccurs="0" />
+			<xs:element name="locationRights" type="locationRightsType" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
     <xs:complexType name="locationRightsType">
