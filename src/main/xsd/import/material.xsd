@@ -177,7 +177,7 @@
 	<!-- Need to add a RFA flag to Subtitles as well? -->
 	<xs:complexType name="subtitleListType">
 		<xs:sequence>
-			<xs:element name="subtitle" type="subtitleType" rfa="xs:boolean" minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="subtitle" type="subtitleType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>
 						reference to a subtitle item, for example a teletext page or a subtitle file
@@ -279,12 +279,13 @@
 				</xs:annotation>
 			</xs:element>
 
-			<xs:element name="duration" type="timecodeType" minOccurs="0" />
+			<xs:element name="duration" type="timecodeType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						The duration of the material in frames.
 					</xs:documentation>
 				</xs:annotation>
+			</xs:element>
 			<xs:element name="bitrate" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>If applicable, bitrate for the material in bps
@@ -338,15 +339,6 @@
 				</xs:annotation>
 			</xs:element>
 			
-			<xs:element name="use" type="xs:string">
-				<xs:annotation>
-					<xs:documentation>
-						If media is divided into multiple files having different
-						mediaId, then this element indicates the order in which
-						the files should be played
-					</xs:documentation>
-				</xs:annotation>			
-			</xs:element>
 			<!--
 			<xs:element name="breakType" type="segmentTypeType" minOccurs="0" />
 			-->
