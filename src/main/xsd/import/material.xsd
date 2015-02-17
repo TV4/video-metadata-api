@@ -204,7 +204,11 @@
 			<xs:enumeration value="closed" />
 			<!-- text-tv text -->
 			<xs:enumeration value="open" />
+			<xs:enumeration value="openAndTeletext" />
+			<xs:enumeration value="teletext" />
+			<xs:enumeration value="dvbText" />
 			<xs:enumeration value="other" />
+			<xs:enumeration value="N/A" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="accessibilityListType">
@@ -307,6 +311,16 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			
+			<xs:element name="use" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						If media is divided into multiple files having different
+						mediaId, then this element indicates the order in which
+						the files should be played
+					</xs:documentation>
+				</xs:annotation>			
+			</xs:element>
 			<!--
 			<xs:element name="breakType" type="segmentTypeType" minOccurs="0" />
 			-->
@@ -357,7 +371,6 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:int"/>
-		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="rightsListType">
 		<xs:sequence>
