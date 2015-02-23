@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns6:publish-metadata xmlns:ns2="http://video-metadata.tv4.se/event/v1"
+<ns5:publish-metadata xmlns:ns2="http://video-metadata.tv4.se/event/v1"
 	xmlns:ns3="http://video-metadata.tv4.se/api-messages-common/v1"
-	xmlns:ns4="http://video-metadata.tv4.se/schedule/v1" xmlns:ns5="http://video-metadata.tv4.se/tagging/v1"
-	xmlns:ns6="http://video-metadata.tv4.se/api-messages/v1" xmlns:ns7="http://video-metadata.tv4.se/publish/v1"
+	xmlns:ns4="http://video-metadata.tv4.se/tagging/v1" xmlns:ns5="http://video-metadata.tv4.se/api-messages/v1"
+	xmlns:ns6="http://video-metadata.tv4.se/schedule/v1" xmlns:ns7="http://video-metadata.tv4.se/publish/v1"
 	xmlns:ns8="http://video-metadata.tv4.se/material/v1" xmlns:ns9="http://video-metadata.tv4.se/content/v1">
-	<ns6:header>
+	<ns5:header>
 		<ns3:providerId>se.tv4</ns3:providerId>
-		<ns3:msgId>7b90c752-b9ce-4b30-b0b4-f483dc1227bd</ns3:msgId>
-	</ns6:header>
-	<ns6:data timestamp="2015-02-18T14:11:09.103+01:00">
+		<ns3:msgId>3679f1df-f35b-420c-b285-ef0796b7dff1</ns3:msgId>
+	</ns5:header>
+	<ns5:data timestamp="2015-02-23T16:18:23.220+01:00">
 		<ns7:brand>
 			<id>48416132</id>
 			<titleList>
@@ -141,7 +141,7 @@
 			<episodeNumber>4</episodeNumber>
 		</ns7:content>
 		<ns7:materialList>
-			<material timestamp="2015-02-18T14:11:09.102+01:00">
+			<material timestamp="2015-02-23T16:18:23.219+01:00">
 				<id>5147542</id>
 				<materialType>program</materialType>
 				<videoFormat threeD="false">576i</videoFormat>
@@ -172,9 +172,9 @@
 			</material>
 		</ns7:materialList>
 		<ns7:eventList>
-			<ns2:event timestamp="2015-02-18T14:11:09.102+01:00">
+			<ns2:event timestamp="2015-02-23T16:18:23.219+01:00">
 				<ns2:id>200000027</ns2:id>
-				<ns2:channelId>Premium Platform</ns2:channelId>
+				<ns2:channelId>premiumplatform</ns2:channelId>
 				<ns2:rerun>false</ns2:rerun>
 				<ns2:timeList>
 					<ns2:time type="public">
@@ -186,5 +186,5 @@
 				<ns2:materialIdRef>200045795</ns2:materialIdRef>
 			</ns2:event>
 		</ns7:eventList>
-	</ns6:data>
-</ns6:publish-metadata>
+	</ns5:data>
+</ns5:publish-metadata>
