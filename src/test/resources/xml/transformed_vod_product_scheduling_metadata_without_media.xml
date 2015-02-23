@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns5:publish-metadata xmlns:ns2="http://video-metadata.tv4.se/event/v1"
+	xmlns:ns3="http://video-metadata.tv4.se/api-messages-common/v1"
+	xmlns:ns4="http://video-metadata.tv4.se/tagging/v1" xmlns:ns5="http://video-metadata.tv4.se/api-messages/v1"
+	xmlns:ns6="http://video-metadata.tv4.se/schedule/v1" xmlns:ns7="http://video-metadata.tv4.se/publish/v1"
+	xmlns:ns8="http://video-metadata.tv4.se/material/v1" xmlns:ns9="http://video-metadata.tv4.se/content/v1">
+	<ns5:header>
+		<ns3:providerId>se.tv4</ns3:providerId>
+		<ns3:msgId>f362fe6c-50aa-429b-8f21-747fc62faf5f</ns3:msgId>
+	</ns5:header>
+	<ns5:data timestamp="2015-02-23T16:29:30.633+01:00">
+		<ns7:brand>
+			<id>39375055</id>
+			<titleList>
+				<title original="false" language="sv">Äntligen hemma</title>
+			</titleList>
+			<descriptionList>
+				<description length="medium" language="sv">Svenskt
+					inredningsprogram. Programmet ger råd och tips om inredning,
+					trädgårdsskötsel, renovering och design.</description>
+			</descriptionList>
+		</ns7:brand>
+		<ns7:season>
+			<id>200002420</id>
+			<productionYear>2015</productionYear>
+			<countryOfOriginList>
+				<country>SE</country>
+			</countryOfOriginList>
+			<titleList>
+				<title original="false" language="sv">Säsong 22</title>
+			</titleList>
+			<descriptionList>
+				<description language="sv">Programmet ger råd och tips om
+					inredning, trädgårdsskötsel, renovering och design.</description>
+				<description length="short" language="sv">Svensk
+					inredningsserie från 2015.</description>
+				<description length="medium" language="sv">Programmet ger råd
+					och tips om inredning, trädgårdsskötsel, renovering och design.
+					Programledare är Martin Timell och dessutom medverkar ett antal
+					experter som alla bidrar med kunskaper inom sina områden.
+				</description>
+				<description length="long" language="sv">Äntligen hemma är en
+					svenskt inredningsserie från 2015. Det här är den 22:a säsongen som
+					sänds i tio avsnitt.
+
+					I programmet ges råd och tips om inredning, trädgårdsskötsel,
+					renovering och design. Med Martin Timell i spetsen tar sig Äntligen
+					hemma-gänget, som består av bland andra Elsa Billgren och Anders
+					Stålhand, an en uppsjö av projekt.
+				</description>
+			</descriptionList>
+			<category>
+				<mainCategory>Livsstil</mainCategory>
+			</category>
+			<brandId>39375055</brandId>
+			<seasonNumber>22</seasonNumber>
+			<numberOfEpisodes>10</numberOfEpisodes>
+		</ns7:season>
+		<ns7:content>
+			<id>200002421</id>
+			<productionYear>2015</productionYear>
+			<countryOfOriginList>
+				<country>SE</country>
+			</countryOfOriginList>
+			<titleList>
+				<title original="false" language="sv">Äntligen hemma</title>
+				<title original="true" language="sv">Äntligen hemma XXII</title>
+			</titleList>
+			<descriptionList>
+				<description length="medium" language="sv">Säsongsstart.
+				</description>
+			</descriptionList>
+			<imageList>
+				<image>
+					<url>http://image.tv4.se/e1/bb/36/FILE_6E40967D-11AB-447F-B6A3-DD1FE39B341D.jpg
+					</url>
+					<width>1920</width>
+					<height xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:int">1080</height>
+					<purpose>production</purpose>
+				</image>
+			</imageList>
+			<category>
+				<mainCategory>Livsstil</mainCategory>
+			</category>
+			<brandId>39375055</brandId>
+			<seasonId>200002420</seasonId>
+			<episodeNumber>1</episodeNumber>
+		</ns7:content>
+		<ns7:materialList>
+			<material timestamp="2015-02-23T16:29:30.633+01:00">
+				<id>200002421</id>
+				<materialType>program</materialType>
+				<videoFormat threeD="false">1080i</videoFormat>
+			</material>
+		</ns7:materialList>
+		<ns7:eventList>
+			<ns2:event timestamp="2015-02-23T16:29:30.633+01:00">
+				<ns2:id>200000016</ns2:id>
+				<ns2:channelId>tv4play</ns2:channelId>
+				<ns2:rerun>false</ns2:rerun>
+				<ns2:timeList>
+					<ns2:time type="public">
+						<ns2:startTime>2015-03-22T00:00:00.000+01:00</ns2:startTime>
+						<ns2:endTime>2015-03-28T00:00:00.000+01:00</ns2:endTime>
+					</ns2:time>
+				</ns2:timeList>
+				<ns2:contentIdRef>200002421</ns2:contentIdRef>
+				<ns2:materialIdRef>200044062</ns2:materialIdRef>
+			</ns2:event>
+		</ns7:eventList>
+	</ns5:data>
+</ns5:publish-metadata>
