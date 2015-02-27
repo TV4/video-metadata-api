@@ -1,6 +1,9 @@
-/target/
+/target/*
 .classpath
 .project
 .settings/
 /*.iml
 /.idea/
+.DS_store
+generated-sources/*
+/target/
