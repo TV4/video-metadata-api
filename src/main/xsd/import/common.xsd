@@ -135,9 +135,9 @@
 		<xs:sequence>
 			<xs:element name="includeIpOrNetworks" type="ipAddressTypeListType" />
 			<xs:element name="includeCountries" type="countryListType" />
-			<xs:element name="exludeCountries" type="countryListType" />
+			<xs:element name="excludeCountries" type="countryListType" />
 			<xs:element name="includeLocals" type="nameListType" />
-			<xs:element name="exludeLocals" type="nameListType" />
+			<xs:element name="excludeLocals" type="nameListType" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="userOrGroupRestrictionsType">
@@ -150,9 +150,9 @@
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="includeUsers" type="nameListType" />
-			<xs:element name="exludeUsers" type="nameListType" />
+			<xs:element name="excludeUsers" type="nameListType" />
 			<xs:element name="includeGroups" type="nameListType" />
-			<xs:element name="exludeGroups" type="nameListType" />
+			<xs:element name="excludeGroups" type="nameListType" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="ipAddressTypeListType">
