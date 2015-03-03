@@ -105,7 +105,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="additionalProperties" type="common:propertyListType"></xs:element>
+			<xs:element name="additionalProperties" type="common:propertyListType" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="brandType">
