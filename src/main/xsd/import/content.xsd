@@ -363,13 +363,21 @@
 
 	<xs:complexType name="imageType">
 		<xs:sequence>
+			<xs:element name="id" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						The id of the image from the origin system. For example
+						it might be img_123 if the origin system is metabank.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="url" type="xs:string" />
 			<xs:element name="width" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>In unit px.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="height">
+			<xs:element name="height" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>In unit px.</xs:documentation>
 				</xs:annotation>
@@ -388,6 +396,16 @@
 						<xs:enumeration value="promo" />
 						<xs:enumeration value="press" />
 						<xs:enumeration value="logo" />
+						<xs:enumeration value="other" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="createdDate" type="xs:date" minOccurs="0" />
+			<xs:element name="orientation" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="landscape" />
+						<xs:enumeration value="portrait" />
 						<xs:enumeration value="other" />
 					</xs:restriction>
 				</xs:simpleType>
@@ -429,7 +447,15 @@
 	</xs:complexType>
 	<xs:complexType name="copyRightsListType">
 		<xs:sequence>
+<!--  
 			<xs:element name="copyRight" type="common:description" minOccurs="0" maxOccurs="unbounded" />
+-->
+			<!-- 
+				Use string instead of common:description since common:description
+				requires language to be set. In most cases we don't have language
+				in the input...
+			 -->
+			<xs:element name="copyRight" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="mediaReferenceListType">
