@@ -47,7 +47,7 @@
 			</xs:element>
 			<xs:element name="countryOfOriginList" type="common:countryListType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>list of production countries. Use language codes in IS0 3166-1-alpha-2
+					<xs:documentation>list of production countries. Use country codes in IS0 3166-1-alpha-2
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -171,7 +171,8 @@
 					</xs:element>
                     <xs:element name="videoId" type="xs:string" minOccurs="0">
                         <xs:annotation>
-                            <xs:documentation>EMP id for asset stream.
+                            <xs:documentation>EMP id for asset stream. 
+                            Will be non present until content has a video ID assosiated with it.
                             </xs:documentation>
                         </xs:annotation>
                     </xs:element>

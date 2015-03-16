@@ -18,9 +18,6 @@
 		<xs:annotation>
 			<xs:documentation>Unique name id, i.e. the normalized textual
 				representation, e.g.: no space, lower case, no diacritic characters.
-				Language attribute can be used to specify a
-				localized name for the
-				tag.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">

@@ -24,3 +24,37 @@
 	<t:tag type="person" priority="1">sa-mycket-battre</t:tag>
 	</t:tagRefs>
 -->
+
+
+<!-- Category example -->
+<?xml version="1.0" encoding="UTF-8"?>
+<t:tagDefs xmlns:c="http://video-metadata.tv.se/common/v1" xmlns:t="http://video-metadata.tv.se/tagging/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://video-metadata.tv.se/tagging/v1 tagging.xsd">
+	<t:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
+		<t:type>mainCategory</t:type>
+		<t:nid>movie</t:nid>
+		<t:description>Movie category</t:description>
+		<t:tagNames>
+			<t:tagName language="sv">Film</t:tagName>
+			<t:tagName language="fi">Filmi</t:tagName>
+		</t:tagNames>
+		<t:externalReferenceList>
+		</t:externalReferenceList>
+	</t:tag>
+</t:tagDefs>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<t:tagDefs xmlns:c="http://video-metadata.tv.se/common/v1" xmlns:t="http://video-metadata.tv.se/tagging/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://video-metadata.tv.se/tagging/v1 tagging.xsd">
+	<t:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
+		<t:type>subCategory</t:type>
+		<t:nid>drama</t:nid>
+		<t:description></t:description>
+		<t:tagNames>
+			<t:tagName language="sv">Drama</t:tagName>
+			<t:tagName language="fi">Draama</t:tagName>
+		</t:tagNames>
+		<t:externalReferenceList>
+		</t:externalReferenceList>
+	</t:tag>
+</t:tagDefs>
