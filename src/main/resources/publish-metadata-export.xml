@@ -1,724 +1,733 @@
 <v1:publish-metadata xmlns:v1="http://video-metadata.tv4.se/publish-metadata/v1" xmlns:v11="http://video-metadata.tv4.se/api-messages-common/v1" xmlns:v12="http://video-metadata.tv4.se/event/v1">
-  <v1:header>
-    <v11:providerId>string</v11:providerId>
-    <v11:msgId>string</v11:msgId>
-  </v1:header>
-  <v1:data timestamp="2008-09-29T03:49:45">
-    <v1:brand>
-      <id>string</id>
-      <!--Optional:-->
-      <studio>string</studio>
-      <!--Optional:-->
-      <productionYear>string</productionYear>
-      <!--Optional:-->
-      <countryOfOriginList>
-        <!--Zero or more repetitions:-->
-        <country>string</country>
-      </countryOfOriginList>
-      <titleList>
-        <!--1 or more repetitions:-->
-        <title language="string" original="true">string</title>
-      </titleList>
-      <!--Optional:-->
-      <descriptionList>
-        <!--Zero or more repetitions:-->
-        <description language="string" length="extended">string</description>
-      </descriptionList>
-      <!--Optional:-->
-      <commentList>
-        <!--Zero or more repetitions:-->
-        <comment language="string" length="extended">string</comment>
-      </commentList>
-      <!--Optional:-->
-      <tagList>
-        <!--Zero or more repetitions:-->
-        <subjectTag type="other">string</subjectTag>
-        <!--Zero or more repetitions:-->
-        <storyTag type="program">string</storyTag>
-        <!--Zero or more repetitions:-->
-        <otherTag type="story">string</otherTag>
-      </tagList>
-      <!--Optional:-->
-      <adTagList>
-        <!--Zero or more repetitions:-->
-        <adTag type="story">string</adTag>
-      </adTagList>
-      <!--Optional:-->
-      <creditList>
-        <!--Zero or more repetitions:-->
-        <credit>
-          <name>string</name>
-          <!--Optional:-->
-          <rolename>string</rolename>
-          <function>string</function>
-          <!--Optional:-->
-          <externalReferenceList>
-            <!--Zero or more repetitions:-->
-            <externalReference>
-              <provider>string</provider>
-              <id>string</id>
-              <!--Optional:-->
-              <uri>string</uri>
-            </externalReference>
-          </externalReferenceList>
-        </credit>
-      </creditList>
-      <!--Optional:-->
-      <posterImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </posterImage>
-      <!--Optional:-->
-      <landscapeImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </landscapeImage>
-      <!--Optional:-->
-      <logoImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </logoImage>
-      <!--Optional:-->
-      <promoImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </promoImage>
-      <!--Optional:-->
-      <bannerImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </bannerImage>
-      <!--Optional:-->
-      <category>
-        <mainCategory>string</mainCategory>
-        <subCategory>string</subCategory>
-      </category>
-      <!--Optional:-->
-      <parentalRating>10</parentalRating>
-      <!--Optional:-->
-      <externalReferenceList>
-        <!--Zero or more repetitions:-->
-        <externalReference>
-          <provider>string</provider>
-          <id>string</id>
-          <!--Optional:-->
-          <uri>string</uri>
-        </externalReference>
-      </externalReferenceList>
-      <additionalProperties>
-        <!--Zero or more repetitions:-->
-        <property>
-          <name>string</name>
-          <type>string</type>
-          <!--Zero or more repetitions:-->
-          <value>string</value>
-        </property>
-      </additionalProperties>
-      <sponsored>true</sponsored>
-    </v1:brand>
-    <v1:season>
-      <id>string</id>
-      <!--Optional:-->
-      <studio>string</studio>
-      <!--Optional:-->
-      <productionYear>string</productionYear>
-      <!--Optional:-->
-      <countryOfOriginList>
-        <!--Zero or more repetitions:-->
-        <country>string</country>
-      </countryOfOriginList>
-      <titleList>
-        <!--1 or more repetitions:-->
-        <title language="string" original="false">string</title>
-      </titleList>
-      <!--Optional:-->
-      <descriptionList>
-        <!--Zero or more repetitions:-->
-        <description language="string" length="long">string</description>
-      </descriptionList>
-      <!--Optional:-->
-      <commentList>
-        <!--Zero or more repetitions:-->
-        <comment language="string" length="medium">string</comment>
-      </commentList>
-      <!--Optional:-->
-      <tagList>
-        <!--Zero or more repetitions:-->
-        <subjectTag type="other">string</subjectTag>
-        <!--Zero or more repetitions:-->
-        <storyTag type="subject">string</storyTag>
-        <!--Zero or more repetitions:-->
-        <otherTag type="subject">string</otherTag>
-      </tagList>
-      <!--Optional:-->
-      <adTagList>
-        <!--Zero or more repetitions:-->
-        <adTag type="program">string</adTag>
-      </adTagList>
-      <!--Optional:-->
-      <creditList>
-        <!--Zero or more repetitions:-->
-        <credit>
-          <name>string</name>
-          <!--Optional:-->
-          <rolename>string</rolename>
-          <function>string</function>
-          <!--Optional:-->
-          <externalReferenceList>
-            <!--Zero or more repetitions:-->
-            <externalReference>
-              <provider>string</provider>
-              <id>string</id>
-              <!--Optional:-->
-              <uri>string</uri>
-            </externalReference>
-          </externalReferenceList>
-        </credit>
-      </creditList>
-      <!--Optional:-->
-      <posterImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </posterImage>
-      <!--Optional:-->
-      <landscapeImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </landscapeImage>
-      <!--Optional:-->
-      <logoImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </logoImage>
-      <!--Optional:-->
-      <promoImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </promoImage>
-      <!--Optional:-->
-      <bannerImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </bannerImage>
-      <!--Optional:-->
-      <category>
-        <mainCategory>string</mainCategory>
-        <subCategory>string</subCategory>
-      </category>
-      <!--Optional:-->
-      <parentalRating>10</parentalRating>
-      <!--Optional:-->
-      <externalReferenceList>
-        <!--Zero or more repetitions:-->
-        <externalReference>
-          <provider>string</provider>
-          <id>string</id>
-          <!--Optional:-->
-          <uri>string</uri>
-        </externalReference>
-      </externalReferenceList>
-      <additionalProperties>
-        <!--Zero or more repetitions:-->
-        <property>
-          <name>string</name>
-          <type>integer</type>
-          <!--Zero or more repetitions:-->
-          <value>string</value>
-        </property>
-      </additionalProperties>
-      <!--Optional:-->
-      <brandId>string</brandId>
-      <!--Optional:-->
-      <seasonNumber>10</seasonNumber>
-      <!--Optional:-->
-      <numberOfEpisodes>10</numberOfEpisodes>
-    </v1:season>
-    <v1:content>
-      <id>string</id>
-      <!--Optional:-->
-      <studio>string</studio>
-      <!--Optional:-->
-      <productionYear>string</productionYear>
-      <!--Optional:-->
-      <countryOfOriginList>
-        <!--Zero or more repetitions:-->
-        <country>string</country>
-      </countryOfOriginList>
-      <titleList>
-        <!--1 or more repetitions:-->
-        <title language="string" original="true">string</title>
-      </titleList>
-      <!--Optional:-->
-      <descriptionList>
-        <!--Zero or more repetitions:-->
-        <description language="string" length="medium">string</description>
-      </descriptionList>
-      <!--Optional:-->
-      <commentList>
-        <!--Zero or more repetitions:-->
-        <comment language="string" length="tiny">string</comment>
-      </commentList>
-      <!--Optional:-->
-      <tagList>
-        <!--Zero or more repetitions:-->
-        <subjectTag type="other">string</subjectTag>
-        <!--Zero or more repetitions:-->
-        <storyTag type="other">string</storyTag>
-        <!--Zero or more repetitions:-->
-        <otherTag type="other">string</otherTag>
-      </tagList>
-      <!--Optional:-->
-      <adTagList>
-        <!--Zero or more repetitions:-->
-        <adTag type="story">string</adTag>
-      </adTagList>
-      <!--Optional:-->
-      <creditList>
-        <!--Zero or more repetitions:-->
-        <credit>
-          <name>string</name>
-          <!--Optional:-->
-          <rolename>string</rolename>
-          <function>string</function>
-          <!--Optional:-->
-          <externalReferenceList>
-            <!--Zero or more repetitions:-->
-            <externalReference>
-              <provider>string</provider>
-              <id>string</id>
-              <!--Optional:-->
-              <uri>string</uri>
-            </externalReference>
-          </externalReferenceList>
-        </credit>
-      </creditList>
-      <!--Optional:-->
-      <posterImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </posterImage>
-      <!--Optional:-->
-      <landscapeImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </landscapeImage>
-      <!--Optional:-->
-      <logoImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </logoImage>
-      <!--Optional:-->
-      <promoImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </promoImage>
-      <!--Optional:-->
-      <bannerImage>
-        <url>string</url>
-        <!--Optional:-->
-        <urlList>
-          <!--Zero or more repetitions:-->
-          <url language="string">string</url>
-        </urlList>
-        <width>3</width>
-        <height>3</height>
-        <!--Optional:-->
-        <captionList>
-          <!--Zero or more repetitions:-->
-          <caption language="string">string</caption>
-        </captionList>
-        <!--Optional:-->
-        <copyRightList>
-          <!--Zero or more repetitions:-->
-          <copyRight language="string">string</copyRight>
-        </copyRightList>
-      </bannerImage>
-      <!--Optional:-->
-      <category>
-        <mainCategory>string</mainCategory>
-        <subCategory>string</subCategory>
-      </category>
-      <!--Optional:-->
-      <parentalRating>10</parentalRating>
-      <!--Optional:-->
-      <externalReferenceList>
-        <!--Zero or more repetitions:-->
-        <externalReference>
-          <provider>string</provider>
-          <id>string</id>
-          <!--Optional:-->
-          <uri>string</uri>
-        </externalReference>
-      </externalReferenceList>
-      <additionalProperties>
-        <!--Zero or more repetitions:-->
-        <property>
-          <name>string</name>
-          <type>url</type>
-          <!--Zero or more repetitions:-->
-          <value>string</value>
-        </property>
-      </additionalProperties>
-      <!--Optional:-->
-      <sport>
-        <!--Optional:-->
-        <sportsCategory language="string">string</sportsCategory>
-        <!--Optional:-->
-        <leagueOrCompetitionList>
-          <!--Zero or more repetitions:-->
-          <leagueOrCompetition language="string">string</leagueOrCompetition>
-        </leagueOrCompetitionList>
-        <!--Optional:-->
-        <seasonOrTournamentList>
-          <!--Zero or more repetitions:-->
-          <roundOrEpisode language="string">string</roundOrEpisode>
-        </seasonOrTournamentList>
-        <!--Optional:-->
-        <roundOrEpisodeList>
-          <!--Zero or more repetitions:-->
-          <roundOrEpisode language="string">string</roundOrEpisode>
-        </roundOrEpisodeList>
-        <!--Optional:-->
-        <homeTeamList>
-          <!--Zero or more repetitions:-->
-          <team language="string">string</team>
-        </homeTeamList>
-        <!--Optional:-->
-        <awayTeamList>
-          <!--Zero or more repetitions:-->
-          <team language="string">string</team>
-        </awayTeamList>
-      </sport>
-      <!--Optional:-->
-      <vmanId>string</vmanId>
-      <contentType>clip</contentType>
-      <!--Optional:-->
-      <brandId>string</brandId>
-      <!--Optional:-->
-      <seasonId>string</seasonId>
-      <!--Optional:-->
-      <live>false</live>
-      <addProviderLogo>false</addProviderLogo>
-      <allowShare>false</allowShare>
-      <allowAds>false</allowAds>
-      <drmRestrictions>true</drmRestrictions>
-      <publicationRights>
-        <!--Optional:-->
-        <timeshift>
-          <!--Optional:-->
-          <catchUpRights>
-            <!--Optional:-->
-            <fastForward>true</fastForward>
-            <!--Optional:-->
-            <rewind>false</rewind>
-            <!--Optional:-->
-            <pause>true</pause>
-          </catchUpRights>
-          <!--Optional:-->
-          <startOverRights>
-            <!--Optional:-->
-            <fastForward>false</fastForward>
-            <!--Optional:-->
-            <rewind>true</rewind>
-            <!--Optional:-->
-            <pause>false</pause>
-          </startOverRights>
-        </timeshift>
-        <!--Optional:-->
-        <loactionRights>
-          <!--Optional:-->
-          <productGroup>string</productGroup>
-          <!--Optional:-->
-          <locationRestrictions>
-            <includeCountries>
-              <!--Zero or more repetitions:-->
-              <country>string</country>
-            </includeCountries>
-          </locationRestrictions>
-        </loactionRights>
-      </publicationRights>
-      <!--Optional:-->
-      <contentIdRef>string</contentIdRef>
-      <!--Optional:-->
-      <episodeNumber>10</episodeNumber>
-    </v1:content>
-    <v1:materialList>
-      <!--Zero or more repetitions:-->
-      <material timestamp="2000-04-21T02:36:55+02:00">
-        <providerId>string</providerId>
-        <id>string</id>
-        <!--Optional:-->
-        <materialType>clip</materialType>
-        <!--Optional:-->
-        <distributor>string</distributor>
-        <contentIdRef>string</contentIdRef>
-        <!--Optional:-->
-        <videoFormat threeD="true">576i</videoFormat>
-        <!--Optional:-->
-        <audioList>
-          <!--Zero or more repetitions:-->
-          <format language="string">mono</format>
-        </audioList>
-        <!--Optional:-->
-        <aspectRatio>21:9</aspectRatio>
-        <!--Optional:-->
-        <subtitleList>
-          <!--Zero or more repetitions:-->
-          <subtitle language="string" format="open">string</subtitle>
-        </subtitleList>
-        <!--Optional:-->
-        <accessibilityList>
-          <!--Zero or more repetitions:-->
-          <accessibilityList language="string" format="audioDescription">string</accessibilityList>
-        </accessibilityList>
-      </material>
-    </v1:materialList>
-    <v1:eventList>
-      <!--Zero or more repetitions:-->
-      <v12:event timestamp="2013-08-23T01:50:52">
-        <v12:id>string</v12:id>
-        <!--Optional:-->
-        <v12:channelId>string</v12:channelId>
-        <!--Optional:-->
-        <v12:deviceType>stb</v12:deviceType>
-        <v12:productGroup>string</v12:productGroup>
-        <!--Optional:-->
-        <v12:hidden>false</v12:hidden>
-        <!--Optional:-->
-        <v12:groupId sequenceNumber="1">string</v12:groupId>
-        <v12:startTime>2018-07-19T10:02:25+02:00</v12:startTime>
-        <v12:endTime>2004-12-06T04:41:44+01:00</v12:endTime>
-        <!--Optional:-->
-        <v12:publishTime>2006-12-05T13:02:31</v12:publishTime>
-        <!--Optional:-->
-        <v12:duration>string</v12:duration>
-        <v12:contentIdRef>string</v12:contentIdRef>
-        <v12:materialIdRef>string</v12:materialIdRef>
-      </v12:event>
-    </v1:eventList>
-  </v1:data>
+	<v1:header>
+		<v11:providerId>string</v11:providerId>
+		<v11:msgId>string</v11:msgId>
+	</v1:header>
+	<v1:data timestamp="2008-09-29T03:49:45">
+		<v1:brand>
+			<id>string</id>
+			<!--Optional: -->
+			<studio>string</studio>
+			<!--Optional: -->
+			<productionYear>string</productionYear>
+			<!--Optional: -->
+			<countryOfOriginList>
+				<!--Zero or more repetitions: -->
+				<country>string</country>
+			</countryOfOriginList>
+			<titleList>
+				<!--1 or more repetitions: -->
+				<title language="string" original="true">string</title>
+			</titleList>
+			<!--Optional: -->
+			<descriptionList>
+				<!--Zero or more repetitions: -->
+				<description language="string" length="extended">string</description>
+			</descriptionList>
+			<!--Optional: -->
+			<commentList>
+				<!--Zero or more repetitions: -->
+				<comment language="string" length="extended">string</comment>
+			</commentList>
+			<!--Optional: -->
+			<tagList>
+				<!--Zero or more repetitions: -->
+				<subjectTag type="other">string</subjectTag>
+				<!--Zero or more repetitions: -->
+				<storyTag type="program">string</storyTag>
+				<!--Zero or more repetitions: -->
+				<otherTag type="story">string</otherTag>
+			</tagList>
+			<!--Optional: -->
+			<adTagList>
+				<!--Zero or more repetitions: -->
+				<adTag type="story">string</adTag>
+			</adTagList>
+			<!--Optional: -->
+			<creditList>
+				<!--Zero or more repetitions: -->
+				<credit>
+					<name>string</name>
+					<!--Optional: -->
+					<rolename>string</rolename>
+					<function>string</function>
+					<!--Optional: -->
+					<externalReferenceList>
+						<!--Zero or more repetitions: -->
+						<externalReference>
+							<provider>string</provider>
+							<id>string</id>
+							<!--Optional: -->
+							<uri>string</uri>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+			</creditList>
+			<!--Optional: -->
+			<posterImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</posterImage>
+			<!--Optional: -->
+			<landscapeImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</landscapeImage>
+			<!--Optional: -->
+			<logoImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</logoImage>
+			<!--Optional: -->
+			<promoImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</promoImage>
+			<!--Optional: -->
+			<bannerImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</bannerImage>
+			<!--Optional: -->
+			<category>
+				<mainCategory>string</mainCategory>
+				<subCategory>string</subCategory>
+			</category>
+			<!--Optional: -->
+			<parentalRatingList>
+				<parentalRating>0</parentalRating>
+				<parentalRating country="ru">21</parentalRating>
+			</parentalRatingList>
+			<!--Optional: -->
+			<externalReferenceList>
+				<!--Zero or more repetitions: -->
+				<externalReference>
+					<provider>string</provider>
+					<id>string</id>
+					<!--Optional: -->
+					<uri>string</uri>
+				</externalReference>
+			</externalReferenceList>
+			<additionalProperties>
+				<!--Zero or more repetitions: -->
+				<property>
+					<name>string</name>
+					<type>string</type>
+					<!--Zero or more repetitions: -->
+					<value>string</value>
+				</property>
+			</additionalProperties>
+			<sponsored>true</sponsored>
+		</v1:brand>
+		<v1:season>
+			<id>string</id>
+			<!--Optional: -->
+			<studio>string</studio>
+			<!--Optional: -->
+			<productionYear>string</productionYear>
+			<!--Optional: -->
+			<countryOfOriginList>
+				<!--Zero or more repetitions: -->
+				<country>string</country>
+			</countryOfOriginList>
+			<titleList>
+				<!--1 or more repetitions: -->
+				<title language="string" original="false">string</title>
+			</titleList>
+			<!--Optional: -->
+			<descriptionList>
+				<!--Zero or more repetitions: -->
+				<description language="string" length="long">string</description>
+			</descriptionList>
+			<!--Optional: -->
+			<commentList>
+				<!--Zero or more repetitions: -->
+				<comment language="string" length="medium">string</comment>
+			</commentList>
+			<!--Optional: -->
+			<tagList>
+				<!--Zero or more repetitions: -->
+				<subjectTag type="other">string</subjectTag>
+				<!--Zero or more repetitions: -->
+				<storyTag type="subject">string</storyTag>
+				<!--Zero or more repetitions: -->
+				<otherTag type="subject">string</otherTag>
+			</tagList>
+			<!--Optional: -->
+			<adTagList>
+				<!--Zero or more repetitions: -->
+				<adTag type="program">string</adTag>
+			</adTagList>
+			<!--Optional: -->
+			<creditList>
+				<!--Zero or more repetitions: -->
+				<credit>
+					<name>string</name>
+					<!--Optional: -->
+					<rolename>string</rolename>
+					<function>string</function>
+					<!--Optional: -->
+					<externalReferenceList>
+						<!--Zero or more repetitions: -->
+						<externalReference>
+							<provider>string</provider>
+							<id>string</id>
+							<!--Optional: -->
+							<uri>string</uri>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+			</creditList>
+			<!--Optional: -->
+			<posterImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</posterImage>
+			<!--Optional: -->
+			<landscapeImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</landscapeImage>
+			<!--Optional: -->
+			<logoImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</logoImage>
+			<!--Optional: -->
+			<promoImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</promoImage>
+			<!--Optional: -->
+			<bannerImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</bannerImage>
+			<!--Optional: -->
+			<category>
+				<mainCategory>string</mainCategory>
+				<subCategory>string</subCategory>
+			</category>
+			<!--Optional: -->
+			<parentalRatingList>
+				<parentalRating>0</parentalRating>
+				<parentalRating country="ru">21</parentalRating>
+			</parentalRatingList>
+			<!--Optional: -->
+			<externalReferenceList>
+				<!--Zero or more repetitions: -->
+				<externalReference>
+					<provider>string</provider>
+					<id>string</id>
+					<!--Optional: -->
+					<uri>string</uri>
+				</externalReference>
+			</externalReferenceList>
+			<additionalProperties>
+				<!--Zero or more repetitions: -->
+				<property>
+					<name>string</name>
+					<type>integer</type>
+					<!--Zero or more repetitions: -->
+					<value>string</value>
+				</property>
+			</additionalProperties>
+			<!--Optional: -->
+			<brandId>string</brandId>
+			<!--Optional: -->
+			<seasonNumber>10</seasonNumber>
+			<!--Optional: -->
+			<numberOfEpisodes>10</numberOfEpisodes>
+		</v1:season>
+		<v1:content>
+			<id>string</id>
+			<!--Optional: -->
+			<studio>string</studio>
+			<!--Optional: -->
+			<productionYear>string</productionYear>
+			<!--Optional: -->
+			<countryOfOriginList>
+				<!--Zero or more repetitions: -->
+				<country>string</country>
+			</countryOfOriginList>
+			<titleList>
+				<!--1 or more repetitions: -->
+				<title language="string" original="true">string</title>
+			</titleList>
+			<!--Optional: -->
+			<descriptionList>
+				<!--Zero or more repetitions: -->
+				<description language="string" length="medium">string</description>
+			</descriptionList>
+			<!--Optional: -->
+			<commentList>
+				<!--Zero or more repetitions: -->
+				<comment language="string" length="tiny">string</comment>
+			</commentList>
+			<!--Optional: -->
+			<tagList>
+				<!--Zero or more repetitions: -->
+				<subjectTag type="other">string</subjectTag>
+				<!--Zero or more repetitions: -->
+				<storyTag type="other">string</storyTag>
+				<!--Zero or more repetitions: -->
+				<otherTag type="other">string</otherTag>
+			</tagList>
+			<!--Optional: -->
+			<adTagList>
+				<!--Zero or more repetitions: -->
+				<adTag type="story">string</adTag>
+			</adTagList>
+			<!--Optional: -->
+			<creditList>
+				<!--Zero or more repetitions: -->
+				<credit>
+					<name>string</name>
+					<!--Optional: -->
+					<rolename>string</rolename>
+					<function>string</function>
+					<!--Optional: -->
+					<externalReferenceList>
+						<!--Zero or more repetitions: -->
+						<externalReference>
+							<provider>string</provider>
+							<id>string</id>
+							<!--Optional: -->
+							<uri>string</uri>
+						</externalReference>
+					</externalReferenceList>
+				</credit>
+			</creditList>
+			<!--Optional: -->
+			<posterImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</posterImage>
+			<!--Optional: -->
+			<landscapeImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</landscapeImage>
+			<!--Optional: -->
+			<logoImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</logoImage>
+			<!--Optional: -->
+			<promoImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</promoImage>
+			<!--Optional: -->
+			<bannerImage>
+				<url>string</url>
+				<!--Optional: -->
+				<urlList>
+					<!--Zero or more repetitions: -->
+					<url language="string">string</url>
+				</urlList>
+				<width>3</width>
+				<height>3</height>
+				<!--Optional: -->
+				<captionList>
+					<!--Zero or more repetitions: -->
+					<caption language="string">string</caption>
+				</captionList>
+				<!--Optional: -->
+				<copyRightList>
+					<!--Zero or more repetitions: -->
+					<copyRight language="string">string</copyRight>
+				</copyRightList>
+			</bannerImage>
+			<!--Optional: -->
+			<category>
+				<mainCategory>string</mainCategory>
+				<subCategory>string</subCategory>
+			</category>
+			<!--Optional: -->
+			<parentalRatingList>
+				<parentalRating>0</parentalRating>
+				<parentalRating country="ru">21</parentalRating>
+			</parentalRatingList>
+			<!--Optional: -->
+			<externalReferenceList>
+				<!--Zero or more repetitions: -->
+				<externalReference>
+					<provider>string</provider>
+					<id>string</id>
+					<!--Optional: -->
+					<uri>string</uri>
+				</externalReference>
+			</externalReferenceList>
+			<additionalProperties>
+				<!--Zero or more repetitions: -->
+				<property>
+					<name>string</name>
+					<type>url</type>
+					<!--Zero or more repetitions: -->
+					<value>string</value>
+				</property>
+			</additionalProperties>
+			<!--Optional: -->
+			<sport>
+				<!--Optional: -->
+				<sportsCategory language="string">string</sportsCategory>
+				<!--Optional: -->
+				<leagueOrCompetitionList>
+					<!--Zero or more repetitions: -->
+					<leagueOrCompetition language="string">string</leagueOrCompetition>
+				</leagueOrCompetitionList>
+				<!--Optional: -->
+				<seasonOrTournamentList>
+					<!--Zero or more repetitions: -->
+					<roundOrEpisode language="string">string</roundOrEpisode>
+				</seasonOrTournamentList>
+				<!--Optional: -->
+				<roundOrEpisodeList>
+					<!--Zero or more repetitions: -->
+					<roundOrEpisode language="string">string</roundOrEpisode>
+				</roundOrEpisodeList>
+				<!--Optional: -->
+				<homeTeamList>
+					<!--Zero or more repetitions: -->
+					<team language="string">string</team>
+				</homeTeamList>
+				<!--Optional: -->
+				<awayTeamList>
+					<!--Zero or more repetitions: -->
+					<team language="string">string</team>
+				</awayTeamList>
+			</sport>
+			<!--Optional: -->
+			<vmanId>string</vmanId>
+			<contentType>clip</contentType>
+			<!--Optional: -->
+			<brandId>string</brandId>
+			<!--Optional: -->
+			<seasonId>string</seasonId>
+			<!--Optional: -->
+			<live>false</live>
+			<addProviderLogo>false</addProviderLogo>
+			<allowShare>false</allowShare>
+			<allowAds>false</allowAds>
+			<drmRestrictions>true</drmRestrictions>
+			<publicationRights>
+				<!--Optional: -->
+				<timeshift>
+					<!--Optional: -->
+					<catchUpRights>
+						<!--Optional: -->
+						<fastForward>true</fastForward>
+						<!--Optional: -->
+						<rewind>false</rewind>
+						<!--Optional: -->
+						<pause>true</pause>
+					</catchUpRights>
+					<!--Optional: -->
+					<startOverRights>
+						<!--Optional: -->
+						<fastForward>false</fastForward>
+						<!--Optional: -->
+						<rewind>true</rewind>
+						<!--Optional: -->
+						<pause>false</pause>
+					</startOverRights>
+				</timeshift>
+				<!--Optional: -->
+				<loactionRights>
+					<!--Optional: -->
+					<productGroup>string</productGroup>
+					<!--Optional: -->
+					<locationRestrictions>
+						<includeCountries>
+							<!--Zero or more repetitions: -->
+							<country>string</country>
+						</includeCountries>
+					</locationRestrictions>
+				</loactionRights>
+			</publicationRights>
+			<!--Optional: -->
+			<contentIdRef>string</contentIdRef>
+			<!--Optional: -->
+			<episodeNumber>10</episodeNumber>
+		</v1:content>
+		<v1:materialList>
+			<!--Zero or more repetitions: -->
+			<material timestamp="2000-04-21T02:36:55+02:00">
+				<providerId>string</providerId>
+				<id>string</id>
+				<!--Optional: -->
+				<materialType>clip</materialType>
+				<!--Optional: -->
+				<distributor>string</distributor>
+				<contentIdRef>string</contentIdRef>
+				<!--Optional: -->
+				<videoFormat threeD="true">576i</videoFormat>
+				<!--Optional: -->
+				<audioList>
+					<!--Zero or more repetitions: -->
+					<format language="string">mono</format>
+				</audioList>
+				<!--Optional: -->
+				<aspectRatio>21:9</aspectRatio>
+				<!--Optional: -->
+				<subtitleList>
+					<!--Zero or more repetitions: -->
+					<subtitle language="string" format="open">string</subtitle>
+				</subtitleList>
+				<!--Optional: -->
+				<accessibilityList>
+					<!--Zero or more repetitions: -->
+					<accessibilityList language="string" format="audioDescription">string</accessibilityList>
+				</accessibilityList>
+			</material>
+		</v1:materialList>
+		<v1:eventList>
+			<!--Zero or more repetitions: -->
+			<v12:event timestamp="2013-08-23T01:50:52">
+				<v12:id>string</v12:id>
+				<!--Optional: -->
+				<v12:channelId>string</v12:channelId>
+				<!--Optional: -->
+				<v12:deviceType>stb</v12:deviceType>
+				<v12:productGroup>string</v12:productGroup>
+				<!--Optional: -->
+				<v12:hidden>false</v12:hidden>
+				<!--Optional: -->
+				<v12:groupId sequenceNumber="1">string</v12:groupId>
+				<v12:startTime>2018-07-19T10:02:25+02:00</v12:startTime>
+				<v12:endTime>2004-12-06T04:41:44+01:00</v12:endTime>
+				<!--Optional: -->
+				<v12:publishTime>2006-12-05T13:02:31</v12:publishTime>
+				<!--Optional: -->
+				<v12:duration>string</v12:duration>
+				<v12:contentIdRef>string</v12:contentIdRef>
+				<v12:materialIdRef>string</v12:materialIdRef>
+			</v12:event>
+		</v1:eventList>
+	</v1:data>
 </v1:publish-metadata>
