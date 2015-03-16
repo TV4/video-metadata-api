@@ -95,7 +95,10 @@
 		</adCategoryList>
 		<!-- From C More, send all available
 			Q: check if available in Metabanken -->
-		<parentalRating>0</parentalRating>
+		<parentalRatingList>
+			<parentalRating>0</parentalRating>
+			<parentalRating country="ru">21</parentalRating>
+		</parentalRatingList>
 		<externalReferenceList>
 			<!-- Not used at present.
 				Q: Check with Metabanken if available -->
@@ -203,7 +206,10 @@
 				<subCategory>subCategory</subCategory>
 			</category>
 		</adCategoryList>
-		<parentalRating>0</parentalRating>
+		<parentalRatingList>
+			<parentalRating>0</parentalRating>
+			<parentalRating country="ru">21</parentalRating>
+		</parentalRatingList>
 		<externalReferenceList>
 			<externalReference>
 				<provider>provider</provider>
@@ -319,7 +325,10 @@
 				<subCategory>subCategory</subCategory>
 			</category>
 		</adCategoryList>
-		<parentalRating>0</parentalRating>
+		<parentalRatingList>
+			<parentalRating>0</parentalRating>
+			<parentalRating country="ru">21</parentalRating>
+		</parentalRatingList>
 		<externalReferenceList>
 			<externalReference>
 				<provider>provider</provider>
