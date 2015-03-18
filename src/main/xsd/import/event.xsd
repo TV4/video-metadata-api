@@ -46,7 +46,7 @@
 				</xs:annotation>
 			</xs:element>
 			<!-- Why publications rights? We should only send publication events -->
-			<xs:element name="publicationRights" type="publicationRightsType">
+			<xs:element name="publicationRights" type="publicationRightsType" minOccurs="0">
 			</xs:element>
 
 			<!-- Description on events? -->
