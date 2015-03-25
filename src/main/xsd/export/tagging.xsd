@@ -112,6 +112,8 @@
 			<xs:enumeration value="program" /><!-- implicitly defined by program, each program shall define a tag as well -->
 			<xs:enumeration value="subject" />
 			<xs:enumeration value="story" />
+            <xs:enumeration value="mainCategory" />
+            <xs:enumeration value="subCategory" />
 			<xs:enumeration value="other">
 				<xs:annotation>
 					<xs:documentation>A free text tag.
