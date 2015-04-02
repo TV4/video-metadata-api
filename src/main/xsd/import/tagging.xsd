@@ -130,7 +130,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[\w^\p{Z}^\p{C}]+" />
+			<xs:pattern value="[\w^\p{Z}^\p{C}][\w^\p{C}]*[\w^\p{Z}^\p{C}]" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="tagNameDefType">

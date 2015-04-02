@@ -10,18 +10,18 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-Z:_\-\.#@]+" />
+			<xs:pattern value="[0-9a-zA-Z:\-\.#@]+" />
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- -->
 	<xs:simpleType name="nidType">
 		<xs:annotation>
 			<xs:documentation>Unique name id, i.e. the normalized textual
-				representation, e.g.: no space, lower case, no diacritic characters.
+				representation, e.g.: no space, lower case, (diacritic characters are allowed. E.g., åäöéæøü)
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-Z\-]+" />
+			<xs:pattern value="[0-9a-zåäöéæøü\-]+" />
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- -->
