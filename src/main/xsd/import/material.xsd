@@ -26,7 +26,8 @@
 			<xs:element name="id" type="common:idType">
 				<xs:annotation>
 					<xs:documentation>
-						A unique id for material, should include providerId (located in api-messages-common) e.g. 'se.tv4.UUID' or 'mtv.UUID'
+						This is used to couple material with an event. This id should be matched from materialIdRef in events.
+						Usually is a version-key from Louise. Not clear yet if it could be anything else than a version-key.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>

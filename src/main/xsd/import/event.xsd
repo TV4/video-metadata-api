@@ -95,14 +95,13 @@
 				<xs:sequence>
 					<xs:element name="contentIdRef" type="xs:string">
 						<xs:annotation>
-							<xs:documentation>Reference to contentId for this event for convenience as this could be obtained via materialIdRef. Warning. This id is
-								redundant as the material also points out the content! They should be verified to be the same.
+							<xs:documentation>Reference to contentId. I.E the content that is to be shown in this event.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="materialIdRef" type="xs:string">
 						<xs:annotation>
-							<xs:documentation>reference to contentId for this event
+							<xs:documentation>Reference to the version-key for this event. A version in louise contains information about the filename that holds the media, subtitle information and RFA information etc.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -190,6 +189,7 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<!-- Not in use anymore. 
 	<xs:simpleType name="timecode">
 		<xs:annotation>
 			<xs:documentation>
@@ -197,6 +197,7 @@
 		</xs:annotation>
 		<xs:restriction base="xs:string" />
 	</xs:simpleType>
+	-->
 	<xs:complexType name="timeListType">
 		<xs:sequence>
 			<xs:element name="time" type="timeType" minOccurs="0" maxOccurs="unbounded" />
@@ -223,7 +224,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="duration" type="timecode" minOccurs="0" />
+			<xs:element name="duration" type="xs:duration" minOccurs="0" />
 		</xs:sequence>
 
 		<!-- Should maybe be minOccurs 0 or removed completly -->
