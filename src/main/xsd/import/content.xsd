@@ -226,27 +226,41 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="parentalRatingType">
-		<xs:annotation>
-			<xs:documentation>
-				Parental rating age year. Empty or non existent element => 0 years => No restriction.
-				Also see http://en.wikipedia.org/wiki/Motion_picture_rating_system for
-				more information.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:simpleContent>
-			<xs:extension base="xs:long">
-				<xs:attribute name="country" type="xs:string" use="optional">
-					<xs:annotation>
-						<xs:documentation>Country code in ISO 3166-1-alpha-2.
-							No country attribute implies all countries.
-							Emplty or absent country attribute has the meaning that it is global, that is
-							defualt if no specific country overrides the value for a specific country.
-							If country value is repeaded, result is undefined.
-						</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
+        <xs:annotation>
+            <xs:documentation>
+                See http://en.wikipedia.org/wiki/Motion_picture_rating_system for more information about parental ratings.
+            </xs:documentation>
+        </xs:annotation>
+		<xs:sequence>
+			<xs:element name="age" type="xs:long" default="0">
+                <xs:annotation>
+                    <xs:documentation>
+                        Parental rating age in year.
+                        0 years => No restriction.
+                        Also see http://en.wikipedia.org/wiki/Motion_picture_rating_system for
+                        more information.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+			<xs:element name="ratingCode" type="xs:string" minOccurs="0" maxOccurs="unbounded" >
+                <xs:annotation>
+                    <xs:documentation>
+                        Rating code that describes the parental guidance.
+                        Code to descriptive text is mapped in client GUI.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+		</xs:sequence>
+        <xs:attribute name="country" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>
+                    Two char country code accoring to ISO 3166-1-alpha-2.
+                    Empty or absent country attribute has the meaning that it is global default value for any country.
+                    Specific country declaration overrides the default.
+                    If country value is repeted, result is undefined which one to select.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
 	</xs:complexType>
 	<xs:complexType name="tagListType">
 		<xs:sequence>
@@ -447,10 +461,10 @@
 	</xs:complexType>
 	<xs:complexType name="copyRightsListType">
 		<xs:sequence>
-<!--  
+<!--
 			<xs:element name="copyRight" type="common:description" minOccurs="0" maxOccurs="unbounded" />
 -->
-			<!-- 
+			<!--
 				Use string instead of common:description since common:description
 				requires language to be set. In most cases we don't have language
 				in the input...
