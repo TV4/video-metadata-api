@@ -189,31 +189,33 @@
 								video.
 							</xs:documentation>
 						</xs:annotation>
-						<xs:element name="allowShare" type="xs:boolean" default="true">
-							<xs:annotation>
-								<xs:documentation>Information to the client if the social media sharing functions shall be enabled.</xs:documentation>
-							</xs:annotation>
-							<xs:element name="hideAds" type="xs:boolean" default="false">
-								<xs:annotation>
-									<xs:documentation>Information to client if presentation in GUI shall be without ads.</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-							<xs:element name="drmRestrictions" type="xs:boolean" default="true" />
-							<xs:element name="publicationRights" type="publicationRightsType">
-							</xs:element>
-							<xs:element name="contentIdRef" type="common:idType" minOccurs="0">
-								<xs:annotation>
-									<xs:documentation>Reference to other content entity that is related. Thought use is for a clip or
-										trailer to reference the original content.
-									</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-							<xs:element name="episodeNumber" type="xs:long" minOccurs="0">
-								<xs:annotation>
-									<xs:documentation>Episode number for the program or "null" if no episode information.
-									</xs:documentation>
-								</xs:annotation>
-							</xs:element>
+					</xs:element>
+					<xs:element name="allowShare" type="xs:boolean" default="true">
+						<xs:annotation>
+							<xs:documentation>Information to the client if the social media sharing functions shall be enabled.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="hideAds" type="xs:boolean" default="false">
+						<xs:annotation>
+							<xs:documentation>Information to client if presentation in GUI shall be without ads.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="drmRestrictions" type="xs:boolean" default="true" />
+					<xs:element name="publicationRights" type="publicationRightsType">
+					</xs:element>
+					<xs:element name="contentIdRef" type="common:idType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Reference to other content entity that is related. Thought use is for a clip or
+								trailer to reference the original content.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="episodeNumber" type="xs:long" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Episode number for the program or "null" if no episode information.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
