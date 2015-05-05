@@ -405,18 +405,6 @@
 			<xs:enumeration value="extended" />
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:complexType name="dvbGenreType">
-		<xs:sequence>
-			<xs:element name="nibble1" type="dvbGenreNibbleType" />
-			<xs:element name="nibble2" type="dvbGenreNibbleType" minOccurs="0" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:simpleType name="dvbGenreNibbleType">
-		<xs:restriction base="xs:int">
-			<xs:minInclusive value="0" />
-			<xs:maxInclusive value="15" />
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:complexType name="creditListType">
 		<xs:sequence>
 			<xs:element name="credit" type="creditType" minOccurs="0" maxOccurs="unbounded" />
