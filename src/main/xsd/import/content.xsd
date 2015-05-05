@@ -187,7 +187,7 @@
 	<xs:simpleType name="contentTypeType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="program" />
-			<xs:enumeration value="film" />
+			<xs:enumeration value="movie" />
 			<xs:enumeration value="trailer" />
 			<xs:enumeration value="clip" />
 			<xs:enumeration value="ad" />
