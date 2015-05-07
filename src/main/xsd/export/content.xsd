@@ -147,7 +147,7 @@
 				<xs:sequence>
 					<xs:element name="sport" type="sportType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>For content describing sport material
+							<xs:documentation>Informationa about tournament, round and teams for sport or entertainment programs.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
