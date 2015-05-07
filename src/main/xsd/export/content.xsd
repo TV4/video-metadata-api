@@ -101,13 +101,14 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="additionalProperties" type="common:propertyListType"></xs:element>
+			<xs:element name="additionalProperties" type="common:propertyListType" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="brandType">
 		<xs:complexContent>
 			<xs:extension base="abstractContentType">
 				<xs:sequence>
+					<!-- Set in EMP by editor, legal requirement if program is sponsored -->
 					<xs:element name="sponsored" type="xs:boolean" default="false" />
 				</xs:sequence>
 			</xs:extension>
@@ -188,6 +189,7 @@
                         </xs:annotation>
                     </xs:element>
 					<xs:element name="live" type="xs:boolean" minOccurs="0">
+					<!-- borde sitta på event. Har inte med content som ska vara publiceringsneutralt -->
 						<xs:annotation>
 							<xs:documentation>indicates if this event is live.
 							</xs:documentation>
@@ -428,15 +430,16 @@
 			<xs:element name="urlList" type="urlListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
+						Support for different images for different languages/countries.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="width" type="xs:int" minOccurs="1" maxOccurs="1">
+			<xs:element name="width" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>In unit px.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="height" type="xs:int" minOccurs="1" maxOccurs="1">
+			<xs:element name="height" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>In unit px.</xs:documentation>
 				</xs:annotation>
