@@ -68,6 +68,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="category" type="categoryType" minOccurs="0" />
 			<xs:element name="tagList" type="tagListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of tags for the content.
@@ -86,18 +87,13 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-
 			<xs:element name="imageList" type="imageListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of content related images.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="genre" type="genreType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>genre of the content</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+			<xs:element name="genreList" type="genreListType" minOccurs="0" />
 			<xs:element name="parentalRatingList" type="parentalRatingListType" minOccurs="0" />
 			<xs:element name="externalReferenceList" type="common:externalReferenceListType" minOccurs="0">
 				<xs:annotation>
@@ -477,15 +473,35 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<xs:complexType name="genreListType">
+		<xs:sequence>
+			<xs:element name="genre" type="genreType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="genreType">
 		<xs:annotation>
-			<xs:documentation> Two leveles of genre are supported: main, which is depicted as "mainGenre" and
-				subGenre. This is pure metadata to describe the content and is not connected to a "Category".
+			<xs:documentation> Two levels of genres are supported: mainGenre and
+				subGenre.
+				Genre is not to be confused with "Category" that is a classification code.
+				Genre is typically provided by external parties, e.g. IMDB.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="mainGenre" type="xs:string" />
-			<xs:element name="subGenre" type="xs:string" />
+			<xs:element name="subGenre" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="categoryType">
+		<xs:annotation>
+			<xs:documentation>
+				Two levels of categorisations are supported: main and sub-category.
+				Category is a classification code, a reference to a nid of the the typ mainCategory or subCategory.
+				NB., category is NOT synonym with Genre.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="mainCategory" type="common:nidType" />
+			<xs:element name="subCategory" type="common:nidType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="sportType">
