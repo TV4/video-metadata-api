@@ -3,6 +3,19 @@
 
 	<!-- Important note about xs:dateTime: Time zone is UTC if not specified. Possible future change may add a separate type for dateTimes that enforce use of time zone. -->
 
+	<xs:simpleType name="urlSafeString">
+		<xs:annotation>
+			<xs:documentation>
+				URL "safe" string that can be used as part of URL as part of path or query without any urlEndoding or escaping of characters.
+				Character set containing unreserved characters. Unreserved := ALPHA / DIGIT / "-" / "." / "_" / "~"
+				Also see: http://en.wikipedia.org/wiki/Percent-encoding
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9a-zA-Z\-\.\_\~]+" />
+		</xs:restriction>
+	</xs:simpleType>
+
 	<!-- Common types used in all XSDs -->
 	<xs:simpleType name="idType">
 		<xs:annotation>
@@ -10,14 +23,14 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-Z:\-\.]+" />
+			<xs:pattern value="[0-9a-zA-Z\-\.\_]+" />
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- -->
 	<xs:simpleType name="nidType">
 		<xs:annotation>
 			<xs:documentation>Unique name id, i.e. the normalized textual
-				representation, e.g.: no space, lower case, (diacritic characters are allowed. E.g., åäöéæøü)
+				representation that is url friendly. E.g.: no space, lower case, (diacritic characters are allowed. E.g., åäöéæøü)
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -65,7 +78,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="1">
+			<xs:element name="id" type="xs:string" minOccurs="0" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>Data identifier to map this content to in the
 						external provider/partners data
