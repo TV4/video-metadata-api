@@ -39,12 +39,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="priceGroup" type="priceGroupType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>if null, then generic and valid for all
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+			<xs:element name="productGroup" type="common:productGroupType" minOccurs="1" />
 			<!-- Why publications rights? We should only send publication events -->
 			<xs:element name="publicationRights" type="publicationRightsType" minOccurs="0">
 			</xs:element>
@@ -149,15 +144,6 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:simpleType name="priceGroupType">
-		<xs:annotation>
-			<xs:documentation>Tag identifying the priceGroup of the material. id = ppv1 -> 45 SEK, 40 NOK, 4 EU, id = ppv2 -> ...
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:pattern value="\w+"></xs:pattern>
-		</xs:restriction>
-	</xs:simpleType>
 	<!-- remove? -->
 	<xs:complexType name="embeddedEventListType">
 		<xs:sequence>

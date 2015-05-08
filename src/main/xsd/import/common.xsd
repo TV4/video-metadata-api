@@ -98,6 +98,15 @@
 			<xs:enumeration value="console" />
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="productGroupType">
+		<xs:annotation>
+			<xs:documentation> Identification of the crm product
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\w+"></xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="rightsType">
 		<xs:sequence>
 			<xs:element name="addProviderLogo" type="xs:boolean" default="true">
