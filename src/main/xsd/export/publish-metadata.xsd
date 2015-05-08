@@ -37,13 +37,6 @@
             <xs:element name="brand" type="content:brandType" minOccurs="1" maxOccurs="1"/>
             <xs:element name="season" type="content:seasonType" minOccurs="1" maxOccurs="1"/>
             <xs:element name="content" type="content:contentType" minOccurs="1" maxOccurs="1"/>
-            <xs:element name="materialList" type="material:materialListType" minOccurs="1" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation>material list for the document, could be 0
-                        entries which would indicate no events for this period
-                    </xs:documentation>
-                </xs:annotation>
-            </xs:element>
             <xs:element name="eventList" type="event:eventListType" minOccurs="1" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation>Event list for the document, could be 0
