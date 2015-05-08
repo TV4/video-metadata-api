@@ -67,7 +67,7 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="duration" type="timecode" minOccurs="0" />
+            <xs:element name="duration" type="xs:duration" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="embeddedEventType">
@@ -149,11 +149,4 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	<xs:simpleType name="timecode">
-		<xs:annotation>
-			<xs:documentation>
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string" />
-	</xs:simpleType>
 </xs:schema>
