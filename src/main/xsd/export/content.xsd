@@ -331,6 +331,7 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="adTagListType">
+		<!-- Why typed tag reference, when the type is implicit? Change tagging:tagReferenceType to a common:nidType" -->
 		<xs:sequence>
 			<xs:element name="adTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
