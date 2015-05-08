@@ -45,7 +45,7 @@
 			</xs:element>
 			<xs:element name="countryOfOriginList" type="common:countryListType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>list of production countries. Use language codes in IS0 3166-1-alpha-2
+					<xs:documentation>list of production countries. Use country codes in IS0 3166-1-alpha-2
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -68,7 +68,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="category" type="categoryType" minOccurs="0" />
 			<xs:element name="tagList" type="tagListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of tags for the content.
@@ -481,26 +480,13 @@
 		<xs:annotation>
 			<xs:documentation> Two levels of genres are supported: mainGenre and
 				subGenre.
-				Genre is not to be confused with "Category" that is a classification code.
+				Genre is not to be confused with "Category" that is a classification code defined as tags.
 				Genre is typically provided by external parties, e.g. IMDB.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="mainGenre" type="xs:string" />
 			<xs:element name="subGenre" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="categoryType">
-		<xs:annotation>
-			<xs:documentation>
-				Two levels of categorisations are supported: main and sub-category.
-				Category is a classification code, a reference to a nid of the the typ mainCategory or subCategory.
-				NB., category is NOT synonym with Genre.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="mainCategory" type="common:nidType" />
-			<xs:element name="subCategory" type="common:nidType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="sportType">
