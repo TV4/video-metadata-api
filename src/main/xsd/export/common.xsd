@@ -222,24 +222,20 @@
 	</xs:complexType>
 	<xs:complexType name="catchUpRightsType">
 		<xs:sequence>
-			<xs:element name="fastForward" type="xs:boolean" minOccurs="0"></xs:element>
-			<xs:element name="rewind" type="xs:boolean" minOccurs="0">
-			</xs:element>
-			<xs:element name="pause" type="xs:boolean" minOccurs="0">
-			</xs:element>
+			<xs:element name="fastForward" type="xs:boolean" minOccurs="0" />
+			<xs:element name="rewind" type="xs:boolean" minOccurs="0" />
+			<xs:element name="pause" type="xs:boolean" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="startOverRightsType">
 		<xs:sequence>
-			<xs:element name="fastForward" type="xs:boolean" minOccurs="0"></xs:element>
-			<xs:element name="rewind" type="xs:boolean" minOccurs="0">
-			</xs:element>
-			<xs:element name="pause" type="xs:boolean" minOccurs="0">
-			</xs:element>
+			<xs:element name="fastForward" type="xs:boolean" minOccurs="0" />
+			<xs:element name="rewind" type="xs:boolean" minOccurs="0" />
+			<xs:element name="pause" type="xs:boolean" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:simpleType name="shareToType">
-		<!-- TODO : borde ange om det är en exclusive or excluding right -->
+		<!-- TODO : specify if exclusive or exclusive right -->
 		<xs:annotation>
 			<xs:documentation>Tag identifying the channel that is allowed for
 				sharing. '*' to indicate all and anyware.

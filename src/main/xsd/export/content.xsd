@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Document developed by SVT and TV4 2009, 2010, 2011 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/content/v1" xmlns:common="http://video-metadata.tv4.se/common/v1"
 	xmlns:tagging="http://video-metadata.tv4.se/tagging/v1" targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
 	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
@@ -92,9 +91,11 @@
 			<xs:element name="promoImage" type="imageType" minOccurs="0" />
 			<xs:element name="bannerImage" type="imageType" minOccurs="0" />
 			<xs:element name="genreList" type="genreListType" minOccurs="0" />
+			<!-- TODO: move to contentType -->
 			<xs:element name="parentalRatingList" type="parentalRatingListType" minOccurs="0" />
 			<xs:element name="externalReferenceList" type="common:externalReferenceListType" minOccurs="0">
 				<xs:annotation>
+					<!-- TODO: fix doc question marks -->
 					<xs:documentation>List of externalReference (of what?)
 					</xs:documentation>
 				</xs:annotation>
@@ -106,7 +107,10 @@
 		<xs:complexContent>
 			<xs:extension base="abstractContentType">
 				<xs:sequence>
-					<!-- Set in EMP by editor, legal requirement if program is sponsored -->
+					<xs:annotation>
+						<xs:documentation>Set in EMP by editor, legal requirement if brand is sponsored.
+						</xs:documentation>
+					</xs:annotation>
 					<xs:element name="sponsored" type="xs:boolean" default="false" />
 				</xs:sequence>
 			</xs:extension>
@@ -155,6 +159,8 @@
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="videoId" type="xs:string" minOccurs="0">
+						<!-- TODO: Borde ligga på eventet. Om ett content sänds live/linjärt med en ström och sedan som inspelad VOD fungerar inte denna.
+						Antingen flytta både VOD och live videoId till eventet, eller så bara live till event. -->
 						<xs:annotation>
 							<xs:documentation>EMP id for asset stream.
 								Will be non present until content has a video ID assosiated with it.
@@ -187,7 +193,7 @@
                         </xs:annotation>
                     </xs:element>
 					<xs:element name="live" type="xs:boolean" minOccurs="0">
-					<!-- borde sitta på event. Har inte med content som ska vara publiceringsneutralt -->
+						<!-- TODO: Borde sitta på event. Ska inte vara på content som ska vara publiceringsneutralt -->
 						<xs:annotation>
 							<xs:documentation>indicates if this event is live.
 							</xs:documentation>
@@ -329,7 +335,7 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="adTagListType">
-		<!-- Why typed tag reference, when the type is implicit? Change tagging:tagReferenceType to a common:nidType" -->
+		<!-- TODO: Why typed tag reference, when the type is implicit? Change tagging:tagReferenceType to a common:nidType", else move this to the tagList-->
 		<xs:sequence>
 			<xs:element name="adTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>

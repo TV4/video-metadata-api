@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Document developed by SVT and TV4 2009, 2010, 2011 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/content/v1" xmlns:common="http://video-metadata.tv4.se/common/v1"
 	xmlns:tagging="http://video-metadata.tv4.se/tagging/v1" targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
 	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
@@ -263,7 +262,7 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="adTagListType">
-		<!-- Why typed tag reference, when the type is implicit? Change tagging:tagReferenceType to a common:nidType" -->
+		<!-- TODO: Why typed tag reference, when the type is implicit? Change tagging:tagReferenceType to a common:nidType", else move this to the tagList-->
 		<xs:sequence>
 			<xs:element name="adTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>

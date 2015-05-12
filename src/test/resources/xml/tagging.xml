@@ -2,12 +2,12 @@
 <t:tagDefs xmlns:c="http://video-metadata.tv4.se/common/v1" xmlns:t="http://video-metadata.tv4.se/tagging/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<t:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
 		<t:type>program</t:type>
-		<t:nid>så-mycket-bättre</t:nid>
+		<t:nid>sa-mycket-battre</t:nid>
 		<t:description>Program "Så Mycket Bättre" in TV4</t:description>
 		<t:tagNames>
 			<t:tagName language="sv">SåMycketBättre</t:tagName>
-			<t:tagName language="fi">Niin paljon parempi</t:tagName>
-			<t:tagName language="fi">asdf-ASDF-åäö-ÅÄÖüÜ</t:tagName>
+			<t:tagName language="fi">NiinPaljonParempi</t:tagName>
+			<t:tagName language="fi">asdfASDF0123456789</t:tagName>
 		</t:tagNames>
 		<t:externalReferenceList>
 			<externalReference>

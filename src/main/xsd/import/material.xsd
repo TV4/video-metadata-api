@@ -12,17 +12,6 @@
 	<!-- -->
 	<xs:complexType name="materialType">
 		<xs:sequence>
-			<!-- Redundant as it already exists in api-messages-common:messageHeaderType on every message.
-			<xs:element name="providerId" type="common:idType">
-				<xs:annotation>
-					<xs:documentation>
-						Id for the provider of the material. 
-						Not the 
-						Could be for example 'cmore', 'mtv' or 'se.tv4'
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			-->
 			<xs:element name="id" type="common:idType">
 				<xs:annotation>
 					<xs:documentation>
@@ -171,7 +160,7 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-	<!-- Need to add a RFA flag to Subtitles as well? -->
+	<!-- TODO: Need to add a RFA flag to Subtitles as well? -->
 	<xs:complexType name="subtitleListType">
 		<xs:sequence>
 			<xs:element name="subtitle" type="subtitleType" minOccurs="0" maxOccurs="unbounded">
@@ -333,13 +322,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			
-			<!--
-			<xs:element name="breakType" type="segmentTypeType" minOccurs="0" />
-			-->
-			<!-- segmentList is not neccesary 
-			<xs:element name="segmentList" type="segmentListType" />
-			-->
 			<xs:element name="rfa" type="xs:boolean">
 				<xs:annotation>
 					<xs:documentation>
@@ -350,31 +332,6 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<!-- segmentList is not neccesary
-	<xs:complexType name="segmentListType">
-		<xs:sequence>
-			<xs:element name="segment" type="segmentType" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="segmentType">
-		<xs:sequence>
-			<xs:element name="in" type="timecodeType" />
-			<xs:element name="out" type="timecodeType" />
-			<xs:element name="breakType" type="segmentTypeType" minOccurs="0" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:simpleType name="segmentTypeType">
-		<xs:annotation>
-			<xs:documentation></xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="mandatory" />
-			<xs:enumeration value="planned" />
-			<xs:enumeration value="bad" />
-		</xs:restriction>
-	</xs:simpleType>
-	-->
-
 	<xs:simpleType name="timecodeType">
 		<xs:annotation>
 			<xs:documentation>

@@ -40,22 +40,22 @@
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="productGroup" type="common:productGroupType" minOccurs="1" />
-			<!-- Why publications rights? We should only send publication events -->
+			<!-- Why publications rights? We should only send publication events? -->
 			<xs:element name="publicationRights" type="publicationRightsType" minOccurs="0">
 			</xs:element>
 
-			<!-- Description on events? -->
+			<!-- TODO: Description on events? -->
 			<xs:element name="descriptionList" type="descriptionListLangType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
-						List of descriptions for the event...
-					<!-- TODO John : what is the use / requirement for this? -->
+						List of descriptions for the event, with language attribute.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="rerun" type="xs:boolean">
 				<xs:annotation>
-					<xs:documentation>indicates if this is a rerun, the rules for decision could is set by the provider and could be different between providers
+					<!-- TODO: what is the usage? why not in export? -->
+					<xs:documentation>Indicates if this is a rerun, the rules for decision could is set by the provider and could be different between providers
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -144,7 +144,6 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<!-- remove? -->
 	<xs:complexType name="embeddedEventListType">
 		<xs:sequence>
 			<xs:element name="event" type="embeddedEventType" minOccurs="0" maxOccurs="unbounded" />
@@ -156,7 +155,7 @@
 			<xs:element name="event" type="basicEventType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-	<!-- remove? -->
+	<!-- TODO: simplify nested eventtypes -->
 	<xs:complexType name="eventListType">
 		<xs:annotation>
 			<xs:documentation>
@@ -187,15 +186,6 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	<!-- Not in use anymore. 
-	<xs:simpleType name="timecode">
-		<xs:annotation>
-			<xs:documentation>
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string" />
-	</xs:simpleType>
-	-->
 	<xs:complexType name="timeListType">
 		<xs:sequence>
 			<xs:element name="time" type="timeType" minOccurs="0" maxOccurs="unbounded" />
@@ -224,8 +214,6 @@
 			</xs:element>
 			<xs:element name="duration" type="xs:duration" minOccurs="0" />
 		</xs:sequence>
-
-		<!-- Should maybe be minOccurs 0 or removed completly -->
 		<xs:attribute name="type" type="timeSchedulingType" default="public" />
 	</xs:complexType>
 	<xs:simpleType name="timeSchedulingType">

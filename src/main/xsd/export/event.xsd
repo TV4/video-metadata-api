@@ -4,7 +4,7 @@
 >
 	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
 
-	<!--  -->
+	<!-- ROOT element -->
 	<xs:element name="event" type="eventType">
 		<xs:annotation>
 			<xs:documentation>root node of event</xs:documentation>
@@ -36,6 +36,7 @@
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="productGroup" type="common:productGroupType" minOccurs="1" />
+
 			<xs:element name="hidden" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>indicates if this event is hidden, i.e. if it should not be public.
