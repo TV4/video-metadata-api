@@ -167,6 +167,20 @@
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
+					<xs:element name="linear" type="xs:boolean" minOccurs="0" default="false">
+						<xs:annotation>
+							<xs:documentation>Flag to indicates if this event is linear broadcast (e.g. not a VOD stream).
+								Relates to live element.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="live" type="xs:boolean" minOccurs="0" default="false">
+						<xs:annotation>
+							<xs:documentation>Flag to indicates if this event is live broadcast.
+								Relates to linear element.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 					<xs:element name="contentType" type="contentTypeType" />
 					<xs:element name="brandId" type="common:idType" minOccurs="0">
 						<xs:annotation>
@@ -192,13 +206,6 @@
                             </xs:documentation>
                         </xs:annotation>
                     </xs:element>
-					<xs:element name="live" type="xs:boolean" minOccurs="0">
-						<!-- TODO: Borde sitta på event. Ska inte vara på content som ska vara publiceringsneutralt -->
-						<xs:annotation>
-							<xs:documentation>indicates if this event is live.
-							</xs:documentation>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="addProviderLogo" type="xs:boolean" default="true">
 						<xs:annotation>
 							<xs:documentation>Information to the client if the player shall add the default logo (tv4play) to
@@ -210,7 +217,7 @@
 					</xs:element>
 					<xs:element name="allowShare" type="xs:boolean" default="true">
 						<xs:annotation>
-							<xs:documentation>Information to the client if the social media sharing functions shall be enabled.</xs:documentation>
+							<xs:documentation>Information to the client if the social media sharing functions shall be disabled (default true).</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="hideAds" type="xs:boolean" default="false">
