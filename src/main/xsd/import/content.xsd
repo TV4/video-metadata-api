@@ -23,7 +23,7 @@
 			<xs:documentation>Abstract type that holds attributes common to brand, season and content</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="id" type="xs:string">
+			<xs:element name="id" type="common:idType">
 				<xs:annotation>
 					<xs:documentation>unique id for asset, unique within each provider
 					</xs:documentation>
