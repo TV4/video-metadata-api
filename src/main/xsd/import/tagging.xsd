@@ -115,6 +115,8 @@
 			<xs:enumeration value="program" />
 			<xs:enumeration value="subject" />
 			<xs:enumeration value="story" />
+			<xs:enumeration value="mainCategory"/>
+            <xs:enumeration value="subCategory"/>
 			<xs:enumeration value="other">
 				<xs:annotation>
 					<xs:documentation>A free text tag.
