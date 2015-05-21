@@ -256,7 +256,7 @@
 				</xs:annotation>
 			</xs:element>
 
-			<xs:element name="type" type="materialTypeType">
+			<xs:element name="type" type="materialTypeType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						Type of material, for example video or audio.
