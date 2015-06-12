@@ -50,7 +50,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-
 			<xs:element name="videoFormat" type="videoFormatType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>format for video, for example HD
@@ -63,7 +62,6 @@
 					</xs:documentation>
 				</xs:annotation>
             </xs:element>
-            
 			<xs:element name="audioList" type="audioListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of available audio for this material
@@ -86,7 +84,15 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-
+			<!--
+			<xs:element name="materialRightsList" type="materialRightsListType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>List of available material rights.
+						Each right is for a rights period.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			-->
 		</xs:sequence>
 		<xs:attribute name="timestamp" type="xs:dateTime" use="required">
 			<xs:annotation>
@@ -95,7 +101,6 @@
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
-
 	<xs:complexType name="videoFormatType">
 		<xs:simpleContent>
 			<xs:extension base="videoFormatTypeType">
@@ -107,7 +112,6 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-
 	<xs:simpleType name="videoFormatTypeType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="576i" />
@@ -118,7 +122,6 @@
 			<xs:enumeration value="other" />
 		</xs:restriction>
 	</xs:simpleType>
-
 	<xs:complexType name="audioListType">
 		<xs:sequence>
 			<xs:element name="format" type="audioType" minOccurs="0" maxOccurs="unbounded">
@@ -159,7 +162,6 @@
 			<xs:enumeration value="other" />
 		</xs:restriction>
 	</xs:simpleType>
-
 	<!-- TODO: Need to add a RFA flag to Subtitles as well? -->
 	<xs:complexType name="subtitleListType">
 		<xs:sequence>
@@ -228,13 +230,11 @@
 			<xs:enumeration value="spokenSubtitle" /><!-- not used by TV4 -->
 		</xs:restriction>
 	</xs:simpleType>
-
 	<xs:complexType name="mediaListType">
 		<xs:sequence>
 			<xs:element name="media" type="mediaType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-
 	<xs:simpleType name="materialReferenceTypeType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="video" />
@@ -243,7 +243,6 @@
 			<xs:enumeration value="graphics" />
 		</xs:restriction>
 	</xs:simpleType>
-
 	<xs:complexType name="mediaType">
 		<xs:sequence>
 			<xs:element name="mediaRef" type="xs:string">
@@ -255,7 +254,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-
 			<xs:element name="type" type="materialTypeType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
@@ -264,8 +262,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-
-			<xs:element name="duration" type="timecodeType" minOccurs="0">
+			<xs:element name="duration" type="xs:int" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						The duration of the material in frames.
@@ -291,22 +288,20 @@
 					<xs:restriction base="xs:int" />
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="in" type="timecodeType">
+			<xs:element name="in" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>
 						Number of frames from where the mediasegment starts in the referenced file/tape.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-
-			<xs:element name="out" type="timecodeType">
+			<xs:element name="out" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>
 						Number of frames from where the mediasegment ends in the referenced file/tape.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-
 			<xs:element name="use" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>
@@ -332,16 +327,7 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:simpleType name="timecodeType">
-		<xs:annotation>
-			<xs:documentation>
-				Timecode is set to number of frames to avoid conversion problems.
-				Conversion to time should be done when a framrate is known at the endpoint.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:int"/>
-	</xs:simpleType>
-	<xs:complexType name="rightsListType">
+	<xs:complexType name="materialRightsListType">
 		<xs:sequence>
 			<xs:element name="rights" type="materialRightsType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
@@ -353,7 +339,7 @@
 		<xs:sequence>
 			<xs:element name="rightsName" type="xs:string" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Name of right, i e 'Free' or 'Premium'
+					<xs:documentation>Name of right, i.e 'AVOD=Free' or 'SVOD=Premium'
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -369,11 +355,13 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- -->
 			<xs:element name="rightsCategoryList" type="rightsCategoryListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of right categories</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- -->
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="rightsCategoryListType">
@@ -431,7 +419,7 @@
 	</xs:complexType>
 	<xs:complexType name="deviceTypeRightsType">
 		<xs:sequence>
-			<xs:element name="deviceType" type="common:deviceTypeType" maxOccurs="unbounded"></xs:element>
+			<xs:element name="deviceType" type="common:deviceTypeType" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:simpleType name="digitalOutputRightsType">
@@ -449,11 +437,10 @@
 	</xs:simpleType>
 	<xs:complexType name="analogOutputRightsType">
 		<xs:choice>
-			<xs:element name="unrestricted" type="xs:boolean"></xs:element>
-			<xs:element name="besteffort" type="cgmsaType"></xs:element>
-			<xs:element name="restricted" type="cgmsaType"></xs:element>
-			<xs:element name="disallow" type="xs:boolean">
-			</xs:element>
+			<xs:element name="unrestricted" type="xs:boolean" />
+			<xs:element name="besteffort" type="cgmsaType" />
+			<xs:element name="restricted" type="cgmsaType" />
+			<xs:element name="disallow" type="xs:boolean" />
 		</xs:choice>
 	</xs:complexType>
 	<xs:simpleType name="cgmsaType">
@@ -478,7 +465,6 @@
 			<xs:enumeration value="disallow" />
 		</xs:restriction>
 	</xs:simpleType>
-	
 	<xs:complexType name="materialListType">
 		<xs:annotation>
 			<xs:documentation>
@@ -490,5 +476,4 @@
 			<xs:element name="material" type="materialType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-
 </xs:schema>
