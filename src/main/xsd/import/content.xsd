@@ -549,7 +549,8 @@
 	</xs:complexType>
 	<xs:complexType name="teamListType">
 		<xs:sequence>
-			<xs:element name="team" type="teamType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="homeTeam" type="teamType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="awayTeam" type="teamType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="teamType">
