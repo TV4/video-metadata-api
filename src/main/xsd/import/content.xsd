@@ -525,7 +525,7 @@
 	</xs:complexType>
 	<xs:complexType name="seasonOrTournamentList">
 		<xs:sequence>
-			<xs:element name="roundOrEpisode" type="roundOrEpisodeType" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="seasonOrTournament" type="seasonOrTournamentType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="seasonOrTournamentType">
