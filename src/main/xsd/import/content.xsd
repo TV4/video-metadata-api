@@ -182,7 +182,7 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="program" />
 			<xs:enumeration value="movie" />
-			<xs:enumeration value="serie" />
+			<xs:enumeration value="episode" />
 			<xs:enumeration value="trailer" />
 			<xs:enumeration value="clip" />
 			<xs:enumeration value="ad" />
