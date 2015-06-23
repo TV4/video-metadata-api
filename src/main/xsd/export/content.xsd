@@ -4,7 +4,7 @@
 	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
 	<xs:import namespace="http://video-metadata.tv4.se/tagging/v1" schemaLocation="tagging.xsd" />
 
-	<!-- -->
+	<!--  -->
 	<xs:element name="content" type="contentSeasonBrandType">
 		<xs:annotation>
 			<xs:documentation>Root element for content object</xs:documentation>
@@ -173,14 +173,14 @@
 					<xs:element name="linear" type="xs:boolean" minOccurs="0" default="false">
 						<xs:annotation>
 							<xs:documentation>Flag to indicates if this stream is a linear broadcast (e.g. not a VOD stream).
-								This means that the "program" is avalable on the linear TV at the same time as over the OVP.
+								This means that the "program" is available on the linear TV at the same time as over the OVP.
 								Relates to live element.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="live" type="xs:boolean" minOccurs="0" default="false">
 						<xs:annotation>
-							<xs:documentation>Flag to indicates if this stream is a live broadcast.
+							<xs:documentation>Flag to indicates if this stream is a live stream.
 								Relates to linear element.
 							</xs:documentation>
 						</xs:annotation>
@@ -539,6 +539,7 @@
 			<xs:element name="subGenre" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- Removed - replaced by a main and sub category tag type
 	<xs:complexType name="categoryType">
 		<xs:annotation>
 			<xs:documentation>
@@ -552,6 +553,7 @@
 			<xs:element name="subCategory" type="common:nidType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	-->
 	<xs:complexType name="sportType">
 		<xs:annotation>
 			<xs:documentation>Sports tag that describes the sport event: serie, league, tournament or any other sport
