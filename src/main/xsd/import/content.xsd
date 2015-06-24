@@ -150,7 +150,19 @@
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="contentType" type="contentTypeType" />
+					<xs:element name="duration" type="xs:int" minOccurs="0" >
+						<xs:annotation>
+							<xs:documentation>
+								Duration of the video content in seconds. Ads not expected to be included in the duration.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="contentType" type="contentTypeType" minOccurs="0" >
+						<xs:annotation>
+							<xs:documentation>Deprecated: replaced by Category tag.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 					<xs:element name="brandId" type="common:idType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>id for season, not unique</xs:documentation>

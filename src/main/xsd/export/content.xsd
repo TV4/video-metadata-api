@@ -159,14 +159,19 @@
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="videoId" type="xs:string" minOccurs="0">
-						<!-- TODO: Borde kanske ligga på eventet. Om ett content sänds live/linjärt med en ström och sedan som inspelad VOD fungerar det inte att samma content finns publicerat linjärt och som vod.
-						Antingen flytta både VOD och live videoId till eventet, eller så bara live till event. -->
 						<xs:annotation>
 							<xs:documentation>EMP id for asset stream.
 								Will be non present until content has a video ID assosiated with it.
 								Video will be constructed by prefix/suffix the content.id with a provider code.
 								E.g., provider TV4 has provider code = "1423" and content.id = 1234567890 => videoId = 1234567890_1423.
 								The exact format is under discussion (15/5-15). Underscore to be replaced by hypen '-' (due to SEO) (and possibly the suffix to be replaced by a prefix).
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="duration" type="xs:int" minOccurs="0" >
+						<xs:annotation>
+							<xs:documentation>
+								Duration of the video content in seconds. Ads not expected to be included in the duration.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -191,7 +196,12 @@
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="contentType" type="contentTypeType" />
+					<xs:element name="contentType" type="contentTypeType" minOccurs="0" >
+						<xs:annotation>
+							<xs:documentation>Deprecated: replaced by Category tag.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 					<xs:element name="brandId" type="common:idType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>id for season, not unique</xs:documentation>
