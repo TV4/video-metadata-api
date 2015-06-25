@@ -430,6 +430,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
+			<xs:enumeration value="slug" />
 			<xs:enumeration value="tiny" />
 			<xs:enumeration value="short" />
 			<xs:enumeration value="medium" />
