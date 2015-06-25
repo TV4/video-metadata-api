@@ -84,7 +84,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<!--
 			<xs:element name="materialRightsList" type="materialRightsListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>List of available material rights.
@@ -92,7 +91,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			-->
 		</xs:sequence>
 		<xs:attribute name="timestamp" type="xs:dateTime" use="required">
 			<xs:annotation>
@@ -343,27 +341,28 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="validFrom" type="xs:dateTime" minOccurs="0">
+			<xs:element name="validFrom" type="xs:dateTime">
 				<xs:annotation>
 					<xs:documentation>Start of period where right is valid
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="validTo" type="xs:dateTime" minOccurs="0">
+			<xs:element name="validTo" type="xs:dateTime">
 				<xs:annotation>
 					<xs:documentation>End of period where right is valid
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<!-- -->
+			<!--
 			<xs:element name="rightsCategoryList" type="rightsCategoryListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of right categories</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<!-- -->
+			-->
 		</xs:sequence>
 	</xs:complexType>
+	<!--
 	<xs:complexType name="rightsCategoryListType">
 		<xs:sequence>
 			<xs:element name="rightsCategory" type="rightsCategoryType" maxOccurs="unbounded" />
@@ -465,6 +464,7 @@
 			<xs:enumeration value="disallow" />
 		</xs:restriction>
 	</xs:simpleType>
+	-->
 	<xs:complexType name="materialListType">
 		<xs:annotation>
 			<xs:documentation>
