@@ -56,6 +56,32 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="duration" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						The duration of the material in frames.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="framerate" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						If applicable, framerate for the material in fps
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int" />
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bitrate" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>If applicable, bitrate for the material in bps
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int" />
+				</xs:simpleType>
+			</xs:element>
 			<xs:element name="mediaList" type="mediaListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of available media for this material
@@ -252,6 +278,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!--
 			<xs:element name="type" type="materialTypeType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
@@ -260,32 +287,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="duration" type="xs:int" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>
-						The duration of the material in frames.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="framerate" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>
-						If applicable, framerate for the material in fps
-					</xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:int" />
-				</xs:simpleType>
-			</xs:element>
-			<xs:element name="bitrate" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>If applicable, bitrate for the material in bps
-					</xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:int" />
-				</xs:simpleType>
-			</xs:element>
+		-->
 			<xs:element name="in" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>
