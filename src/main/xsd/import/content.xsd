@@ -597,6 +597,13 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<xs:element name="duration" type="xs:int" minOccurs="0">
+        <xs:annotation>
+            <xs:documentation>
+                The duration of the material in seconds.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
 	<xs:complexType name="brandListType">
 		<xs:sequence>
 			<xs:element name="brand" type="brandType" minOccurs="0" maxOccurs="unbounded">
