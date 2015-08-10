@@ -9,7 +9,9 @@
 	<!-- Message definitions -->
 	<xs:element name="response">
 		<xs:annotation>
-			<xs:documentation>Root element for generic meta-data response messages
+			<xs:documentation>
+				Root element for generic meta-data response messages
+				<!-- Todo: Future imporvement is to add replyTo that holds the message id that the response relates to -->
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
