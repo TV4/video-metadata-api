@@ -419,6 +419,7 @@
 						<xs:enumeration value="promo" />
 						<xs:enumeration value="press" />
 						<xs:enumeration value="logo" />
+						<xs:enumeration value="cinemascope" />
 						<xs:enumeration value="other" />
 					</xs:restriction>
 				</xs:simpleType>
