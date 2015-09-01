@@ -90,6 +90,7 @@
 			<xs:element name="logoImage" type="imageType" minOccurs="0" />
 			<xs:element name="promoImage" type="imageType" minOccurs="0" />
 			<xs:element name="bannerImage" type="imageType" minOccurs="0" />
+			<xs:element name="cinemascopeImage" type="imageType" minOccurs="0" />
 			<xs:element name="genreList" type="genreListType" minOccurs="0" />
 			<xs:element name="parentalRatingList" type="parentalRatingListType" minOccurs="0" />
 			<xs:element name="externalReferenceList" type="common:externalReferenceListType" minOccurs="0">

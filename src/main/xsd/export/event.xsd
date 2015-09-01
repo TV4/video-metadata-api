@@ -23,13 +23,13 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="channelId" type="common:idType" minOccurs="0">
+			<xs:element name="channelId" type="common:idType">
 				<xs:annotation>
 					<xs:documentation>Channel id , e.g. 'se.tv4play', se.cmore
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="deviceType" type="common:deviceTypeType" minOccurs="0">
+			<xs:element name="deviceType" type="common:deviceTypeType">
 				<xs:annotation>
 					<xs:documentation>if null, then generic and valid for all
 					</xs:documentation>
