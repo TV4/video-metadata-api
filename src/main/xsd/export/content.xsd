@@ -510,6 +510,7 @@
 	</xs:complexType>
 	<xs:complexType name="urlListType">
 		<xs:sequence>
+			<!-- type should not be description, rather a URL with a language attribute -->
 			<xs:element name="url" type="common:description" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
@@ -595,6 +596,7 @@
 			<xs:element name="roundOrEpisodeList" type="roundOrEpisodeListType" minOccurs="0" />
 			<xs:element name="homeTeamList" type="teamListType" minOccurs="0" />
 			<xs:element name="awayTeamList" type="teamListType" minOccurs="0" />
+			<xs:element name="arenaOrCourceList" type="teamListType" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="sportsCategoryType">
