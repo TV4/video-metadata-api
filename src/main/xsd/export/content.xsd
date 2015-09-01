@@ -187,9 +187,7 @@
 					-->
 					<xs:element name="live" type="xs:boolean" minOccurs="0" default="false">
 						<xs:annotation>
-							<!-- Todo: should be flag on the event -->
 							<xs:documentation>Flag to indicates if this stream is a live stream.
-								Relates to linear element.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
