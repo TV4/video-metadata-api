@@ -110,24 +110,11 @@
             <xs:documentation>The defined tag types.
             </xs:documentation>
         </xs:annotation>
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="person"/>
-            <xs:enumeration value="program"/>
-            <xs:enumeration value="subject"/>
-            <xs:enumeration value="story"/>
-            <xs:enumeration value="mainCategory"/>
-            <xs:enumeration value="subCategory"/>
-            <xs:enumeration value="other">
-                <xs:annotation>
-                    <xs:documentation>A free text tag.
-                    </xs:documentation>
-                </xs:annotation>
-            </xs:enumeration>
-        </xs:restriction>
+        <xs:restriction base="common:idType" />
     </xs:simpleType>
     <xs:simpleType name="tagNameType">
         <xs:annotation>
-            <xs:documentation>Unique name for the tag, i.e. the textual representation.
+            <xs:documentation>Name for the tag, i.e. the textual representation.
                 Language attribute can be used to specify a localized name for the tag.
                 If more than one tag value is given without language
                 attribute, or the same language attribute is repeated, then
@@ -135,8 +122,6 @@
             </xs:documentation>
         </xs:annotation>
         <xs:restriction base="xs:string">
-            <xs:pattern value="[\w^\p{Z}^\p{C}][\w^\p{C}]*[\w^\p{Z}^\p{C}]"/>
-            <!-- Complicated regex - document or make simpler-->
         </xs:restriction>
     </xs:simpleType>
     <xs:complexType name="tagNameDefType">
