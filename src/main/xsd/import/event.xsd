@@ -44,7 +44,7 @@
 			<!-- TODO: Description on events? -->
 			<xs:element name="descriptionList" type="descriptionListLangType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Indicates if this event is hidden, i.e. if it should not be public.
+					<xs:documentation>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -151,7 +151,7 @@
 			<xs:element name="event" type="basicEventType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-	<!-- TODO: simplify nested eventtypes -->
+	<!-- TODO: simplify nested eventtypes without inherritance and embedded events. -->
 	<xs:complexType name="eventListType">
 		<xs:annotation>
 			<xs:documentation>

@@ -186,7 +186,7 @@
 			<xs:enumeration value="other" />
 		</xs:restriction>
 	</xs:simpleType>
-	<!-- TODO: Need to add a RFA flag to Subtitles as well? -->
+	<!-- TODO: Is three a need to add a RFA flag to Subtitles as well? -->
 	<xs:complexType name="subtitleListType">
 		<xs:sequence>
 			<xs:element name="subtitle" type="subtitleType" minOccurs="0" maxOccurs="unbounded">

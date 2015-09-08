@@ -27,7 +27,7 @@
 			<xs:element name="brand" type="content:brandType" minOccurs="0" />
 			<xs:element name="season" type="content:seasonType" minOccurs="0" />
 			<xs:element name="content" type="content:contentType" minOccurs="1" />
-			<!-- TODO: Not sure if materials always are available. Is it? -->
+			<!-- Allow minOccurs="0", incase of a live recording when the material is created in EMP. -->
 			<xs:element name="materialList" type="material:materialListType" minOccurs="0" maxOccurs="1" />
 			<!-- TODO: No publish without a publication event, or? -->
 			<xs:element name="eventList" type="event:eventListType"/>

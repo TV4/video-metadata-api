@@ -35,7 +35,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<!-- TODO: undersök om productGroup ska byta namn till product, då det är vad den kallas för i övriga EMP system. -->
+			<!-- TODO: undersök om productGroup ska byta namn till product, då det är vad den kallas för i övriga EMP system. JIRA:OVPMD-34  -->
 			<xs:element name="productGroup" type="common:productGroupType" minOccurs="1" />
 
 			<xs:element name="hidden" type="xs:boolean" minOccurs="0">
