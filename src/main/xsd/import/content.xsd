@@ -91,6 +91,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- TODO: Begränsa genre till att inte vara en lista i kommande version av XSD. -->
 			<xs:element name="genreList" type="genreListType" minOccurs="0" />
 			<xs:element name="parentalRatingList" type="parentalRatingListType" minOccurs="0" />
 			<xs:element name="externalReferenceList" type="common:externalReferenceListType" minOccurs="0">
