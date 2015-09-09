@@ -6,12 +6,17 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.List;
 
 import org.custommonkey.xmlunit.Validator;
 import org.custommonkey.xmlunit.XMLTestCase;
 import org.custommonkey.xmlunit.exceptions.ConfigurationException;
+import org.junit.Test;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
+
+import se.tv4.teknik.vmd.generated.jaxb.MaterialRightsListType;
+import se.tv4.teknik.vmd.generated.jaxb.MaterialRightsType;
 
 public class TestValidateContentXML extends XMLTestCase{
 
@@ -53,4 +58,15 @@ public class TestValidateContentXML extends XMLTestCase{
 		*/ 	
 	}
 
+	@Test
+	public void testMaterialRightsListType(){
+		MaterialRightsListType x  = new MaterialRightsListType();
+		
+		List<MaterialRightsType> rights = x.getRights();
+		assertNotNull(rights);
+		
+		MaterialRightsType y = new MaterialRightsType();
+		rights.add(y);
+		assertEquals("Unexcpected size on rights list", 1, rights.size());
+	}
 }

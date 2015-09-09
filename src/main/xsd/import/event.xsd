@@ -19,17 +19,13 @@
 		<xs:sequence>
 			<xs:element name="id" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>
-						This is the eventId from the scheduled event in louise.
-						Should start with provider name, for example 'se.tv4.123456'
+					<xs:documentation>Per provider unique id for the event.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="channelId" type="common:idType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>
-						id for the current service or channel, could be for example 'se.tv4.tv4play'.
-						This specefies the 
+					<xs:documentation>Channel id , e.g. 'se.tv4play', se.cmore
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -39,6 +35,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- TODO: undersök om productGroup ska byta namn till product, då det är vad den kallas för i övriga EMP system. -->
 			<xs:element name="productGroup" type="common:productGroupType" minOccurs="1" />
 			<!-- Why publications rights? We should only send publication events? -->
 			<xs:element name="publicationRights" type="publicationRightsType" minOccurs="0">
@@ -47,8 +44,7 @@
 			<!-- TODO: Description on events? -->
 			<xs:element name="descriptionList" type="descriptionListLangType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>
-						List of descriptions for the event, with language attribute.
+					<xs:documentation>Indicates if this event is hidden, i.e. if it should not be public.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -212,7 +208,14 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="duration" type="xs:duration" minOccurs="0" />
+			<!-- Moved to Content -->
+			<xs:element name="duration" type="xs:int" minOccurs="0" >
+				<xs:annotation>
+					<xs:documentation>
+						Deprecated: duration moved to Content.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 		<xs:attribute name="type" type="timeSchedulingType" default="public" />
 	</xs:complexType>
