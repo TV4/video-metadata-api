@@ -3,7 +3,7 @@
 	targetNamespace="http://video-metadata.tv4.se/event/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
 	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
 
-	<!--  -->
+	<!-- ROOT element -->
 	<xs:element name="event" type="eventType">
 		<xs:annotation>
 			<xs:documentation>root node of event</xs:documentation>
@@ -18,13 +18,13 @@
 		<xs:sequence>
 			<xs:element name="id" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>unique id for the event, should start with provider name, for example 'se.tv4.123456'
+					<xs:documentation>Per provider unique id for the event.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="channelId" type="common:idType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>id for the current service or channel, could be for example 'se.tv4.tv4play'
+					<xs:documentation>Channel id , e.g. 'se.tv4play', se.cmore
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -34,10 +34,12 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- TODO: undersök om productGroup ska byta namn till product, då det är vad den kallas för i övriga EMP system. -->
 			<xs:element name="productGroup" type="common:productGroupType" minOccurs="1" />
+
 			<xs:element name="hidden" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>indicates if this event is hidden, i.e. if it should not be public.
+					<xs:documentation>Indicates if this event is hidden, i.e. if it should not be public.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -66,7 +68,15 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="duration" type="timecode" minOccurs="0" />
+			<!-- Moved to Content -->
+			<xs:element name="duration" type="xs:int" minOccurs="0" >
+				<xs:annotation>
+					<xs:documentation>
+						Deprecated: duration moved to Content.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="embeddedEventType">
@@ -148,11 +158,4 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	<xs:simpleType name="timecode">
-		<xs:annotation>
-			<xs:documentation>
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string" />
-	</xs:simpleType>
 </xs:schema>

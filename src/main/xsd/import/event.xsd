@@ -19,17 +19,13 @@
 		<xs:sequence>
 			<xs:element name="id" type="common:idType">
 				<xs:annotation>
-					<xs:documentation>
-						This is the eventId from the scheduled event in louise.
-						Should start with provider name, for example 'se.tv4.123456'
+					<xs:documentation>Per provider unique id for the event.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="channelId" type="common:idType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>
-						id for the current service or channel, could be for example 'se.tv4.tv4play'.
-						This specefies the 
+					<xs:documentation>Channel id , e.g. 'se.tv4play', se.cmore
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -39,28 +35,23 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="priceGroup" type="priceGroupType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>if null, then generic and valid for all
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<!-- Why publications rights? We should only send publication events -->
-			<xs:element name="publicationRights" type="publicationRightsType">
+			<!-- TODO: undersök om productGroup ska byta namn till product, då det är vad den kallas för i övriga EMP system. -->
+			<xs:element name="productGroup" type="common:productGroupType" minOccurs="1" />
+			<!-- Why publications rights? We should only send publication events? -->
+			<xs:element name="publicationRights" type="publicationRightsType" minOccurs="0">
 			</xs:element>
 
-			<!-- Description on events? -->
+			<!-- TODO: Description on events? -->
 			<xs:element name="descriptionList" type="descriptionListLangType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>
-						List of descriptions for the event...
-					<!-- TODO John : what is the use / requirement for this? -->
+					<xs:documentation>Indicates if this event is hidden, i.e. if it should not be public.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="rerun" type="xs:boolean">
 				<xs:annotation>
-					<xs:documentation>indicates if this is a rerun, the rules for decision could is set by the provider and could be different between providers
+					<!-- TODO: what is the usage? why not in export? -->
+					<xs:documentation>Indicates if this is a rerun, the rules for decision could is set by the provider and could be different between providers
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -70,6 +61,16 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+
+			<xs:element name="recordCatchup" type="timeType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Indicates if a "LIVE" event can be recorded or not. 
+						Right now this is only thought to be used with events in a schedule, this is so the recipient can identify wether they are can record and later display the live event or not. 
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
 			<xs:element name="hidden" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>indicates if this event is hidden, i.e. if it should not be public.
@@ -95,14 +96,15 @@
 				<xs:sequence>
 					<xs:element name="contentIdRef" type="xs:string">
 						<xs:annotation>
-							<xs:documentation>Reference to contentId for this event for convenience as this could be obtained via materialIdRef. Warning. This id is
-								redundant as the material also points out the content! They should be verified to be the same.
+							<xs:documentation>Reference to contentId. I.E the content that is to be shown in this event.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="materialIdRef" type="xs:string">
 						<xs:annotation>
-							<xs:documentation>reference to contentId for this event
+							<xs:documentation>
+								Reference to the version-key for this event. 
+								A version in louise contains information about the filename that holds the media, subtitle information and RFA information etc.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -138,16 +140,6 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:simpleType name="priceGroupType">
-		<xs:annotation>
-			<xs:documentation>Tag identifying the priceGroup of the material. id = ppv1 -> 45 SEK, 40 NOK, 4 EU, id = ppv2 -> ...
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:pattern value="\w+"></xs:pattern>
-		</xs:restriction>
-	</xs:simpleType>
-	<!-- remove? -->
 	<xs:complexType name="embeddedEventListType">
 		<xs:sequence>
 			<xs:element name="event" type="embeddedEventType" minOccurs="0" maxOccurs="unbounded" />
@@ -159,7 +151,7 @@
 			<xs:element name="event" type="basicEventType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-	<!-- remove? -->
+	<!-- TODO: simplify nested eventtypes -->
 	<xs:complexType name="eventListType">
 		<xs:annotation>
 			<xs:documentation>
@@ -190,13 +182,6 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	<xs:simpleType name="timecode">
-		<xs:annotation>
-			<xs:documentation>
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string" />
-	</xs:simpleType>
 	<xs:complexType name="timeListType">
 		<xs:sequence>
 			<xs:element name="time" type="timeType" minOccurs="0" maxOccurs="unbounded" />
@@ -223,10 +208,15 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="duration" type="timecode" minOccurs="0" />
+			<!-- Moved to Content -->
+			<xs:element name="duration" type="xs:int" minOccurs="0" >
+				<xs:annotation>
+					<xs:documentation>
+						Deprecated: duration moved to Content.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
-
-		<!-- Should maybe be minOccurs 0 or removed completly -->
 		<xs:attribute name="type" type="timeSchedulingType" default="public" />
 	</xs:complexType>
 	<xs:simpleType name="timeSchedulingType">

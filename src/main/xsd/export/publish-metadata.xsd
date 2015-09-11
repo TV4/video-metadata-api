@@ -12,7 +12,6 @@
     <xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd"/>
     <xs:import namespace="http://video-metadata.tv4.se/content/v1" schemaLocation="content.xsd"/>
     <xs:import namespace="http://video-metadata.tv4.se/event/v1" schemaLocation="event.xsd"/>
-    <xs:import namespace="http://video-metadata.tv4.se/material/v1" schemaLocation="material.xsd"/>
 
     <!-- Message definitions -->
     <xs:element name="publish-metadata">
@@ -35,17 +34,10 @@
             <xs:documentation>root node of publish</xs:documentation>
         </xs:annotation>
         <xs:sequence>
-            <xs:element name="brand" type="content:brandType" minOccurs="1" maxOccurs="1"/>
-            <xs:element name="season" type="content:seasonType" minOccurs="1" maxOccurs="1"/>
-            <xs:element name="content" type="content:contentType" minOccurs="1" maxOccurs="1"/>
-            <xs:element name="materialList" type="material:materialListType" minOccurs="1" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation>material list for the document, could be 0
-                        entries which would indicate no events for this period
-                    </xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="eventList" type="event:eventListType" minOccurs="1" maxOccurs="1">
+            <xs:element name="brand" type="content:brandType"/>
+            <xs:element name="season" type="content:seasonType"/>
+            <xs:element name="content" type="content:contentType"/>
+            <xs:element name="eventList" type="event:eventListType">
                 <xs:annotation>
                     <xs:documentation>Event list for the document, could be 0
                         entries

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Document developed by SVT and TV4 2009, 2010, 2011 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/content/v1" xmlns:common="http://video-metadata.tv4.se/common/v1"
 	xmlns:tagging="http://video-metadata.tv4.se/tagging/v1" targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
 	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
@@ -24,7 +23,7 @@
 			<xs:documentation>Abstract type that holds attributes common to brand, season and content</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="id" type="xs:string">
+			<xs:element name="id" type="common:idType">
 				<xs:annotation>
 					<xs:documentation>unique id for asset, unique within each provider
 					</xs:documentation>
@@ -91,25 +90,26 @@
 			<xs:element name="logoImage" type="imageType" minOccurs="0" />
 			<xs:element name="promoImage" type="imageType" minOccurs="0" />
 			<xs:element name="bannerImage" type="imageType" minOccurs="0" />
-			<xs:element name="category" type="categoryType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Category path expression</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+			<xs:element name="genreList" type="genreListType" minOccurs="0" />
 			<xs:element name="parentalRatingList" type="parentalRatingListType" minOccurs="0" />
 			<xs:element name="externalReferenceList" type="common:externalReferenceListType" minOccurs="0">
 				<xs:annotation>
+					<!-- TODO: fix doc question marks -->
 					<xs:documentation>List of externalReference (of what?)
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="additionalProperties" type="common:propertyListType"></xs:element>
+			<xs:element name="additionalProperties" type="common:propertyListType" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="brandType">
 		<xs:complexContent>
 			<xs:extension base="abstractContentType">
 				<xs:sequence>
+					<xs:annotation>
+						<xs:documentation>Set in EMP by editor, legal requirement if brand is sponsored.
+						</xs:documentation>
+					</xs:annotation>
 					<xs:element name="sponsored" type="xs:boolean" default="false" />
 				</xs:sequence>
 			</xs:extension>
@@ -147,7 +147,7 @@
 				<xs:sequence>
 					<xs:element name="sport" type="sportType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>For content describing sport material
+							<xs:documentation>Informationa about tournament, round and teams for sport or entertainment programs.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -161,10 +161,47 @@
 						<xs:annotation>
 							<xs:documentation>EMP id for asset stream.
 								Will be non present until content has a video ID assosiated with it.
+								Video will be constructed by prefix/suffix the content.id with a provider code.
+								E.g., provider TV4 has provider code = "1423" and content.id = 1234567890 => videoId = 1234567890_1423.
+								The exact format is under discussion (15/5-15). Underscore to be replaced by hypen '-' (due to SEO) (and possibly the suffix to be replaced by a prefix).
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="contentType" type="contentTypeType" />
+					<xs:element name="duration" type="xs:int" minOccurs="0" >
+						<xs:annotation>
+							<xs:documentation>
+								Duration of the video content in seconds. Ads not expected to be included in the duration.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="linear" type="xs:boolean" minOccurs="0" default="false">
+						<xs:annotation>
+							<xs:documentation>Flag to indicates if this stream is a linear broadcast (e.g. not a VOD stream).
+								This means that the "program" is available on the linear TV at the same time as over the OVP.
+								Relates to live element.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="live" type="xs:boolean" minOccurs="0" default="false">
+						<xs:annotation>
+							<!-- Todo: should be flag on the event -->
+							<xs:documentation>Flag to indicates if this stream is a live stream.
+								Relates to linear element.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="webExclusive" type="xs:boolean" minOccurs="0" default="false">
+						<xs:annotation>
+							<xs:documentation>Flag to indicates if this content is web exclusive, no linear broadcast in the given channel.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="contentType" type="contentTypeType" minOccurs="0" >
+						<xs:annotation>
+							<xs:documentation>ToDo: changed value set in VCMS.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 					<xs:element name="brandId" type="common:idType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>id for season, not unique</xs:documentation>
@@ -175,18 +212,48 @@
 							<xs:documentation>id for season, not unique. Only present if content is connected to a season.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="live" type="xs:boolean" minOccurs="0">
+					<xs:element name="spokenLanguagesList" type="languageListType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>indicates if this event is live.
+							<xs:documentation>List of available languages for available video soundtracks.
+                                (In import format this information is on the material/audioList.)
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="addProviderLogo" type="xs:boolean" default="true" />
-					<xs:element name="allowShare" type="xs:boolean" default="true" />
-					<xs:element name="allowAds" type="xs:boolean" default="true" />
-					<xs:element name="drmRestrictions" type="xs:boolean" default="true" />
-					<xs:element name="publicationRights" type="publicationRightsType">
+                    <xs:element name="subtitleLanguagesList" type="languageListType" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>List of available languages for available video subtitles.
+                                (In import format this information is on the material/subtitleList.)
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+					<xs:element name="addProviderLogo" type="xs:boolean" default="true">
+						<xs:annotation>
+							<xs:documentation>Information to the client if the player shall add the default logo (tv4play) to
+								the video when playing.
+								Set to false if video already has a logo in the
+								video.
+							</xs:documentation>
+						</xs:annotation>
 					</xs:element>
+					<xs:element name="allowShare" type="xs:boolean" default="true">
+						<xs:annotation>
+							<xs:documentation>Information to the client if the social media sharing functions shall be disabled (default true).</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="hideAds" type="xs:boolean" default="false">
+						<xs:annotation>
+							<xs:documentation>Information to client if presentation in GUI shall be without ads.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="drmRestrictions" type="xs:boolean" default="true">
+                        <xs:annotation>
+                            <xs:documentation>true:=video is DRM protected, player need to initialize differently.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                <xs:element name="publicationRights" type="publicationRightsType">
+                    <xs:annotation>
+                        <xs:documentation></xs:documentation>
+                    </xs:annotation>
 					<xs:element name="contentIdRef" type="common:idType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Reference to other content entity that is related. Thought use is for a clip or
@@ -214,6 +281,7 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="program" />
 			<xs:enumeration value="movie" />
+			<xs:enumeration value="series" />
 			<xs:enumeration value="trailer" />
 			<xs:enumeration value="clip" />
 			<xs:enumeration value="ad" />
@@ -222,7 +290,7 @@
 	</xs:simpleType>
 	<xs:complexType name="titleListType">
 		<xs:sequence>
-			<xs:element name="title" type="originalTitleType" maxOccurs="unbounded" />
+			<xs:element name="title" type="titleType" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="descriptionListType">
@@ -252,27 +320,41 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="parentalRatingType">
-		<xs:annotation>
-			<xs:documentation>
-				Parental rating age year. Empty or non existent element => 0 years => No restriction.
-				Also see http://en.wikipedia.org/wiki/Motion_picture_rating_system for
-				more information.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:simpleContent>
-			<xs:extension base="xs:long">
-				<xs:attribute name="country" type="xs:string" use="optional">
-					<xs:annotation>
-						<xs:documentation>Country code in ISO 3166-1-alpha-2.
-							No country attribute implies all countries.
-							Emplty or absent country attribute has the meaning that it is global, that is
-							defualt if no specific country overrides the value for a specific country.
-							If country value is repeaded, result is undefined.
-						</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
+        <xs:annotation>
+            <xs:documentation>
+                See http://en.wikipedia.org/wiki/Motion_picture_rating_system for more information about parental ratings.
+            </xs:documentation>
+        </xs:annotation>
+		<xs:sequence>
+			<xs:element name="age" type="xs:long" default="0">
+                <xs:annotation>
+                    <xs:documentation>
+                        Parental rating age in year.
+                        0 years => No restriction.
+                        Also see http://en.wikipedia.org/wiki/Motion_picture_rating_system for
+                        more information.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+			<xs:element name="ratingCode" type="xs:string" minOccurs="0" maxOccurs="unbounded" >
+                <xs:annotation>
+                    <xs:documentation>
+                        Rating code that motivates the parental guidance.
+                        Code to descriptive text is mapped in client GUI.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+		</xs:sequence>
+        <xs:attribute name="country" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>
+                    Two char country code accoring to ISO 3166-1-alpha-2.
+                    Empty or absent country attribute has the meaning that it is global default value for any country.
+                    Specific country declaration overrides the default.
+                    If country value is repeted, result is undefined which one to select.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
 	</xs:complexType>
 	<xs:complexType name="tagListType">
 		<xs:sequence>
@@ -280,6 +362,7 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="adTagListType">
+		<!-- TODO: Why typed tag reference, when the type is implicit? Change tagging:tagReferenceType to a common:nidType", else move this to the tagList-->
 		<xs:sequence>
 			<xs:element name="adTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
@@ -293,15 +376,8 @@
 	</xs:complexType>
 	<xs:complexType name="titleType">
 		<xs:simpleContent>
-			<xs:restriction base="textType">
-				<xs:maxLength value="300" />
-			</xs:restriction>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:complexType name="originalTitleType">
-		<xs:simpleContent>
-			<xs:extension base="titleType">
-				<xs:attribute name="original" type="xs:boolean">
+			<xs:extension base="untypedTitleType">
+				<xs:attribute name="type" type="titleTypeType">
 					<xs:annotation>
 						<xs:documentation>Marks a title as the original title
 						</xs:documentation>
@@ -310,31 +386,33 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<xs:simpleType name="titleTypeType">
+		<xs:annotation>
+			<xs:documentation>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="press" />
+			<xs:enumeration value="original" />
+			<xs:enumeration value="episode" />
+			<xs:enumeration value="season" /> <!-- unknown usage, added just to get symmetry for Content Season and Brand -->
+			<xs:enumeration value="brand" /> <!-- unknown usage -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="untypedTitleType">
+		<xs:simpleContent>
+			<xs:restriction base="localizedTextType">
+				<xs:maxLength value="300" />
+			</xs:restriction>
+		</xs:simpleContent>
+	</xs:complexType>
 	<xs:complexType name="descriptionType">
 		<xs:simpleContent>
-			<xs:extension base="descriptionTextType">
+			<xs:extension base="untypedDescriptionType">
 				<xs:attribute name="length" type="descriptionLengthType" use="optional">
 					<xs:annotation>
 						<xs:documentation>
 						</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:complexType name="descriptionTextType">
-		<xs:simpleContent>
-			<xs:restriction base="textType">
-				<xs:maxLength value="3000" />
-			</xs:restriction>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:complexType name="textType">
-		<xs:simpleContent>
-			<xs:extension base="xs:string">
-				<xs:attribute name="language" type="xs:language">
-					<xs:annotation>
-						<xs:documentation>code in ISO 639-1</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
 			</xs:extension>
@@ -347,6 +425,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
+			<xs:enumeration value="slug" />
 			<xs:enumeration value="tiny" />
 			<xs:enumeration value="short" />
 			<xs:enumeration value="medium" />
@@ -354,18 +433,25 @@
 			<xs:enumeration value="extended" />
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:complexType name="dvbGenreType">
-		<xs:sequence>
-			<xs:element name="nibble1" type="dvbGenreNibbleType" />
-			<xs:element name="nibble2" type="dvbGenreNibbleType" minOccurs="0" />
-		</xs:sequence>
+	<xs:complexType name="untypedDescriptionType">
+		<xs:simpleContent>
+			<xs:restriction base="localizedTextType">
+				<xs:maxLength value="3000" />
+			</xs:restriction>
+		</xs:simpleContent>
 	</xs:complexType>
-	<xs:simpleType name="dvbGenreNibbleType">
-		<xs:restriction base="xs:int">
-			<xs:minInclusive value="0" />
-			<xs:maxInclusive value="15" />
-		</xs:restriction>
-	</xs:simpleType>
+	<xs:complexType name="localizedTextType">
+		<xs:annotation><xs:documentation>Localized text element with language attribute.</xs:documentation></xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="language" type="xs:language">
+					<xs:annotation>
+						<xs:documentation>code in ISO 639-1</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
 	<xs:complexType name="creditListType">
 		<xs:sequence>
 			<xs:element name="credit" type="creditType" minOccurs="0" maxOccurs="unbounded" />
@@ -391,15 +477,16 @@
 			<xs:element name="urlList" type="urlListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
+						Support for different images for different languages/countries.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="width" type="xs:int" minOccurs="1" maxOccurs="1">
+			<xs:element name="width" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>In unit px.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="height" type="xs:int" minOccurs="1" maxOccurs="1">
+			<xs:element name="height" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>In unit px.</xs:documentation>
 				</xs:annotation>
@@ -423,7 +510,15 @@
 			<xs:element name="url" type="common:description" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-
+    <xs:complexType name="languageListType">
+        <xs:sequence>
+            <xs:element name="language" type="xs:language" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Language code in ISO 639-1</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 	<xs:complexType name="captionListType">
 		<xs:sequence>
 			<xs:element name="caption" type="common:description" minOccurs="0" maxOccurs="unbounded" />
@@ -451,18 +546,39 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	<xs:complexType name="categoryType">
+    <xs:complexType name="genreListType">
+        <xs:sequence>
+            <xs:element name="genre" type="genreType" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+	<xs:complexType name="genreType">
 		<xs:annotation>
-			<xs:documentation>Category is synonym with Genre. Two leveles of categorisations are supported: main and
-				sub-category The primary category is the category with lowest priority
-				value in the list.
+			<xs:documentation> Two levels of genres are supported: mainGenre and
+				subGenre.
+				Genre is not to be confused with "Category" that is a classification code defined as tags.
+                Genre is typically provided by external parties, e.g. IMDB.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="mainCategory" type="xs:string" />
-			<xs:element name="subCategory" type="xs:string" />
+			<xs:element name="mainGenre" type="xs:string" />
+			<xs:element name="subGenre" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- Removed - replaced by a main and sub category tag type
+	<xs:complexType name="categoryType">
+		<xs:annotation>
+			<xs:documentation>
+                Two levels of categorisations are supported: main and sub-category.
+                Category is a classification code, a reference to a nid of the the typ mainCategory or subCategory.
+                NB., category is NOT synonym with Genre.
+            </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="mainCategory" type="common:nidType" />
+			<xs:element name="subCategory" type="common:nidType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	-->
 	<xs:complexType name="sportType">
 		<xs:annotation>
 			<xs:documentation>Sports tag that describes the sport event: serie, league, tournament or any other sport

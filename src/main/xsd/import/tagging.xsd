@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    TODO: this file shall be identical to the file in import. Only use one! put in common namespace
+-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/tagging/v1"
 			  xmlns:common="http://video-metadata.tv4.se/common/v1"
 			  targetNamespace="http://video-metadata.tv4.se/tagging/v1" elementFormDefault="qualified"
@@ -54,8 +57,8 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<!-- Context? is it required? per channel, ... -->
 			<xs:element name="description" type="xs:string">
+                <!-- TODO: Context of description? is that required? per channel, ... -->
 				<xs:annotation>
 					<xs:documentation>Internal description of the tag, in the company
 						language (english).
@@ -108,10 +111,12 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="person" /><!-- implicitly defined by participant, each participant shall define a tag as well -->
-			<xs:enumeration value="program" /><!-- implicitly defined by program, each program shall define a tag as well -->
+			<xs:enumeration value="person" />
+			<xs:enumeration value="program" />
 			<xs:enumeration value="subject" />
 			<xs:enumeration value="story" />
+			<xs:enumeration value="mainCategory"/>
+            <xs:enumeration value="subCategory"/>
 			<xs:enumeration value="other">
 				<xs:annotation>
 					<xs:documentation>A free text tag.
@@ -130,7 +135,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[\w^\p{Z}^\p{C}]+" />
+			<xs:pattern value="[\w^\p{Z}^\p{C}][\w^\p{C}]*[\w^\p{Z}^\p{C}]" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="tagNameDefType">

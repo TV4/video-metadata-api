@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/common/v1" targetNamespace="http://video-metadata.tv4.se/common/v1" version="1.0">
 
 	<!-- Important note about xs:dateTime: Time zone is UTC if not specified. Possible future change may add a separate type for dateTimes that enforce use of time zone. -->
@@ -10,7 +11,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-Z:_\-\.#@]+" />
+			<xs:pattern value="[0-9a-zA-Z\-_]+" />
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- -->
@@ -24,7 +25,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-Z\-]+" />
+			<xs:pattern value="[0-9a-z\-]+" />
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- -->
@@ -68,14 +69,14 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="id" type="xs:string" minOccurs="0" maxOccurs="1">
+			<xs:element name="id" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Data identifier to map this content to in the
 						external provider/partners data
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="uri" type="xs:string" minOccurs="0" maxOccurs="1">
+			<xs:element name="uri" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Resource to use for reach the data at the
 						provider
@@ -98,11 +99,29 @@
 			<xs:enumeration value="console" />
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="productGroupType">
+		<xs:annotation>
+			<xs:documentation> Identification of the crm product
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\w+"></xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="rightsType">
 		<xs:sequence>
-			<xs:element name="addProviderLogo" type="xs:boolean" default="true" />
+			<xs:element name="addProviderLogo" type="xs:boolean" default="true">
+				<xs:annotation>
+					<xs:documentation>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="allowAds" type="xs:boolean" default="true" />
+			<xs:element name="allowAds" type="xs:boolean" default="true">
+				<xs:annotation>
+					<xs:documentation>Flag to indicate if ads are allowed in this vidoe (in the context of the publication/event)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="drmRestrictions" type="drmRestrictionsType" minOccurs="0" />
 			<xs:element name="locationRestrictions" type="locationRestrictionsType" minOccurs="0" />
 			<xs:element name="userOrGroupRestrictions" type="userOrGroupRestrictionsType" minOccurs="0" />
@@ -221,24 +240,20 @@
 	</xs:complexType>
 	<xs:complexType name="catchUpRightsType">
 		<xs:sequence>
-			<xs:element name="fastForward" type="xs:boolean" minOccurs="0"></xs:element>
-			<xs:element name="rewind" type="xs:boolean" minOccurs="0">
-			</xs:element>
-			<xs:element name="pause" type="xs:boolean" minOccurs="0">
-			</xs:element>
+			<xs:element name="fastForward" type="xs:boolean" minOccurs="0" />
+			<xs:element name="rewind" type="xs:boolean" minOccurs="0" />
+			<xs:element name="pause" type="xs:boolean" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="startOverRightsType">
 		<xs:sequence>
-			<xs:element name="fastForward" type="xs:boolean" minOccurs="0"></xs:element>
-			<xs:element name="rewind" type="xs:boolean" minOccurs="0">
-			</xs:element>
-			<xs:element name="pause" type="xs:boolean" minOccurs="0">
-			</xs:element>
+			<xs:element name="fastForward" type="xs:boolean" minOccurs="0" />
+			<xs:element name="rewind" type="xs:boolean" minOccurs="0" />
+			<xs:element name="pause" type="xs:boolean" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:simpleType name="shareToType">
-		<!-- TODO : borde ange om det är en exclusive or excluding right -->
+		<!-- TODO : specify if exclusive or exclusive right -->
 		<xs:annotation>
 			<xs:documentation>Tag identifying the channel that is allowed for
 				sharing. '*' to indicate all and anyware.
