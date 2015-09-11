@@ -117,9 +117,14 @@
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0"></xs:element>
-			<xs:element name="allowAds" type="xs:boolean" default="true">
+			<xs:element name="hideAds" type="xs:boolean" default="true">
 				<xs:annotation>
 					<xs:documentation>Flag to indicate if ads are allowed in this vidoe (in the context of the publication/event)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="allowEmbed" type="xs:boolean" default="true">
+				<xs:annotation>
+					<xs:documentation>Flag to indicate if the material can be embedded by a 3rd party</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="drmRestrictions" type="drmRestrictionsType" minOccurs="0" />
