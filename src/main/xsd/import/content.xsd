@@ -311,8 +311,10 @@
 			<xs:enumeration value="press" />
 			<xs:enumeration value="original" />
 			<xs:enumeration value="episode" />
-			<xs:enumeration value="season" /> <!-- unknown usage, added just to get symmetry for Content Season and Brand -->
-			<xs:enumeration value="brand" /> <!-- unknown usage -->
+			<!-- Removed: unknown usage, added just to get symmetry for Content Season and Brand, now cleand out -->
+			<!-- <xs:enumeration value="season" /> -->
+			<!-- Removed: unknown usage -->
+			<!-- <xs:enumeration value="brand" /> -->
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="untypedTitleType">
@@ -423,6 +425,8 @@
 						<xs:enumeration value="press" />
 						<xs:enumeration value="logo" />
 						<xs:enumeration value="cinemascope" />
+						<xs:enumeration value="logohometeam" />
+						<xs:enumeration value="logoawayteam" />
 						<xs:enumeration value="other" />
 					</xs:restriction>
 				</xs:simpleType>
