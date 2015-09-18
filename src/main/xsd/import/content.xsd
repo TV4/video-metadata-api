@@ -199,7 +199,6 @@
 			<xs:enumeration value="movie" />
 			<xs:enumeration value="trailer" />
 			<xs:enumeration value="clip" />
-			<xs:enumeration value="sports" />
 			<xs:enumeration value="ad" />
 			<xs:enumeration value="other" />
 		</xs:restriction>
