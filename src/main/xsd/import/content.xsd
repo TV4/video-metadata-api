@@ -74,13 +74,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<!-- TODO: Remove unused element: adTagList  -->
-			<xs:element name="adTagList" type="adTagListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Ad tags used to mark content for certain advertisement tags.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="creditList" type="creditListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>list of actors, producers etc. should be consistent within each provider
@@ -274,12 +267,6 @@
 	<xs:complexType name="tagListType">
 		<xs:sequence>
 			<xs:element name="tag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	<!-- TODO: Remove unused type when removing unused element adTagList  -->
-	<xs:complexType name="adTagListType">
-		<xs:sequence>
-			<xs:element name="adTag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="simpleTitleType">
