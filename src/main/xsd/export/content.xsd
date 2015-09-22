@@ -201,10 +201,16 @@
 							<xs:documentation>id for season, not unique. Only present if content is connected to a season.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
+					<xs:element name="audioLanguagesList" type="languageListType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>List of available languages for available video soundtracks.
+								(In import format this information is on the material/audioList.)
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 					<xs:element name="spokenLanguagesList" type="languageListType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>List of available languages for available video soundtracks.
-                                (In import format this information is on the material/audioList.)
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
