@@ -120,6 +120,7 @@
             <xs:enumeration value="subCategory"/>
             <xs:enumeration value="advertisement"/>
             <xs:enumeration value="advertisementCategory"/>
+            <xs:enumeration value="spokenlanguage"/>
             <xs:enumeration value="other">
                 <xs:annotation>
                     <xs:documentation>Any free text tag, for semi temporary usage.

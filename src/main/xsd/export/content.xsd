@@ -208,12 +208,6 @@
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="spokenLanguagesList" type="languageListType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>List of available languages for available video soundtracks.
-							</xs:documentation>
-						</xs:annotation>
-					</xs:element>
                     <xs:element name="subtitleLanguagesList" type="languageListType" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>List of available languages for available video subtitles.
