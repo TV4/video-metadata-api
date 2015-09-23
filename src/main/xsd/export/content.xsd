@@ -106,7 +106,11 @@
 			<xs:extension base="abstractContentType">
 				<xs:sequence>
 					<xs:annotation>
-						<xs:documentation>Set in EMP by editor, legal requirement if brand is sponsored.
+						<xs:documentation>
+							Set in EMP by editor, legal requirement if brand is sponsored.
+							If sponsored, then the GUI must have a distinct marker to indicate this.
+							Noting to do with who has sponsored the event. That info must be resolved by some other data.
+							One solution might be to complement with a sponsored tag.
 						</xs:documentation>
 					</xs:annotation>
 					<xs:element name="sponsored" type="xs:boolean" default="false" />
