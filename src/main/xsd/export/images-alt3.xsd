@@ -27,7 +27,13 @@
     <xs:complexType name="imageType">
         <xs:sequence>
             <xs:element name="primary" type="simpleImageType"/>
-            <xs:element name="localizedImage" type="localizedImageType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="localizedImages" type="localizedImageType">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="localizedImage" type="localizedImageType" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
         </xs:sequence>
         <xs:attribute name="prio" type="xs:unsignedShort" use="required">
             <xs:annotation>

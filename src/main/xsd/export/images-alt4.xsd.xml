@@ -26,35 +26,37 @@
             <caption>string</caption>
             <copyright>string</copyright>
         </primary>
-        <!--Zero or more repetitions:-->
-        <localizedImage language="sv">
-            <url>http://www.any.com/verrantque/temperat</url>
-            <width>3</width>
-            <height>3</height>
-            <caption>string</caption>
-            <copyright>string</copyright>
-        </localizedImage>
-        <localizedImage language="nb">
-            <url>http://www.any.com/verrantque/temperat</url>
-            <width>3</width>
-            <height>3</height>
-            <caption>string</caption>
-            <copyright>string</copyright>
-        </localizedImage>
-        <localizedImage language="dk">
-            <url>http://www.any.com/verrantque/temperat</url>
-            <width>3</width>
-            <height>3</height>
-            <caption>string</caption>
-            <copyright>string</copyright>
-        </localizedImage>
-        <localizedImage language="fi">
-            <url>http://www.any.com/verrantque/temperat</url>
-            <width>3</width>
-            <height>3</height>
-            <caption>string</caption>
-            <copyright>string</copyright>
-        </localizedImage>
+        <localizedImages>
+            <!--Zero or more repetitions:-->
+            <localizedImage language="sv">
+                <url>http://www.any.com/verrantque/temperat</url>
+                <width>3</width>
+                <height>3</height>
+                <caption>string</caption>
+                <copyright>string</copyright>
+            </localizedImage>
+            <localizedImage language="nb">
+                <url>http://www.any.com/verrantque/temperat</url>
+                <width>3</width>
+                <height>3</height>
+                <caption>string</caption>
+                <copyright>string</copyright>
+            </localizedImage>
+            <localizedImage language="dk">
+                <url>http://www.any.com/verrantque/temperat</url>
+                <width>3</width>
+                <height>3</height>
+                <caption>string</caption>
+                <copyright>string</copyright>
+            </localizedImage>
+            <localizedImage language="fi">
+                <url>http://www.any.com/verrantque/temperat</url>
+                <width>3</width>
+                <height>3</height>
+                <caption>string</caption>
+                <copyright>string</copyright>
+            </localizedImage>
+        </localizedImages>
     </image>
     <image type="cinemascope" prio="1">
         <primary>
@@ -64,6 +66,7 @@
             <caption>string</caption>
             <copyright>string</copyright>
         </primary>
+        <localizedImages/>
     </image>
     <image type="logohometeam" prio="1">
         <primary>
@@ -73,6 +76,7 @@
             <caption>string</caption>
             <copyright>string</copyright>
         </primary>
+        <localizedImages/>
     </image>
     <image type="logoawayteam" prio="1">
         <primary>
@@ -82,5 +86,6 @@
             <caption>string</caption>
             <copyright>string</copyright>
         </primary>
+        <localizedImages/>
     </image>
 </v1:imageList>

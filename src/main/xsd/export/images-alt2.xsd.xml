@@ -16,6 +16,7 @@
             <height>3</height>
             <caption>string</caption>
             <copyright>string</copyright>
+            <localizedImages/>
         </primary>
     </landscape>
     <!--Zero or more repetitions:-->
@@ -27,35 +28,37 @@
             <caption>string</caption>
             <copyright>string</copyright>
         </primary>
-        <!--Zero or more repetitions:-->
-        <localizedImage language="sv">
-            <url>http://www.test.com/fremunt/foedere</url>
-            <width>3</width>
-            <height>3</height>
-            <caption>string</caption>
-            <copyright>string</copyright>
-        </localizedImage>
-        <localizedImage language="nb">
-            <url>http://www.test.com/fremunt/foedere</url>
-            <width>3</width>
-            <height>3</height>
-            <caption>string</caption>
-            <copyright>string</copyright>
-        </localizedImage>
-        <localizedImage language="dk">
-            <url>http://www.test.com/fremunt/foedere</url>
-            <width>3</width>
-            <height>3</height>
-            <caption>string</caption>
-            <copyright>string</copyright>
-        </localizedImage>
-        <localizedImage language="fi">
-            <url>http://www.test.com/fremunt/foedere</url>
-            <width>3</width>
-            <height>3</height>
-            <caption>string</caption>
-            <copyright>string</copyright>
-        </localizedImage>
+        <localizedImages>
+            <!--Zero or more repetitions:-->
+            <localizedImage language="sv">
+                <url>http://www.test.com/fremunt/foedere</url>
+                <width>3</width>
+                <height>3</height>
+                <caption>string</caption>
+                <copyright>string</copyright>
+            </localizedImage>
+            <localizedImage language="nb">
+                <url>http://www.test.com/fremunt/foedere</url>
+                <width>3</width>
+                <height>3</height>
+                <caption>string</caption>
+                <copyright>string</copyright>
+            </localizedImage>
+            <localizedImage language="dk">
+                <url>http://www.test.com/fremunt/foedere</url>
+                <width>3</width>
+                <height>3</height>
+                <caption>string</caption>
+                <copyright>string</copyright>
+            </localizedImage>
+            <localizedImage language="fi">
+                <url>http://www.test.com/fremunt/foedere</url>
+                <width>3</width>
+                <height>3</height>
+                <caption>string</caption>
+                <copyright>string</copyright>
+            </localizedImage>
+        </localizedImages>
     </poster>
     <!--Zero or more repetitions:-->
     <cinemascope prio="1">
@@ -66,6 +69,7 @@
             <caption>string</caption>
             <copyright>string</copyright>
         </primary>
+        <localizedImages/>
     </cinemascope>
     <cinemascope prio="2">
         <primary>
@@ -75,6 +79,7 @@
             <caption>string</caption>
             <copyright>string</copyright>
         </primary>
+        <localizedImages/>
     </cinemascope>
     <!--Zero or more repetitions:-->
     <logoHomeTeam prio="1">
@@ -85,6 +90,7 @@
             <caption>string</caption>
             <copyright>string</copyright>
         </primary>
+        <localizedImages/>
     </logoHomeTeam>
     <!--Zero or more repetitions:-->
     <logoAwayTeam prio="5">
@@ -95,5 +101,6 @@
             <caption>string</caption>
             <copyright>string</copyright>
         </primary>
+        <localizedImages/>
     </logoAwayTeam>
 </v1:images>
