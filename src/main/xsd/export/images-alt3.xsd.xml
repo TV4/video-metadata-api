@@ -1,0 +1,79 @@
+<v1:images xmlns:v1="http://video-metadata.tv4.se/export/content/v1">
+  <landscapeImages>
+    <!--Zero or more repetitions:-->
+    <image prio="1">
+      <primary>
+        <url>http://www.company.org/cum/sonoras</url>
+        <width>3</width>
+        <height>3</height>
+        <caption>string</caption>
+        <copyright>string</copyright>
+      </primary>
+    </image>
+    <image prio="2">
+      <primary>
+        <url>http://www.company.org/cum/sonoras</url>
+        <width>3</width>
+        <height>3</height>
+        <caption>string</caption>
+        <copyright>string</copyright>
+      </primary>
+    </image>
+  </landscapeImages>
+  <posterImages>
+    <!--Zero or more repetitions:-->
+    <image prio="1">
+      <primary>
+        <url>http://www.sample.org/turbine/circum</url>
+        <width>3</width>
+        <height>3</height>
+        <caption>string</caption>
+        <copyright>string</copyright>
+      </primary>
+      <!--Zero or more repetitions:-->
+      <localizedImage language="sv">
+        <url>http://www.test.com/fremunt/foedere</url>
+        <width>3</width>
+        <height>3</height>
+        <caption>string</caption>
+        <copyright>string</copyright>
+      </localizedImage>
+    </image>
+  </posterImages>
+  <cinemascopeImages>
+    <!--Zero or more repetitions:-->
+    <image prio="1">
+      <primary>
+        <url>http://www.corp.gov/sceptra/et</url>
+        <width>3</width>
+        <height>3</height>
+        <caption>string</caption>
+        <copyright>string</copyright>
+      </primary>
+    </image>
+  </cinemascopeImages>
+  <logoHomeTeamImages>
+    <!--Zero or more repetitions:-->
+    <image prio="1">
+      <primary>
+        <url>http://www.company.edu/nubibus/flammas</url>
+        <width>3</width>
+        <height>3</height>
+        <caption>string</caption>
+        <copyright>string</copyright>
+      </primary>
+    </image>
+  </logoHomeTeamImages>
+  <logoAwayTeamImages>
+    <!--Zero or more repetitions:-->
+    <image prio="1">
+      <primary>
+        <url>http://www.my.org/circum/aris</url>
+        <width>3</width>
+        <height>3</height>
+        <caption>string</caption>
+        <copyright>string</copyright>
+      </primary>
+    </image>
+  </logoAwayTeamImages>
+</v1:images>

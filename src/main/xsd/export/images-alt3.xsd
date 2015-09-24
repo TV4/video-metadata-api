@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/export/content/v1"
+           targetNamespace="http://video-metadata.tv4.se/export/content/v1" version="1.0">
+
+    <xs:element name="images" type="imagesType"/>
+
+    <!--
+    Image types grouped by type in one list per type.
+    Support for different sizes and captions and copyrights on each localized image.
+    -->
+    <xs:complexType name="imagesType">
+        <xs:sequence>
+            <xs:element name="landscapeImages" type="imageListType"/>
+            <xs:element name="posterImages" type="imageListType"/>
+            <xs:element name="cinemascopeImages" type="imageListType"/>
+            <xs:element name="logoHomeTeamImages" type="imageListType"/>
+            <xs:element name="logoAwayTeamImages" type="imageListType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="imageListType">
+        <xs:sequence>
+            <xs:element name="image" type="imageType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="imageType">
+        <xs:sequence>
+            <xs:element name="primary" type="simpleImageType"/>
+            <xs:element name="localizedImage" type="localizedImageType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="prio" type="xs:unsignedShort" use="required">
+            <xs:annotation>
+                <xs:documentation>Lower priority number means higher importance.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="simpleImageType">
+        <xs:sequence>
+            <xs:element name="url" type="xs:anyURI"/>
+            <xs:element name="width" type="xs:int">
+                <xs:annotation>
+                    <xs:documentation>In unit px.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="height" type="xs:int">
+                <xs:annotation>
+                    <xs:documentation>In unit px.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="caption" type="xs:string"/>
+            <xs:element name="copyright" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="localizedImageType">
+        <xs:complexContent>
+            <xs:extension base="simpleImageType">
+                <xs:attribute name="language" type="xs:language" use="required"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+</xs:schema>

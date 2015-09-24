@@ -80,11 +80,8 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="posterImage" type="imageType" minOccurs="0" />
 			<xs:element name="landscapeImage" type="imageType" minOccurs="0" />
-			<xs:element name="logoImage" type="imageType" minOccurs="0" />
-			<xs:element name="promoImage" type="imageType" minOccurs="0" />
-			<xs:element name="bannerImage" type="imageType" minOccurs="0" />
+			<xs:element name="posterImage" type="imageType" minOccurs="0" />
 			<xs:element name="cinemascopeImage" type="imageType" minOccurs="0" />
 			<xs:element name="logoHomeTeam" type="imageType" minOccurs="0" />
 			<xs:element name="logoAwayTeam" type="imageType" minOccurs="0" />
