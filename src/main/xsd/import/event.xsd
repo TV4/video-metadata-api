@@ -216,7 +216,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<!-- TODO: Moved to Content, to be deleted in next release of the XSD (If not used in schedule) -->
+			<!-- Moved to Content, to be deleted in next release of the XSD (If not used in schedule)
 			<xs:element name="duration" type="xs:int" minOccurs="0" >
 				<xs:annotation>
 					<xs:documentation>
@@ -224,6 +224,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			-->
 		</xs:sequence>
 		<xs:attribute name="type" type="timeSchedulingType" default="public" />
 	</xs:complexType>

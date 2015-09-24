@@ -73,7 +73,7 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <!-- TODO: Moved to Content, to be deleted in next release of the XSD -->
+            <!-- Moved to Content, to be deleted in next release of the XSD
             <xs:element name="duration" type="xs:int" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>
@@ -81,7 +81,7 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-
+            -->
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="embeddedEventType">
@@ -92,7 +92,7 @@
         <xs:complexContent>
             <xs:extension base="basicEventType">
                 <xs:sequence>
-                    <!-- TODO: is this data needed in emport? -->
+                    <!-- TODO: is this data needed in import? -->
                     <xs:element name="contentIdRef" type="xs:string">
                         <xs:annotation>
                             <xs:documentation>Reference to contentId for this event for convenience as this could be
@@ -102,13 +102,14 @@
                             </xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <!-- TODO: Remove unused element in export. No data available -->
+                    <!-- Remove unused element in export. No data available
                     <xs:element name="materialIdRef" type="xs:string">
                         <xs:annotation>
                             <xs:documentation>reference to contentId for this event
                             </xs:documentation>
                         </xs:annotation>
                     </xs:element>
+                    -->
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -159,7 +160,6 @@
                         <xs:documentation>Order of event in the event group, one-based indexing. (first event in event group has sequenceNumber=1)</xs:documentation>
                     </xs:annotation>
                 </xs:attribute>
-                <!-- TODO: discuss new field with with Metabanken -->
                 <xs:attribute name="maxSequenceNumber" type="xs:short">
                     <xs:annotation>
                         <xs:documentation>sequenceNumber of the last event in the evenet group</xs:documentation>
