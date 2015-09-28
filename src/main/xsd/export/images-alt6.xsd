@@ -44,10 +44,10 @@
     <xs:complexType name="exportImageType">
         <xs:sequence>
             <xs:element name="default" type="simpleImageType" minOccurs="0"/>
-            <xs:element name="localizations">
+            <xs:element name="localizations" minOccurs="0">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element name="localized" type="exportLocalizedImageType" minOccurs="0" maxOccurs="unbounded"/>
+                        <xs:element name="localized" type="exportLocalizedImageType" maxOccurs="unbounded"/>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
