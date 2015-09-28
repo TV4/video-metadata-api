@@ -1,0 +1,56 @@
+<v1:imageList xmlns:v1="http://video-metadata.tv4.se/export/content/v1">
+    <!--Zero or more repetitions:-->
+    <image type="landscape" prio="1">
+        <default>
+            <url>http://www.company.org/sonoras/aeoliam</url>
+            <caption>string</caption>
+            <copyright>string</copyright>
+        </default>
+        <localizations/>
+    </image>
+    <image type="cinemascope" prio="1">
+        <default>
+            <url>https://cdn.emps.ebsd.ericsson.net/images/test-landscape.png</url>
+            <caption>Test landscape</caption>
+            <copyright>TV4</copyright>
+        </default>
+        <localizations/>
+    </image>
+    <image type="poster" prio="1">
+        <default>
+            <url>https://cdn.emps.ebsd.ericsson.net/images/test-poster-default.png</url>
+            <caption>Test landscape</caption>
+            <copyright>TV4</copyright>
+        </default>
+        <localizations>
+            <localized language="nb">
+                <url>https://cdn.emps.ebsd.ericsson.net/images/nb/test-poster-nb.png</url>
+            </localized>
+            <localized language="dk">
+                <url>https://cdn.emps.ebsd.ericsson.net/images/dk/test-poster-dk.png</url>
+                <caption>Test landscape</caption>
+            </localized>
+            <localized language="fi">
+                <url>https://cdn.emps.ebsd.ericsson.net/images/dk/test-poster-fi.png</url>
+                <caption>Test landscape</caption>
+                <copyright>TV4</copyright>
+            </localized>
+        </localizations>
+    </image>
+    <image type="logohometeam" prio="1">
+        <default>
+            <url>https://cdn.emps.ebsd.ericsson.net/logos/test-logo1.png</url>
+            <caption>logo1</caption>
+            <copyright>TV4</copyright>
+        </default>
+        <localizations/>
+    </image>
+    <image type="logoawayteam" prio="1">
+        <default>
+            <url>https://cdn.emps.ebsd.ericsson.net/logos/test-logo2.png</url>
+            <caption>logo2</caption>
+            <copyright>TV4</copyright>
+        </default>
+        <localizations/>
+    </image>
+</v1:imageList>
