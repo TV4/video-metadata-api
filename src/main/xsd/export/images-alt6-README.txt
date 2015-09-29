@@ -60,9 +60,11 @@ Om redaktör sätter samma prio på flera bilder av samma type och samam spårk (uta
 
 XSD förslag
 ===========
-https://github.com/TV4/video-metadata-api/blob/image-refactorisation/src/main/xsd/export/images-alt6.xsd
+ - https://github.com/TV4/video-metadata-api/blob/image-refactorisation/src/main/xsd/export/images-alt6-README.txt
+ - https://github.com/TV4/video-metadata-api/blob/image-refactorisation/src/main/xsd/export/images-alt6.xsd
 
 Exemple XML
 ===========
-https://github.com/TV4/video-metadata-api/blob/image-refactorisation/src/main/xsd/export/images-alt6.xsd.xml
+ - https://github.com/TV4/video-metadata-api/blob/image-refactorisation/src/main/xsd/export/images-alt6-import.xsd.xml
+ - https://github.com/TV4/video-metadata-api/blob/image-refactorisation/src/main/xsd/export/images-alt6-export.xsd.xml
 
