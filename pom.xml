@@ -6,7 +6,7 @@
 	<groupId>se.tv4.teknik.integration</groupId>
 	<artifactId>video-metadata-api</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.16-SNAPSHOT</version>
+	<version>1.0.17-SNAPSHOT</version>
 	<name>video-metadata-api</name>
 
 	<properties>
@@ -14,6 +14,7 @@
 	</properties>
 
 	<distributionManagement>
+		<!-- old repo
 		<repository>
 			<id>teknik-util-release</id>
 			<name>teknik-util.tv4.se-releases</name>
@@ -23,6 +24,17 @@
 			<id>teknik-util-snapshots</id>
 			<name>teknik-util.tv4.se-snapshots</name>
 			<url>http://teknik-util.tv4.se/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+		-->
+		<repository>
+			<id>central</id>
+			<name>integration-releases</name>
+			<url>http://integration.tv4.se:8081/artifactory/libs-release-local/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>integration-snapshot</name>
+			<url>http://integration.tv4.se:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 
