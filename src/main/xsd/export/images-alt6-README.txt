@@ -47,12 +47,16 @@ Antagandet är
 
 Logik för export från EMP/CVCMS
 ===============================
- - Per definierad bildtyp: landsacpe, poster, cinemascope, logoHomeTeam, logoAwayTeam
+ - Per definierad bildtyp: landsacpe, poster, cinemascope, logoHomeTeam, logoAwayTeam, other
  - För bilder av samma typ och samma prio (från 1 stigande) skapa följande gruppering (se exemple XML nedan)
    o default = bild utan språk eller med språket “xx” (kan var null)
-   o localizations = lista på språkanpassade bilder (samma typ och samma prio). Finns flera bilder med samma prio och språk så skickas de med som de är.  (kan vara en tom lista)
+   o localizations = lista på språkanpassade bilder (samma typ och samma prio). Finns flera bilder med samma
+     prio och språk så skickas de med som de är.  (kan vara en tom lista)
 
-
+Om redaktör sätter samma prio på flera bilder av samma type och default (utan språk) så är det odefinierat
+vilken bild som kommer väljas.
+Om redaktör sätter samma prio på flera bilder av samma type och samam spårk (utan språk) skickas alla ut, det
+är odefinierat vilken bild som mottagande system kommer att välja.
 
 XSD förslag
 ===========
