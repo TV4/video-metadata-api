@@ -30,6 +30,7 @@
             <xs:enumeration value="logohometeam"/>
             <xs:enumeration value="logoawayteam"/>
             <xs:enumeration value="banner"/>
+            <xs:enumeration value="other"/>
         </xs:restriction>
     </xs:simpleType>
 

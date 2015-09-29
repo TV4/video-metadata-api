@@ -23,8 +23,10 @@ unit (default = px)
 Type (/purpose)
 Priority (lower means higher)
 
-Språk saknas i listan ovan, men antas kunna läggas till eller samlagras med “type” attributet.
-Language: { ""/null, sv, nb, dk, fi }
+Fält som saknas men som antas kunna läggas till listan ovan.
+ - language: { ""/null, sv, nb, dk, fi }
+ - caption
+ - copyright
 
 Dessa visas EMP i en listvy med kolumner antas vara som angetts ovan, med antagandet att det finns
 språkstöd.

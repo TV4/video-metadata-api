@@ -5,7 +5,13 @@
             <caption>string</caption>
             <copyright>string</copyright>
         </default>
-        <localizations/>
+    </image>
+    <image type="landscape" prio="2">
+        <default>
+            <url>http://www.company.org/sonoras/aeoliam</url>
+            <caption>string</caption>
+            <copyright>string</copyright>
+        </default>
     </image>
     <image type="cinemascope" prio="1">
         <default>
@@ -42,12 +48,25 @@
             <copyright>TV4</copyright>
         </default>
     </image>
-    <image type="logoawayteam" prio="1">
+    <image type="other" prio="255">
         <default>
-            <url>https://cdn.emps.ebsd.ericsson.net/logos/test-logo2.png</url>
+            <url>https://cdn.emps.ebsd.ericsson.net/logos/grabbed1.png</url>
             <caption>logo2</caption>
             <copyright>TV4</copyright>
         </default>
-        <localizations/>
+    </image>
+    <image type="other" prio="255">
+        <default>
+            <url>https://cdn.emps.ebsd.ericsson.net/logos/grabbed2.png</url>
+            <caption>logo2</caption>
+            <copyright>TV4</copyright>
+        </default>
+    </image>
+    <image type="other" prio="255">
+        <default>
+            <url>https://cdn.emps.ebsd.ericsson.net/logos/grabbed3.png</url>
+            <caption>logo2</caption>
+            <copyright>TV4</copyright>
+        </default>
     </image>
 </v1:images-export-format>
