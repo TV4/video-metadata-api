@@ -2,11 +2,14 @@ Behov
 =====
 Behovet är att i klienter enkelt hämta en bild enligt en given logik som gäller för samtliga klienter.
 
-En asset ska per “type” kunna ha en standardbild (språk = xx, “” eller null), samtidigt som det ska kunna finna språkanpassade bilder för ett eller flera språk.
+En asset ska per “type” kunna ha en standardbild (språk = xx, “” eller null), samtidigt som det ska
+kunna finna språkanpassade bilder för ett eller flera språk.
 
 Import vs export
 ================
-Import och export skiljer sig åt i det avseende att man vill skicka in alla bilder som finns tillgängliga till EMP för att ge redaktör möjlighet att ändra och byta bild, medan man i exporten till klient endast är intresserade av den bild (per typ och språk) som redaktör valt att publicera.
+Import och export skiljer sig åt i det avseende att man vill skicka in alla bilder som finns tillgängliga till
+EMP för att ge redaktör möjlighet att ändra och byta bild, medan man i exporten till klient endast är
+intresserade av den bild (per typ och språk) som redaktör valt att publicera.
 Samtidigt ska det finnas en enkel regler för att mappa import mot export i EMP
 
 Fält per bild i EMP
@@ -23,15 +26,22 @@ Priority (lower means higher)
 Språk saknas i listan ovan, men antas kunna läggas till eller samlagras med “type” attributet.
 Language: { ""/null, sv, nb, dk, fi }
 
-Dessa visas EMP i en listvy med kolumner antas vara som angetts ovan, med antagandet att det finns språkstöd.
+Dessa visas EMP i en listvy med kolumner antas vara som angetts ovan, med antagandet att det finns
+språkstöd.
 
 Exportformat
 ============
-Någonstans mellan VCMS och klient behöver logik finnas för att gruppera bilder per typ och prio (i nuläget är endast prio 1) av intresse i klienterna.
+Någonstans mellan VCMS och klient behöver logik finnas för att gruppera bilder per typ och prio
+(i nuläget är endast prio 1) av intresse i klienterna.
 
-Mappning för gruppering kan görs i integrationslager i EMP eller i mottagande applikation, dvs. OVP Search Import.
+Mappning för gruppering kan görs i integrationslager i EMP eller i mottagande
+applikation, dvs. OVP Search Import.
 
-TV4 önskar att att logik görs i integrationslagret i EMP, för att kunna återanvändas vid export till andra mottagare som t.ex. Youtube, KB. (Som i annat fall själva måste implementera denna logik). Antagandet är att det enklast hanteras vid export jämfört med än att sprida logik  för grupperingen till respektive mottagande system.
+TV4 önskar att att logik görs i integrationslagret i EMP, för att kunna återanvändas vid export
+till andra mottagare som t.ex. Youtube, KB. (Som i annat fall själva måste implementera denna logik).
+Antagandet är
+ - att det enklast hanteras vid export jämfört med än att sprida logik  för grupperingen till respektive mottagande system.
+ - att vi ska välja att lägga logik i EMP istället för utanför.
 
 Logik för export från EMP/CVCMS
 ===============================
