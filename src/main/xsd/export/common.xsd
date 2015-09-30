@@ -121,9 +121,12 @@
 		<xs:sequence>
             <xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0" />
 			<xs:element name="locationRights" type="locationRightsType" minOccurs="0" />
+			<!-- Moved to content
 			<xs:element name="hideAds" type="xs:boolean" default="true" />
 			<xs:element name="allowEmbed" type="xs:boolean" default="true" />
 			<xs:element name="addProviderLogo" type="xs:boolean" default="true" />
+			hideAds, allowEmbed, addProviderLogo
+			-->
 		</xs:sequence>
 	</xs:complexType>
     <xs:complexType name="locationRightsType">
