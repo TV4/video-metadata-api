@@ -228,7 +228,7 @@
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="allowShare" type="xs:boolean" default="true">
+					<xs:element name="allowEmbed" type="xs:boolean" default="true">
 						<xs:annotation>
 							<xs:documentation>Information to the client if the social media sharing functions shall be disabled (default true).</xs:documentation>
 						</xs:annotation>
