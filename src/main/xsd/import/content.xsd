@@ -62,9 +62,11 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="commentList" type="commentListType" minOccurs="0">
+            <xs:element name="internalDescription" type="internalDescriptionType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>List of comments, that is internal descriptions not to show externally.
+                    <xs:documentation>Internal text related to the content.
+                        Will be indexed in search but and searchable, original text
+                        will not be exposed in search.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -209,18 +211,23 @@
 			<xs:element name="description" type="descriptionType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="commentListType">
+    <xs:complexType name="internalDescriptionType">
 		<xs:annotation>
-			<xs:documentation>Editorial description that shall not be published, but it can be indexed in a search. Thought
-				usage is to write down descriptive intro, manuscript or voice-over
-				that applies to the content, Text is not
-				required to be written to be ready for public view, but the content will be indexed and possible to use in a
-				search.
+            <xs:documentation>
+                Editorial text such as manus text read by a reporter or transcript of what is said i the video.
+                Thought usage is to hold descriptive intro, manuscript or voice-over that applies to the
+                content.
+                Original text is not expected to be exposed public, but it can be indexed by a search engine.
+                Text is not required to be written to be ready for public view, but the content will be indexed and
+                possible to use in a specific searches.
+                WARNING. If indexed, then bad words and inappropiate langauge will be searchable.
 			</xs:documentation>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="comment" type="descriptionType" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="language" type="xs:language"/>
+            </xs:extension>
+        </xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="parentalRatingListType">
 		<xs:sequence>
