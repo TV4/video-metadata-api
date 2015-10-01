@@ -70,22 +70,19 @@
 	</xs:complexType>
 	<xs:complexType name="externalReferenceType">
 		<xs:sequence>
-			<xs:element name="provider" type="xs:string" minOccurs="1" maxOccurs="1">
+			<xs:element name="type" type="xs:string" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
-					<xs:documentation>Who is the provides for the extend data that can
-						be used for this content. It can for example be score24.com or
-						IMDB.com
-					</xs:documentation>
+					<xs:documentation>Type of reference. It can for example be IMDB, Score24, ...</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="id" type="xs:string" minOccurs="0">
+			<xs:element name="value" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Data identifier to map this content to in the
 						external provider/partners data
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="uri" type="xs:string" minOccurs="0">
+			<xs:element name="locator" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Resource to use for reach the data at the
 						provider
