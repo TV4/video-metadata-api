@@ -281,6 +281,7 @@
 	</xs:complexType>
 	<xs:simpleType name="contentTypeType">
 		<xs:restriction base="xs:string">
+			<xs:enumeration value="live-channel" />
 			<xs:enumeration value="episode" />
 			<xs:enumeration value="movie" />
 			<xs:enumeration value="trailer" />
