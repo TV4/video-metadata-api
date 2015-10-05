@@ -304,11 +304,11 @@
     <xs:simpleType name="contentTypeType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="live-channel"/>
+            <xs:enumeration value="live-event"/>
             <xs:enumeration value="episode"/>
             <xs:enumeration value="movie"/>
             <xs:enumeration value="trailer"/>
             <xs:enumeration value="clip"/>
-            <xs:enumeration value="ad"/>
             <xs:enumeration value="other"/>
         </xs:restriction>
     </xs:simpleType>
