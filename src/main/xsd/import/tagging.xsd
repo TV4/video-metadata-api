@@ -125,8 +125,8 @@
 			<xs:enumeration value="sportLeagueOrCompetition"/>
 			<xs:enumeration value="sportSeasonOrTournament"/>
 			<xs:enumeration value="sportRoundOrEpisode"/>
-			<xs:enumeration value="sportHomeTeamList"/>
-			<xs:enumeration value="sportAwayTeamList"/>
+			<xs:enumeration value="sportHomeTeam"/>
+			<xs:enumeration value="sportAwayTeam"/>
 			<xs:enumeration value="sportArenaOrCourse"/>
 			<xs:enumeration value="other">
 				<xs:annotation>
