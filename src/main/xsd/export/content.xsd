@@ -85,6 +85,11 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+                        <xs:element name="sponsored" type="xs:boolean" default="false">
+			  <xs:annotation>
+			    <xs:documentation>Information that the entity is sponsored. Required by Radio- och tv-lag (2010:696) §7</xs:documentation>
+			  </xs:annotation>
+			</xs:element>
 			<xs:element name="posterImage" type="imageType" minOccurs="0" />
 			<xs:element name="landscapeImage" type="imageType" minOccurs="0" />
 			<xs:element name="logoImage" type="imageType" minOccurs="0" />
@@ -103,17 +108,9 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="brandType">
-		<xs:complexContent>
-			<xs:extension base="abstractContentType">
-				<xs:sequence>
-					<xs:annotation>
-						<xs:documentation>Set in EMP by editor, legal requirement if brand is sponsored.
-						</xs:documentation>
-					</xs:annotation>
-					<xs:element name="sponsored" type="xs:boolean" default="false" />
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
+	  <xs:complexContent>
+	    <xs:extension base="abstractContentType" />
+	  </xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="seasonType">
 		<xs:complexContent>
@@ -235,7 +232,7 @@
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="allowShare" type="xs:boolean" default="true">
+					<xs:element name="allowEmbed" type="xs:boolean" default="true">
 						<xs:annotation>
 							<xs:documentation>Information to the client if the social media sharing functions shall be disabled (default true).</xs:documentation>
 						</xs:annotation>
@@ -280,13 +277,15 @@
 	</xs:complexType>
 	<xs:simpleType name="contentTypeType">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="program" />
-			<xs:enumeration value="movie" />
-			<xs:enumeration value="series" />
-			<xs:enumeration value="trailer" />
-			<xs:enumeration value="clip" />
-			<xs:enumeration value="ad" />
-			<xs:enumeration value="other" />
+                  <xs:enumeration value="clip" />
+		  <xs:enumeration value="live_event" />
+		  <xs:enumeration value="live_channel" />
+		  <xs:enumeration value="movie" />
+		  <xs:enumeration value="other" />
+		  <xs:enumeration value="trailer" />
+		  <xs:enumeration value="episode" />
+		  <xs:enumeration value="ad" />
+		  <xs:enumeration value="n/a" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="titleListType">

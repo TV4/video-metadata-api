@@ -116,7 +116,17 @@
 			<xs:enumeration value="subject" />
 			<xs:enumeration value="story" />
 			<xs:enumeration value="mainCategory"/>
-            <xs:enumeration value="subCategory"/>
+			<xs:enumeration value="subCategory"/>
+			<xs:enumeration value="spokenlanguage"/>
+			<xs:enumeration value="sportCategory"/>
+			<xs:enumeration value="sportLeagueOrCompetition"/>
+			<xs:enumeration value="sportSeasonOrTournament"/>
+			<xs:enumeration value="sportRoundOrEpisode"/>
+			<xs:enumeration value="sportHomeTeam"/>
+			<xs:enumeration value="sportAwayTeam"/>
+			<xs:enumeration value="sportArenaOrCourse"/>
+			<xs:enumeration value="advertisement"/>
+			<xs:enumeration value="advertisementCategory"/>
 			<xs:enumeration value="other">
 				<xs:annotation>
 					<xs:documentation>A free text tag.
