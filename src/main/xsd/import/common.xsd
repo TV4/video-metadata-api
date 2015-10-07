@@ -117,7 +117,7 @@
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="timeshift" type="timeShiftDeviceTypeRights" minOccurs="0" />
-			<xs:element name="hideAds" type="xs:boolean" default="true">
+			<xs:element name="allowAds" type="xs:boolean" default="true">
 				<xs:annotation>
 					<xs:documentation>Flag to indicate if ads are allowed in this vidoe (in the context of the publication/event)</xs:documentation>
 				</xs:annotation>
