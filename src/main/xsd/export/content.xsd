@@ -79,11 +79,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-                        <xs:element name="sponsored" type="xs:boolean" default="false">
-			  <xs:annotation>
-			    <xs:documentation>Information that the entity is sponsored. Required by Radio- och tv-lag (2010:696) §7</xs:documentation>
-			  </xs:annotation>
-			</xs:element>
 			<xs:element name="posterImage" type="imageType" minOccurs="0" />
 			<xs:element name="landscapeImage" type="imageType" minOccurs="0" />
 			<xs:element name="logoImage" type="imageType" minOccurs="0" />
@@ -210,13 +205,13 @@
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-                    <xs:element name="subtitleLanguagesList" type="languageListType" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>List of available languages for available video subtitles.
-                                (In import format this information is on the material/subtitleList.)
-                            </xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
+					<xs:element name="subtitleLanguagesList" type="languageListType" minOccurs="0">
+					  <xs:annotation>
+					    <xs:documentation>List of available languages for available video subtitles.
+					    (In import format this information is on the material/subtitleList.)
+					    </xs:documentation>
+					  </xs:annotation>
+					</xs:element>
 					<xs:element name="addProviderLogo" type="xs:boolean" default="true">
 						<xs:annotation>
 							<xs:documentation>Information to the client if the player shall add the default logo (tv4play) to
@@ -237,27 +232,33 @@
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="drmRestrictions" type="xs:boolean" default="true">
-                        <xs:annotation>
-                            <xs:documentation>true:=video is DRM protected, player need to initialize differently.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                <xs:element name="publicationRights" type="publicationRightsType">
-                    <xs:annotation>
-                        <xs:documentation></xs:documentation>
-                    </xs:annotation>
-                </xs:element>
+					  <xs:annotation>
+					    <xs:documentation>true:=video is DRM protected, player need to initialize differently.</xs:documentation>
+					  </xs:annotation>
+					</xs:element>
+					<xs:element name="sponsored" type="xs:boolean" default="false">
+					  <xs:annotation>
+					    <xs:documentation>Information that the entity is sponsored. Required by Radio- och tv-lag (2010:696) §7</xs:documentation>
+					  </xs:annotation>
+					</xs:element>
+					
+					<xs:element name="publicationRights" type="publicationRightsType">
+					  <xs:annotation>
+					    <xs:documentation></xs:documentation>
+					  </xs:annotation>
+					</xs:element>
 					<xs:element name="contentIdRef" type="common:idType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Reference to other content entity that is related. Thought use is for a clip or
-								trailer to reference the original content.
-							</xs:documentation>
-						</xs:annotation>
+					  <xs:annotation>
+					    <xs:documentation>Reference to other content entity that is related. Thought use is for a clip or
+					    trailer to reference the original content.
+					    </xs:documentation>
+					  </xs:annotation>
 					</xs:element>
 					<xs:element name="episodeNumber" type="xs:long" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Episode number for the program or "null" if no episode information.
-							</xs:documentation>
-						</xs:annotation>
+					  <xs:annotation>
+					    <xs:documentation>Episode number for the program or "null" if no episode information.
+					    </xs:documentation>
+					  </xs:annotation>
 					</xs:element>
 				</xs:sequence>
 			</xs:extension>

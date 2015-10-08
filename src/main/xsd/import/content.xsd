@@ -85,11 +85,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="sponsored" type="xs:boolean" default="false">
-			  <xs:annotation>
-			    <xs:documentation>Information that the entity is sponsored. Required by Radio- och tv-lag (2010:696) §7</xs:documentation>
-			  </xs:annotation>
-			</xs:element>
 			<xs:element name="genreList" type="genreListType" minOccurs="0" />
 			<xs:element name="parentalRatingList" type="parentalRatingListType" minOccurs="0" />
 			<xs:element name="externalReferenceList" type="common:externalReferenceListType" minOccurs="0">
@@ -184,6 +179,11 @@
 							<xs:documentation>Episode number for the program or "null" if no episode information.
 							</xs:documentation>
 						</xs:annotation>
+					</xs:element>
+					<xs:element name="sponsored" type="xs:boolean" default="false">
+					  <xs:annotation>
+					    <xs:documentation>Information that the entity is sponsored. Required by Radio- och tv-lag (2010:696) §7</xs:documentation>
+					  </xs:annotation>
 					</xs:element>
 				</xs:sequence>
 			</xs:extension>
