@@ -151,7 +151,7 @@
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="contentType" type="contentTypeType" minOccurs="0" >
+					<xs:element name="contentType" type="contentTypeType" maxOccurs="1" >
 						<xs:annotation>
 							<xs:documentation>ToDo: changed value set in VCMS.
 							</xs:documentation>
