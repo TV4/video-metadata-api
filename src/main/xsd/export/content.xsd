@@ -273,16 +273,16 @@
                             </xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="relateToList" type="relateToListType" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>
-                                List of links to other material
-                            </xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
                     <xs:element name="episodeNumber" type="xs:long" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>Episode number for the program or "null" if no episode information.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="relatesToList" type="relatesToListType" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>
+                                List of links to other material
                             </xs:documentation>
                         </xs:annotation>
                     </xs:element>
@@ -334,12 +334,12 @@
             <xs:element name="comment" type="descriptionType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="relateToListType">
+    <xs:complexType name="relatesToListType">
         <xs:sequence>
-            <xs:element name="relatesTo" type="relateToType" maxOccurs="unbounded"/>
+            <xs:element name="relatesTo" type="relatesToType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="relateToType">
+    <xs:complexType name="relatesToType">
         <xs:annotation>
             <xs:documentation>
                 Used to relate one video to other video assets.
