@@ -117,7 +117,7 @@
             <xs:enumeration value="story"/>
             <xs:enumeration value="mainCategory"/>
             <xs:enumeration value="subCategory"/>
-	    <xs:enumeration value="spokenlanguage"/>
+	    <xs:enumeration value="spokenLanguage"/>
 	    <xs:enumeration value="sportCategory"/>
 	    <xs:enumeration value="sportLeagueOrCompetition"/>
 	    <xs:enumeration value="sportSeasonOrTournament"/>
