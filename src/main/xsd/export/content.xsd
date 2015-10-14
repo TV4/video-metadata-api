@@ -331,33 +331,28 @@
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="relatesToType">
-        <xs:annotation>
-            <xs:documentation>
-                Used to relate one video to other video assets.
-                E.g. A clip relates back to the original video.
-            </xs:documentation>
-        </xs:annotation>
-        <xs:sequence>
-            <xs:element name="videoId" type="xs:string">
-                <xs:annotation>
-                    <xs:documentation>The videoId of the linked video asset.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="contentType" type="contentTypeType">
-                <xs:annotation>
-                    <xs:documentation>Type of the linked video asset.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="relationType" type="xs:string" minOccurs="0">
-                <xs:annotation>
-                    <xs:documentation>
-                        Type of link as specified in the VCMS.
-                        Optional field that can specify how the videos are linked.
-                    </xs:documentation>
-                </xs:annotation>
-            </xs:element>
-        </xs:sequence>
-    </xs:complexType>
+    <xs:sequence>
+        <xs:element name="id" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Id of the linked resource, if a video asset, the videoId</xs:documentation>
+            </xs:annotation>
+        </xs:element>
+        <xs:element name="type" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Type of the linked resource, in case of a video the contentType</xs:documentation>
+            </xs:annotation>
+        </xs:element>
+        <xs:element name="relationType" type="xs:string" minOccurs="0">
+            <xs:annotation>
+                <xs:documentation>
+                    Type of link as specified in the VCMS.
+                    Optional field that can specify how the videos are linked.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:element>
+    </xs:sequence>
+</xs:complexType>
+
     <xs:complexType name="parentalRatingListType">
         <xs:sequence>
             <xs:element name="parentalRating" type="parentalRatingType" maxOccurs="unbounded"/>

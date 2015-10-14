@@ -242,14 +242,14 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="videoId" type="xs:string">
+			<xs:element name="id" type="xs:string">
 				<xs:annotation>
-					<xs:documentation>The videoId of the linked video asset.</xs:documentation>
+					<xs:documentation>Id of the linked resource, if a video asset, the videoId</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="contentType" type="contentTypeType">
+			<xs:element name="type" type="xs:string" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Type of the linked video asset.</xs:documentation>
+					<xs:documentation>Type of the linked resource, in case of a video the contentType</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="relationType" type="xs:string" minOccurs="0">
