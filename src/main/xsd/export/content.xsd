@@ -264,15 +264,6 @@
                             <xs:documentation></xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <!-- TODO: om värde inte sparas från import kan denna tas bort när videoIdRef är implementerad -->
-                    <xs:element name="contentIdRef" type="common:idType" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>Reference to other content entity that is related. Thought use is for a
-                                clip or
-                                trailer to reference the original content.
-                            </xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
                     <xs:element name="episodeNumber" type="xs:long" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>Episode number for the program or "null" if no episode information.
