@@ -492,7 +492,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:sequence>
-            <xs:element name="image" type="groupedImageType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="image" type="typePrioGroupedImageType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     <xs:simpleType name="imageTypeType">
@@ -534,7 +534,7 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:complexType name="groupedImageType">
+    <xs:complexType name="typePrioGroupedImageType">
         <xs:sequence>
             <xs:element name="default" type="simpleImageType" minOccurs="0"/>
             <xs:element name="localizations" minOccurs="0">
