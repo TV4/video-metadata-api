@@ -122,6 +122,12 @@
 					<xs:documentation>Flag to indicate if ads are allowed in this vidoe (in the context of the publication/event)</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="allowEmbed" type="xs:boolean" default="true">
+			  <xs:annotation>
+			    <xs:documentation>Information to the client if the social medi\
+			    a sharing functions shall be disabled (default true).</xs:documentation>
+			  </xs:annotation>
+			</xs:element>
 			<xs:element name="drmRestrictions" type="drmRestrictionsType" minOccurs="0" />
 			<xs:element name="locationRestrictions" type="locationRestrictionsType" minOccurs="0" />
 			<xs:element name="userOrGroupRestrictions" type="userOrGroupRestrictionsType" minOccurs="0" />
