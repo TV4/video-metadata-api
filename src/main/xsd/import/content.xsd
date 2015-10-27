@@ -240,41 +240,41 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="parentalRatingType">
-        <xs:annotation>
-            <xs:documentation>
-                See http://en.wikipedia.org/wiki/Motion_picture_rating_system for more information about parental ratings.
-            </xs:documentation>
-        </xs:annotation>
-		<xs:sequence>
-			<xs:element name="age" type="xs:long" default="0">
-                <xs:annotation>
-                    <xs:documentation>
-                        Parental rating age in year.
-                        0 years => No restriction.
-                        Also see http://en.wikipedia.org/wiki/Motion_picture_rating_system for
-                        more information.
-                    </xs:documentation>
-                </xs:annotation>
-            </xs:element>
-			<xs:element name="ratingCode" type="xs:string" minOccurs="0" maxOccurs="unbounded" >
-                <xs:annotation>
-                    <xs:documentation>
-                        Rating code that motivates the parental guidance.
-                        Code to descriptive text is mapped in client GUI.
-                    </xs:documentation>
-                </xs:annotation>
-            </xs:element>
-		</xs:sequence>
-        <xs:attribute name="country" type="xs:string" use="optional">
-            <xs:annotation>
-                <xs:documentation>
-                    Two char country code accoring to ISO 3166-1-alpha-2.
-                    Empty or absent country attribute has the meaning that it is global default value for any country.
-                    Specific country declaration overrides the default.
-                    If country value is repeted, result is undefined which one to select.
-                </xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
+	  <xs:annotation>
+	    <xs:documentation>
+	      See http://en.wikipedia.org/wiki/Motion_picture_rating_system for more information about parental
+	      ratings.
+	    </xs:documentation>
+	  </xs:annotation>
+	  <xs:sequence>
+	    <xs:element name="system" type="xs:string">
+	      <xs:annotation>
+		<xs:documentation>
+		  Which system is used for this particular rating
+		</xs:documentation>
+	      </xs:annotation>
+	    </xs:element>
+	    <xs:element name="value" type="xs:string">
+	      <xs:annotation>
+		<xs:documentation>
+		  What value within a certain system is used. Soem examples include
+		  - tv4-group - 18 [age in years]
+		  - sweden - 15
+		  - c-more - PURPLE
+		  - mppa - PG
+		  - bbfc - 15
+		</xs:documentation>
+	      </xs:annotation>
+	    </xs:element>
+	    <xs:element name="country" type="xs:string" minOccurs="0">
+	      <xs:annotation>
+		<xs:documentation>
+		  Two char country code accoring to ISO 3166-1-alpha-2.
+		  If country value is repeted, result is undefined which one to select.
+		</xs:documentation>
+	      </xs:annotation>
+	    </xs:element>
+	  </xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="tagListType">
 		<xs:sequence>
