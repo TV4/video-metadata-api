@@ -294,6 +294,7 @@
 		    <xs:annotation>
 		      <xs:documentation>
 			To specify what this relation is about eg. Trailer.
+			The allowed values for this field is restricted by EMPs VCMS. 
 		      </xs:documentation>
 		    </xs:annotation>
 		  </xs:element>
