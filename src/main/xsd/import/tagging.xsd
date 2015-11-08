@@ -111,23 +111,31 @@
 			<xs:documentation>The defined tag types.
 			</xs:documentation>
 		</xs:annotation>
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="person"/>
-            <xs:enumeration value="program"/>
-            <xs:enumeration value="subject"/>
-            <xs:enumeration value="story"/>
-            <xs:enumeration value="mainCategory"/>
-            <xs:enumeration value="subCategory"/>
-            <xs:enumeration value="advertisement"/>
-            <xs:enumeration value="advertisementCategory"/>
-            <xs:enumeration value="spokenlanguage"/>
-            <xs:enumeration value="other">
-                <xs:annotation>
-                    <xs:documentation>Any free text tag, for semi temporary usage.
-                    </xs:documentation>
-                </xs:annotation>
-            </xs:enumeration>
-        </xs:restriction>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="person"/>
+			<xs:enumeration value="program"/>
+			<xs:enumeration value="subject"/>
+			<xs:enumeration value="story"/>
+			<xs:enumeration value="mainCategory"/>
+			<xs:enumeration value="subCategory"/>
+			<xs:enumeration value="advertisement"/>
+			<xs:enumeration value="advertisementCategory"/>
+			<xs:enumeration value="spokenlanguage"/>
+			<xs:enumeration value="sportCategory"/>
+			<xs:enumeration value="sportLeagueOrCompetition"/>
+			<xs:enumeration value="sportSeasonOrTournament"/>
+			<xs:enumeration value="sportRoundOrEpisode"/>
+			<xs:enumeration value="sportHomeTeam"/>
+			<xs:enumeration value="sportAwayTeam"/>
+			<xs:enumeration value="sportArenaOrCourse"/>
+			<xs:enumeration value="other">
+				<xs:annotation>
+					<xs:documentation>
+						Any free text tag, for semi temporary usage. E.g. grabbed image before editor decide the type.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="tagNameType">
 		<xs:annotation>

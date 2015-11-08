@@ -560,6 +560,8 @@
 			<xs:element name="subGenre" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+
+	<!-- TODO: Remove if we can. Need to be verified by C More / June if they can export sports as tags -->
 	<xs:complexType name="sportType">
 		<xs:annotation>
 			<xs:documentation>Sports tag that describes the sport event: serie, league, tournament or any other sport

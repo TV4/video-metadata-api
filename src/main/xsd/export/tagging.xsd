@@ -121,9 +121,17 @@
             <xs:enumeration value="advertisement"/>
             <xs:enumeration value="advertisementCategory"/>
             <xs:enumeration value="spokenlanguage"/>
+            <xs:enumeration value="sportCategory"/>
+            <xs:enumeration value="sportLeagueOrCompetition"/>
+            <xs:enumeration value="sportSeasonOrTournament"/>
+            <xs:enumeration value="sportRoundOrEpisode"/>
+            <xs:enumeration value="sportHomeTeam"/>
+            <xs:enumeration value="sportAwayTeam"/>
+            <xs:enumeration value="sportArenaOrCourse"/>
             <xs:enumeration value="other">
                 <xs:annotation>
-                    <xs:documentation>Any free text tag, for semi temporary usage.
+                    <xs:documentation>
+                        Any free text tag, for semi temporary usage. E.g. grabbed image before editor decide the type.
                     </xs:documentation>
                 </xs:annotation>
             </xs:enumeration>
