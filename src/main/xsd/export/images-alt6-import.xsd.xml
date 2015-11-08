@@ -1,0 +1,45 @@
+<v1:images-import-format xmlns:v1="http://video-metadata.tv4.se/export/content/v1">
+    <!--Zero or more repetitions:-->
+    <image type="landscape" language="string" prio="5">
+        <url>https://cdn.images.tv4play.se/images/test-landscape.png</url>
+        <caption>Test landscape</caption>
+        <copyright>TV4</copyright>
+        <width>3</width>
+        <height>3</height>
+    </image>
+    <image type="poster" prio="1">
+        <url>https://cdn.images.tv4play.se/images/test-poster.png</url>
+        <caption>Test landscape</caption>
+        <copyright>TV4</copyright>
+        <width>3</width>
+        <height>3</height>
+    </image>
+    <image type="poster" language="nb" prio="1">
+        <url>https://cdn.images.tv4play.se/images/test-poster-nb.png</url>
+        <caption>Test landscape</caption>
+        <copyright>TV4</copyright>
+        <width>3</width>
+        <height>3</height>
+    </image>
+    <image type="poster" language="dk" prio="1">
+        <url>https://cdn.images.tv4play.se/images/test-poster-dk.png</url>
+        <caption>Test landscape</caption>
+        <copyright>TV4</copyright>
+        <width>3</width>
+        <height>3</height>
+    </image>
+    <image type="poster" language="fi" prio="1">
+        <url>https://cdn.images.tv4play.se/images/test-poster-fi.png</url>
+        <caption>Test landscape</caption>
+        <copyright>TV4</copyright>
+        <width>3</width>
+        <height>3</height>
+    </image>
+    <image type="poster" language="sv" prio="1">
+        <url>https://cdn.images.tv4play.se/images/test-poster-sv.png</url>
+        <caption>Test landscape</caption>
+        <copyright>TV4</copyright>
+        <width>3</width>
+        <height>3</height>
+    </image>
+</v1:images-import-format>

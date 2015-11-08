@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/export/content/v1"
+           targetNamespace="http://video-metadata.tv4.se/export/content/v1" version="1.0">
+
+    <xs:element name="images-import-format">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="image" type="importImageType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="images-export-format">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="image" type="exportImageType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="imageTypeType">
+        <xs:annotation>
+            <xs:documentation>Type of image, initial intended usage for the image from source system.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="poster"/>
+            <xs:enumeration value="landscape"/>
+            <xs:enumeration value="cinemascope"/>
+            <xs:enumeration value="logohometeam"/>
+            <xs:enumeration value="logoawayteam"/>
+            <xs:enumeration value="banner"/>
+            <xs:enumeration value="other"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="simpleImageType">
+        <xs:sequence>
+            <xs:element name="url" type="xs:anyURI"/>
+            <xs:element name="caption" type="xs:string" minOccurs="0"/>
+            <xs:element name="copyright" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="exportImageType">
+        <xs:sequence>
+            <xs:element name="default" type="simpleImageType" minOccurs="0"/>
+            <xs:element name="localizations" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="localized" type="exportLocalizedImageType" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="type" type="imageTypeType"/>
+        <xs:attribute name="prio" type="xs:unsignedShort">
+            <xs:annotation>
+                <xs:documentation>Lower priority number means higher importance.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="exportLocalizedImageType">
+        <xs:complexContent>
+            <xs:extension base="simpleImageType">
+                <xs:attribute name="language" type="xs:language" use="required"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="importImageType">
+
+        <xs:complexContent>
+            <xs:extension base="simpleImageType">
+                <xs:sequence>
+                    <xs:element name="width" type="xs:int" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>In unit px.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="height" type="xs:int" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>In unit px.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="type" type="imageTypeType" use="required"/>
+                <xs:attribute name="language" type="xs:language"/>
+                <xs:attribute name="prio" type="xs:unsignedShort"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+</xs:schema>
