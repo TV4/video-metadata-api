@@ -108,14 +108,9 @@
                 <xs:sequence>
                     <xs:annotation>
                         <xs:documentation>
-                            Set in EMP by editor, legal requirement if brand is sponsored.
-                            If sponsored, then the GUI must have a distinct marker to indicate this.
-                            Noting to do with who has sponsored the event. That info must be resolved by some other
-                            data.
-                            One solution might be to complement with a sponsored tag.
+                            No special attributes on brand.
                         </xs:documentation>
                     </xs:annotation>
-                    <xs:element name="sponsored" type="xs:boolean" default="false"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -151,16 +146,9 @@
         <xs:complexContent>
             <xs:extension base="abstractContentType">
                 <xs:sequence>
-                    <xs:element name="sport" type="sportType" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>Informationa about tournament, round and teams for sport or entertainment
-                                programs.
-                            </xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
                     <xs:element name="vmanId" type="xs:string" minOccurs="0">
                         <xs:annotation>
-                            <xs:documentation>VMAN id for asset.
+                            <xs:documentation>VMAN id for asset. Can be removed in later releases.
                             </xs:documentation>
                         </xs:annotation>
                     </xs:element>
@@ -197,7 +185,7 @@
                             </xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="contentType" type="contentTypeType" minOccurs="0">
+                    <xs:element name="contentType" type="contentTypeType">
                         <xs:annotation>
                             <xs:documentation>ToDo: changed value set in VCMS.
                             </xs:documentation>
@@ -245,7 +233,13 @@
 					</xs:element>
 					<xs:element name="hideAds" type="xs:boolean" default="false">
 						<xs:annotation>
-							<xs:documentation>Information to client if presentation in GUI shall be without ads.</xs:documentation>
+                            <xs:documentation>Information to client if presentation in GUI shall be without ads.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="sponsored" type="xs:boolean" default="false">
+                        <xs:annotation>
+                            <xs:documentation>Information that program is sponsored. Radio- och tv-lag (2010:696) §7</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="drmRestrictions" type="xs:boolean" default="true">
@@ -258,7 +252,8 @@
                             <xs:documentation></xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="episodeNumber" type="xs:long" minOccurs="0">
+                    <!-- TODO: om värde inte sparas i VCMS från import kan denna tas bort. -->
+                    <xs:element name="contentIdRef" type="common:idType" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>Episode number for the program or "null" if no episode information.
                             </xs:documentation>
@@ -283,6 +278,8 @@
     </xs:complexType>
     <xs:simpleType name="contentTypeType">
         <xs:restriction base="xs:string">
+            <xs:enumeration value="live-channel"/>
+            <xs:enumeration value="live-event"/>
             <xs:enumeration value="episode"/>
             <xs:enumeration value="movie"/>
             <xs:enumeration value="trailer"/>
@@ -321,6 +318,33 @@
                 <xs:attribute name="language" type="xs:language"/>
             </xs:extension>
         </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="relatesToListType">
+        <xs:sequence>
+            <xs:element name="relatesTo" type="relatesToType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="relatesToType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Id of the linked resource, if a video asset, the videoId</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="type" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Type of the linked resource, in case of a video the contentType</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="relationType" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>
+                        Type of link as specified in the VCMS.
+                        Optional field that can specify how the videos are linked.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
     </xs:complexType>
     <xs:complexType name="parentalRatingListType">
         <xs:sequence>
@@ -544,7 +568,6 @@
             </xs:annotation>
         </xs:attribute>
     </xs:complexType>
-
     <xs:complexType name="languageListType">
         <xs:sequence>
             <xs:element name="language" type="xs:language" minOccurs="0" maxOccurs="unbounded">
@@ -554,25 +577,6 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-    <!--
-    <xs:complexType name="mediaReferenceListType">
-        <xs:sequence>
-            <xs:element name="reference" type="mediaReferenceType" minOccurs="0" maxOccurs="unbounded" />
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="mediaReferenceType">
-        <xs:simpleContent>
-            <xs:extension base="xs:string">
-                <xs:attribute name="priority" type="xs:int">
-                    <xs:annotation>
-                        <xs:documentation>lower priority number means higher importance
-                        </xs:documentation>
-                    </xs:annotation>
-                </xs:attribute>
-            </xs:extension>
-        </xs:simpleContent>
-    </xs:complexType>
-    -->
     <xs:complexType name="genreListType">
         <xs:sequence>
             <xs:element name="genre" type="genreType" minOccurs="0" maxOccurs="unbounded" />
@@ -591,80 +595,6 @@
 			<xs:element name="subGenre" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-	<!-- Sports XML eplaced with tags in export
-	<xs:complexType name="sportType">
-		<xs:annotation>
-			<xs:documentation>Sports tag that describes the sport event: serie, league, tournament or any other sport
-				event.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="sportsCategory" type="sportsCategoryType" minOccurs="0" />
-			<xs:element name="leagueOrCompetitionList" type="leagueOrCompetitionListType" minOccurs="0" />
-			<xs:element name="seasonOrTournamentList" type="seasonOrTournamentList" minOccurs="0" />
-			<xs:element name="roundOrEpisodeList" type="roundOrEpisodeListType" minOccurs="0" />
-			<xs:element name="homeTeamList" type="teamListType" minOccurs="0" />
-			<xs:element name="awayTeamList" type="teamListType" minOccurs="0" />
-			<xs:element name="arenaOrCourseList" type="teamListType" minOccurs="0" />
-		</xs:sequence>
-	</xs:complexType>
-
-	<xs:complexType name="sportsCategoryType">
-		<xs:simpleContent>
-			<xs:restriction base="simpleTextType">
-				<xs:maxLength value="40" />
-			</xs:restriction>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:complexType name="leagueOrCompetitionListType">
-		<xs:sequence>
-			<xs:element name="leagueOrCompetition" type="leagueOrCompetitionType" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="leagueOrCompetitionType">
-		<xs:simpleContent>
-			<xs:restriction base="simpleTextType">
-				<xs:maxLength value="40" />
-			</xs:restriction>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:complexType name="seasonOrTournamentList">
-		<xs:sequence>
-			<xs:element name="roundOrEpisode" type="roundOrEpisodeType" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="seasonOrTournamentType">
-		<xs:simpleContent>
-			<xs:restriction base="simpleTextType">
-				<xs:maxLength value="40" />
-			</xs:restriction>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:complexType name="roundOrEpisodeListType">
-		<xs:sequence>
-			<xs:element name="roundOrEpisode" type="roundOrEpisodeType" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="roundOrEpisodeType">
-		<xs:simpleContent>
-			<xs:restriction base="simpleTextType">
-				<xs:maxLength value="40" />
-			</xs:restriction>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:complexType name="teamListType">
-		<xs:sequence>
-			<xs:element name="team" type="teamType" minOccurs="0" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="teamType">
-		<xs:simpleContent>
-			<xs:restriction base="simpleTextType">
-				<xs:maxLength value="40" />
-			</xs:restriction>
-		</xs:simpleContent>
-	</xs:complexType>
-	-->
 	<xs:complexType name="simpleTextType">
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
