@@ -1,161 +1,138 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <ns4:publish-metadata xmlns:ns2="http://video-metadata.tv4.se/event/v1"
-	xmlns:ns3="http://video-metadata.tv4.se/tagging/v1" xmlns:ns4="http://video-metadata.tv4.se/api-messages/v1"
-	xmlns:ns5="http://video-metadata.tv4.se/schedule/v1" xmlns:ns6="http://video-metadata.tv4.se/publish/v1"
-	xmlns:ns7="http://video-metadata.tv4.se/content/v1" xmlns:ns8="http://video-metadata.tv4.se/material/v1">
-	<ns4:header>
-		<ns4:providerId>se.tv4</ns4:providerId>
-		<ns4:msgId>37de8f95-79dc-457b-98b0-826b0597af0b</ns4:msgId>
-	</ns4:header>
-	<ns4:data timestamp="2014-12-11T13:39:02.465+01:00">
-		<ns6:brand>
-			<id>131347918</id>
-			<titleList>
-				<title original="false" language="sv">Tina i fjällen</title>
-			</titleList>
-			<descriptionList>
-				<description length="medium" language="sv">Tina Nordström
-					bjuder in personer till sin tillflyktsort, sin stuga i Vemdalen i
-					den jämtländska fjällvärden.</description>
-			</descriptionList>
-		</ns6:brand>
-		<ns6:season>
-			<id>4939185</id>
-			<productionYear>2014</productionYear>
-			<countryOfOriginList>
-				<country>SE</country>
-			</countryOfOriginList>
-			<titleList>
-				<title original="false" language="sv">Säsong 1</title>
-			</titleList>
-			<descriptionList>
-				<description language="sv">Tina Nordström bjuder in personer
-					till sin tillflyktsort, sin stuga i Vemdalen i den jämtländska
-					fjällvärden.</description>
-				<description length="short" language="sv">Svensk
-					matlagningsserie från 2014.</description>
-				<description length="medium" language="sv">Tina Nordström
-					bjuder in personer till sin tillflyktsort, sin stuga i Vemdalen.
-					Tina tar med gästerna på allt från slalomåkning, till fiske och
-					driva in renar. Det blir också matlagning och förtroliga samtal.
-				</description>
-				<description length="long" language="sv">Svensk
-					matlagningsserie från 2014. Det här är den första säsongen som
-					sändas i tre delar.
-
-					Tina Nordström bjuder in personer till sin tillflyktsort, sin stuga i
-					Vemdalen. Nu vill Tina välkomma tittarna och några få utvalda
-					gäster till Vemdalen och bjuda på det bästa den svenska fjällvärden
-					har i form av mat, aktivititer och upplevelser.
-
-					Tinas gäster är operastjärnan Malena Ernman, journalisten och
-					programledaren Hasse Aro och skidåkarna Emil Jönsson och Anna Haag.
-				</description>
-				<description length="extended" language="sv">Tina i fjällen
-					är en svensk matlagningsserie från 2014. Det här är den första
-					säsongen som sändas i tre delar.
-
-					Tina Nordström bjuder in personer till sin tillflyktsort, sin stuga i
-					Vemdalen. Tina älskar byborna och lokalbefolkningen har tagit henne
-					tills ina hjärtan. Nu vill Tina välkomma tittarna och några få
-					utvalda gäster till Vemdalen och bjuda på det bästa den svenska
-					fjällvärden har i form av mat, aktivititer och upplevelser.
-
-					Tinas gäster är operastjärnan Malena Ernman, journalisten och
-					programledaren Hasse Aro och skidåkarna Emil Jönsson och Anna Haag.
-					Hon tar med gästerna på allt från slalomåkning, till fiske och
-					driva in renar. Det blir också matlagning och förtroliga samtal.
-
-					I Tinas tidigare programserie har hon besökt kända svenskar runt om
-					i sommar Sverige och även utomlands.
-				</description>
-			</descriptionList>
-			<imageList>
-				<image>
-					<imageRef purpose="production" unit="px" height="3840"
-						width="5760" orientation="landscape">http://image.tv4.se/fb/77/84/FILE_E39AD778-31FD-4926-8F7A-CA69E2487875.jpg
-					</imageRef>
-				</image>
-			</imageList>
-			<categoryList>
-				<category priority="1">
-					<mainCategory>Matlagning</mainCategory>
-				</category>
-			</categoryList>
-			<brandId>131347918</brandId>
-			<seasonNumber>1</seasonNumber>
-			<numberOfEpisodes>3</numberOfEpisodes>
-		</ns6:season>
-		<ns6:content>
-			<id>4939186</id>
-			<productionYear>2014</productionYear>
-			<countryOfOriginList>
-				<country>SE</country>
-			</countryOfOriginList>
-			<titleList>
-				<title original="false" language="sv">Tina i fjällen</title>
-				<title original="true" language="sv">Tina i fjällen I</title>
-			</titleList>
-			<descriptionList>
-				<description length="short" language="sv">Tina gästas av
-					journalisten Hasse Aro.</description>
-				<description length="medium" language="sv">Programstart. Tina
-					gästas av journalisten Hasse Aro men först besöker hon Mittådalens
-					sameby för att driva renhjord. När Hasse kommer ger de sig av till
-					Näsvallens fäbodar. Tillbaka i stallet lagar de entrecote med
-					grillade vindruvor och hemgjorda pommes och middagen avslutas med
-					skönsång.</description>
-				<description length="long" language="sv">Tina får besök av
-					journalisten och programledaren Hasse Aro, men först besöker hon
-					Mittådalens sameby för att driva renhjord med samerna. Hon bjuder
-					dem på varma smörgåsar med tre sorters ost som hon grillar som en
-					pizza.
-
-					När Hasse kommer ger de sig av till Näsvallens fäbodar, Tina på häst
-					och Hasse på skoter och Tina visar två varianter på råbiff.
-					Tillbaka i stallet lagar Tina med Hasses hjälp entrecote med
-					grillade vindruvor och hemgjorda pommes. Hasse visar Tina att han
-					kan slå en majonnäs och middagen avslutas med skönsång.
-				</description>
-			</descriptionList>
-			<creditList />
-			<imageList>
-				<image>
-					<imageRef purpose="production" unit="px" height="720"
-						width="1280" orientation="landscape">http://image.tv4.se//8a/3f/b5/FILE_6A43073C-5DDF-4292-8B25-314EA6162CBA.jpg
-					</imageRef>
-				</image>
-			</imageList>
-			<categoryList>
-				<category priority="1">
-					<mainCategory>Matlagning</mainCategory>
-				</category>
-			</categoryList>
-			<brandId>131347918</brandId>
-			<seasonId>4939185</seasonId>
-			<episodeNumber>1</episodeNumber>
-		</ns6:content>
-		<ns6:materialList>
-			<material timestamp="2014-12-11T13:39:02.464+01:00">
-				<providerId>se.tv4</providerId>
-				<id>4939186</id>
-				<materialType>program</materialType>
-				<videoFormat threeD="false">576i</videoFormat>
-			</material>
-		</ns6:materialList>
-		<ns6:eventList>
-			<ns2:event timestamp="2014-12-11T13:39:02.463+01:00">
-				<ns2:id>919686</ns2:id>
-				<ns2:rerun>false</ns2:rerun>
-				<ns2:timeList>
-					<ns2:time type="planned">
-						<ns2:startTime>2014-11-24T00:00:00.000+01:00</ns2:startTime>
-						<ns2:endTime>2099-12-31T00:00:00.000+01:00</ns2:endTime>
-					</ns2:time>
-				</ns2:timeList>
-				<ns2:contentIdRef>4939186</ns2:contentIdRef>
-				<ns2:materialIdRef>4856955</ns2:materialIdRef>
-			</ns2:event>
-		</ns6:eventList>
-	</ns4:data>
+xmlns:ns3="http://video-metadata.tv4.se/tagging/v1"
+xmlns:ns4="http://video-metadata.tv4.se/api-messages/v1"
+xmlns:ns5="http://video-metadata.tv4.se/schedule/v1"
+xmlns:ns6="http://video-metadata.tv4.se/publish/v1"
+xmlns:ns7="http://video-metadata.tv4.se/content/v1"
+xmlns:ns8="http://video-metadata.tv4.se/material/v1">
+  <ns4:header>
+    <ns4:providerId>se.tv4</ns4:providerId>
+    <ns4:msgId>37de8f95-79dc-457b-98b0-826b0597af0b</ns4:msgId>
+  </ns4:header>
+  <ns4:data timestamp="2014-12-11T13:39:02.465+01:00">
+    <ns6:brand>
+      <id>131347918</id>
+      <titleList>
+        <title original="false" language="sv">Tina i fjällen</title>
+      </titleList>
+      <descriptionList>
+        <description length="medium" language="sv">Tina Nordström bjuder in personer till sin
+        tillflyktsort, sin stuga i Vemdalen i den jämtländska fjällvärden.</description>
+      </descriptionList>
+    </ns6:brand>
+    <ns6:season>
+      <id>4939185</id>
+      <productionYear>2014</productionYear>
+      <countryOfOriginList>
+        <country>SE</country>
+      </countryOfOriginList>
+      <titleList>
+        <title original="false" language="sv">Säsong 1</title>
+      </titleList>
+      <descriptionList>
+        <description language="sv">Tina Nordström bjuder in personer till sin tillflyktsort, sin
+        stuga i Vemdalen i den jämtländska fjällvärden.</description>
+        <description length="short" language="sv">Svensk matlagningsserie från 2014.</description>
+        <description length="medium" language="sv">Tina Nordström bjuder in personer till sin
+        tillflyktsort, sin stuga i Vemdalen. Tina tar med gästerna på allt från slalomåkning, till
+        fiske och driva in renar. Det blir också matlagning och förtroliga samtal.</description>
+        <description length="long" language="sv">Svensk matlagningsserie från 2014. Det här är den
+        första säsongen som sändas i tre delar. Tina Nordström bjuder in personer till sin
+        tillflyktsort, sin stuga i Vemdalen. Nu vill Tina välkomma tittarna och några få utvalda
+        gäster till Vemdalen och bjuda på det bästa den svenska fjällvärden har i form av mat,
+        aktivititer och upplevelser. Tinas gäster är operastjärnan Malena Ernman, journalisten och
+        programledaren Hasse Aro och skidåkarna Emil Jönsson och Anna Haag.</description>
+        <description length="extended" language="sv">Tina i fjällen är en svensk matlagningsserie
+        från 2014. Det här är den första säsongen som sändas i tre delar. Tina Nordström bjuder in
+        personer till sin tillflyktsort, sin stuga i Vemdalen. Tina älskar byborna och
+        lokalbefolkningen har tagit henne tills ina hjärtan. Nu vill Tina välkomma tittarna och
+        några få utvalda gäster till Vemdalen och bjuda på det bästa den svenska fjällvärden har i
+        form av mat, aktivititer och upplevelser. Tinas gäster är operastjärnan Malena Ernman,
+        journalisten och programledaren Hasse Aro och skidåkarna Emil Jönsson och Anna Haag. Hon
+        tar med gästerna på allt från slalomåkning, till fiske och driva in renar. Det blir också
+        matlagning och förtroliga samtal. I Tinas tidigare programserie har hon besökt kända
+        svenskar runt om i sommar Sverige och även utomlands.</description>
+      </descriptionList>
+      <imageList>
+        <image>
+          <imageRef purpose="production" unit="px" height="3840" width="5760"
+          orientation="landscape">
+          http://image.tv4.se/fb/77/84/FILE_E39AD778-31FD-4926-8F7A-CA69E2487875.jpg</imageRef>
+        </image>
+      </imageList>
+      <categoryList>
+        <category priority="1">
+          <mainCategory>Matlagning</mainCategory>
+        </category>
+      </categoryList>
+      <brandId>131347918</brandId>
+      <seasonNumber>1</seasonNumber>
+      <numberOfEpisodes>3</numberOfEpisodes>
+    </ns6:season>
+    <ns6:content>
+      <id>4939186</id>
+      <productionYear>2014</productionYear>
+      <countryOfOriginList>
+        <country>SE</country>
+      </countryOfOriginList>
+      <titleList>
+        <title original="false" language="sv">Tina i fjällen</title>
+        <title original="true" language="sv">Tina i fjällen I</title>
+      </titleList>
+      <descriptionList>
+        <description length="short" language="sv">Tina gästas av journalisten Hasse
+        Aro.</description>
+        <description length="medium" language="sv">Programstart. Tina gästas av journalisten Hasse
+        Aro men först besöker hon Mittådalens sameby för att driva renhjord. När Hasse kommer ger
+        de sig av till Näsvallens fäbodar. Tillbaka i stallet lagar de entrecote med grillade
+        vindruvor och hemgjorda pommes och middagen avslutas med skönsång.</description>
+        <description length="long" language="sv">Tina får besök av journalisten och programledaren
+        Hasse Aro, men först besöker hon Mittådalens sameby för att driva renhjord med samerna. Hon
+        bjuder dem på varma smörgåsar med tre sorters ost som hon grillar som en pizza. När Hasse
+        kommer ger de sig av till Näsvallens fäbodar, Tina på häst och Hasse på skoter och Tina
+        visar två varianter på råbiff. Tillbaka i stallet lagar Tina med Hasses hjälp entrecote med
+        grillade vindruvor och hemgjorda pommes. Hasse visar Tina att han kan slå en majonnäs och
+        middagen avslutas med skönsång.</description>
+      </descriptionList>
+      <creditList />
+      <imageList>
+        <image>
+          <imageRef purpose="production" unit="px" height="720" width="1280"
+          orientation="landscape">
+          http://image.tv4.se//8a/3f/b5/FILE_6A43073C-5DDF-4292-8B25-314EA6162CBA.jpg</imageRef>
+        </image>
+      </imageList>
+      <categoryList>
+        <category priority="1">
+          <mainCategory>Matlagning</mainCategory>
+        </category>
+      </categoryList>
+      <brandId>131347918</brandId>
+      <seasonId>4939185</seasonId>
+      <episodeNumber>1</episodeNumber>
+    </ns6:content>
+    <ns6:materialList>
+      <material timestamp="2014-12-11T13:39:02.464+01:00">
+        <providerId>se.tv4</providerId>
+        <id>4939186</id>
+        <materialType>program</materialType>
+        <videoFormat threeD="false">576i</videoFormat>
+      </material>
+    </ns6:materialList>
+    <ns6:eventList>
+      <ns2:event timestamp="2014-12-11T13:39:02.463+01:00">
+        <ns2:id>919686</ns2:id>
+        <ns2:rerun>false</ns2:rerun>
+        <ns2:timeList>
+          <ns2:time type="planned">
+            <ns2:startTime>2014-11-24T00:00:00.000+01:00</ns2:startTime>
+            <ns2:endTime>2099-12-31T00:00:00.000+01:00</ns2:endTime>
+          </ns2:time>
+        </ns2:timeList>
+        <ns2:contentIdRef>4939186</ns2:contentIdRef>
+        <ns2:materialIdRef>4856955</ns2:materialIdRef>
+      </ns2:event>
+    </ns6:eventList>
+  </ns4:data>
 </ns4:publish-metadata>

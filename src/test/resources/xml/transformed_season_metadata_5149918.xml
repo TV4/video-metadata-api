@@ -1,57 +1,55 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <ns4:content-metadata xmlns:ns2="http://video-metadata.tv4.se/event/v1"
-	xmlns:ns3="http://video-metadata.tv4.se/tagging/v1" xmlns:ns4="http://video-metadata.tv4.se/api-messages/v1"
-	xmlns:ns5="http://video-metadata.tv4.se/schedule/v1" xmlns:ns6="http://video-metadata.tv4.se/publish/v1"
-	xmlns:ns7="http://video-metadata.tv4.se/content/v1" xmlns:ns8="http://video-metadata.tv4.se/material/v1">
-	<ns4:header>
-		<ns4:providerId>se.tv4</ns4:providerId>
-		<ns4:msgId>92009c37-01ce-4128-b568-4cb3011cbb96</ns4:msgId>
-	</ns4:header>
-	<ns4:data>
-		<brand>
-			<id>83401814</id>
-			<titleList>
-				<title original="false" language="sv">American ninja warrior
-				</title>
-			</titleList>
-			<descriptionList>
-				<description length="medium" language="sv">Amerikansk
-					sportdokumentärserie. Här får bland annat lärare, brandmän och
-					poliser och en chans att tävla om titeln American ninja warrior och
-					vinna 500 000 dollar. Genom regionala uttagningar sållas agnarna
-					från vetet till finalen i Las Vegas.</description>
-			</descriptionList>
-		</brand>
-		<season>
-			<id>5149918</id>
-			<productionYear>2013</productionYear>
-			<countryOfOriginList>
-				<country>US</country>
-			</countryOfOriginList>
-			<titleList>
-				<title original="false" language="sv">Säsong 5</title>
-			</titleList>
-			<descriptionList>
-				<description language="sv">Amerikansk sportdokumentärserie
-					från 2013. Lärare, brandmän och poliser tävlar om en chans att ta
-					hem titeln American ninja warrior.</description>
-				<description length="short" language="sv">Amerikansk
-					sportdokumentärserie från 2013.</description>
-				<description length="medium" language="sv">Här får bland
-					annat lärare, brandmän och poliser en chans att tävla om titeln
-					American ninja warrior och vinna 500 000 dollar. Genom regionala
-					uttagningar sållas agnarna från vetet till finalen i Las Vegas.
-					Programledare: Jonny Moseley och Matt Iseman. Reporter: Angela Sun.
-				</description>
-			</descriptionList>
-			<categoryList>
-				<category priority="1">
-					<mainCategory>Dokumentär</mainCategory>
-				</category>
-			</categoryList>
-			<brandId>83401814</brandId>
-			<seasonNumber>4</seasonNumber>
-			<numberOfEpisodes>22</numberOfEpisodes>
-		</season>
-	</ns4:data>
+xmlns:ns3="http://video-metadata.tv4.se/tagging/v1"
+xmlns:ns4="http://video-metadata.tv4.se/api-messages/v1"
+xmlns:ns5="http://video-metadata.tv4.se/schedule/v1"
+xmlns:ns6="http://video-metadata.tv4.se/publish/v1"
+xmlns:ns7="http://video-metadata.tv4.se/content/v1"
+xmlns:ns8="http://video-metadata.tv4.se/material/v1">
+  <ns4:header>
+    <ns4:providerId>se.tv4</ns4:providerId>
+    <ns4:msgId>92009c37-01ce-4128-b568-4cb3011cbb96</ns4:msgId>
+  </ns4:header>
+  <ns4:data>
+    <brand>
+      <id>83401814</id>
+      <titleList>
+        <title original="false" language="sv">American ninja warrior</title>
+      </titleList>
+      <descriptionList>
+        <description length="medium" language="sv">Amerikansk sportdokumentärserie. Här får bland
+        annat lärare, brandmän och poliser och en chans att tävla om titeln American ninja warrior
+        och vinna 500 000 dollar. Genom regionala uttagningar sållas agnarna från vetet till
+        finalen i Las Vegas.</description>
+      </descriptionList>
+    </brand>
+    <season>
+      <id>5149918</id>
+      <productionYear>2013</productionYear>
+      <countryOfOriginList>
+        <country>US</country>
+      </countryOfOriginList>
+      <titleList>
+        <title original="false" language="sv">Säsong 5</title>
+      </titleList>
+      <descriptionList>
+        <description language="sv">Amerikansk sportdokumentärserie från 2013. Lärare, brandmän och
+        poliser tävlar om en chans att ta hem titeln American ninja warrior.</description>
+        <description length="short" language="sv">Amerikansk sportdokumentärserie från
+        2013.</description>
+        <description length="medium" language="sv">Här får bland annat lärare, brandmän och poliser
+        en chans att tävla om titeln American ninja warrior och vinna 500 000 dollar. Genom
+        regionala uttagningar sållas agnarna från vetet till finalen i Las Vegas. Programledare:
+        Jonny Moseley och Matt Iseman. Reporter: Angela Sun.</description>
+      </descriptionList>
+      <categoryList>
+        <category priority="1">
+          <mainCategory>Dokumentär</mainCategory>
+        </category>
+      </categoryList>
+      <brandId>83401814</brandId>
+      <seasonNumber>4</seasonNumber>
+      <numberOfEpisodes>22</numberOfEpisodes>
+    </season>
+  </ns4:data>
 </ns4:content-metadata>

@@ -1,190 +1,161 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <ns5:publish-metadata xmlns:ns2="http://video-metadata.tv4.se/event/v1"
-	xmlns:ns3="http://video-metadata.tv4.se/api-messages-common/v1"
-	xmlns:ns4="http://video-metadata.tv4.se/tagging/v1" xmlns:ns5="http://video-metadata.tv4.se/api-messages/v1"
-	xmlns:ns6="http://video-metadata.tv4.se/schedule/v1" xmlns:ns7="http://video-metadata.tv4.se/publish/v1"
-	xmlns:ns8="http://video-metadata.tv4.se/material/v1" xmlns:ns9="http://video-metadata.tv4.se/content/v1">
-	<ns5:header>
-		<ns3:providerId>se.tv4</ns3:providerId>
-		<ns3:msgId>3679f1df-f35b-420c-b285-ef0796b7dff1</ns3:msgId>
-	</ns5:header>
-	<ns5:data timestamp="2015-02-23T16:18:23.220+01:00">
-		<ns7:brand>
-			<id>48416132</id>
-			<titleList>
-				<title original="false" language="sv">Farmen</title>
-			</titleList>
-			<descriptionList>
-				<description length="medium" language="sv">Svensk
-					realityserie där ett antal personer ska bo tillsammans och leva på
-					en gård utan moderna bekvämligheter.</description>
-			</descriptionList>
-		</ns7:brand>
-		<ns7:season>
-			<id>5147524</id>
-			<productionYear>2014</productionYear>
-			<countryOfOriginList>
-				<country>SE</country>
-			</countryOfOriginList>
-			<titleList>
-				<title original="false" language="sv">Säsong 8</title>
-			</titleList>
-			<descriptionList>
-				<description language="sv">Svensk realityserie. Långt bort
-					från moderniteter som el och rinnande vatten ska ett antal
-					deltagare leva som bönder gjorde på 1800-talet.</description>
-				<description length="short" language="sv">Svensk realityserie
-					från 2015.</description>
-				<description length="medium" language="sv">Långt bort från
-					moderniteter som uppkoppling, surfplattor och smarta telefoner samt
-					saker som el och rinnande vatten ska ett antal deltagare leva som
-					bönder gjorde på 1800-talet. Förutom att leva som förr i tiden är
-					det en hård tävling med taktik och rackarspel. Programledare: Paolo
-					Roberto.</description>
-				<description length="long" language="sv">Farmen är en svensk
-					realityserie från 2015 som sänds i 50 avsnitt. Det här är den
-					åttonde säsongen.
-
-					Långt bort från moderniteter som uppkoppling, surfplattor, smarta
-					telefoner, el och rinnande vatten, ska ett antal personer leva
-					under en längre tid. Farmen är också en hård tävling med taktik och
-					rackarspel.
-
-					Programledare är Paolo Roberto. och bonden Gutta agerar mentor för deltagarna.
-				</description>
-				<description length="extended" language="sv">Farmen är en
-					svensk realityserie från 2015 som sänds i 50 avsnitt. Det här är
-					den åttonde säsongen.
-
-					Långt bort från moderniteter som uppkoppling, surfplattor, smarta
-					telefoner, el och rinnande vatten, ska ett antal personer leva
-					under en längre tid. Farmen är också en hård tävling med taktik och
-					rackarspel.
-
-					Programledare är Paolo Roberto. och bonden Gutta agerar mentor för deltagarna.
-
-					årets farmare:
-					Amanda Bergqvist, 24, gym-receptionist, Helsingborg.
-					Sylvia Jansson, 42, marknadskoordinator, Junosuando, ursprungligen från
-					Stockholm.
-					Rose-Marie Uhlin, 43, CNC-operatör, Skinnskatteberg, ursprungligen från
-					Botkyrka.
-					Elsa Swärd Brattström, 19, gymnasieelev, Lomma.
-					Ylva Strömberg, 64, boendestödjare, Örebro.
-					Fanny Lonegran, 20, omvårdnadsassistent, Stockholm.
-					Björn Ljungqvist, 40, politiker/civilekonom, Falun.
-					John Carlos Osséen, 28, jobbar inom vården, Stockholm
-					Sebastian Edevärn, 27, säljare, Stockholm
-					Joakim Ljunggren, 52, automationselektriker, Nora.
-					Daniel Persson, 21, lärare, Grängesberg.
-					Alexander Alan, 29, säljare, Stockholm.
-
-					Årets torpare:
-					Ida Stålspets, 27, student, Stockholm.
-					Örjan Selien, 29, studerar med mål att bli präst, Lund.
-					Sten Olofsson, 58, tapetserare, Laholm.
-					Ais Eriksson, 52, undersköterska, Luleå.
-				</description>
-			</descriptionList>
-			<imageList>
-				<image>
-					<url>http://image.tv4.se/3e/55/e0/FILE_561CA8EA-039F-45BB-8F65-8F4D9A1568FA.jpg
-					</url>
-					<width>3300</width>
-					<height xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:int">2475</height>
-					<purpose>production</purpose>
-				</image>
-			</imageList>
-			<category>
-				<mainCategory>Underhållning</mainCategory>
-			</category>
-			<brandId>48416132</brandId>
-			<seasonNumber>8</seasonNumber>
-			<numberOfEpisodes>50</numberOfEpisodes>
-		</ns7:season>
-		<ns7:content>
-			<id>5147542</id>
-			<productionYear>2014</productionYear>
-			<countryOfOriginList>
-				<country>SE</country>
-			</countryOfOriginList>
-			<titleList>
-				<title original="false" language="sv">Farmen</title>
-				<title original="true" language="sv">Farmen VIII</title>
-			</titleList>
-			<descriptionList>
-				<description length="short" language="sv">Gutta anländer för
-					att inspektera veckans uppdrag.</description>
-				<description length="medium" language="sv">Deltagarna är
-					stressad över att få klart alla uppdrag de fick av Gutta. Samtidigt
-					riktar flera av dem kritik mot storbonden. Gutta anländer för att
-					inspektera veckans uppdrag, en inspektion som väcker många känslor.
-				</description>
-			</descriptionList>
-			<creditList />
-			<imageList>
-				<image>
-					<url>http://image.tv4.se/3d/d3/6f/FILE_D64A9A83-74BB-4B1C-8767-B2A13DF13908.jpg
-					</url>
-					<width>1920</width>
-					<height xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:int">1080</height>
-					<purpose>production</purpose>
-				</image>
-			</imageList>
-			<category>
-				<mainCategory>Underhållning</mainCategory>
-			</category>
-			<brandId>48416132</brandId>
-			<seasonId>5147524</seasonId>
-			<episodeNumber>4</episodeNumber>
-		</ns7:content>
-		<ns7:materialList>
-			<material timestamp="2015-02-23T16:18:23.219+01:00">
-				<id>5147542</id>
-				<materialType>program</materialType>
-				<videoFormat threeD="false">576i</videoFormat>
-				<mediaList>
-					<media>
-						<mediaRef>PGM1020054158801</mediaRef>
-						<type>program</type>
-						<duration>17727</duration>
-						<in>0</in>
-						<out>17727</out>
-						<use>A1</use>
-						<rfa>true</rfa>
-					</media>
-					<media>
-						<mediaRef>PGM1020054158801</mediaRef>
-						<type>program</type>
-						<duration>15201</duration>
-						<in>17727</in>
-						<out>32928</out>
-						<use>A1</use>
-						<rfa>true</rfa>
-					</media>
-				</mediaList>
-				<subtitleList>
-					<subtitle rfa="false" format="teletext" language="sv">SB095568
-					</subtitle>
-				</subtitleList>
-			</material>
-		</ns7:materialList>
-		<ns7:eventList>
-			<ns2:event timestamp="2015-02-23T16:18:23.219+01:00">
-				<ns2:id>200000027</ns2:id>
-				<ns2:channelId>premiumplatform</ns2:channelId>
-				<ns2:rerun>false</ns2:rerun>
-				<ns2:timeList>
-					<ns2:time type="public">
-						<ns2:startTime>2015-03-02T00:00:00.000+01:00</ns2:startTime>
-						<ns2:endTime>2015-03-17T00:00:00.000+01:00</ns2:endTime>
-					</ns2:time>
-				</ns2:timeList>
-				<ns2:contentIdRef>5147542</ns2:contentIdRef>
-				<ns2:materialIdRef>200045795</ns2:materialIdRef>
-			</ns2:event>
-		</ns7:eventList>
-	</ns5:data>
+xmlns:ns3="http://video-metadata.tv4.se/api-messages-common/v1"
+xmlns:ns4="http://video-metadata.tv4.se/tagging/v1"
+xmlns:ns5="http://video-metadata.tv4.se/api-messages/v1"
+xmlns:ns6="http://video-metadata.tv4.se/schedule/v1"
+xmlns:ns7="http://video-metadata.tv4.se/publish/v1"
+xmlns:ns8="http://video-metadata.tv4.se/material/v1"
+xmlns:ns9="http://video-metadata.tv4.se/content/v1">
+  <ns5:header>
+    <ns3:providerId>se.tv4</ns3:providerId>
+    <ns3:msgId>3679f1df-f35b-420c-b285-ef0796b7dff1</ns3:msgId>
+  </ns5:header>
+  <ns5:data timestamp="2015-02-23T16:18:23.220+01:00">
+    <ns7:brand>
+      <id>48416132</id>
+      <titleList>
+        <title original="false" language="sv">Farmen</title>
+      </titleList>
+      <descriptionList>
+        <description length="medium" language="sv">Svensk realityserie där ett antal personer ska
+        bo tillsammans och leva på en gård utan moderna bekvämligheter.</description>
+      </descriptionList>
+    </ns7:brand>
+    <ns7:season>
+      <id>5147524</id>
+      <productionYear>2014</productionYear>
+      <countryOfOriginList>
+        <country>SE</country>
+      </countryOfOriginList>
+      <titleList>
+        <title original="false" language="sv">Säsong 8</title>
+      </titleList>
+      <descriptionList>
+        <description language="sv">Svensk realityserie. Långt bort från moderniteter som el och
+        rinnande vatten ska ett antal deltagare leva som bönder gjorde på 1800-talet.</description>
+        <description length="short" language="sv">Svensk realityserie från 2015.</description>
+        <description length="medium" language="sv">Långt bort från moderniteter som uppkoppling,
+        surfplattor och smarta telefoner samt saker som el och rinnande vatten ska ett antal
+        deltagare leva som bönder gjorde på 1800-talet. Förutom att leva som förr i tiden är det en
+        hård tävling med taktik och rackarspel. Programledare: Paolo Roberto.</description>
+        <description length="long" language="sv">Farmen är en svensk realityserie från 2015 som
+        sänds i 50 avsnitt. Det här är den åttonde säsongen. Långt bort från moderniteter som
+        uppkoppling, surfplattor, smarta telefoner, el och rinnande vatten, ska ett antal personer
+        leva under en längre tid. Farmen är också en hård tävling med taktik och rackarspel.
+        Programledare är Paolo Roberto. och bonden Gutta agerar mentor för
+        deltagarna.</description>
+        <description length="extended" language="sv">Farmen är en svensk realityserie från 2015 som
+        sänds i 50 avsnitt. Det här är den åttonde säsongen. Långt bort från moderniteter som
+        uppkoppling, surfplattor, smarta telefoner, el och rinnande vatten, ska ett antal personer
+        leva under en längre tid. Farmen är också en hård tävling med taktik och rackarspel.
+        Programledare är Paolo Roberto. och bonden Gutta agerar mentor för deltagarna. årets
+        farmare: Amanda Bergqvist, 24, gym-receptionist, Helsingborg. Sylvia Jansson, 42,
+        marknadskoordinator, Junosuando, ursprungligen från Stockholm. Rose-Marie Uhlin, 43,
+        CNC-operatör, Skinnskatteberg, ursprungligen från Botkyrka. Elsa Swärd Brattström, 19,
+        gymnasieelev, Lomma. Ylva Strömberg, 64, boendestödjare, Örebro. Fanny Lonegran, 20,
+        omvårdnadsassistent, Stockholm. Björn Ljungqvist, 40, politiker/civilekonom, Falun. John
+        Carlos Osséen, 28, jobbar inom vården, Stockholm Sebastian Edevärn, 27, säljare, Stockholm
+        Joakim Ljunggren, 52, automationselektriker, Nora. Daniel Persson, 21, lärare, Grängesberg.
+        Alexander Alan, 29, säljare, Stockholm. Årets torpare: Ida Stålspets, 27, student,
+        Stockholm. Örjan Selien, 29, studerar med mål att bli präst, Lund. Sten Olofsson, 58,
+        tapetserare, Laholm. Ais Eriksson, 52, undersköterska, Luleå.</description>
+      </descriptionList>
+      <imageList>
+        <image>
+          <url>http://image.tv4.se/3e/55/e0/FILE_561CA8EA-039F-45BB-8F65-8F4D9A1568FA.jpg</url>
+          <width>3300</width>
+          <height xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:int">2475</height>
+          <purpose>production</purpose>
+        </image>
+      </imageList>
+      <category>
+        <mainCategory>Underhållning</mainCategory>
+      </category>
+      <brandId>48416132</brandId>
+      <seasonNumber>8</seasonNumber>
+      <numberOfEpisodes>50</numberOfEpisodes>
+    </ns7:season>
+    <ns7:content>
+      <id>5147542</id>
+      <productionYear>2014</productionYear>
+      <countryOfOriginList>
+        <country>SE</country>
+      </countryOfOriginList>
+      <titleList>
+        <title original="false" language="sv">Farmen</title>
+        <title original="true" language="sv">Farmen VIII</title>
+      </titleList>
+      <descriptionList>
+        <description length="short" language="sv">Gutta anländer för att inspektera veckans
+        uppdrag.</description>
+        <description length="medium" language="sv">Deltagarna är stressad över att få klart alla
+        uppdrag de fick av Gutta. Samtidigt riktar flera av dem kritik mot storbonden. Gutta
+        anländer för att inspektera veckans uppdrag, en inspektion som väcker många
+        känslor.</description>
+      </descriptionList>
+      <creditList />
+      <imageList>
+        <image>
+          <url>http://image.tv4.se/3d/d3/6f/FILE_D64A9A83-74BB-4B1C-8767-B2A13DF13908.jpg</url>
+          <width>1920</width>
+          <height xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:int">1080</height>
+          <purpose>production</purpose>
+        </image>
+      </imageList>
+      <category>
+        <mainCategory>Underhållning</mainCategory>
+      </category>
+      <brandId>48416132</brandId>
+      <seasonId>5147524</seasonId>
+      <episodeNumber>4</episodeNumber>
+    </ns7:content>
+    <ns7:materialList>
+      <material timestamp="2015-02-23T16:18:23.219+01:00">
+        <id>5147542</id>
+        <materialType>program</materialType>
+        <videoFormat threeD="false">576i</videoFormat>
+        <mediaList>
+          <media>
+            <mediaRef>PGM1020054158801</mediaRef>
+            <type>program</type>
+            <duration>17727</duration>
+            <in>0</in>
+            <out>17727</out>
+            <use>A1</use>
+            <rfa>true</rfa>
+          </media>
+          <media>
+            <mediaRef>PGM1020054158801</mediaRef>
+            <type>program</type>
+            <duration>15201</duration>
+            <in>17727</in>
+            <out>32928</out>
+            <use>A1</use>
+            <rfa>true</rfa>
+          </media>
+        </mediaList>
+        <subtitleList>
+          <subtitle rfa="false" format="teletext" language="sv">SB095568</subtitle>
+        </subtitleList>
+      </material>
+    </ns7:materialList>
+    <ns7:eventList>
+      <ns2:event timestamp="2015-02-23T16:18:23.219+01:00">
+        <ns2:id>200000027</ns2:id>
+        <ns2:channelId>premiumplatform</ns2:channelId>
+        <ns2:rerun>false</ns2:rerun>
+        <ns2:timeList>
+          <ns2:time type="public">
+            <ns2:startTime>2015-03-02T00:00:00.000+01:00</ns2:startTime>
+            <ns2:endTime>2015-03-17T00:00:00.000+01:00</ns2:endTime>
+          </ns2:time>
+        </ns2:timeList>
+        <ns2:contentIdRef>5147542</ns2:contentIdRef>
+        <ns2:materialIdRef>200045795</ns2:materialIdRef>
+      </ns2:event>
+    </ns7:eventList>
+  </ns5:data>
 </ns5:publish-metadata>

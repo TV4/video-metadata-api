@@ -1,146 +1,150 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <publish timestamp="2001-12-31T12:00:00" xmlns="http://common.tv.se/publish/v4_0"
-	xmlns:content="http://common.tv.se/content/v4_0" xmlns:event="http://common.tv.se/event/v4_0"
-	xmlns:material="http://common.tv.se/material/v4_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://common.tv.se/publish/v4_0 publish.xsd ">
-	<providerId>providerId</providerId>
-	<!-- 
-	
-	OBS - needs an update. reflects the old version of teh XML!!!!
-	
-	 -->
-	
-	<contentList>
-		<content:content timestamp="2001-12-31T12:00:00">
-			<content:contentId>4893033</content:contentId>
-			<content:seriesId>6362133</content:seriesId>
-			<content:seasonNumber>0</content:seasonNumber>
-			<content:episodeNumber>223</content:episodeNumber>
-			<content:numberOfEpisodes>300</content:numberOfEpisodes>
-			<content:productionYear>2013</content:productionYear>
-			<content:countryOfOriginList>
-				<content:country>GB</content:country>
-			</content:countryOfOriginList>
-			<content:titleList>
-				<content:title language="sv" original="false" type="content">Hem till gården</content:title>
-				<content:title language="en" original="true" type="content">Emmerdale XXVII</content:title>
-				<content:title language="sv" original="false" type="season">Hem till gården</content:title>
-				<content:title language="sv" original="false" type="series">Hem till gården</content:title>
-			</content:titleList>
-			<content:descriptionList>
-				<content:description language="sv" length="short"
-					type="content">Cain hjälper Adam att dölja sina spår.</content:description>
-				<content:description language="sv" length="medium"
-					type="content">Andy får reda på sanningen om Kerrys graviditet. Cain hjälper Adam att dölja sina spår. Ali erkänner för Ruby att han en dag vill att de ska skaffa barn.</content:description>
-				<content:description language="sv" length="medium"
-					type="season">Brittisk dramaserie. Om det dagliga livet i en liten by i norra England.</content:description>
-				<content:description language="sv" length="medium"
-					type="series">Brittisk dramaserie. Om det dagliga livet i en liten by i norra England.</content:description>
-			</content:descriptionList>
-			<content:genreList>
-				<content:genre language="sv" priority="0" type="content">Såpopera</content:genre>
-			</content:genreList>
-			<content:creditList>
-				<content:credit>
-					<content:name>Kelvin Fletcher</content:name>
-					<content:rolename>Andy Sugden</content:rolename>
-					<content:function>Skådespelare</content:function>
-				</content:credit>
-				<content:credit>
-					<content:name>Laura Norton</content:name>
-					<content:rolename>Kerry Wyatt</content:rolename>
-					<content:function>Skådespelare</content:function>
-				</content:credit>
-				<content:credit>
-					<content:name>Jeff Hordley</content:name>
-					<content:rolename>Cain Dingle</content:rolename>
-					<content:function>Skådespelare</content:function>
-				</content:credit>
-				<content:credit>
-					<content:name>Adam Thomas</content:name>
-					<content:rolename>Adam Barton</content:rolename>
-					<content:function>Skådespelare</content:function>
-				</content:credit>
-				<content:credit>
-					<content:name>Kelli Hollis</content:name>
-					<content:rolename>Ali Spencer</content:rolename>
-					<content:function>Skådespelare</content:function>
-				</content:credit>
-				<content:credit>
-					<content:name>Alicya Eyo</content:name>
-					<content:rolename>Ruby Haswell"</content:rolename>
-					<content:function>Skådespelare</content:function>
-				</content:credit>
-				<content:credit>
-					<content:name>Paul Coates</content:name>
-					<content:function>Manus</content:function>
-				</content:credit>
-				<content:credit>
-					<content:name>Kate Oates</content:name>
-					<content:function>Producent</content:function>
-				</content:credit>
-				<content:credit>
-					<content:name>Neil Alderton</content:name>
-					<content:function>Regissör</content:function>
-				</content:credit>
-				<content:credit>
-					<content:name>John Whiston</content:name>
-					<content:function>Exekutiv producent</content:function>
-				</content:credit>
-			</content:creditList>
-			<content:imageList>
-				<content:image type="content">
-					<content:imageRef height="1336" orientation="landscape"
-						priority="0" purpose="press" unit="px" width="2008">http://image.tv4.se/1e/f6/02/FILE_4D05E522-9504-484F-9A03-D95974ADF36B.jpg</content:imageRef>
-				</content:image>
-			</content:imageList>
-			<content:mediaReferenceList>
-				<content:reference priority="0" type="content">reference</content:reference>
-			</content:mediaReferenceList>
-			<content:regionalContent>false</content:regionalContent>
-			<content:parentalRating>0</content:parentalRating>
-		</content:content>
-	</contentList>
-	<materialList>
-		<material:material timestamp="2001-12-31T12:00:00">
-			<material:materialId>4809173</material:materialId>
-			<material:contentIdRef>4893033</material:contentIdRef>
-			<material:materialType>program</material:materialType>
-			<material:videoFormat threeD="false">576i</material:videoFormat>
-			<material:audioList>
-				<material:format language="en">stereo</material:format>
-			</material:audioList>
-			<material:aspectRatio>16:9</material:aspectRatio>
-			<material:subtitleList>
-				<material:subtitle format="invision" language="sv">ST109702</material:subtitle>
-			</material:subtitleList>
-			<material:materialReferenceList>
-				<material:reference duration="1364840" type="video">PGM1020050563801</material:reference>
-				<material:reference type="subtitle">ST109702</material:reference>
-			</material:materialReferenceList>
-			<material:rightsList>
-				<material:rights>
-					<material:validFrom>2014-10-07T00:00:00</material:validFrom>
-					<material:validTo>2014-11-07T00:00:00</material:validTo>
-					<material:rightsCategoryList>
-						<material:rightsCategory>
-							<material:vod xsi:type="material:priceDeviceTypeRights">
-								<material:deviceType>web</material:deviceType>
-								<material:deviceType>mob</material:deviceType>
-								<material:deviceType>ott</material:deviceType>
-								<material:deviceType>stb</material:deviceType>
-								<material:deviceType>console</material:deviceType>
-								<material:deviceType>tab</material:deviceType>
-								<material:digitalOutputRights>unrestricted</material:digitalOutputRights>
-								<material:analogOutputRights>
-									<material:unrestricted>true</material:unrestricted>
-								</material:analogOutputRights>
-								<material:inHomeNetworkOutputRights>unrestricted</material:inHomeNetworkOutputRights>
-							</material:vod>
-						</material:rightsCategory>
-					</material:rightsCategoryList>
-				</material:rights>
-			</material:rightsList>
-		</material:material>
-	</materialList>
+xmlns:content="http://common.tv.se/content/v4_0" xmlns:event="http://common.tv.se/event/v4_0"
+xmlns:material="http://common.tv.se/material/v4_0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://common.tv.se/publish/v4_0 publish.xsd">
+  <providerId>providerId</providerId>
+  <!-- 
+        
+        OBS - needs an update. reflects the old version of teh XML!!!!
+        
+         -->
+  <contentList>
+    <content:content timestamp="2001-12-31T12:00:00">
+      <content:contentId>4893033</content:contentId>
+      <content:seriesId>6362133</content:seriesId>
+      <content:seasonNumber>0</content:seasonNumber>
+      <content:episodeNumber>223</content:episodeNumber>
+      <content:numberOfEpisodes>300</content:numberOfEpisodes>
+      <content:productionYear>2013</content:productionYear>
+      <content:countryOfOriginList>
+        <content:country>GB</content:country>
+      </content:countryOfOriginList>
+      <content:titleList>
+        <content:title language="sv" original="false" type="content">Hem till
+        gården</content:title>
+        <content:title language="en" original="true" type="content">Emmerdale XXVII</content:title>
+        <content:title language="sv" original="false" type="season">Hem till gården</content:title>
+        <content:title language="sv" original="false" type="series">Hem till gården</content:title>
+      </content:titleList>
+      <content:descriptionList>
+        <content:description language="sv" length="short" type="content">Cain hjälper Adam att
+        dölja sina spår.</content:description>
+        <content:description language="sv" length="medium" type="content">Andy får reda på
+        sanningen om Kerrys graviditet. Cain hjälper Adam att dölja sina spår. Ali erkänner för
+        Ruby att han en dag vill att de ska skaffa barn.</content:description>
+        <content:description language="sv" length="medium" type="season">Brittisk dramaserie. Om
+        det dagliga livet i en liten by i norra England.</content:description>
+        <content:description language="sv" length="medium" type="series">Brittisk dramaserie. Om
+        det dagliga livet i en liten by i norra England.</content:description>
+      </content:descriptionList>
+      <content:genreList>
+        <content:genre language="sv" priority="0" type="content">Såpopera</content:genre>
+      </content:genreList>
+      <content:creditList>
+        <content:credit>
+          <content:name>Kelvin Fletcher</content:name>
+          <content:rolename>Andy Sugden</content:rolename>
+          <content:function>Skådespelare</content:function>
+        </content:credit>
+        <content:credit>
+          <content:name>Laura Norton</content:name>
+          <content:rolename>Kerry Wyatt</content:rolename>
+          <content:function>Skådespelare</content:function>
+        </content:credit>
+        <content:credit>
+          <content:name>Jeff Hordley</content:name>
+          <content:rolename>Cain Dingle</content:rolename>
+          <content:function>Skådespelare</content:function>
+        </content:credit>
+        <content:credit>
+          <content:name>Adam Thomas</content:name>
+          <content:rolename>Adam Barton</content:rolename>
+          <content:function>Skådespelare</content:function>
+        </content:credit>
+        <content:credit>
+          <content:name>Kelli Hollis</content:name>
+          <content:rolename>Ali Spencer</content:rolename>
+          <content:function>Skådespelare</content:function>
+        </content:credit>
+        <content:credit>
+          <content:name>Alicya Eyo</content:name>
+          <content:rolename>Ruby Haswell"</content:rolename>
+          <content:function>Skådespelare</content:function>
+        </content:credit>
+        <content:credit>
+          <content:name>Paul Coates</content:name>
+          <content:function>Manus</content:function>
+        </content:credit>
+        <content:credit>
+          <content:name>Kate Oates</content:name>
+          <content:function>Producent</content:function>
+        </content:credit>
+        <content:credit>
+          <content:name>Neil Alderton</content:name>
+          <content:function>Regissör</content:function>
+        </content:credit>
+        <content:credit>
+          <content:name>John Whiston</content:name>
+          <content:function>Exekutiv producent</content:function>
+        </content:credit>
+      </content:creditList>
+      <content:imageList>
+        <content:image type="content">
+          <content:imageRef height="1336" orientation="landscape" priority="0" purpose="press"
+          unit="px" width="2008">
+          http://image.tv4.se/1e/f6/02/FILE_4D05E522-9504-484F-9A03-D95974ADF36B.jpg</content:imageRef>
+        </content:image>
+      </content:imageList>
+      <content:mediaReferenceList>
+        <content:reference priority="0" type="content">reference</content:reference>
+      </content:mediaReferenceList>
+      <content:regionalContent>false</content:regionalContent>
+      <content:parentalRating>0</content:parentalRating>
+    </content:content>
+  </contentList>
+  <materialList>
+    <material:material timestamp="2001-12-31T12:00:00">
+      <material:materialId>4809173</material:materialId>
+      <material:contentIdRef>4893033</material:contentIdRef>
+      <material:materialType>program</material:materialType>
+      <material:videoFormat threeD="false">576i</material:videoFormat>
+      <material:audioList>
+        <material:format language="en">stereo</material:format>
+      </material:audioList>
+      <material:aspectRatio>16:9</material:aspectRatio>
+      <material:subtitleList>
+        <material:subtitle format="invision" language="sv">ST109702</material:subtitle>
+      </material:subtitleList>
+      <material:materialReferenceList>
+        <material:reference duration="1364840" type="video">PGM1020050563801</material:reference>
+        <material:reference type="subtitle">ST109702</material:reference>
+      </material:materialReferenceList>
+      <material:rightsList>
+        <material:rights>
+          <material:validFrom>2014-10-07T00:00:00</material:validFrom>
+          <material:validTo>2014-11-07T00:00:00</material:validTo>
+          <material:rightsCategoryList>
+            <material:rightsCategory>
+              <material:vod xsi:type="material:priceDeviceTypeRights">
+                <material:deviceType>web</material:deviceType>
+                <material:deviceType>mob</material:deviceType>
+                <material:deviceType>ott</material:deviceType>
+                <material:deviceType>stb</material:deviceType>
+                <material:deviceType>console</material:deviceType>
+                <material:deviceType>tab</material:deviceType>
+                <material:digitalOutputRights>unrestricted</material:digitalOutputRights>
+                <material:analogOutputRights>
+                  <material:unrestricted>true</material:unrestricted>
+                </material:analogOutputRights>
+                <material:inHomeNetworkOutputRights>
+                unrestricted</material:inHomeNetworkOutputRights>
+              </material:vod>
+            </material:rightsCategory>
+          </material:rightsCategoryList>
+        </material:rights>
+      </material:rightsList>
+    </material:material>
+  </materialList>
 </publish>

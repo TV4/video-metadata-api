@@ -1,62 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<t:tagDefs xmlns:c="http://video-metadata.tv4.se/common/v1" xmlns:t="http://video-metadata.tv4.se/tagging/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<t:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
-		<t:type>program</t:type>
-		<t:nid>sa-mycket-battre</t:nid>
-		<t:description>Program "Så Mycket Bättre" in TV4</t:description>
-		<t:tagNames>
-			<t:tagName language="sv">SåMycketBättre</t:tagName>
-			<t:tagName language="fi">NiinPaljonParempi</t:tagName>
-			<t:tagName language="fi">asdfASDF0123456789</t:tagName>
-		</t:tagNames>
-		<t:externalReferenceList>
-			<externalReference>
-				<provider>imdb</provider>
-				<id>tt1786209</id>
-				<uri>http://www.imdb.com/title/tt1786209/</uri>
-			</externalReference>
-		</t:externalReferenceList>
-	</t:tag>
+<?xml version="1.0" encoding="utf-8"?>
+<t:tagDefs xmlns:c="http://video-metadata.tv4.se/common/v1"
+xmlns:t="http://video-metadata.tv4.se/tagging/v1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <t:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
+    <t:type>program</t:type>
+    <t:nid>sa-mycket-battre</t:nid>
+    <t:description>Program "Så Mycket Bättre" in TV4</t:description>
+    <t:tagNames>
+      <t:tagName language="sv">SåMycketBättre</t:tagName>
+      <t:tagName language="fi">NiinPaljonParempi</t:tagName>
+      <t:tagName language="fi">asdfASDF0123456789</t:tagName>
+    </t:tagNames>
+    <t:externalReferenceList>
+      <externalReference>
+        <provider>imdb</provider>
+        <id>tt1786209</id>
+        <uri>http://www.imdb.com/title/tt1786209/</uri>
+      </externalReference>
+    </t:externalReferenceList>
+  </t:tag>
 </t:tagDefs>
-
 <!--
-	<t:tagRefs>
-	<t:tag type="person" priority="1">sa-mycket-battre</t:tag>
-	</t:tagRefs>
+        <t:tagRefs>
+        <t:tag type="person" priority="1">sa-mycket-battre</t:tag>
+        </t:tagRefs>
 -->
-
-
 <!-- Category example -->
 <!-- 
 <?xml version="1.0" encoding="UTF-8"?>
 <t:tagDefs xmlns:c="http://video-metadata.tv.se/common/v1" xmlns:t="http://video-metadata.tv.se/tagging/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://video-metadata.tv.se/tagging/v1 tagging.xsd">
-	<t:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
-		<t:type>mainCategory</t:type>
-		<t:nid>movie</t:nid>
-		<t:description>Movie category</t:description>
-		<t:tagNames>
-			<t:tagName language="sv">Film</t:tagName>
-			<t:tagName language="fi">Filmi</t:tagName>
-		</t:tagNames>
-		<t:externalReferenceList>
-		</t:externalReferenceList>
-	</t:tag>
+        xsi:schemaLocation="http://video-metadata.tv.se/tagging/v1 tagging.xsd">
+        <t:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
+                <t:type>mainCategory</t:type>
+                <t:nid>movie</t:nid>
+                <t:description>Movie category</t:description>
+                <t:tagNames>
+                        <t:tagName language="sv">Film</t:tagName>
+                        <t:tagName language="fi">Filmi</t:tagName>
+                </t:tagNames>
+                <t:externalReferenceList>
+                </t:externalReferenceList>
+        </t:tag>
 </t:tagDefs>
 
 <?xml version="1.0" encoding="UTF-8"?>
 <t:tagDefs xmlns:c="http://video-metadata.tv.se/common/v1" xmlns:t="http://video-metadata.tv.se/tagging/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://video-metadata.tv.se/tagging/v1 tagging.xsd">
-	<t:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
-		<t:type>subCategory</t:type>
-		<t:nid>drama</t:nid>
-		<t:description></t:description>
-		<t:tagNames>
-			<t:tagName language="sv">Drama</t:tagName>
-			<t:tagName language="fi">Draama</t:tagName>
-		</t:tagNames>
-		<t:externalReferenceList>
-		</t:externalReferenceList>
-	</t:tag>
+        xsi:schemaLocation="http://video-metadata.tv.se/tagging/v1 tagging.xsd">
+        <t:tag created="2001-12-31T12:00:00" deprecated="2001-12-31T12:00:00">
+                <t:type>subCategory</t:type>
+                <t:nid>drama</t:nid>
+                <t:description></t:description>
+                <t:tagNames>
+                        <t:tagName language="sv">Drama</t:tagName>
+                        <t:tagName language="fi">Draama</t:tagName>
+                </t:tagNames>
+                <t:externalReferenceList>
+                </t:externalReferenceList>
+        </t:tag>
 </t:tagDefs>
  -->

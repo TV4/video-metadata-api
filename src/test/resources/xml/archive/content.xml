@@ -1,328 +1,333 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<p:content xmlns:p="http://video-metadata.tv.se/content/v1" xmlns:p1="http://video-metadata.tv.se/common/v1" xmlns:p2="http://video-metadata.tv.se/material/v1"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://video-metadata.tv.se/content/v1 ../xsd/content.xsd "
->
-	<providerId>providerId</providerId>
-	<brands>
-		<content>
-			<id>id</id>
-			<studio>studio</studio>
-			<productionYear>productionYear</productionYear>
-			<countryOfOriginList>
-				<country>country</country>
-			</countryOfOriginList>
-			<titleList>
-				<title language="EN" original="true">title</title>
-				<titleId>titleId</titleId>
-			</titleList>
-			<genericTitleList>
-				<title language="EN">title</title>
-			</genericTitleList>
-			<descriptionList>
-				<description language="EN" length="tiny">description</description>
-			</descriptionList>
-			<sport>
-				<sportsCategory language="EN">sportsCategory</sportsCategory>
-				<leagueOrCompetitionList>
-					<leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
-				</leagueOrCompetitionList>
-				<roundOrEpisodeList>
-					<roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
-				</roundOrEpisodeList>
-				<homeTeamList>
-					<team language="EN">team</team>
-				</homeTeamList>
-				<awayTeamList>
-					<team language="EN">team</team>
-				</awayTeamList>
-			</sport>
-			<genreList>
-				<genre language="EN" priority="0">genre</genre>
-			</genreList>
-			<dvbGenre>
-				<nibble1>0</nibble1>
-				<nibble2>0</nibble2>
-			</dvbGenre>
-			<keywordList>
-				<keyword language="EN" priority="0">keyword</keyword>
-			</keywordList>
-			<creditList>
-				<credit>
-					<name>name</name>
-					<rolename>rolename</rolename>
-					<function>function</function>
-					<externalReferenceList>
-						<externalReference>
-							<provider>provider</provider>
-							<id>id</id>
-							<uri>uri</uri>
-						</externalReference>
-					</externalReferenceList>
-				</credit>
-			</creditList>
-			<imageList>
-				<image>
-					<imageRef height="0" orientation="landscape" priority="0" purpose="poster" unit="px" width="0">imageRef</imageRef>
-					<captionList>
-						<caption language="EN">caption</caption>
-					</captionList>
-					<copyRightList>
-						<copyRight language="EN">copyRight</copyRight>
-					</copyRightList>
-				</image>
-			</imageList>
-			<categoryList>
-				<category>category</category>
-			</categoryList>
-			<adCategoryList>
-				<category>category</category>
-			</adCategoryList>
-			<parentalRating>0</parentalRating>
-			<externalReferenceList>
-				<externalReference>
-					<provider>provider</provider>
-					<id>id</id>
-					<uri>uri</uri>
-				</externalReference>
-			</externalReferenceList>
-		</content>
-	</brands>
-	<seasons>
-		<content>
-			<id>id</id>
-			<studio>studio</studio>
-			<productionYear>productionYear</productionYear>
-			<countryOfOriginList>
-				<country>country</country>
-			</countryOfOriginList>
-			<titleList>
-				<title language="EN" original="true">title</title>
-				<titleId>titleId</titleId>
-			</titleList>
-			<genericTitleList>
-				<title language="EN">title</title>
-			</genericTitleList>
-			<descriptionList>
-				<description language="EN" length="tiny">description</description>
-			</descriptionList>
-			<sport>
-				<sportsCategory language="EN">sportsCategory</sportsCategory>
-				<leagueOrCompetitionList>
-					<leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
-				</leagueOrCompetitionList>
-				<roundOrEpisodeList>
-					<roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
-				</roundOrEpisodeList>
-				<homeTeamList>
-					<team language="EN">team</team>
-				</homeTeamList>
-				<awayTeamList>
-					<team language="EN">team</team>
-				</awayTeamList>
-			</sport>
-			<genreList>
-				<genre language="EN" priority="0">genre</genre>
-			</genreList>
-			<dvbGenre>
-				<nibble1>0</nibble1>
-				<nibble2>0</nibble2>
-			</dvbGenre>
-			<keywordList>
-				<keyword language="EN" priority="0">keyword</keyword>
-			</keywordList>
-			<creditList>
-				<credit>
-					<name>name</name>
-					<rolename>rolename</rolename>
-					<function>function</function>
-					<externalReferenceList>
-						<externalReference>
-							<provider>provider</provider>
-							<id>id</id>
-							<uri>uri</uri>
-						</externalReference>
-					</externalReferenceList>
-				</credit>
-			</creditList>
-			<imageList>
-				<image>
-					<imageRef height="0" orientation="landscape" priority="0" purpose="poster" unit="px" width="0">imageRef</imageRef>
-					<captionList>
-						<caption language="EN">caption</caption>
-					</captionList>
-					<copyRightList>
-						<copyRight language="EN">copyRight</copyRight>
-					</copyRightList>
-				</image>
-			</imageList>
-			<categoryList>
-				<category>category</category>
-			</categoryList>
-			<adCategoryList>
-				<category>category</category>
-			</adCategoryList>
-			<parentalRating>0</parentalRating>
-			<externalReferenceList>
-				<externalReference>
-					<provider>provider</provider>
-					<id>id</id>
-					<uri>uri</uri>
-				</externalReference>
-			</externalReferenceList>
-			<brandId>brandId</brandId>
-			<seasonNumber>0</seasonNumber>
-			<numberOfEpisodes>0</numberOfEpisodes>
-		</content>
-	</seasons>
-	<contents>
-		<content>
-			<id>id</id>
-			<studio>studio</studio>
-			<productionYear>productionYear</productionYear>
-			<countryOfOriginList>
-				<country>country</country>
-			</countryOfOriginList>
-			<titleList>
-				<title language="EN" original="true">title</title>
-				<titleId>titleId</titleId>
-			</titleList>
-			<genericTitleList>
-				<title language="EN">title</title>
-			</genericTitleList>
-			<descriptionList>
-				<description language="EN" length="tiny">description</description>
-			</descriptionList>
-			<sport>
-				<sportsCategory language="EN">sportsCategory</sportsCategory>
-				<leagueOrCompetitionList>
-					<leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
-				</leagueOrCompetitionList>
-				<roundOrEpisodeList>
-					<roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
-				</roundOrEpisodeList>
-				<homeTeamList>
-					<team language="EN">team</team>
-				</homeTeamList>
-				<awayTeamList>
-					<team language="EN">team</team>
-				</awayTeamList>
-			</sport>
-			<genreList>
-				<genre language="EN" priority="0">genre</genre>
-			</genreList>
-			<dvbGenre>
-				<nibble1>0</nibble1>
-				<nibble2>0</nibble2>
-			</dvbGenre>
-			<keywordList>
-				<keyword language="EN" priority="0">keyword</keyword>
-			</keywordList>
-			<creditList>
-				<credit>
-					<name>name</name>
-					<rolename>rolename</rolename>
-					<function>function</function>
-					<externalReferenceList>
-						<externalReference>
-							<provider>provider</provider>
-							<id>id</id>
-							<uri>uri</uri>
-						</externalReference>
-					</externalReferenceList>
-				</credit>
-			</creditList>
-			<imageList>
-				<image>
-					<imageRef height="0" orientation="landscape" priority="0" purpose="poster" unit="px" width="0">imageRef</imageRef>
-					<captionList>
-						<caption language="EN">caption</caption>
-					</captionList>
-					<copyRightList>
-						<copyRight language="EN">copyRight</copyRight>
-					</copyRightList>
-				</image>
-			</imageList>
-			<categoryList>
-				<category>category</category>
-			</categoryList>
-			<adCategoryList>
-				<category>category</category>
-			</adCategoryList>
-			<parentalRating>0</parentalRating>
-			<externalReferenceList>
-				<externalReference>
-					<provider>provider</provider>
-					<id>id</id>
-					<uri>uri</uri>
-				</externalReference>
-			</externalReferenceList>
-			<brandId>brandId</brandId>
-			<seasonId>seasonId</seasonId>
-			<episodeNumber>0</episodeNumber>
-		</content>
-	</contents>
-	<materialList>
-		<material timestamp="2001-12-31T12:00:00">
-			<providerId>providerId</providerId>
-			<id>id</id>
-			<distributor>distributor</distributor>
-			<priceGroup>priceGroup</priceGroup>
-			<contentIdRef>contentIdRef</contentIdRef>
-			<materialType>program</materialType>
-			<videoFormat threeD="true">576i</videoFormat>
-			<audioList>
-				<format language="EN">mono</format>
-			</audioList>
-			<aspectRatio>4:3</aspectRatio>
-			<subtitleList>
-				<subtitle format="invision" language="EN">subtitle</subtitle>
-			</subtitleList>
-			<accessibilityList>
-				<accessibilityList format="hearingImpairedSubtitle" language="EN">accessibilityList</accessibilityList>
-			</accessibilityList>
-			<materialReferenceList>
-				<reference bitrate="" duration="" type="video">reference</reference>
-			</materialReferenceList>
-			<rightsList>
-				<rights>
-					<rightsName>rightsName</rightsName>
-					<validFrom>2001-12-31T12:00:00</validFrom>
-					<validTo>2001-12-31T12:00:00</validTo>
-					<unlimitedPeriod>true</unlimitedPeriod>
-					<rightsCategoryList>
-						<rightsCategory>
-							<vod xsi:type="p2:deviceTypeRights">
-								<deviceType>web</deviceType>
-							</vod>
-							<ppv xsi:type="p2:deviceTypeRights">
-								<deviceType>web</deviceType>
-							</ppv>
-							<timeshift>
-								<catchUpRights>
-									<fastForward>true</fastForward>
-									<rewind>true</rewind>
-									<pause>true</pause>
-								</catchUpRights>
-								<startOverRights>
-									<fastForward>true</fastForward>
-									<rewind>true</rewind>
-									<pause>true</pause>
-								</startOverRights>
-							</timeshift>
-							<noTransmission>
-								<deviceType>web</deviceType>
-							</noTransmission>
-							<addProviderLogo>true</addProviderLogo>
-							<allowAds>true</allowAds>
-							<drmRestrictions />
-							<geoRestrictions />
-							<shareToList>
-								<shareTo>shareTo</shareTo>
-							</shareToList>
-						</rightsCategory>
-					</rightsCategoryList>
-				</rights>
-			</rightsList>
-		</material>
-	</materialList>
+<?xml version="1.0" encoding="utf-8"?>
+<p:content xmlns:p="http://video-metadata.tv.se/content/v1"
+xmlns:p1="http://video-metadata.tv.se/common/v1" xmlns:p2="http://video-metadata.tv.se/material/v1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://video-metadata.tv.se/content/v1 ../xsd/content.xsd">
+  <providerId>providerId</providerId>
+  <brands>
+    <content>
+      <id>id</id>
+      <studio>studio</studio>
+      <productionYear>productionYear</productionYear>
+      <countryOfOriginList>
+        <country>country</country>
+      </countryOfOriginList>
+      <titleList>
+        <title language="EN" original="true">title</title>
+        <titleId>titleId</titleId>
+      </titleList>
+      <genericTitleList>
+        <title language="EN">title</title>
+      </genericTitleList>
+      <descriptionList>
+        <description language="EN" length="tiny">description</description>
+      </descriptionList>
+      <sport>
+        <sportsCategory language="EN">sportsCategory</sportsCategory>
+        <leagueOrCompetitionList>
+          <leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
+        </leagueOrCompetitionList>
+        <roundOrEpisodeList>
+          <roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
+        </roundOrEpisodeList>
+        <homeTeamList>
+          <team language="EN">team</team>
+        </homeTeamList>
+        <awayTeamList>
+          <team language="EN">team</team>
+        </awayTeamList>
+      </sport>
+      <genreList>
+        <genre language="EN" priority="0">genre</genre>
+      </genreList>
+      <dvbGenre>
+        <nibble1>0</nibble1>
+        <nibble2>0</nibble2>
+      </dvbGenre>
+      <keywordList>
+        <keyword language="EN" priority="0">keyword</keyword>
+      </keywordList>
+      <creditList>
+        <credit>
+          <name>name</name>
+          <rolename>rolename</rolename>
+          <function>function</function>
+          <externalReferenceList>
+            <externalReference>
+              <provider>provider</provider>
+              <id>id</id>
+              <uri>uri</uri>
+            </externalReference>
+          </externalReferenceList>
+        </credit>
+      </creditList>
+      <imageList>
+        <image>
+          <imageRef height="0" orientation="landscape" priority="0" purpose="poster" unit="px"
+          width="0">imageRef</imageRef>
+          <captionList>
+            <caption language="EN">caption</caption>
+          </captionList>
+          <copyRightList>
+            <copyRight language="EN">copyRight</copyRight>
+          </copyRightList>
+        </image>
+      </imageList>
+      <categoryList>
+        <category>category</category>
+      </categoryList>
+      <adCategoryList>
+        <category>category</category>
+      </adCategoryList>
+      <parentalRating>0</parentalRating>
+      <externalReferenceList>
+        <externalReference>
+          <provider>provider</provider>
+          <id>id</id>
+          <uri>uri</uri>
+        </externalReference>
+      </externalReferenceList>
+    </content>
+  </brands>
+  <seasons>
+    <content>
+      <id>id</id>
+      <studio>studio</studio>
+      <productionYear>productionYear</productionYear>
+      <countryOfOriginList>
+        <country>country</country>
+      </countryOfOriginList>
+      <titleList>
+        <title language="EN" original="true">title</title>
+        <titleId>titleId</titleId>
+      </titleList>
+      <genericTitleList>
+        <title language="EN">title</title>
+      </genericTitleList>
+      <descriptionList>
+        <description language="EN" length="tiny">description</description>
+      </descriptionList>
+      <sport>
+        <sportsCategory language="EN">sportsCategory</sportsCategory>
+        <leagueOrCompetitionList>
+          <leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
+        </leagueOrCompetitionList>
+        <roundOrEpisodeList>
+          <roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
+        </roundOrEpisodeList>
+        <homeTeamList>
+          <team language="EN">team</team>
+        </homeTeamList>
+        <awayTeamList>
+          <team language="EN">team</team>
+        </awayTeamList>
+      </sport>
+      <genreList>
+        <genre language="EN" priority="0">genre</genre>
+      </genreList>
+      <dvbGenre>
+        <nibble1>0</nibble1>
+        <nibble2>0</nibble2>
+      </dvbGenre>
+      <keywordList>
+        <keyword language="EN" priority="0">keyword</keyword>
+      </keywordList>
+      <creditList>
+        <credit>
+          <name>name</name>
+          <rolename>rolename</rolename>
+          <function>function</function>
+          <externalReferenceList>
+            <externalReference>
+              <provider>provider</provider>
+              <id>id</id>
+              <uri>uri</uri>
+            </externalReference>
+          </externalReferenceList>
+        </credit>
+      </creditList>
+      <imageList>
+        <image>
+          <imageRef height="0" orientation="landscape" priority="0" purpose="poster" unit="px"
+          width="0">imageRef</imageRef>
+          <captionList>
+            <caption language="EN">caption</caption>
+          </captionList>
+          <copyRightList>
+            <copyRight language="EN">copyRight</copyRight>
+          </copyRightList>
+        </image>
+      </imageList>
+      <categoryList>
+        <category>category</category>
+      </categoryList>
+      <adCategoryList>
+        <category>category</category>
+      </adCategoryList>
+      <parentalRating>0</parentalRating>
+      <externalReferenceList>
+        <externalReference>
+          <provider>provider</provider>
+          <id>id</id>
+          <uri>uri</uri>
+        </externalReference>
+      </externalReferenceList>
+      <brandId>brandId</brandId>
+      <seasonNumber>0</seasonNumber>
+      <numberOfEpisodes>0</numberOfEpisodes>
+    </content>
+  </seasons>
+  <contents>
+    <content>
+      <id>id</id>
+      <studio>studio</studio>
+      <productionYear>productionYear</productionYear>
+      <countryOfOriginList>
+        <country>country</country>
+      </countryOfOriginList>
+      <titleList>
+        <title language="EN" original="true">title</title>
+        <titleId>titleId</titleId>
+      </titleList>
+      <genericTitleList>
+        <title language="EN">title</title>
+      </genericTitleList>
+      <descriptionList>
+        <description language="EN" length="tiny">description</description>
+      </descriptionList>
+      <sport>
+        <sportsCategory language="EN">sportsCategory</sportsCategory>
+        <leagueOrCompetitionList>
+          <leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
+        </leagueOrCompetitionList>
+        <roundOrEpisodeList>
+          <roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
+        </roundOrEpisodeList>
+        <homeTeamList>
+          <team language="EN">team</team>
+        </homeTeamList>
+        <awayTeamList>
+          <team language="EN">team</team>
+        </awayTeamList>
+      </sport>
+      <genreList>
+        <genre language="EN" priority="0">genre</genre>
+      </genreList>
+      <dvbGenre>
+        <nibble1>0</nibble1>
+        <nibble2>0</nibble2>
+      </dvbGenre>
+      <keywordList>
+        <keyword language="EN" priority="0">keyword</keyword>
+      </keywordList>
+      <creditList>
+        <credit>
+          <name>name</name>
+          <rolename>rolename</rolename>
+          <function>function</function>
+          <externalReferenceList>
+            <externalReference>
+              <provider>provider</provider>
+              <id>id</id>
+              <uri>uri</uri>
+            </externalReference>
+          </externalReferenceList>
+        </credit>
+      </creditList>
+      <imageList>
+        <image>
+          <imageRef height="0" orientation="landscape" priority="0" purpose="poster" unit="px"
+          width="0">imageRef</imageRef>
+          <captionList>
+            <caption language="EN">caption</caption>
+          </captionList>
+          <copyRightList>
+            <copyRight language="EN">copyRight</copyRight>
+          </copyRightList>
+        </image>
+      </imageList>
+      <categoryList>
+        <category>category</category>
+      </categoryList>
+      <adCategoryList>
+        <category>category</category>
+      </adCategoryList>
+      <parentalRating>0</parentalRating>
+      <externalReferenceList>
+        <externalReference>
+          <provider>provider</provider>
+          <id>id</id>
+          <uri>uri</uri>
+        </externalReference>
+      </externalReferenceList>
+      <brandId>brandId</brandId>
+      <seasonId>seasonId</seasonId>
+      <episodeNumber>0</episodeNumber>
+    </content>
+  </contents>
+  <materialList>
+    <material timestamp="2001-12-31T12:00:00">
+      <providerId>providerId</providerId>
+      <id>id</id>
+      <distributor>distributor</distributor>
+      <priceGroup>priceGroup</priceGroup>
+      <contentIdRef>contentIdRef</contentIdRef>
+      <materialType>program</materialType>
+      <videoFormat threeD="true">576i</videoFormat>
+      <audioList>
+        <format language="EN">mono</format>
+      </audioList>
+      <aspectRatio>4:3</aspectRatio>
+      <subtitleList>
+        <subtitle format="invision" language="EN">subtitle</subtitle>
+      </subtitleList>
+      <accessibilityList>
+        <accessibilityList format="hearingImpairedSubtitle" language="EN">
+        accessibilityList</accessibilityList>
+      </accessibilityList>
+      <materialReferenceList>
+        <reference bitrate="" duration="" type="video">reference</reference>
+      </materialReferenceList>
+      <rightsList>
+        <rights>
+          <rightsName>rightsName</rightsName>
+          <validFrom>2001-12-31T12:00:00</validFrom>
+          <validTo>2001-12-31T12:00:00</validTo>
+          <unlimitedPeriod>true</unlimitedPeriod>
+          <rightsCategoryList>
+            <rightsCategory>
+              <vod xsi:type="p2:deviceTypeRights">
+                <deviceType>web</deviceType>
+              </vod>
+              <ppv xsi:type="p2:deviceTypeRights">
+                <deviceType>web</deviceType>
+              </ppv>
+              <timeshift>
+                <catchUpRights>
+                  <fastForward>true</fastForward>
+                  <rewind>true</rewind>
+                  <pause>true</pause>
+                </catchUpRights>
+                <startOverRights>
+                  <fastForward>true</fastForward>
+                  <rewind>true</rewind>
+                  <pause>true</pause>
+                </startOverRights>
+              </timeshift>
+              <noTransmission>
+                <deviceType>web</deviceType>
+              </noTransmission>
+              <addProviderLogo>true</addProviderLogo>
+              <allowAds>true</allowAds>
+              <drmRestrictions />
+              <geoRestrictions />
+              <shareToList>
+                <shareTo>shareTo</shareTo>
+              </shareToList>
+            </rightsCategory>
+          </rightsCategoryList>
+        </rights>
+      </rightsList>
+    </material>
+  </materialList>
 </p:content>

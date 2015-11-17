@@ -1,602 +1,609 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<p:publish timestamp="2001-12-31T12:00:00" xmlns:c="http://video-metadata.tv4.se/content/v1" xmlns:common="http://video-metadata.tv4.se/common/v1" xmlns:e="http://video-metadata.tv4.se/event/v1"
-	xmlns:m="http://video-metadata.tv4.se/material/v1" xmlns:p="http://video-metadata.tv4.se/publish/v1" xmlns:p3="http://video-metadata.tv4.se/tagging/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://video-metadata.tv4.se/publish/v1 ../xsd/publish.xsd ">
-	<p:brand>
-		<!-- Not availabel for all type of contents. Films does not have Brands -->
-		<id>mandatory</id>
-		<studio>mandatory</studio>
-		<productionYear>mandatory</productionYear>
-		<countryOfOriginList>
-			<country>mandatory</country>
-		</countryOfOriginList>
-		<titleList>
-			<!-- at least one, send all available -->
-			<title language="EN" original="true">title</title>
-		</titleList>
-		<descriptionList>
-			<!-- at least one, send all available: tiny, small, medium, long, extended
-				Q: which types are mandatory in Metabanken? -->
-			<description language="EN" length="tiny">description</description>
-		</descriptionList>
-		<commentList>
-			<!-- Only expected from Nyhetsbolaget, or added in EMP -->
-			<comment language="EN" length="tiny">comment</comment>
-		</commentList>
-		<sport>
-			<!-- Not from Metabanken -->
-			<sportsCategory language="EN">sportsCategory</sportsCategory>
-			<leagueOrCompetitionList>
-				<leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
-			</leagueOrCompetitionList>
-			<seasonOrTournamentList>
-				<roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
-			</seasonOrTournamentList>
-			<roundOrEpisodeList>
-				<roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
-			</roundOrEpisodeList>
-			<homeTeamList>
-				<team language="EN">team</team>
-			</homeTeamList>
-			<awayTeamList>
-				<team language="EN">team</team>
-			</awayTeamList>
-		</sport>
-		<tagList>
-			<!-- Added in EMP -->
-			<subjectTag priority="0">subjectTag</subjectTag>
-			<storyTag priority="0">storyTag</storyTag>
-			<otherTag priority="0">otherTag</otherTag>
-		</tagList>
-		<adTagList>
-			<!-- Added in EMP -->
-			<adTag priority="0">adTag</adTag>
-		</adTagList>
-		<creditList>
-			<!-- From metabanken, send all available -->
-			<credit>
-				<name>name</name>
-				<rolename>rolename</rolename>
-				<function>function</function>
-				<externalReferenceList>
-					<externalReference>
-						<provider>provider</provider>
-						<id>id</id>
-						<uri>uri</uri>
-					</externalReference>
-				</externalReferenceList>
-			</credit>
-		</creditList>
-		<imageList>
-			<!-- From metabanken, send all available -->
-			<image priority="0">
-				<imageRef height="0" orientation="landscape" purpose="production" unit="px" width="0">imageRef</imageRef>
-				<captionList>
-					<caption language="EN">caption</caption>
-				</captionList>
-				<copyRightList>
-					<copyRight language="EN">copyRight</copyRight>
-				</copyRightList>
-			</image>
-		</imageList>
-		<categoryList>
-			<!-- From metabanken, send all available -->
-			<category priority="1">
-				<mainCategory>mainCategory</mainCategory>
-				<subCategory>subCategory</subCategory>
-			</category>
-		</categoryList>
-		<adCategoryList>
-			<!-- Added in EMP -->
-			<category priority="1">
-				<mainCategory>mainCategory</mainCategory>
-				<subCategory>subCategory</subCategory>
-			</category>
-		</adCategoryList>
-		<!-- From C More, send all available
-			Q: check if available in Metabanken -->
-		<parentalRatingList>
-			<parentalRating>0</parentalRating>
-			<parentalRating country="ru">21</parentalRating>
-		</parentalRatingList>
-		<externalReferenceList>
-			<!-- Not used at present.
-				Q: Check with Metabanken if available -->
-			<externalReference>
-				<provider>provider</provider>
-				<id>id</id>
-				<uri>uri</uri>
-			</externalReference>
-		</externalReferenceList>
-		<additionalProperties>
-			<!-- Not used at present.
-				Q: Check with Metabanken if available -->
-			<property>
-				<name>Name</name>
-				<type>string</type>
-				<value>value</value>
-			</property>
-		</additionalProperties>
-	</p:brand>
-	<p:season>
-		<!--
-			Same elements as in brand (commented above).
+<?xml version="1.0" encoding="utf-8"?>
+<p:publish timestamp="2001-12-31T12:00:00" xmlns:c="http://video-metadata.tv4.se/content/v1"
+xmlns:common="http://video-metadata.tv4.se/common/v1"
+xmlns:e="http://video-metadata.tv4.se/event/v1" xmlns:m="http://video-metadata.tv4.se/material/v1"
+xmlns:p="http://video-metadata.tv4.se/publish/v1"
+xmlns:p3="http://video-metadata.tv4.se/tagging/v1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://video-metadata.tv4.se/publish/v1 ../xsd/publish.xsd">
+  <p:brand>
+    <!-- Not availabel for all type of contents. Films does not have Brands -->
+    <id>mandatory</id>
+    <studio>mandatory</studio>
+    <productionYear>mandatory</productionYear>
+    <countryOfOriginList>
+      <country>mandatory</country>
+    </countryOfOriginList>
+    <titleList>
+      <!-- at least one, send all available -->
+      <title language="EN" original="true">title</title>
+    </titleList>
+    <descriptionList>
+      <!-- at least one, send all available: tiny, small, medium, long, extended
+                                Q: which types are mandatory in Metabanken? -->
+      <description language="EN" length="tiny">description</description>
+    </descriptionList>
+    <commentList>
+      <!-- Only expected from Nyhetsbolaget, or added in EMP -->
+      <comment language="EN" length="tiny">comment</comment>
+    </commentList>
+    <sport>
+      <!-- Not from Metabanken -->
+      <sportsCategory language="EN">sportsCategory</sportsCategory>
+      <leagueOrCompetitionList>
+        <leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
+      </leagueOrCompetitionList>
+      <seasonOrTournamentList>
+        <roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
+      </seasonOrTournamentList>
+      <roundOrEpisodeList>
+        <roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
+      </roundOrEpisodeList>
+      <homeTeamList>
+        <team language="EN">team</team>
+      </homeTeamList>
+      <awayTeamList>
+        <team language="EN">team</team>
+      </awayTeamList>
+    </sport>
+    <tagList>
+      <!-- Added in EMP -->
+      <subjectTag priority="0">subjectTag</subjectTag>
+      <storyTag priority="0">storyTag</storyTag>
+      <otherTag priority="0">otherTag</otherTag>
+    </tagList>
+    <adTagList>
+      <!-- Added in EMP -->
+      <adTag priority="0">adTag</adTag>
+    </adTagList>
+    <creditList>
+      <!-- From metabanken, send all available -->
+      <credit>
+        <name>name</name>
+        <rolename>rolename</rolename>
+        <function>function</function>
+        <externalReferenceList>
+          <externalReference>
+            <provider>provider</provider>
+            <id>id</id>
+            <uri>uri</uri>
+          </externalReference>
+        </externalReferenceList>
+      </credit>
+    </creditList>
+    <imageList>
+      <!-- From metabanken, send all available -->
+      <image priority="0">
+        <imageRef height="0" orientation="landscape" purpose="production" unit="px" width="0">
+        imageRef</imageRef>
+        <captionList>
+          <caption language="EN">caption</caption>
+        </captionList>
+        <copyRightList>
+          <copyRight language="EN">copyRight</copyRight>
+        </copyRightList>
+      </image>
+    </imageList>
+    <categoryList>
+      <!-- From metabanken, send all available -->
+      <category priority="1">
+        <mainCategory>mainCategory</mainCategory>
+        <subCategory>subCategory</subCategory>
+      </category>
+    </categoryList>
+    <adCategoryList>
+      <!-- Added in EMP -->
+      <category priority="1">
+        <mainCategory>mainCategory</mainCategory>
+        <subCategory>subCategory</subCategory>
+      </category>
+    </adCategoryList>
+    <!-- From C More, send all available
+                        Q: check if available in Metabanken -->
+    <parentalRatingList>
+      <parentalRating>0</parentalRating>
+      <parentalRating country="ru">21</parentalRating>
+    </parentalRatingList>
+    <externalReferenceList>
+      <!-- Not used at present.
+                                Q: Check with Metabanken if available -->
+      <externalReference>
+        <provider>provider</provider>
+        <id>id</id>
+        <uri>uri</uri>
+      </externalReference>
+    </externalReferenceList>
+    <additionalProperties>
+      <!-- Not used at present.
+                                Q: Check with Metabanken if available -->
+      <property>
+        <name>Name</name>
+        <type>string</type>
+        <value>value</value>
+      </property>
+    </additionalProperties>
+  </p:brand>
+  <p:season>
+    <!--
+                        Same elements as in brand (commented above).
 
-			Extra elements:
-			- seasonNumber
-			- numberOfEpisodes
+                        Extra elements:
+                        - seasonNumber
+                        - numberOfEpisodes
 
-			Not all content has seasons. E.g., films.
-		-->
-		<id>id</id>
-		<studio>studio</studio>
-		<productionYear>productionYear</productionYear>
-		<countryOfOriginList>
-			<country>country</country>
-		</countryOfOriginList>
-		<titleList>
-			<title language="EN" original="true">title</title>
-		</titleList>
-		<descriptionList>
-			<description language="EN" length="tiny">description</description>
-		</descriptionList>
-		<commentList>
-			<comment language="EN" length="tiny">comment</comment>
-		</commentList>
-		<sport>
-			<sportsCategory language="EN">sportsCategory</sportsCategory>
-			<leagueOrCompetitionList>
-				<leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
-			</leagueOrCompetitionList>
-			<seasonOrTournamentList>
-				<roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
-			</seasonOrTournamentList>
-			<roundOrEpisodeList>
-				<roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
-			</roundOrEpisodeList>
-			<homeTeamList>
-				<team language="EN">team</team>
-			</homeTeamList>
-			<awayTeamList>
-				<team language="EN">team</team>
-			</awayTeamList>
-		</sport>
-		<tagList>
-			<subjectTag priority="0">subjectTag</subjectTag>
-			<storyTag priority="0">storyTag</storyTag>
-			<otherTag priority="0">otherTag</otherTag>
-		</tagList>
-		<adTagList>
-			<adTag priority="0">adTag</adTag>
-		</adTagList>
-		<creditList>
-			<credit>
-				<name>name</name>
-				<rolename>rolename</rolename>
-				<function>function</function>
-				<externalReferenceList>
-					<externalReference>
-						<provider>provider</provider>
-						<id>id</id>
-						<uri>uri</uri>
-					</externalReference>
-				</externalReferenceList>
-			</credit>
-		</creditList>
-		<imageList>
-			<image priority="0">
-				<imageRef height="0" orientation="landscape" purpose="production" unit="px" width="0">imageRef</imageRef>
-				<captionList>
-					<caption language="EN">caption</caption>
-				</captionList>
-				<copyRightList>
-					<copyRight language="EN">copyRight</copyRight>
-				</copyRightList>
-			</image>
-		</imageList>
-		<categoryList>
-			<category priority="1">
-				<mainCategory>mainCategory</mainCategory>
-				<subCategory>subCategory</subCategory>
-			</category>
-		</categoryList>
-		<adCategoryList>
-			<category priority="1">
-				<mainCategory>mainCategory</mainCategory>
-				<subCategory>subCategory</subCategory>
-			</category>
-		</adCategoryList>
-		<parentalRatingList>
-			<parentalRating>0</parentalRating>
-			<parentalRating country="ru">21</parentalRating>
-		</parentalRatingList>
-		<externalReferenceList>
-			<externalReference>
-				<provider>provider</provider>
-				<id>id</id>
-				<uri>uri</uri>
-			</externalReference>
-		</externalReferenceList>
-		<additionalProperties>
-			<property>
-				<name>Name</name>
-				<type>string</type>
-				<value>value</value>
-			</property>
-		</additionalProperties>
-		<brandId>brandId</brandId>
-		<!--
-			Q: why not mandatory?
-			A: Not mandatory because the information is not available for all brands.
-		-->
-		<seasonNumber>0</seasonNumber>
-		<!-- If available - can be calculated. -->
-		<numberOfEpisodes>0</numberOfEpisodes>
-	</p:season>
-	<p:content>
-		<!--
-			Same elements as in brand (commented above).
+                        Not all content has seasons. E.g., films.
+                -->
+    <id>id</id>
+    <studio>studio</studio>
+    <productionYear>productionYear</productionYear>
+    <countryOfOriginList>
+      <country>country</country>
+    </countryOfOriginList>
+    <titleList>
+      <title language="EN" original="true">title</title>
+    </titleList>
+    <descriptionList>
+      <description language="EN" length="tiny">description</description>
+    </descriptionList>
+    <commentList>
+      <comment language="EN" length="tiny">comment</comment>
+    </commentList>
+    <sport>
+      <sportsCategory language="EN">sportsCategory</sportsCategory>
+      <leagueOrCompetitionList>
+        <leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
+      </leagueOrCompetitionList>
+      <seasonOrTournamentList>
+        <roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
+      </seasonOrTournamentList>
+      <roundOrEpisodeList>
+        <roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
+      </roundOrEpisodeList>
+      <homeTeamList>
+        <team language="EN">team</team>
+      </homeTeamList>
+      <awayTeamList>
+        <team language="EN">team</team>
+      </awayTeamList>
+    </sport>
+    <tagList>
+      <subjectTag priority="0">subjectTag</subjectTag>
+      <storyTag priority="0">storyTag</storyTag>
+      <otherTag priority="0">otherTag</otherTag>
+    </tagList>
+    <adTagList>
+      <adTag priority="0">adTag</adTag>
+    </adTagList>
+    <creditList>
+      <credit>
+        <name>name</name>
+        <rolename>rolename</rolename>
+        <function>function</function>
+        <externalReferenceList>
+          <externalReference>
+            <provider>provider</provider>
+            <id>id</id>
+            <uri>uri</uri>
+          </externalReference>
+        </externalReferenceList>
+      </credit>
+    </creditList>
+    <imageList>
+      <image priority="0">
+        <imageRef height="0" orientation="landscape" purpose="production" unit="px" width="0">
+        imageRef</imageRef>
+        <captionList>
+          <caption language="EN">caption</caption>
+        </captionList>
+        <copyRightList>
+          <copyRight language="EN">copyRight</copyRight>
+        </copyRightList>
+      </image>
+    </imageList>
+    <categoryList>
+      <category priority="1">
+        <mainCategory>mainCategory</mainCategory>
+        <subCategory>subCategory</subCategory>
+      </category>
+    </categoryList>
+    <adCategoryList>
+      <category priority="1">
+        <mainCategory>mainCategory</mainCategory>
+        <subCategory>subCategory</subCategory>
+      </category>
+    </adCategoryList>
+    <parentalRatingList>
+      <parentalRating>0</parentalRating>
+      <parentalRating country="ru">21</parentalRating>
+    </parentalRatingList>
+    <externalReferenceList>
+      <externalReference>
+        <provider>provider</provider>
+        <id>id</id>
+        <uri>uri</uri>
+      </externalReference>
+    </externalReferenceList>
+    <additionalProperties>
+      <property>
+        <name>Name</name>
+        <type>string</type>
+        <value>value</value>
+      </property>
+    </additionalProperties>
+    <brandId>brandId</brandId>
+    <!--
+                        Q: why not mandatory?
+                        A: Not mandatory because the information is not available for all brands.
+                -->
+    <seasonNumber>0</seasonNumber>
+    <!-- If available - can be calculated. -->
+    <numberOfEpisodes>0</numberOfEpisodes>
+  </p:season>
+  <p:content>
+    <!--
+                        Same elements as in brand (commented above).
 
-			Extra elements:
-			- vmanId
-			- contentType
-			- brandId
-			- seasonId
-			- contentIdRef
-			- episodeNumber
+                        Extra elements:
+                        - vmanId
+                        - contentType
+                        - brandId
+                        - seasonId
+                        - contentIdRef
+                        - episodeNumber
 
-			Not all content has seasons. E.g., films.
-		-->
-		<id>id</id>
-		<studio>studio</studio>
-		<productionYear>productionYear</productionYear>
-		<countryOfOriginList>
-			<country>country</country>
-		</countryOfOriginList>
-		<titleList>
-			<title language="EN" original="true">title</title>
-		</titleList>
-		<descriptionList>
-			<description language="EN" length="tiny">description</description>
-		</descriptionList>
-		<commentList>
-			<comment language="EN" length="tiny">comment</comment>
-		</commentList>
-		<sport>
-			<sportsCategory language="EN">sportsCategory</sportsCategory>
-			<leagueOrCompetitionList>
-				<leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
-			</leagueOrCompetitionList>
-			<seasonOrTournamentList>
-				<roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
-			</seasonOrTournamentList>
-			<roundOrEpisodeList>
-				<roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
-			</roundOrEpisodeList>
-			<homeTeamList>
-				<team language="EN">team</team>
-			</homeTeamList>
-			<awayTeamList>
-				<team language="EN">team</team>
-			</awayTeamList>
-		</sport>
-		<tagList>
-			<subjectTag priority="0">subjectTag</subjectTag>
-			<storyTag priority="0">storyTag</storyTag>
-			<otherTag priority="0">otherTag</otherTag>
-		</tagList>
-		<adTagList>
-			<adTag priority="0">adTag</adTag>
-		</adTagList>
-		<creditList>
-			<credit>
-				<name>name</name>
-				<rolename>rolename</rolename>
-				<function>function</function>
-				<externalReferenceList>
-					<externalReference>
-						<provider>provider</provider>
-						<id>id</id>
-						<uri>uri</uri>
-					</externalReference>
-				</externalReferenceList>
-			</credit>
-		</creditList>
-		<imageList>
-			<image priority="0">
-				<imageRef height="0" orientation="landscape" purpose="production" unit="px" width="0">imageRef</imageRef>
-				<captionList>
-					<caption language="EN">caption</caption>
-				</captionList>
-				<copyRightList>
-					<copyRight language="EN">copyRight</copyRight>
-				</copyRightList>
-			</image>
-		</imageList>
-		<categoryList>
-			<category priority="1">
-				<mainCategory>mainCategory</mainCategory>
-				<subCategory>subCategory</subCategory>
-			</category>
-		</categoryList>
-		<adCategoryList>
-			<category priority="1">
-				<mainCategory>mainCategory</mainCategory>
-				<subCategory>subCategory</subCategory>
-			</category>
-		</adCategoryList>
-		<parentalRatingList>
-			<parentalRating>0</parentalRating>
-			<parentalRating country="ru">21</parentalRating>
-		</parentalRatingList>
-		<externalReferenceList>
-			<externalReference>
-				<provider>provider</provider>
-				<id>id</id>
-				<uri>uri</uri>
-			</externalReference>
-		</externalReferenceList>
-		<additionalProperties>
-			<property>
-				<name>Name</name>
-				<type>string</type>
-				<value>value</value>
-			</property>
-		</additionalProperties>
-		<!-- Not in Metabanken, added when importing or exporting from EMP -->
-		<vmanId>vmanId</vmanId>
-		<!--
-			"Mandatory", can be found on 'material'
-			Q: What is the usage and where does the data come from?
-		-->
-		<contentType>program</contentType>
-		<!-- Optional -->
-		<brandId>brandId</brandId>
-		<!-- Optional -->
-		<seasonId>seasonId</seasonId>
-		<!-- Used to relate a uploaded clip to a program -->
-		<contentIdRef>contentIdRef</contentIdRef>
-		<!-- Optional -->
-		<episodeNumber>0</episodeNumber>
-	</p:content>
-	<p:materialList>
-		<material timestamp="2001-12-31T12:00:00">
-			<!-- mandatory -->
-			<providerId>providerId</providerId>
-			<!-- mandatory -->
-			<id>id</id>
-			<!-- Optional -->
-			<materialType>program</materialType>
-			<!-- Optional -->
-			<distributor>distributor</distributor>
-			<!-- mandatory -->
-			<contentIdRef>contentIdRef</contentIdRef>
-			<!-- mandatory, attribute threeD is Optional (default to false) and will probably never be used!!! -->
-			<videoFormat threeD="true">576i</videoFormat>
-			<!-- Optional -->
-			<audioList>
-				<format language="EN">mono</format>
-			</audioList>
-			<!-- Optional, but available for most data from Metabanken -->
-			<aspectRatio>4:3</aspectRatio>
-			<!--
-				Optional
-				Q: Where shall this data be added?
-			-->
-			<subtitleList>
-				<subtitle format="closed" language="EN">subtitle</subtitle>
-			</subtitleList>
-			<!--
-				Optional
-				Q: Where shall this data be added?
-			-->
-			<accessibilityList>
-				<accessibilityList format="hearingImpairedSubtitle" language="EN">accessibilityList</accessibilityList>
-			</accessibilityList>
-			<mediaList>
-				<!--
-					Optional
-					Q: Where shall this data be added?
+                        Not all content has seasons. E.g., films.
+                -->
+    <id>id</id>
+    <studio>studio</studio>
+    <productionYear>productionYear</productionYear>
+    <countryOfOriginList>
+      <country>country</country>
+    </countryOfOriginList>
+    <titleList>
+      <title language="EN" original="true">title</title>
+    </titleList>
+    <descriptionList>
+      <description language="EN" length="tiny">description</description>
+    </descriptionList>
+    <commentList>
+      <comment language="EN" length="tiny">comment</comment>
+    </commentList>
+    <sport>
+      <sportsCategory language="EN">sportsCategory</sportsCategory>
+      <leagueOrCompetitionList>
+        <leagueOrCompetition language="EN">leagueOrCompetition</leagueOrCompetition>
+      </leagueOrCompetitionList>
+      <seasonOrTournamentList>
+        <roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
+      </seasonOrTournamentList>
+      <roundOrEpisodeList>
+        <roundOrEpisode language="EN">roundOrEpisode</roundOrEpisode>
+      </roundOrEpisodeList>
+      <homeTeamList>
+        <team language="EN">team</team>
+      </homeTeamList>
+      <awayTeamList>
+        <team language="EN">team</team>
+      </awayTeamList>
+    </sport>
+    <tagList>
+      <subjectTag priority="0">subjectTag</subjectTag>
+      <storyTag priority="0">storyTag</storyTag>
+      <otherTag priority="0">otherTag</otherTag>
+    </tagList>
+    <adTagList>
+      <adTag priority="0">adTag</adTag>
+    </adTagList>
+    <creditList>
+      <credit>
+        <name>name</name>
+        <rolename>rolename</rolename>
+        <function>function</function>
+        <externalReferenceList>
+          <externalReference>
+            <provider>provider</provider>
+            <id>id</id>
+            <uri>uri</uri>
+          </externalReference>
+        </externalReferenceList>
+      </credit>
+    </creditList>
+    <imageList>
+      <image priority="0">
+        <imageRef height="0" orientation="landscape" purpose="production" unit="px" width="0">
+        imageRef</imageRef>
+        <captionList>
+          <caption language="EN">caption</caption>
+        </captionList>
+        <copyRightList>
+          <copyRight language="EN">copyRight</copyRight>
+        </copyRightList>
+      </image>
+    </imageList>
+    <categoryList>
+      <category priority="1">
+        <mainCategory>mainCategory</mainCategory>
+        <subCategory>subCategory</subCategory>
+      </category>
+    </categoryList>
+    <adCategoryList>
+      <category priority="1">
+        <mainCategory>mainCategory</mainCategory>
+        <subCategory>subCategory</subCategory>
+      </category>
+    </adCategoryList>
+    <parentalRatingList>
+      <parentalRating>0</parentalRating>
+      <parentalRating country="ru">21</parentalRating>
+    </parentalRatingList>
+    <externalReferenceList>
+      <externalReference>
+        <provider>provider</provider>
+        <id>id</id>
+        <uri>uri</uri>
+      </externalReference>
+    </externalReferenceList>
+    <additionalProperties>
+      <property>
+        <name>Name</name>
+        <type>string</type>
+        <value>value</value>
+      </property>
+    </additionalProperties>
+    <!-- Not in Metabanken, added when importing or exporting from EMP -->
+    <vmanId>vmanId</vmanId>
+    <!--
+                        "Mandatory", can be found on 'material'
+                        Q: What is the usage and where does the data come from?
+                -->
+    <contentType>program</contentType>
+    <!-- Optional -->
+    <brandId>brandId</brandId>
+    <!-- Optional -->
+    <seasonId>seasonId</seasonId>
+    <!-- Used to relate a uploaded clip to a program -->
+    <contentIdRef>contentIdRef</contentIdRef>
+    <!-- Optional -->
+    <episodeNumber>0</episodeNumber>
+  </p:content>
+  <p:materialList>
+    <material timestamp="2001-12-31T12:00:00">
+      <!-- mandatory -->
+      <providerId>providerId</providerId>
+      <!-- mandatory -->
+      <id>id</id>
+      <!-- Optional -->
+      <materialType>program</materialType>
+      <!-- Optional -->
+      <distributor>distributor</distributor>
+      <!-- mandatory -->
+      <contentIdRef>contentIdRef</contentIdRef>
+      <!-- mandatory, attribute threeD is Optional (default to false) and will probably never be used!!! -->
+      <videoFormat threeD="true">576i</videoFormat>
+      <!-- Optional -->
+      <audioList>
+        <format language="EN">mono</format>
+      </audioList>
+      <!-- Optional, but available for most data from Metabanken -->
+      <aspectRatio>4:3</aspectRatio>
+      <!--
+                                Optional
+                                Q: Where shall this data be added?
+                        -->
+      <subtitleList>
+        <subtitle format="closed" language="EN">subtitle</subtitle>
+      </subtitleList>
+      <!--
+                                Optional
+                                Q: Where shall this data be added?
+                        -->
+      <accessibilityList>
+        <accessibilityList format="hearingImpairedSubtitle" language="EN">
+        accessibilityList</accessibilityList>
+      </accessibilityList>
+      <mediaList>
+        <!--
+                                        Optional
+                                        Q: Where shall this data be added?
 
-					Media unknown until it present in EMP. E.g., live events does not have any media until it is sent.
-				-->
-				<media>
-					<mediaRef>mediaRef</mediaRef>
-					<type>program</type>
-					<duration>duration</duration>
-					<bitrate>0</bitrate>
-					<framerate>0</framerate>
-					<segmentList>
-						<!-- Should come from Louise. Each advertisement break will create a split. -->
-						<segment>
-							<in>in</in>
-							<out>out</out>
-							<breakType>mandatory</breakType>
-						</segment>
-					</segmentList>
-				</media>
-			</mediaList>
-			<rightsList>
-				<!--
-					To be added in EMP.
-					Later this data can come from Metabanken, but not guarantied from other sources.
+                                        Media unknown until it present in EMP. E.g., live events does not have any media until it is sent.
+                                -->
+        <media>
+          <mediaRef>mediaRef</mediaRef>
+          <type>program</type>
+          <duration>duration</duration>
+          <bitrate>0</bitrate>
+          <framerate>0</framerate>
+          <segmentList>
+            <!-- Should come from Louise. Each advertisement break will create a split. -->
+            <segment>
+              <in>in</in>
+              <out>out</out>
+              <breakType>mandatory</breakType>
+            </segment>
+          </segmentList>
+        </media>
+      </mediaList>
+      <rightsList>
+        <!--
+                                        To be added in EMP.
+                                        Later this data can come from Metabanken, but not guarantied from other sources.
 
-					Investigation if this can be added in VMD by logic for default values.
-				-->
-				<rights>
-					<rightsName>rightsName</rightsName>
-					<validFrom>2001-12-31T12:00:00</validFrom>
-					<validTo>2001-12-31T12:00:00</validTo>
-					<rightsCategoryList>
-						<rightsCategory>
-							<addProviderLogo>true</addProviderLogo>
-							<timeshift>
-								<catchUpRights>
-									<fastForward>true</fastForward>
-									<rewind>true</rewind>
-									<pause>true</pause>
-								</catchUpRights>
-								<startOverRights>
-									<fastForward>true</fastForward>
-									<rewind>true</rewind>
-									<pause>true</pause>
-								</startOverRights>
-							</timeshift>
-							<allowAds>true</allowAds>
-							<drmRestrictions>true</drmRestrictions>
-							<locationRestrictions>
-								<includeIpOrNetworks>
-									<ipAddress>ipAddress</ipAddress>
-								</includeIpOrNetworks>
-								<includeCountries>
-									<country>country</country>
-								</includeCountries>
-								<exludeCountries>
-									<country>country</country>
-								</exludeCountries>
-								<includeLocals>
-									<name>name</name>
-								</includeLocals>
-								<exludeLocals>
-									<name>name</name>
-								</exludeLocals>
-							</locationRestrictions>
-							<userOrGroupRestrictions>
-								<includeUsers>
-									<name>name</name>
-								</includeUsers>
-								<exludeUsers>
-									<name>name</name>
-								</exludeUsers>
-								<includeGroups>
-									<name>name</name>
-								</includeGroups>
-								<exludeGroups>
-									<name>name</name>
-								</exludeGroups>
-							</userOrGroupRestrictions>
-							<shareToList>
-								<shareTo>shareTo</shareTo>
-							</shareToList>
-							<deviceRights>
-								<deviceType>web</deviceType>
-								<digitalOutputRights>unrestricted</digitalOutputRights>
-								<analogOutputRights>
-									<unrestricted>true</unrestricted>
-								</analogOutputRights>
-								<inHomeNetworkOutputRights>unrestricted</inHomeNetworkOutputRights>
-							</deviceRights>
-							<noLinearTransmission>
-								<deviceType>web</deviceType>
-							</noLinearTransmission>
-						</rightsCategory>
-					</rightsCategoryList>
-				</rights>
-			</rightsList>
-		</material>
-	</p:materialList>
-	<p:eventList>
-		<!-- Publish messages will contain one (1) event, whereas schedule message will contain all events for one broadcast day -->
-		<e:event timestamp="2001-12-31T12:00:00">
-			<e:id>e:id</e:id>
-			<e:channelId>e:channelId</e:channelId>
-			<!--
-				Not in Metabanken. Metabanken will only send one generic publication.
-				Editor, or automatic rules, must do the different publications on different devices.
-			-->
-			<e:deviceType>web</e:deviceType>
-			<!--
-				Added in EMP.
-				Q: Why not sent from Metabanken or Louise?
-			-->
-			<e:priceGroup>e:priceGroup</e:priceGroup>
-			<!-- To be added in EMP, maybe in future in source system -->
-			<e:publicationRights>
-				<addProviderLogo>true</addProviderLogo>
-				<timeshift>
-					<catchUpRights>
-						<fastForward>true</fastForward>
-						<rewind>true</rewind>
-						<pause>true</pause>
-					</catchUpRights>
-					<startOverRights>
-						<fastForward>true</fastForward>
-						<rewind>true</rewind>
-						<pause>true</pause>
-					</startOverRights>
-				</timeshift>
-				<allowAds>true</allowAds>
-				<drmRestrictions>true</drmRestrictions>
-				<locationRestrictions>
-					<includeIpOrNetworks>
-						<ipAddress>ipAddress</ipAddress>
-					</includeIpOrNetworks>
-					<includeCountries>
-						<country>country</country>
-					</includeCountries>
-					<exludeCountries>
-						<country>country</country>
-					</exludeCountries>
-					<includeLocals>
-						<name>name</name>
-					</includeLocals>
-					<exludeLocals>
-						<name>name</name>
-					</exludeLocals>
-				</locationRestrictions>
-				<userOrGroupRestrictions>
-					<includeUsers>
-						<name>name</name>
-					</includeUsers>
-					<exludeUsers>
-						<name>name</name>
-					</exludeUsers>
-					<includeGroups>
-						<name>name</name>
-					</includeGroups>
-					<exludeGroups>
-						<name>name</name>
-					</exludeGroups>
-				</userOrGroupRestrictions>
-				<shareToList>
-					<shareTo>shareTo</shareTo>
-				</shareToList>
-			</e:publicationRights>
-			<e:descriptionList>
-				<!-- Not sent from Metabanken.
-					Q: What is the use for this field?
-				-->
-				<e:description language="EN">e:description</e:description>
-			</e:descriptionList>
-			<!-- Sent from Metabanken -->
-			<e:rerun>true</e:rerun>
-			<!-- Sent from Metabanken -->
-			<e:live>true</e:live>
-			<!-- -->
-			<e:hidden>true</e:hidden>
-			<!-- -->
-			<e:groupId sequenceNumber="0">e:groupId</e:groupId>
-			<!-- Sent from Metabanken -->
-			<e:timeList>
-				<e:time type="public">
-					<e:startTime>2001-12-31T12:00:00</e:startTime>
-					<e:endTime>2001-12-31T12:00:00</e:endTime>
-					<!--
-						Not in Metabanken.
-						Added in EMP or by automatic rules during import.
-					-->
-					<e:publishTime>2001-12-31T12:00:00</e:publishTime>
-					<!-- Optional -->
-					<e:duration>e:duration</e:duration>
-				</e:time>
-			</e:timeList>
-			<!-- Mandatory -->
-			<e:contentIdRef>e:contentIdRef</e:contentIdRef>
-			<!-- Mandatory -->
-			<e:materialIdRef>e:materialIdRef</e:materialIdRef>
-			<!-- Not used in first version -->
-			<e:embeddedEventList>
-			</e:embeddedEventList>
-		</e:event>
-	</p:eventList>
+                                        Investigation if this can be added in VMD by logic for default values.
+                                -->
+        <rights>
+          <rightsName>rightsName</rightsName>
+          <validFrom>2001-12-31T12:00:00</validFrom>
+          <validTo>2001-12-31T12:00:00</validTo>
+          <rightsCategoryList>
+            <rightsCategory>
+              <addProviderLogo>true</addProviderLogo>
+              <timeshift>
+                <catchUpRights>
+                  <fastForward>true</fastForward>
+                  <rewind>true</rewind>
+                  <pause>true</pause>
+                </catchUpRights>
+                <startOverRights>
+                  <fastForward>true</fastForward>
+                  <rewind>true</rewind>
+                  <pause>true</pause>
+                </startOverRights>
+              </timeshift>
+              <allowAds>true</allowAds>
+              <drmRestrictions>true</drmRestrictions>
+              <locationRestrictions>
+                <includeIpOrNetworks>
+                  <ipAddress>ipAddress</ipAddress>
+                </includeIpOrNetworks>
+                <includeCountries>
+                  <country>country</country>
+                </includeCountries>
+                <exludeCountries>
+                  <country>country</country>
+                </exludeCountries>
+                <includeLocals>
+                  <name>name</name>
+                </includeLocals>
+                <exludeLocals>
+                  <name>name</name>
+                </exludeLocals>
+              </locationRestrictions>
+              <userOrGroupRestrictions>
+                <includeUsers>
+                  <name>name</name>
+                </includeUsers>
+                <exludeUsers>
+                  <name>name</name>
+                </exludeUsers>
+                <includeGroups>
+                  <name>name</name>
+                </includeGroups>
+                <exludeGroups>
+                  <name>name</name>
+                </exludeGroups>
+              </userOrGroupRestrictions>
+              <shareToList>
+                <shareTo>shareTo</shareTo>
+              </shareToList>
+              <deviceRights>
+                <deviceType>web</deviceType>
+                <digitalOutputRights>unrestricted</digitalOutputRights>
+                <analogOutputRights>
+                  <unrestricted>true</unrestricted>
+                </analogOutputRights>
+                <inHomeNetworkOutputRights>unrestricted</inHomeNetworkOutputRights>
+              </deviceRights>
+              <noLinearTransmission>
+                <deviceType>web</deviceType>
+              </noLinearTransmission>
+            </rightsCategory>
+          </rightsCategoryList>
+        </rights>
+      </rightsList>
+    </material>
+  </p:materialList>
+  <p:eventList>
+    <!-- Publish messages will contain one (1) event, whereas schedule message will contain all events for one broadcast day -->
+    <e:event timestamp="2001-12-31T12:00:00">
+      <e:id>e:id</e:id>
+      <e:channelId>e:channelId</e:channelId>
+      <!--
+                                Not in Metabanken. Metabanken will only send one generic publication.
+                                Editor, or automatic rules, must do the different publications on different devices.
+                        -->
+      <e:deviceType>web</e:deviceType>
+      <!--
+                                Added in EMP.
+                                Q: Why not sent from Metabanken or Louise?
+                        -->
+      <e:priceGroup>e:priceGroup</e:priceGroup>
+      <!-- To be added in EMP, maybe in future in source system -->
+      <e:publicationRights>
+        <addProviderLogo>true</addProviderLogo>
+        <timeshift>
+          <catchUpRights>
+            <fastForward>true</fastForward>
+            <rewind>true</rewind>
+            <pause>true</pause>
+          </catchUpRights>
+          <startOverRights>
+            <fastForward>true</fastForward>
+            <rewind>true</rewind>
+            <pause>true</pause>
+          </startOverRights>
+        </timeshift>
+        <allowAds>true</allowAds>
+        <drmRestrictions>true</drmRestrictions>
+        <locationRestrictions>
+          <includeIpOrNetworks>
+            <ipAddress>ipAddress</ipAddress>
+          </includeIpOrNetworks>
+          <includeCountries>
+            <country>country</country>
+          </includeCountries>
+          <exludeCountries>
+            <country>country</country>
+          </exludeCountries>
+          <includeLocals>
+            <name>name</name>
+          </includeLocals>
+          <exludeLocals>
+            <name>name</name>
+          </exludeLocals>
+        </locationRestrictions>
+        <userOrGroupRestrictions>
+          <includeUsers>
+            <name>name</name>
+          </includeUsers>
+          <exludeUsers>
+            <name>name</name>
+          </exludeUsers>
+          <includeGroups>
+            <name>name</name>
+          </includeGroups>
+          <exludeGroups>
+            <name>name</name>
+          </exludeGroups>
+        </userOrGroupRestrictions>
+        <shareToList>
+          <shareTo>shareTo</shareTo>
+        </shareToList>
+      </e:publicationRights>
+      <e:descriptionList>
+        <!-- Not sent from Metabanken.
+                                        Q: What is the use for this field?
+                                -->
+        <e:description language="EN">e:description</e:description>
+      </e:descriptionList>
+      <!-- Sent from Metabanken -->
+      <e:rerun>true</e:rerun>
+      <!-- Sent from Metabanken -->
+      <e:live>true</e:live>
+      <!-- -->
+      <e:hidden>true</e:hidden>
+      <!-- -->
+      <e:groupId sequenceNumber="0">e:groupId</e:groupId>
+      <!-- Sent from Metabanken -->
+      <e:timeList>
+        <e:time type="public">
+          <e:startTime>2001-12-31T12:00:00</e:startTime>
+          <e:endTime>2001-12-31T12:00:00</e:endTime>
+          <!--
+                                                Not in Metabanken.
+                                                Added in EMP or by automatic rules during import.
+                                        -->
+          <e:publishTime>2001-12-31T12:00:00</e:publishTime>
+          <!-- Optional -->
+          <e:duration>e:duration</e:duration>
+        </e:time>
+      </e:timeList>
+      <!-- Mandatory -->
+      <e:contentIdRef>e:contentIdRef</e:contentIdRef>
+      <!-- Mandatory -->
+      <e:materialIdRef>e:materialIdRef</e:materialIdRef>
+      <!-- Not used in first version -->
+      <e:embeddedEventList></e:embeddedEventList>
+    </e:event>
+  </p:eventList>
 </p:publish>

@@ -1,55 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns="http://video-metadata.tv4.se/publish-metadata/v1"
-           xmlns:api-messages-common="http://video-metadata.tv4.se/api-messages-common/v1"
-           xmlns:content="http://video-metadata.tv4.se/content/v1"
-           xmlns:event="http://video-metadata.tv4.se/event/v1"
-           xmlns:material="http://video-metadata.tv4.se/material/v1"
-           targetNamespace="http://video-metadata.tv4.se/publish-metadata/v1" elementFormDefault="qualified" attributeFormDefault="unqualified"
-           version="1.0">
-
-    <xs:import namespace="http://video-metadata.tv4.se/api-messages-common/v1" schemaLocation="api-messages-common.xsd"/>
-    <xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd"/>
-    <xs:import namespace="http://video-metadata.tv4.se/content/v1" schemaLocation="content.xsd"/>
-    <xs:import namespace="http://video-metadata.tv4.se/event/v1" schemaLocation="event.xsd"/>
-
-    <!-- Message definitions -->
-    <xs:element name="publish-metadata">
-        <xs:annotation>
-            <xs:documentation>Root element for content meta-data message.
-                Message is sent on create or update of a new entity.
-            </xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="header"
-                            type="api-messages-common:messageHeaderType"/>
-                <xs:element name="data" type="publishType"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-    <xs:complexType name="publishType">
-        <xs:annotation>
-            <xs:documentation>root node of publish</xs:documentation>
-        </xs:annotation>
-        <xs:sequence>
-            <xs:element name="brand" type="content:brandType"/>
-            <xs:element name="season" type="content:seasonType"/>
-            <xs:element name="content" type="content:contentType"/>
-            <xs:element name="eventList" type="event:eventListType">
-                <xs:annotation>
-                    <xs:documentation>Event list for the document, could be 0
-                        entries
-                    </xs:documentation>
-                </xs:annotation>
-            </xs:element>
-        </xs:sequence>
-        <xs:attribute name="timestamp" type="xs:dateTime" use="required">
-            <xs:annotation>
-                <xs:documentation>Timestamp when document is created
-                </xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
+xmlns="http://video-metadata.tv4.se/publish-metadata/v1"
+xmlns:api-messages-common="http://video-metadata.tv4.se/api-messages-common/v1"
+xmlns:content="http://video-metadata.tv4.se/content/v1"
+xmlns:event="http://video-metadata.tv4.se/event/v1"
+xmlns:material="http://video-metadata.tv4.se/material/v1"
+targetNamespace="http://video-metadata.tv4.se/publish-metadata/v1" elementFormDefault="qualified"
+attributeFormDefault="unqualified" version="1.0">
+  <xs:import namespace="http://video-metadata.tv4.se/api-messages-common/v1"
+  schemaLocation="api-messages-common.xsd" />
+  <xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
+  <xs:import namespace="http://video-metadata.tv4.se/content/v1" schemaLocation="content.xsd" />
+  <xs:import namespace="http://video-metadata.tv4.se/event/v1" schemaLocation="event.xsd" />
+  <!-- Message definitions -->
+  <xs:element name="publish-metadata">
+    <xs:annotation>
+      <xs:documentation>Root element for content meta-data message. Message is sent on create or
+      update of a new entity.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="header" type="api-messages-common:messageHeaderType" />
+        <xs:element name="data" type="publishType" />
+      </xs:sequence>
     </xs:complexType>
+  </xs:element>
+  <xs:complexType name="publishType">
+    <xs:annotation>
+      <xs:documentation>root node of publish</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="brand" type="content:brandType" />
+      <xs:element name="season" type="content:seasonType" />
+      <xs:element name="content" type="content:contentType" />
+      <xs:element name="eventList" type="event:eventListType">
+        <xs:annotation>
+          <xs:documentation>Event list for the document, could be 0 entries</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="timestamp" type="xs:dateTime" use="required">
+      <xs:annotation>
+        <xs:documentation>Timestamp when document is created</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
 </xs:schema>

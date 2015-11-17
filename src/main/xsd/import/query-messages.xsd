@@ -1,24 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:api-messages-common="http://video-metadata.tv4.se/api-messages-common/v1"
-           targetNamespace="http://video-metadata.tv4.se/api-messages-common/v1" elementFormDefault="qualified"
-           attributeFormDefault="unqualified" version="1.0">
-
-	<xs:import namespace="http://video-metadata.tv4.se/api-messages-common/v1" schemaLocation="api-messages-common.xsd" />
-
-	<!-- Message definitions -->
-	<xs:element name="query">
-		<xs:annotation>
-			<xs:documentation> Root element for content meta-data query message.
-				Query specify the "type" and the id that it wants to be resent.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="header" type="api-messages-common:messageHeaderType" />
-				<xs:element name="query" type="api-messages-common:idListType" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
+xmlns:api-messages-common="http://video-metadata.tv4.se/api-messages-common/v1"
+targetNamespace="http://video-metadata.tv4.se/api-messages-common/v1"
+elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+  <xs:import namespace="http://video-metadata.tv4.se/api-messages-common/v1"
+  schemaLocation="api-messages-common.xsd" />
+  <!-- Message definitions -->
+  <xs:element name="query">
+    <xs:annotation>
+      <xs:documentation>Root element for content meta-data query message. Query specify the "type"
+      and the id that it wants to be resent.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="header" type="api-messages-common:messageHeaderType" />
+        <xs:element name="query" type="api-messages-common:idListType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

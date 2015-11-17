@@ -1,43 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:content="http://video-metadata.tv4.se/content/v1"
-           xmlns:event="http://video-metadata.tv4.se/event/v1" xmlns:material="http://video-metadata.tv4.se/material/v1"
-           xmlns="http://video-metadata.tv4.se/publish/v1"
-           targetNamespace="http://video-metadata.tv4.se/publish/v1" elementFormDefault="qualified"
-           attributeFormDefault="unqualified" version="1.0"
-      >
-    <!--
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:content="http://video-metadata.tv4.se/content/v1"
+xmlns:event="http://video-metadata.tv4.se/event/v1"
+xmlns:material="http://video-metadata.tv4.se/material/v1"
+xmlns="http://video-metadata.tv4.se/publish/v1"
+targetNamespace="http://video-metadata.tv4.se/publish/v1" elementFormDefault="qualified"
+attributeFormDefault="unqualified" version="1.0">
+  <!--
       -->
-	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
-	<xs:import namespace="http://video-metadata.tv4.se/content/v1" schemaLocation="content.xsd" />
-	<xs:import namespace="http://video-metadata.tv4.se/event/v1" schemaLocation="event.xsd" />
-	<xs:import namespace="http://video-metadata.tv4.se/material/v1" schemaLocation="material.xsd" />
-
-	<!--  -->
-	<xs:element name="publish" type="publishType">
-		<xs:annotation>
-			<xs:documentation>Root element for publication element</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<!--  -->
-	<xs:complexType name="publishType">
-		<xs:annotation>
-			<xs:documentation>root node of publish</xs:documentation>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="brand" type="content:brandType" minOccurs="0" />
-			<xs:element name="season" type="content:seasonType" minOccurs="0" />
-			<xs:element name="content" type="content:contentType" minOccurs="1" />
-			<!-- TODO: Not sure if materials always are available. Is it? -->
-			<xs:element name="materialList" type="material:materialListType" minOccurs="0" maxOccurs="1" />
-			<!-- TODO: No publish without a publication event, or? -->
-			<xs:element name="eventList" type="event:eventListType"/>
-		</xs:sequence>
-		<xs:attribute name="timestamp" type="xs:dateTime" use="required">
-			<xs:annotation>
-				<xs:documentation>
-					Timestamp when document is created
-				</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-	</xs:complexType>
+  <xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
+  <xs:import namespace="http://video-metadata.tv4.se/content/v1" schemaLocation="content.xsd" />
+  <xs:import namespace="http://video-metadata.tv4.se/event/v1" schemaLocation="event.xsd" />
+  <xs:import namespace="http://video-metadata.tv4.se/material/v1" schemaLocation="material.xsd" />
+  <!--  -->
+  <xs:element name="publish" type="publishType">
+    <xs:annotation>
+      <xs:documentation>Root element for publication element</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <!--  -->
+  <xs:complexType name="publishType">
+    <xs:annotation>
+      <xs:documentation>root node of publish</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="brand" type="content:brandType" minOccurs="0" />
+      <xs:element name="season" type="content:seasonType" minOccurs="0" />
+      <xs:element name="content" type="content:contentType" minOccurs="1" />
+      <!-- TODO: Not sure if materials always are available. Is it? -->
+      <xs:element name="materialList" type="material:materialListType" minOccurs="0"
+      maxOccurs="1" />
+      <!-- TODO: No publish without a publication event, or? -->
+      <xs:element name="eventList" type="event:eventListType" />
+    </xs:sequence>
+    <xs:attribute name="timestamp" type="xs:dateTime" use="required">
+      <xs:annotation>
+        <xs:documentation>Timestamp when document is created</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
 </xs:schema>

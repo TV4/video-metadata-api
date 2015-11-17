@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<p:query xmlns:p="http://video-metadata.tv.se/api-messages/v1" xmlns:p1="http://video-metadata.tv.se/content/v1" xmlns:p2="http://video-metadata.tv.se/common/v1"
-	xmlns:p3="http://video-metadata.tv.se/material/v1" xmlns:p4="http://video-metadata.tv.se/schedule/v1" xmlns:p5="http://video-metadata.tv.se/event/v1"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://video-metadata.tv.se/api-messages/v1 ../xsd/api-messages.xsd "
->
-	<p:header>
-		<p:providerId>p:providerId</p:providerId>
-		<p:seqnr>p:seqnr</p:seqnr>
-		<p:content>content</p:content>
-	</p:header>
-	<p:query>
-		<p:seqnr>p:seqnr</p:seqnr>
-	</p:query>
+<?xml version="1.0" encoding="utf-8"?>
+<p:query xmlns:p="http://video-metadata.tv.se/api-messages/v1"
+xmlns:p1="http://video-metadata.tv.se/content/v1" xmlns:p2="http://video-metadata.tv.se/common/v1"
+xmlns:p3="http://video-metadata.tv.se/material/v1"
+xmlns:p4="http://video-metadata.tv.se/schedule/v1" xmlns:p5="http://video-metadata.tv.se/event/v1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://video-metadata.tv.se/api-messages/v1 ../xsd/api-messages.xsd">
+  <p:header>
+    <p:providerId>p:providerId</p:providerId>
+    <p:seqnr>p:seqnr</p:seqnr>
+    <p:content>content</p:content>
+  </p:header>
+  <p:query>
+    <p:seqnr>p:seqnr</p:seqnr>
+  </p:query>
 </p:query>

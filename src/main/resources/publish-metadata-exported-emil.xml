@@ -1,258 +1,232 @@
-<v1:publish-metadata xmlns:v1="http://video-metadata.tv4.se/publish-metadata/v1" xmlns:v11="http://video-metadata.tv4.se/api-messages-common/v1" xmlns:v12="http://video-metadata.tv4.se/event/v1">
-	<v1:header>
-		<v11:providerId>se.cmore</v11:providerId>
-		<v11:msgId>4365476</v11:msgId>
-	</v1:header>
-	<v1:data timestamp="2008-09-29T03:49:45Z">
-		<v1:brand>
-			<id>1234</id>
-			<studio>Unspecified</studio>
-			<productionYear>1971</productionYear>
-			<countryOfOriginList>
-				<country>Sweden</country>
-			</countryOfOriginList>
-			<titleList>
-				<title language="sv" original="true">Emil</title>
-			</titleList>
-			<posterImage>
-				<url>
-					http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-				</url>
-				<urlList>
-					<url language="sv">
-						http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-					</url>
-					<url language="fi">
-						http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-					</url>
-					<url language="db">
-						http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-					</url>
-				</urlList>
-				<width>0</width>
-				<height>0</height>
-			</posterImage>
-			<landscapeImage>
-				<url>
-					http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100
-				</url>
-				<width>0</width>
-				<height>0</height>
-			</landscapeImage>
-			<tagList>
-				<tag type="story">emil</tag>
-				<tag type="other">barn</tag>
-			</tagList>
-			<additionalProperties>
-			</additionalProperties>
-		</v1:brand>
-		<v1:season>
-			<id>5678</id>
-			<studio>Unspecified</studio>
-			<productionYear>1971</productionYear>
-			<countryOfOriginList>
-				<country>sweden</country>
-			</countryOfOriginList>
-			<titleList>
-				<title language="sv" original="false">SAKNAS</title>
-			</titleList>
-			<posterImage>
-				<url>
-					http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-				</url>
-				<urlList>
-					<url language="sv">
-						http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-					</url>
-					<url language="fi">
-						http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-					</url>
-					<url language="db">
-						http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-					</url>
-				</urlList>
-				<width>0</width>
-				<height>0</height>
-			</posterImage>
-			<landscapeImage>
-				<url>
-					http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100
-				</url>
-				<width>0</width>
-				<height>0</height>
-			</landscapeImage>
-			<tagList>
-				<tag type="story">emil</tag>
-				<tag type="other">barn</tag>
-			</tagList>
-			<additionalProperties>
-			</additionalProperties>
-			<brandId>1234</brandId>
-			<seasonNumber>1</seasonNumber>
-			<numberOfEpisodes>10</numberOfEpisodes>
-		</v1:season>
-		<v1:content>
-			<id>content_id_1234</id>
-			<studio>SF</studio>
-			<productionYear>1971</productionYear>
-			<countryOfOriginList>
-				<country>Sweden</country>
-			</countryOfOriginList>
-			<titleList>
-				<title language="sv" original="true">Du kära lilla snickarbod
-				</title>
-				<title language="sv" original="false">Emil i Lönneberga: del 1
-					(SF-kanalen från C More)
-				</title>
-				<title language="fi" original="false">Vaahteramäen Eemeli:
-				</title>
-				<title language="da" original="false">Emil fra Lønneberg: Emil
-					fra Lønneberg
-				</title>
-				<title language="nb" original="false">mil i Lønneberget:</title>
-			</titleList>
-			<descriptionList>
-				<description language="sv" length="short">Se fler svenska
-					filmpärlor direkt i SF-kanalen från C More, som du hittar
-					under TV-kanaler.
-				</description>
-				<description language="sv" length="medium">Se fler svenska
-					filmpärlor direkt i SF-kanalen från C More, som du hittar
-					under TV-kanaler. Ser ut att finnas medium text på allt
-				</description>
-			</descriptionList>
-			<creditList>
-				<credit>
-					<name>Jan Ohlsson</name>
-					<function>Actor</function>
-				</credit>
-				<credit>
-					<name>Allan Edwall</name>
-					<function>Actor</function>
-				</credit>
-				<credit>
-					<name>Emy Storm</name>
-					<function>Actor</function>
-				</credit>
-				<credit>
-					<name>Olle Hellbom</name>
-					<function>Director</function>
-				</credit>
-			</creditList>
-			<posterImage>
-				<url>
-					http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-				</url>
-				<urlList>
-					<url language="sv">
-						http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-					</url>
-					<url language="fi">
-						http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-					</url>
-					<url language="db">
-						http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104
-					</url>
-				</urlList>
-				<width>0</width>
-				<height>0</height>
-			</posterImage>
-			<landscapeImage>
-				<url>
-					http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100
-				</url>
-				<width>0</width>
-				<height>0</height>
-			</landscapeImage>
-			<category>
-				<mainCategory>Barn</mainCategory>
-			</category>
-			<parentalRatingList>
-				<parentalRating>0</parentalRating>
-				<parentalRating country="ru">21</parentalRating>
-			</parentalRatingList>
-			<externalReferenceList>
-				<externalReference>
-					<provider>se.cmore</provider>
-					<id>240906</id>
-				</externalReference>
-			</externalReferenceList>
-			<additionalProperties>
-			</additionalProperties>
-			<vmanId>2383349</vmanId>
-			<contentType>movie</contentType>
-			<brandId>1234</brandId>
-			<seasonId>5678</seasonId>
-			<live>false</live>
-			<addProviderLogo>true</addProviderLogo>
-			<allowShare>true</allowShare>
-			<allowAds>true</allowAds>
-			<drmRestrictions>true</drmRestrictions>
-			<tagList>
-				<tag type="story">emil</tag>
-				<tag type="other">barn</tag>
-				<tag type="other">hyss</tag>
-				<tag type="other">pa-landet</tag>
-				<tag type="subject">byliv</tag>
-				<tag type="subject">familjeliv</tag>
-				<tag type="subject">sverige</tag>
-			</tagList>
-			<publicationRights>
-				<loactionRights>
-					<locationRestrictions>
-						<includeCountries>
-							<country>se</country>
-						</includeCountries>
-					</locationRestrictions>
-				</loactionRights>
-			</publicationRights>
-			<episodeNumber>1</episodeNumber>
-		</v1:content>
-		<v1:materialList>
-			<material timestamp="2017-10-20T03:04:37Z">
-				<providerId>se.cmore</providerId>
-				<id>85506</id>
-				<materialType>program</materialType>
-				<contentIdRef>string</contentIdRef>
-				<videoFormat threeD="false">576i</videoFormat>
-				<audioList>
-					<format>stereo</format>
-				</audioList>
-				<aspectRatio>16:9</aspectRatio>
-			</material>
-		</v1:materialList>
-		<v1:eventList>
-			<!--Zero or more repetitions: -->
-			<v12:event timestamp="2015-10-10T12:07:56Z">
-				<v12:id>1</v12:id>
-				<v12:channelId>tv4play</v12:channelId>
-				<v12:deviceType>web</v12:deviceType>
-				<v12:productGroup>7</v12:productGroup>
-				<v12:hidden>false</v12:hidden>
-				<v12:groupId sequenceNumber="1">string</v12:groupId>
-				<v12:startTime>2004-01-02T23:23:49Z</v12:startTime>
-				<v12:endTime>2016-06-03T21:00:00Z</v12:endTime>
-				<v12:publishTime>2014-01-21T07:38:03Z</v12:publishTime>
-				<v12:duration>25</v12:duration>
-				<v12:contentIdRef>string</v12:contentIdRef>
-				<v12:materialIdRef>string</v12:materialIdRef>
-			</v12:event>
-
-			<v12:event timestamp="2015-10-10T12:07:56Z">
-				<v12:id>2</v12:id>
-				<v12:channelId>tv4play</v12:channelId>
-				<v12:deviceType>mobile</v12:deviceType>
-				<v12:productGroup>1104</v12:productGroup>
-				<v12:hidden>false</v12:hidden>
-				<v12:groupId sequenceNumber="1">string</v12:groupId>
-				<v12:startTime>2004-01-02T23:23:49Z</v12:startTime>
-				<v12:endTime>2016-06-03T21:00:00Z</v12:endTime>
-				<v12:publishTime>2014-01-21T07:38:03Z</v12:publishTime>
-				<v12:duration>25</v12:duration>
-				<v12:contentIdRef>string</v12:contentIdRef>
-				<v12:materialIdRef>string</v12:materialIdRef>
-			</v12:event>
-
-		</v1:eventList>
-	</v1:data>
+<v1:publish-metadata xmlns:v1="http://video-metadata.tv4.se/publish-metadata/v1"
+xmlns:v11="http://video-metadata.tv4.se/api-messages-common/v1"
+xmlns:v12="http://video-metadata.tv4.se/event/v1">
+  <v1:header>
+    <v11:providerId>se.cmore</v11:providerId>
+    <v11:msgId>4365476</v11:msgId>
+  </v1:header>
+  <v1:data timestamp="2008-09-29T03:49:45Z">
+    <v1:brand>
+      <id>1234</id>
+      <studio>Unspecified</studio>
+      <productionYear>1971</productionYear>
+      <countryOfOriginList>
+        <country>Sweden</country>
+      </countryOfOriginList>
+      <titleList>
+        <title language="sv" original="true">Emil</title>
+      </titleList>
+      <posterImage>
+        <url>
+        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+        <urlList>
+          <url language="sv">
+          http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+          <url language="fi">
+          http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+          <url language="db">
+          http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+        </urlList>
+        <width>0</width>
+        <height>0</height>
+      </posterImage>
+      <landscapeImage>
+        <url>
+        http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100</url>
+        <width>0</width>
+        <height>0</height>
+      </landscapeImage>
+      <tagList>
+        <tag type="story">emil</tag>
+        <tag type="other">barn</tag>
+      </tagList>
+      <additionalProperties></additionalProperties>
+    </v1:brand>
+    <v1:season>
+      <id>5678</id>
+      <studio>Unspecified</studio>
+      <productionYear>1971</productionYear>
+      <countryOfOriginList>
+        <country>sweden</country>
+      </countryOfOriginList>
+      <titleList>
+        <title language="sv" original="false">SAKNAS</title>
+      </titleList>
+      <posterImage>
+        <url>
+        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+        <urlList>
+          <url language="sv">
+          http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+          <url language="fi">
+          http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+          <url language="db">
+          http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+        </urlList>
+        <width>0</width>
+        <height>0</height>
+      </posterImage>
+      <landscapeImage>
+        <url>
+        http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100</url>
+        <width>0</width>
+        <height>0</height>
+      </landscapeImage>
+      <tagList>
+        <tag type="story">emil</tag>
+        <tag type="other">barn</tag>
+      </tagList>
+      <additionalProperties></additionalProperties>
+      <brandId>1234</brandId>
+      <seasonNumber>1</seasonNumber>
+      <numberOfEpisodes>10</numberOfEpisodes>
+    </v1:season>
+    <v1:content>
+      <id>content_id_1234</id>
+      <studio>SF</studio>
+      <productionYear>1971</productionYear>
+      <countryOfOriginList>
+        <country>Sweden</country>
+      </countryOfOriginList>
+      <titleList>
+        <title language="sv" original="true">Du kära lilla snickarbod</title>
+        <title language="sv" original="false">Emil i Lönneberga: del 1 (SF-kanalen från C
+        More)</title>
+        <title language="fi" original="false">Vaahteramäen Eemeli:</title>
+        <title language="da" original="false">Emil fra Lønneberg: Emil fra Lønneberg</title>
+        <title language="nb" original="false">mil i Lønneberget:</title>
+      </titleList>
+      <descriptionList>
+        <description language="sv" length="short">Se fler svenska filmpärlor direkt i SF-kanalen
+        från C More, som du hittar under TV-kanaler.</description>
+        <description language="sv" length="medium">Se fler svenska filmpärlor direkt i SF-kanalen
+        från C More, som du hittar under TV-kanaler. Ser ut att finnas medium text på
+        allt</description>
+      </descriptionList>
+      <creditList>
+        <credit>
+          <name>Jan Ohlsson</name>
+          <function>Actor</function>
+        </credit>
+        <credit>
+          <name>Allan Edwall</name>
+          <function>Actor</function>
+        </credit>
+        <credit>
+          <name>Emy Storm</name>
+          <function>Actor</function>
+        </credit>
+        <credit>
+          <name>Olle Hellbom</name>
+          <function>Director</function>
+        </credit>
+      </creditList>
+      <posterImage>
+        <url>
+        http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+        <urlList>
+          <url language="sv">
+          http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+          <url language="fi">
+          http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+          <url language="db">
+          http://aman.production.s3.amazonaws.com/51d5243704bf72ce4c00000d/Emil.jpg?4&amp;formatid=104</url>
+        </urlList>
+        <width>0</width>
+        <height>0</height>
+      </posterImage>
+      <landscapeImage>
+        <url>
+        http://cdn01.diva.canalplus.se/image.aspx?id=36313a48-1826-44b5-adba-bb82316f175d&amp;formatid=100</url>
+        <width>0</width>
+        <height>0</height>
+      </landscapeImage>
+      <category>
+        <mainCategory>Barn</mainCategory>
+      </category>
+      <parentalRatingList>
+        <parentalRating>0</parentalRating>
+        <parentalRating country="ru">21</parentalRating>
+      </parentalRatingList>
+      <externalReferenceList>
+        <externalReference>
+          <provider>se.cmore</provider>
+          <id>240906</id>
+        </externalReference>
+      </externalReferenceList>
+      <additionalProperties></additionalProperties>
+      <vmanId>2383349</vmanId>
+      <contentType>movie</contentType>
+      <brandId>1234</brandId>
+      <seasonId>5678</seasonId>
+      <live>false</live>
+      <addProviderLogo>true</addProviderLogo>
+      <allowShare>true</allowShare>
+      <allowAds>true</allowAds>
+      <drmRestrictions>true</drmRestrictions>
+      <tagList>
+        <tag type="story">emil</tag>
+        <tag type="other">barn</tag>
+        <tag type="other">hyss</tag>
+        <tag type="other">pa-landet</tag>
+        <tag type="subject">byliv</tag>
+        <tag type="subject">familjeliv</tag>
+        <tag type="subject">sverige</tag>
+      </tagList>
+      <publicationRights>
+        <loactionRights>
+          <locationRestrictions>
+            <includeCountries>
+              <country>se</country>
+            </includeCountries>
+          </locationRestrictions>
+        </loactionRights>
+      </publicationRights>
+      <episodeNumber>1</episodeNumber>
+    </v1:content>
+    <v1:materialList>
+      <material timestamp="2017-10-20T03:04:37Z">
+        <providerId>se.cmore</providerId>
+        <id>85506</id>
+        <materialType>program</materialType>
+        <contentIdRef>string</contentIdRef>
+        <videoFormat threeD="false">576i</videoFormat>
+        <audioList>
+          <format>stereo</format>
+        </audioList>
+        <aspectRatio>16:9</aspectRatio>
+      </material>
+    </v1:materialList>
+    <v1:eventList>
+      <!--Zero or more repetitions: -->
+      <v12:event timestamp="2015-10-10T12:07:56Z">
+        <v12:id>1</v12:id>
+        <v12:channelId>tv4play</v12:channelId>
+        <v12:deviceType>web</v12:deviceType>
+        <v12:productGroup>7</v12:productGroup>
+        <v12:hidden>false</v12:hidden>
+        <v12:groupId sequenceNumber="1">string</v12:groupId>
+        <v12:startTime>2004-01-02T23:23:49Z</v12:startTime>
+        <v12:endTime>2016-06-03T21:00:00Z</v12:endTime>
+        <v12:publishTime>2014-01-21T07:38:03Z</v12:publishTime>
+        <v12:duration>25</v12:duration>
+        <v12:contentIdRef>string</v12:contentIdRef>
+        <v12:materialIdRef>string</v12:materialIdRef>
+      </v12:event>
+      <v12:event timestamp="2015-10-10T12:07:56Z">
+        <v12:id>2</v12:id>
+        <v12:channelId>tv4play</v12:channelId>
+        <v12:deviceType>mobile</v12:deviceType>
+        <v12:productGroup>1104</v12:productGroup>
+        <v12:hidden>false</v12:hidden>
+        <v12:groupId sequenceNumber="1">string</v12:groupId>
+        <v12:startTime>2004-01-02T23:23:49Z</v12:startTime>
+        <v12:endTime>2016-06-03T21:00:00Z</v12:endTime>
+        <v12:publishTime>2014-01-21T07:38:03Z</v12:publishTime>
+        <v12:duration>25</v12:duration>
+        <v12:contentIdRef>string</v12:contentIdRef>
+        <v12:materialIdRef>string</v12:materialIdRef>
+      </v12:event>
+    </v1:eventList>
+  </v1:data>
 </v1:publish-metadata>

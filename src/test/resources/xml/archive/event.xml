@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<p:event timestamp="2001-12-31T12:00:00" xmlns:p="http://video-metadata.tv.se/event/v1" xmlns:p1="http://video-metadata.tv.se/common/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://video-metadata.tv.se/event/v1 ../xsd/event.xsd ">
+<?xml version="1.0" encoding="utf-8"?>
+<p:event timestamp="2001-12-31T12:00:00" xmlns:p="http://video-metadata.tv.se/event/v1"
+xmlns:p1="http://video-metadata.tv.se/common/v1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://video-metadata.tv.se/event/v1 ../xsd/event.xsd">
   <p:id>p:id</p:id>
   <p:channelId>p:channelId</p:channelId>
   <p:descriptionList>
