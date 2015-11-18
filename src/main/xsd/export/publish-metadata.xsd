@@ -4,7 +4,6 @@
            xmlns:api-messages-common="http://video-metadata.tv4.se/api-messages-common/v1"
            xmlns:content="http://video-metadata.tv4.se/content/v1"
            xmlns:event="http://video-metadata.tv4.se/event/v1"
-           xmlns:material="http://video-metadata.tv4.se/material/v1"
            targetNamespace="http://video-metadata.tv4.se/publish-metadata/v1" elementFormDefault="qualified" attributeFormDefault="unqualified"
            version="1.0">
 
