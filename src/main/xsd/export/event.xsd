@@ -73,17 +73,9 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <!-- Moved to Content, to be deleted in next release of the XSD
-            <xs:element name="duration" type="xs:int" minOccurs="0">
-                <xs:annotation>
-                    <xs:documentation>
-                        Deprecated: duration moved to Content.
-                    </xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            -->
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="embeddedEventType">
         <xs:annotation>
             <xs:documentation>
@@ -102,14 +94,6 @@
                             </xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <!-- Remove unused element in export. No data available
-                    <xs:element name="materialIdRef" type="xs:string">
-                        <xs:annotation>
-                            <xs:documentation>reference to contentId for this event
-                            </xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                    -->
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>

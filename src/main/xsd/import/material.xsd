@@ -3,7 +3,9 @@
 			  xmlns:common="http://video-metadata.tv4.se/common/v1"
 			  targetNamespace="http://video-metadata.tv4.se/material/v1" version="1.0">
 	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
+
 	<!-- -->
+	<!-- TODO: Remove unused element. -->
 	<xs:element name="material" type="materialType">
 		<xs:annotation>
 			<xs:documentation>Root element for material object. Material </xs:documentation>

@@ -28,6 +28,7 @@
 			<xs:documentation />
 		</xs:annotation>
 		<xs:sequence>
+			<!-- TODO: remove element, add information to abstractContentType -->
 			<xs:element name="providerId" type="common:idType">
 				<xs:annotation>
 					<xs:documentation>Unique id for the provider, could be for example

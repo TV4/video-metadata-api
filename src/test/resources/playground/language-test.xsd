@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   xmlns="test://testing.testing/testing"
+           targetNamespace="test://testing.testing/testing"
+		   elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="1.0">
+
+	<xs:element name="testing-language">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="language" type="xs:language" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

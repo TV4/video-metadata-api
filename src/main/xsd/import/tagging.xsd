@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    TODO: this file shall be identical to the file in import. Only use one! put in common namespace.
+    TODO: this file shall be identical to the file in export. Only use one! put in common namespace.
     TODO: Update xml namespace for import and export schemas. They are currently in same XML namespace. :facepalm: ^ [-X
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/tagging/v1"

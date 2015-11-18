@@ -5,12 +5,13 @@
 	<xs:import namespace="http://video-metadata.tv4.se/common/v1" schemaLocation="common.xsd" />
 
 	<!-- ROOT element -->
+	<!-- TODO: Remove unused element. -->
 	<xs:element name="event" type="eventType">
 		<xs:annotation>
 			<xs:documentation>root node of event</xs:documentation>
 		</xs:annotation>
 	</xs:element>
-	<!-- types -->
+	<!-- -->
 	<xs:complexType name="basicEventType">
 		<xs:annotation>
 			<xs:documentation>
@@ -84,6 +85,7 @@
 			<xs:element name="timeList" type="timeListType" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="embeddedEventType">
 		<xs:annotation>
 			<xs:documentation>
@@ -110,7 +112,7 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-
+	<!-- -->
 	<xs:complexType name="eventType">
 		<xs:complexContent>
 			<xs:extension base="embeddedEventType">
@@ -131,25 +133,26 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-
+	<!-- -->
 	<xs:complexType name="publicationRightsType">
 		<xs:complexContent>
 			<xs:extension base="common:rightsType">
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="embeddedEventListType">
 		<xs:sequence>
 			<xs:element name="event" type="embeddedEventType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-
+	<!-- -->
 	<xs:complexType name="basicEventListType">
 		<xs:sequence>
 			<xs:element name="event" type="basicEventType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-	<!-- TODO: simplify nested eventtypes without inherritance and embedded events. -->
+	<!-- TODO: simplify nested event types without inheritance and embedded events. -->
 	<xs:complexType name="eventListType">
 		<xs:annotation>
 			<xs:documentation>
@@ -161,12 +164,13 @@
 			<xs:element name="event" type="eventType" minOccurs="1" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-
+	<!-- -->
 	<xs:complexType name="descriptionListLangType">
 		<xs:sequence>
 			<xs:element name="description" type="common:description" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="eventGroupType">
 		<xs:annotation>
 			<xs:documentation>The element value is the name of the group. The sequenceNumber attribute gives the order
@@ -181,7 +185,6 @@
 						<xs:documentation>Order of event in the event group, one-based indexing. (first event in event group has sequenceNumber=1)</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
-				<!-- TODO: discuss new field with with Metabanken -->
 				<xs:attribute name="maxSequenceNumber" type="xs:short">
 					<xs:annotation>
 						<xs:documentation>sequenceNumber of the last event in the evenet group</xs:documentation>
@@ -190,11 +193,13 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="timeListType">
 		<xs:sequence>
 			<xs:element name="time" type="timeType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="timeType">
 		<xs:sequence>
 			<xs:element name="startTime" type="xs:dateTime">
@@ -216,18 +221,10 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<!-- Moved to Content, to be deleted in next release of the XSD (If not used in schedule)
-			<xs:element name="duration" type="xs:int" minOccurs="0" >
-				<xs:annotation>
-					<xs:documentation>
-						Deprecated: duration moved to Content.
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			-->
 		</xs:sequence>
 		<xs:attribute name="type" type="timeSchedulingType" default="public" />
 	</xs:complexType>
+	<!-- -->
 	<xs:simpleType name="timeSchedulingType">
 		<xs:annotation>
 			<xs:documentation>

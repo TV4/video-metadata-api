@@ -6,6 +6,7 @@
 	<xs:import namespace="http://video-metadata.tv4.se/tagging/v1" schemaLocation="tagging.xsd" />
 
 	<!-- -->
+	<!-- TODO: Remove unused element. -->
 	<xs:element name="content" type="contentSeasonBrandType">
 		<xs:annotation>
 			<xs:documentation>Root element for content object</xs:documentation>
@@ -19,6 +20,7 @@
 			<xs:element name="content" type="contentType" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="abstractContentType" abstract="true">
 		<xs:annotation>
 			<xs:documentation>Abstract type that holds attributes common to brand, season and content</xs:documentation>
@@ -100,12 +102,20 @@
 			<xs:element name="additionalProperties" type="common:propertyListType" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="brandType">
+		<xs:annotation>
+			<xs:documentation>
+				No special attributes on brand.
+			</xs:documentation>
+		</xs:annotation>
 		<xs:complexContent>
 			<xs:extension base="abstractContentType">
+
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="seasonType">
 		<xs:complexContent>
 			<xs:extension base="abstractContentType">
@@ -132,13 +142,15 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="contentType">
 		<xs:complexContent>
 			<xs:extension base="abstractContentType">
 				<xs:sequence>
+					<!-- TODO: Remove element and put informaiton in externalReference. { type="vmanId", value="<vmanId>", locator="<VMAN or API4 url." } -->
 					<xs:element name="vmanId" type="xs:string" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>VMAN id for asset.
+							<xs:documentation>VMAN id for asset. To be removed after migration.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -167,8 +179,8 @@
 					</xs:element>
 					<xs:element name="contentIdRef" type="common:idType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Reference to other content entity that is related. Thought use is for a clip or
-								trailer to reference the original content.
+							<xs:documentation>Reference to other content entity that is related.
+								Thought use is for a clip or trailer to reference the original content.
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -189,6 +201,7 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:simpleType name="contentTypeType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="live-channel" />
@@ -197,14 +210,17 @@
 			<xs:enumeration value="movie" />
 			<xs:enumeration value="trailer" />
 			<xs:enumeration value="clip" />
+			<!-- TODO: remove unused values. What is the use case for 'other'? -->
 			<xs:enumeration value="other" />
 		</xs:restriction>
 	</xs:simpleType>
+	<!-- -->
 	<xs:complexType name="titleListType">
 		<xs:sequence>
 			<xs:element name="title" type="titleType" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="descriptionListType">
 		<xs:annotation>
 			<xs:documentation>Editorial text that describes the content, can be publically published.</xs:documentation>
@@ -213,16 +229,17 @@
 			<xs:element name="description" type="descriptionType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-    <xs:complexType name="internalDescriptionType">
+	<!-- -->
+	<xs:complexType name="internalDescriptionType">
 		<xs:annotation>
             <xs:documentation>
-                Editorial text such as manus text read by a reporter or transcript of what is said i the video.
-                Thought usage is to hold descriptive intro, manuscript or voice-over that applies to the
-                content.
-                Original text is not expected to be exposed public, but it can be indexed by a search engine.
-                Text is not required to be written to be ready for public view, but the content will be indexed and
-                possible to use in a specific searches.
-                WARNING. If indexed, then bad words and inappropiate langauge will be searchable.
+				Editorial text such as manus text read by a reporter or transcript of what is said i the video.
+				Thought usage is to hold descriptive intro, manuscript or voice-over that applies to the
+				content.
+				Original text is not expected to be exposed public, but it can be indexed by a search engine.
+				Text is not required to be written to be ready for public view, but the content will be indexed and
+				possible to use in a specific searches.
+				WARNING. If indexed, then bad words and inappropriate language will be searchable.
 			</xs:documentation>
 		</xs:annotation>
         <xs:simpleContent>
@@ -231,11 +248,13 @@
             </xs:extension>
         </xs:simpleContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="relatesToListType">
 		<xs:sequence>
 			<xs:element name="relatesTo" type="relatesToType" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="relatesToType">
 		<xs:annotation>
 			<xs:documentation>
@@ -264,11 +283,13 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="parentalRatingListType">
 		<xs:sequence>
 			<xs:element name="parentalRating" type="parentalRatingType" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="parentalRatingType">
 		<xs:annotation>
 			<xs:documentation>
@@ -302,20 +323,22 @@
 			<xs:element name="country" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
-						Two char country code accoring to ISO 3166-1-alpha-2.
+						Two char country code according to ISO 3166-1-alpha-2.
 						Empty or absent country attribute has the meaning that it is global default value for any country.
 						Specific country declaration overrides the default.
-						If country value is repeted, result is undefined which one to select.
+						If country value is repeated, result is undefined which one to select.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="tagListType">
 		<xs:sequence>
 			<xs:element name="tag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="simpleTitleType">
 		<xs:simpleContent>
 			<xs:restriction base="simpleTextType">
@@ -323,6 +346,7 @@
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="titleType">
 		<xs:simpleContent>
 			<xs:extension base="untypedTitleType">
@@ -335,6 +359,7 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:simpleType name="titleTypeType">
 		<xs:annotation>
 			<xs:documentation>
@@ -346,6 +371,7 @@
 			<xs:enumeration value="episode" />
 		</xs:restriction>
 	</xs:simpleType>
+	<!-- -->
 	<xs:complexType name="untypedTitleType">
 		<xs:simpleContent>
 			<xs:restriction base="localizedTextType">
@@ -353,6 +379,7 @@
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="descriptionType">
 		<xs:simpleContent>
 			<xs:extension base="untypedDescriptionType">
@@ -365,6 +392,7 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:simpleType name="descriptionLengthType">
 		<xs:annotation>
 			<xs:documentation>length (and content) of the description e.g, tiny may be 1-25 characters, short 26-140,medium
@@ -380,6 +408,7 @@
 			<xs:enumeration value="extended" />
 		</xs:restriction>
 	</xs:simpleType>
+	<!-- -->
 	<xs:complexType name="untypedDescriptionType">
 		<xs:simpleContent>
 			<xs:restriction base="localizedTextType">
@@ -387,6 +416,7 @@
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="localizedTextType">
 		<xs:annotation><xs:documentation>Localized text element with language attribute.</xs:documentation></xs:annotation>
 		<xs:simpleContent>
@@ -399,11 +429,13 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="creditListType">
 		<xs:sequence>
 			<xs:element name="credit" type="creditType" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- -->
 	<xs:complexType name="creditType">
 		<xs:sequence>
 			<xs:element name="name" type="xs:string" />
@@ -417,7 +449,8 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-    <xs:complexType name="languageListType">
+	<!-- -->
+	<xs:complexType name="languageListType">
         <xs:sequence>
             <xs:element name="language" type="xs:language" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
@@ -426,6 +459,7 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+	<!-- -->
 	<xs:complexType name="imageType">
 		<xs:sequence>
 			<xs:element name="id" type="xs:string" minOccurs="0">

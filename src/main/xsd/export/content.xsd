@@ -6,9 +6,10 @@
 	<xs:import namespace="http://video-metadata.tv4.se/tagging/v1" schemaLocation="tagging.xsd" />
 
     <!-- -->
+    <!-- TODO: Remove unused element. -->
     <xs:element name="content" type="contentSeasonBrandType">
         <xs:annotation>
-            <xs:documentation>Root element for content object</xs:documentation>
+            <xs:documentation>Root element for content object. Only used for testing.</xs:documentation>
         </xs:annotation>
     </xs:element>
     <!-- -->
@@ -19,6 +20,7 @@
             <xs:element name="content" type="contentType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="abstractContentType" abstract="true">
         <xs:annotation>
             <xs:documentation>Abstract type that holds attributes common to brand, season and content</xs:documentation>
@@ -30,6 +32,26 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
+            <!--
+                TODO: Suggested new element, in addition the id shall be changed to the EMPs asset Id.
+                Alternative is to use the externalReference list.
+            <xs:element name="sourceId">
+                <xs:complexType >
+                    <xs:sequence>
+                        <xs:element name="provider" type="common:idType">
+                            <xs:annotation>
+                                <xs:documentation>Copy value from import message.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="id" type="common:idType">
+                            <xs:annotation>
+                                <xs:documentation>Copy value from import message.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            -->
             <xs:element name="studio" type="xs:string" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>Name of production studio.
@@ -66,8 +88,7 @@
 				<xs:annotation>
 					<xs:documentation>
 						Internal text related to the content.
-						Will be indexed in search but and searchable, original text
-						will not be exposed in search.
+						Will be indexed in search but and searchable, original text	will not be exposed in search.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -89,36 +110,40 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <!-- TODO: Begränsa genre till att inte vara en lista i kommande version av XSD. -->
+            <!-- TODO: Undersök om det går att begränsa genre till att inte vara en lista i kommande version av XSD, utan endast en genre. -->
             <xs:element name="genreList" type="genreListType" minOccurs="0"/>
             <xs:element name="parentalRatingList" type="parentalRatingListType" minOccurs="0"/>
             <xs:element name="externalReferenceList" type="common:externalReferenceListType" minOccurs="0">
                 <xs:annotation>
-                    <!-- TODO: fix doc question marks -->
-                    <xs:documentation>List of externalReference (of what?)
+                    <xs:documentation>List of externalReferences. IMDB ids, sport ...
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
+            <!-- TODO: Unknown usage - can we remove it? -->
             <xs:element name="additionalProperties" type="common:propertyListType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="brandType">
+        <xs:annotation>
+            <xs:documentation>
+                No special attributes on brand.
+            </xs:documentation>
+        </xs:annotation>
         <xs:complexContent>
             <xs:extension base="abstractContentType">
                 <xs:sequence>
-                    <xs:annotation>
-                        <xs:documentation>
-                            No special attributes on brand.
-                        </xs:documentation>
-                    </xs:annotation>
+                    <!-- No extra elements or attributes. -->
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="seasonType">
         <xs:complexContent>
             <xs:extension base="abstractContentType">
                 <xs:sequence>
+                    <!-- TODO: verify which id this is. EMPs or original id from provider? -->
                     <xs:element name="brandId" type="common:idType" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>id for season, not unique</xs:documentation>
@@ -133,8 +158,7 @@
                     <xs:element name="numberOfEpisodes" type="xs:long" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>If the content belongs to a serie/season, this is the total number of
-                                episodes in
-                                that serie/season.
+                                episodes in the series.
                             </xs:documentation>
                         </xs:annotation>
                     </xs:element>
@@ -142,10 +166,12 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="contentType">
         <xs:complexContent>
             <xs:extension base="abstractContentType">
                 <xs:sequence>
+                    <!-- TODO: Remove element and put informaiton in externalReference. { type="vmanId", value="<vmanId>", locator="<VMAN or API4 url." } -->
                     <xs:element name="vmanId" type="xs:string" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>VMAN id for asset. Can be removed in later releases.
@@ -155,11 +181,11 @@
                     <xs:element name="videoId" type="xs:string" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>EMP id for asset stream.
-                                Will be non present until content has a video ID assosiated with it.
+                                Will be non present until content has a video ID associated with it.
                                 Video will be constructed by prefix/suffix the content.id with a provider code.
                                 E.g., provider TV4 has provider code = "1423" and content.id = 1234567890 => videoId =
                                 1234567890_1423.
-                                The exact format is under discussion (15/5-15). Underscore to be replaced by hypen '-'
+                                The exact format is under discussion (15/5-15). Underscore to be replaced by hyphen '-'
                                 (due to SEO) (and possibly the suffix to be replaced by a prefix).
                             </xs:documentation>
                         </xs:annotation>
@@ -167,15 +193,14 @@
                     <xs:element name="duration" type="xs:int" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>
-                                Duration of the video content in seconds. Ads not expected to be included in the
-                                duration.
+                                Duration of the video content in seconds.
+                                Ads not expected to be included in the duration.
                             </xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element name="live" type="xs:boolean" minOccurs="0" default="false">
                         <xs:annotation>
-                            <xs:documentation>Flag to indicates if this stream is a live stream.
-                            </xs:documentation>
+                            <xs:documentation>Flag to indicates if this stream is a live stream.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element name="webExclusive" type="xs:boolean" minOccurs="0" default="false">
@@ -242,6 +267,7 @@
                             <xs:documentation>Information that program is sponsored. Radio- och tv-lag (2010:696) §7</xs:documentation>
 						</xs:annotation>
 					</xs:element>
+                    <!-- TODO: Need for data? UC? -->
 					<xs:element name="drmRestrictions" type="xs:boolean" default="true">
                         <xs:annotation>
                             <xs:documentation>true:=video is DRM protected, player need to initialize differently.</xs:documentation>
@@ -255,14 +281,13 @@
                     <!-- TODO: om värde inte sparas i VCMS från import kan denna tas bort. -->
                     <xs:element name="contentIdRef" type="common:idType" minOccurs="0">
                         <xs:annotation>
-                            <xs:documentation>Episode number for the program or "null" if no episode information.
-                            </xs:documentation>
+                            <xs:documentation>contentIdRef copied from the import.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
 					<xs:element name="relatesToList" type="relatesToListType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>
-								List of links to other material
+								List of links to other assets (content, season or brand).
 							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
@@ -270,12 +295,14 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="publicationRightsType">
         <xs:complexContent>
             <xs:extension base="common:rightsType">
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    <!-- -->
     <xs:simpleType name="contentTypeType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="live-channel"/>
@@ -285,22 +312,26 @@
             <xs:enumeration value="trailer"/>
             <xs:enumeration value="clip"/>
             <xs:enumeration value="ad"/>
+            <!-- TODO: remove unused values. What is the use case for 'other'? -->
             <xs:enumeration value="other"/>
         </xs:restriction>
     </xs:simpleType>
+    <!-- -->
     <xs:complexType name="titleListType">
         <xs:sequence>
             <xs:element name="title" type="titleType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="descriptionListType">
         <xs:annotation>
-            <xs:documentation>Editorial text that describes the content, can be publically published.</xs:documentation>
+            <xs:documentation>Editorial text that describes the content, can be published publicly.</xs:documentation>
         </xs:annotation>
         <xs:sequence>
             <xs:element name="description" type="descriptionType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="internalDescriptionType">
         <xs:annotation>
             <xs:documentation>
@@ -310,7 +341,7 @@
                 Original text is not expected to be exposed public, but it can be indexed by a search engine.
                 Text is not required to be written to be ready for public view, but the content will be indexed and
                 possible to use in a specific searches.
-                WARNING. If indexed, then bad words and inappropiate langauge will be searchable.
+                WARNING. If indexed, then bad words and inappropriate language will be searchable.
             </xs:documentation>
         </xs:annotation>
         <xs:simpleContent>
@@ -319,11 +350,13 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="relatesToListType">
         <xs:sequence>
             <xs:element name="relatesTo" type="relatesToType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="relatesToType">
         <xs:sequence>
             <xs:element name="id" type="xs:string">
@@ -346,11 +379,13 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="parentalRatingListType">
         <xs:sequence>
             <xs:element name="parentalRating" type="parentalRatingType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="parentalRatingType">
         <xs:annotation>
             <xs:documentation>
@@ -383,20 +418,22 @@
             <xs:element name="country" type="xs:string" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>
-                        Two char country code accoring to ISO 3166-1-alpha-2.
+                        Two char country code according to ISO 3166-1-alpha-2.
                         Empty or absent country attribute has the meaning that it is global default value for any country.
                         Specific country declaration overrides the default.
-                        If country value is repeted, result is undefined which one to select.
+                        If country value is repeated, result is undefined which one to select.
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="tagListType">
         <xs:sequence>
             <xs:element name="tag" type="tagging:tagReferenceType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="simpleTitleType">
         <xs:simpleContent>
             <xs:restriction base="simpleTextType">
@@ -404,6 +441,7 @@
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="titleType">
         <xs:simpleContent>
             <xs:extension base="untypedTitleType">
@@ -416,6 +454,7 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
+    <!-- -->
     <xs:simpleType name="titleTypeType">
         <xs:annotation>
             <xs:documentation>
@@ -427,6 +466,7 @@
             <xs:enumeration value="episode"/>
         </xs:restriction>
     </xs:simpleType>
+    <!-- -->
     <xs:complexType name="untypedTitleType">
         <xs:simpleContent>
             <xs:restriction base="localizedTextType">
@@ -434,6 +474,7 @@
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="descriptionType">
         <xs:simpleContent>
             <xs:extension base="untypedDescriptionType">
@@ -446,6 +487,7 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
+    <!-- -->
     <xs:simpleType name="descriptionLengthType">
         <xs:annotation>
             <xs:documentation>length (and content) of the description e.g, tiny may be 1-25 characters, short
@@ -462,6 +504,7 @@
             <xs:enumeration value="extended"/>
         </xs:restriction>
     </xs:simpleType>
+    <!-- -->
     <xs:complexType name="untypedDescriptionType">
         <xs:simpleContent>
             <xs:restriction base="localizedTextType">
@@ -469,6 +512,7 @@
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="localizedTextType">
         <xs:annotation>
             <xs:documentation>Localized text element with language attribute.</xs:documentation>
@@ -483,11 +527,13 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="creditListType">
         <xs:sequence>
             <xs:element name="credit" type="creditType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="creditType">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
@@ -501,6 +547,7 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="imageListType">
         <xs:annotation>
             <xs:documentation>priority attribute on image element indicate "sort order", lower priority number means
@@ -511,6 +558,7 @@
             <xs:element name="image" type="typePrioGroupedImageType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:simpleType name="imageTypeType">
         <xs:annotation>
             <xs:documentation>Type of image, initial intended usage for the image from source system.
@@ -526,6 +574,7 @@
             <xs:enumeration value="other"/>
         </xs:restriction>
     </xs:simpleType>
+    <!-- -->
     <xs:complexType name="simpleImageType">
         <xs:sequence>
             <xs:element name="url" type="xs:anyURI"/>
@@ -543,6 +592,7 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="localizedSimpleImageType">
         <xs:complexContent>
             <xs:extension base="simpleImageType">
@@ -550,6 +600,7 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="typePrioGroupedImageType">
         <xs:sequence>
             <xs:element name="default" type="simpleImageType" minOccurs="0"/>
@@ -568,6 +619,7 @@
             </xs:annotation>
         </xs:attribute>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="languageListType">
         <xs:sequence>
             <xs:element name="language" type="xs:language" minOccurs="0" maxOccurs="unbounded">
@@ -577,12 +629,14 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+    <!-- -->
     <xs:complexType name="genreListType">
         <xs:sequence>
             <xs:element name="genre" type="genreType" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
-	<xs:complexType name="genreType">
+    <!-- -->
+    <xs:complexType name="genreType">
 		<xs:annotation>
 			<xs:documentation> Two levels of genres are supported: mainGenre and
 				subGenre.
@@ -595,7 +649,8 @@
 			<xs:element name="subGenre" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="simpleTextType">
+    <!-- -->
+    <xs:complexType name="simpleTextType">
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
 				<xs:attribute name="language" type="xs:language">
@@ -606,7 +661,8 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	<xs:complexType name="brandListType">
+    <!-- -->
+    <xs:complexType name="brandListType">
 		<xs:sequence>
 			<xs:element name="brand" type="brandType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
@@ -616,7 +672,8 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="seasonListType">
+    <!-- -->
+    <xs:complexType name="seasonListType">
 		<xs:sequence>
 			<xs:element name="season" type="seasonType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
@@ -626,7 +683,8 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="contentListType">
+    <!-- -->
+    <xs:complexType name="contentListType">
 		<xs:sequence>
 			<xs:element name="content" type="contentType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>

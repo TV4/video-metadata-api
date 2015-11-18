@@ -6,6 +6,8 @@
 
 	<xs:import namespace="http://video-metadata.tv4.se/api-messages-common/v1" schemaLocation="api-messages-common.xsd" />
 
+	<!-- TODO: Remove file - never used. -->
+
 	<!-- Message definitions -->
 	<xs:element name="query">
 		<xs:annotation>

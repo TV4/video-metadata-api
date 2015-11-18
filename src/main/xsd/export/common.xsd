@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://video-metadata.tv4.se/common/v1" targetNamespace="http://video-metadata.tv4.se/common/v1" version="1.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   xmlns="http://video-metadata.tv4.se/common/v1"
+		   targetNamespace="http://video-metadata.tv4.se/common/v1"
+		   version="1.0">
 
-	<!-- Important note about xs:dateTime: Time zone is UTC if not specified. Possible future change may add a separate type for dateTimes that enforce use of time zone. -->
+	<!-- Important note about xs:dateTime: Time zone is UTC if not specified. Possible future change may add a separate
+		type for dateTimes that enforce use of time zone.
+		-->
 
+	<!--
+		Common types used in all XSDs
+		-->
+
+	<!-- -->
 	<xs:simpleType name="urlSafeString">
 		<xs:annotation>
 			<xs:documentation>
@@ -15,8 +25,7 @@
 			<xs:pattern value="[0-9a-zA-Z\-\._~]+" />
 		</xs:restriction>
 	</xs:simpleType>
-
-	<!-- Common types used in all XSDs -->
+	<!-- -->
 	<xs:simpleType name="idType">
 		<xs:annotation>
 			<xs:documentation>A general ID type for entities
@@ -72,20 +81,19 @@
 		<xs:sequence>
 			<xs:element name="type" type="xs:string" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
-					<xs:documentation>Type of reference. It can for example be IMDB, Score24, ...</xs:documentation>
+					<xs:documentation>Type of reference. It can for example be IMDB, or similar service</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="value" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Data identifier to map this content to in the
-						external provider/partners data
+						external provider/partners data.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="locator" type="xs:string" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Resource to use for reach the data at the
-						provider
+					<xs:documentation>Resource to use for reach the data at the provider.
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -122,6 +130,7 @@
 	</xs:complexType>
     <xs:complexType name="locationRightsType">
         <xs:sequence>
+			<!-- TODO: What is th usage of the productGroup? Can it be removed? Can be simplified, too nested!!! -->
             <xs:element name="productGroup" minOccurs="0" maxOccurs="1" type="productGroupType" />
             <xs:element name="locationRestrictions" type="locationRestrictionsType" minOccurs="0" />
         </xs:sequence>
@@ -138,6 +147,7 @@
 			<xs:element name="includeCountries" type="countryListType" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- TODO: Unused type - remove -->
 	<xs:complexType name="userOrGroupRestrictionsType">
 		<xs:annotation>
 			<xs:documentation>First add the includes, then remove the excludes.
@@ -153,6 +163,7 @@
 			<xs:element name="exludeGroups" type="nameListType" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- TODO: Unused type - remove -->
 	<xs:complexType name="ipAddressTypeListType">
 		<xs:sequence>
 			<xs:element name="ipAddress" type="ipAddressType" minOccurs="0" maxOccurs="unbounded" />
@@ -167,6 +178,7 @@
 		<xs:restriction base="xs:string">
 		</xs:restriction>
 	</xs:simpleType>
+	<!-- TODO: Unused type - remove -->
 	<xs:complexType name="localSpecificationListType">
 		<xs:sequence>
 			<xs:element name="local" type="localSpecificationType" minOccurs="0" maxOccurs="unbounded" />
@@ -198,7 +210,7 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-
+	<!-- TODO: Unused type - remove -->
 	<xs:simpleType name="aspectRatioType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="4:3" />
@@ -208,7 +220,7 @@
 			<xs:enumeration value="other" />
 		</xs:restriction>
 	</xs:simpleType>
-
+	<!-- TODO: unknonw usage - can we remove it??? -->
 	<xs:complexType name="timeShiftDeviceTypeRights">
 		<xs:sequence>
 			<xs:element name="catchUpRights" type="catchUpRightsType" minOccurs="0" maxOccurs="1">
@@ -231,6 +243,7 @@
 			<xs:element name="pause" type="xs:boolean" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
+	<!-- TODO: Unused type - remove -->
 	<xs:simpleType name="shareToType">
 		<!-- TODO : specify if exclusive or exclusive right -->
 		<xs:annotation>
