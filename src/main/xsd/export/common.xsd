@@ -57,8 +57,8 @@
 			<xs:extension base="xs:string">
 				<xs:attribute name="language" type="xs:language">
 					<xs:annotation>
-						<xs:documentation> code in ISO 639-1 Note that the language here
-							refers to the language on which the description is made.
+						<xs:documentation>Two char language code according to ISO 639-1-
+							Note that the language here refers to the language of the description.
 						</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>

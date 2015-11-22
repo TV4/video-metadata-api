@@ -1,0 +1,7 @@
+<tes:testing-language xmlns:tes="test://testing.testing/testing">
+  <!--1 or more repetitions:-->
+  <tes:language>sv</tes:language>
+  <tes:language>nb</tes:language>
+  <tes:language>xx</tes:language>
+  <tes:language>XX</tes:language>
+</tes:testing-language>
