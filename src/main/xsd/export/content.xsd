@@ -58,6 +58,7 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
+            <!-- TODO: Unused for brands. -->
             <xs:element name="productionYear" minOccurs="0">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
@@ -143,7 +144,7 @@
         <xs:complexContent>
             <xs:extension base="abstractContentType">
                 <xs:sequence>
-                    <!-- TODO: verify which id this is. EMPs or original id from provider? -->
+                    <!-- TODO: verify which id EMP use. EMP internal id or original id from provider? -->
                     <xs:element name="brandId" type="common:idType" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>id for season, not unique</xs:documentation>
@@ -284,6 +285,7 @@
                             <xs:documentation>contentIdRef copied from the import.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
+                    <!-- TODO: EMP support relations on season and brands. Push up in future releases? -->
 					<xs:element name="relatesToList" type="relatesToListType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>
@@ -496,6 +498,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:restriction base="xs:string">
+            <!-- TODO: unused -->
             <xs:enumeration value="slug"/>
             <xs:enumeration value="tiny"/>
             <xs:enumeration value="short"/>

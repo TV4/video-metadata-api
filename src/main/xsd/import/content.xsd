@@ -38,6 +38,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- TODO: Unused for brands. -->
 			<xs:element name="productionYear" minOccurs="0">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -64,6 +65,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- TODO: internalDescription only used on content, push down!?  -->
             <xs:element name="internalDescription" type="internalDescriptionType" minOccurs="0">
 				<xs:annotation>
                     <xs:documentation>Internal text related to the content.
@@ -91,7 +93,9 @@
 				</xs:annotation>
 			</xs:element>
 			<!-- TODO: Begränsa genre till att inte vara en lista i kommande version av XSD. -->
+			<!-- TODO: Genre list only used on content -->
 			<xs:element name="genreList" type="genreListType" minOccurs="0" />
+			<!-- TODO: Genre list only used on content -->
 			<xs:element name="parentalRatingList" type="parentalRatingListType" minOccurs="0" />
 			<xs:element name="externalReferenceList" type="common:externalReferenceListType" minOccurs="0">
 				<xs:annotation>
@@ -99,6 +103,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- TODO: remove additionalProperties as it will newver be supported in EMP. -->
 			<xs:element name="additionalProperties" type="common:propertyListType" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -368,6 +373,7 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="press" />
 			<xs:enumeration value="original" />
+			<!-- TODO: Not used in EMP -->
 			<xs:enumeration value="episode" />
 		</xs:restriction>
 	</xs:simpleType>
@@ -400,6 +406,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
+			<!-- TODO: slug is unused -->
 			<xs:enumeration value="slug" />
 			<xs:enumeration value="tiny" />
 			<xs:enumeration value="short" />
@@ -441,6 +448,7 @@
 			<xs:element name="name" type="xs:string" />
 			<xs:element name="rolename" type="xs:string" minOccurs="0" />
 			<xs:element name="function" type="xs:string" />
+			<!-- TODO: Is externalReferenceList in credit ever used? -->
 			<xs:element name="externalReferenceList" type="common:externalReferenceListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>List of externalReference
@@ -460,6 +468,7 @@
         </xs:sequence>
     </xs:complexType>
 	<!-- -->
+	<!-- TODO: Check imageType - might be error in merge. -->
 	<xs:complexType name="imageType">
 		<xs:sequence>
 			<xs:element name="id" type="xs:string" minOccurs="0">
@@ -471,12 +480,12 @@
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="url" type="xs:string" />
-			<xs:element name="width" type="xs:int">
+			<xs:element name="width" type="xs:int" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>In unit px.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="height" type="xs:int">
+			<xs:element name="height" type="xs:int" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>In unit px.</xs:documentation>
 				</xs:annotation>
