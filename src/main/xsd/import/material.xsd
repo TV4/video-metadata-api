@@ -36,7 +36,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-
 			<xs:element name="contentIdRef" type="common:idType" minOccurs="0"> 
 				<xs:annotation>
 					<xs:documentation>
@@ -280,16 +279,6 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<!--
-			<xs:element name="type" type="materialTypeType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>
-						Type of material, for example video or audio.
-						This is currently always set to "program" as no other media will be sent from louise
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		-->
 			<xs:element name="in" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>
@@ -339,14 +328,6 @@
 			<xs:documentation>DateTime in UTC</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<!--
-			<xs:element name="rightsName" type="xs:string" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Name of right, i.e 'AVOD=Free' or 'SVOD=Premium'
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			-->
 			<xs:element name="validFrom" type="xs:dateTime">
 				<xs:annotation>
 					<xs:documentation>Start of period where right is valid
@@ -359,118 +340,9 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<!--
-			<xs:element name="rightsCategoryList" type="rightsCategoryListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>list of right categories</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			-->
 		</xs:sequence>
 	</xs:complexType>
-	<!--
-	<xs:complexType name="rightsCategoryListType">
-		<xs:sequence>
-			<xs:element name="rightsCategory" type="rightsCategoryType" maxOccurs="unbounded" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="rightsCategoryType">
-		<xs:complexContent>
-			<xs:extension base="common:rightsType">
-				<xs:sequence>
-					<xs:element name="deviceRights" type="deviceTypeOutPutRights" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>
-								list of devices affected by the right (Not currently used by the import from tv4)
-							</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="noLinearTransmission" type="transmissionDeviceTypeRights" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>
-								Linear transmision may not be sent to these devices. (Not currently used by the import from tv4)
-							</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-	<xs:complexType name="transmissionDeviceTypeRights">
-		<xs:complexContent>
-			<xs:extension base="deviceTypeRightsType">
-				<xs:annotation>
-					<xs:documentation>
-						Can be used in example for marking a tv-show in the schedule that isn't allowed to be
-						transmitted to mobile clients (Not currently used by the import from tv4)
-					</xs:documentation>
-				</xs:annotation>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-	<xs:complexType name="deviceTypeOutPutRights">
-		<xs:complexContent>
-			<xs:extension base="deviceTypeRightsType">
-				<xs:sequence>
-					<xs:element name="digitalOutputRights" type="digitalOutputRightsType" minOccurs="0">
-					</xs:element>
-					<xs:element name="analogOutputRights" type="analogOutputRightsType" minOccurs="0">
-					</xs:element>
-					<xs:element name="inHomeNetworkOutputRights" type="inHomeNetworkOutputRightsType" minOccurs="0">
-					</xs:element>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-	<xs:complexType name="deviceTypeRightsType">
-		<xs:sequence>
-			<xs:element name="deviceType" type="common:deviceTypeType" maxOccurs="unbounded"/>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:simpleType name="digitalOutputRightsType">
-		<xs:annotation>
-			<xs:documentation>Controls the output source for digital sources
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="unrestricted" />
-			<xs:enumeration value="besteffort" />
-			<xs:enumeration value="restricted" />
-			<xs:enumeration value="disallow" />
-			<xs:enumeration value="downresolution" />
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:complexType name="analogOutputRightsType">
-		<xs:choice>
-			<xs:element name="unrestricted" type="xs:boolean" />
-			<xs:element name="besteffort" type="cgmsaType" />
-			<xs:element name="restricted" type="cgmsaType" />
-			<xs:element name="disallow" type="xs:boolean" />
-		</xs:choice>
-	</xs:complexType>
-	<xs:simpleType name="cgmsaType">
-		<xs:annotation>
-			<xs:documentation>CGMS-A is standardized through the IEC, CEA, EIA-J and ETS
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="copyfreely" />
-			<xs:enumeration value="copynomore" />
-			<xs:enumeration value="copyonce" />
-			<xs:enumeration value="copynever" />
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="inHomeNetworkOutputRightsType">
-		<xs:annotation>
-			<xs:documentation>Controls the output source for network services
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="unrestricted" />
-			<xs:enumeration value="disallow" />
-		</xs:restriction>
-	</xs:simpleType>
-	-->
+	<!-- -->
 	<xs:complexType name="materialListType">
 		<xs:annotation>
 			<xs:documentation>

@@ -125,11 +125,14 @@
             <xs:element name="event" type="eventType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+    <!--
+    TODO: Remove unused type
     <xs:complexType name="descriptionListLangType">
         <xs:sequence>
             <xs:element name="description" type="common:description" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+    -->
     <xs:complexType name="eventGroupType">
         <xs:annotation>
             <xs:documentation>The element value is the name of the group. The sequenceNumber attribute gives the order

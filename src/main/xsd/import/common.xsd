@@ -127,6 +127,7 @@
 			<xs:element name="drmRestrictions" type="drmRestrictionsType" minOccurs="0" />
 			<xs:element name="locationRestrictions" type="locationRestrictionsType" minOccurs="0" />
 			<xs:element name="userOrGroupRestrictions" type="userOrGroupRestrictionsType" minOccurs="0" />
+			<!-- TODO: Remove unused element... -->
 			<xs:element name="shareToList">
 				<xs:complexType>
 					<xs:sequence>

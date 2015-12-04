@@ -201,7 +201,7 @@
                     </xs:element>
                     <xs:element name="live" type="xs:boolean" minOccurs="0" default="false">
                         <xs:annotation>
-                            <xs:documentation>Flag to indicates if this stream is a live stream.</xs:documentation>
+                            <xs:documentation>Flag to indicates if this stream is a live stream. Video material is under recording.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element name="webExclusive" type="xs:boolean" minOccurs="0" default="false">
@@ -274,6 +274,7 @@
                             <xs:documentation>true:=video is DRM protected, player need to initialize differently.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
+                    <!-- TODO: publicationRights has too many nested elements. Simplify if possible. -->
                     <xs:element name="publicationRights" type="publicationRightsType">
                         <xs:annotation>
                             <xs:documentation></xs:documentation>

@@ -42,20 +42,20 @@
 			<xs:element name="publicationRights" type="publicationRightsType" minOccurs="0">
 			</xs:element>
 
-			<!-- TODO: Description on events? -->
+			<!-- TODO: Description on events? What is the Use Case? -->
 			<xs:element name="descriptionList" type="descriptionListLangType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>
-					</xs:documentation>
+					<xs:documentation></xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- TODO: What is the usage or rerun? Remove? -->
 			<xs:element name="rerun" type="xs:boolean">
 				<xs:annotation>
-					<!-- TODO: what is the usage? why not in export? -->
 					<xs:documentation>Indicates if this is a rerun, the rules for decision could is set by the provider and could be different between providers
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- TODO: What is this flag used for. Remove?-->
 			<xs:element name="live" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>indicates if this event is live.
@@ -70,6 +70,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- TODO: Remove? What is the use? -->
 			<xs:element name="hidden" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>indicates if this event is hidden, i.e. if it should not be public.
@@ -82,6 +83,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<!-- TODO: Why is time a ist on the event? -->
 			<xs:element name="timeList" type="timeListType" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
