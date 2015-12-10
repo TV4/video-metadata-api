@@ -398,96 +398,67 @@ targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="imageType">
-    <xs:sequence>
-      <xs:element name="id" type="xs:string" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The id of the image from the origin system. For example it might be
-          img_123 if the origin system is metabank.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="url" type="xs:string" />
-      <xs:element name="width" type="xs:int">
-        <xs:annotation>
-          <xs:documentation>In unit px.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="height" type="xs:int">
-        <xs:annotation>
-          <xs:documentation>In unit px.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="purpose">
-        <xs:simpleType>
-          <xs:annotation>
-            <xs:documentation>Purpose of image, initial intended usage for the image from source
-            system.</xs:documentation>
-          </xs:annotation>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="production" />
-            <xs:enumeration value="profile" />
-            <xs:enumeration value="banner" />
-            <xs:enumeration value="poster" />
-            <xs:enumeration value="promo" />
-            <xs:enumeration value="press" />
-            <xs:enumeration value="logo" />
-            <xs:enumeration value="other" />
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="createdDate" type="xs:date" minOccurs="0" />
-      <xs:element name="orientation" minOccurs="0">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="landscape" />
-            <xs:enumeration value="portrait" />
-            <xs:enumeration value="other" />
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="captionList" type="captionListType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="copyRightList" type="copyRightsListType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-    <xs:attribute name="priority" type="xs:long">
-      <xs:annotation>
-        <xs:documentation>lower priority number means higher importance</xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:complexType>
   <xs:complexType name="imageListType">
     <xs:annotation>
-      <xs:documentation>priority attribute on image element indicate "sort order", lower priority
-      number means higher importance.</xs:documentation>
+      <xs:documentation>priority attribute on image element indicate "sort order", lower priority number means
+          higher
+          importance.
+      </xs:documentation>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="image" type="imageType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="image" type="imageType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="captionListType">
+  <xs:simpleType name="imageTypeType">
+    <xs:annotation>
+      <xs:documentation>Type of image, initial intended usage for the image from source system.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="poster"/>
+      <xs:enumeration value="landscape"/>
+      <xs:enumeration value="cinemascope"/>
+      <xs:enumeration value="logohometeam"/>
+      <xs:enumeration value="logoawayteam"/>
+      <xs:enumeration value="banner"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="simpleImageType">
     <xs:sequence>
-      <xs:element name="caption" type="common:description" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="url" type="xs:anyURI"/>
+      <xs:element name="caption" type="xs:string" minOccurs="0"/>
+      <xs:element name="copyright" type="xs:string" minOccurs="0"/>
+      <xs:element name="width" type="xs:int" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>In unit px.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="height" type="xs:int" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>In unit px.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="copyRightsListType">
-    <xs:sequence>
-      <!--
-                        <xs:element name="copyRight" type="common:description" minOccurs="0" maxOccurs="unbounded" />
--->
-      <!--
-                                Use string instead of common:description since common:description
-                                requires language to be set. In most cases we don't have language
-                                in the input...
-                         -->
-      <xs:element name="copyRight" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
-    </xs:sequence>
+  <xs:complexType name="localizedSimpleImageType">
+    <xs:complexContent>
+      <xs:extension base="simpleImageType">
+        <xs:attribute name="language" type="xs:language" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="imageType">
+    <xs:complexContent>
+      <xs:extension base="localizedSimpleImageType">
+        <xs:attribute name="type" type="imageTypeType"/>
+        <xs:attribute name="prio" type="xs:unsignedShort">
+          <xs:annotation>
+            <xs:documentation>Lower priority number means higher importance.</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="mediaReferenceListType">
     <xs:sequence>

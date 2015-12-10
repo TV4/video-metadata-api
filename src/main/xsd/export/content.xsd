@@ -76,11 +76,12 @@ targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
           provider</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="posterImage" type="imageType" minOccurs="0" />
-      <xs:element name="landscapeImage" type="imageType" minOccurs="0" />
-      <xs:element name="logoImage" type="imageType" minOccurs="0" />
-      <xs:element name="promoImage" type="imageType" minOccurs="0" />
-      <xs:element name="bannerImage" type="imageType" minOccurs="0" />
+      <xs:element name="imageList" type="imageListType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>list of content related images.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="genreList" type="genreListType" minOccurs="0" />
       <xs:element name="parentalRatingList" type="parentalRatingListType" minOccurs="0" />
       <xs:element name="externalReferenceList" type="common:externalReferenceListType"
@@ -477,41 +478,72 @@ targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="imageType">
+  <xs:complexType name="imageListType">
+    <xs:annotation>
+      <xs:documentation>priority attribute on image element indicate "sort order", lower priority number means
+      higher importance.
+      </xs:documentation>
+    </xs:annotation>
     <xs:sequence>
-      <xs:element name="url" type="xs:string" />
-      <xs:element name="urlList" type="urlListType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Support for different images for different
-          languages/countries.</xs:documentation>
-        </xs:annotation>
+      <xs:element name="image" type="typePrioGroupedImageType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="imageTypeType">
+    <xs:annotation>
+      <xs:documentation>Type of image, initial intended usage for the image from source system.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="poster"/>
+      <xs:enumeration value="landscape"/>
+      <xs:enumeration value="cinemascope"/>
+      <xs:enumeration value="logohometeam"/>
+      <xs:enumeration value="logoawayteam"/>
+      <xs:enumeration value="banner"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="simpleImageType">
+    <xs:sequence>
+      <xs:element name="url" type="xs:anyURI"/>
+      <xs:element name="caption" type="xs:string" minOccurs="0"/>
+      <xs:element name="copyright" type="xs:string" minOccurs="0"/>
+      <xs:element name="width" type="xs:int" minOccurs="0">
+      <xs:annotation>
+       <xs:documentation>In unit px.</xs:documentation>
+      </xs:annotation>
       </xs:element>
-      <xs:element name="width" type="xs:int">
+      <xs:element name="height" type="xs:int" minOccurs="0">
         <xs:annotation>
           <xs:documentation>In unit px.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="height" type="xs:int">
-        <xs:annotation>
-          <xs:documentation>In unit px.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="captionList" type="captionListType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="copyRightList" type="copyRightsListType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="urlListType">
+  <xs:complexType name="localizedSimpleImageType">
+    <xs:complexContent>
+      <xs:extension base="simpleImageType">
+        <xs:attribute name="language" type="xs:language" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="typePrioGroupedImageType">
     <xs:sequence>
-      <xs:element name="url" type="common:description" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="default" type="simpleImageType" minOccurs="0"/>
+      <xs:element name="localizations" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="localized" type="localizedSimpleImageType" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+     </xs:element>
     </xs:sequence>
+    <xs:attribute name="type" type="imageTypeType"/>
+    <xs:attribute name="prio" type="xs:unsignedShort">
+      <xs:annotation>
+       <xs:documentation>Lower priority number means higher importance.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
   </xs:complexType>
   <xs:complexType name="languageListType">
     <xs:sequence>
@@ -520,16 +552,6 @@ targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
           <xs:documentation>Language code in ISO 639-1</xs:documentation>
         </xs:annotation>
       </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="captionListType">
-    <xs:sequence>
-      <xs:element name="caption" type="common:description" minOccurs="0" maxOccurs="unbounded" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="copyRightsListType">
-    <xs:sequence>
-      <xs:element name="copyRight" type="common:description" minOccurs="0" maxOccurs="unbounded" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="mediaReferenceListType">
