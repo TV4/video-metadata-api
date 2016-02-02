@@ -125,11 +125,6 @@ targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
     <xs:complexContent>
       <xs:extension base="abstractContentType">
         <xs:sequence>
-          <xs:element name="sport" type="sportType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>For content describing sport material</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="vmanId" type="xs:string" minOccurs="0">
             <xs:annotation>
               <xs:documentation>VMAN id for asset.</xs:documentation>
@@ -491,79 +486,6 @@ targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
       <xs:element name="mainGenre" type="xs:string" />
       <xs:element name="subGenre" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
     </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="sportType">
-    <xs:annotation>
-      <xs:documentation>Sports tag that describes the sport event: serie, league, tournament or any
-      other sport event.</xs:documentation>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="sportsCategory" type="sportsCategoryType" minOccurs="0" />
-      <xs:element name="leagueOrCompetitionList" type="leagueOrCompetitionListType"
-      minOccurs="0" />
-      <xs:element name="seasonOrTournamentList" type="seasonOrTournamentList" minOccurs="0" />
-      <xs:element name="roundOrEpisodeList" type="roundOrEpisodeListType" minOccurs="0" />
-      <xs:element name="homeTeamList" type="teamListType" minOccurs="0" />
-      <xs:element name="awayTeamList" type="teamListType" minOccurs="0" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="sportsCategoryType">
-    <xs:simpleContent>
-      <xs:restriction base="simpleTextType">
-        <xs:maxLength value="40" />
-      </xs:restriction>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="leagueOrCompetitionListType">
-    <xs:sequence>
-      <xs:element name="leagueOrCompetition" type="leagueOrCompetitionType" minOccurs="0"
-      maxOccurs="unbounded" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="leagueOrCompetitionType">
-    <xs:simpleContent>
-      <xs:restriction base="simpleTextType">
-        <xs:maxLength value="40" />
-      </xs:restriction>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="seasonOrTournamentList">
-    <xs:sequence>
-      <xs:element name="roundOrEpisode" type="roundOrEpisodeType" minOccurs="0"
-      maxOccurs="unbounded" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="seasonOrTournamentType">
-    <xs:simpleContent>
-      <xs:restriction base="simpleTextType">
-        <xs:maxLength value="40" />
-      </xs:restriction>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="roundOrEpisodeListType">
-    <xs:sequence>
-      <xs:element name="roundOrEpisode" type="roundOrEpisodeType" minOccurs="0"
-      maxOccurs="unbounded" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="roundOrEpisodeType">
-    <xs:simpleContent>
-      <xs:restriction base="simpleTextType">
-        <xs:maxLength value="40" />
-      </xs:restriction>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="teamListType">
-    <xs:sequence>
-      <xs:element name="team" type="teamType" minOccurs="0" maxOccurs="unbounded" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="teamType">
-    <xs:simpleContent>
-      <xs:restriction base="simpleTextType">
-        <xs:maxLength value="40" />
-      </xs:restriction>
-    </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="simpleTextType">
     <xs:simpleContent>
