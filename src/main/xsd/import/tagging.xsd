@@ -30,6 +30,7 @@
 		<xs:simpleContent>
 			<xs:extension base="common:nidType">
 				<xs:attribute name="type" type="tagTypeType" use="required" />
+				<xs:attribute name="prio" type="xs:unsignedShort" default="0"/>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
