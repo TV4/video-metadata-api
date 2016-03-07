@@ -184,7 +184,7 @@ targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
               a season.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="spokenLanguagesList" type="languageListType" minOccurs="0">
+          <xs:element name="audioLanguagesList" type="languageListType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>List of available languages for available video soundtracks. (In
               import format this information is on the material/audioList.)</xs:documentation>
