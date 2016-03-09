@@ -91,7 +91,7 @@ targetNamespace="http://video-metadata.tv4.se/content/v1" version="1.0">
           <xs:documentation>List of externalReference (of what?)</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="vodAvailable" type="xs:boolean" minOccurs="0" maxOccurs="1" default="false">
+      <xs:element name="vodAvailable" type="xs:boolean" default="true">
         <xs:annotation>
           <xs:documentation>Flag to indicate that there is a VOD media available for the content.</xs:documentation>
         </xs:annotation>
