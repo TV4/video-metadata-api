@@ -1,3 +1,8 @@
+
+_**Current status**
+Further development is put on pause from TV4 side as of April 2016 due to a retake of the OVP initiatives 
+and reorganization of TV4 and C More._
+
 # Video Metadata API
 
 Video Metadata API is and XML/REST'ish API to communicate video metadata to and from the EMP platform.
